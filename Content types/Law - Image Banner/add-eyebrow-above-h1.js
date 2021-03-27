@@ -1,0 +1,1 @@
+$( "div.imageBanner" ).prepend( $( "<p>Madrid Summer Program</p>" ) );

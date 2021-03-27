@@ -1,0 +1,32 @@
+.standardContent figure.image-wrapper {
+    display: inline-block;
+    padding: 15px 20px 5px 0;
+  }
+  
+  .standardContent figure.image-wrapper figcaption {
+    text-align: left;
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-top: 8px;
+  }
+  
+  .standardContent figure.image-wrapper img {
+      padding: 0;
+  }
+  
+  /* Large mobile devices (425px and up) */
+  @media (min-width: 425px) {
+  .standardContent figure.image-wrapper {
+        display: inline-block;
+        padding: 15px 25px 10px 25px;
+     }
+      .standardContent figure.image-wrapper.float-left {
+          float: left;
+          padding-left: 0;
+      }
+      
+      .standardContent figure.image-wrapper.float-right {
+          float: right;
+          padding-right: 0;
+      }    
+  }

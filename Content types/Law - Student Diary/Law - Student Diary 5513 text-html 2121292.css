@@ -1,0 +1,65 @@
+/* Added to #mainZone in 'Law - Detail (MainZone is a Flex Container)' page layout */
+.flexContainer {
+	background: #ffffff;
+	display: flex; /* creates flex box container */
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch; /* makes the items the same size, equal to the longest item */
+}
+
+/* Flexbox item */
+.studentDiaryCardWrapper {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px !important;
+    xoutline: 1px solid #333;
+    display: flex;
+	align-items: stretch;
+}
+
+.studentDiaryNamePhotoIntrotext.standardContent {
+    background: #f7f7f7;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.studentDiaryNamePhotoIntrotext.standardContent img {
+    border-radius: 50%;
+}
+
+.studentDiaryNamePhotoIntrotext.standardContent h3 {
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 20px;
+    font-size: 2.4rem;
+}
+
+a.photo-nameLink:link {
+    text-decoration: none
+}
+
+a.photo-nameLink:hover {
+    text-decoration: underline;
+}
+
+/* Allows a Primary Content item to be above the flex container */
+.primaryContentWrapper {
+	flex: none;
+	width: 100%;
+}
+
+/* Large Mobile */
+@media only screen and (min-width : 425px) {
+    .studentDiaryNamePhotoIntrotext.standardContent img {
+        max-width: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width : 768px) {
+    .studentDiaryCardWrapper {
+        width: 50%;
+    } 
+}

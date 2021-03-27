@@ -1,0 +1,32 @@
+/* Added to #mainZone in 'Law - Detail (MainZone is a Flex Container)' page layout */
+.flexContainer {
+	background: #ffffff;
+	display: flex; /* creates flex box container */
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch; /* makes the items the same size, equal to the longest item */
+}
+
+/* Flexbox item */
+.studentProfileWrapper {
+	background: #f7f7f7;
+	width: 262px;
+	margin: 15px;
+}
+
+.studentProfile img {
+	border-radius: 50%;
+}
+
+.studentProfile.standardContent h3 {
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 2.3rem;
+}
+
+/* Allows a Primary Content item to be above the flex container */
+.primaryContentWrapper {
+	flex: none;
+	width: 100%;
+}
