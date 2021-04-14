@@ -22,9 +22,11 @@ body {
   background-color: #ffffff;
   color: #333333;
   font-family: "Montserrat", sans-serif;
-  font-size: 10px; /* base font size, because multiplying by 10 is easy */
+  /* font-size: 10px; base font size, because multiplying by 10 is easy */
+  font-size: 62.5%; /* 10/16 =.625 To maximize accessibility, it is generally best to use values that are relative to the user's default font size.*/
   font-weight:400;
-  line-height: 20px;
+  /* line-height: 20px; */
+  line-height: 1.475;
   margin: 0;
   padding-top: 167px; /* for the fixed header */
 }
@@ -54,737 +56,8 @@ body {
 /* ============================================== Header ============================================== */
 /* Logo, Red and white bars on top */
 /* Last edited 6/18/19 by Steve */ 
+/* Migrated all nav css to working file 20210326 - Vic media library file number 2268710 */
 
-#globalHeader{
-  background:#aa0000;
-  
-  
-
-
-  /* for possible alternate header
-    background: rgba(170,0,0,0.75);
-  opacity: 0.9;
-
-  */
-  padding:0px;
-  position: fixed;
-  top:0;
-  /*transition: top 0.2s ease-in-out; /*c*/
-  transition: 0.4s;
-  transition-timing-function: ease;
-  width:100%;
-  z-index:100;
-
-}
-
-
-.nav-up {
-  xtop: -131px;
-}
-#globalHeader.is-visible{ top: 0px;}
-/* maybe add back #globalHeader.not-visible{ top: -131px;} */
-
-#globalHeader #mainlogo{
-  float:left;
-  height: 83px;
-  padding: 20px 15px;
-  transition: 0.4s;
-  transition-timing-function: ease;
-}
-#globalHeader #mainlogo a{
-  display: block;
-  height: 27px;
-  width: 117px;
-}
-#globalHeader #mainlogo img{
-  color:#fff;
-  font-family:'Oswald',sans-serif;
-  font-size:2.8rem;
-  height:50px;
-  max-width: 184px;
-  text-align: left;
-  transition: 0.4s;
-  transition-timing-function: ease;
-}
-#globalHeader #mainlogo a:focus:after {
-    content: 'Link to SU Home Page';
-    position: absolute;
-    color: #ffffff;
-    bottom: 0;
-}
-#globalHeader .navbar-toggle{
-  margin: 15px 20px 8px 10px;
-  padding: 17px 18px;
-  z-index:101;
-}
-#globalHeader .navbar-toggle .icon-bar{
-  background:#ffffff;
-}
-#globalHeaderResourcesWrapper{
-  font-size: 1.3rem;
-  font-weight: 700;
-  overflow-y: visible; 
-  padding:0;
-  position: relative;
-  z-index: 200;
-}
-#globalHeaderResources {
-  overflow:visible;
-  padding: 0 15px 0 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-@media (max-width:434px) { 
-  #headerResourcesMenu {
-   padding: 10px 0;
-   display: inline-block;
-   margin: 10px 0 0;
-  }
-}
-/* hamburger button */
-.close-label {
-  color: #ffffff;
-  position: relative;
-/*  right: 35px;
-  bottom: 23px;*/
-}
-.menu-icon {
-    /* Inactive State (Hamburger) */
-    /* this span is the central line of the menu icon */
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    transition: background-color 0.3s;
-    background-color: #FFFFFF;
-    bottom: auto;
-    display: inline-block;
-    height: 2px;
-    left: 0;
-    position: relative;
-    vertical-align: middle;
-    width: 25px;
-    /* these are the upper and lower lines in the menu icon */
-    /* Active State (X) */
-}
-
-.menu-icon:before, .menu-icon:after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: #FFFFFF;
-    right: 0;
-    transition: -webkit-transform .8s, top .8s, background-color 0s;
-    transition: transform .8s, top .8s, background-color 0s;
-}
-
-.menu-icon:before {
-    top: -7px;
-}
-
-.menu-icon:after {
-    top: 7px;
-}
-
-.menu-icon.is-clicked {
-    background-color: rgba(255, 255, 255, 0);
-}
-
-.menu-icon.is-clicked:before, .menu-icon.is-clicked:after {
-    background-color: #FFFFFF;
-}
-
-.menu-icon.is-clicked:before {
-    top: 0;
-    -webkit-transform: rotate(135deg);
-    transform: rotate(135deg);
-}
-
-.menu-icon.is-clicked:after {
-    top: 0;
-    -webkit-transform: rotate(225deg);
-    transform: rotate(225deg);
-}
-
-.menu-icon.sub-hamburger {
-    /* Inactive State (Hamburger) */
-    /* this span is the central line of the menu icon */
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    transition: background-color 0.3s;
-    background-color: #ab0000;
-    bottom: auto;
-    display: inline-block;
-    height: 2px;
-    left: 0;
-    position: relative;
-    vertical-align: middle;
-    width: 25px;
-    top: 15px;
-    /* these are the upper and lower lines in the menu icon */
-    /* Active State (X) */
-}
-
-.menu-icon.sub-hamburger:before, .menu-icon.sub-hamburger:after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: #ab0000;
-    right: 0;
-    transition: -webkit-transform .8s, top .8s, background-color 0s;
-    transition: transform .8s, top .8s, background-color 0s;
-}
-
-.menu-icon.sub-hamburger.is-clicked {
-    background-color: #FFFFFF;
-}
-
-header.menu-is-open {
-    background: #0f72b9;
-}
-
-header.menu-is-open .primary-nav-trigger:focus {
-    outline: none;
-    transition: all 0.8s ease;
-}
-/* search box */
-#googleSearchBox{
-  transition: 0.4s;
-  transition-timing-function: ease;
-}
-
-
-.gsc-control-cse{
-   border: 0px ;
-   background-color: transparent;
-   padding:0;
-}
-
- #googleSearchBox td.gsc-input{
-  width:100%;
-  padding-right:0;
-}
-
- #googleSearchBox input#gsc-i-id1{
-  
-   /* for possible alternate header
-
-  background: rgba(170,0,0,0.75);
-  */
-
-  background: #881111 !important;
-  border: 1px solid #881111;
-  color: #ffffff;
-  display:inline-block;
-  font-size:1.5rem;
-  font-weight: 500;
-  height: 36px;
-  letter-spacing: .2px;
-  line-height: 4rem;
-  padding: 0 15px !important;
-  width: 100%;
-  float: right;
-  transition: 0.4s;
-  transition-timing-function: ease;
-  text-indent: 0px !important;
-}
-
-/* START Give Button */
-a.give-button p {
-	background: #ffffff;
-    color: #088099; /* default text color */
-    transition: 0.3s;
-    font-size: 1.3rem;
-    font-weight: bold;
-    letter-spacing: .2rem;
-    line-height: 3;
-    text-transform: uppercase;
-    text-align: center;
-    padding: .5rem 0 .5rem 0;
-    margin-top: 1.5vh;
-}
-
-a.give-button p:hover {
-    background-color: #088099;
-    color: #ffffff;
-    border: 1px solid #ffffff;
-}
-
-@media (min-width: 992px) {
-	#globalHeaderNavigationWrapper .give-button {
-		display: none;
-	}
-}
-/* END Give Button */
-
- @media (min-width:992px) {
-    #googleSearchBox input#gsc-i-id1{
-    width: 115%;  
-    }
-}
-
-
-body #googleSearchBox input#gsc-i-id1:focus {
-    border: 1px solid #ffffff;
-
-}
-::-webkit-input-placeholder { color: #ffffff;}
-::-moz-placeholder { color: #ffffff; }
-:-ms-input-placeholder { color: #ffffff;}
-:-moz-placeholder { color: #ffffff; }
-
-
-
-#googleSearchBox button.gsc-search-button {
-  background: #881111;  /*CHANGED TO MATCH HEADER BACKGROUND*/
-  
-  /* for possible alternate header
-
-  background: rgba(170,0,0,0.75);
-  
-  */
-  border: none;
-  color: #ffffff;
-  cursor:pointer;
-  display: inline-block;
-  font-family: 'Glyphicons Halflings';
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  height: 36px;
-  line-height: 1;
-  padding: 0px 12px;
-  position: relative;
-  vertical-align:middle;
-  -webkit-font-smoothing: antialiased;
-} 
-
-#googleSearchBox button.gsc-search-button:before {
-  xcontent: "\e003";
-}
-
-
-#googleSearchBox .gsc-clear-button{ 
-  display:none;
-}
-
-#googleSearchBox .gsc-search-button:hover,
-#googleSearchBox .gsc-search-button:focus {
-  color: #fdb913;
-}
-
-/* links in red bar */
-#globalHeaderResourcesLinks {
-   margin: 0;
-   padding: 30px 0px;
-   line-height: 40px;
-   text-align: right;
-   transition: 0.4s;
-   transition-timing-function: ease;
-}
-
-#globalHeaderResourcesLinks li{
-  display: inline-block;
-  margin: 0 1rem;
-}
-#globalHeaderResourcesLinks li a, #globalHeaderResourcesLinks li span{
-  color: #ffffff;
-  cursor: pointer;
-}
-#globalHeaderResourcesLinks li ul li a {
-  color: #333333;
-}
-#globalHeaderResourcesLinks li a:hover, #globalHeaderResourcesLinks li a:focus, 
-#globalHeaderResourcesLinks li span:hover, #globalHeaderResourcesLinks li span:focus{
-  text-decoration:none;
-}
-@media (max-width:991.999px) {
-  #globalHeaderResources {
-    padding: 17px 30px;
-  }
-  #googleSearchBox{
-    padding: 0;
-  }
-  #globalHeaderResourcesLinks{
-    margin: 0 0 0 -10px;
-    text-align:left;
-    padding: 8px 0 25px;
-  }
-}
-@media (max-width: 991.999px) {
-  #globalHeaderResourcesLinks{
-    margin: auto;
-    text-align:center;
-    padding: 20px 0 25px;
-  }
-}
-
-
-/* @media (min-width: 992px) {
-  #googleSearchBox{
-    margin: auto;
-    text-align:center;
-    padding: 20px 0 25px;
-  }
-}*/
-
-/* @media (min-width: 992px) {
-  #globalHeaderResourcesLinks{
-    margin: auto;
-    text-align:center;
-    padding: 28px 0 25px;
-  }
-}*/
-
-/* SU Resources menu */
-#globalHeaderResources .dropdown-menu{
-    margin: 0;
-}
-#globalHeaderResources .dropdown-menu li{
-    margin: 0;
-    width: 100%;
-}
-#globalHeaderResources .dropdown-menu>li>a {
-    color: #333333;
-    font-size: 1.3rem;
-    font-weight: 500;
-    line-height: inherit;
-    padding: 12px 15px;
-    -webkit-backface-visibility: hidden;
-    transition: 0.4s;
-    transition-timing-function: ease;
-}
-
-
-#globalHeaderMiddleInner{
-  border-top:1px solid #ffffff;
-}
-/*navigation in white bar */
-
-#globalHeaderNavigationWrapper {
-  border:0; /* ? */
-  clear:both;
-  margin:0; /* ? */
-  padding:0;
-  background-color: rgb(170, 0, 0);
-  xborder-top: 1px solid rgb(170, 20, 20);
-  position: relative;
-  z-index: 100;
-}
-#globalHeaderNavigation {
-  -webkit-backface-visibility: hidden; /*stops the flickering. Maybe. */
-
-
-  background: rgba(170,0,0,0.75);
-    /* for possible alternate header
-  */
-  /*background: #ffffff;
-  */
-  margin:0;
-  /*padding: 0 0 0 9px;*/
-  position: relative;
-  z-index: 100;
-  text-transform: uppercase;
-  width:100%;
-  transition: 0.4s;
-  transition-timing-function: ease;
-
-}
-
-@media (max-width:991.999px) {
-  #globalHeaderNavigation {
-    padding:0;
-  }
-}
-#globalHeaderNavigation li.dropdown { /* want to remove the class */
-  margin: 0;
-}
-#globalHeaderNavigation li.dropdown a {
-  color: #ffffff;
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1;
-  padding: 25px 24px;
-  transition: 0.4s;
-  transition-timing-function: ease;
-}
-
-@media screen and (max-width:991.999px) { /* sm */
-  #globalHeaderNavigation li.dropdown a {
-    font-size: 1.2rem;
-    padding: 17px 15px;
-  } 
-}
-@media screen and (min-width: 992px) { /* md + lg*/
-  #globalHeaderNavigation li.dropdown a {
-    font-size: 1.2rem;
-	padding: 25px 20px;
-  } 
-}
-
-#globalHeaderNavigation li.mega-dropdown a.dropdown-toggle{
- 
-  /* for possible alternate header
-  background:#ffffff;
-
-  */
-    background: rgba(170,0,0,0.75);
-
-
-}
-#globalHeaderNavigation li.mega-dropdown:active a.dropdown-toggle{
- 
-  /* for possible alternate header
-  background:#ffffff;
- background-color: #f7f7f7;
-  */
-   
-
-
-}
-#globalHeaderNavigation li.mega-dropdown a.dropdown-toggle:focus{
-  color:#000000;
-  text-decoration:underline;
-}
-
-#globalHeaderNavigation li.mega-dropdown:hover a.dropdown-toggle,
-#globalHeaderNavigation li.mega-dropdown:focus a.dropdown-toggle{
-  background-color: #f7f7f7;
-  color:#000000;
-  
-}
-/* #globalHeaderNavigation li.mega-dropdown:hover>a.dropdown-toggle:after, 
-#globalHeaderNavigation li.mega-dropdown:focus>a.dropdown-toggle:after {  yellow triangle */
-  /* border-color: transparent transparent #fdb913 transparent;
-  border-style: solid;
-  border-width: 0 10px 10px 10px;
-  bottom: 0;
-  content:'';
-  height: 0;
-  left:calc(50% - 10px);
-  position: absolute;
-  width: 0;
-}*/
-@media (max-width:991.999px) {
-  #globalHeaderNavigationWrapper li.mega-dropdown:hover>a.dropdown-toggle,
-  #globalHeaderNavigationWrapper li.mega-dropdown:focus>a.dropdown-toggle{
-    color: #aa0000;
-  }
-  /* #globalHeaderNavigationWrapper li.mega-dropdown:hover>a.dropdown-toggle:after,
-  #globalHeaderNavigationWrapper li.mega-dropdown:focus>a.dropdown-toggle:after{
-    content:'';
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #fdb913;
-    position: absolute;
-    left: 0;
-    top: 15px;
-  } */
-}
-#globalHeaderNavigation li.mega-dropdown a .fa-angle-right{
-  color: #04a1b9;
-  font-size: 2rem;
-  font-weight: bold;
-  position: absolute;
-  right: 30px;
-}
-#globalHeaderNavigation li.mega-dropdown.open a .fa-angle-right{
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  transition: 0.5s;
-}
-
-li.dropdown.open span.fa-fa-chevron.visible-inline.blue-arrow {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  transition: 0.5s;
-}
-
-/* a proud achievement */
-
-#globalHeaderResourcesLinks li.dropdown.open .fa.fa-chevron-down.visible-inline.blue-arrow {
-   -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-  transition: 0.4s;
-}
-
-.fa.fa-chevron-down.visible-inline.blue-arrow span:hover {
-  text-decoration: none;
-}
-
-/******** mega drop down menu ********/
-
-#globalHeaderNavigation li.mega-dropdown {
-  position: static;
- /* z-index: 100;*/
-  text-align:center;
-}
-#globalHeaderNavigation li.mega-dropdown a {
-}
-@media (max-width:991.999px) {
-  #globalHeaderNavigationWrapper li.mega-dropdown {
-    margin: 0;
-    text-align: left;
-    width: 100%;
-  }
-}
-#globalHeaderNavigation .mega-dropdown-menu {
-  background: #f7f7f7;
-  border: none; /* remove? */
-  border-radius: 0;
-  /* border-top: 2px solid #fdb913; */
-  line-height:1.6rem; /* remove? */
-  min-height:200px;
-  padding: 75px 30px;
-  width: 100%;
-  -webkit-backface-visibility: hidden; /* remove? */
-  transition: 0.4s;
-  transition-timing-function: ease;
-}
-
-@media (max-width:991.999px) {
-  #globalHeaderNavigation .mega-dropdown-menu {
-    border-top:none;
-    float: none;
-    padding: 30px 0px;
-    overflow: auto;
-    position: static;
-    }   
-}
-
-/******** links in mega drop down menu ********/
-
-#globalHeaderNavigation .globalHeaderNavigationMainLinks{
-  padding:0;
-}
-#globalHeaderNavigation .globalHeaderNavigationMainLinks ul li {
-  max-height: 30px;
-  padding: 0px 5px 52px;
-  list-style-type: none;
-}
-
-@media screen and (min-width: 576px) and (max-width:992px){
-  #globalHeaderNavigation .globalHeaderNavigationMainLinks ul li {
-  max-height: 30px;
-  padding: 0px 20px 65px;
-  list-style-type: none;
-  }
-
-}
-
-#globalHeaderNavigation .globalHeaderNavigationMainLinks ul li a {
-  border-left: 3px solid #f7f7f7;
-  color: #797979;
-  display: block;
-  font-size: 1.4rem;
-  font-weight: 510;
-  letter-spacing: 1px;
-  padding: 0 60px 0 10px;
-  position: relative;
-}
-#globalHeaderNavigation .globalHeaderNavigationMainLinks ul li a:hover,
-#globalHeaderNavigation .globalHeaderNavigationMainLinks ul li a:focus {
-  border-left: 3px solid #04a9c5;
-  text-decoration: none;
-  color: #a00;
-}
-
-/******** Quicklinks in mega drop down menu ********/
-
-#globalHeaderNavigation .globalHeaderNavigationQuickLinks {
-    padding: 0 0 0 60px;
-    border-left: 2px solid #04a9c5;
-}
-@media screen and (max-width:991.999px) { 
-  #globalHeaderNavigation .globalHeaderNavigationQuickLinks {
-    border-left: none;
-    border-top: 2px solid #04a9c5;
-    padding: 30px 32px 0;
-  } 
-}
-
-.globalHeaderNavigationQuickLinks ul {
-  list-style: none;
-  padding: 0;
-}
-
-#globalHeaderNavigation .globalHeaderNavigationQuickLinks h5 {
-  color: #aa0000;
-  font-family: "Oswald", sans-serif;
-  font-size: 1.8rem;
-  font-weight: 400;
-  margin: 0 0 15px 0;
-}
-#globalHeaderNavigation .globalHeaderNavigationQuickLinks li a{
-  display: block;
-  color: #333333;
-  font-size: 1.4rem;
-  font-weight: 500;
-  letter-spacing: 1px;
-  line-height:1.4rem;
-  padding: 5px 0;
-  text-transform:capitalize;
- }
-
-#globalHeaderNavigation .globalHeaderNavigationQuickLinks li a:hover,
-#globalHeaderNavigation .globalHeaderNavigationQuickLinks li a:focus{
-  color:#aa0000;  
-}
-@media (max-width:991.999px) {
-  #globalHeaderNavigation .mega-dropdown-menu .globalHeaderNavigationQuickLinks li a{
-    padding: 10px 5px 10px 0;
-  }
-}
-
-@media (max-width: 991.999px) {
-  #globalHeader { 
-    margin-bottom:0;
-    position:relative;
-  }
-  #globalHeader .navbar-toggle {
-    display: block;
-    right: 0;
-    padding: 11px 10px;
-    }
-  #globalHeader button .glyphicon{
-    color:#aa0000;
-    display:inline-block;
-    float:right;
-    font-size: 18px;
-    width: initial;
-  }
-  #globalHeader button .glyphicon:before{
-    content: '\f0c9';
-    font-family: 'fontawesome';
-  }
-  #globalHeader .navbar-collapse.collapse {
-      display: none!important;
-  }
-  #globalHeader .collapse.in{
-      display:block !important;
-  }
-  .visible-sm-inline {
-    display:inline !important;
-  }
-}
-
-/******** START Disappearing-Reappearing Menu ********/
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-
-  .nav-up {
-      transition: opacity .4s ease !important;
-      opacity: 0 !important;
-      pointer-events: none !important;
-  }
-
-  .nav-down {
-      transition: opacity .4s ease !important;
-      opacity: 1 !important;
-  }
-}
 /******** END Disappearing-Reappearing Menu ********/
 
 
@@ -906,21 +179,6 @@ _____________________  _____________________________  __________________________
 .maxWidth1170px {
     max-width: 1170px;
     margin: auto;
-}
-
-#MainZone .contentItem:last-child {
-    xmargin-bottom: 0px !important;
-}
-
-@media screen and (min-width: 1200px) { /* lg */
-  qqq.container-fluid #SidebarZone { /* Right Column */
-    padding-right:30px;
-    padding-left:30px;
-  } 
-  qqq.container-fluid #zoneC { /* Left Column */
-    padding-right:30px;
-    padding-left:30px;
-  }   
 }
 
 
@@ -1315,7 +573,8 @@ _____________________  _____________________________  __________________________
 #pageTitle { 
   clear: both;
   color: #aa0000;
-  font-family: "Roboto Slab", serif;
+  xfont-family: "Roboto Slab", serif;
+  font-family: "Montserrat", sans-serif;
   font-size:4.8rem;
   hyphens: auto;
   line-height: 100%;
@@ -1355,29 +614,10 @@ _____________________  _____________________________  __________________________
 }
 
 @media screen and (max-width: 1199.999px) { /* xs + sm + md */
-  #MainZone .contentItem{
-    xmargin: 15px 0;
-  }
-}
-@media screen and (min-width: 1200px) { /* lg */
-  #MainZone .contentItem,
-  #SidebarZone .contentItem, 
-  #zoneC .contentItem {
-    xmargin: 30px 0;
-  } 
-}
-
-@media screen and (max-width: 1199.999px) { /* xs + sm + md */
   #MainZone .contentItem:first-of-type,
   #SidebarZone .contentItem:first-of-type{
     margin: 0 0 15px 0;
   } 
-}
-@media screen and (min-width: 1200px) { /* lg */
-  #MainZone .contentItem:first-of-type,
-  #SidebarZone .contentItem:first-of-type{
-    xmargin: 0 0 30px 0;
-  }
 }
 
 @media screen and (max-width: 1199.999px) { /* xs + sm + md */
@@ -1386,13 +626,6 @@ _____________________  _____________________________  __________________________
   #zoneC .noGap + .noGap{
     margin: -15px 0 15px 0;
   }  
-}
-@media screen and (min-width: 1200px) { /* lg */
-  #MainZone .noGap + .noGap,
-  #SidebarZone .noGap + .noGap,
-  #zoneC .noGap + .noGap{
-    xmargin: -30px 0 30px 0;
-  }
 }
 
 @media screen and (max-width: 767.999px) { /* xs */
@@ -1455,7 +688,9 @@ _____________________  _____________________________  __________________________
 
 .standardContent h1 {
   color: #aa0000;
-  font-family: "Roboto Slab", serif;
+  xfont-family: "Roboto Slab", sans-serif;
+  xfont-family: "Oswald", "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 4.8rem;
   line-height: 100%;
   margin-bottom: 10px;
@@ -1466,6 +701,7 @@ _____________________  _____________________________  __________________________
   color: #aa0000;
   clear:both; /* acts as a clearing element */
   font-family: "Montserrat", sans-serif;
+  xfont-family: "Oswald", "Montserrat", sans-serif;
   font-size:2.8rem;
   font-weight: 495;
   margin:30px 0 22px -0; 
@@ -1479,9 +715,12 @@ _____________________  _____________________________  __________________________
 } 
 .standardContent h3 { /* minor headings */
   color: #aa0000;
-  font-family: "Roboto Slab", serif;
+  xfont-family: "Roboto Slab", sans-serif;
+  xfont-family: "Oswald", "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2.1rem;
-  font-weight: 400;
+  xfont-weight: 400;
+  font-weight: 500;
   margin:15px 0 3px 0; 
 } 
 .standardContent h3 a{ /* links in minor headings */
@@ -1493,7 +732,9 @@ _____________________  _____________________________  __________________________
 } 
 .standardContent h4 { 
   color: #aa0000;
-  font-family: "Roboto Slab", serif;
+  xfont-family: "Roboto Slab", sans-serif;
+  xfont-family: "Oswald", "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
   margin:8px 0 3px 0; 
 } 
@@ -1506,7 +747,9 @@ _____________________  _____________________________  __________________________
 } 
 .standardContent h5 { 
   color: #aa0000;
-  font-family: "Roboto Slab", serif;
+  xfont-family: "Roboto Slab", sans-serif;
+  xfont-family: "Oswald", "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   margin:8px 0 3px 0; 
 } 
@@ -1519,7 +762,9 @@ _____________________  _____________________________  __________________________
 } 
 .standardContent h6 {  /* H6s should be disabled. But just in case... */
   color: #333333;
-  font-family: "Roboto Slab", serif;
+  xfont-family: "Roboto Slab", serif;
+  xfont-family: "Oswald", "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   line-height:2;
   text-decoration:none;
@@ -1546,7 +791,8 @@ _____________________  _____________________________  __________________________
 .standardContent p {
   color:#333333;
   font-size: 1.6rem;
-  line-height:2;
+  xline-height:2;
+  line-height: 1.5;
   margin-bottom: 1.6rem;
   font-weight: 500;
 }
@@ -1599,6 +845,23 @@ _____________________  _____________________________  __________________________
 /* ie can't handle the font-family while getting a display property. Using no-flexboxlegacy as a proxy for IE */
 .no-flexboxlegacy #MainZone .standardContent ul li:before, .no-flexboxlegacy #SidebarZone .standardContent ul li:before, .no-flexboxlegacy #zoneC .standardContent ul li:before{
   display:inline !important;
+}
+
+/* List style classes */
+ol.list-LowerAlpha {
+    list-style-type: lower-alpha; /* a */
+}
+
+ol.list-UpperAlpha {
+    list-style-type: upper-alpha; /* A */
+}
+
+ol.list-LowerRoman {
+    list-style-type: lower-roman; /* iv */
+}
+
+ol.list-UpperRoman {
+    list-style-type: upper-roman; /* IV */
 }
 
 /* -------------------------- Blockquote -------------------------- */
@@ -2009,8 +1272,20 @@ img.img-responsive {
   display: block;
 }
 
+.primaryContentWrapper .standardContent p.no-img-padding img {
+    padding: 0;
+}
 
-
+/* Makes sidebar images full bleed */
+@media only screen and (min-width: 576px) {
+    #SidebarZone img {
+        padding: 0;
+    }
+  
+    #SidebarZone figure.image-wrapper {
+        padding: 0;
+      }
+}
 
 /* ==========================================================================================================*/
 /* ============================================ Content Types ===============================================*/
@@ -2063,7 +1338,8 @@ img.img-responsive {
 #SidebarZone #topAlerts .topAlertsTitle span{ 
   color:#ffffff;
   display:block;
-  font-family: "Roboto Slab", serif;
+  xfont-family: "Roboto Slab", serif;
+  font-family: "Montserrat",sans-serif;
   font-weight: 400;
   font-size: 18px;
   padding:10px;
@@ -2604,11 +1880,14 @@ svg.arrow.circle.navy {
 .accordionWrapper h2.accordionTitle {
     color: #aa0000;
     font-family: 'Montserrat', sans-serif;
-    font-size: 35px;
+    xfont-size: 35px;
+    font-size: 2.8rem;
     font-weight: 500;
-    margin-bottom: 30px;
-    margin-left: 0;
+    xmargin-bottom: 30px;
+    xmargin-left: 0;
+    margin: 65px 0 22px 0;
     text-align: center;
+    clear: both;
 }
 
 .accordionWrapper {
@@ -2616,10 +1895,26 @@ svg.arrow.circle.navy {
   margin: 0 auto;
 }
 
+/* Keeps accordion on the grid */
+.accordionWrapper {
+    margin-left: 15px !important;
+    padding-right: 45px;
+}
+
 .accordionWrapper .accordionDescription p {
-  text-align: center;
-  font-size: 19px;
-  margin-bottom: 60px;
+    xtext-align: center;
+    xfont-size: 19px;
+    xmargin-bottom: 60px;
+    color: #333333;
+    font-size: 1.6rem;
+    line-height: 2;
+    margin-bottom: 1.6rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+.accordionTitle.standardContent {
+    padding-left: 0 !important;
 }
 
 .accordionItemList {
@@ -2662,26 +1957,144 @@ svg.arrow.circle.navy {
     margin-top: 80px;
 }
 
+@media only screen and (min-width: 576px) {
+    /* Keeps accordion on the grid */
+    .accordionWrapper {
+        margin-left: 15px !important;
+        padding-right: 45px;
+        xmargin-bottom: 0; /* allows accordions to stack */
+    }
+  
+    /* Indents nested lists to the left */
+    .accordionWrapper ol, .accordionWrapper ul {
+        margin-left: .25em !important;
+    }
+}
 
+/* ==========================================================================================
+   ===== Law - Box Links MainZone =====  Content Type #5526 =================================
+   ==========================================================================================
+   Title, subtitle, paragraph followed by up to three box links (internal, external, media)
+   An adaptation of code from Jumbotron I, Quicklinks, and .boxlinks
+   Last revised 03/18/2021 by Troy 
+*/
 
+.BoxLinksMainZone h2,
+.BoxLinksMainZone h2 a, .BoxLinksMainZone h2 a:visited{
+  text-decoration: none;
+  /* text-transform: uppercase; */
+}
+
+.BoxLinksMainZone h2 a:focus, .BoxLinksMainZone h1 a:hover{
+  text-decoration:underline;
+}
+
+.BoxLinksMainZone h3{
+  color:#333333;
+  margin: 10px 0;
+  padding: 0;
+  /* text-transform: uppercase; */
+}
+
+.BoxLinksMainZone .boxlinks {
+  margin-bottom: 0;
+}
+
+.BoxLinksMainZone ul.boxlinks li{
+  display: flex;
+  flex: 0 1 100%;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 15px;
+}
+
+.BoxLinksMainZone .boxlinks p {
+    clear:both;
+  }
+  
+.BoxLinksMainZone .boxlinks li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (min-width : 768px) { /* Small Devices, Tablets */
+    /* .container */
+    #pageContentWrapper.container #MainZone.col-sm-8 .BoxLinksMainZone ul.boxlinks li,
+    #pageContentWrapper[class=""] #MainZone.col-sm-8 .BoxLinksMainZone ul.boxlinks li{
+        flex: 0 1 calc(50% - 7px);
+        width: 50%;
+    }
+    #pageContentWrapper.container #MainZone.col-sm-12 .BoxLinksMainZone ul.boxlinks li,
+    #pageContentWrapper[class=""] #MainZone.col-sm-12 .BoxLinksMainZone ul.boxlinks li{
+        flex: 0 1 calc(33.33% - 7px);
+        width: 33.33%;
+    }
+    /* .container-fluid */
+    #pageContentWrapper.container-fluid #MainZone.col-sm-8 .BoxLinksMainZone ul.boxlinks li{
+        flex: 0 1 calc(50% - 7px);
+        width: 50%;
+    }
+    #pageContentWrapper.container-fluid #MainZone.col-sm-12 .BoxLinksMainZone ul.boxlinks li{
+        flex: 0 1 calc(33.33% - 7px);
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 992px) { /* Medium Devices, Desktops */
+    /* .container */
+    #pageContentWrapper.container #MainZone.col-md-6 .BoxLinksMainZone ul.boxlinks li,
+    #pageContentWrapper[class=""] #MainZone.col-md-6 .BoxLinksMainZone ul.boxlinks li{
+    flex: 0 1 calc(50% - 7px);
+    width: 50%;
+    }
+    #pageContentWrapper.container #MainZone.col-md-9 .BoxLinksMainZone ul.boxlinks li,
+    #pageContentWrapper[class=""] #MainZone.col-md-9 .BoxLinksMainZone ul.boxlinks li{
+    flex: 0 1 calc(33.33% - 7px);
+    width: 33.33%;
+    }
+    #pageContentWrapper.container #MainZone.col-md-12 .BoxLinksMainZone ul.boxlinks li,
+    #pageContentWrapper[class=""] #MainZone.col-md-12 .BoxLinksMainZone ul.boxlinks li{
+    flex: 0 1 calc(25% - 7px);
+    width: 25%;
+    }
+    /* .container-fluid */
+    #pageContentWrapper.container-fluid #MainZone.col-md-6 .BoxLinksMainZone ul.boxlinks li{
+    flex: 0 1 calc(50% - 7px);
+    width: 50%;
+    }
+    #pageContentWrapper.container-fluid #MainZone.col-md-9 .BoxLinksMainZone ul.boxlinks li{
+    flex: 0 1 calc(33.33% - 7px);
+    width: 33.33%;
+    }
+    #pageContentWrapper.container-fluid #MainZone.col-md-12 .BoxLinksMainZone ul.boxlinks li{
+    flex: 0 1 calc(25% - 7px);
+    width: 25%;
+    }
+}
 
 /* ==========================================================================================
    ===== Call to Action Feature ===== Content Type #5190 ==================================== 
    ==========================================================================================
 */
 
-.callToActionWrapper{
+.callToActionWrapper {
   background-repeat:no-repeat;
   background-size:cover;
   display:block;
   padding:0;
   margin-bottom: 0px !important;
 }
-.callToActionOverlay{
-  background: rgba(247,247,247,0.75); /*Default white*/
-  width:100%;
-  margin:auto auto;
+
+/*Default white*/
+.callToActionOverlay {
+  background: rgba(247,247,247,0.75);
+  height: -webkit-fill-available;
+  margin: auto auto;
+  width: 100%;
 }
+
 .callToActionWrapper .callToActionOverlayColorGold{
   background: rgba(253,185,19,0.75);
 }
@@ -2768,12 +2181,6 @@ svg.arrow.circle.navy {
 	text-decoration: underline;
 }
 
-
-@media screen and (min-width: 1200px) {
-  .callToActionButtonWrapper {
-    xwidth: 75%;
-  }
-}
 @media screen and (max-width: 768px) { 
   .callToActionButton {
     margin-bottom: 25px;
@@ -3121,7 +2528,7 @@ svg.arrow.circle.navy {
   margin: 30px;
   font-family: "Montserrat", sans-serif;
   color: #333333;
-  border-bottom: 1px solid #6f6f6f;
+  xborder-bottom: 1px solid #6f6f6f;
   padding: 0  0 30px 0;
 }
 
@@ -3940,7 +3347,182 @@ h2.contactBoxTitle {
 	max-width: 450px; 
 }
 
+/* ==========================================================================================
+   ===== Law - Contact Box (Single) ===== Content Type #5529 ================================
+   ==========================================================================================
+   An adaptation of 'Law - Contact Box' with a single stackable contact box 
+   and additional 'Phone 2' and 'Fax' fields.
+   Added 4/1/2021 by Troy
 
+*/
+
+.contactBoxSingleWrapper {
+    color: #ffffff;
+    padding: 2em 2em 3.5em 2em;
+}
+
+.contactBoxSingleInfoWrapper {
+    padding-right: 2em;
+}
+
+.contactBoxSingleWrapper h2 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 15px 0 15px 0;
+    text-align: center;
+}
+
+h2.contactBoxSingleTitle {
+    padding-top: 2vh;
+    padding-bottom: 4vh;
+}
+
+.contactBoxSingleInfo h3 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.0rem;
+    color:unset !important;
+}
+
+.contactBoxSingleInfo p {
+    margin: 0;
+    padding-left: 0;
+    line-height: 3.2rem;
+    font-size: 1.6rem;
+    color:unset !important;
+}
+
+.contactBoxSingleInfoEmail a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contactBoxSingleInfoEmail a:hover, .contactBoxSingleInfoEmail a:focus {
+    color: #aa0000;
+    text-decoration: underline;
+}
+
+.contactBoxSingleInfo {
+    text-align: left;
+}
+
+.contactBoxSingleInfoPosition {
+    padding-bottom: 15px;
+}
+
+.contactBoxSingleInfoAdditional {
+    padding: 15px 0 0 0;
+}
+
+.displayNone {
+    display: none !important;
+}
+
+.contactBoxSinglePhoto {
+    margin: 0 auto 50px;
+    max-width: 220px;
+    height: auto;
+    overflow: hidden;
+}
+
+.contactBoxSinglePhoto img {
+    padding: 0;
+    border-radius: 500px;
+    width: inherit !important;
+}
+
+/* Default Contact Box (Single) background and text colors */
+.contactBoxSingleWrapper.contactBoxSingleColorSUBlack {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.contactBoxSingleWrapper.contactBoxSingleColorBlue {
+    background-color: #088099;
+    color: #ffffff;
+}
+
+.contactBoxSingleWrapper.contactBoxSingleColorNavyBlue {
+    background-color: #003282;
+    color: #ffffff;
+}
+
+.contactBoxSingleWrapper.contactBoxSingleColorTaupeBrown {
+    background-color: #807060;
+    color: #ffffff;
+}
+
+.contactBoxSingleWrapper.contactBoxSingleColorEmerald {
+    background-color: #008765;
+    color: #ffffff;
+}
+
+.contactBoxSingleWrapper.contactBoxSingleColorGold {
+    background-color: #cc9f26;
+    color: #000000 !important;
+}
+
+.contactBoxSingleWrapper.contactBoxSingleColorGreen {
+    background-color: #55b31b;
+    color: #000000;
+}
+
+.contactBoxSingleWrapper.contactBoxSingleColorForestGreen {
+    background-color: #124a12;
+    color: #ffffff;
+}
+
+.contactBoxSingleWrapper.contactBoxSingleColorSURed {
+    background-color: #aa0000;
+    color: #ffffff;
+}
+
+.contactBoxSingleWrapper.contactBoxSingleColorRedOrange {
+    background-color: #ef4135;
+    color: #000000;
+    text-shadow: 1px 1px #E22012;
+}
+
+.contactBoxSingleWrapper.contactBoxSingleColorWhite {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.contactBoxSingleWrapper.contactBoxSingleColorYellow {
+    background-color:#fdb913;
+    color: #000000;
+}
+
+.contactBoxSingleWrapper.contactBoxSingleColorYellowTint {
+    background-color: #f7f7f7;
+    color: #333333;
+}
+
+/* Custom Contact Box (Single) text colors */
+.contactBoxSingleColorWhite h2, .contactBoxSingleColorWhite h3 {
+    color: #aa0000 !important;
+}
+
+.contactBoxSingleColorYellowTint h2, .contactBoxSingleColorYellowTint h3 {
+    color: #aa0000 !important;
+} 
+
+.contactBoxSingleColorSUBlack a, .contactBoxSingleColorBlue a, .contactBoxSingleColorNavyBlue a, 
+.contactBoxSingleColorTaupeBrown a, .contactBoxSingleColorEmerald a, 
+.contactBoxSingleColorForestGreen a, .contactBoxSingleColorSURed a {
+    color: #ffffff;
+}
+
+.contactBoxSingleColorGold a, .contactBoxSingleColorGreen a, 
+.contactBoxSingleColorRedOrange a, .contactBoxSingleColorYellow a {
+    color: #000000;
+}
+
+.contactBoxSingleColorSURed a:hover, .contactBoxSingleColorRedOrange a:hover, 
+.contactBoxSingleColorGreen a:hover, .contactBoxSingleColorForestGreen a:hover {
+    color: #088099;
+}
 
 /* ==========================================================================================
    ===== Dual column Content ===== Content Type #5217 ======================================== 
@@ -3949,6 +3531,9 @@ h2.contactBoxTitle {
 
 */
 
+.dualColumnWrapper {}
+.dualColumn {}
+
 /* START optional centered headline above dual columns */
 .dc-headline {
     text-align: center;
@@ -3956,84 +3541,53 @@ h2.contactBoxTitle {
 }
 
 .dc-headline h2 {
-    font-size: 4.5rem;	
+    font-size: 4.5rem;
 }
 /* END optional centered headline above dual columns */
 
-.dualColumnWrapper{ }
-.dualColumn { }
-
 article.dualColumn a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 article.dualColumn a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
-@media screen and (max-width: 767.999px) { /* xs */
-  .column1, .column2{ 
-    padding:15px;
-  } 
-}
-
-@media screen and (min-width: 768px) { /* sm + md + lg*/
-  .column1{
-    padding-left:0;
-  }
-  .column2{ 
-    padding-right:8px;
-  } 
+/* X-Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    .column1, .column2 {
+        xpadding-left: 0;
+    }
 }
 
 /* ==========================================================================================
-   ===== Triple Column Content ===== Content Type #5489 ===================================== 
+   ===== Law - Triple Column Content ===== Content Type #5489 =============================== 
    ==========================================================================================
    Three HTML blocks placed side-by-side with one centered HTML block above
+   Updated 4/6/2021 by Troy
 
 */
 
-/* START optional centered headline above dual columns */
 .tc-headline {
-    text-align: center;
-    padding-bottom: 50px;
+    margin-bottom: 2em;
 }
-
-.tc-headline h2 {
-    font-size: 4.5rem;	
-}
-/* END optional centered headline above dual columns */
-
-.tripleColumnWrapper { 
-  padding: 0 10px 0 10px;
-}
-
-.tripleColumn { }
 
 article.tripleColumn a {
-	text-decoration: none;
+    color: #088099;
+    text-decoration: none;
 }
 
 article.tripleColumn a:hover {
-	text-decoration: underline;
+    color: #aa0000;
+    text-decoration: underline;
 }
 
-@media screen and (max-width: 767.999px) { /* xs */
-  .column1, .column2, .column3 { 
-    padding: 15px;
-  } 
-}
-
-@media screen and (min-width: 768px) { /* sm + md + lg*/
-  .column1{
-    padding-left: 0;
-  }
-  .column2{ 
-    padding-right: 8px;
-  }
-  .column3{ 
-    padding-right: 0;
-  }  
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .tc-headline h2 {
+        font-size: 4rem;
+        margin-bottom: .75em;
+    }
 }
 
 /* ========================================================================================== 
@@ -4223,79 +3777,128 @@ article.tripleColumn a:hover {
     font-weight: bold;
 }
 
-
-
 /* ==========================================================================================
    ===== Focus Box ===== Content Type #5178 ================================================== 
    ==========================================================================================
-   Text-based box in sidebar
-
+   A rich text field with optional background colors
+   Last revised 4/12/2021 by Troy 
 */
 
-focusBoxWrapper .colorOrange .focusBoxContent blockquote{ color:#000000
-;}.focusBoxWrapper .colorGold { background-color:#fdb913
-;}
-.focusBoxWrapper .colorGold .focusBoxContent p,
-.focusBoxWrapper .colorGold .focusBoxContent h1,
-.focusBoxWrapper .colorGold .focusBoxContent h2,
-.focusBoxWrapper .colorGold .focusBoxContent h3,
-.focusBoxWrapper .colorGold .focusBoxContent h4,
-.focusBoxWrapper .colorGold .focusBoxContent h5,
-.focusBoxWrapper .colorGold .focusBoxContent ul,
-.focusBoxWrapper .colorGold .focusBoxContent ul li:before,
-.focusBoxWrapper .colorGold .focusBoxContent ol,
-.focusBoxWrapper .colorGold .focusBoxContent blockquote{ color:#000000
-;}.focusBoxWrapper .colorGreen { background-color:#55b31b
-;}
-.focusBoxWrapper .colorGreen .focusBoxContent p,
-.focusBoxWrapper .colorGreen .focusBoxContent h1,
-.focusBoxWrapper .colorGreen .focusBoxContent h2,
-.focusBoxWrapper .colorGreen .focusBoxContent h3,
-.focusBoxWrapper .colorGreen .focusBoxContent h4,
-.focusBoxWrapper .colorGreen .focusBoxContent h5,
-.focusBoxWrapper .colorGreen .focusBoxContent ul,
-.focusBoxWrapper .colorGreen .focusBoxContent ul li:before,
-.focusBoxWrapper .colorGreen .focusBoxContent ol,
-.focusBoxWrapper .colorGreen .focusBoxContent blockquote{ color:#000000
-;}.focusBoxWrapper .colorDarkGreen { background-color:#124a12
-;}
-.focusBoxWrapper .colorDarkGreen .focusBoxContent p,
-.focusBoxWrapper .colorDarkGreen .focusBoxContent h1,
-.focusBoxWrapper .colorDarkGreen .focusBoxContent h2,
-.focusBoxWrapper .colorDarkGreen .focusBoxContent h3,
-.focusBoxWrapper .colorDarkGreen .focusBoxContent h4,
-.focusBoxWrapper .colorDarkGreen .focusBoxContent h5,
-.focusBoxWrapper .colorDarkGreen .focusBoxContent ul,
-.focusBoxWrapper .colorDarkGreen .focusBoxContent ul li:before,
-.focusBoxWrapper .colorDarkGreen .focusBoxContent ol,
-.focusBoxWrapper .colorDarkGreen .focusBoxContent blockquote{ color:#ffffff
-;}
-.focusBoxWrapper .colorDarkBlue { background-color:#003282
-;}
-.focusBoxWrapper .colorDarkBlue .focusBoxContent p,
-.focusBoxWrapper .colorDarkBlue .focusBoxContent h1,
-.focusBoxWrapper .colorDarkBlue .focusBoxContent h2,
-.focusBoxWrapper .colorDarkBlue .focusBoxContent h3,
-.focusBoxWrapper .colorDarkBlue .focusBoxContent h4,
-.focusBoxWrapper .colorDarkBlue .focusBoxContent h5,
-.focusBoxWrapper .colorDarkBlue .focusBoxContent ul,
-.focusBoxWrapper .colorDarkBlue .focusBoxContent ul li:before,
-.focusBoxWrapper .colorDarkBlue .focusBoxContent ol,
-.focusBoxWrapper .colorDarkBlue .focusBoxContent blockquote{ color:#ffffff
-;}.focusBoxWrapper .colorLightBlue { background-color:#088099
-;}
-.focusBoxWrapper .colorLightBlue .focusBoxContent p,
-.focusBoxWrapper .colorLightBlue .focusBoxContent h1,
-.focusBoxWrapper .colorLightBlue .focusBoxContent h2,
-.focusBoxWrapper .colorLightBlue .focusBoxContent h3,
-.focusBoxWrapper .colorLightBlue .focusBoxContent h4,
-.focusBoxWrapper .colorLightBlue .focusBoxContent h5,
-.focusBoxWrapper .colorLightBlue .focusBoxContent ul,
-.focusBoxWrapper .colorLightBlue .focusBoxContent ul li:before,
-.focusBoxWrapper .colorLightBlue .focusBoxContent ol,
-.focusBoxWrapper .colorLightBlue .focusBoxContent blockquote{ color:#ffffff
-;}.focusBoxWrapper .colorEmerald { background-color:#008765
-;}
+.focusBoxWrapper {
+  margin-bottom:2rem;
+}
+
+.focusBox {
+  padding: 3rem;
+}
+
+.focusboxWrapper .focusBox img {
+  padding: 0;
+}
+
+.focusBox .focusBoxText p, .focusBox .focusBoxText ul, .focusBox .focusBoxText ol {
+  margin-left: 0;
+}
+
+.focusBoxWrapper .color {
+  background: #f7f7f7;
+}
+
+.focusBoxWrapper .colorSUBlack { /* SU Black */
+  background-color:#333333;
+}
+.focusBoxWrapper .colorSUBlack .focusBoxContent p,
+.focusBoxWrapper .colorSUBlack .focusBoxContent h1,
+.focusBoxWrapper .colorSUBlack .focusBoxContent h2,
+.focusBoxWrapper .colorSUBlack .focusBoxContent h3,
+.focusBoxWrapper .colorSUBlack .focusBoxContent h4,
+.focusBoxWrapper .colorSUBlack .focusBoxContent h5,
+.focusBoxWrapper .colorSUBlack .focusBoxContent ul,
+.focusBoxWrapper .colorSUBlack .focusBoxContent ul li:before,
+.focusBoxWrapper .colorSUBlack .focusBoxContent ol,
+.focusBoxWrapper .colorSUBlack .focusBoxContent blockquote,
+.focusBoxWrapper .colorSUBlack .focusBoxContent cite,
+.focusBoxWrapper .colorSUBlack .focusBoxContent i.fa { 
+  color:#ffffff;
+}
+.focusBoxWrapper .colorSUBlack .focusBoxContent a:link { color:#ffffff; }
+.focusBoxWrapper .colorSUBlack .focusBoxContent a:visited { color:#f7f7f7; }
+.focusBoxWrapper .colorSUBlack .focusBoxContent a:hover { color:#aa0000; }
+.focusBoxWrapper .colorSUBlack .focusBoxContent a:active { color:#088099 !important; }
+.focusBoxWrapper .colorSUBlack .focusBoxContent a:focus { color:#aa0000; }
+
+.focusBoxWrapper .colorBlue { /* Blue */
+  background-color:#088099;
+}
+.focusBoxWrapper .colorBlue .focusBoxContent p,
+.focusBoxWrapper .colorBlue .focusBoxContent h1,
+.focusBoxWrapper .colorBlue .focusBoxContent h2,
+.focusBoxWrapper .colorBlue .focusBoxContent h3,
+.focusBoxWrapper .colorBlue .focusBoxContent h4,
+.focusBoxWrapper .colorBlue .focusBoxContent h5,
+.focusBoxWrapper .colorBlue .focusBoxContent ul,
+.focusBoxWrapper .colorBlue .focusBoxContent ul li:before,
+.focusBoxWrapper .colorBlue .focusBoxContent ol,
+.focusBoxWrapper .colorBlue .focusBoxContent blockquote,
+.focusBoxWrapper .colorBlue .focusBoxContent cite,
+.focusBoxWrapper .colorBlue .focusBoxContent i.fa { 
+  color:#ffffff;
+}
+.focusBoxWrapper .colorBlue .focusBoxContent a:link { color:#ffffff; }
+.focusBoxWrapper .colorBlue .focusBoxContent a:visited { color:#f7f7f7; }
+.focusBoxWrapper .colorBlue .focusBoxContent a:hover { color:#aa0000; }
+.focusBoxWrapper .colorBlue .focusBoxContent a:active { color:#000000 !important;}
+.focusBoxWrapper .colorBlue .focusBoxContent a:focus { color:#aa0000; }
+
+.focusBoxWrapper .colorNavyBlue { /* Navy Blue */
+  background-color:#003282;
+}
+.focusBoxWrapper .colorNavyBlue .focusBoxContent p,
+.focusBoxWrapper .colorNavyBlue .focusBoxContent h1,
+.focusBoxWrapper .colorNavyBlue .focusBoxContent h2,
+.focusBoxWrapper .colorNavyBlue .focusBoxContent h3,
+.focusBoxWrapper .colorNavyBlue .focusBoxContent h4,
+.focusBoxWrapper .colorNavyBlue .focusBoxContent h5,
+.focusBoxWrapper .colorNavyBlue .focusBoxContent ul,
+.focusBoxWrapper .colorNavyBlue .focusBoxContent ul li:before,
+.focusBoxWrapper .colorNavyBlue .focusBoxContent ol,
+.focusBoxWrapper .colorNavyBlue .focusBoxContent blockquote,
+.focusBoxWrapper .colorNavyBlue .focusBoxContent cite,
+.focusBoxWrapper .colorNavyBlue .focusBoxContent i.fa { 
+  color:#ffffff;
+}
+.focusBoxWrapper .colorNavyBlue .focusBoxContent a:link { color:#ffffff; }
+.focusBoxWrapper .colorNavyBlue .focusBoxContent a:visited { color:#f7f7f7; }
+.focusBoxWrapper .colorNavyBlue .focusBoxContent a:hover { color:#aa0000; }
+.focusBoxWrapper .colorNavyBlue .focusBoxContent a:active { color:#ef4135 !important; }
+.focusBoxWrapper .colorNavyBlue .focusBoxContent a:focus { color:#aa0000; }
+
+.focusBoxWrapper .colorTaupeBrown { /* Taupe Brown */
+  background-color:#807060;
+}
+.focusBoxWrapper .colorTaupeBrown .focusBoxContent p,
+.focusBoxWrapper .colorTaupeBrown .focusBoxContent h1,
+.focusBoxWrapper .colorTaupeBrown .focusBoxContent h2,
+.focusBoxWrapper .colorTaupeBrown .focusBoxContent h3,
+.focusBoxWrapper .colorTaupeBrown .focusBoxContent h4,
+.focusBoxWrapper .colorTaupeBrown .focusBoxContent h5,
+.focusBoxWrapper .colorTaupeBrown .focusBoxContent ul,
+.focusBoxWrapper .colorTaupeBrown .focusBoxContent ul li:before,
+.focusBoxWrapper .colorTaupeBrown .focusBoxContent ol,
+.focusBoxWrapper .colorTaupeBrown .focusBoxContent blockquote,
+.focusBoxWrapper .colorTaupeBrown .focusBoxContent cite,
+.focusBoxWrapper .colorTaupeBrown .focusBoxContent i.fa { 
+  color:#ffffff;
+}
+.focusBoxWrapper .colorTaupeBrown .focusBoxContent a:link { color:#ffffff; }
+.focusBoxWrapper .colorTaupeBrown .focusBoxContent a:visited { color:#f7f7f7; }
+.focusBoxWrapper .colorTaupeBrown .focusBoxContent a:hover { color:#aa0000; }
+.focusBoxWrapper .colorTaupeBrown .focusBoxContent a:active { color:#088099 !important; }
+.focusBoxWrapper .colorTaupeBrown .focusBoxContent a:focus { color:#aa0000; }
+
+.focusBoxWrapper .colorEmerald { /* Emerald */
+  background-color:#008765;
+}
 .focusBoxWrapper .colorEmerald .focusBoxContent p,
 .focusBoxWrapper .colorEmerald .focusBoxContent h1,
 .focusBoxWrapper .colorEmerald .focusBoxContent h2,
@@ -4305,53 +3908,231 @@ focusBoxWrapper .colorOrange .focusBoxContent blockquote{ color:#000000
 .focusBoxWrapper .colorEmerald .focusBoxContent ul,
 .focusBoxWrapper .colorEmerald .focusBoxContent ul li:before,
 .focusBoxWrapper .colorEmerald .focusBoxContent ol,
-.focusBoxWrapper .colorEmerald .focusBoxContent blockquote{ color:#ffffff
-;}.focusBoxWrapper .colorBrown { background-color:#124a12
-;}
-.focusBoxWrapper .colorBrown .focusBoxContent p,
-.focusBoxWrapper .colorBrown .focusBoxContent h1,
-.focusBoxWrapper .colorBrown .focusBoxContent h2,
-.focusBoxWrapper .colorBrown .focusBoxContent h3,
-.focusBoxWrapper .colorBrown .focusBoxContent h4,
-.focusBoxWrapper .colorBrown .focusBoxContent h5,
-.focusBoxWrapper .colorBrown .focusBoxContent ul,
-.focusBoxWrapper .colorBrown .focusBoxContent ul li:before,
-.focusBoxWrapper .colorBrown .focusBoxContent ol,
-.focusBoxWrapper .colorBrown .focusBoxContent blockquote{ color:#ffffff
-;}.focusBoxWrapper .colorBlack { background-color:#333333
-;}
-.focusBoxWrapper .colorBlack .focusBoxContent p,
-.focusBoxWrapper .colorBlack .focusBoxContent h1,
-.focusBoxWrapper .colorBlack .focusBoxContent h2,
-.focusBoxWrapper .colorBlack .focusBoxContent h3,
-.focusBoxWrapper .colorBlack .focusBoxContent h4,
-.focusBoxWrapper .colorBlack .focusBoxContent h5,
-.focusBoxWrapper .colorBlack .focusBoxContent ul,
-.focusBoxWrapper .colorBlack .focusBoxContent ul li:before,
-.focusBoxWrapper .colorBlack .focusBoxContent ol,
-.focusBoxWrapper .colorBlack .focusBoxContent blockquote{ color:#ffffff
-;}
+.focusBoxWrapper .colorEmerald .focusBoxContent blockquote,
+.focusBoxWrapper .colorEmerald .focusBoxContent cite,
+.focusBoxWrapper .colorEmerald .focusBoxContent i.fa { 
+  color:#ffffff;
+}
+.focusBoxWrapper .colorEmerald .focusBoxContent a:link { color:#ffffff; }
+.focusBoxWrapper .colorEmerald .focusBoxContent a:visited { color:#f7f7f7; }
+.focusBoxWrapper .colorEmerald .focusBoxContent a:hover { color:#aa0000; }
+.focusBoxWrapper .colorEmerald .focusBoxContent a:active { color:#000000 !important; }
+.focusBoxWrapper .colorEmerald .focusBoxContent a:focus { color:#aa0000; }
 
-.focusBoxWrapper{
-  /*border-bottom: 2px solid #aa0000;*/
-  margin-bottom:20px;
+.focusBoxWrapper .colorGold { /* Gold */
+  background-color:#cc9f26;
+}
+.focusBoxWrapper .colorGold .focusBoxContent p,
+.focusBoxWrapper .colorGold .focusBoxContent h1,
+.focusBoxWrapper .colorGold .focusBoxContent h2,
+.focusBoxWrapper .colorGold .focusBoxContent h3,
+.focusBoxWrapper .colorGold .focusBoxContent h4,
+.focusBoxWrapper .colorGold .focusBoxContent h5,
+.focusBoxWrapper .colorGold .focusBoxContent ul,
+.focusBoxWrapper .colorGold .focusBoxContent ul li:before,
+.focusBoxWrapper .colorGold .focusBoxContent ol,
+.focusBoxWrapper .colorGold .focusBoxContent blockquote,
+.focusBoxWrapper .colorGold .focusBoxContent cite,
+.focusBoxWrapper .colorGold .focusBoxContent i.fa { 
+  color:#000000;
+}
+.focusBoxWrapper .colorGold .focusBoxContent a:link { color:#000000 !important; }
+.focusBoxWrapper .colorGold .focusBoxContent a:visited { color:#333333; }
+.focusBoxWrapper .colorGold .focusBoxContent a:hover { color:#aa0000; }
+.focusBoxWrapper .colorGold .focusBoxContent a:active { color:#088099 !important; }
+.focusBoxWrapper .colorGold .focusBoxContent a:focus { color:#aa0000; }
+
+.focusBoxWrapper .colorGreen { /* Green */
+  background-color:#55b31b;
+}
+.focusBoxWrapper .colorGreen .focusBoxContent p,
+.focusBoxWrapper .colorGreen .focusBoxContent h1,
+.focusBoxWrapper .colorGreen .focusBoxContent h2,
+.focusBoxWrapper .colorGreen .focusBoxContent h3,
+.focusBoxWrapper .colorGreen .focusBoxContent h4,
+.focusBoxWrapper .colorGreen .focusBoxContent h5,
+.focusBoxWrapper .colorGreen .focusBoxContent ul,
+.focusBoxWrapper .colorGreen .focusBoxContent ul li:before,
+.focusBoxWrapper .colorGreen .focusBoxContent ol,
+.focusBoxWrapper .colorGreen .focusBoxContent blockquote,
+.focusBoxWrapper .colorGreen .focusBoxContent cite,
+.focusBoxWrapper .colorGreen .focusBoxContent i.fa { 
+  color:#000000;
+}
+.focusBoxWrapper .colorGreen .focusBoxContent a:link { color:#000000; }
+.focusBoxWrapper .colorGreen .focusBoxContent a:visited { color:#333333; }
+.focusBoxWrapper .colorGreen .focusBoxContent a:hover { color:#ef4135; }
+.focusBoxWrapper .colorGreen .focusBoxContent a:active { color:#cc9f26 !important; }
+.focusBoxWrapper .colorGreen .focusBoxContent a:focus { color:#ef4135; }
+
+.focusBoxWrapper .colorForestGreen { /* Forest Green */
+  background-color:#124a12;
+}
+.focusBoxWrapper .colorForestGreen .focusBoxContent p,
+.focusBoxWrapper .colorForestGreen .focusBoxContent h1,
+.focusBoxWrapper .colorForestGreen .focusBoxContent h2,
+.focusBoxWrapper .colorForestGreen .focusBoxContent h3,
+.focusBoxWrapper .colorForestGreen .focusBoxContent h4,
+.focusBoxWrapper .colorForestGreen .focusBoxContent h5,
+.focusBoxWrapper .colorForestGreen .focusBoxContent ul,
+.focusBoxWrapper .colorForestGreen .focusBoxContent ul li:before,
+.focusBoxWrapper .colorForestGreen .focusBoxContent ol,
+.focusBoxWrapper .colorForestGreen .focusBoxContent blockquote,
+.focusBoxWrapper .colorForestGreen .focusBoxContent cite,
+.focusBoxWrapper .colorForestGreen .focusBoxContent i.fa { 
+  color:#ffffff;
+}
+.focusBoxWrapper .colorForestGreen .focusBoxContent a:link { color:#ffffff; }
+.focusBoxWrapper .colorForestGreen .focusBoxContent a:visited { color:#f7f7f7; }
+.focusBoxWrapper .colorForestGreen .focusBoxContent a:hover { color:#ef4135; }
+.focusBoxWrapper .colorForestGreen .focusBoxContent a:active { color:#cc9f26 !important; }
+.focusBoxWrapper .colorForestGreen .focusBoxContent a:focus { color:#ef4135; }
+
+.focusBoxWrapper .colorSURed { /* SU Red */
+  background-color:#aa0000;
+}
+.focusBoxWrapper .colorSURed .focusBoxContent p,
+.focusBoxWrapper .colorSURed .focusBoxContent h1,
+.focusBoxWrapper .colorSURed .focusBoxContent h2,
+.focusBoxWrapper .colorSURed .focusBoxContent h3,
+.focusBoxWrapper .colorSURed .focusBoxContent h4,
+.focusBoxWrapper .colorSURed .focusBoxContent h5,
+.focusBoxWrapper .colorSURed .focusBoxContent ul,
+.focusBoxWrapper .colorSURed .focusBoxContent ul li:before,
+.focusBoxWrapper .colorSURed .focusBoxContent ol,
+.focusBoxWrapper .colorSURed .focusBoxContent blockquote,
+.focusBoxWrapper .colorSURed .focusBoxContent cite,
+.focusBoxWrapper .colorSURed .focusBoxContent i.fa { 
+  color:#ffffff;
+}
+.focusBoxWrapper .colorSURed .focusBoxContent a:link { color:#ffffff; }
+.focusBoxWrapper .colorSURed .focusBoxContent a:visited { color:#f7f7f7; }
+.focusBoxWrapper .colorSURed .focusBoxContent a:hover { color:#cc9f26; }
+.focusBoxWrapper .colorSURed .focusBoxContent a:active { color:#088099 !important; }
+.focusBoxWrapper .colorSURed .focusBoxContent a:focus { color:#cc9f26; }
+
+.focusBoxWrapper .colorRedOrange { /* Red Orange */
+  background-color:#ef4135;
+}
+.focusBoxWrapper .colorRedOrange .focusBoxContent p,
+.focusBoxWrapper .colorRedOrange .focusBoxContent h1,
+.focusBoxWrapper .colorRedOrange .focusBoxContent h2,
+.focusBoxWrapper .colorRedOrange .focusBoxContent h3,
+.focusBoxWrapper .colorRedOrange .focusBoxContent h4,
+.focusBoxWrapper .colorRedOrange .focusBoxContent h5,
+.focusBoxWrapper .colorRedOrange .focusBoxContent ul,
+.focusBoxWrapper .colorRedOrange .focusBoxContent ul li:before,
+.focusBoxWrapper .colorRedOrange .focusBoxContent ol,
+.focusBoxWrapper .colorRedOrange .focusBoxContent blockquote,
+.focusBoxWrapper .colorRedOrange .focusBoxContent cite,
+.focusBoxWrapper .colorRedOrange .focusBoxContent i.fa,
+.focusBoxWrapper .colorRedOrange .focusBoxContent a { 
+  color:#000000;
+}
+.focusBoxWrapper .colorRedOrange .focusBoxContent a:link { color:#000000; }
+.focusBoxWrapper .colorRedOrange .focusBoxContent a:visited { color:#333333; }
+.focusBoxWrapper .colorRedOrange .focusBoxContent a:hover { color:#cc9f26; }
+.focusBoxWrapper .colorRedOrange .focusBoxContent a:active { color:#088099 !important; }
+.focusBoxWrapper .colorRedOrange .focusBoxContent a:focus { color:#cc9f26; }
+
+.focusBoxWrapper .colorWhite { /* White */
+  background-color:#ffffff;
+}
+.focusBoxWrapper .colorWhite .focusBoxContent p,
+.focusBoxWrapper .colorWhite .focusBoxContent h1,
+.focusBoxWrapper .colorWhite .focusBoxContent h2,
+.focusBoxWrapper .colorWhite .focusBoxContent h3,
+.focusBoxWrapper .colorWhite .focusBoxContent h4,
+.focusBoxWrapper .colorWhite .focusBoxContent h5,
+.focusBoxWrapper .colorWhite .focusBoxContent ul,
+.focusBoxWrapper .colorWhite .focusBoxContent ul li:before,
+.focusBoxWrapper .colorWhite .focusBoxContent ol,
+.focusBoxWrapper .colorWhite .focusBoxContent blockquote,
+.focusBoxWrapper .colorWhite .focusBoxContent cite,
+.focusBoxWrapper .colorWhite .focusBoxContent i.fa { 
+  color:#333333;
 }
 
+.focusBoxWrapper .colorYellow { /* Yellow */
+  background-color:#fdb913;
+}
+.focusBoxWrapper .colorYellow .focusBoxContent p,
+.focusBoxWrapper .colorYellow .focusBoxContent h1,
+.focusBoxWrapper .colorYellow .focusBoxContent h2,
+.focusBoxWrapper .colorYellow .focusBoxContent h3,
+.focusBoxWrapper .colorYellow .focusBoxContent h4,
+.focusBoxWrapper .colorYellow .focusBoxContent h5,
+.focusBoxWrapper .colorYellow .focusBoxContent ul,
+.focusBoxWrapper .colorYellow .focusBoxContent ul li:before,
+.focusBoxWrapper .colorYellow .focusBoxContent ol,
+.focusBoxWrapper .colorYellow .focusBoxContent blockquote,
+.focusBoxWrapper .colorYellow .focusBoxContent cite,
+.focusBoxWrapper .colorYellow .focusBoxContent i.fa,
+.focusBoxWrapper .colorYellow .focusBoxContent a { 
+  color:#000000;
+}
+.focusBoxWrapper .colorYellow .focusBoxContent a:link { color:#000000; }
+.focusBoxWrapper .ccolorYellow .focusBoxContent a:visited { color:#333333; }
+.focusBoxWrapper .colorYellow .focusBoxContent a:hover { color:#aa0000; }
+.focusBoxWrapper .colorYellow .focusBoxContent a:active { color:#088099 !important; }
+.focusBoxWrapper .colorYellow .focusBoxContent a:focus { color:#aa0000; }
 
-.focusBoxWrapper .color {
-  background: #f7f7f7
+.focusBoxWrapper .colorYellowTint { /* Yellow Tint */
+  background-color:#f7f7f7;
+}
+.focusBoxWrapper .colorYellowTint .focusBoxContent h2,
+.focusBoxWrapper .colorYellowTint .focusBoxContent p,
+.focusBoxWrapper .colorYellowTint .focusBoxContent h3,
+.focusBoxWrapper .colorYellowTint .focusBoxContent h4,
+.focusBoxWrapper .colorYellowTint .focusBoxContent h5,
+.focusBoxWrapper .colorYellowTint .focusBoxContent ul,
+.focusBoxWrapper .colorYellowTint .focusBoxContent ul li:before,
+.focusBoxWrapper .colorYellowTint .focusBoxContent h1,
+.focusBoxWrapper .colorYellowTint .focusBoxContent ol,
+.focusBoxWrapper .colorYellowTint .focusBoxContent blockquote,
+.focusBoxWrapper .colorYellowTint .focusBoxContent cite,
+.focusBoxWrapper .colorYellowTint .focusBoxContent i.fa { 
+  color:#333333;
 }
 
-.focusBox {
-  padding: 30px;
+/* Buttons */
+/* Black button with triple arrow icon */
+.focusBoxWrapper .focusBoxContent a.btn.btn-alpha {
+  color: #ffffff !important;
 }
 
-.focusboxWrapper .focusBox img {
-   padding: 0;
+.focusBoxWrapper .focusBoxContent a.btn.btn-alpha:visited {
+  color: #f7f7f7 !important;
 }
 
-.focusBox .focusBoxText p, .focusBox .focusBoxText ul, .focusBox .focusBoxText ol {
-  margin-left: 0;
+.focusBoxWrapper .focusBoxContent a.btn.btn-alpha:hover {
+  color: #ffffff !important;
+  text-decoration-color: #ffffff !important;
+}
+
+.focusBoxWrapper .focusBoxContent a.btn.btn-alpha:active {
+  color: #aa0000 !important;
+  text-decoration-color: #aa0000 !important;
+}
+
+.focusBoxWrapper .focusBoxContent a.btn.btn-alpha:focus {
+  color: #088099 !important;
+  text-decoration-color: #088099 !important;
+}
+
+/* Standard white button */
+ul.arrowLinks a:link,
+ul.arrowLinks a:visited {
+  color: initial !important;
+  background-color: #ffffff;
+}
+
+ul.arrowLinks a:hover,
+ul.arrowLinks a:active,
+ul.arrowLinks a:focus {
+  color: initial !important;
+  text-decoration: underline;
+  background-color: #ffffff;
 }
 
 /* ==========================================================================================
@@ -4891,318 +4672,489 @@ table.gsc-search-box td {
  
 */
 
-.panelWrapper {
-  padding-top: 30px;
-  position:relative;
-}
-.panelWrapper .panelFlexContainer{
-    display:flex;
-    float:right;
-    margin-bottom: 30px;
-    width:100%; 
+/* updated to bootstrap 5 -  20210413 vic  */
+
+
+/*********************
+*
+*   Image Panel
+*   bs5 specific modifications
+*
+**/
+
+.panelWrapper .panelText.card-text {
+  padding: 2rem;
 }
 
-.panelWrapper h2{
-    color: #aa0000;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 35px;
-    font-weight: 500;
-    margin: 0 0 30px 0;
-    /*text-align: center;*/
+.panelWrapper .panelText.card-text h2 {
+  font-size: 2.6rem; 
 }
 
-@media (min-width:766px) and (max-width:768px) {/*1px gap fix*/
-  .panelWrapper .clearfix{
-    display:block!important; 
+.panelInner .panelText.card-text .panelLinks {
+  display: block;
+  padding: 1rem 0 0 0;
+}
+
+.panelInner .panelText.card-text .panelLinks li {
+  margin: 0.25rem 0 0.5rem 0;
+}
+
+.panelText.card-text p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+
+/* ***  XX Large max Defaults   *** */
+@media screen and (max-width : 1399.99px) {
+
+  .panelWrapper .panelText.card-text h2 {
+      font-size: 2rem; 
+  }
+  
+  .panelText.card-text p {
+      font-size: 1.2rem;
+  }
+
+  .panelInner .panelText.card-text .panelLinks a {
+      font-size: 1.25rem;
+      line-height: 1.25;
   }
 }
-/*only way to get mobile to not take up space set in html tag*/
-@media (max-width: 991.999px) {
-    .panelWrapper .panelFlexContainer{
-        height:auto !important;
-    }
-}
-.panelWrapper .panelOverlay {
-    background-color: #04a9c5;
-    background-size: cover;      
-    width: 100%;
-}
-@media (max-width: 991px) {
-.panelWrapper .panelOverlay {
-    height: 300px !important;
+
+
+/* ***  X Large max Defaults   *** */
+@media screen and (max-width : 1199.99px) {
+
+  .panelWrapper .panelText.card-text h2 {
+      font-size: 1.8rem; 
+  }
+  
+  .panelText.card-text p {
+      font-size: 1rem;
+  }
+
+  .panelInner .panelText.card-text .panelLinks a {
+      font-size: 1.3rem;
+      line-height: 1;
+      padding-top: 1rem;
   }
 }
-.panelWrapper .panelText {
-    background: #ffffff;
-    padding: 70px 60px;
+
+
+/* ***  Large max Defaults   *** */
+@media screen and (max-width : 991.99px) {
+
+  .panelWrapper .card-img-overlay {
+      position: unset;
+  }
+
+  .panelWrapper .panelText.card-text h2 {
+      font-size: 2rem; 
+  }
+
+  .card-img-overlay .standardContent {
+      padding: 0;
+  }
+  
+  .panelText.card-text p {
+      font-size: 1rem;
+  }
+
+  .panelInner .panelText.card-text .panelLinks {
+      display: flex;
+  }
+
+  .panelInner .panelText.card-text .panelLinks {
+      padding: 1rem 0 1rem 0;
+  }
 }
-@media (max-width: 991px) {
+
+
+/* ***  Small max Defaults   *** */
+@media screen and (max-width : 767.99px) {
+
+  .panelWrapper .panelText.card-text {
+      padding: 1rem;
+  }
+
+  .panelInner .panelText.card-text .panelLinks {
+      display: block;
+  }
+
+  .panelInner .panelText.card-text .panelLinks li {
+      border: 1px solid #088099;
+  }
+}
+
+/* ***  X Small max Defaults   *** */
+@media only screen and (max-width : 575.99px) {
+
+  .panelWrapper .panelText.card-text {
+      padding: 0;
+  } 
+}
+
+
+/***
+*
+*   legacy image panel
+*   bootstrap 3 stylesheet defaults
+*
+*/
+  .panelWrapper {
+      padding-top: inherit;
+      position: relative;
+  }
+
+  .panelWrapper .panelFlexContainer {
+      display: flex;
+      float: right;
+      margin-bottom: 30px;
+      width: 100%; 
+  }
+
+  .panelWrapper h2 {
+      color: #aa0000;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 35px;
+      font-weight: 500;
+      margin: 0 0 30px 0;
+  }
+
+  /*1px gap fix*/
+  @media (min-width:766px) and (max-width:768px) {
+
+      .panelWrapper .clearfix{
+          display: block !important; 
+      }
+  }
+
+  /*only way to get mobile to not take up space set in html tag*/
+  @media (max-width: 991.999px) {
+
+      .panelWrapper .panelFlexContainer {
+          height: auto !important;
+      }
+  }
+
+  .panelWrapper .panelOverlay {
+      background-color: #04a9c5;
+      background-size: cover;      
+      width: 100%;
+  }
+
+  @media (max-width: 991px) {
+
+      .panelWrapper .panelOverlay {
+          height: 300px !important;
+      }
+  }
+
   .panelWrapper .panelText {
-    background: #ffffff;
-    padding: 20px 0 20px 15px;
-    width: 100%;
-  }
-}
-.panelWrapper .panelRedDiv,
-.panelWrapper .panelOrangeDiv,
-.panelWrapper .panelGoldDiv,
-.panelWrapper .panelLightGreenDiv,
-.panelWrapper .panelDarkGreenDiv,
-.panelWrapper .panelDarkBlueDiv,
-.panelWrapper .panelLightBlueDiv,
-.panelWrapper .panelGreenDiv,
-.panelWrapper .panelBrownDiv,
-.panelWrapper .panelWhiteDiv,
-.panelWrapper .panelBlackDiv,
-.panelWrapper .panelInner{
-  border-bottom:0;
-  border-image: 0;
-  border-image-slice: 0;  
-  border-left:0;
-  border-right:0;
-}
-
-.panelWrapper .panelRedDiv{ border-top:10px solid #aa0000;}
-.panelWrapper .panelOrangeDiv{ border-top:10px solid #ef4135;}
-.panelWrapper .panelGoldDiv{ border-top:0px solid #fdb913;}
-.panelWrapper .panelLightGreenDiv{ border-top:10px solid #55b31b;}
-.panelWrapper .panelDarkGreenDiv{ border-top:10px solid #124a12;}
-.panelWrapper .panelDarkBlueDiv{ border-top:10px solid #003282;}
-.panelWrapper .panelLightBlueDiv{ border-top:10px solid #04a9c5;}
-.panelWrapper .panelGreenDiv{ border-top:10px solid #008765;}
-.panelWrapper .panelBrownDiv{ border-top:10px solid #807060;}
-.panelWrapper .panelWhiteDiv{ border-top:10px solid #f7f7f7;}
-.panelWrapper .panelBlackDiv{ border-top:10px solid #333333;}
-
-.panelInner{
-  border-bottom:0;
-  border-image: 0;
-  border-image-slice: 0;
-  border-left:0;
-  border-right:0;
-  /* border-top:10px solid #f7f7f7; */
-  margin:0;
-  padding:0;
-}
-.flexboxtweener .panelWrapper .panelInner{ /* hack to hide banner in IE/Edge */
-  border:0;
-}
-
-@media (min-width: 991px) {
-  .panelWrapper .topRightPanel, 
-  .panelWrapper .centerRightPanel,
-  .panelWrapper .bottomRightPanel{
-    justify-content: flex-end;
-  }
-  .panelWrapper .topLeftPanel,
-  .panelWrapper .centerLeftPanel,
-  .panelWrapper .bottomLeftPanel{
-    justify-content:flex-start;
-  }
-  .panelWrapper .topCenterPanel,
-  .panelWrapper .centerCenterPanel,
-  .panelWrapper .bottomCenterPanel{
-    justify-content: center;
-  }
-  .panelFlexContainer .topRightPanel,
-  .panelFlexContainer .centerRightPanel,
-  .panelFlexContainer .bottomRightPanel{
-    margin-right:4.1666666%;
-  }
-  .panelFlexContainer .topRightPanel,
-  .panelFlexContainer .topLeftPanel,
-  .panelFlexContainer .topCenterPanel{
-    margin-top:4.1666666%;
-  }
-  .panelFlexContainer .bottomRightPanel,
-  .panelFlexContainer .bottomLeftPanel,
-  .panelFlexContainer .bottomCenterPanel{
-    align-self:flex-end;
-  }
-  .panelFlexContainer .centerRightPanel,
-  .panelFlexContainer .centerLeftPanel,
-  .panelFlexContainer .centerCenterPanel{
-    align-self:center;
-  }
-  .panelFlexContainer .topRightPanel,
-  .panelFlexContainer .topCenterPanel,
-  .panelFlexContainer .topLeftPanel{
-    margin-bottom:auto;
-  }
-  .panelFlexContainer .topLeftPanel,
-  .panelFlexContainer .centerLeftPanel,
-  .panelFlexContainer .bottomLeftPanel{
-    margin-left:4.1666666%;
-  }
-  .panelFlexContainer .bottomRightPanel,
-  .panelFlexContainer .bottomCenterPanel,
-  .panelFlexContainer .bottomLeftPanel{
-    margin-bottom:4.1666666%;
-  }
-  .panelWrapper .panelRedDiv{
-    border: 10px solid #aa0000;
-    border-bottom: 0;
-    border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #aa0000 25.01%, #aa0000 100%);
-    border-image-slice: 1;
-  }
-  .panelWrapper .panelOrangeDiv{
-    border: 10px solid #ef4135;
-    border-bottom: 0;
-    border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #ef4135 25.01%, #ef4135 100%);
-    border-image-slice: 1;
-  }
-  /* .panelWrapper .panelGoldDiv{
-    border: 10px solid #fdb913;
-    border-bottom: 0;
-    border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #fdb913 25.01%, #fdb913 100%);
-    border-image-slice: 1;
-  } */
-  .panelWrapper .panelLightGreenDiv{
-    border: 10px solid #55b31b;
-    border-bottom: 0;
-    border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #55b31b 25.01%, #55b31b 100%);
-    border-image-slice: 1;
-  }
-  .panelWrapper .panelDarkGreenDiv{
-    border: 10px solid #124a12;
-    border-bottom: 0;
-    border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #124a12 25.01%, #124a12 100%);
-    border-image-slice: 1;
-  }
-  .panelWrapper .panelDarkBlueDiv{
-    border: 10px solid #003282;
-    border-bottom: 0;
-    border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #003282 25.01%, #003282 100%);
-    border-image-slice: 1;
-  }
-  .panelWrapper .panelLightBlueDiv{
-    border: 10px solid #04a9c5;
-    border-bottom: 0;
-    border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #04a9c5 25.01%, #04a9c5 100%);
-    border-image-slice: 1;
-  }
-  .panelWrapper .panelGreenDiv{
-    border: 10px solid #008765;
-    border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #008765 25.01%, #008765 100%);
-    border-image-slice: 1;
-    border-bottom: 0;
-  }
-  .panelWrapper .panelBrownDiv{
-    border: 10px solid #807060;
-    border-bottom: 0;
-    border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #807060 25.01%, #807060 100%);
-    border-image-slice: 1;    
-  }
-  .panelWrapper .panelBlackDiv{
-    border: 10px solid #333333;
-    border-bottom: 0;
-    border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #333333 25.01%, #333333 100%);
-    border-image-slice: 1;    
-  }
-  .panelWrapper .panelWhiteDiv{
-    border: 10px solid #f7f7f7;
-    border-bottom: 0;
-    border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #f7f7f7 25.01%, #f7f7f7 100%);
-    border-image-slice: 1;    
-  }
-  .panelWrapper .topRightPanel,
-  .panelWrapper .bottomRightPanel,
-  .panelWrapper .topCenterPanel,
-  .panelWrapper .bottomCenterPanel
-  .panelWrapper .centerCenterPanel
-  .panelWrapper .centerRightPanel{
-    float:right;
-  }
-  .panelWrapper .topLeftPanel,
-  .panelWrapper .bottomLeftPanel
-  .panelWrapper .centerLeftPanel{
-    float:left;
-  }
-}
-@media screen and (max-width: 767.999px) { /* xs */
-  .panelText h2 {
-   margin: 15px 0 15px 0;
- }
-}
-.panelText p {
-  font-size: 1.8rem;
-  line-height: 200%;
-  margin: 0;  
-}
-
-.panelInner .panelLinks{
-  padding: 30px 0 0 0;
-  text-align:center;
-  width:100%;
-  display:flex;
-  margin:auto auto;
-  list-style-type: none;
-  justify-content: space-between;
-  flex-wrap:wrap;
-}
-
-.panelInner .panelLinks a{
-  color:#aa0000;
-  display:block;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.6rem;
-  font-weight:500;
-  line-height:1.6rem;
-  padding:15px;
-  text-align:center;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.panelInner .panelLinks li{
-  border: 2px solid #088099;
-  display: flex;
-  flex: 0 1 calc(50% - 7px);
-  flex-direction: column;
-  justify-content: center;
-}
-@media screen and (max-width: 767.999px) { /* xs */
-  .panelInner .panelLinks{
-    padding: 15px 20px 0px 10px;
-  }
-  .panelInner .panelLinks li{
-    border: none;
-    display: block;
-    flex: none;
-    flex-direction: column;
-    justify-content: center;
-    margin: 7px 0 0 0;
-    width: 100%;
-  }
-  .panelInner .panelLinks li a{  
-    border: 1px solid #088099;
-    color: #aa0000;
-    display: block;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.6rem;
-    font-weight: 500;
-    height: 100%;
-    line-height: 1.6rem;
-    padding: 15px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: all 0.2s ease;
+      background: #ffffff;
+      padding: 70px 60px;
   }
 
-}
-.panelInner .panelLinks li:hover a, .panelInner .panelLinks li:focus a,
-.panelInner .panelLinks li a:hover, .panelInner .panelLinks li a:focus{
-  background: #088099;
-  /* border: 1px solid #088099;*/
-  color: #ffffff;
-  /*text-decoration: underline;*/
-}
+  @media (max-width: 991px) {
 
-.panelInner .panelLinks li:before{
-  content: '';
-  padding-right:0px;
-}
+      .panelWrapper .panelText {
+          background: #ffffff;
+          padding: 20px 0 20px 15px;
+          width: 100%;
+      }
+  }
+
+  .panelWrapper .panelRedDiv,
+  .panelWrapper .panelOrangeDiv,
+  .panelWrapper .panelGoldDiv,
+  .panelWrapper .panelLightGreenDiv,
+  .panelWrapper .panelDarkGreenDiv,
+  .panelWrapper .panelDarkBlueDiv,
+  .panelWrapper .panelLightBlueDiv,
+  .panelWrapper .panelGreenDiv,
+  .panelWrapper .panelBrownDiv,
+  .panelWrapper .panelWhiteDiv,
+  .panelWrapper .panelBlackDiv,
+  .panelWrapper .panelInner {
+      border-bottom: 0;
+      border-image: 0;
+      border-image-slice: 0;  
+      border-left: 0;
+      border-right: 0;
+  }
+
+  .panelWrapper .panelRedDiv            { border-top:10px solid #aa0000; }
+  .panelWrapper .panelOrangeDiv         { border-top:10px solid #ef4135; }
+  .panelWrapper .panelGoldDiv           { border-top:0px solid #fdb913; }
+  .panelWrapper .panelLightGreenDiv     { border-top:10px solid #55b31b; }
+  .panelWrapper .panelDarkGreenDiv      { border-top:10px solid #124a12; }
+  .panelWrapper .panelDarkBlueDiv       { border-top:10px solid #003282; }
+  .panelWrapper .panelLightBlueDiv      { border-top:10px solid #04a9c5; }
+  .panelWrapper .panelGreenDiv          { border-top:10px solid #008765; }
+  .panelWrapper .panelBrownDiv          { border-top:10px solid #807060; }
+  .panelWrapper .panelWhiteDiv          { border-top:10px solid #f7f7f7; }
+  .panelWrapper .panelBlackDiv          { border-top:10px solid #333333; }
+
+  .panelInner {
+      border-bottom: 0;
+      border-image: 0;
+      border-image-slice: 0;
+      border-left: 0;
+      border-right: 0;
+      margin: 0;
+      padding: 0;
+  }
+
+  /* hack to hide banner in IE/Edge */
+  .flexboxtweener .panelWrapper .panelInner {
+      border: 0;
+  }
+
+  @media (min-width: 991px) {
+
+      .panelWrapper .topRightPanel, 
+      .panelWrapper .centerRightPanel,
+      .panelWrapper .bottomRightPanel {
+          justify-content: flex-end;
+      }
+
+      .panelWrapper .topLeftPanel,
+      .panelWrapper .centerLeftPanel,
+      .panelWrapper .bottomLeftPanel {
+          justify-content: flex-start;
+      }
+
+      .panelWrapper .topCenterPanel,
+      .panelWrapper .centerCenterPanel,
+      .panelWrapper .bottomCenterPanel {
+          justify-content: center;
+      }
+
+      .panelFlexContainer .topRightPanel,
+      .panelFlexContainer .centerRightPanel,
+      .panelFlexContainer .bottomRightPanel {
+          margin-right: 4.1666666%;
+      }
+
+      .panelFlexContainer .topRightPanel,
+      .panelFlexContainer .topLeftPanel,
+      .panelFlexContainer .topCenterPanel {
+          margin-top: 4.1666666%;
+      }
+
+      .panelFlexContainer .bottomRightPanel,
+      .panelFlexContainer .bottomLeftPanel,
+      .panelFlexContainer .bottomCenterPanel {
+          align-self: flex-end;
+      }
+
+      .panelFlexContainer .centerRightPanel,
+      .panelFlexContainer .centerLeftPanel,
+      .panelFlexContainer .centerCenterPanel {
+          align-self: center;
+      }
+
+      .panelFlexContainer .topRightPanel,
+      .panelFlexContainer .topCenterPanel,
+      .panelFlexContainer .topLeftPanel {
+          margin-bottom: auto;
+      }
+
+      .panelFlexContainer .topLeftPanel,
+      .panelFlexContainer .centerLeftPanel,
+      .panelFlexContainer .bottomLeftPanel {
+          margin-left: 4.1666666%;
+      }
+
+      .panelFlexContainer .bottomRightPanel,
+      .panelFlexContainer .bottomCenterPanel,
+      .panelFlexContainer .bottomLeftPanel {
+          margin-bottom: 4.1666666%;
+      }
+
+      .panelWrapper .panelRedDiv {
+          border: 10px solid #aa0000;
+          border-bottom: 0;
+          border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #aa0000 25.01%, #aa0000 100%);
+          border-image-slice: 1;
+      }
+
+      .panelWrapper .panelOrangeDiv {
+          border: 10px solid #ef4135;
+          border-bottom: 0;
+          border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #ef4135 25.01%, #ef4135 100%);
+          border-image-slice: 1;
+      }
+
+      .panelWrapper .panelLightGreenDiv {
+          border: 10px solid #55b31b;
+          border-bottom: 0;
+          border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #55b31b 25.01%, #55b31b 100%);
+          border-image-slice: 1;
+      }
+
+      .panelWrapper .panelDarkGreenDiv {
+          border: 10px solid #124a12;
+          border-bottom: 0;
+          border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #124a12 25.01%, #124a12 100%);
+          border-image-slice: 1;
+      }
+
+      .panelWrapper .panelDarkBlueDiv {
+          border: 10px solid #003282;
+          border-bottom: 0;
+          border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #003282 25.01%, #003282 100%);
+          border-image-slice: 1;
+      }
+
+      .panelWrapper .panelLightBlueDiv {
+          border: 10px solid #04a9c5;
+          border-bottom: 0;
+          border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #04a9c5 25.01%, #04a9c5 100%);
+          border-image-slice: 1;
+      }
+
+      .panelWrapper .panelGreenDiv {
+          border: 10px solid #008765;
+          border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #008765 25.01%, #008765 100%);
+          border-image-slice: 1;
+          border-bottom: 0;
+      }
+
+      .panelWrapper .panelBrownDiv {
+          border: 10px solid #807060;
+          border-bottom: 0;
+          border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #807060 25.01%, #807060 100%);
+          border-image-slice: 1;    
+      }
+
+      .panelWrapper .panelBlackDiv {
+          border: 10px solid #333333;
+          border-bottom: 0;
+          border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #333333 25.01%, #333333 100%);
+          border-image-slice: 1;    
+      }
+
+      .panelWrapper .panelWhiteDiv {
+          border: 10px solid #f7f7f7;
+          border-bottom: 0;
+          border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #f7f7f7 25.01%, #f7f7f7 100%);
+          border-image-slice: 1;    
+      }
+
+      .panelWrapper .topRightPanel,
+      .panelWrapper .bottomRightPanel,
+      .panelWrapper .topCenterPanel,
+      .panelWrapper .bottomCenterPanel
+      .panelWrapper .centerCenterPanel
+      .panelWrapper .centerRightPanel {
+          float: right;
+      }
+
+      .panelWrapper .topLeftPanel,
+      .panelWrapper .bottomLeftPanel
+      .panelWrapper .centerLeftPanel {
+          float: left;
+      }
+  }
+
+  /* xs */
+  @media screen and (max-width: 767.999px) {
+
+      .panelText h2 {
+          margin: 15px 0 15px 0;
+      }
+  }
+
+  .panelText p {
+      font-size: 1.8rem;
+      line-height: 200%;
+      margin: 0;  
+  }
+
+  .panelInner .panelLinks {
+      padding: 30px 0 0 0;
+      text-align:center;
+      width:100%;
+      display:flex;
+      margin:auto auto;
+      list-style-type: none;
+      justify-content: space-between;
+      flex-wrap:wrap;
+  }
+
+  .panelInner .panelLinks a {
+      color:#aa0000;
+      display:block;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.6rem;
+      font-weight:500;
+      line-height:1.6rem;
+      padding:15px;
+      text-align:center;
+      text-decoration: none;
+      text-transform: uppercase;
+  }
+
+  .panelInner .panelLinks li {
+      border: 2px solid #088099;
+      display: flex;
+      flex: 0 1 calc(50% - 7px);
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  /* xs */
+  @media screen and (max-width: 767.999px) {
+
+      .panelInner .panelLinks {
+      padding: 15px 20px 0px 10px;
+      }
+
+      .panelInner .panelLinks li {
+      border: none;
+      display: block;
+      flex: none;
+      flex-direction: column;
+      justify-content: center;
+      margin: 7px 0 0 0;
+      width: 100%;
+      }
+
+      .panelInner .panelLinks li a {  
+      border: 1px solid #088099;
+      color: #aa0000;
+      display: block;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.6rem;
+      font-weight: 500;
+      height: 100%;
+      line-height: 1.6rem;
+      padding: 15px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 0.2s ease;
+      }
+  }
+
+  .panelInner .panelLinks li:hover a, .panelInner .panelLinks li:focus a,
+  .panelInner .panelLinks li a:hover, .panelInner .panelLinks li a:focus {
+      background: #088099;
+      color: #ffffff;
+  }
+
+  .panelInner .panelLinks li:before {
+      content: '';
+      padding-right:0px;
+  }
+
+
+
+
+
+
 
 /* ==========================================================================================
    ===== Infographic ===== Content Type #5179 ================================================ 
@@ -5261,7 +5213,8 @@ table.gsc-search-box td {
 .infographicItemNumber {
   color:#aa0000; 
   display: block;
-  font-family: 'Roboto Slab', serif;
+  xfont-family: 'Roboto Slab', serif;
+  font-family: 'Montserrat', serif;
   font-size: 5.2rem;
   font-weight: bold;
   line-height:8rem;
@@ -5923,7 +5876,8 @@ a:not([href]) {
 .quicklinks h2.quicklinksTitle{
    clear: both;
    color: #aa0000;
-   font-family: "Roboto Slab",serif;
+   xfont-family: "Roboto Slab",serif;
+  font-family: "Montserrat",sans-serif;
   font-size: 2.1rem;
    text-transform: none;
 }
@@ -7331,7 +7285,7 @@ div#id977819 .organizer  {
 }
 
 .facultyProfileWrapper .facultyProfileMiddle {
-	padding: 0 15px 0 15px
+	xpadding: 0 15px 0 15px
 }
 
 /* Centers location, phone, and email at widths of 767px and under */
@@ -7941,50 +7895,3 @@ span.go {
 div.row.Row1 {
   margin-bottom: 0px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
