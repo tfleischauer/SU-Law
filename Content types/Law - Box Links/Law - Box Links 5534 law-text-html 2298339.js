@@ -1,6 +1,6 @@
 /***
  *  @author Troy Fleischauer, BS Informatics, HCI '12
- *  @version 210414 
+ *  @version 210415 
  *  @see Seattle University School of Law 'Law - Box Links' Content Type 5534 law/text/html
  *  Description: Selectively displays headline, subtitle, TinyMCE editor, and up to three Box Links that link internally, externally, or to a file in the media library       
  *  Document will write once when the page loads  
@@ -70,33 +70,33 @@ try {
   }
 
   if (link1Internal != "") {
-    boxLink1Result = '<li title="Internal link">' + link1Internal + '</li>';
+    boxLink1Result = '<li title="Internal link">' + link1Internal + '</li>'; // anchor tag is auto-generated
   } else if (link1External != "") {
     boxLink1Result = '<li><a href="' + link1External + '" target="_blank" title="Links to: ' + link1Text + '"><span>' + link1Text + '</span></a></li>';
   } else if ((link1Text != "") && (link1MediaPath != "")) { // if there is custom text and a media file is selected
-    boxLink1Result = '<li><a href="' + link1MediaPath + '"><span>' + link1Text + '</span></a></li>'; // link to the file and use the custom text
+    boxLink1Result = '<li><a href="' + link1MediaPath + '" title="Links to: ' + link1Text + '"><span>' + link1Text + '</span></a></li>'; // link to the file and use the custom text
   } else if ((link1Text == "") && (link1MediaPath != "")) { // if there is no custom text and a media file is selected
-    boxLink1Result = '<li>' + link1MediaText + '</li>'; // use the file name text
+    boxLink1Result = '<li title="Links to a file">' + link1MediaText + '</li>'; // use the file name text (anchor tag is auto-generated)
   }
 
   if (link2Internal != "") {
-    boxLink2Result = '<li title="Internal link">' + link2Internal + '</li>';
+    boxLink2Result = '<li title="Internal link">' + link2Internal + '</li>'; // anchor tag is auto-generated
   } else if (link2External != "") {
     boxLink2Result = '<li><a href="' + link2External + '" target="_blank" title="Links to: ' + link2Text + '"><span>' + link2Text + '</span></a></li>';
   } else if ((link2Text != "") && (link2MediaPath != "")) { // if there is custom text and a media file is selected
-    boxLink2Result = '<li><a href="' + link2MediaPath + '"><span>' + link2Text + '</span></a></li>'; // link to the file and use the custom text
+    boxLink2Result = '<li><a href="' + link2MediaPath + '" title="Links to: ' + link2Text + '"><span>' + link2Text + '</span></a></li>'; // link to the file and use the custom text
   } else if ((link2Text == "") && (link2MediaPath != "")) { // if there is no custom text and a media file is selected
-    boxLink2Result = '<li>' + link2MediaText + '</li>'; // use the file name text
+    boxLink2Result = '<li title="Links to a file">' + link2MediaText + '</li>'; // use the file name text (anchor tag is auto-generated)
   }
 
   if (link3Internal != "") {
-    boxLink3Result = '<li title="Internal link">' + link3Internal + '</li>';
+    boxLink3Result = '<li title="Internal link">' + link3Internal + '</li>'; // anchor tag is auto-generated
   } else if (link3External != "") {
     boxLink3Result = '<li><a href="' + link3External + '" target="_blank" title="Links to: ' + link3Text + '"><span>' + link3Text + '</span></a></li>';
   } else if ((link3Text != "") && (link3MediaPath != "")) { // if there is custom text and a media file is selected
-    boxLink3Result = '<li><a href="' + link3MediaPath + '"><span>' + link3Text + '</span></a></li>'; // link to the file and use the custom text
+    boxLink3Result = '<li><a href="' + link3MediaPath + '" title="Links to: ' + link3Text + '"><span>' + link3Text + '</span></a></li>'; // link to the file and use the custom text
   } else if ((link3Text == "") && (link3MediaPath != "")) { // if there is no custom text and a media file is selected
-    boxLink3Result = '<li>' + link3MediaText + '</li>'; // use the file name text
+    boxLink3Result = '<li title="Links to a file">' + link3MediaText + '</li>'; // use the file name text (anchor tag is auto-generated)
   }
 
   /***
