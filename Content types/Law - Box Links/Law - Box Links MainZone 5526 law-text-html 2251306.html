@@ -1,0 +1,40 @@
+<div class="BoxLinksWrapper contentItem hspace" id="id<t4 type='meta' meta='content_id' />"
+    data-position-default="Main" data-position-selected="Main"
+    aria-labelledby="label<t4 type='meta' meta='content_id' />">
+    <t4 type="meta" meta="html_anchor" />
+    <div class="BoxLinksMainZone standardContent">
+        <h2 id="label<t4 type='meta' meta='content_id' />">
+            <t4 type="content" name="Heading Link" output="selective-output" process-format="true"
+                format="<a href=&quot;<t4 type='content' name='Heading Link' output='linkurl' />&quot;>" />
+            <t4 type="content" name="Heading" output="normal" modifiers="striptags,htmlentities" />
+            <t4 type="content" name="Heading Link" output="selective-output" format="</a>" />
+        </h2>
+        <t4 type="content" name="Subheading" output="selective-output" modifiers="striptags,htmlentities"
+            format="<h3>$value</h3>" />
+        <div class="BoxLinksContent">
+            <t4 type="content" name="Paragraph" output="selective-output" modifiers="medialibrary,nav_sections"
+                process-format="true" format="$value" />
+        </div>
+        <ul class="boxlinks">
+        <t4 type="content" name="Link 1 Text" output="selective-output" modifiers="" process-format="true" 
+        format="<li><a href=&quot;<t4 type='content' name='Link 1 Internal' output='link-url' modifiers='medialibrary, nav_sections' />
+            <t4 type='content' name='Link 1 External' output='normal' modifiers='medialibrary, nav_sections' />
+            <t4 type='content' name='Link 1 Media' output='normal' formatter='path/*' />&quot; 
+            <t4 type='content' name='Link 1 Text' output='selective-output' modifiers='' format='target=&quot;_blank&quot;' />>$value</a>
+        </li>" />
+        <t4 type="content" name="Link 2 Text" output="selective-output" modifiers="" process-format="true" 
+        format="<li><a href=&quot;<t4 type='content' name='Link 2 Internal' output='link-url' modifiers='medialibrary, nav_sections' />
+            <t4 type='content' name='Link 2 External' output='normal' modifiers='medialibrary, nav_sections' />
+            <t4 type='content' name='Link 2 Media' output='normal' formatter='path/*' />&quot;
+            <t4 type='content' name='Link 2 Text' output='selective-output' modifiers='' format='target=&quot;_blank&quot;' />>$value</a> 
+        </li>" />
+        <t4 type="content" name="Link 3 Text" output="selective-output" modifiers="" process-format="true" 
+        format="<li><a href=&quot;<t4 type='content' name='Link 3 Internal' output='link-url' modifiers='medialibrary, nav_sections' />
+            <t4 type='content' name='Link 3 External' output='normal' modifiers='medialibrary, nav_sections' />
+            <t4 type='content' name='Link 3 Media' output='normal' formatter='path/*' />&quot;
+            <t4 type='content' name='Link 3 Text' output='selective-output' modifiers='' format='target=&quot;_blank&quot;' />>$value</a> 
+        </li>" />
+        </ul>
+            <div class="clearfix"></div>
+    </div>
+</div>
