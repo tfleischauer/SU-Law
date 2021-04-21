@@ -1,5 +1,6 @@
 /* *********************************************************
    SU-Law.css
+   Media Library ID 421656
 ************************************************************ */
 @-webkit-viewport   { width: device-width; }
 @-moz-viewport      { width: device-width; }
@@ -1972,106 +1973,98 @@ svg.arrow.circle.navy {
 }
 
 /* ==========================================================================================
-   ===== Law - Box Links MainZone =====  Content Type #5526 =================================
+   ===== Law - Box Links MainZone =====  Content Type #5534 =================================
    ==========================================================================================
    Title, subtitle, paragraph followed by up to three box links (internal, external, media)
    An adaptation of code from Jumbotron I, Quicklinks, and .boxlinks
-   Last revised 03/18/2021 by Troy 
+   Last revised 04/20/2021 by Troy 
 */
 
-.BoxLinksMainZone h2,
-.BoxLinksMainZone h2 a, .BoxLinksMainZone h2 a:visited{
-  text-decoration: none;
-  /* text-transform: uppercase; */
-}
-
-.BoxLinksMainZone h2 a:focus, .BoxLinksMainZone h1 a:hover{
-  text-decoration:underline;
-}
-
-.BoxLinksMainZone h3{
+.BoxLinksMainZone h3 {
   color:#333333;
   margin: 10px 0;
   padding: 0;
-  /* text-transform: uppercase; */
 }
 
-.BoxLinksMainZone .boxlinks {
-  margin-bottom: 0;
+.BoxLinksMainZone h3 a, .BoxLinksMainZone h3 a:visited {
+  text-decoration: none;
 }
 
-.BoxLinksMainZone ul.boxlinks li{
+.BoxLinksMainZone h3 a:focus, .BoxLinksMainZone h3 a:hover {
+  text-decoration: underline;
+}
+
+.BoxLinksMainZone ul.boxlinks li {
   display: flex;
-  flex: 0 1 100%;
+  flex: 0 1 100%; 
   flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  padding: 15px;
+  justify-content: space-between;
+  padding: 10px 10px 10px 0;
 }
-
-.BoxLinksMainZone .boxlinks p {
-    clear:both;
-  }
   
 .BoxLinksMainZone .boxlinks li a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (min-width : 768px) { /* Small Devices, Tablets */
-    /* .container */
-    #pageContentWrapper.container #MainZone.col-sm-8 .BoxLinksMainZone ul.boxlinks li,
-    #pageContentWrapper[class=""] #MainZone.col-sm-8 .BoxLinksMainZone ul.boxlinks li{
-        flex: 0 1 calc(50% - 7px);
-        width: 50%;
-    }
-    #pageContentWrapper.container #MainZone.col-sm-12 .BoxLinksMainZone ul.boxlinks li,
-    #pageContentWrapper[class=""] #MainZone.col-sm-12 .BoxLinksMainZone ul.boxlinks li{
-        flex: 0 1 calc(33.33% - 7px);
-        width: 33.33%;
-    }
-    /* .container-fluid */
-    #pageContentWrapper.container-fluid #MainZone.col-sm-8 .BoxLinksMainZone ul.boxlinks li{
-        flex: 0 1 calc(50% - 7px);
-        width: 50%;
-    }
-    #pageContentWrapper.container-fluid #MainZone.col-sm-12 .BoxLinksMainZone ul.boxlinks li{
-        flex: 0 1 calc(33.33% - 7px);
-        width: 33.33%;
-    }
+  .BoxLinksWrapper {
+    padding: 0 10px;
+  }
+  
+  /* .container */
+  #pageContentWrapper.container #MainZone.col-sm-8 .BoxLinksMainZone ul.boxlinks li,
+  #pageContentWrapper[class=""] #MainZone.col-sm-8 .BoxLinksMainZone ul.boxlinks li{
+    flex: 0 1 calc(50% - 7px);
+    width: 50%;
+  }
+  #pageContentWrapper.container #MainZone.col-sm-12 .BoxLinksMainZone ul.boxlinks li,
+  #pageContentWrapper[class=""] #MainZone.col-sm-12 .BoxLinksMainZone ul.boxlinks li{
+    flex: 0 1 calc(33.33% - 7px);
+    width: 33.33%;
+  }
+  /* .container-fluid */
+  #pageContentWrapper.container-fluid #MainZone.col-sm-8 .BoxLinksMainZone ul.boxlinks li{
+    flex: 0 1 calc(50% - 7px);
+    width: 50%;
+  }
+  #pageContentWrapper.container-fluid #MainZone.col-sm-12 .BoxLinksMainZone ul.boxlinks li{
+    flex: 0 1 calc(33.33% - 7px);
+    width: 33.33%;
+  }
 }
 
 @media (min-width: 992px) { /* Medium Devices, Desktops */
-    /* .container */
-    #pageContentWrapper.container #MainZone.col-md-6 .BoxLinksMainZone ul.boxlinks li,
-    #pageContentWrapper[class=""] #MainZone.col-md-6 .BoxLinksMainZone ul.boxlinks li{
+  /* .container */
+  #pageContentWrapper.container #MainZone.col-md-6 .BoxLinksMainZone ul.boxlinks li,
+  #pageContentWrapper[class=""] #MainZone.col-md-6 .BoxLinksMainZone ul.boxlinks li{
     flex: 0 1 calc(50% - 7px);
     width: 50%;
-    }
-    #pageContentWrapper.container #MainZone.col-md-9 .BoxLinksMainZone ul.boxlinks li,
-    #pageContentWrapper[class=""] #MainZone.col-md-9 .BoxLinksMainZone ul.boxlinks li{
+  }
+  #pageContentWrapper.container #MainZone.col-md-9 .BoxLinksMainZone ul.boxlinks li,
+  #pageContentWrapper[class=""] #MainZone.col-md-9 .BoxLinksMainZone ul.boxlinks li{
     flex: 0 1 calc(33.33% - 7px);
     width: 33.33%;
-    }
-    #pageContentWrapper.container #MainZone.col-md-12 .BoxLinksMainZone ul.boxlinks li,
-    #pageContentWrapper[class=""] #MainZone.col-md-12 .BoxLinksMainZone ul.boxlinks li{
+  }
+  #pageContentWrapper.container #MainZone.col-md-12 .BoxLinksMainZone ul.boxlinks li,
+  #pageContentWrapper[class=""] #MainZone.col-md-12 .BoxLinksMainZone ul.boxlinks li{
     flex: 0 1 calc(25% - 7px);
     width: 25%;
-    }
-    /* .container-fluid */
-    #pageContentWrapper.container-fluid #MainZone.col-md-6 .BoxLinksMainZone ul.boxlinks li{
+  }
+  /* .container-fluid */
+  #pageContentWrapper.container-fluid #MainZone.col-md-6 .BoxLinksMainZone ul.boxlinks li{
     flex: 0 1 calc(50% - 7px);
     width: 50%;
-    }
-    #pageContentWrapper.container-fluid #MainZone.col-md-9 .BoxLinksMainZone ul.boxlinks li{
+  }
+  #pageContentWrapper.container-fluid #MainZone.col-md-9 .BoxLinksMainZone ul.boxlinks li{
     flex: 0 1 calc(33.33% - 7px);
     width: 33.33%;
-    }
-    #pageContentWrapper.container-fluid #MainZone.col-md-12 .BoxLinksMainZone ul.boxlinks li{
+  }
+  #pageContentWrapper.container-fluid #MainZone.col-md-12 .BoxLinksMainZone ul.boxlinks li{
     flex: 0 1 calc(25% - 7px);
     width: 25%;
-    }
+  }
 }
 
 /* ==========================================================================================
@@ -7895,3 +7888,10 @@ span.go {
 div.row.Row1 {
   margin-bottom: 0px;
 }
+
+
+
+
+
+
+
