@@ -23,13 +23,12 @@ body {
   background-color: #ffffff;
   color: #333333;
   font-family: "Montserrat", sans-serif;
-  /* font-size: 10px; base font size, because multiplying by 10 is easy */
   font-size: 62.5%; /* 10/16 =.625 To maximize accessibility, it is generally best to use values that are relative to the user's default font size.*/
   font-weight:400;
-  /* line-height: 20px; */
-  line-height: 1.475;
+  line-height: 1.45;
   margin: 0;
-  padding-top: 167px; /* for the fixed header */
+  /* for the fixed header */
+  padding-top: 152px;
 }
 
 
@@ -39,6 +38,10 @@ body {
   }
 }
 
+#pageContentWrapper {
+  padding-bottom: 1px;
+  padding-top: 1px;
+}
 
 @media screen and (min-width: 1200px) { /* lg */
   #pageContentWrapper[class=""] {/* Default state if .container or .container-fluid are not set in the site configuration */ 
@@ -791,9 +794,9 @@ _____________________  _____________________________  __________________________
 /* -------------------------- Paragraphs and inline text -------------------------- */
 .standardContent p {
   color:#333333;
-  font-size: 1.6rem;
-  xline-height:2;
+  font-size: 1.4rem;
   line-height: 1.5;
+  max-width: 70ch;
   margin-bottom: 1.6rem;
   font-weight: 500;
 }
@@ -814,14 +817,15 @@ _____________________  _____________________________  __________________________
 /* -------------------------- Lists -------------------------- */
 .standardContent ul, 
 .standardContent ol { 
-  font-size:1.6rem;
-  line-height:2;
+  font-size: 1.4rem;
+  line-height: 1.45;
   list-style-type:none;
   margin-bottom: 20px;
     margin-left: 0px; /* indent, but not that much */
   display: table;/* align 2nd line text, pt 1  */
   font-weight: 500;
-  padding-left: 3px; /* indent, but not that much */
+  padding-left: 3px; /* indent, but not that much. Good for unordered lists. */
+  list-style-position: inside; /* Good for ordered lists. */
 }
 .standardContent ul li ul, .standardContent ol li ol{
     margin-bottom: 0;
@@ -1878,99 +1882,153 @@ svg.arrow.circle.navy {
    ===== Accordion ===== Content Type #5190 =================================================
    ==========================================================================================
 */
-.accordionWrapper h2.accordionTitle {
-    color: #aa0000;
-    font-family: 'Montserrat', sans-serif;
-    xfont-size: 35px;
-    font-size: 2.8rem;
-    font-weight: 500;
-    xmargin-bottom: 30px;
-    xmargin-left: 0;
-    margin: 65px 0 22px 0;
-    text-align: center;
-    clear: both;
-}
+
+
+/*********************
+* 
+* Accordion styles updated on 4/21/21 for bootstrap 5  - vic
+*
+**/
+
+
+
+/*********************
+*
+*   Accordion
+*
+**/
 
 .accordionWrapper {
-  max-width: 1170px;
   margin: 0 auto;
+  margin-left: 15px !important;
+  max-width: 1170px;
+  padding-right: 45px;
 }
 
-/* Keeps accordion on the grid */
-.accordionWrapper {
-    margin-left: 15px !important;
-    padding-right: 45px;
+.accordionWrapper h2.accordionTitle {
+  color: #aa0000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin: 65px 0 22px 0;
+  text-align: center;
+  clear: both;
+}
+
+.accordionWrapper h2.accordionTitle:not(:first-of-type) {
+  margin-top: 80px;
 }
 
 .accordionWrapper .accordionDescription p {
-    xtext-align: center;
-    xfont-size: 19px;
-    xmargin-bottom: 60px;
-    color: #333333;
-    font-size: 1.6rem;
-    line-height: 2;
-    margin-bottom: 1.6rem;
-    font-weight: 500;
-    text-align: left;
+  color: #333333;
+  font-size: 1.6rem;
+  line-height: 2;
+  margin-bottom: 1.6rem;
+  font-weight: 500;
+  text-align: left;
 }
 
 .accordionTitle.standardContent {
-    padding-left: 0 !important;
+  padding-left: 0 !important;
 }
 
-.accordionItemList {
-    background-color: #fff;
-}
-.accordionWrapper .accordionItem {
-  border-bottom: 1px solid #6f6f6f;
-}
 .accordionWrapper .accordionItemHeader {  
   height: auto;
 }
+
+.accordionItemHeader.accordion-header {
+  outline: none;
+}
+
+.accordionItemHeader.accordion-header a:link {
+  outline: none;
+}
+
+.accordionItemHeader.accordion-header a:visited {
+  outline: none;
+}
+
+.accordionItemHeader.accordion-header a:hover {
+  outline: none;
+}
+
+.accordionItemHeader.accordion-header a:focus {
+  outline: none;
+}
+
+.accordionItemHeader.accordion-header a:active {
+  outline: none;
+}
+
 .accordionWrapper .accordionItemHeaderButton {
   height: auto;
-  display:flex;
+  display: flex;
   align-items: center;
   text-decoration: none;
   padding: 30px 0;
 }
+
 .accordionWrapper h3.accordionItemHeaderButtonTitle {
-    color: #088099;
-    font-family: "Montserrat", sans-serif;
-    font-size: 2.0rem;
-    font-weight: 500;
-    margin: 0;
-    width: 100%;
+  color: #088099;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.0rem;
+  font-weight: 500;
+  margin: 0;
+  width: 100%;
 }
+
 .accordionWrapper h3.accordionItemHeaderButtonTitle i {
   float: right;
   transition-timing-function: ease;
   transition-duration: .3s;
 }
+
 .accordionWrapper .accordionItemHeaderButton.collapsed h3.accordionItemHeaderButtonTitle i {
   transform: rotate(-90deg);
 }
+
 .accordionWrapper .accordionItemInfo {
   padding-bottom: 10px;
 }
 
-.accordionWrapper h2.accordionTitle:not(:first-of-type) {
-    margin-top: 80px;
+
+
+
+/*********************
+*
+*   Accordion
+*   Media Queries
+*
+**/
+
+
+/* ***** Desktop down ***** */
+@media screen and (max-width: 1199.99px) {
+
+  .accordionWrapper h3.accordionItemHeaderButtonTitle {
+      font-size: calc(1.3rem + .6vw);
+  }
 }
 
+
+/* ***** xs screen and up ***** */
 @media only screen and (min-width: 576px) {
-    /* Keeps accordion on the grid */
-    .accordionWrapper {
-        margin-left: 15px !important;
-        padding-right: 45px;
-        xmargin-bottom: 0; /* allows accordions to stack */
-    }
-  
-    /* Indents nested lists to the left */
-    .accordionWrapper ol, .accordionWrapper ul {
-        margin-left: .25em !important;
-    }
+
+  /* Keeps accordion on the grid */
+  .accordionWrapper {
+      margin-left: 15px !important;
+      padding-right: 45px;
+  }
+
+  /* Indents nested lists to the left */
+  .accordionWrapper ol, .accordionWrapper ul {
+      margin-left: .25em !important;
+  }
 }
+
+
+
+
 
 /* ==========================================================================================
    ===== Law - Box Links MainZone =====  Content Type #5534 =================================
@@ -2468,7 +2526,7 @@ svg.arrow.circle.navy {
 }
 
 /* ==========================================================================================
-   ===== Feature Box ===== Content Type #5224 ===============================================
+   ===== Law - Card ===== Content Type #5224 ================================================
    ==========================================================================================
 */
 #MainZone .cardsWrapper {
@@ -2510,11 +2568,14 @@ svg.arrow.circle.navy {
   padding: 0;
   transition: all 0.2s ease;
 }
-.cardsWrapper .card h3{
-  margin: 30px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.2em;
+.cardsWrapper .card h3 {
   color: #333333;
+  margin: 3rem 2rem 1rem;
+}
+
+.cardsWrapper .cardLayout1234 .card h3 {
+  font-size: 1.8rem;
+  overflow-wrap: normal;
 }
 
 .cardText p {
@@ -2527,9 +2588,7 @@ svg.arrow.circle.navy {
 
 .cardsWrapper .cardButton {
   margin: 30px;
-
 }
-
 
 .cardsWrapper .cardButton a {
    display: block;
@@ -2538,6 +2597,8 @@ svg.arrow.circle.navy {
    text-transform: uppercase;
    text-decoration: none;
    font-weight: 500;
+   border-top: 1px solid #6f6f6f;
+   padding-top: 3rem;
 }
 .cardsWrapper .cardButton a:hover, .cardsWrapper .cardButton a:focus {
     text-decoration: underline;
@@ -2613,6 +2674,7 @@ svg.arrow.circle.navy {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.999px) { /* sm + md */
+    /*
     #MainZone .cardsWrapper .cards {
         flex-wrap: wrap;
     }
@@ -2636,8 +2698,8 @@ svg.arrow.circle.navy {
     #MainZone.col-sm-12 .cardsWrapper .cardLayout1234 .card,
     #MainZone.col-md-12 .cardsWrapper .cardLayout1234 .card,  
     #MainZone.col-md-9 .cardsWrapper .cardLayout1234 .card{
-      xflex-basis: calc(25% - 7px);
-      flex-basis: calc(23%);
+      flex-basis: calc(25% - 7px);
+      xflex-basis: calc(23%);
     }
   
     #MainZone.col-sm-9 .cardsWrapper .cardLayout1234 .card,  
@@ -2645,12 +2707,13 @@ svg.arrow.circle.navy {
     #MainZone.col-md-6 .cardsWrapper .cardLayout1234 .card{  
       flex-basis: calc(50% - 7px);  
     }
-
+	*/
     .cardsWrapper .cardButton .btn-boxlink {
         padding: 0;
     }
 }
-@media screen and (max-width: 767.999px) { /* xs */
+
+@media screen and (max-width: 991.999px) { /* xs */
     .cardsWrapper .cards {
         display: block;
     }
@@ -3312,8 +3375,8 @@ h2.contactBoxTitle {
 .contactBoxInfo p{
   margin:0;
   padding-left: 0;
-  line-height: 3.2rem;
-  font-size:1.6rem;
+  xline-height: 3.2rem;
+  xfont-size:1.6rem;
   color:#666;
 }
 
@@ -4572,10 +4635,12 @@ table.gsc-search-box td {
 .imageBoxWrapper .imageBox h3 {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.6em;
+  font-size: 1.5rem;
+  line-height: 1.5;
   color: #333333;
   padding: 30px 15px;
-  font-weight: 500;
+  xfont-weight: 500;
+  max-width: 70ch;
 }
 
 .imageBoxWrapper .imageBoxImage img {
@@ -5776,12 +5841,12 @@ a:not([href]) {
   font-size: 3rem;
   font-weight: 300;
 }
-.imageBannerIntro p{
-  color:#333333;
+.imageBannerIntro p {
+  color: #333333;
   font-size:2.2rem;
-  line-height:2;
+  line-height: 1.45;
   font-weight: 300;
-  text-align:center;
+  text-align: center;
 }
 
 .imageBannerIntro a { 
@@ -6995,14 +7060,6 @@ a:not([href]) {
 
 
 
-
-
-
-
-
-
-
-
 .standardContent.bio-card {
   height: 600px;
   padding-top: 150px;
@@ -7022,13 +7079,22 @@ a:not([href]) {
       }
 }
 
+
+
+
+
+
+
+
 /* ========================================================================================== 
    ===== Law - Faculty Profile  ===== Content Type #5143 ============================== START 
    ==========================================================================================
    Original CSS written in 2019. Last update/edit: 11/25/2020. 
 */
 
-.facultyProfileWrapper {
+/* commented out by vic 20210425 */
+
+/* .facultyProfileWrapper {
 
 
 }
@@ -7064,7 +7130,7 @@ a:not([href]) {
 .facultyProfileWrapper .facultyProfileMiddle {
   xbackground-color: #f7f7f7;
   margin-top: 30pxl
-}
+} */
 
 /* .facultyListItemWrapper {
    flex: 1 1 calc(100% - 30px);
@@ -7081,7 +7147,7 @@ div#id977819 .organizer  {
 } */
 
 
-.facultyListItemWrapper a {
+/* .facultyListItemWrapper a {
    display: block;
    text-decoration: none;
 }
@@ -7090,7 +7156,7 @@ div#id977819 .organizer  {
    box-shadow: 0px 0px 15px #888;
    text-decoration: underline;
    color: #333333;
-}
+} */
 
 /* .facultyListItem {
    text-align: center;
@@ -7179,22 +7245,39 @@ div#id977819 .organizer  {
     }
 } */
 
-/*** START 2020 fulltext content type layout ***/
 
-.facultyProfileTop {
-  background-color: #f7f7f7;
-  padding: 50px 0 50px 0;
+/* end commented out by vic 20210425 */
+
+
+
+
+
+/* ****** Bootstrap 5 Organizer layouts - vic 20210425 ****** */
+
+/* Medium devices (tablets, 768px and up to 991) */
+@media screen and (min-width: 768px) and (max-width: 991.99px) {
+
+  .lawFacultyWrapper p.card-text {
+      font-size: 1rem;
+  }
 }
 
-.facultyProfileWrapper .facultyProfilePicture {
-    xmax-width: fit-content;
+
+/* Below md breakpoint max-width: 767.99px and down) */
+@media screen and (max-width: 767.99px) {
+
+  .lawFacultyWrapper.w-50 {
+      width: 100%!important;
+  }
 }
 
-.facultyProfileWrapper .facultyProfilePicture img {
- 	border-radius: 50%; 
-    max-width: 260px;
-}
 
+/* ****** End Bootstrap 5 Organizer layouts - vic 20210425 ****** */
+
+
+
+
+/*** START 2021 fulltext content type layout ***/
 .facultyProfileBreadcrumbs {
     color: #000000;
     text-align: left;
@@ -7224,6 +7307,19 @@ div#id977819 .organizer  {
     font-weight: 700;
 }
 
+.facultyProfileTop {
+  background-color: #f7f7f7;
+  padding: 50px 0 50px 0;
+}
+
+.facultyProfileWrapper .facultyProfilePicture img {
+ 	border-radius: 50%; 
+    max-width: 340px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 3em;
+}
+
 .facultyProfileCV {
     padding-left: 15px;
     xwidth: 50%;
@@ -7233,12 +7329,6 @@ div#id977819 .organizer  {
 
 .facultyProfileTwitter {
     width: 100%;
-}
-
-.facultyProfileInfo h1,
-.facultyProfileTitles {
-	text-align: left;
-    xjustify-content: center;
 }
 
 .facultyProfileSidebar h3 {
@@ -7263,7 +7353,7 @@ div#id977819 .organizer  {
 }
 
 .primary-profile-sidebar ul li:before {
-	    color: #ffffff; /* bullet color */
+	    color: #ffffff; /* bullet color on blue background */
 }
 
 .secondary-profile-sidebar {
@@ -7281,28 +7371,26 @@ div#id977819 .organizer  {
 	xpadding: 0 15px 0 15px
 }
 
-/* Centers location, phone, and email at widths of 767px and under */
+/* Centers photo, title(s), room, phone, and email at widths under 768px */
+.facultyProfileWrapper .facultyProfilePicture,
+.facultyProfileTitles,
 .facultyProfileInfo {
-	text-align: center;	
+	text-align: center;
 }
 
-/* Centers title at widths of 767px and under */
-.facultyProfileTitles {
-    text-align: center;
-}
-
-/* Centers name at widths of 767px and under */
+/* Faculty member name */
 .facultyProfileInfo h1 {
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 4em;
+    margin-bottom: .5em;
 }
 
-/* Centers image at widths of 767px and under */
-.facultyProfileWrapper .facultyProfilePicture {
-    text-align: center;
+/* Biography, Publications, and Activity headlines */
+.primaryProfileContent h2 {
+  font-size: 2.4rem;  
 }
 
-/* Small devices (tablets, 768px and up) */
+/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
     .facultyProfileCV {
       width: 50%;
@@ -7314,43 +7402,44 @@ div#id977819 .organizer  {
     .facultyProfileTwitter {
       width: 50%;
     }
-}
-
-/* Faculty profile - Fulltext layout */
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {   
-  	/* Left aligns location, phone, and email at widths of 768px and up */
-    .facultyProfileInfo {
-        text-align: left;	
-    }
-
-    /* Left aligns title at widths of 768px and up */
-    .facultyProfileTitles {
-        text-align: left;
-    }
-
-    /* Left aligns name at widths of 768px and up */
+  
     .facultyProfileInfo h1 {
-        text-align: left;
-    }
-
-    /* Left aligns image at widths of 768px and up */
-    .facultyProfileWrapper .facultyProfilePicture {
-        text-align: left;
-        xmargin-right: 40px;
+      font-size: 4.5rem;
     }
   
-  	/* reduces unneeded column width from Bootsrap default */
+    .primaryProfileContent h2 {
+      font-size: 2.75rem;  
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {   
+  	/* Left aligns name, title, room, phone, and email at widths of 992px and up */
+    .facultyProfileInfo h1,
+    .facultyProfileTitles,
+    .facultyProfileInfo {
+      text-align: left;	
+    }
+  	
     .facultyProfileWrapper .facultyProfilePicture {
-    	max-width: fit-content;
+      text-align: left;
+      max-width: fit-content; /* Reduces unneeded column width from Bootstrap default */
+    }
+  
+    .facultyProfileWrapper .facultyProfilePicture img {
+      max-width: 260px;
     }
   
     .facultyProfileCV {
       padding-left: 0;
       margin: 0;
     }
+  
+    .facultyProfileBiography {
+      max-width: 95%;
+    }
 }
-/*** END 2020 fulltext content type layout ***/
+/*** END 2021 fulltext content type layout ***/
 
 /*
 ===== Law - Faculty Profile  ===== Content Type #5143 ================================ END 
@@ -7888,10 +7977,3 @@ span.go {
 div.row.Row1 {
   margin-bottom: 0px;
 }
-
-
-
-
-
-
-
