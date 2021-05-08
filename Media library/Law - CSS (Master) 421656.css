@@ -7607,10 +7607,12 @@ div#id977819 .organizer  {
 /* ========================================================================================== 
    ===== Law - Student Profile  ===== Content Type #5192 ==================================== 
    ==========================================================================================
-   Last update/edit: 4/29/2021 
+   Last update/edit: 5/8/2021 by Troy
 */
 
-/* Needs Law - Detail (MainZone is Flex Container) page layout */
+/* START Text-HTML layout 
+   Needs #MainZone to display:flex;
+*/
 .flexContainer {
 	background: #ffffff;
 	display: flex;
@@ -7624,7 +7626,7 @@ div#id977819 .organizer  {
 	background: #f7f7f7;
 	width: 262px;
 	margin: 15px;
-    padding: 0 2rem;
+  padding: 0 2rem;
 }
 
 .studentProfile img {
@@ -7637,6 +7639,33 @@ div#id977819 .organizer  {
 	margin-bottom: 20px;
 	font-size: 2.3rem;
 }
+/* END Text-HTML layout styles */
+
+/* START full-text layout styles */
+.profile-header {
+	background-color: #088099;
+}
+
+.studentProfileBiography {
+  background-color: hsl(0, 0%, 98%);
+  padding: 2em;
+}
+
+.studentProfileInfo h2 {
+  padding: 0;
+  margin: 0 0 0 0;
+  line-height: 1.25;
+  color: #ffffff;
+}
+
+.studentProfileInfo p {
+  color: #ffffff;
+}
+
+.studentProfileInfo p.studentProfileGraduatingClass {
+  line-height: 1.25 !important;
+}
+/* END full-text layout styles */
 
 /* ===== END Law - Student Profile  ===== Content Type #5192 ============================== */
 
