@@ -7432,23 +7432,22 @@ div#id977819 .organizer  {
 /* ****** End Bootstrap 5 Organizer layouts - vic 20210425 ****** */
 
 
+/*** START Fulltext Layout ***/
+/* Last update/edit: 5/8/2021 by Troy */
 
-
-/*** START 2021 fulltext content type layout ***/
-/* Last update/edit: 4/28/2021 */
-
+/* START Breadcrumbs */
 .facultyProfileBreadcrumbs {
-    color: #000000;
-    text-align: left;
-    font-size: 2rem;
-    line-height: 1;
+  color: #000000;
+  text-align: left;
+  font-size: 2rem;
+  line-height: 1;
 }
 
 #breadcrumbs.facultyProfileBreadcrumbs ol {
-    font-size: 1.8rem;
-    line-height: 1.5;
-    /* padding: 15px 0 15px 0; */
-    /* vertical-align: middle; */
+  font-size: 1.8rem;
+  line-height: 1.5;
+  /* padding: 15px 0 15px 0; */
+  /* vertical-align: middle; */
 }
 
 .facultyProfileBreadcrumbs a {
@@ -7462,72 +7461,23 @@ div#id977819 .organizer  {
 }
 
 .facultyProfileBreadcrumbs li:last-child {
-    color: #333333;
-    font-weight: 700;
+  color: #333333;
+  font-weight: 700;
 }
+/* END Breadcrumbs */
 
+/* START Image, Name, Title, Contact Info, CV, Twitter Handle section */
 .facultyProfileTop {
   background-color: #f7f7f7;
   padding: 50px 0 50px 0;
 }
 
 .facultyProfileWrapper .facultyProfilePicture img {
- 	border-radius: 50%; 
-    max-width: 340px;
-    width: 100%;
-    height: auto;
-    margin-bottom: 3em;
-}
-
-.facultyProfileCV {
-    padding-left: 15px;
-    xwidth: 50%;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.facultyProfileTwitter {
-    width: 100%;
-}
-
-.facultyProfileSidebar h3 {
-  font-weight: 600;
-  font-family: "Montserrat", sans-serif;
-}
-
-.primary-profile-sidebar {
-	padding: 25px;
-	background-color: #088099;
-	margin-top: 35px;
-    color: #ffffff;
-}
-
-.primary-profile-sidebar:empty {
-    xdisplay: none;
-}
-
-.primary-profile-sidebar h3,
-.primary-profile-sidebar p {
-	color: #ffffff;
-}
-
-.primary-profile-sidebar ul li:before {
-	    color: #ffffff; /* bullet color on blue background */
-}
-
-.secondary-profile-sidebar {
-	padding: 25px;
-    border: solid 3px #088099;
-    color: #333333;
-    margin-top: 35px;
-}
-
-.secondary-profile-sidebar h3 {
-    color: #333333;
-}
-
-.facultyProfileWrapper .facultyProfileMiddle {
-	xpadding: 0 15px 0 15px
+  border-radius: 50%; 
+  max-width: 340px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 3em;
 }
 
 /* Centers photo, title(s), room, phone, and email at widths under 768px */
@@ -7539,10 +7489,54 @@ div#id977819 .organizer  {
 
 /* Faculty member name */
 .facultyProfileInfo h1 {
-    text-align: center;
-    font-size: 4em;
-    margin-bottom: .5em;
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: .5em;
 }
+
+.facultyProfileCV {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.facultyProfileTwitter {
+  width: 100%;
+}
+/* END Image, Name, Title, Contact Info, CV, Twitter Handle section */
+
+/* START Faculty Profile Sidebar */
+.facultyProfileSidebar h3 {
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+.primary-profile-sidebar {
+	padding: 25px;
+	background-color: #088099;
+	margin-top: 35px;
+  color: #ffffff;
+}
+
+.primary-profile-sidebar h3,
+.primary-profile-sidebar p {
+	color: #ffffff;
+}
+
+.primary-profile-sidebar ul li:before {
+	color: #ffffff; /* bullet color on blue background */
+}
+
+.secondary-profile-sidebar {
+	padding: 25px;
+  border: solid 3px #088099;
+  color: #333333;
+  margin-top: 35px;
+}
+
+.secondary-profile-sidebar h3 {
+  color: #333333;
+}
+/* END Faculty Profile Sidebar */
 
 /* Biography, Publications, and Activity headlines */
 .primaryProfileContent h2 {
@@ -7551,54 +7545,57 @@ div#id977819 .organizer  {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-    .facultyProfileCV {
-      width: 50%;
-      padding-left: 15px;
-      margin-top: 10px;
-      margin-bottom: 20px;
-    }
-  
-    .facultyProfileTwitter {
-      width: 50%;
-    }
-  
-    .facultyProfileInfo h1 {
-      font-size: 4.5rem;
-    }
-  
-    .primaryProfileContent h2 {
-      font-size: 2.75rem;  
-    }
+  .facultyProfileInfo h1 {
+    font-size: 4.5rem;
+  }
+
+  .primaryProfileContent h2 {
+    font-size: 2.75rem;  
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {   
-  	/* Left aligns name, title, room, phone, and email at widths of 992px and up */
-    .facultyProfileInfo h1,
-    .facultyProfileTitles,
-    .facultyProfileInfo {
-      text-align: left;	
-    }
-  	
-    .facultyProfileWrapper .facultyProfilePicture {
-      text-align: left;
-      max-width: fit-content; /* Reduces unneeded column width from Bootstrap default */
-    }
+  /* Left aligns name, title, room, phone, and email at widths of 992px and up */
+  .facultyProfileInfo h1,
+  .facultyProfileTitles,
+  .facultyProfileInfo {
+    text-align: left;	
+  }
+
+  .facultyProfileWrapper .facultyProfilePicture {
+    text-align: left;
+    max-width: fit-content; /* Reduces unneeded column width from Bootstrap default */
+  }
+
+  .facultyProfileWrapper .facultyProfilePicture img {
+    max-width: 260px;
+  }
+
+  .facultyProfileCV {
+    width: 50%;
+    margin-bottom: revert;
+  }
+
+  .facultyProfileTwitter {
+    width: 50%;
+  }
+
+  /* Adds a gap between the CV and Twitter boxlinks 
+  depending on if either or both are used. */
+  .cv-twitter:nth-child(1) {
+    margin-right: .75rem;
+  }
+
+  .cv-twitter:nth-child(2) {
+    margin-left: .75rem;
+  }
   
-    .facultyProfileWrapper .facultyProfilePicture img {
-      max-width: 260px;
-    }
-  
-    .facultyProfileCV {
-      padding-left: 0;
-      margin: 0;
-    }
-  
-    .facultyProfileBiography {
-      max-width: 95%;
-    }
+  .facultyProfileBiography {
+    max-width: 95%;
+  }
 }
-/*** END 2021 fulltext content type layout ***/
+/*** END Fulltext Layout ***/
 
 /*
 ===== Law - Faculty Profile  ===== Content Type #5143 ================================ END 
