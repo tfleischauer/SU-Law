@@ -93,7 +93,7 @@ body {
 }
 @media screen and (min-width: 820px) and (max-width: 1107px) { 
   #breadcrumbs {
-    margin-left: 60px; /* keep to the right of the tiange as screen shrinks */
+    xmargin-left: 60px; /* keep to the right of the tiange as screen shrinks */
     width: calc(100% - 90px); /* prevent nav#breadcrumbs from falling off right side, add 30px margin to right (90 -60) */
   }
 }
@@ -7428,43 +7428,22 @@ div#id977819 .organizer  {
   }
 }
 
-
 /* ****** End Bootstrap 5 Organizer layouts - vic 20210425 ****** */
 
 
 /*** START Fulltext Layout ***/
-/* Last update/edit: 5/8/2021 by Troy */
+/* Last update/edit: 5/10/2021 by Troy */
 
-/* START Breadcrumbs */
-.facultyProfileBreadcrumbs {
-  color: #000000;
-  text-align: left;
-  font-size: 2rem;
-  line-height: 1;
+/* START Faculty Profile Breadcrumbs */
+#breadcrumbs.facultyProfileBreadcrumbs ol li:last-child {
+  font-weight: 700; /* darken the faculty member's name */
 }
 
-#breadcrumbs.facultyProfileBreadcrumbs ol {
-  font-size: 1.8rem;
-  line-height: 1.5;
-  /* padding: 15px 0 15px 0; */
-  /* vertical-align: middle; */
+/* Don't increase the font-weight of the last right angel (>) symbol. */
+#breadcrumbs.facultyProfileBreadcrumbs ol li:last-child::before {
+  font-weight: initial; 
 }
-
-.facultyProfileBreadcrumbs a {
-  color: #000000;
-  text-decoration:none;
-}
-
-.facultyProfileBreadcrumbs a:focus, .facultyProfileBreadcrumbs a:hover{
-  color: #fdb913;
-  text-decoration: underline;
-}
-
-.facultyProfileBreadcrumbs li:last-child {
-  color: #333333;
-  font-weight: 700;
-}
-/* END Breadcrumbs */
+/* END Faculty Profile Breadcrumbs */
 
 /* START Image, Name, Title, Contact Info, CV, Twitter Handle section */
 .facultyProfileTop {
@@ -7556,7 +7535,7 @@ div#id977819 .organizer  {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {   
-  /* Left aligns name, title, room, phone, and email at widths of 992px and up */
+  /* Left align name, title, room, phone, and email */
   .facultyProfileInfo h1,
   .facultyProfileTitles,
   .facultyProfileInfo {
