@@ -1,0 +1,42 @@
+<article class="studentProfileFulltextWrapper contentItem card border-0 w-100" aria-label="<t4 type='content' name='Name of Student' output='normal' modifiers='striptags,htmlentities' />">
+  <t4 type="meta" meta="html_anchor" />
+  <div class="studentProfileFulltext standardContent">
+    <div class="row g-0">
+      <div class="col-md-4">
+
+        <img  class="rounded-circle"
+              src="<t4 type='content' name='Biographical Photo' output='normal' formatter='path/*' />"
+              alt="Photo of <t4 type='content' name='Name of Student' output='normal' modifiers='striptags,htmlentities' />" />
+
+      </div><!-- end .col-md-4 -->
+      <div class="col-md-8">
+        <div class="card-body">
+          <h2 class="card-title">
+            <t4 type="content" name="Name of Student" output="normal" modifiers="striptags,htmlentities" />
+          </h2>
+  
+          <t4   type="content" name="Graduating Class" output="selective-output" modifiers="striptags,htmlentities,nl2br"
+                format="<p class=&quot;card-text&quot;>Class of $value</p>" />
+  
+          <t4   type="content" name="Undergraduate Institution" output="selective-output" modifiers="" process-format="true"
+                format="<p class=&quot;card-text&quot;>$value" /><t4 
+                type="content" name="Undergraduate Institution" 
+                output="selective-output" 
+                modifiers="" 
+                process-format="true"
+                format="<t4 type='content' name='Undergraduate Graduation Year' output='selective-output' modifiers='' process-format='true'
+                format=' $value' /></p>" />
+  
+          <t4   type="content" name="Current Place of Work" output="selective-output" modifiers="" process-format="true"
+                format="<p class=&quot;card-text&quot;>$value</p>" />
+
+        </div><!-- end .card-body -->
+      </div> <!-- end .col-md-8 -->
+    </div><!-- end .row-->
+
+    <div class="col-12 card-footer border-0">
+      <t4   type="content" name="Biography" output="selective-output" modifiers="medialibrary,nav_sections"
+            process-format="true" format="<div class=&quot;card-text&quot;>$value</div>" />
+    </div><!-- end .card-footer-->
+  </div><!-- end .standardContent-->
+</article>
