@@ -1,0 +1,64 @@
+/* ========================================================================================== 
+   ===== Law - Student Profile  ===== Content Type #5192 ==================================== 
+   ==========================================================================================
+   Last update/edit: 5/24/2021 by Troy
+*/
+
+/* START Text-HTML layout 
+   Needs #MainZone to display:flex;
+*/
+.flexContainer {
+	background: #ffffff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch; /* makes all flex items equal to the longest item */
+}
+
+/* Flexbox item */
+.studentProfileWrapper {
+	background: #f7f7f7;
+	width: 262px;
+	margin: 15px;
+  padding: 0 2rem;
+}
+
+.studentProfile img {
+	border-radius: 50%;
+}
+
+.studentProfile.standardContent h3 {
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 2.3rem;
+}
+/* END Text-HTML layout styles */
+
+/* START full-text layout styles */
+.profile-header {
+	background-color: hsl(0, 0%, 98%);
+}
+
+.studentProfilePageImage img {
+  min-width: 200px;
+}
+
+.studentProfileBiography {
+  background-color: #ffffff;
+}
+
+.studentProfileInfo h2 {
+  padding: 0;
+  margin: 0 0 0 0;
+  line-height: 1.25;
+}
+
+.studentProfileInfo p {
+  color: #333333;
+}
+
+.studentProfileInfo p.studentProfileGraduatingClass {
+  line-height: 1.25 !important;
+}
+/* END full-text layout styles */
