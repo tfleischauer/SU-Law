@@ -1,0 +1,134 @@
+body {
+  background-color: #f7f7f7;
+}
+
+ul.audience-icon-links {
+  overflow: hidden;
+  xdisplay: flex;
+}
+
+ul.audience-icon-links li {
+  text-align: center;
+  border-right: none;
+  list-style: none;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  xalign-content: flex-start;
+}
+
+.audience-icon-links a {
+  color: #088099;
+}
+
+.audience-icon-links img {
+  color: #999999;
+  xdisplay: block;
+  padding-bottom: 30px;
+}
+
+span.audience-menu-text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: block;
+  line-height: 1.3em;
+}
+
+/* controls both items */
+ul.audience-icon-links a {
+  text-decoration: none;
+}
+
+.audience-icon-links a:hover {
+  color: #333333;
+}
+
+.audience-icon-links a img:hover,
+.audience-icon-links a img:active {
+  color: #333333;
+}
+
+ul.audience-icon-links {
+  margin: 0;
+  padding: 5vh 0 0 0;
+}
+
+ul.audience-icon-links .audience-menu-text:hover {
+  text-decoration: underline;
+}
+
+/* Medium devices (desktops, 992px and up) */
+/* @media (min-width: @screen-md-min) { */
+
+@media only screen and (min-width: 992px) {
+
+ul.audience-icon-links {
+  display: flex;
+  xalign-items: center;
+  align-items: initial;
+  justify-content: center;
+  text-align: center;
+  padding-left: 0;
+  xpadding-top: 0;
+  padding-top: 40px;
+  background: #ffffff;
+}
+
+ul.audience-icon-links li {
+  width: 200px;
+  text-align: center;
+  border-right: 2px #999999 solid;
+  padding: 0 25px 0 25px;
+  width: fit-content;
+}
+
+ul.audience-icon-links li:first-child {
+  xpadding: 0 25px 0 0;
+}
+
+
+ul.audience-icon-links li:last-child {
+  border-right: none; 
+  xpadding: 0 0 0 25px;
+}
+
+span.audience-menu-text {
+  xfont-size: 2rem;
+}
+
+/* parent */
+.audience-specific-container {
+  position: relative; 
+  margin-bottom: 260px;
+  width: 100%;
+}
+
+/* child */
+nav.audience-navigation {
+  position: absolute; 
+  top: -40px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+} /* end Medium devices (desktops, 992px and up) */
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+ul.audience-icon-links li {
+  padding: 0 30px 0 30px;
+}
+
+ul.audience-icon-links li:first-child {
+  padding: 0 30px 0 30px;
+}
+
+ul.audience-icon-links li:last-child {
+  padding: 0 30px 0 30px;
+}
+
+} /* end Large devices (large desktops, 1200px and up) */
