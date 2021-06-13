@@ -3,28 +3,29 @@
   aria-label="<t4 type='content' name='Name of Student' output='normal' modifiers='striptags,htmlentities' />">
   <t4 type="meta" meta="html_anchor" />
   <div class="studentProfilePage standardContent">
-    <div class="profile-header d-flex flex-column flex-lg-row mb-4 col-lg-9 mx-lg-auto border-bottom">
-      <div class="studentProfilePageImage mx-auto">
-        <img class="rounded-circle flex-shrink-0"
-          src="<t4 type='content' name='Biographical Photo' output='normal' formatter='path/*' />"
-          alt="Photo of <t4 type='content' name='Name of Student' output='normal' modifiers='striptags,htmlentities' />"
-          aria-label="Photo of <t4 type='content' name='Name of Student' output='normal' modifiers='striptags,htmlentities' />" />
-      </div> <!-- end .studentProfilePageImage -->
-      <div class="studentProfileInfo flex-grow-1 ms-3 mt-3 text-center text-lg-start d-flex flex-column justify-content-center">
-        <h2>
-          <t4 type="content" name="Name of Student" output="normal" modifiers="striptags,htmlentities" />
-        </h2>
-        <t4 type="content" name="Graduating Class" output="selective-output" modifiers="striptags,htmlentities,nl2br"
-          format="<p class=&quot;studentProfileGraduatingClass&quot;>Class of $value</p>" />
-
-        <t4 type="content" name="Undergraduate Institution" output="selective-output" modifiers="" process-format="true"
-          format="<p class=&quot;studentProfileUndergraduateInstitution&quot;>$value" />
-        <t4 type="content" name="Undergraduate Institution" output="selective-output" modifiers="" process-format="true"
-          format="<t4 type='content' name='Undergraduate Graduation Year' output='selective-output' modifiers='' process-format='true'
+    <div class="profile-header border-bottom mb-3">
+      <div class="col-lg-9 d-flex flex-column flex-lg-row mx-lg-auto">
+        <div class="studentProfilePageImage mx-auto">
+          <img class="rounded-circle flex-shrink-0 img-fluid"
+            src="<t4 type='content' name='Biographical Photo' output='normal' formatter='path/*' />"
+            alt="Photo of <t4 type='content' name='Name of Student' output='normal' modifiers='striptags,htmlentities' />"
+            aria-label="Photo of <t4 type='content' name='Name of Student' output='normal' modifiers='striptags,htmlentities' />" />
+        </div> <!-- end .studentProfilePageImage -->
+        <div class="studentProfileInfo flex-grow-1 ms-3 mt-3 text-center text-lg-start d-flex flex-column justify-content-center">
+          <h2>
+            <t4 type="content" name="Name of Student" output="normal" modifiers="striptags,htmlentities" />
+          </h2>
+          <t4 type="content" name="Graduating Class" output="selective-output" modifiers="striptags,htmlentities,nl2br"
+            format="<p class=&quot;studentProfileGraduatingClass&quot;>Class of $value</p>" />
+          <t4 type="content" name="Undergraduate Institution" output="selective-output" modifiers=""
+            process-format="true" format="<p class=&quot;studentProfileUndergraduateInstitution&quot;>$value" />
+          <t4 type="content" name="Undergraduate Institution" output="selective-output" modifiers=""
+            process-format="true" format="<t4 type='content' name='Undergraduate Graduation Year' output='selective-output' modifiers='' process-format='true'
           format=', $value' /></p>" />
-        <t4 type="content" name="Current Place of Work" output="selective-output" modifiers="" process-format="true"
-          format="<p class=&quot;studentProfilePlaceOfWork&quot;>$value</p>" />
-      </div> <!-- end .studentProfileInfo-->
+          <t4 type="content" name="Current Place of Work" output="selective-output" modifiers="" process-format="true"
+            format="<p class=&quot;studentProfilePlaceOfWork&quot;>$value</p>" />
+        </div> <!-- end .studentProfileInfo-->
+      </div> <!-- end .col-lg-9.mx-lg-auto. Centers headline image and text. -->
     </div> <!-- end .profile-header-->
     <div class="d-flex justify-content-lg-center">
       <div class="col-lg-9">
