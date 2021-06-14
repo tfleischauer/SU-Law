@@ -1,115 +1,89 @@
 .studentDiaryBioHeader {
-    background: #f7f7f7;
-    overflow: hidden;
-    padding: 15px 0;
+  background: #f7f7f7;
+  overflow: hidden;
+  padding: 15px 0;
 }
 .studentDiaryBioHeaderText {
-    width: 100%;
-    display: inline-block;
+  width: 100%;
+  display: inline-block;
 }
 
-.studentDiaryBioHeader #pageTitle {
-    padding: 0 !important;
-    margin: 0 !important;
-    font-size: 4rem !important;
-    text-align: center;
+.studentDiaryBioHeader #nameTitle {
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 3rem !important;
+  text-align: center;
 }
-
-.studentDiaryBioHeader #pageTitle a {
-    background-color: red;
-    color: white;
-    padding: 1em 1.5em;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-  
-  .studentDiaryBioHeader #pageTitle a:hover {
-    background-color: #555;
-    text-decoration: underline;
-  }
-  
-  .studentDiaryBioHeader #pageTitle a:active {
-    background-color: black;
-  }
-  
-  .studentDiaryBioHeader #pageTitle a:visited {
-    background-color: #ccc;
-  }
 
 .studentDiaryGraduatingClass {
-    font-size: 1.8rem;
-    font-weight: 600;
-    line-height: 2;
-    text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2;
+  text-align: center;
 }
 
 .studentDiaryEmail {
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 1.5;
-    text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
 }
 
 p.studentDiaryEmail {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .studentDiaryImageContainer {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .studentDiaryImageContainer img {
-    max-width: 120px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
+  max-width: 120px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
 } 
 
-.studentDiaryText p {
-    xfont-size: 1.4rem;
-}
-
 .clearfix {
-    clear: both;
+  clear: both;
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-    
-    .studentDiaryBioHeader {
-        background: #f7f7f7;
-        overflow: hidden;
-        padding: 15px 0 7.5px 0;
-    }
 
-    .studentDiaryBioHeaderText {
-        width:80%;
-        padding-left: 5px;
-        float: right;
-    }
+@media (min-width: 992px) {
+  
+  .studentDiaryBioHeader {
+    background: #f7f7f7;
+    overflow: hidden;
+    padding: 15px 0 7.5px 0;
+  }
 
-    .studentDiaryImageContainer {
-        width: 20%;
-        display: inline-block;
-        margin-bottom: 0;
-    }
+  .studentDiaryBioHeaderText {
+    width:80%;
+    padding-left: 5px;
+    float: right;
+  }
 
-    .studentDiaryBioHeader #pageTitle {
-        padding: 0 !important;
-        margin: 0 !important;
-        font-size: 5rem !important;
-        text-align: left;
-    }
+  .studentDiaryImageContainer {
+    width: 20%;
+    display: inline-block;
+    margin-bottom: 0;
+  }
 
-    .studentDiaryGraduatingClass {
-        font-size: 1.8rem;
-        line-height: 1.5;
-        text-align: left;
-    }
-    
-    .studentDiaryEmail {
-        font-size: 1.6rem;
-        line-height: 1.4;
-        text-align: left;
-    }
+  .studentDiaryBioHeader #nameTitle {
+    padding: 0 !important;
+    margin: 0 !important;
+    text-align: left;
+  }
+
+  .studentDiaryGraduatingClass {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    text-align: left;
+  }
+  
+  .studentDiaryEmail {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    text-align: left;
+  }
 }
