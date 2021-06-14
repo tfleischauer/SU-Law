@@ -3,8 +3,7 @@
     aria-labelledby="label<t4 type='meta' meta='content_id' />">
     <t4 type="meta" meta="html_anchor" />
     <div class="studentDiaryNamePhotoIntrotext standardContent">
-        <a class="photo-nameLink"
-            href="<t4 type='content' name='Name of Student' output='fulltext' use-element='true' filename-element='Name of Student' enable-dedit='false' />">
+        <div class="photo-nameLink">
             <img src="<t4 type='content' name='Photo' output='normal' formatter='path/*' />" class=""
                 alt="Photo of <t4 type='content' name='Name of student' output='normal' />" />
             <h3 class="studentDiaryNameOfStudent">
@@ -13,7 +12,7 @@
                 <t4 type="content" name="Seattle U Law Graduating class" output="selective-output"
                     modifiers="striptags,htmlentities,nl2br" format="'<span>$value</span>" />
             </h3>
-        </a>
+          </div>
         <t4 type="content" name="Introductory text" output="selective-output" modifiers="medialibrary,nav_sections"
             format="<div class=&quot;Introductory text&quot;>$value</div>" />
         <p class="readDiary standardContent">
