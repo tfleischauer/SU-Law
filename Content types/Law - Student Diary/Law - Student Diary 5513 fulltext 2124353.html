@@ -1,0 +1,27 @@
+<div class="studentDiaryWrapper contentItem">
+  <div class="studentDiaryBioHeader">
+      <div class="studentDiaryImageContainer">
+          <t4 type="content" name="Photo" output="normal" formatter="image/*"
+              alt="Photo of<t4 type='content' name='Name of Student' output='normal' modifiers='htmlentities' />" />
+      </div>
+      <div class="studentDiaryBioHeaderText standardContent">
+          <h1 id="pageTitle">
+              <t4 type="content" name="First name" output="normal" modifiers="striptags,htmlentities" /> <t4 type="content" name="Last name" output="normal" modifiers="striptags,htmlentities" />
+          </h1>
+          <t4 type="content" name="Seattle U Law Graduating class" output="selective-output"
+              modifiers="striptags,htmlentities,nl2br"
+              format="<p class=&quot;studentDiaryGraduatingClass&quot;>Class of 20<span>$value</span></p>" />
+          <p class="studentDiaryEmail">
+              <span class="fas fa-envelope"></span>&nbsp;
+              <a href="mailto:<t4 type='content' name='Email' output='normal' modifiers='striptags' />">
+                  <t4 type="content" name="Email" output="normal" modifiers="striptags" />
+              </a>
+          </p>
+      </div>
+  </div>
+  <div class="standardContent">
+      <t4 type="content" name="Full diary text" output="selective-output" modifiers="medialibrary,nav_sections"
+          process-format="true" format="<div class=&quot;studentDiaryText&quot;>$value</div>" />
+  </div>
+  <div class="clearfix"></div>
+</div>
