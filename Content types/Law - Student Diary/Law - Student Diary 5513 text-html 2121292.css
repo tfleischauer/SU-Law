@@ -1,45 +1,34 @@
-/* Added to #mainZone in 'Law - Detail (MainZone is a Flex Container)' page layout */
+/* Add .flexContainer to #mainZone using jQuery */
 .flexContainer {
 	background: #ffffff;
-	display: flex; /* creates flex box container */
+	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	align-items: stretch; /* makes the items the same size, equal to the longest item */
 }
 
 /* Flexbox item */
 .studentDiaryCardWrapper {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 15px !important;
-    xoutline: 1px solid #333;
-    display: flex;
-	align-items: stretch;
+  display: flex;
+  align-items: stretch;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px !important;
 }
 
 .studentDiaryNamePhotoIntrotext.standardContent {
-    background: #f7f7f7;
-    padding: 15px;
-    overflow: hidden;
+  background: #f7f7f7;
+  padding: 2rem;
+  overflow: hidden;
 }
 
 .studentDiaryNamePhotoIntrotext.standardContent img {
-    border-radius: 50%;
+  border-radius: 50%;
+  max-width: 300px;
 }
 
 .studentDiaryNamePhotoIntrotext.standardContent h3 {
 	text-align: center;
 	margin-top: 0;
 	margin-bottom: 20px;
-    font-size: 2.4rem;
-}
-
-a.photo-nameLink:link {
-    text-decoration: none
-}
-
-a.photo-nameLink:hover {
-    text-decoration: underline;
 }
 
 /* Allows a Primary Content item to be above the flex container */
@@ -49,17 +38,15 @@ a.photo-nameLink:hover {
 }
 
 /* Large Mobile */
-@media only screen and (min-width : 425px) {
-    .studentDiaryNamePhotoIntrotext.standardContent img {
-        max-width: 300px;
-        display: block;
-        margin: 0 auto;
-    }
+@media only screen and (min-width: 425px) {
+  .studentDiaryNamePhotoIntrotext.standardContent img {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
-/* Tablet */
-@media only screen and (min-width : 768px) {
+@media only screen and (min-width: 992px) {
     .studentDiaryCardWrapper {
-        width: 50%;
+      width: 50%;
     } 
 }
