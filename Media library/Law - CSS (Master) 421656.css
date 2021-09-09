@@ -18,12 +18,12 @@
   font-style: normal;
 }
 
-/* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  margin-top: 0; /* prevents collapsing margins */
+  xmargin-top: 0; /* prevents collapsing margins */
+  margin: 0; /* test */
 }
 
 /* Remove default margin */
@@ -42,11 +42,13 @@ body {
   color: #333333;
   font-family: "Montserrat", sans-serif;
   font-size: 62.5%; /* 10/16 =.625 To maximize accessibility, it is generally best to use values that are relative to the user's default font size.*/
+  xfont-size: 10px;
   font-weight:400;
   line-height: 1.45;
   margin: 0;
   /* for the fixed header */
   padding-top: 152px;
+  min-width: fit-content; /* prevents overflow of long strings in mobile views */
 }
 
 
@@ -86,12 +88,14 @@ body {
 /* ==============================================================================================================*/
 /* ================================================= BreadCrumbs ================================================*/
 /* Last edited by Aubrey 12/11 */
+/* Last edited by Vic Aug 21 - in development */
 
 #breadcrumbsWrapper{
-  clear:both;
-  min-height:60px;
-  xposition:relative;
+  clear: both;
+  min-height: 60px;
+  position: relative;
 }
+
 #breadcrumbsWrapper .triangle{
   border-style: solid;
   border-width: 100px 50px 0 0px; /* was 125 60 0 0*/
@@ -118,22 +122,30 @@ body {
 @media screen and (max-width: 820px) { /* xs plus a bit when the trianlge overlaps*/
   #breadcrumbs {
     xmargin-left: 30px; /* keep to the right of the tiange as screen shrinks */
-    xwidth: calc(100% - 45px); /* prevent nav#breadcrumbs from falling off right side, add 15px margin to right (45 - 30) */
+    width: calc(100% - 45px); /* prevent nav#breadcrumbs from falling off right side, add 15px margin to right (45 - 30) */
   }
   #breadcrumbsWrapper .triangle{
     xborder-width: 65px 30px 0 0px;
     xtop: -15px;
   }
+
+  #breadcrumbsWrapper .standardContent {
+    max-width: unset;
+  }
 }
+
 #breadcrumbs {
   clear:both;
   padding: 0;
 }
+
 #breadcrumbs ol{
   background-color: inherit;
   border-radius: 0;
   clear: both;
-  font-size: 1.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1rem;
   line-height: 1.4;
   list-style: none;
   margin-bottom: 0; /* overrides a bootstrap default 20px*/
@@ -144,6 +156,7 @@ body {
 #breadcrumbs ol li{
   display: inline-block;
   color:#666666; 
+  margin-bottom: 0;
 }
 #breadcrumbs ol li a{
   color:#666666; 
@@ -175,7 +188,10 @@ body {
 /* =============================================================================================================== */
 /* Everything below the banner, above the footer. Wraps Zones Top, A, B, and C. */
 
-
+.signature {
+  xbackground: url('http://law-test.seattleu.edu/our-school/annclark.jpg');
+  xobject-fit: cover;
+}
 
 
 
@@ -193,16 +209,55 @@ _____________________  _____________________________  __________________________
   
 */
 
-#MainZone { 
-  padding: 0px;
+/* ========================================================================================== 
+   ===== Global #MainZone styles ============================================================
+   ========================================================================================== 
+*/
+
+#MainZone {
+  padding: 0 1.5rem; /* creates side space on mobile views. */
 }
 
-/* For Detail Page layout */
+@media (min-width: 992px) {
+#MainZone { 
+    padding: 0;
+  }
+}
+
+#MainZone .primaryContent.standardContent a:link {
+    color: #088099; /* Light Blue */
+    text-decoration: none;
+}
+
+#MainZone .primaryContent.standardContent a:visited {
+    color: #088099; /* Light Blue */
+    text-decoration: none;
+}
+
+#MainZone .primaryContent.standardContent a:hover {
+    color: #aa0000; /* SU Red */
+    text-decoration: underline;
+}
+
+#MainZone .primaryContent.standardContent a:active {
+    color: #088099; /* Light Blue */
+    text-decoration: underline;
+}
+
+/* ========================================================================================== 
+   ===== Global Detail Page styles ==========================================================
+   ========================================================================================== 
+*/
+
 .maxWidth1170px {
     max-width: 1170px;
     margin: auto;
 }
 
+.maxWidth1400px {
+    max-width: 1400px;
+    margin: auto;
+}
 
 @media screen and (min-width: 768px) { /* sm + md + lg*/
   #pageContentWrapper.container #SidebarZone{
@@ -221,12 +276,28 @@ _____________________  _____________________________  __________________________
   padding:0;
 }
 
+*/
+
+/* ========================================================================================== 
+   ===== Global #SidebarZone styles ============================================================
+   ========================================================================================== 
+*/
+
+/* Hides overflow and adds ellipsis (for long email addresses) */
+#SidebarZone .primaryContentWrapper a {
+    display: inline-block !important;
+    text-overflow: ellipsis !important;
+    width: -webkit-fill-available !important;
+    overflow: hidden !important; 
+}
+
 
 /* ========================================================================================== 
    ===== Site Navigation ==================================================================== 
    ==========================================================================================
    Sub nav
    Last revised 2/16/18 by Aubrey  
+   In development by vic aug 2021
 */
 
 #siteNavigation {
@@ -241,9 +312,10 @@ _____________________  _____________________________  __________________________
     overflow-y:visible;
   }
 }
+
 #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle a,
-#siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle a:visited{
-  border-bottom: 1px solid #B7B7B7;
+#siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle a:visited {
+  /* border-bottom: 1px solid #B7B7B7; */
   color: #333333;
   display:block;
   font-weight: bold;
@@ -253,8 +325,9 @@ _____________________  _____________________________  __________________________
   padding: 15px 0px 13px 0;
   text-decoration:none;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
+
 @media (max-width: 767.999px){
   #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle a,
   #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle a:visited{
@@ -338,9 +411,9 @@ _____________________  _____________________________  __________________________
     content: '\f0c9';
     font-family: 'fontawesome';
   }
-  #siteNavigation .navbar-collapse.collapse {
+  /* #siteNavigation .navbar-collapse.collapse {
       display: none!important;
-  }
+  } */
   #siteNavigation .navbar-nav>li>a {
       padding-top: 15px;
       padding-bottom: 15px;
@@ -369,23 +442,33 @@ _____________________  _____________________________  __________________________
 }
 
 /* ------------------- Navigation menu items --------------------- */
-
-#siteNavigation #menu li{ /* affects all menu items */
-  display:block;
-  position:relative; /* to allow <span> (arrow) to be positioned within this block */
-  border-bottom: 1px solid #B7B7B7;
+/* position relative to allow <span> (arrow) to be positioned within this block */
+/* affects all menu items in desktop */
+#siteNavigation #menu li {
+  display: block;
+  position: relative;
+  /* border-bottom: 1px solid #B7B7B7; */
 }
-#siteNavigation #menu li a{ /* all links in all menu items */
+/* focus affects on mobile sidebar menu items */
+/* #TopZone #siteNavigation #menu li { 
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #B7B7B7;
+} */
+
+/* all links in all menu items */
+  /* padding: 10px 7px 10px 0; */
+#siteNavigation #menu li a { 
   color: #595959;
-  display:inline-block;
+  display: inline-block;
   font-size: 1.6rem;
   font-weight: 500;
-  line-height:1.6em;
-  padding: 10px 7px 10px 0;
-  position:relative;
-  text-decoration:none;
+  line-height: 1.6em;
+  position: relative;
+  text-decoration: none;
   width: calc(100% - 30px);
 }
+
 #siteNavigation #menu li em{
   transform: rotate(90deg);
 }
@@ -393,11 +476,13 @@ _____________________  _____________________________  __________________________
 #siteNavigation #menu li em.collapsed{
   transform: rotate(0deg);
 }
-@media screen and (max-width: 767.999px){
-  body #siteNavigation #menu li a { /* All links in the sitenav menu */
+/* All links in the sitenav menu */
+/* @media screen and (max-width: 767.999px){
+  body #siteNavigation #menu li a { 
     padding:10px 35px 10px 25px;
   }
-}
+} */
+
 #siteNavigation #menu li a:hover,
 #siteNavigation #menu li a:focus{
   color: #088099;
@@ -410,7 +495,9 @@ _____________________  _____________________________  __________________________
     padding:10px 10px 10px 30px;
   }
 }
-#siteNavigation #menu li span.currentsection{
+
+#siteNavigation #menu li span.currentsection {
+  border-bottom: 1px solid #B7B7B7;
   color: #aa0000;
   display: inline-block;
   font-size: 1.6rem;
@@ -418,6 +505,7 @@ _____________________  _____________________________  __________________________
   line-height: 1.6em;
   padding: 10px 7px 10px 0
 }
+
 #siteNavigation #menu li span.currentsection a{  /* neccessary because on fulltext and form thank you pages currentsection has a link */
   border-bottom: none;
   color:#aa0000; 
@@ -490,15 +578,19 @@ _____________________  _____________________________  __________________________
   transition: transform .4s ease;;
 }
 
-@media screen and (max-width: 991.999px){
-  #siteNavigation #menu li a {
+@media screen and (max-width: 991.999px) {
+
+  /* #siteNavigation #menu li a {
     padding:10px 35px 10px 15px;
-  }
-  #siteNavigation #menu li span.currentsection{
+  } */
+
+  #siteNavigation #menu li span.currentsection {
     padding:10px 15px;
   }
-  #siteNavigation #menu .multilevel-linkul-0 li a,
-  #siteNavigation #menu .multilevel-linkul-0 span.currentsection{ /* first submenu*/
+
+  /* first submenu*/
+  /* #siteNavigation #menu .multilevel-linkul-0 li a,
+  #siteNavigation #menu .multilevel-linkul-0 span.currentsection{
     padding: 10px 35px 10px 25px;
     color: #797979;
     display: inline;
@@ -507,35 +599,44 @@ _____________________  _____________________________  __________________________
     line-height: 1.2em;
     position: relative;
     text-decoration: none;
-  }
+  } */
+
+  /* second submenu*/
   #siteNavigation #menu .multilevel-linkul-1 li a,
-  #siteNavigation #menu .multilevel-linkul-1 span.currentsection{ /* second submenu*/
+  #siteNavigation #menu .multilevel-linkul-1 span.currentsection {
     padding: 10px 0 10px 35px;
   }
+
+  /* third submenu*/
   #siteNavigation #menu .multilevel-linkul-2 li a,
-  #siteNavigation #menu .multilevel-linkul-2 span.currentsection{ /* third submenu*/
+  #siteNavigation #menu .multilevel-linkul-2 span.currentsection {
     padding: 10px 0 10px 45px;
   }
-  #siteNavigation #menu .multilevel-linkul-3 li a{ /* fourth submenu*/
+
+  /* fourth submenu*/
+  #siteNavigation #menu .multilevel-linkul-3 li a {
     padding: 10px 0 10px 55px;
   }
-  #siteNavigation #menu .multilevel-linkul-4 li a{ /* fifth submenu*/
+
+  /* fifth submenu*/
+  #siteNavigation #menu .multilevel-linkul-4 li a {
     padding: 10px 0 10px 65px;
   }
+
   #siteNavigation #menu .glyphicon{
     padding:10px;
   }
 }
-@media screen and (max-width: 767.999px){
+
+/* @media screen and (max-width: 767.999px){
   #siteNavigation #menu .currentbranch0 {
     left:0;
     margin:0;
     padding-left:0;
-    /*padding: 5px 0 5px 15px;*/
     padding: 10px 35px 10px 25px;
     width:inherit;
   }
-}
+} */
 /*horizontal site nav */
 @media (min-width: 991.999px) {
   .horizontalSiteNav {
@@ -652,22 +753,22 @@ _____________________  _____________________________  __________________________
 
 @media screen and (max-width: 767.999px) { /* xs */
   #MainZone.col-xs-12 .hspace{
-    padding: 0 15px;
+    xpadding: 0 15px;
   }
 }
 @media screen and (max-width: 1199.999px) { /* xs + sm + md */
   #MainZone.col-md-12 .hspace,
   #MainZone.col-md-9 .hspace{
-    padding: 0 15px;
+    xpadding: 0 15px;
   }
   #MainZone.col-sm-8 .hspace{
-    padding: 0 0 0 15px;
+    xpadding: 0 0 0 15px;
   }
   #SidebarZone .hspace{
     padding: 0 15px 0 0 ;
   }  
   #zoneC .hspace{
-    padding: 0 0 0 15px;
+    xpadding: 0 0 0 15px;
   }
 }
 @media screen and (min-width: 1200px) { /* lg */
@@ -698,19 +799,20 @@ _____________________  _____________________________  __________________________
 
 @media screen and (max-width:767.999px){
   #MainZone.col-xs-12 .standardContent { 
-     padding: 0 15px;
+     xpadding: 0 15px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991.999px) { /* sm */
   #MainZone.col-sm-12 .standardContent { 
-     padding: 0 15px;
+     xpadding: 0 15px;
   }
 }
 
 /* -------------------------- Headings -------------------------- */
 
 h1, h2, h3, h4, h5 {
-  margin: 3rem 0 1.38rem;
+  xmargin: 3rem 0 1.38rem;
+  margin: 1.25rem 0 1.38rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   line-height: 1.3;
@@ -741,7 +843,9 @@ h1, h2, h3, h4, h5 {
   xmargin:30px 0 22px -0; 
   
   xfont-size: 3.157rem;
-  font-size: 2.441rem;
+  xfont-size: 2.441rem; /* Major scale */
+  font-size: 2rem;
+  margin-bottom: .5rem;
 } 
 .standardContent h2 a { /* links in major headings */
   color: #aa0000;
@@ -758,10 +862,11 @@ h1, h2, h3, h4, h5 {
   xfont-size: 2.1rem;
   xfont-weight: 400;
   font-weight: 500;
-  xmargin:15px 0 3px 0; 
-  
+  xmargin: 15px 0 3px 0;
   xfont-size: 2.369rem;
-  font-size: 1.953rem;
+  xfont-size: 1.953rem; /* Major scale */
+  font-size: 1.75rem;
+  margin-bottom: .3rem;
 } 
 .standardContent h3 a{ /* links in minor headings */
   color: #aa0000;
@@ -780,6 +885,7 @@ h1, h2, h3, h4, h5 {
   
   xfont-size: 1.777rem;
   font-size: 1.563rem;
+  margin-bottom: .3rem;
 } 
 .standardContent h4 a { 
   color: #aa0000;
@@ -798,6 +904,7 @@ h1, h2, h3, h4, h5 {
   
   xfont-size: 1.333rem;
   font-size: 1.25rem;
+  margin-bottom: .2rem;
 } 
 .standardContent h5 a { 
   color: #aa0000;
@@ -836,9 +943,10 @@ h1, h2, h3, h4, h5 {
 /* -------------------------- Paragraphs and inline text -------------------------- */
 .standardContent p {
   color:#333333;
-  font-size: 1.4rem;
+  xfont-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 1.5;
-  max-width: 70ch;
+  xmax-width: 70ch;
   xmargin-bottom: 1.6rem;
   font-weight: 500;
   margin-bottom: 1rem;
@@ -859,10 +967,11 @@ h1, h2, h3, h4, h5 {
 /* -------------------------- Lists -------------------------- */
 .standardContent ul, 
 .standardContent ol { 
-  font-size: 1.4rem;
+  xfont-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 1.45;
   list-style-type:none;
-  margin-bottom: 2.2rem;
+  xmargin-bottom: 2.2rem;
   margin-left: 0px; /* indent, but not that much */
   display: table;/* align 2nd line text, pt 1  */
   font-weight: 500;
@@ -892,6 +1001,43 @@ h1, h2, h3, h4, h5 {
 /* ie can't handle the font-family while getting a display property. Using no-flexboxlegacy as a proxy for IE */
 .no-flexboxlegacy #MainZone .standardContent ul li:before, .no-flexboxlegacy #SidebarZone .standardContent ul li:before, .no-flexboxlegacy #zoneC .standardContent ul li:before{
   display:inline !important;
+}
+
+/* START list item spacing */
+.standardContent ul li, 
+.standardContent ol li {
+  xline-height: 1.65;
+  margin-bottom: .5em;
+  list-style-position: inside !important;
+}
+
+.standardContent ul li ul li,
+.standardContent ul li ol li,
+.standardContent ol li ul li,
+.standardContent ol li ol li {
+  line-height: 1.65;
+  list-style-position: inside !important;
+}
+
+
+.primaryContent.standardContent ul li, 
+.primaryContent.standardContent ol li {
+  line-height: 1.65;
+  list-style-position: inside !important;
+}
+
+.primaryContent.standardContent ul li ul li,
+.primaryContent.standardContent ul li ol li,
+.primaryContent.standardContent ol li ul li,
+.primaryContent.standardContent ol li ol li {
+  line-height: 1.65;
+  list-style-position: inside !important;
+} list-style-position: inside !important;
+/* END list item spacing */
+
+/* headlines in lists */
+.standardContent ul h3 {
+  margin-top: 0;
 }
 
 /* List style classes */
@@ -1166,6 +1312,11 @@ ul.arrowLinks li::before{
   border: none;
 }
 
+table caption {
+ caption-side: top;
+ color: #aa0000;
+}
+
 /* affects curriculum tables only*/
 .standardContent .tableCurriculum,
 .standardContent .tableCurriculum th,
@@ -1207,10 +1358,10 @@ ul.boxlinks li:before{
   color: #a90400;
   display: block;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight:500;
   height:100%;
-  line-height: 1.6rem;
+  line-height: 1.25;
   padding: 15px;
   text-align: center;
   text-decoration: none;
@@ -1323,6 +1474,15 @@ img.img-responsive {
     padding: 0;
 }
 
+/* Sidebar: Remove padding from image */
+p.sidebar-image > img {
+    xpadding: 0;
+}
+
+p.sidebar-image > a {
+    xpadding: 0;
+}
+
 /* Makes sidebar images full bleed */
 @media only screen and (min-width: 576px) {
     #SidebarZone img {
@@ -1333,6 +1493,17 @@ img.img-responsive {
         padding: 0;
       }
 }
+
+
+/* -------------------------- Columns -------------------------- */
+.two-columns {
+  columns: 75ch 2; /* Sets minimum column width (for both columns), and amount of columns */
+  column-gap: 5%;
+  max-width: 100%; /*  overwrites characters limit for .standardContent paragraphs */
+  margin-top: 0;
+  margin-bottom: 5em;
+}
+
 
 /* ==========================================================================================================*/
 /* ============================================ Content Types ===============================================*/
@@ -1963,8 +2134,8 @@ svg.arrow.circle.navy {
 
 .accordionWrapper .accordionDescription p {
   color: #333333;
-  font-size: 1.6rem;
-  line-height: 2;
+  font-size: 1.2rem;
+  line-height: 1.5;
   margin-bottom: 1.6rem;
   font-weight: 500;
   text-align: left;
@@ -2033,7 +2204,19 @@ svg.arrow.circle.navy {
   padding-bottom: 10px;
 }
 
+/* anchor styles inside the accordion item */
+.accordionItemInfo.standardContent a {
+  color: #088099;
+  text-decoration: none;
+}
 
+.accordionItemInfo.standardContent a:hover {
+  text-decoration: underline;
+}
+
+.accordionItemInfo.standardContent a:active {
+  color: #003282;
+}
 
 
 /*********************
@@ -2068,9 +2251,42 @@ svg.arrow.circle.navy {
   }
 }
 
+/* ==========================================================================================
+   ===== Law - Back to Top =====  Content Type #5427 ========================================
+   ==========================================================================================
+*/
 
+.backToTopLink #backToTopLink {
+  background-color: #aa0000;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1;
+  padding: 2rem;
+  text-transform: uppercase;
+}
 
+.backToTopLink {
+  bottom: 40px;
+  /* display: block; */
+  display: none;
+  position: fixed;
+  right: 20px;
+  will-change: scroll-position;
+  z-index: 9999;
+}
 
+.progressContainerWrapper {
+  bottom: 0;
+  /* display: block; */
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
 
 /* ==========================================================================================
    ===== Law - Box Links MainZone =====  Content Type #5534 =================================
@@ -2900,9 +3116,9 @@ svg.arrow.circle.navy {
 */
 
 
-.carouselImageWrapper {
+/* .carouselImageWrapper {
     display: none !important;
-}
+} */
 .carouselImageWrapper.slick-slide {
     display:block !important;
 }
@@ -3484,10 +3700,10 @@ h2.contactBoxSingleTitle {
 }
 
 .contactBoxSingleInfo p {
-    margin: 0;
+    margin: 0 0 1rem 0;
     padding-left: 0;
-    line-height: 3.2rem;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+    line-height: 1.5
     color:unset !important;
 }
 
@@ -3626,66 +3842,109 @@ h2.contactBoxSingleTitle {
    ===== Dual column Content ===== Content Type #5217 ======================================== 
    ==========================================================================================
    Two HTML blocks placed side-by-side
-
+   Updated 9/8/2021 by Troy
 */
 
-.dualColumnWrapper {}
-.dualColumn {}
+.law-landingPageLayout-2130318 article.dualColumn {
+  padding: 2rem 1.5rem 3rem;
+}
 
-/* START optional centered headline above dual columns */
 .dc-headline {
-    text-align: center;
-    padding-bottom: 50px;
+  text-align: center;
 }
 
 .dc-headline h2 {
-    font-size: xxx-large;
+  color: #aa0000; /* Red */
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
 }
-/* END optional centered headline above dual columns */
 
-article.dualColumn a {
-    text-decoration: none;
+.dc-headline h3 {
+  margin-bottom: .5rem;
+}
+
+/* .dualColumnWrapper p,
+.dualColumnWrapper h3,
+.dualColumnWrapper h4,
+.dualColumnWrapper h5 {
+  color: #333333;
+} */
+
+h3 .p-style-heading {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 600 !important;
+  margin-bottom: 1.5rem;
+}
+
+article.dualColumn a:link {
+  color: #088099; /* Light Blue */
+  text-decoration: none;
+}
+
+article.dualColumn a:visited {
+  color: #088099;
 }
 
 article.dualColumn a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+article.dualColumn a:active {
+  color: #aa0000;
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media screen and (min-width: 1200px) {
-    .column1, .column2 {
-        xpadding-left: 0;
-    }
+@media (min-width: 1200px) {
+  .law-landingPageLayout-2130318 article.dualColumn {
+    padding: 4rem 0 6rem;
+  }
 }
 
 /* ==========================================================================================
    ===== Law - Triple Column Content ===== Content Type #5489 =============================== 
    ==========================================================================================
    Three HTML blocks placed side-by-side with one centered HTML block above
-   Updated 4/6/2021 by Troy
-
+   Updated 9/8/2021 by Troy
 */
 
 .tc-headline {
-    margin-bottom: 2em;
+  text-align: left;
+  margin-bottom: 2rem;
 }
 
-article.tripleColumn a {
-    color: #088099;
-    text-decoration: none;
+.tc-headline h2 {
+  font-size: 2.5rem;	
+}
+
+article.tripleColumn {
+  padding: 2rem 1.5rem 3rem;
+}
+
+article.tripleColumn a:link,
+article.tripleColumn a:visited {
+  color: #088099;
+  text-decoration: none;
 }
 
 article.tripleColumn a:hover {
-    color: #aa0000;
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-/* XX-Large devices (larger desktops, 1400px and up) */
+article.tripleColumn a:active {
+  color: #aa0000;
+  text-decoration: underline;
+}
+
+/* XX-Large devices */
 @media (min-width: 1400px) {
-    .tc-headline h2 {
-        font-size: 4rem;
-        margin-bottom: .75em;
-    }
+  .tc-headline {
+    text-align: center; 
+  }
+  
+  .tc-headline h2 {
+    margin-bottom: 2.5rem;	
+  }
 }
 
 /* ========================================================================================== 
@@ -3883,11 +4142,23 @@ article.tripleColumn a:hover {
 */
 
 .focusBoxWrapper {
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
 }
 
 .focusBox {
-  padding: 3rem;
+  xpadding: 3rem;
+  padding: 1rem;
+}
+
+#SidebarZone .focusBoxContent p {
+  font-size: 1rem;
+}
+
+#SidebarZone .focusBoxContent h2, 
+#SidebarZone .focusBoxContent h3, 
+#SidebarZone .focusBoxContent h4, 
+#SidebarZone .focusBoxContent h5 {
+  margin-top: 0;
 }
 
 .focusboxWrapper .focusBox img {
@@ -3939,7 +4210,8 @@ article.tripleColumn a:hover {
 .focusBoxWrapper .colorBlue .focusBoxContent ol,
 .focusBoxWrapper .colorBlue .focusBoxContent blockquote,
 .focusBoxWrapper .colorBlue .focusBoxContent cite,
-.focusBoxWrapper .colorBlue .focusBoxContent i.fa { 
+.focusBoxWrapper .colorBlue .focusBoxContent i.fa,
+#SidebarZone .focusBox.colorBlue hr { 
   color:#ffffff;
 }
 .focusBoxWrapper .colorBlue .focusBoxContent a:link { color:#ffffff; }
@@ -4290,11 +4562,11 @@ ul.arrowLinks a:focus {
   font-weight: 400;
   margin: 30px 0 3px 0;
 }
-.formPlaceholder form h3{ /* identical to standard content */
+.formPlaceholder form h3 { /* identical to standard content */
   color: #aa0000;
-  font-size: 2.1rem;
-  font-weight: 400;
-  margin:15px 0 3px 0; 
+  font-size: 1.953rem;
+  xfont-weight: 400;
+  margin: 3rem 0 0 0; 
 }
 .formPlaceholder form h4{ /* identical to standard content */
   color: #aa0000;
@@ -4893,6 +5165,10 @@ table.gsc-search-box td {
   .panelWrapper .panelText.card-text {
       padding: 0;
   } 
+
+  .panelWrapper .card-block .panelText.card-text {
+    padding: 1rem;
+} 
 }
 
 
@@ -5748,7 +6024,7 @@ table.gsc-search-box td {
    Last revised 9/30/19 by Jason   
 */
 .jumpLinksWrapper{
-  margin-bottom:60px;
+  xmargin-bottom:60px;
   overflow:auto;
   padding:30px;
 }
@@ -5762,13 +6038,14 @@ table.gsc-search-box td {
   border-right: 0;
   padding: 15px 0;
   list-style-type: none;
-  margin:o auto;
+  margin: auto;
   padding:15px 0;
   text-align: center;
 }
 .jumpLinksWrapper ol li {
     display: inline-block;
     padding: 0px 30px;
+    margin-bottom: 0;
 }
 .jumpLinksWrapper ol li:before{
   display:inline;
@@ -5796,7 +6073,6 @@ a:not([href]) {
 }
 
 
-
 /* ==========================================================================================
    ===== Image Banner ===== Content Type #5196 ============================================== 
    ==========================================================================================
@@ -5815,6 +6091,7 @@ a:not([href]) {
   justify-content: center;
   position:relative;
 }
+
 .imageBannerOverlay{
   height: 300px; /* could be overriden by content item */
   left:0;
@@ -5824,24 +6101,25 @@ a:not([href]) {
   z-index: 1;
 }
 
- 
-
-.imageBanner h1, .imageBannerWrapper+h1{
-  color:#ffffff;
+.imageBanner h1, .imageBannerWrapper+h1 {
+  width: 100%;
+  color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-size: 5rem;
   font-weight: 300;
   margin: 0;
-  text-align:center;
-  text-shadow: #000000 0 0 8px;
-  width:100%;
+  text-align: center;
+  xtext-shadow: #000000 0 0 8px;
+  xtext-shadow: 1px 1px 2px #000; /* Ingeniux */
+  text-shadow: 2px 2px 1px #000, -1px -1px 1px #000;
 }
-.BannerZone{
+
+.BannerZone {
   position:relative;
 }
 
 .imageBannerCenterIntroText {
-  max-width: 1170px; 
+  max-width: 1400px; 
   margin: auto;
   padding: 2vw;
 }
@@ -5875,7 +6153,7 @@ a:not([href]) {
 }
 .imageBannerIntro {
   font-weight: 300;
-  padding: 60px 0 30px 0;
+  padding: 4.5em 0 3em 0;
   text-align: center;   
 }
 .imageBannerIntro h5{
@@ -5889,6 +6167,7 @@ a:not([href]) {
   line-height: 1.45;
   font-weight: 300;
   text-align: center;
+  xpadding: 0 2rem 0;
 }
 
 .imageBannerIntro a { 
@@ -5923,9 +6202,10 @@ a:not([href]) {
     text-align: center;
     font-size: 2rem;
     line-height: 1;
-
+    text-shadow: 1px 1px 2px #000; /* Ingeniux */
 }
-.imageBannerBreadcrumbs a{
+
+.imageBannerBreadcrumbs a {
   color: #ffffff;
   text-decoration:none;
 }
@@ -5948,6 +6228,10 @@ a:not([href]) {
 /* News story fulltext layout. Added by Troy 5/1/2021 */
 h1, h2, h3, h4, h5, h6 {
   hyphens: none;
+}
+
+.newsroomArticleWrapper h1#pageTitle {
+  font-size: 4rem;
 }
 
 .newsroomArticleByline {
@@ -5975,8 +6259,8 @@ figure figcaption span.image-credit {
 }
 
 .newsroomArticleBody .articleText.standardContent p {
-  font-size: 1.4rem;
-  line-height: 1.428571429;
+  /* font-size: 1.4rem;
+  line-height: 1.428571429; */
   color: #333;
   font-weight: 400;
   max-width: 60ch;
@@ -6083,6 +6367,11 @@ li.nav-item a.nav-link .icon:hover {
 .primaryContentWrapper{ }
 .primaryContent { }
 
+@media (min-width: 768px)
+.primaryContentWrapper {
+    padding: 0 !important;/* Overwrite styles from ? */
+}
+
 /* CSS for image captions (Used for floating images in news stories). Added by Troy 5/1/2021 */
 .standardContent figure.image-wrapper {
   display: inline-block;
@@ -6091,7 +6380,7 @@ li.nav-item a.nav-link .icon:hover {
 
 .standardContent figure.image-wrapper figcaption {
   text-align: left;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-style: italic;
   margin-top: 8px;
 }
@@ -6157,11 +6446,11 @@ li.nav-item a.nav-link .icon:hover {
 .quicklinks ul {
   list-style-type: none;
   position:relative;
-  padding: 1rem 0 1rem 0;
+  padding: .5rem 0 .5rem 0;
 }
 .quicklinks li {
   display: list-item;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin-bottom: 15px;
   position: relative;
 }
@@ -6173,10 +6462,10 @@ li.nav-item a.nav-link .icon:hover {
  border: 2px solid #088099;
  display: block;
  font-family: "Montserrat", sans-serif;
- font-size: 1.7rem;
+ font-size: 1.4rem;
  font-weight: 500;
  height: 100%;
- line-height: 1.6rem;
+ line-height: 1.25;
  padding: 15px;
  text-align: center;
  text-decoration: none;
@@ -6245,7 +6534,7 @@ li.nav-item a.nav-link .icon:hover {
 .quoteBox p{ /* ::REQUIRED:: actual quote, sans the source or other information */
   color: #ffffff;
   font-size: 1.8em;
-  line-height: 3.2rem;
+  line-height: 2;
   padding:30px;
   margin:0;
   min-height:65px;
@@ -6533,7 +6822,7 @@ li.nav-item a.nav-link .icon:hover {
   font-family: "Montserrat", sans-serif;
   font-weight:500;
   font-size:1.8rem;
-  line-height: 2;
+  line-height: 1.5;
   margin-bottom:30px;
 }
 
@@ -6607,6 +6896,12 @@ li.nav-item a.nav-link .icon:hover {
   .spotlightCopy {
    padding: 46px 10px;  
   }
+}
+
+
+/* temporary */
+.spotlightWrapper.standardContent {
+    max-width: 1400px;
 }
 
 
@@ -6888,8 +7183,8 @@ li.nav-item a.nav-link .icon:hover {
 .accordionWrapper dl { /* accordion tweak */
   margin-bottom: 0px;
 }
-.primaryContentWrapper .primaryContent > :first-child{
-  margin-top: 30px;
+.primaryContentWrapper .primaryContent > :first-child {
+  /* margin-top: 30px; Is this needed? */
 }
 
 
