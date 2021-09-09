@@ -18,6 +18,7 @@
   font-style: normal;
 }
 
+/* Resets */
 *,
 *::before,
 *::after {
@@ -44,14 +45,14 @@ body {
   line-height: 1.45;
   margin: 0;
   /* for the fixed header */
-  padding-top: 152px;
+  padding-top: 0;
   min-width: fit-content; /* prevents overflow of long strings in mobile views */
 }
 
-
-@media screen and (max-width: 991.999px) { /* xs + sm */
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
   body {
-    padding-top:0px;
+    padding-top: 152px;
   }
 }
 
@@ -61,7 +62,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) { /* lg */
-  #pageContentWrapper[class=""] {/* Default state if .container or .container-fluid are not set in the site configuration */ 
+  #pageContentWrapper[class=""] { /* Default state if .container or .container-fluid are not set in the site configuration */ 
     width: 1170px;
     padding-right: 15px;
     padding-left: 15px;
@@ -235,7 +236,7 @@ _____________________  _____________________________  __________________________
 }
 
 /* ========================================================================================== 
-   ===== Global #SidebarZone styles ============================================================
+   ===== Global #SidebarZone styles =========================================================
    ========================================================================================== 
 */
 
@@ -712,7 +713,7 @@ _____________________  _____________________________  __________________________
 }
 @media screen and (min-width: 1200px) { /* lg */
   #SidebarZone .hspace{
-    padding: 0 0 0 0 ; /* paddinf is already on #SidebarZone */
+    padding: 0 0 0 0 ; /* padding is already on #SidebarZone */
   }
 }
 
@@ -1209,7 +1210,7 @@ table caption {
   }
 }
 
-/* Boxlinks*/
+/* -------------------------- Boxlinks -------------------------- */
 ul.boxlinks {
   display: flex;
   flex-wrap: wrap;
@@ -1272,15 +1273,15 @@ x.boxlinkItem:hover a, x.boxlinkItem:focus a,
   text-decoration: underline; 
 }
 
-/* -------------------------- readmore links -------------------------- */
+/* -------------------------- Read More links -------------------------- */
 /* on feature items, knowledge base, news */
-.standardContent .readmore{
+.standardContent .readmore {
   text-align:right;
   text-transform: uppercase;
 }
 
-.standardContent .readmore:after{
-  color: #aa0000;
+.standardContent .readmore:after {
+  color: #088099;
   content: ' b';
   font-family: 'seattle-u';
   position: relative;
@@ -1288,14 +1289,14 @@ x.boxlinkItem:hover a, x.boxlinkItem:focus a,
   top: 2px;
 }
 
-.standardContent .readmore a{
-  color:#aa0000;
+.standardContent .readmore a:link {
   text-decoration:none;
 }
 
-.standardContent .readmore a:hover, .standardContent .readmore a:focus{ 
+.standardContent .readmore a:hover, 
+.standardContent .readmore a:focus { 
   text-decoration:underline;
-} 
+}
 
 /* -------------------------- Images -------------------------- */
 /*If not available in CMS, classes to be added manually. */
@@ -1311,7 +1312,7 @@ img[src=""] { /* empty images don't get displayed */
 }
 
 .standardContent img {
-  padding:20px;  
+  padding: 20px;  
 }
 
 /* #SidebarZone .secondaryContent .standardContent img{
@@ -1792,7 +1793,6 @@ footer #footerSocialMediaLinks .social a:hover, footer #footerSocialMediaLinks .
 }
 
 /* -------- CTA Links ----------- */
-
 #footerCallToActionLinks{
   margin-top: 30px;
   padding-inline-start: 0; /* fixing a chrome bug*/
@@ -1865,7 +1865,6 @@ footer #footerSocialMediaLinks .social a:hover, footer #footerSocialMediaLinks .
 */
 
 /* --------------------------------------- Critical Emergency Homepage --------------------------------------- */
-
 #layout3250 #pageContentWrapper {
   margin-top:10px;
 }
@@ -2008,7 +2007,7 @@ svg.arrow.circle.navy {
 }
 
 /* ==========================================================================================
-   ===== Accordion ===== Content Type #5190 =================================================
+   ===== Law - Accordion ===== Content Type #5190 ===========================================
    ==========================================================================================
    Accordion styles updated on 4/21/21 for bootstrap 5  - vic
 */
@@ -2191,7 +2190,7 @@ svg.arrow.circle.navy {
 }
 
 /* ==========================================================================================
-   ===== Law - Box Links MainZone =====  Content Type #5534 =================================
+   ===== Law - Box Links =====  Content Type #5534 ==========================================
    ==========================================================================================
    Title, subtitle, paragraph followed by up to three box links (internal, external, media)
    An adaptation of code from Jumbotron I, Quicklinks, and .boxlinks
@@ -2294,7 +2293,7 @@ svg.arrow.circle.navy {
 }
 
 /* ==========================================================================================
-   ===== Call to Action Feature ===== Content Type #5190 ==================================== 
+   ===== Law - Call to Action Feature ===== Content Type #5084 ==============================
    ==========================================================================================
 */
 
@@ -2552,7 +2551,6 @@ svg.arrow.circle.navy {
 }
 
 .emergencynotice h2 {
-  font-family: 'Roboto Slab', serif;
   font-size: 3.2rem;
   margin: 0 0 15px 0;
   text-transform: uppercase;
@@ -2722,7 +2720,7 @@ svg.arrow.circle.navy {
 }
 
 /* ==========================================================================================
-   ===== Law - Card ===== Content Type #5224 ================================================
+   ===== Law - Card (legacy) ===== Content Type #5224 =======================================
    ==========================================================================================
 */
 
@@ -2894,7 +2892,7 @@ svg.arrow.circle.navy {
 }
 
 /* ==========================================================================================
-   ===== Carousel ===== Content Type #5203 ================================================== 
+   ===== Law - Carousel ===== Content Type #5203 ============================================ 
    ==========================================================================================
  
 */
@@ -3030,7 +3028,7 @@ svg.arrow.circle.navy {
 
 /* 
     ========================================================================================== 
-    ===== Carousel Image ====== Content Type #5284 ===========================================
+    ===== Law - Carousel Image ====== Content Type #5284 =====================================
     ==========================================================================================
     Image slide intended to be only used as a carousel slide.  
 */
@@ -3133,7 +3131,7 @@ svg.arrow.circle.navy {
 
 
 /* ==========================================================================================
-   ===== Box Navigation  ===== Content Type #5218 =========++++++============================ 
+   ===== Law - Box Navigation  ===== Content Type #5218 =====================================
    ==========================================================================================
    Set of up to six branded color boxes for high profile links in the Topzone
    https://alistapart.com/article/quantity-queries-for-css
@@ -3228,12 +3226,11 @@ svg.arrow.circle.navy {
 }
 
 /* ==========================================================================================
-   ===== Contact Box ===== Content Type #5176 =============================================== 
+   ===== Law - Contact Box ===== Content Type #5176 =========================================
    ==========================================================================================
    One, two or three bits of contact information
 
 */
-
 .contactBoxWrapper{
   background-color:#333333;
   color:#ffffff;
@@ -3693,7 +3690,7 @@ h2.contactBoxSingleTitle {
 }
 
 /* ==========================================================================================
-   ===== Dual column Content ===== Content Type #5217 ======================================== 
+   ===== Law - Dual Column Content ===== Content Type #5217 =================================
    ==========================================================================================
    Two HTML blocks placed side-by-side
    Updated 9/9/2021 by Troy
@@ -3805,13 +3802,13 @@ article.tripleColumn a:active {
 }
 
 /* ========================================================================================== 
-   ===== Facebook Feed ===== Content Type #5306 ============================================== 
+   ===== Law - Facebook Feed ===== Content Type #5306 =======================================
    ==========================================================================================
    Feed from Facebook API
 */
 
 /* ========================================================================================== 
-   ===== Feature Content ===== Content Type #5193 ============================================ 
+   ===== Law - Feature Content ===== Content Type #5193 =====================================
    ==========================================================================================
 
 */
@@ -3831,7 +3828,6 @@ article.tripleColumn a:active {
    background and color overlay
    Last revised 08/20/18 by Aubrey   
 */
-
 .featuredCuratedEventsWrapper {
   background: 
     linear-gradient(
@@ -4008,7 +4004,7 @@ article.tripleColumn a:active {
 }
 
 /* ==========================================================================================
-   ===== Focus Box ===== Content Type #5178 ================================================== 
+   ===== Law - Focus Box ===== Content Type #5178 ===========================================
    ==========================================================================================
    A rich text field with optional background colors
    Last revised 4/12/2021 by Troy 
@@ -4378,7 +4374,7 @@ ul.arrowLinks a:focus {
 }
 
 /* ==========================================================================================
-   ===== Form Placeholder ===== Content Type: #5157 ========================================== 
+   ===== Law - Form ===== Content Type: #5157 =============================================== 
    ==========================================================================================
    Holds T4 form code.
    Last revised 2/3/16 by Jason   
@@ -4802,7 +4798,7 @@ table.gsc-search-box td {
 
 
 /* ==========================================================================================
-   ===== Image Box Navigation ===== Content Type #5299 =================================================
+   ===== Law - Image Box Navigation ===== Content Type #5299 ================================
    ==========================================================================================
    Last edited 10/24/19 by Steve   
 */
@@ -4813,30 +4809,30 @@ table.gsc-search-box td {
 }
 
 .imageBoxWrapper .imageBoxes {
-    display: flex;
-    justify-content: space-between;
-    flex-basis: 25%;
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 25%;
 }
 
 .imageBoxWrapper .imageBox {
-    align-items: stretch;
-    background-color: #ffffff;
-    flex: 1 1 0;
-    margin: 0 7px;
+  align-items: stretch;
+  background-color: #ffffff;
+  flex: 1 1 0;
+  margin: 0 7px;
 }
 
-.imageBoxWrapper .imageBox a{
+.imageBoxWrapper .imageBox a {
   display:block;
   text-decoration:none;
   transition: all 0.2s ease;
 }
 
 .imageBoxWrapper .imageBox a:focus, .imageBoxWrapper .imageBox a:hover {
-   box-shadow: 0 0 15px #333333;
+  box-shadow: 0 0 15px #333333;
 }
 
 .imageBoxWrapper .imageBox a:active {
-   box-shadow: 0 0 15px #aa0000;
+  box-shadow: 0 0 15px #aa0000;
 }
 
 .imageBoxWrapper .imageBox h3 {
@@ -4856,31 +4852,31 @@ table.gsc-search-box td {
 }
 
 .imageBoxWrapper .imageBox:first-of-type {
-   margin-left: 0;
+  margin-left: 0;
 }
 
 .imageBoxWrapper .imageBox:last-of-type {
-   margin-right: 0;
+  margin-right: 0;
 }
 
 .imageBoxWrapper .imageBoxLayout1234 .imageBox {
-    flex-basis: 25%;
+  flex-basis: 25%;
 }
 
 .imageBoxWrapper .imageBoxLayout123 .imageBox {
-    flex-basis: 33.33333%;
+  flex-basis: 33.33333%;
 }
 
 .imageBoxWrapper .imageBoxLayout12 .imageBox {
-    flex-basis: 50%;
+  flex-basis: 50%;
 }
 
 .imageBoxWrapper .imageBoxLayout1 .imageBox {
-    flex-basis: 100%;
+  flex-basis: 100%;
 }
 
 .imageBoxLegend {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.999px) { /* sm + md */
@@ -4893,46 +4889,49 @@ table.gsc-search-box td {
     #MainZone.col-sm-9 .imageBoxWrapper .imageBoxLayout12 .imageBox, 
     #MainZone.col-md-9 .imageBoxWrapper .imageBoxLayout12 .imageBox,
     #MainZone.col-sm-6 .imageBoxWrapper .imageBoxLayout12 .imageBox, 
-    #MainZone.col-md-6 .imageBoxWrapper .imageBoxLayout12 .imageBox{ 
+    #MainZone.col-md-6 .imageBoxWrapper .imageBoxLayout12 .imageBox { 
       flex-basis: calc(50% - 7px);
     }
+
     #MainZone.col-sm-12 .imageBoxWrapper .imageBoxLayout123 .imageBox,
     #MainZone.col-md-12 .imageBoxWrapper .imageBoxLayout123 .imageBox,
     #MainZone.col-sm-9 .imageBoxWrapper .imageBoxLayout123 .imageBox,  
     #MainZone.col-md-9 .imageBoxWrapper .imageBoxLayout123 .imageBox,
     #MainZone.col-sm-6 .imageBoxWrapper .imageBoxLayout123 .imageBox,  
-    #MainZone.col-md-6 .imageBoxWrapper .imageBoxLayout123 .imageBox{  
+    #MainZone.col-md-6 .imageBoxWrapper .imageBoxLayout123 .imageBox {  
       flex-basis: calc(33% - 7px);  
-    }  
+    }
+
     #MainZone.col-sm-12 .imageBoxWrapper .imageBoxLayout1234 .imageBox,
     #MainZone.col-md-12 .imageBoxWrapper .imageBoxLayout1234 .imageBox,  
-    #MainZone.col-md-9 .imageBoxWrapper .imageBoxLayout1234 .imageBox{
+    #MainZone.col-md-9 .imageBoxWrapper .imageBoxLayout1234 .imageBox {
       flex-basis: calc(25% - 7px);
     }
   
     #MainZone.col-sm-9 .imageBoxWrapper .imageBoxLayout1234 .imageBox,  
     #MainZone.col-sm-6 .imageBoxWrapper .imageBoxLayout1234 .imageBox,  
-    #MainZone.col-md-6 .imageBoxWrapper .imageBoxLayout1234 .imageBox{  
+    #MainZone.col-md-6 .imageBoxWrapper .imageBoxLayout1234 .imageBox {  
       flex-basis: calc(50% - 7px);  
     }
 }
 
 @media screen and (max-width: 767.999px) { /* xs */
     .imageBoxWrapper .imageBoxes {
-        display: block;
+      display: block;
     }
     .imageBoxWrapper .imageBox {
       margin: 30px 0 0 0;
     }    
     .imageBoxWrapper .imageBox .standardContent {
-        padding: 0;
+      padding: 0;
     }
 }
 
 /* ==========================================================================================
-   ===== Image Panel ===== Content Type: #5195 ============================================== 
+   ===== Law - Image Panel ===== Content Type: #5195 ========================================
    ==========================================================================================
-   Background image with overlayed text box. 
+   Background image with overlayed text box. Used on Home and Admission landing pages only.
+   Use with 'Law - Homepage' page layout.
    Updated to Bootstrap 5 -  20210413 vic
 */
 
@@ -5405,12 +5404,11 @@ table.gsc-search-box td {
   }
 
 /* ==========================================================================================
-   ===== Infographic ===== Content Type #5179 ================================================ 
+   ===== Law - Infographic ===== Content Type #5179 =========================================
    ==========================================================================================
    Set of up to three statistics using numbers or FontAwesome icons with a header and text for each.
 
 */
-
 .infographic {
   background-color: #ffffff;
   border: none;
@@ -5676,7 +5674,7 @@ table.gsc-search-box td {
 }
 
 /* ==========================================================================================
-   ===== Jumbotron I =====  Content Type #5091 ============================================== 
+   ===== Law - Jumbotron I =====  Content Type #5091 ========================================
    ==========================================================================================
    Heading, subheading, paragraph and up to nine links.
    Last revised 04/26/18 by Isaac  
@@ -5803,7 +5801,7 @@ table.gsc-search-box td {
 }
 
 /* ==========================================================================================
-   ===== Jumbotron III =====  Content Type #5180 ============================================ 
+   ===== Law - Jumbotron III =====  Content Type #5180 ======================================
    ==========================================================================================
    Heading, paragraph and up to three links.
 */
@@ -5931,9 +5929,8 @@ table.gsc-search-box td {
   } 
 }
 
-
 /* ==========================================================================================
-   ===== Jump Links ===== Content Type #5273 ================================================ 
+   ===== Law - Jump Links ===== Content Type #5273 ==========================================
    ==========================================================================================
    Links to other content in the section
    Last revised 9/30/19 by Jason   
@@ -5994,7 +5991,7 @@ a:not([href]) {
 }
 
 /* ==========================================================================================
-   ===== Image Banner ===== Content Type #5196 ============================================== 
+   ===== Law - Image Banner ===== Content Type #5196 ========================================
    ==========================================================================================
    Banner with 2 layouts, one for the section on which it's hosted and a second that's inherited
 */
@@ -6279,13 +6276,13 @@ li.nav-item a.nav-link .icon:hover {
 }
 
 /* ========================================================================================== 
-   ===== Organizer ===== Content Types: #5274 ========================================== 
+   ===== Law - Organizer - Main Zone ===== Content Types: #5274 =============================
    ==========================================================================================
    Automatically sorts, paginates, and displays content of a given type from a given section 
 */
 
 /* ==========================================================================================
-   ===== Primary Content ===== Content Type #5198 ============================================ 
+   ===== Law - Primary Content ===== Content Type #5198 =====================================
    ==========================================================================================
    Standard HTML block content in Main Zone
 */
@@ -6331,7 +6328,7 @@ li.nav-item a.nav-link .icon:hover {
 }
 
 /* ==========================================================================================
-   ===== QuickLinks ===== Content Type #5185 ================================================= 
+   ===== Law - Quicklinks ===== Content Type #5185 ==========================================
    ==========================================================================================
    A list of up to nine links to a section, content, external source or media item with an optional header. Merged with #576.
  
@@ -6415,7 +6412,7 @@ li.nav-item a.nav-link .icon:hover {
 }
 
 /* ========================================================================================== 
-   ===== Quote ===== Content Type #5199 ============================================== 
+   ===== Law - Quote ===== Content Type #5199 =============================================== 
    ==========================================================================================
    A box with colored background that contains quote, source and affiliation
    Adapted from legacy Quotation Box in Ektron Feb 2016. Added color options and Zone A layout 2/8/17. Combined with #617
@@ -6496,7 +6493,7 @@ li.nav-item a.nav-link .icon:hover {
 }
 
 /* ==========================================================================================
-   ===== Social Media Buttons ===== Content Type #5220 ======================================= 
+   ===== Law - Social Media Buttons ===== Content Type #5220 ================================
    ==========================================================================================
    Set of social media icons with links to user-specified account pages.
    Last revised 6/22/18 by Jason    
@@ -6577,7 +6574,7 @@ li.nav-item a.nav-link .icon:hover {
 }
 
 /* ==========================================================================================
-   ===== Spotlight ===== Content Type #5201 ================================================== 
+   ===== Law - Spotlight ===== Content Type #5201 ===========================================
    ==========================================================================================
    Photo with quote on color or image background.
    
@@ -6858,7 +6855,7 @@ li.nav-item a.nav-link .icon:hover {
 }
 
 /* ========================================================================================== 
-   ===== Testimonial ===== Content Type: #5202 ================================================= 
+   ===== Law - Testimonial ===== Content Type: #5202 ========================================
    ==========================================================================================
    Creates a speech bubble that includes a quote and citation. Can be used in 3 or 6 column zones
    Code adapted from http://www.sitepoint.com/pure-css3-speech-bubbles
@@ -6921,7 +6918,7 @@ li.nav-item a.nav-link .icon:hover {
 }
 
 /* ========================================================================================== 
-   ===== Twitter TImeline Feed ===== Content Type: #5187 ==================================== 
+   ===== Law - Twitter Timeline Feed ===== Content Type: #5187 ==============================
    ==========================================================================================
    Twitter feed that uses Twitter's API
    Last revised 11/3/17 by Jason 
@@ -6956,7 +6953,7 @@ li.nav-item a.nav-link .icon:hover {
 }
 
 /* ========================================================================================== 
-   ===== Video  ===== Content Type #5189 ============================================ 
+   ===== Law - Video ===== Content Type #5189 ===============================================
    ==========================================================================================
    Add YouTube or Vimeo video 
    Last revised 9/9/19 by Jason
@@ -7140,7 +7137,7 @@ li.nav-item a.nav-link .icon:hover {
     color:#333;
 }
 
-/* what is all this -----------------------------------------------*/
+/* what is all this? -----------------------------------------------*/
 
 /* Content Item Tweaks To Implement */
 #carousel .slick-dots {
