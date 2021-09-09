@@ -3842,9 +3842,10 @@ h2.contactBoxSingleTitle {
    ===== Dual column Content ===== Content Type #5217 ======================================== 
    ==========================================================================================
    Two HTML blocks placed side-by-side
-   Updated 9/8/2021 by Troy
+   Updated 9/9/2021 by Troy
 */
 
+.law-sortingPage-775361 article.dualColumn,
 .law-landingPageLayout-2130318 article.dualColumn {
   padding: 2rem 1.5rem 3rem;
 }
@@ -3863,12 +3864,12 @@ h2.contactBoxSingleTitle {
   margin-bottom: .5rem;
 }
 
-/* .dualColumnWrapper p,
 .dualColumnWrapper h3,
 .dualColumnWrapper h4,
-.dualColumnWrapper h5 {
+.dualColumnWrapper h5,
+.dualColumnWrapper p {
   color: #333333;
-} */
+}
 
 h3 .p-style-heading {
   font-size: 1.2rem;
@@ -3895,7 +3896,9 @@ article.dualColumn a:active {
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
+/* Creates more space on landing and sorting pages */
 @media (min-width: 1200px) {
+  .law-sortingPage-775361 article.dualColumn,
   .law-landingPageLayout-2130318 article.dualColumn {
     padding: 4rem 0 6rem;
   }
@@ -8522,3 +8525,33 @@ span.go {
 div.row.Row1 {
   margin-bottom: 0px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
