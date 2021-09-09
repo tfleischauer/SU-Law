@@ -927,7 +927,7 @@ h1, h2, h3, h4, h5 {
 .primaryContent.standardContent ol li ol li {
   line-height: 1.65;
   list-style-position: inside !important;
-} list-style-position: inside !important;
+}
 /* END list item spacing */
 
 /* Headlines in lists */
