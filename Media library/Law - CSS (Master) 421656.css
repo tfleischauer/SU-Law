@@ -12,7 +12,8 @@
 @font-face {
   font-family: "seattle-u";
   src: url("/media/fonts/seattle-u.eot") format("embedded-opentype");
-  src: url("/media/fonts/seattle-u.eot") format("embedded-opentype"), url("/media/fonts/seattle-u.woff") format("woff"), url("/media/fonts/seattle-u.ttf") format("truetype"), url("/media/fonts/seattle-u.svg") format("svg");
+  src: url("/media/fonts/seattle-u.eot") format("embedded-opentype"), url("/media/fonts/seattle-u.woff") format("woff"), 
+       url("/media/fonts/seattle-u.ttf") format("truetype"), url("/media/fonts/seattle-u.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -73,14 +74,21 @@ body {
 /* =========================================== Page Sections ========================================== */
 /* ==================================================================================================== */
 
-/* ============================================== Header ============================================== */
+/* ========================================================================================== 
+   ===== Header  ============================================================================
+   ========================================================================================== 
+*/
 /* Logo, Red and white bars on top */
 /* Last edited 6/18/19 by Steve */ 
 /* Migrated all nav css to working file 20210326 - Vic media library file number 2268710 */
 
+/******** START Disappearing-Reappearing Menu ********/
 /******** END Disappearing-Reappearing Menu ********/
 
-/* ============================================= BreadCrumbs ========================================== */
+/* ========================================================================================== 
+   ===== BreadCrumbs (#breadcrumbsWrapper styles) ===========================================
+   ========================================================================================== 
+*/
 /* Last edited by Aubrey 12/11 */
 /* Last edited by Vic Aug 21 - in development */
 
@@ -153,10 +161,7 @@ body {
 /* =============================================================================================================== */
 /* Everything below the banner, above the footer. Wraps TopZone, SidebarZone, and MainZone. */
 
-
-/* ==========================================================================================================*/
-/* ============================================ Page Structure ==============================================*/
-/*
+/* ------------------- Page Structure Diagram ---------------------
 _____________________  _____________________________  ________________________________________
 |XS                 |  |SM                         |  |MD and LG                             |
 |      TopZone      |  |           TopZone         |  |               TopZone                |
@@ -167,6 +172,73 @@ _____________________  _____________________________  __________________________
 _____________________  _____________________________  ________________________________________
   
 */
+
+/* ========================================================================================== 
+   ===== Global Detail Page styles ==========================================================
+   ========================================================================================== 
+*/
+
+/* .maxWidth1170px {
+  max-width: 1170px;
+  margin: auto;
+} */
+
+.maxWidth1400px {
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* ========================================================================================== 
+   ===== Global #TopZone styles ==========================================================
+   ========================================================================================== 
+*/
+
+#TopZone {
+  padding:0;
+}
+
+/* ========================================================================================== 
+   ===== Global #SidebarZone styles =========================================================
+   ========================================================================================== 
+*/
+
+@media screen and (min-width: 768px) { /* sm + md + lg*/
+  #pageContentWrapper.container #SidebarZone{
+    padding-right: 45px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.999px) { /* sm + md */
+  #SidebarZone {
+    padding-left:15px;
+  }
+}
+
+/* @media (min-width: 992px) {
+
+  #pageContentWrapper.container #SidebarZone{
+    padding-right: 4.5rem;
+  }
+
+  #SidebarZone {
+    padding-left:1.5rem;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  #SidebarZone {
+    padding-left: 0;
+  }
+} */
+
+/* Hides overflow and adds ellipsis (for long email addresses) */
+#SidebarZone .primaryContentWrapper a {
+    display: inline-block !important;
+    text-overflow: ellipsis !important;
+    width: -webkit-fill-available !important;
+    overflow: hidden !important; 
+}
 
 /* ========================================================================================== 
    ===== Global #MainZone styles ============================================================
@@ -200,53 +272,10 @@ _____________________  _____________________________  __________________________
   color: #aa0000; /* SU Red */
 }
 
-/* ========================================================================================== 
-   ===== Global Detail Page styles ==========================================================
-   ========================================================================================== 
-*/
-
-.maxWidth1170px {
-  max-width: 1170px;
-  margin: auto;
-}
-
-.maxWidth1400px {
-  max-width: 1400px;
-  margin: auto;
-}
-
-#TopZone {
-  padding:0;
-}
-
-@media screen and (min-width: 768px) { /* sm + md + lg*/
-  #pageContentWrapper.container #SidebarZone{
-    padding-right: 45px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199.999px) { /* sm + md */
-  #SidebarZone {
-    padding-left:15px;
-  }
-}
-
-/* ========================================================================================== 
-   ===== Global #SidebarZone styles =========================================================
-   ========================================================================================== 
-*/
-
-/* Hides overflow and adds ellipsis (for long email addresses) */
-#SidebarZone .primaryContentWrapper a {
-    display: inline-block !important;
-    text-overflow: ellipsis !important;
-    width: -webkit-fill-available !important;
-    overflow: hidden !important; 
-}
-
-/* ========================================================================================== 
-   ===== Site Navigation ==================================================================== 
-   ==========================================================================================
+/* =============================================================================================================== */
+/* ==================================================== Site Navigation ========================================== */
+/* =============================================================================================================== */
+/*
    Sub nav
    Last revised 2/16/18 by Aubrey  
    In development by vic aug 2021
@@ -681,7 +710,9 @@ _____________________  _____________________________  __________________________
   display: none;
 }
 
-/* ============================================== Content Items ==============================================*/
+/* =============================================================================================================== */
+/* ==================================================== Content Items ============================================ */
+/* =============================================================================================================== */
 
 .contentItem {
   clear: both;
@@ -707,6 +738,7 @@ _____________________  _____________________________  __________________________
     padding: 0 15px 0 0 ;
   }
 }
+
 @media screen and (min-width: 1200px) { /* lg */
   #SidebarZone .hspace{
     padding: 0 0 0 0 ; /* padding is already on #SidebarZone */
@@ -719,11 +751,14 @@ _____________________  _____________________________  __________________________
     padding: 0 30px;
   }
 }
+
 #pageContentWrapper.container-fluid #zoneC .hspace{
   padding: 0 0 0 30px;
 }
 
-/* ======================================= Standard Content Elements ==============================================*/
+/* =============================================================================================================== */
+/* ========================================= Standard Content Elements =========================================== */
+/* =============================================================================================================== */
 /* apply class .standardContent to parent element of any content type that will include basic HTML/text */
 /* primaryContent, Secondary Content, Supplemental Content, Jumbotron, knowledge base, dual column, feature content, news, form */
 
@@ -844,7 +879,7 @@ h1, h2, h3, h4, h5 {
   line-height: 1.5;
   font-weight: 500;
   margin-bottom: 1rem;
-  max-width: 75ch;
+  /* max-width: 75ch; */
 }
 
 #SidebarZone .standardContent p {
@@ -1578,9 +1613,10 @@ img.img-responsive {
   color:#ffffff;
 }
 
-/* ====================================================================================================*/
-/* ============================================== Footer ==============================================*/
-/* ====================================================================================================*/
+/* ========================================================================================== 
+   ===== Global Footer styles ===============================================================
+   ========================================================================================== 
+*/
 
 footer {
   position: relative;
@@ -1987,7 +2023,9 @@ svg.arrow.circle.navy {
     stroke: #003282;
 }
 
-/* ================================ CONTENT TYPES =========================================== */
+/* =============================================================================================================== */
+/* ========================================= Content Types ======================================================= */
+/* =============================================================================================================== */
 
 /* ==========================================================================================
    ===== Law - Accordion ===== Content Type #5190 ===========================================
@@ -2102,6 +2140,9 @@ svg.arrow.circle.navy {
   color: #003282;
 }
 
+.accordionWrapper dl { /* accordion tweak */
+  margin-bottom: 0px;
+}
 
 /*********************
 *
@@ -6560,11 +6601,9 @@ li.nav-item a.nav-link .icon:hover {
    Standard HTML block content in Main Zone
 */
 
-@media (min-width: 768px) {
-  .primaryContentWrapper {
-      padding: 0 !important;/* Overwrite styles from ? */
-  }
-}
+/* .primaryContentWrapper .primaryContent > :first-child {
+  margin-top: 30px; Is this needed?
+} */
 
 /* CSS for image captions (Used for floating images in news stories). Added by Troy 5/1/2021 */
 .standardContent figure.image-wrapper {
@@ -6597,6 +6636,12 @@ li.nav-item a.nav-link .icon:hover {
   .standardContent figure.image-wrapper.float-right {
     float: right;
     padding-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .primaryContentWrapper {
+      padding: 0 !important;/* Overwrite styles from ? */
   }
 }
 
@@ -7523,7 +7568,10 @@ article.tripleColumn a:active {
     color:#333;
 }
 
-/* ============================================ UTILITY CLASSES ========================================= */
+/* =============================================================================================================== */
+/* ========================================= Global Utility Classes ============================================== */
+/* =============================================================================================================== */
+
 /*** Helper classes to extend layout options ***/
 
 /* -------------------------- Columns -------------------------- */
@@ -7536,7 +7584,9 @@ article.tripleColumn a:active {
   margin-bottom: 5em;
 }
 
-/* ============================================ What is all this? ========================================= */
+/* =============================================================================================================== */
+/* ========================================= What is all this? =================================================== */
+/* =============================================================================================================== */
 
 /* Content Item Tweaks To Implement */
 #carousel .slick-dots {
@@ -7554,13 +7604,6 @@ article.tripleColumn a:active {
   width: 100%;
 }
 
-.accordionWrapper dl { /* accordion tweak */
-  margin-bottom: 0px;
-}
-
-/* .primaryContentWrapper .primaryContent > :first-child {
-  margin-top: 30px; Is this needed?
-} */
 
 
 @media screen and (max-width: 767.999px) { /* xs */
