@@ -9,7 +9,6 @@
 @viewport           { width: device-width; }
 
 /* Font and icon declarations */
-
 @font-face {
   font-family: "seattle-u";
   src: url("/media/fonts/seattle-u.eot") format("embedded-opentype");
@@ -74,7 +73,6 @@ body {
 /* =========================================== Page Sections ========================================== */
 /* ==================================================================================================== */
 
-/* ======================================================================================================== */
 /* ============================================== Header ============================================== */
 /* Logo, Red and white bars on top */
 /* Last edited 6/18/19 by Steve */ 
@@ -82,9 +80,7 @@ body {
 
 /******** END Disappearing-Reappearing Menu ********/
 
-
-/* ==============================================================================================================*/
-/* ================================================= BreadCrumbs ================================================*/
+/* ============================================= BreadCrumbs ========================================== */
 /* Last edited by Aubrey 12/11 */
 /* Last edited by Vic Aug 21 - in development */
 
@@ -1380,20 +1376,6 @@ img.img-responsive {
     }
 }
 
-/* ==========================================================================================================*/
-/* ============================================ Content Types ===============================================*/
-
-/*** Law - Primary Content - Helper classes ***/
-
-/* -------------------------- Columns -------------------------- */
-.two-columns {
-  columns: 75ch 2; /* Sets minimum column width (for both columns), and amount of columns */
-  column-gap: 5%;
-  max-width: 100%; /*  overwrites characters limit for .standardContent paragraphs */
-  margin-top: 0;
-  margin-bottom: 5em;
-}
-
 /* =================================================================================  */
 /* ===================================  Error Pages ================================  */
 /* ================================================================================== */
@@ -1497,7 +1479,6 @@ img.img-responsive {
 }
 
 /* =============================== Alert banner ================================ */
-
 #campusAlertWrapper h1{ 
   font-family: 'Roboto Slab', sans-serif;
   font-size:30px;
@@ -2006,6 +1987,8 @@ svg.arrow.circle.navy {
     stroke: #003282;
 }
 
+/* ================================ CONTENT TYPES =========================================== */
+
 /* ==========================================================================================
    ===== Law - Accordion ===== Content Type #5190 ===========================================
    ==========================================================================================
@@ -2290,6 +2273,101 @@ svg.arrow.circle.navy {
     flex: 0 1 calc(25% - 7px);
     width: 25%;
   }
+}
+
+/* ==========================================================================================
+   ===== Law - Box Navigation  ===== Content Type #5218 =====================================
+   ==========================================================================================
+   Set of up to six branded color boxes for high profile links in the Topzone
+   https://alistapart.com/article/quantity-queries-for-css
+   Last revised 11/14/17 by Max   
+*/
+
+.colorButtonWrapper {
+  display:flex;
+  flex-wrap:wrap;
+  /*margin: 10px 0; Changed to add spacing beween topzone and content*/
+  margin: 0 0 30px 0;
+}
+
+.colorButton {
+  position: relative;
+  display: flex; 
+  flex: 1;
+  flex-direction: column;
+  font-family: "montserrat", sans-serif;
+  justify-content: center;
+  text-align:center;
+  padding: 30px 15px;
+  width: 0;
+}
+
+.colorButton {
+  border-right:2px solid #fff;
+  margin: 20px 0;
+  padding: 10px 15px;
+}
+
+.colorButton:last-child {
+  border-right: none;
+}
+
+@media (max-width: 767px) {
+  .colorButton{
+      flex-basis: 33%;
+      border-right: none;
+  } 
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .colorButton:nth-last-child(n+6),
+  .colorButton:nth-last-child(n+6) ~ a{
+      flex-basis: 12%;
+  } /*if 6 (or more) items, the flexbasis changes to 33%   doc: https://alistapart.com/article/quantity-queries-for-css*/
+}
+
+.colorButtonRed{ background-color:#aa0000; color:#ffffff;}
+.colorButtonOrange{ background-color:#ef4135; color:#ffffff; text-shadow:1px 1px #E22012;}
+.colorButtonGold{ background-color:#fdb913; color:#333333;}
+.colorButtonGreen{ background-color:#55b31b; color:#333333;} /*85,179,27*/
+.colorButtonDarkGreen{ background-color:#124a12; color:#ffffff;}
+.colorButtonDarkBlue{ background-color:#003282; color:#ffffff;}
+.colorButtonLightBlue{  background-color:#088099;  color:#ffffff;}
+.colorButtonEmerald{ background-color:#008765; color:#ffffff;}
+.colorButtonBrown{ background-color:#807060; color:#ffffff;}
+.colorButtonBlack{ background-color:#333333; color:#ffffff;}
+.colorButtonWhite{ background-color:#f7f7f7; color:#333333;}
+.colorButton:hover {
+    text-decoration:none;
+}
+
+/* these are all brand colors with a 30% drop in brightness */
+.colorButtonRed:hover, .colorButtonRed:focus, .colorButtonRed:active{ background-color: #8e0000; color:#ffffff;}
+.colorButtonOrange:hover, .colorButtonOrange:focus, .colorButtonOrange:active{ background-color: #dc362c; color:#ffffff;}
+.colorButtonGold:hover, .colorButtonGold:focus, .colorButtonGold:active{ background-color: #f99c10; color:#333333;}
+.colorButtonGreen:hover, .colorButtonGreen:focus, .colorButtonGreen:active{ background-color:#469616; color:#1D1D1D;} /* to keep enough contrast */
+.colorButtonDarkGreen:hover, .colorButtonDarkGreen:focus, .colorButtonDarkGreen:active{ background-color:#0f3d0f; color:#ffffff;}
+.colorButtonDarkBlue:hover, .colorButtonDarkBlue:focus, .colorButtonDarkBlue:active{ background-color: #00296c; color:#ffffff;}
+.colorButtonLightBlue:hover, .colorButtonLightBlue:focus, .colorButtonLightBlue:active{ background-color: #076a7f; color:#ffffff;}
+.colorButtonEmerald:hover, .colorButtonEmerald:focus, .colorButtonEmerald:active{ background-color: #007054; color:#ffffff;}
+.colorButtonBrown:hover, .colorButtonBrown:focus, .colorButtonBrown:active{ background-color:#6a5d4f; color:#ffffff;}
+.colorButtonBlack:hover, .colorButtonBlack:focus, .colorButtonBlack:active{ background-color: #2a2a2a; color:#ffffff;}
+.colorButtonWhite:hover, .colorButtonWhite:focus, .colorButtonWhite:active{ background-color: #cccccc; color:#333333;}
+
+.colorButton h4{
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 2.2rem;
+  margin:0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.colorButton p{
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  margin: 0;
+  padding-top: 10px;
 }
 
 /* ==========================================================================================
@@ -3129,102 +3207,6 @@ svg.arrow.circle.navy {
   max-width:100%;
 }
 
-
-/* ==========================================================================================
-   ===== Law - Box Navigation  ===== Content Type #5218 =====================================
-   ==========================================================================================
-   Set of up to six branded color boxes for high profile links in the Topzone
-   https://alistapart.com/article/quantity-queries-for-css
-   Last revised 11/14/17 by Max   
-*/
-
-.colorButtonWrapper {
-  display:flex;
-  flex-wrap:wrap;
-  /*margin: 10px 0; Changed to add spacing beween topzone and content*/
-  margin: 0 0 30px 0;
-}
-
-.colorButton {
-  position: relative;
-  display: flex; 
-  flex: 1;
-  flex-direction: column;
-  font-family: "montserrat", sans-serif;
-  justify-content: center;
-  text-align:center;
-  padding: 30px 15px;
-  width: 0;
-}
-
-.colorButton {
-  border-right:2px solid #fff;
-  margin: 20px 0;
-  padding: 10px 15px;
-}
-
-.colorButton:last-child {
-  border-right: none;
-}
-
-@media (max-width: 767px) {
-  .colorButton{
-      flex-basis: 33%;
-      border-right: none;
-  } 
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .colorButton:nth-last-child(n+6),
-  .colorButton:nth-last-child(n+6) ~ a{
-      flex-basis: 12%;
-  } /*if 6 (or more) items, the flexbasis changes to 33%   doc: https://alistapart.com/article/quantity-queries-for-css*/
-}
-
-.colorButtonRed{ background-color:#aa0000; color:#ffffff;}
-.colorButtonOrange{ background-color:#ef4135; color:#ffffff; text-shadow:1px 1px #E22012;}
-.colorButtonGold{ background-color:#fdb913; color:#333333;}
-.colorButtonGreen{ background-color:#55b31b; color:#333333;} /*85,179,27*/
-.colorButtonDarkGreen{ background-color:#124a12; color:#ffffff;}
-.colorButtonDarkBlue{ background-color:#003282; color:#ffffff;}
-.colorButtonLightBlue{  background-color:#088099;  color:#ffffff;}
-.colorButtonEmerald{ background-color:#008765; color:#ffffff;}
-.colorButtonBrown{ background-color:#807060; color:#ffffff;}
-.colorButtonBlack{ background-color:#333333; color:#ffffff;}
-.colorButtonWhite{ background-color:#f7f7f7; color:#333333;}
-.colorButton:hover {
-    text-decoration:none;
-}
-
-/* these are all brand colors with a 30% drop in brightness */
-.colorButtonRed:hover, .colorButtonRed:focus, .colorButtonRed:active{ background-color: #8e0000; color:#ffffff;}
-.colorButtonOrange:hover, .colorButtonOrange:focus, .colorButtonOrange:active{ background-color: #dc362c; color:#ffffff;}
-.colorButtonGold:hover, .colorButtonGold:focus, .colorButtonGold:active{ background-color: #f99c10; color:#333333;}
-.colorButtonGreen:hover, .colorButtonGreen:focus, .colorButtonGreen:active{ background-color:#469616; color:#1D1D1D;} /* to keep enough contrast */
-.colorButtonDarkGreen:hover, .colorButtonDarkGreen:focus, .colorButtonDarkGreen:active{ background-color:#0f3d0f; color:#ffffff;}
-.colorButtonDarkBlue:hover, .colorButtonDarkBlue:focus, .colorButtonDarkBlue:active{ background-color: #00296c; color:#ffffff;}
-.colorButtonLightBlue:hover, .colorButtonLightBlue:focus, .colorButtonLightBlue:active{ background-color: #076a7f; color:#ffffff;}
-.colorButtonEmerald:hover, .colorButtonEmerald:focus, .colorButtonEmerald:active{ background-color: #007054; color:#ffffff;}
-.colorButtonBrown:hover, .colorButtonBrown:focus, .colorButtonBrown:active{ background-color:#6a5d4f; color:#ffffff;}
-.colorButtonBlack:hover, .colorButtonBlack:focus, .colorButtonBlack:active{ background-color: #2a2a2a; color:#ffffff;}
-.colorButtonWhite:hover, .colorButtonWhite:focus, .colorButtonWhite:active{ background-color: #cccccc; color:#333333;}
-
-.colorButton h4{
-  font-size: 2.2rem;
-  font-weight: 300;
-  line-height: 2.2rem;
-  margin:0;
-  padding: 0;
-  text-transform: uppercase;
-}
-
-.colorButton p{
-  font-size: 1.4rem;
-  line-height: 1.7rem;
-  margin: 0;
-  padding-top: 10px;
-}
-
 /* ==========================================================================================
    ===== Law - Contact Box ===== Content Type #5176 =========================================
    ==========================================================================================
@@ -3755,57 +3737,349 @@ article.dualColumn a:active {
   }
 }
 
-/* ==========================================================================================
-   ===== Law - Triple Column Content ===== Content Type #5489 =============================== 
-   ==========================================================================================
-   Three HTML blocks placed side-by-side with one centered HTML block above
-   Updated 9/8/2021 by Troy
-*/
-
-.tc-headline {
-  text-align: left;
-  margin-bottom: 2rem;
-}
-
-.tc-headline h2 {
-  font-size: 2.5rem;	
-}
-
-article.tripleColumn {
-  padding: 2rem 1.5rem 3rem;
-}
-
-article.tripleColumn a:link,
-article.tripleColumn a:visited {
-  color: #088099;
-  text-decoration: none;
-}
-
-article.tripleColumn a:hover {
-  text-decoration: underline;
-}
-
-article.tripleColumn a:active {
-  color: #aa0000;
-  text-decoration: underline;
-}
-
-/* XX-Large devices */
-@media (min-width: 1400px) {
-  .tc-headline {
-    text-align: center; 
-  }
-  
-  .tc-headline h2 {
-    margin-bottom: 2.5rem;	
-  }
-}
-
 /* ========================================================================================== 
    ===== Law - Facebook Feed ===== Content Type #5306 =======================================
    ==========================================================================================
    Feed from Facebook API
 */
+
+/* ========================================================================================== 
+   ===== Law - Faculty Profile  ===== Content Type #5143 ============================== START 
+   ==========================================================================================
+   Original CSS written in 2019. Last update/edit: 11/25/2020. 
+*/
+
+/* commented out by vic 20210425 */
+
+/* .facultyProfileWrapper {
+
+
+}
+
+.facultyProfileWrapper h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.facultyProfileWrapper .facultyProfilePicture {
+  
+}
+
+.facultyProfileWrapper .facultyProfilePicture img {
+  xmax-width: 100%;
+  xpadding: 0;
+}
+
+.facultyProfileBiography h2 {
+   margin: 30px 0 10px 0;
+}
+
+.facultyProfileWrapper .facultyProfileRoom,
+.facultyProfileWrapper .facultyProfilePhone,
+.facultyProfileWrapper .facultyProfileEmail {
+  xtext-align: right;
+  padding-left: 0;
+}
+
+.facultyProfileWrapper .facultyProfileBiography {
+  
+}
+
+.facultyProfileWrapper .facultyProfileMiddle {
+  xbackground-color: #f7f7f7;
+  margin-top: 30pxl
+} */
+
+/* .facultyListItemWrapper {
+   flex: 1 1 calc(100% - 30px);
+   align-self: flex-start;
+   margin: 15px;
+   max-width: 233.5px;
+} */
+  
+/* 
+div#id977819 .organizer  {
+   display: flex;
+   flex-wrap: wrap;
+   xjustify-content: center;
+} */
+
+
+/* .facultyListItemWrapper a {
+   display: block;
+   text-decoration: none;
+}
+
+.facultyListItemWrapper a:hover {
+   box-shadow: 0px 0px 15px #888;
+   text-decoration: underline;
+   color: #333333;
+} */
+
+/* .facultyListItem {
+   text-align: center;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-end;
+}
+
+.facultyListItemPhoto {
+   background-position: center;
+   background-size: cover;
+   align-self: flex-end;
+   min-height: 277px;
+   flex: 1 1 100%;
+}
+
+.facultyListItemText {
+   align-self: flex-start;
+   width: 100%;
+} */
+
+/* .facultyListItemPhoto img {
+   padding: 0;
+   min-height: 150px;
+   object-fit: cover;
+} */
+
+/* .facultyListItem h3  {
+   color: #333333;
+   font-family: Montserrat;
+   font-size: 2rem;
+   margin: 10px 0 0 0; 
+} */
+
+/* .facultyListItemText p {
+   font-size: 1.4rem;
+   text-align: center;
+   line-height: 1.8rem;
+} */
+
+/* START New CSS 11/5/2020 */
+/* .facultyPhoto img {
+    border-radius: 50%;
+} */
+
+/* #facultyFilter .form-check-label {
+    font-size: 2rem;
+    color: #333333;
+    text-transform: uppercase;
+} */
+
+/* form#facultyFilter {
+    padding-top: 5vh;
+} */
+/* END New CSS 11/5/2020 */
+
+/* Faculty profile - Landing page layout */
+/* Small devices (tablets, 768px and up) */
+/* @media (min-width: 768px) { */
+    /* START - Faculty landing radio labels */
+	/* #facultyFilter .form-check-inline {
+	     justify-content: center;
+	} */
+  
+	/* #facultyFilter label::after {
+	     content: "|";
+	     padding-left: 20px;
+	     padding-right: 20px;
+	} */
+  
+	/* #facultyFilter label:last-child::after {
+		content: "";
+	} */
+
+	/* .facultyListItemWrapper {
+   		xflex: 1 1 calc(50% - 30px);
+    } */
+
+	/* END - Faculty landing radio labels */ 
+/* } */
+
+/* Medium devices (desktops, 992px and up) */
+/* @media (min-width: 992px) {
+	.facultyListItemWrapper {
+   	  xflex: 1 1 calc(100% - 30px);
+    }
+} */
+
+/* end commented out by vic 20210425 */
+
+
+/* ****** Bootstrap 5 Organizer layouts - vic 20210425 ****** */
+
+/* Medium devices (tablets, 768px and up to 991) */
+@media screen and (min-width: 768px) and (max-width: 991.99px) {
+
+  .lawFacultyWrapper p.card-text {
+      font-size: 1rem;
+  }
+}
+
+/* Below md breakpoint max-width: 767.99px and down) */
+@media screen and (max-width: 767.99px) {
+
+  .lawFacultyWrapper.w-50 {
+      width: 100%!important;
+  }
+}
+
+/* ****** End Bootstrap 5 Organizer layouts - vic 20210425 ****** */
+
+
+/*** START Fulltext Layout ***/
+/* Last update/edit: 5/10/2021 by Troy */
+
+/* START Faculty Profile Breadcrumbs */
+nav#breadcrumbs.facultyProfileBreadcrumbs {
+    margin-top: 1.25em;
+}
+
+#breadcrumbs.facultyProfileBreadcrumbs ol li:last-child {
+  font-weight: 700; /* darken the faculty member's name */
+  color: #000000;
+}
+
+/* Don't increase the font-weight of the last right angel (>) symbol. */
+#breadcrumbs.facultyProfileBreadcrumbs ol li:last-child::before {
+  font-weight: initial; 
+}
+/* END Faculty Profile Breadcrumbs */
+
+/* START Image, Name, Title, Contact Info, CV, Twitter Handle section */
+.facultyProfileTop {
+  background-color: #f7f7f7;
+  padding: 50px 0 50px 0;
+}
+
+.facultyProfileWrapper .facultyProfilePicture img {
+  border-radius: 50%; 
+  max-width: 340px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 3em;
+}
+
+/* Centers photo, title(s), room, phone, and email at widths under 768px */
+.facultyProfileWrapper .facultyProfilePicture,
+.facultyProfileTitles,
+.facultyProfileInfo {
+	text-align: center;
+}
+
+/* Faculty member name */
+.facultyProfileInfo h1 {
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: .5em;
+}
+
+.facultyProfileCV {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.facultyProfileTwitter {
+  width: 100%;
+}
+/* END Image, Name, Title, Contact Info, CV, Twitter Handle section */
+
+/* START Faculty Profile Sidebar */
+.facultyProfileSidebar h3 {
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+.primary-profile-sidebar {
+	padding: 25px;
+	background-color: #088099;
+	margin-top: 35px;
+  color: #ffffff;
+}
+
+.primary-profile-sidebar h3,
+.primary-profile-sidebar p {
+	color: #ffffff;
+}
+
+.primary-profile-sidebar ul li:before {
+	color: #ffffff; /* bullet color on blue background */
+}
+
+.secondary-profile-sidebar {
+	padding: 25px;
+  border: solid 3px #088099;
+  color: #333333;
+  margin-top: 35px;
+}
+
+.secondary-profile-sidebar h3 {
+  color: #333333;
+}
+/* END Faculty Profile Sidebar */
+
+/* Biography, Publications, and Activity headlines */
+.primaryProfileContent h2 {
+  font-size: 2.4rem;  
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .facultyProfileInfo h1 {
+    font-size: 4.5rem;
+  }
+
+  .primaryProfileContent h2 {
+    font-size: 2.75rem;  
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {   
+  /* Left align name, title, room, phone, and email */
+  .facultyProfileInfo h1,
+  .facultyProfileTitles,
+  .facultyProfileInfo {
+    text-align: left;	
+  }
+
+  .facultyProfileWrapper .facultyProfilePicture {
+    text-align: left;
+    max-width: fit-content; /* Reduces unneeded column width from Bootstrap default */
+  }
+
+  .facultyProfileWrapper .facultyProfilePicture img {
+    max-width: 260px;
+  }
+
+  .facultyProfileCV {
+    width: 50%;
+    margin-bottom: revert;
+  }
+
+  .facultyProfileTwitter {
+    width: 50%;
+  }
+
+  /* Adds a gap between the CV and Twitter boxlinks 
+  depending on if either or both are used. */
+  .cv-twitter:nth-child(1) {
+    margin-right: .75rem;
+  }
+
+  .cv-twitter:nth-child(2) {
+    margin-left: .75rem;
+  }
+  
+  .facultyProfileBiography {
+    max-width: 95%;
+  }
+}
+/*** END Fulltext Layout ***/
+
+/*
+===== Law - Faculty Profile  ===== Content Type #5143 ================================ END 
+*/
+
 
 /* ========================================================================================== 
    ===== Law - Feature Content ===== Content Type #5193 =====================================
@@ -4796,6 +5070,158 @@ table.gsc-search-box td {
     }
 }
 
+/* ==========================================================================================
+   ===== Law - Image Banner ===== Content Type #5196 ========================================
+   ==========================================================================================
+   Banner with 2 layouts, one for the section on which it's hosted and a second that's inherited
+*/
+
+.imageBanner{
+  background: #088099; /* Old browsers */
+  background: radial-gradient(ellipse at center,  #088099 20%,#065666 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-position: left center; /* could be overriden by content item */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px; /* could be overriden by content item */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position:relative;
+}
+
+.imageBannerOverlay{
+  height: 300px; /* could be overriden by content item */
+  left:0;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.imageBanner h1, .imageBannerWrapper+h1 {
+  width: 100%;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 5rem;
+  font-weight: 300;
+  margin: 0;
+  text-align: center;
+  /* text-shadow: #000000 0 0 8px; */
+  /* text-shadow: 1px 1px 2px #000; Ingeniux */
+  text-shadow: 2px 2px 1px #000, -1px -1px 1px #000;
+}
+
+.BannerZone {
+  position:relative;
+}
+
+.imageBannerCenterIntroText {
+  max-width: 1400px; 
+  margin: auto;
+  padding: 2vw;
+}
+
+.imageBannerWrapper+h1{
+  position:absolute;
+  top:50%
+}
+
+.imageBanner h3{
+  color:#ffffff;
+  width:100%;
+  text-align:center;
+}
+
+@media screen and (max-width: 767.999px) { /* xs */
+  .imageBanner .copy .imageBannerText h1 {
+    font-size: 3.5rem;
+  }
+}
+
+.imageBanner .copy .imageBannerText h1 .topLevelSection,
+.imageBanner .copy .imageBannerText h1 span {
+  color:#333333;
+  display:block;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 767.999px) {
+  .imageBanner .copy .imageBannerText h1 .topLevelSection,
+  .imageBanner .copy .imageBannerText h1 span{
+    font-size: 1.4rem;
+  }
+}
+
+.imageBannerIntro {
+  font-weight: 300;
+  padding: 4.5em 0 3em 0;
+  text-align: center;   
+}
+
+.imageBannerIntro h5{
+  color: #aa0000;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.imageBannerIntro p {
+  color: #333333;
+  font-size:2.2rem;
+  line-height: 1.45;
+  font-weight: 300;
+  text-align: center;
+}
+
+.imageBannerIntro a { 
+  color: #333333; 
+  text-decoration: underline;
+}
+
+.imageBannerIntro a:hover, .imageBannerIntro a:focus { 
+  color: #aa0000; 
+}
+
+@media (max-width: 767.999px) {
+  .imageBanner {
+    background-position: top center;
+    height: 300px;
+  }
+  .imageBanner .imageBannerText{
+    padding:25px 15px;
+  }  
+  .imageBanner .imageBannerText h2 {
+    font-size:2.3rem;
+  }
+  .imageBannerIntro h5 {
+    font-size:2.3em;
+  }
+  .imageBannerIntro p{
+    font-size:1.4rem;
+  }
+}
+
+.imageBannerBreadcrumbs {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1;
+    text-shadow: 1px 1px 2px #000; /* Ingeniux */
+}
+
+.imageBannerBreadcrumbs a {
+  color: #ffffff;
+  text-decoration:none;
+}
+.imageBannerBreadcrumbs a:focus, .imageBannerBreadcrumbs a:hover{
+  color: #fdb913;
+  text-decoration:underline;
+}
+
+@media(min-width:992px){
+  .imageBannerCenterIntroText {
+    padding: 0;
+  }
+}
 
 /* ==========================================================================================
    ===== Law - Image Box Navigation ===== Content Type #5299 ================================
@@ -5991,159 +6417,6 @@ a:not([href]) {
 }
 
 /* ==========================================================================================
-   ===== Law - Image Banner ===== Content Type #5196 ========================================
-   ==========================================================================================
-   Banner with 2 layouts, one for the section on which it's hosted and a second that's inherited
-*/
-
-.imageBanner{
-  background: #088099; /* Old browsers */
-  background: radial-gradient(ellipse at center,  #088099 20%,#065666 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  background-position: left center; /* could be overriden by content item */
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 300px; /* could be overriden by content item */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position:relative;
-}
-
-.imageBannerOverlay{
-  height: 300px; /* could be overriden by content item */
-  left:0;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  z-index: 1;
-}
-
-.imageBanner h1, .imageBannerWrapper+h1 {
-  width: 100%;
-  color: #ffffff;
-  font-family: "Montserrat", sans-serif;
-  font-size: 5rem;
-  font-weight: 300;
-  margin: 0;
-  text-align: center;
-  /* text-shadow: #000000 0 0 8px; */
-  /* text-shadow: 1px 1px 2px #000; Ingeniux */
-  text-shadow: 2px 2px 1px #000, -1px -1px 1px #000;
-}
-
-.BannerZone {
-  position:relative;
-}
-
-.imageBannerCenterIntroText {
-  max-width: 1400px; 
-  margin: auto;
-  padding: 2vw;
-}
-
-.imageBannerWrapper+h1{
-  position:absolute;
-  top:50%
-}
-
-.imageBanner h3{
-  color:#ffffff;
-  width:100%;
-  text-align:center;
-}
-
-@media screen and (max-width: 767.999px) { /* xs */
-  .imageBanner .copy .imageBannerText h1 {
-    font-size: 3.5rem;
-  }
-}
-
-.imageBanner .copy .imageBannerText h1 .topLevelSection,
-.imageBanner .copy .imageBannerText h1 span {
-  color:#333333;
-  display:block;
-  font-size: 1.6rem;
-}
-
-@media (max-width: 767.999px) {
-  .imageBanner .copy .imageBannerText h1 .topLevelSection,
-  .imageBanner .copy .imageBannerText h1 span{
-    font-size: 1.4rem;
-  }
-}
-
-.imageBannerIntro {
-  font-weight: 300;
-  padding: 4.5em 0 3em 0;
-  text-align: center;   
-}
-
-.imageBannerIntro h5{
-  color: #aa0000;
-  font-size: 3rem;
-  font-weight: 300;
-}
-
-.imageBannerIntro p {
-  color: #333333;
-  font-size:2.2rem;
-  line-height: 1.45;
-  font-weight: 300;
-  text-align: center;
-}
-
-.imageBannerIntro a { 
-  color: #333333; 
-  text-decoration: underline;
-}
-
-.imageBannerIntro a:hover, .imageBannerIntro a:focus { 
-  color: #aa0000; 
-}
-
-@media (max-width: 767.999px) {
-  .imageBanner {
-    background-position: top center;
-    height: 300px;
-  }
-  .imageBanner .imageBannerText{
-    padding:25px 15px;
-  }  
-  .imageBanner .imageBannerText h2 {
-    font-size:2.3rem;
-  }
-  .imageBannerIntro h5 {
-    font-size:2.3em;
-  }
-  .imageBannerIntro p{
-    font-size:1.4rem;
-  }
-}
-
-.imageBannerBreadcrumbs {
-    color: #ffffff;
-    text-align: center;
-    font-size: 2rem;
-    line-height: 1;
-    text-shadow: 1px 1px 2px #000; /* Ingeniux */
-}
-
-.imageBannerBreadcrumbs a {
-  color: #ffffff;
-  text-decoration:none;
-}
-.imageBannerBreadcrumbs a:focus, .imageBannerBreadcrumbs a:hover{
-  color: #fdb913;
-  text-decoration:underline;
-}
-
-@media(min-width:992px){
-  .imageBannerCenterIntroText {
-    padding: 0;
-  }
-}
-
-/* ==========================================================================================
    ===== Law - Newscenter Story ===== Content Type #5296 ====================================
    ==========================================================================================
 *
@@ -6855,6 +7128,73 @@ li.nav-item a.nav-link .icon:hover {
 }
 
 /* ========================================================================================== 
+   ===== Law - Student Profile  ===== Content Type #5192 ==================================== 
+   ==========================================================================================
+   Last update/edit: 5/24/2021 by Troy
+*/
+
+/* START Text-HTML layout 
+   Needs #MainZone to display:flex;
+*/
+.flexContainer {
+	background: #ffffff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch; /* makes all flex items equal to the longest item */
+}
+
+/* Flexbox item */
+.studentProfileWrapper {
+	background: #f7f7f7;
+	width: 262px;
+	margin: 15px;
+  padding: 0 2rem;
+}
+
+.studentProfile img {
+	border-radius: 50%;
+}
+
+.studentProfile.standardContent h3 {
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 2.3rem;
+}
+/* END Text-HTML layout styles */
+
+/* START full-text layout styles */
+.profile-header {
+	background-color: hsl(0, 0%, 98%);
+}
+
+.studentProfilePageImage img {
+  min-width: 200px;
+}
+
+.studentProfileBiography {
+  background-color: #ffffff;
+}
+
+.studentProfileInfo h2 {
+  padding: 0;
+  margin: 0 0 0 0;
+  line-height: 1.25;
+}
+
+.studentProfileInfo p {
+  color: #333333;
+}
+
+.studentProfileInfo p.studentProfileGraduatingClass {
+  line-height: 1.25 !important;
+}
+/* END full-text layout styles */
+
+/* ===== END Law - Student Profile  ===== Content Type #5192 ============================== */
+
+/* ========================================================================================== 
    ===== Law - Testimonial ===== Content Type: #5202 ========================================
    ==========================================================================================
    Creates a speech bubble that includes a quote and citation. Can be used in 3 or 6 column zones
@@ -6915,6 +7255,52 @@ li.nav-item a.nav-link .icon:hover {
   font-style:italic;
   line-height:1.2;
   padding-top:2px;
+}
+
+/* ==========================================================================================
+   ===== Law - Triple Column Content ===== Content Type #5489 =============================== 
+   ==========================================================================================
+   Three HTML blocks placed side-by-side with one centered HTML block above
+   Updated 9/8/2021 by Troy
+*/
+
+.tc-headline {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.tc-headline h2 {
+  font-size: 2.5rem;	
+}
+
+article.tripleColumn {
+  padding: 2rem 1.5rem 3rem;
+}
+
+article.tripleColumn a:link,
+article.tripleColumn a:visited {
+  color: #088099;
+  text-decoration: none;
+}
+
+article.tripleColumn a:hover {
+  text-decoration: underline;
+}
+
+article.tripleColumn a:active {
+  color: #aa0000;
+  text-decoration: underline;
+}
+
+/* XX-Large devices */
+@media (min-width: 1400px) {
+  .tc-headline {
+    text-align: center; 
+  }
+  
+  .tc-headline h2 {
+    margin-bottom: 2.5rem;	
+  }
 }
 
 /* ========================================================================================== 
@@ -7137,7 +7523,20 @@ li.nav-item a.nav-link .icon:hover {
     color:#333;
 }
 
-/* what is all this? -----------------------------------------------*/
+/* ============================================ UTILITY CLASSES ========================================= */
+/*** Helper classes to extend layout options ***/
+
+/* -------------------------- Columns -------------------------- */
+/* Add this class to a parent div containing paragraphs to make two columns */
+.two-columns {
+  columns: 75ch 2; /* Sets minimum column width (for both columns), and amount of columns */
+  column-gap: 5%;
+  max-width: 100%; /*  overwrites characters limit for .standardContent paragraphs */
+  margin-top: 0;
+  margin-bottom: 5em;
+}
+
+/* ============================================ What is all this? ========================================= */
 
 /* Content Item Tweaks To Implement */
 #carousel .slick-dots {
@@ -7158,6 +7557,7 @@ li.nav-item a.nav-link .icon:hover {
 .accordionWrapper dl { /* accordion tweak */
   margin-bottom: 0px;
 }
+
 /* .primaryContentWrapper .primaryContent > :first-child {
   margin-top: 30px; Is this needed?
 } */
@@ -7540,409 +7940,8 @@ li.nav-item a.nav-link .icon:hover {
       }
 }
 
-/* ========================================================================================== 
-   ===== Law - Faculty Profile  ===== Content Type #5143 ============================== START 
-   ==========================================================================================
-   Original CSS written in 2019. Last update/edit: 11/25/2020. 
-*/
 
-/* commented out by vic 20210425 */
-
-/* .facultyProfileWrapper {
-
-
-}
-
-.facultyProfileWrapper h1 {
-  font-family: "Montserrat", sans-serif;
-}
-
-.facultyProfileWrapper .facultyProfilePicture {
-  
-}
-
-.facultyProfileWrapper .facultyProfilePicture img {
-  xmax-width: 100%;
-  xpadding: 0;
-}
-
-.facultyProfileBiography h2 {
-   margin: 30px 0 10px 0;
-}
-
-.facultyProfileWrapper .facultyProfileRoom,
-.facultyProfileWrapper .facultyProfilePhone,
-.facultyProfileWrapper .facultyProfileEmail {
-  xtext-align: right;
-  padding-left: 0;
-}
-
-.facultyProfileWrapper .facultyProfileBiography {
-  
-}
-
-.facultyProfileWrapper .facultyProfileMiddle {
-  xbackground-color: #f7f7f7;
-  margin-top: 30pxl
-} */
-
-/* .facultyListItemWrapper {
-   flex: 1 1 calc(100% - 30px);
-   align-self: flex-start;
-   margin: 15px;
-   max-width: 233.5px;
-} */
-  
-/* 
-div#id977819 .organizer  {
-   display: flex;
-   flex-wrap: wrap;
-   xjustify-content: center;
-} */
-
-
-/* .facultyListItemWrapper a {
-   display: block;
-   text-decoration: none;
-}
-
-.facultyListItemWrapper a:hover {
-   box-shadow: 0px 0px 15px #888;
-   text-decoration: underline;
-   color: #333333;
-} */
-
-/* .facultyListItem {
-   text-align: center;
-   display: flex;
-   flex-wrap: wrap;
-   align-items: flex-end;
-}
-
-.facultyListItemPhoto {
-   background-position: center;
-   background-size: cover;
-   align-self: flex-end;
-   min-height: 277px;
-   flex: 1 1 100%;
-}
-
-.facultyListItemText {
-   align-self: flex-start;
-   width: 100%;
-} */
-
-/* .facultyListItemPhoto img {
-   padding: 0;
-   min-height: 150px;
-   object-fit: cover;
-} */
-
-/* .facultyListItem h3  {
-   color: #333333;
-   font-family: Montserrat;
-   font-size: 2rem;
-   margin: 10px 0 0 0; 
-} */
-
-/* .facultyListItemText p {
-   font-size: 1.4rem;
-   text-align: center;
-   line-height: 1.8rem;
-} */
-
-/* START New CSS 11/5/2020 */
-/* .facultyPhoto img {
-    border-radius: 50%;
-} */
-
-/* #facultyFilter .form-check-label {
-    font-size: 2rem;
-    color: #333333;
-    text-transform: uppercase;
-} */
-
-/* form#facultyFilter {
-    padding-top: 5vh;
-} */
-/* END New CSS 11/5/2020 */
-
-/* Faculty profile - Landing page layout */
-/* Small devices (tablets, 768px and up) */
-/* @media (min-width: 768px) { */
-    /* START - Faculty landing radio labels */
-	/* #facultyFilter .form-check-inline {
-	     justify-content: center;
-	} */
-  
-	/* #facultyFilter label::after {
-	     content: "|";
-	     padding-left: 20px;
-	     padding-right: 20px;
-	} */
-  
-	/* #facultyFilter label:last-child::after {
-		content: "";
-	} */
-
-	/* .facultyListItemWrapper {
-   		xflex: 1 1 calc(50% - 30px);
-    } */
-
-	/* END - Faculty landing radio labels */ 
-/* } */
-
-/* Medium devices (desktops, 992px and up) */
-/* @media (min-width: 992px) {
-	.facultyListItemWrapper {
-   	  xflex: 1 1 calc(100% - 30px);
-    }
-} */
-
-/* end commented out by vic 20210425 */
-
-
-/* ****** Bootstrap 5 Organizer layouts - vic 20210425 ****** */
-
-/* Medium devices (tablets, 768px and up to 991) */
-@media screen and (min-width: 768px) and (max-width: 991.99px) {
-
-  .lawFacultyWrapper p.card-text {
-      font-size: 1rem;
-  }
-}
-
-/* Below md breakpoint max-width: 767.99px and down) */
-@media screen and (max-width: 767.99px) {
-
-  .lawFacultyWrapper.w-50 {
-      width: 100%!important;
-  }
-}
-
-/* ****** End Bootstrap 5 Organizer layouts - vic 20210425 ****** */
-
-
-/*** START Fulltext Layout ***/
-/* Last update/edit: 5/10/2021 by Troy */
-
-/* START Faculty Profile Breadcrumbs */
-nav#breadcrumbs.facultyProfileBreadcrumbs {
-    margin-top: 1.25em;
-}
-
-#breadcrumbs.facultyProfileBreadcrumbs ol li:last-child {
-  font-weight: 700; /* darken the faculty member's name */
-  color: #000000;
-}
-
-/* Don't increase the font-weight of the last right angel (>) symbol. */
-#breadcrumbs.facultyProfileBreadcrumbs ol li:last-child::before {
-  font-weight: initial; 
-}
-/* END Faculty Profile Breadcrumbs */
-
-/* START Image, Name, Title, Contact Info, CV, Twitter Handle section */
-.facultyProfileTop {
-  background-color: #f7f7f7;
-  padding: 50px 0 50px 0;
-}
-
-.facultyProfileWrapper .facultyProfilePicture img {
-  border-radius: 50%; 
-  max-width: 340px;
-  width: 100%;
-  height: auto;
-  margin-bottom: 3em;
-}
-
-/* Centers photo, title(s), room, phone, and email at widths under 768px */
-.facultyProfileWrapper .facultyProfilePicture,
-.facultyProfileTitles,
-.facultyProfileInfo {
-	text-align: center;
-}
-
-/* Faculty member name */
-.facultyProfileInfo h1 {
-  text-align: center;
-  font-size: 4em;
-  margin-bottom: .5em;
-}
-
-.facultyProfileCV {
-  width: 100%;
-  margin-bottom: 2rem;
-}
-
-.facultyProfileTwitter {
-  width: 100%;
-}
-/* END Image, Name, Title, Contact Info, CV, Twitter Handle section */
-
-/* START Faculty Profile Sidebar */
-.facultyProfileSidebar h3 {
-  font-weight: 600;
-  font-family: "Montserrat", sans-serif;
-}
-
-.primary-profile-sidebar {
-	padding: 25px;
-	background-color: #088099;
-	margin-top: 35px;
-  color: #ffffff;
-}
-
-.primary-profile-sidebar h3,
-.primary-profile-sidebar p {
-	color: #ffffff;
-}
-
-.primary-profile-sidebar ul li:before {
-	color: #ffffff; /* bullet color on blue background */
-}
-
-.secondary-profile-sidebar {
-	padding: 25px;
-  border: solid 3px #088099;
-  color: #333333;
-  margin-top: 35px;
-}
-
-.secondary-profile-sidebar h3 {
-  color: #333333;
-}
-/* END Faculty Profile Sidebar */
-
-/* Biography, Publications, and Activity headlines */
-.primaryProfileContent h2 {
-  font-size: 2.4rem;  
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-  .facultyProfileInfo h1 {
-    font-size: 4.5rem;
-  }
-
-  .primaryProfileContent h2 {
-    font-size: 2.75rem;  
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {   
-  /* Left align name, title, room, phone, and email */
-  .facultyProfileInfo h1,
-  .facultyProfileTitles,
-  .facultyProfileInfo {
-    text-align: left;	
-  }
-
-  .facultyProfileWrapper .facultyProfilePicture {
-    text-align: left;
-    max-width: fit-content; /* Reduces unneeded column width from Bootstrap default */
-  }
-
-  .facultyProfileWrapper .facultyProfilePicture img {
-    max-width: 260px;
-  }
-
-  .facultyProfileCV {
-    width: 50%;
-    margin-bottom: revert;
-  }
-
-  .facultyProfileTwitter {
-    width: 50%;
-  }
-
-  /* Adds a gap between the CV and Twitter boxlinks 
-  depending on if either or both are used. */
-  .cv-twitter:nth-child(1) {
-    margin-right: .75rem;
-  }
-
-  .cv-twitter:nth-child(2) {
-    margin-left: .75rem;
-  }
-  
-  .facultyProfileBiography {
-    max-width: 95%;
-  }
-}
-/*** END Fulltext Layout ***/
-
-/*
-===== Law - Faculty Profile  ===== Content Type #5143 ================================ END 
-*/
-
-/* ========================================================================================== 
-   ===== Law - Student Profile  ===== Content Type #5192 ==================================== 
-   ==========================================================================================
-   Last update/edit: 5/24/2021 by Troy
-*/
-
-/* START Text-HTML layout 
-   Needs #MainZone to display:flex;
-*/
-.flexContainer {
-	background: #ffffff;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: stretch; /* makes all flex items equal to the longest item */
-}
-
-/* Flexbox item */
-.studentProfileWrapper {
-	background: #f7f7f7;
-	width: 262px;
-	margin: 15px;
-  padding: 0 2rem;
-}
-
-.studentProfile img {
-	border-radius: 50%;
-}
-
-.studentProfile.standardContent h3 {
-	text-align: center;
-	margin-top: 0;
-	margin-bottom: 20px;
-	font-size: 2.3rem;
-}
-/* END Text-HTML layout styles */
-
-/* START full-text layout styles */
-.profile-header {
-	background-color: hsl(0, 0%, 98%);
-}
-
-.studentProfilePageImage img {
-  min-width: 200px;
-}
-
-.studentProfileBiography {
-  background-color: #ffffff;
-}
-
-.studentProfileInfo h2 {
-  padding: 0;
-  margin: 0 0 0 0;
-  line-height: 1.25;
-}
-
-.studentProfileInfo p {
-  color: #333333;
-}
-
-.studentProfileInfo p.studentProfileGraduatingClass {
-  line-height: 1.25 !important;
-}
-/* END full-text layout styles */
-
-/* ===== END Law - Student Profile  ===== Content Type #5192 ============================== */
+/* ????? */
 
 .standardContent.bio-card .bio-links i {
   padding-right: 10px;
