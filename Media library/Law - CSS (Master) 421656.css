@@ -1737,7 +1737,7 @@ footer #organization .email a{
 
 /* ----------- footer nav links ------------- */
 footer .footerLinks {
-  color: #cccccc;
+  xcolor: #cccccc;
 }
 
 footer .footerLinks ul {
@@ -1757,12 +1757,14 @@ footer .footerLinks li {
 }
 
 footer .footerLinks a {
-  color: #b3b3b3;
-  font-size: 1.4rem;
+  xcolor: #b3b3b3;
+  color: #ffffff;
+  xfont-size: 1.4rem;
 }
 
-footer .footerLinks a:hover, footer .footerLinks a:focus {
-  color: #ffffff;
+footer .footerLinks a:hover, 
+footer .footerLinks a:focus {
+  color: #f7f7f7;
   text-decoration: none;
 }
 
@@ -1802,11 +1804,11 @@ footer #footerSocialMediaLinks .social li {
 }
 
 footer #footerSocialMediaLinks .social a {
-  color: #cccccc;
+  color: #ffffff;
   transition: all 0.2s ease;
 }
 footer #footerSocialMediaLinks .social a:hover, footer #footerSocialMediaLinks .social a:focus{
-  color: #ffffff;
+  color: #cccccc;
 }
 
 /* -------- CTA Links ----------- */
@@ -1880,6 +1882,146 @@ footer #footerSocialMediaLinks .social a:hover, footer #footerSocialMediaLinks .
   padding-right:0;
 }
 */
+
+/*********************
+*
+*   Global Footer
+*
+**/
+/* Moved from on 9/23/2021
+*   Bootstrap 5 Migration Customizations
+*   Media Item 2268710 */
+
+
+/* ***** Footer Defaults ***** */
+
+footer .footerLinks a {
+    text-decoration: none;
+}
+
+footer .footerLinks a:hover {
+    text-decoration: underline;
+}
+
+#footerCallToActionLinks a {
+    border-radius: 0;
+}
+
+#subfooterWrapper {
+    background: #000000;
+    color: #b3b3b3;
+    font-size: 1.2rem;
+}
+
+div#footerInner .container > * {
+    outline: 2px solid red;
+}
+
+
+/* ***** Mobile Up ***** */
+
+@media screen and (min-width: 992px) {
+    footer #footerInner {
+        xdisplay: flex;
+        xflex-wrap: wrap;
+        /* max-width: none; */
+    }
+}
+
+
+/* Desktop down */
+
+@media screen and (max-width: 991.98px) {
+    footer #organization {
+        text-align: center;
+    }
+    footer #organization img {
+        max-width: 50%;
+    }
+    footer h4 {
+        margin: 0 0 15px 0;
+        padding: 0;
+    }
+    footer #footerInner .footerLinks {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up to 1199) */
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+    /* footer #footerContact {
+        margin-left: 2.5rem;
+        padding-left: 2.5rem; */
+    }
+    footer #organization {
+        line-height: 1.5rem;
+    }
+    footer #organization .name {
+        font-size: 1.25rem;
+        font-weight: 500;
+        margin-top: 1rem;
+    }
+    footer .footerLinks {
+        font-size: 1rem;
+    }
+    footer .footerLinks a {
+        font-size: 0.9rem;
+    }
+    footer h4 {
+        font-size: 1.5rem;
+    }
+    #footerCallToActionLinks a {
+        font-size: 1.25rem;
+    }
+}
+
+
+/* X-Large devices (desktops, 1200px and up to 1365) */
+
+@media screen and (min-width: 1200px) and (max-width: 1365.99px) {
+    /* footer #footerContact {
+        margin-left: 3rem;
+        padding-left: 3rem; */
+    }
+    footer #organization {
+        line-height: 1.75rem;
+    }
+    footer #organization .name {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-top: 1rem;
+    }
+    footer .footerLinks {
+        font-size: 1.25rem;
+    }
+    footer .footerLinks a {
+        font-size: 1.25rem;
+    }
+    footer h4 {
+        font-size: 2rem;
+    }
+    #footerCallToActionLinks a {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* X Large devices (large desktops, 1200px and up) */
+
+@media screen and (min-width: 1366px) {
+    /* footer #footerContact {
+        margin-left: 4rem;
+        padding-left: 4rem;
+    } */
+    footer #organization .name {
+        font-size: 1.75rem;
+        font-weight: 500;
+        margin-top: 1rem;
+    }
+}
 
 /* --------------------------------------- Critical Emergency Homepage --------------------------------------- */
 #layout3250 #pageContentWrapper {
@@ -2042,11 +2184,10 @@ svg.arrow.circle.navy {
 
 .accordionWrapper h2.accordionTitle {
   color: #aa0000;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2.8rem;
+  xfont-size: 2.8rem;
   font-weight: 500;
-  margin: 65px 0 22px 0;
-  text-align: center;
+  xmargin: 4rem 0 2rem 0;
+  xtext-align: center;
   clear: both;
 }
 
@@ -2058,7 +2199,7 @@ svg.arrow.circle.navy {
   color: #333333;
   font-size: 1.2rem;
   line-height: 1.5;
-  margin-bottom: 1.6rem;
+  xmargin-bottom: 1.6rem;
   font-weight: 500;
   text-align: left;
 }
@@ -2084,7 +2225,7 @@ svg.arrow.circle.navy {
 }
 
 .accordionItemHeader.accordion-header a:hover {
-  outline: none;
+  xoutline: none;
 }
 
 .accordionItemHeader.accordion-header a:focus {
@@ -2100,14 +2241,15 @@ svg.arrow.circle.navy {
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 30px 0;
+  xpadding: 2rem 0;
+  margin: 2rem 0;
 }
 
 .accordionWrapper h3.accordionItemHeaderButtonTitle {
   color: #088099;
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.0rem;
-  font-weight: 500;
+  xfont-family: "Montserrat", sans-serif;
+  xfont-size: 2.0rem;
+  xfont-weight: 500;
   margin: 0;
   width: 100%;
 }
@@ -7082,9 +7224,9 @@ li.nav-item a.nav-link .icon:hover {
 
 .spotlightWrapper .spotlightCopyBody {
   color: #333333;
-  font-family: "Montserrat", sans-serif;
+  xfont-family: "Montserrat", sans-serif;
   font-weight:500;
-  font-size:1.8rem;
+  xfont-size:1.8rem;
   line-height: 1.5;
   margin-bottom:30px;
 }
@@ -7170,6 +7312,12 @@ li.nav-item a.nav-link .icon:hover {
 /* temporary */
 .spotlightWrapper.standardContent {
     max-width: 1400px;
+}
+
+/* Overwrites 2288710 */
+.law-detailPage-809077 .standardContent .spotlightCopy p {
+  font-size: 1.2rem !important;
+  line-height: 1.5 !important;
 }
 
 /* ========================================================================================== 
