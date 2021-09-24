@@ -1749,7 +1749,6 @@ footer h4 {
   footer h4 {
     font-size: 1.5rem;
     margin: 0 0 3rem 0;
-    /* padding: 0 0 10px 0; */
   }
 }
 
@@ -1763,14 +1762,12 @@ footer h4 {
 
 footer #organization {
   color: #ffffff;
-  /* line-height: 1.5; */
   margin-bottom: 30px;
   text-align: center;
 }
 
 footer #organization img {
-  /* su logo */
-  max-width: 50%;
+  max-width: 50%; /* su logo */
 }
 
 footer #organization .name {
@@ -1801,8 +1798,7 @@ footer #organization .phone a:link {
 
 @media (min-width: 992px) {
   footer #organization img {
-    /* su logo */
-    max-width: 66%;
+    max-width: 66%; /* su logo */
     margin: 0;
   }
 
@@ -1987,11 +1983,6 @@ footer #footerSocialMediaLinks .social a:focus {
 }
 
 @media (min-width: 992px) {
-  #footerCallToActionLinks {
-    /* fixes a chrome bug */
-    /* padding-inline-start: 0; */
-  }
-
   #footerCallToActionLinks li {
     margin-bottom: 0;
   }
@@ -2032,7 +2023,6 @@ footer #footerSocialMediaLinks .social a:focus {
 #subfooter a:link,
 #subfooter a:visited {
   color: #b3b3b3;
-  /* padding: 0 0.5rem; */
   text-decoration: none;
 }
 
