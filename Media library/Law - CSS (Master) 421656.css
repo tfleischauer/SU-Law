@@ -1720,10 +1720,7 @@ img.img-responsive {
    ===== Global Footer styles ===============================================================
    ========================================================================================== 
 */
-
-/* div#footerInner .container > * {
-  outline: 2px solid red;
-} */
+/* Updated by Troy 9/27/2021 */
 
 footer {
   position: relative;
@@ -1797,8 +1794,12 @@ footer #organization .phone a:link {
 }
 
 @media (min-width: 992px) {
+  .org-inner-wrapper {
+    width: 180px;
+  }
+
   footer #organization img {
-    max-width: 66%; /* su logo */
+    max-width: 100%; /* su logo */
     margin: 0;
   }
 

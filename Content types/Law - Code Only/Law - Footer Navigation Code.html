@@ -1,40 +1,48 @@
-<div id="footerContact" class="col-xs-10 col-xs-push-1 col-sm-push-0 col-sm-3">
+<div class="container d-lg-flex flex-lg-row">
+  <div id="footerContact" class="col-xs-10 offset-xs-1 col-sm-12 offset-sm-0 col-lg-3">
     <a name="contactInformationAnchor"></a>
     <div id="organization" itemscope itemtype="http://schema.org/Organization">
-      <a name="unitContactInformationAnchor"></a>
-      <t4 type="media" formatter="image/*" id="1859004" itemprop="logo" />
-      <div class="name" itemprop="name">Seattle University<br>School of Law</div>
-      <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-        <div class="street-address" itemprop="streetAddress">901 12th Avenue</div>
-        <div>
-          <span itemprop="addressLocality">Seattle</span>, <span itemprop="addressRegion">WA</span> <span itemprop="postalCode">98122</span>
+      <div class="org-inner-wrapper">
+        <a name="unitContactInformationAnchor"></a>
+        <t4 type="media" formatter="image/*" id="1859004" itemprop="logo" />
+        <div class="name" itemprop="name">Seattle University<br>School of Law</div>
+        <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <div class="street-address" itemprop="streetAddress">901 12th Avenue</div>
+          <div>
+            <span class="city" itemprop="addressLocality">Seattle</span>, <span class="state"
+              itemprop="addressRegion">WA</span> <span class="postalCode" itemprop="postalCode">98122</span>
+          </div>
+        </address>
+        <div class="phone footerLinks" itemprop="telephone" content="206-398-4000">
+          <a href="tel:206-398-4000">206-398-4000</a>
         </div>
-      </address>
-      <div class="phone" itemprop="telephone" content="206-398-4000">
-        <a href="tel:206-398-4000">206-398-4000</a>
-      </div>
-    </div>
-  </div>
-<div class="clearfix visible-xs"></div>
-  <div id="footerLinksPeople" class="col-xs-10 col-xs-push-1 col-sm-2 col-sm-push-0 footerLinks">
-    <t4 type="navigation" name="Law - Footer Navigation - People" id="623" />
-  </div>
-  <div id="footerLinksEssentials" class="col-xs-10 col-xs-push-1 col-sm-2 col-sm-push-0 footerLinks">
-    <t4 type="navigation" name="Law - Footer Navigation - Essentials" id="622" />
-  </div>
+      </div> <!-- end org-inner-wrapper -->
+    </div> <!-- end #organization -->
+  </div> <!-- end #footerContact -->
   <div class="clearfix visible-xs"></div>
-  <div id="footerLinksVisit" class="col-xs-10 col-xs-push-1 col-sm-2 col-sm-push-0 footerLinks">
+  <div id="footerLinksPeople" class="col-xs-10 offset-xs-1 col-sm-12 offset-sm-0 col-lg-2 footerLinks">
+    <t4 type="navigation" name="Law - Footer Navigation - People" id="623" />
+  </div> <!-- end #footerLinksPeople -->
+  <div id="footerLinksEssentials" class="col-xs-10 offset-xs-1 offset-sm-0 col-lg-2 footerLinks">
+    <t4 type="navigation" name="Law - Footer Navigation - Essentials" id="622" />
+  </div> <!-- end #footerLinksEssentials -->
+  <div class="clearfix visible-xs"></div>
+  <div id="footerLinksVisit" class="col-xs-10 offset-xs-1 col-sm-12 offset-sm-0 col-lg-2 footerLinks">
     <t4 type="navigation" name="Law - Footer Navigation - Visit" id="624" />
-  </div>
-  <div id="footerSocialMediaLinks" class="col-xs-10 col-xs-push-1 col-sm-3 col-sm-push-0 ">
+  </div> <!-- end #footerLinksVisit -->
+  <div id="footerSocialMediaLinks" class="col-xs-10 offset-xs-1 col-sm-12 offset-sm-0 col-lg-3 footerLinks">
     <t4 type="navigation" name="Law - Social Media Buttons" id="625" />
-  </div>
+  </div> <!-- end #footerSocialMediaLinks -->
   <div class="clearfix"></div>
   <a name="ctaLinksAnchor"></a>
-  <div class="container"> <!-- does not close in this CT (2019) -->
-    <ul class="row" id="footerCallToActionLinks">
-      <li class="col-xs-10 col-xs-push-1 col-sm-push-0 col-sm-4"><a href="#" id="SUfooterNavApply" class=“footerCallToActionLinksItem”>Apply Now</a></li>
-      <li class="col-xs-10 col-xs-push-1 col-sm-push-0 col-sm-4"><a href="#"  id="SUfooterNavContact" class=“footerCallToActionLinksItem”>Contact</a></li>
-      <li class="col-xs-10 col-xs-push-1 col-sm-push-0 col-sm-4"><a href="#"  id="SUfooterNavRequestInfo" class=“footerCallToActionLinksItem”>Request Info</a></li>
-    </ul>
-  </div> <!-- close in this CT (2020) -->
+</div> <!-- end .container -->
+<div class="container">
+  <ul class="row" id="footerCallToActionLinks">
+    <li class="col-xs-10 offset-xs-1 col-md-4"><a href="https://lsacsso.b2clogin.com/8a958e4e-8c1b-4522-9e31-9559a8021c38/B2C_1A_Login/oauth2/v2.0/authorize?client_id=fa06a2cb-f29c-4715-9bc7-10f1d4b49d78&response_type=code&redirect_uri=https://os.lsac.org/Logon/Access.aspx&scope=openid&nonce=lsac.aadb2c&state=a0f8ada367794f28a47088bf323910a1&prompt=login" id="SUfooterNavApply"
+        class="footerCallToActionLinksItemb btn" type="button" title="Law School Admission Council (opens in a new tab)" target="_blank">Apply Now</a></li>
+    <li class="col-xs-10 offset-xs-1 col-md-4"><a href="<t4 type="navigation" name="Law - Our School > Contact Us" id="869" />" id="SUfooterNavContact"
+        class="footerCallToActionLinksItem btn" type="button" title="Administrative Office Directory">Contact</a></li>
+    <li class="col-xs-10 offset-xs-1 col-md-4"><a href="<t4 type="navigation" name="Law - Student Interest Form" id="870" />" id="SUfooterNavRequestInfo"
+        class="footerCallToActionLinksItem btn" type="button" title="Student Interest Form">Request Info</a></li>
+  </ul>
+</div> <!-- end .container -->
