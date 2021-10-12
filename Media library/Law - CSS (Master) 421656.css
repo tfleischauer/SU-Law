@@ -48,6 +48,14 @@ p {
   margin: 0;
 }
 
+/* Global Custom Properties: An HTML element but with higher specificity */ 
+:root {
+  --h2: 2.65rem;
+  --h3: 1.65rem;
+  --h4: 1.563rem;
+  --h5: 1.25rem;
+}
+
 body {
   background-color: #ffffff;
   color: #333333;
@@ -1459,7 +1467,8 @@ h5 {
   color: #aa0000;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 1.75rem; /* 1.953rem; Major scale */
+  xfont-size: 1.75rem; /* 1.953rem; Major scale */
+  font-size: 1.65rem;
   margin-bottom: 0.3rem;
 }
 
@@ -3210,6 +3219,16 @@ svg.arrow.circle.navy {
   border-right: none;
 }
 
+a.colorButton:link,
+a.colorButton:visited,
+a.colorButton:hover {
+  text-decoration: none;
+}
+
+a.colorButton:active {
+  text-decoration: underline;
+}
+
 @media (max-width: 767px) {
   .colorButton {
     flex-basis: 33%;
@@ -3342,9 +3361,11 @@ svg.arrow.circle.navy {
 }
 
 .colorButton h4 {
-  font-size: 2.2rem;
+  xfont-size: 2.2rem;
+  font-size: 1.1rem;
   font-weight: 300;
-  line-height: 2.2rem;
+  xline-height: 2.2rem;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
@@ -4355,7 +4376,7 @@ h2.contactBoxTitle {
 }
 
 .contactBoxSingleWrapper h2 {
-  font-size: 3.2rem;
+  font-size: var(--h2);
   font-weight: 500;
   margin: 0;
   padding: 15px 0 15px 0;
@@ -4542,7 +4563,7 @@ h2.contactBoxSingleTitle {
 
 .dc-headline h2 {
   color: #aa0000; /* Red */
-  font-size: 2.5rem;
+  font-size: var(--h2);
   margin-bottom: 2.5rem;
 }
 
@@ -5118,7 +5139,8 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
   .eventInformation
   .eventTitle {
   color: #aa0000;
-  font-size: 1.8rem;
+  xfont-size: 1.8rem;
+  font-size: 1.3rem;
 }
 
 .featuredCuratedEventsWrapper
@@ -5149,6 +5171,29 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
   line-height: 1.4em;
   text-align: center;
   font-weight: bold;
+}
+
+
+/* ==========================================================================================
+   ===== Law - Featured Curated Events Box ===== Content Type #5194 =========================
+   ==========================================================================================
+   Adds up to three events in MainZone. Requires Law - Curated Event (id:5568) content type.
+*/
+
+.featuredCuratedEventsWrapper .curatedEventsList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
+/* ***  Large min Defaults   *** */
+
+@media screen and (min-width: 992px) {
+    .featuredCuratedEventsWrapper .curatedEventsList {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 
 /* ==========================================================================================
@@ -8512,7 +8557,7 @@ li.nav-item a.nav-link .icon:hover {
    ===== Law - Triple Column Content ===== Content Type #5489 =============================== 
    ==========================================================================================
    Three HTML blocks placed side-by-side with one centered HTML block above
-   Updated 9/8/2021 by Troy
+   Updated 10/11/2021 by Troy
 */
 
 .tc-headline {
@@ -8521,7 +8566,7 @@ li.nav-item a.nav-link .icon:hover {
 }
 
 .tc-headline h2 {
-  font-size: 2.5rem;
+  font-size: var(--h2);
 }
 
 article.tripleColumn {
@@ -8550,6 +8595,57 @@ article.tripleColumn a:active {
   }
 
   .tc-headline h2 {
+    margin-bottom: 2.5rem;
+  }
+}
+    
+/* ==========================================================================================
+   ===== Law - Columns-4 ========== Content Type #5596 ====================================== 
+   ==========================================================================================
+   Four HTML blocks placed side-by-side with one centered HTML block above
+   New 10/11/2021 by Troy
+*/
+
+.c4-headline {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.c4-headline h2 {
+  font-size: var(--h2);
+}
+
+.p-style-heading {
+  text-transform: uppercase;
+  color: #333333;
+}
+
+article.columns-4 {
+  padding: 2rem 1.5rem 3rem;
+}
+
+article.columns-4 a:link,
+article.columns-4 a:visited {
+  color: #088099;
+  text-decoration: none;
+}
+
+article.columns-4 a:hover {
+  text-decoration: underline;
+}
+
+article.columns-4 a:active {
+  color: #aa0000;
+  text-decoration: underline;
+}
+
+/* XX-Large devices */
+@media (min-width: 1400px) {
+  .c4-headline {
+    text-align: center;
+  }
+
+  .c4-headline h2 {
     margin-bottom: 2.5rem;
   }
 }
