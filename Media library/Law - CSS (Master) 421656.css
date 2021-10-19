@@ -105,11 +105,19 @@ button.btn-su-blue{
   font-size: .9rem;
 }
 
+.form-control {
+  border-radius: 0;
+}
+
 button.btn-su-red {
   background-color: #aa0000; /* fall back */
   background-color: var(--su-red);
   color: #ffffff; /* fall back */
   color: var(--white);
+}
+
+.bg-color-yellow-tint {
+  background-color: var(--yellow-tint);
 }
 /* end test */
 
@@ -5679,7 +5687,7 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 .focusBoxWrapper .colorYellow .focusBoxContent a:link {
   color: #000000;
 }
-.focusBoxWrapper .ccolorYellow .focusBoxContent a:visited {
+.focusBoxWrapper .colorYellow .focusBoxContent a:visited {
   color: #333333;
 }
 .focusBoxWrapper .colorYellow .focusBoxContent a:hover {
@@ -5709,6 +5717,27 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 .focusBoxWrapper .colorYellowTint .focusBoxContent cite,
 .focusBoxWrapper .colorYellowTint .focusBoxContent i.fa {
   color: #333333;
+}
+.focusBoxWrapper .colorYellowTint .focusBoxContent a:link {
+  color: var(--blue);
+  text-decoration: none;
+}
+.focusBoxWrapper .colorYellowTint .focusBoxContent a:visited {
+  color: var(--blue);
+}
+.focusBoxWrapper .colorYellowTint .focusBoxContent a:hover {
+  text-decoration: underline;
+}
+.focusBoxWrapper .colorYellowTint .focusBoxContent a:active {
+  text-decoration: underline;
+  color: var(--su-red) !important;
+}
+.focusBoxWrapper .colorYellow .focusBoxContent a:focus {
+  color: var(--su-red);
+}
+
+.focusBoxContent li::before {
+    color: var(--blue) !important;
 }
 
 /* Buttons */
@@ -9548,4 +9577,7 @@ article.columns-4 a:active {
   display: block;
   height: 600px;
 }
+
+
+
 
