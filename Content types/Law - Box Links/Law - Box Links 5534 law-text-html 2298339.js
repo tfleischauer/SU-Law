@@ -6,7 +6,7 @@
  *  Document will write once when the page loads  
  */
 
- try {
+try {
 
   /***
    *  Assign local variables from the content type's fields (assign T4 element output tags to variables)
