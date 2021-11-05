@@ -50,6 +50,10 @@ p {
 
 /* Global Custom Properties: The HTML element but with higher specificity */ 
 :root {
+  /* Body Text */
+  --p: 1.2rem;
+  /* Captions */
+  --cap: 1.1rem;
   /* Headlines */
   --h2: 2.65rem;
   --h3: 1.65rem;
@@ -71,55 +75,6 @@ p {
   --yellow: #fdb913;
   --yellow-tint: #f7f7f7;
 }
-
-/* test */
-button.btn-su-blue{
-  background-color: #088099; /* fall back */
-  background-color: var(--blue);
-  color: #ffffff; /* fall back */
-  color: var(--white);
-  border-radius: 0;
-}
-
-.form-check-input:checked {
-  background-color: #088099; /* fall back */
-  background-color: var(--blue);
-  border-color: #088099; /* fall back */
-  border-color: var(--blue);
-}
-
-/* form {
-  font-size: 1.2rem;
-} */
-
-.codeMainZoneWrapper {
-  font-size: 1.2rem;
-}
-
-.codeMainZoneWrapper a {
-  color: #088099; /* fall back */
-  color: var(--blue);
-}
-
-.codeMainZone p {
-  font-size: .9rem;
-}
-
-.form-control {
-  border-radius: 0;
-}
-
-button.btn-su-red {
-  background-color: #aa0000; /* fall back */
-  background-color: var(--su-red);
-  color: #ffffff; /* fall back */
-  color: var(--white);
-}
-
-.bg-color-yellow-tint {
-  background-color: var(--yellow-tint);
-}
-/* end test */
 
 body {
   background-color: #ffffff;
@@ -1089,7 +1044,11 @@ table.gsc-search-box td {
 
 /* ==========================================================================================
    ===== Law Library Search Bar Styles ======================================================
-   ========================================================================================== 
+   ==========================================================================================
+   The first set of styles is the Ingeniux Search Bar styles (don't want)
+   The second set is customized Bootstrap 5 Form HTML styles (prefered)
+
+   See the 'Law - Code - Main Zone' content types on the Law Library landing page
 */
 
 p.libForm {
@@ -1422,6 +1381,35 @@ div.row.Row1 {
   margin-bottom: 0px;
 }
 
+/*** Search Law Library - Bootstrap 5
+    See 'Bootstrap 5 Form HTML' in the 'Law - Code - Main Zone' content type on the Law Library landing page
+    All other styles are Bootstrap 5 classes. Troy 11/2/2021
+*/
+
+button.btn-su-blue {
+  background-color: #088099;
+  color: #ffffff;
+  border-radius: 0;
+}
+  
+.form-check-input:checked {
+  background-color: #088099;
+  border-color: #088099;
+}
+  
+.form-control {
+  border-radius: 0;
+}
+
+/* For use as classes instead of inline styles */
+.bg-color-yellow-tint {
+  background-color: #f7f7f7;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
 /* =============================================================================================================== */
 /* ==================================================== Content Items ============================================ */
 /* =============================================================================================================== */
@@ -1739,85 +1727,6 @@ ol.list-UpperRoman {
   white-space: normal; /* override default bootstrap behavior that caused buttons to extend beyond defined columns */
 }
 
-.standardContent .btn-attention {
-  background-color: #aa0000;
-  border: 1px solid #333333;
-  border-radius: 0;
-  color: #ffffff;
-  display: inline-block;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 500;
-  height: 100%;
-  line-height: 1.6rem;
-  margin: 7px;
-  padding: 15px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.standardContent .btn-attention:hover,
-.standardContent .btn-attention:focus {
-  background-color: #8e0000;
-  border-color: #333333;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.standardContent .btn-plain {
-  background-color: #e3e3da;
-  border-color: #cccccc;
-  color: #aa0000 !important;
-  text-decoration: none;
-}
-
-.standardContent .btn-plain:hover,
-.standardContent .btn-plain:focus {
-  background-color: #666666;
-  border-color: #333333;
-  color: #ffffff !important;
-}
-
-.standardContent .btn-alpha {
-  background-color: #333333;
-  border-radius: 0;
-  color: #ffffff;
-  display: inline-block;
-  font-size: 1.8rem;
-  height: 100%;
-  line-height: 2.4rem;
-  margin: 7px;
-  padding: 15px 45px 15px 15px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-}
-
-.standardContent .btn-alpha:after {
-  background-color: #333333;
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgODAgODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCI+CiAgICA8cGF0aCBkPSJNIDIwIDQwIEwgNjAgNDAiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlPSIjMDQ4OTlkIiAvPgogICAgPHBhdGggZD0iTSA1MCAzMCBMIDYwIDQwIDUwIDUwIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZT0iIzA0ODk5ZCIgZmlsbD0ibm9uZSIgLz4KICAgIDxwYXRoIGQ9Ik0gNDAgMzAgTCA1MCA0MCA0MCA1MCIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2U9IiMwNDg5OWQiIGZpbGw9Im5vbmUiIC8+CiAgICA8cGF0aCBkPSJNIDMwIDMwIEwgNDAgNDAgMzAgNTAiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlPSIjMDQ4OTlkIiBmaWxsPSJub25lIiAvPgogICAgPGNpcmNsZSBjeD0iNDAiIGN5PSI0MCIgcj0iMzUiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlPSIjMDQ4OTlkIiBmaWxsPSJub25lIiAvPgogIDwvc3ZnPg==");
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: 25px;
-  content: " ";
-  display: block;
-  height: 25px;
-  position: absolute;
-  right: 15px;
-  top: calc(
-    50% - 12px
-  ); /* 12px is ~50% of its height) to vertically center it */
-  width: 25px;
-}
-
-.standardContent .btn-alpha:hover,
-.standardContent .btn-alpha:focus {
-  color: #ffffff;
-  text-decoration: underline;
-}
-
 .callToActionButton a:hover:after {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgODAgODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCI+CiAgICA8Y2lyY2xlIGN4PSI0MCIgY3k9IjQwIiByPSIzNSIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2U9IiMwNDg5OWQiIGZpbGw9IiMwNDg5OWQiIC8+CiAgICA8cGF0aCBkPSJNIDIwIDQwIEwgNjAgNDAiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlPSIjZmZmZmZmIiAvPgogICAgPHBhdGggZD0iTSA1MCAzMCBMIDYwIDQwIDUwIDUwIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZT0iI2ZmZmZmZiIgZmlsbD0ibm9uZSIgLz4KICAgIDxwYXRoIGQ9Ik0gNDAgMzAgTCA1MCA0MCA0MCA1MCIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2U9IiNmZmZmZmYiIGZpbGw9Im5vbmUiIC8+CiAgICA8cGF0aCBkPSJNIDMwIDMwIEwgNDAgNDAgMzAgNTAiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlPSIjZmZmZmZmIiBmaWxsPSJub25lIiAvPgogIDwvc3ZnPg==");
 }
@@ -1835,18 +1744,88 @@ ol.list-UpperRoman {
   margin: 7px 0;
 }
 
-/* -------------------------- Arrow Links -------------------------- */
+/*** Red button in Tiny MCE HTML editor - labeled as 'Attention/Red Button' ***/
+.standardContent .btn-attention {
+  background-color: #aa0000;
+  border: 1px solid #aa0000;
+  border-radius: 0;
+  color: #ffffff !important;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  height: 100%;
+  line-height: 1.6rem;
+  margin: 7px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.standardContent .btn-attention:hover,
+.standardContent .btn-attention:focus {
+  background-color: #8e0000;
+  border-color: #333333;
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+/*** Dark button in Tiny MCE HTML editor with embedded svg image labeled as 'Chevron' ***/
+.standardContent .btn-alpha {
+  background-color: #333333;
+  border-radius: 0;
+  color: #ffffff !important;
+  display: inline-block;
+  font-size: 1.8rem;
+  height: 100%;
+  line-height: 2.4rem;
+  margin: 7px;
+  padding: 15px 45px 15px 15px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.standardContent .btn-alpha:after {
+  background-color: #333333 !important;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgODAgODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCI+CiAgICA8cGF0aCBkPSJNIDIwIDQwIEwgNjAgNDAiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlPSIjMDQ4OTlkIiAvPgogICAgPHBhdGggZD0iTSA1MCAzMCBMIDYwIDQwIDUwIDUwIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZT0iIzA0ODk5ZCIgZmlsbD0ibm9uZSIgLz4KICAgIDxwYXRoIGQ9Ik0gNDAgMzAgTCA1MCA0MCA0MCA1MCIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2U9IiMwNDg5OWQiIGZpbGw9Im5vbmUiIC8+CiAgICA8cGF0aCBkPSJNIDMwIDMwIEwgNDAgNDAgMzAgNTAiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlPSIjMDQ4OTlkIiBmaWxsPSJub25lIiAvPgogICAgPGNpcmNsZSBjeD0iNDAiIGN5PSI0MCIgcj0iMzUiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlPSIjMDQ4OTlkIiBmaWxsPSJub25lIiAvPgogIDwvc3ZnPg==");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  content: " ";
+  display: block;
+  height: 25px;
+  position: absolute;
+  right: 15px;
+  top: calc(
+    50% - 12px
+  ); /* 12px is ~50% of its height) to vertically center it */
+  width: 25px;
+}
+
+.standardContent .btn-alpha:hover,
+.standardContent .btn-alpha:focus {
+  background-color: #333333 !important;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/*** Box Link style button (white with blue border) in Tiny MCE HTML editor - labeled as 'Arrow' ***/
 ul.arrowLinks {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   margin: auto auto;
   padding: 0;
-  width: 100%; /* prevents ULs with less than three items from collapsing */
+  width: 100%; /* prevents ULs with fewer than three items from collapsing */
 }
+
 ul.arrowLinks li {
   flex: 1 1 100%;
   justify-content: center;
+  margin-top: 25px;
   margin-bottom: 25px;
   margin-right: 7px;
 }
@@ -1855,14 +1834,19 @@ ul.arrowLinks li::before {
   content: none;
 }
 
+#SidebarZone .arrowLinks li {
+  flex: 1 1 100%;
+  margin-bottom: 15px;
+}
+
 .arrowLinks li a {
   background-color: #ffffff;
-  border: 1px solid #088099;
+  border: 2px solid #088099;
   border-radius: 0;
-  color: #aa0000;
+  color: #aa0000 !important;
   display: block;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 500;
   height: 100%;
   line-height: 1.6rem;
@@ -1870,26 +1854,13 @@ ul.arrowLinks li::before {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-}
-
-#SidebarZone .arrowLinks li,
-#zonec .arrowLinks li {
-  flex: 1 1 100%;
-  margin-bottom: 15px;
+  transition: all 0.2s ease;
 }
 
 .arrowLinks li a:hover,
 .arrowLinks li a:focus {
   background: #088099;
-  border: 1px solid #088099;
-  color: #ffffff;
-}
-
-@media (min-width: 992px) {
-  /* md and lg */
-  ul.arrowLinks li {
-    flex: 1 1 calc(33.33% - 7px);
-  }
+  color: #ffffff !important;
 }
 
 @media screen and (min-width: 768px) and (max-width: 991.999px) {
@@ -1897,6 +1868,178 @@ ul.arrowLinks li::before {
   ul.arrowLinks li {
     flex: 1 1 calc(50% - 7px);
   }
+}
+
+@media (min-width: 992px) {
+  /* md and lg */
+  ul.arrowLinks li {
+    flex: 1 1 calc(33.33% - 7px);
+    margin-top: 0;
+  }
+}
+
+/*** Box Link style button (white with blue border) in Tiny MCE HTML editor - labeled as 'Arrow' ***/
+/* Altered for use in Focus Box (neutral button colors to work with varying Focus Box background colors)   */
+.focusBox ul.arrowLinks li {
+  flex: 1 1 100%;
+  margin-top: 0;
+}
+
+.focusBox ul.arrowLinks a:link,
+.focusBox ul.arrowLinks a:visited {
+  border: none;
+  background-color: #ffffff;
+  color: #333333 !important;
+}
+
+.focusBox ul.arrowLinks a:hover,
+.focusBox ul.arrowLinks a:active,
+.focusBox ul.arrowLinks a:focus {
+  text-decoration: underline;
+  xtransition: all 0.2s ease;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.999px) {
+  /* sm */
+  .focusBox ul.arrowLinks li {
+    flex: 1 1 calc(50% - 7px);
+  }
+}
+
+/* Allow the button to grow at small widths */
+@media (min-width: 768px) { 
+  .focusBox ul.arrowLinks li {
+    xflex: 0 1 100%;
+    xflex: 1 1 calc(33.33% - 7px);
+  }
+}
+
+@media (min-width: 992px) {
+  .focusBox ul.arrowLinks li { 
+    margin-top: 0;
+  }
+
+  .focusBox ul.arrowLinks li:not:first-child {
+    xflex: 1 1 calc(33.33% - 7px);  
+  }
+  
+  .focusBox ul.arrowLinks li {
+    flex: 1 1 calc(33.33% - 7px);
+  }
+}
+
+/*** Gray button - Add .btn and .btn-plain classes to the anchor tag. ***/
+.standardContent .btn-plain {
+  background-color: #e3e3da;
+  border-color: #cccccc;
+  color: #aa0000 !important;
+  text-decoration: none;
+}
+
+.standardContent .btn-plain:hover,
+.standardContent .btn-plain:focus {
+  background-color: #666666;
+  border-color: #333333;
+  color: #ffffff !important;
+}
+
+/* -------------------------- Custom Property Buttons -------------------------- */
+/* This technique utilizes undefined locally scoped properties and fall backs to reduce redundancy. */
+/* New 11/5/2021 - Troy */
+
+.btn {
+  color: var(--btn-clr, #aa0000) !important;
+  border: 2px solid var(--btn-clr, #088099);
+  display: inline-block;
+  padding: .5rem 1.5rem;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-decoration: none;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+
+.btn.btn-dk-txt {
+  color: var(--btn-clr, #333333) !important;
+  border: 2px solid var(--btn-clr, #333333) !important;
+}
+
+.btn + .btn {
+  margin-left: 2rem;
+}
+
+.btn-65-gray {
+  --btn-clr: var( --65-gray, #707070);
+}
+
+.btn-black {
+  --btn-clr: var( --black, #000000);
+}
+
+.btn-blue {
+  --btn-clr: var(--blue, #088099);
+}
+
+.btn-emerald {
+  --btn-clr:var(--emerald, #008765);
+}
+
+.btn-forest-green {
+  --btn-clr: var(--forest-green, #124a12);
+}
+
+.btn-gold {
+  --btn-clr: var(--gold, #cc9f26); 
+}
+
+.btn-green {
+  --btn-clr: var(--green, #55b31b);
+}
+
+.btn-navy-blue {
+  --btn-clr: var(--navy-blue, #003282);
+}
+
+.btn-red-orange {
+  --btn-clr: var(--red-orange, #ef4135);
+}
+
+.btn-su-black {
+  --btn-clr: var(--su-black, #333333);
+}
+
+.btn-su-red {
+  --btn-clr: var(--su-red, #aa0000);
+}
+
+.btn-taupe-brown {
+  --btn-clr: var(--taupe-brown, #807060);
+}
+
+.btn-white {
+  --btn-clr: var(--white, #ffffff);
+}
+
+.btn-yellow {
+  --btn-clr: var(--yellow, #fdb913);
+}
+
+.btn-yellow-tint {
+  --btn-clr: var(--yellow-tint, #f7f7f7);
+}
+
+.btn:hover, .btn:focus {
+  color: #ffffff !important;
+  background: var(--btn-clr, #088099);
+  transition: all 0.4s ease;
+  text-decoration: underline;
+}
+
+.btn.btn-dk-txt:hover, .btn.btn-dk-txt:focus {
+  color: var(--su-black, #333333) !important;
+  background: var(--btn-clr, #f7f7f7);
 }
 
 /* -------------------------- Tables -------------------------- */
@@ -2162,6 +2305,15 @@ img.img-responsive {
 
 .primaryContentWrapper .standardContent p.no-img-padding img {
   padding: 0;
+}
+
+.standardContent figure.remove-padding img {
+    padding: 0;
+}
+
+figcaption {
+  font-size: 1.1rem; /* fall back */
+  font-size: var(--cap);
 }
 
 /* Makes sidebar images full bleed */
@@ -2717,10 +2869,11 @@ footer #footerSocialMediaLinks .social a:focus {
   margin-bottom: 20px;
 }
 
-#footerCallToActionLinks a {
+#footerCallToActionLinks a:link,
+#footerCallToActionLinks a:visited {
   background: #333333;
   border: 2px solid #088099;
-  color: #ffffff;
+  color: #ffffff !important;
   display: block;
   font-size: 1.4rem;
   font-weight: 500;
@@ -4102,6 +4255,56 @@ a.colorButton:active {
   max-width: 100%;
 }
 
+/*** Law - Code - Main Zone id: 5253 ***/
+.codeMainZoneWrapper {
+  font-size: 1.2rem; /* fall back */
+  font-size: var(--p); /* Default so the text is not tiny */
+}
+
+.codeMainZoneWrapper a:link,
+.codeMainZoneWrapper a:visited {
+  color: #088099;
+  text-decoration: none;
+}
+
+.codeMainZoneWrapper a:hover {
+  text-decoration: underline;
+}
+
+.codeMainZoneWrapper a:active {
+  color: #aa0000;
+}
+
+.codeMainZone p {
+  font-size: 1.2rem; /* fall back */
+  font-size: var(--p);
+}
+
+/*** Law - Code - Sidebar Zone id: 5254 ***/
+codeSidebarZoneWrapper {
+  font-size: 1.2rem; /* fall back */
+  font-size: var(--p); /* Default so the text is not tiny */
+}
+
+.codeSidebarZone p {
+  font-size: 1.2rem; /* fall back */
+  font-size: var(--p); 
+}
+
+.codeSidebarZone a:link,
+.codeSidebarZone a:visited {
+  color: #088099;
+  text-decoration: none;
+}
+
+.codeSidebarZone a:hover {
+  text-decoration: underline;
+}
+
+.codeSidebarZone a:active {
+  color: #aa0000;
+}
+
 /* ==========================================================================================
    ===== Law - Contact Box ===== Content Type #5176 =========================================
    ==========================================================================================
@@ -4458,14 +4661,16 @@ h2.contactBoxSingleTitle {
 .contactBoxSingleInfo h3 {
   margin: 0;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.65rem; /* fall back */
+  font-size: var(--h3);
   color: unset !important;
 }
 
 .contactBoxSingleInfo p {
   margin: 0 0 1rem 0;
   padding-left: 0;
-  font-size: 1.2rem;
+  font-size: 1.2rem; /* fall back */
+  font-size: var(--p);
   line-height: 1.5;
   color: unset !important;
 }
@@ -4588,14 +4793,41 @@ h2.contactBoxSingleTitle {
   color: #aa0000 !important;
 }
 
-.contactBoxSingleColorSUBlack a,
-.contactBoxSingleColorBlue a,
-.contactBoxSingleColorNavyBlue a,
-.contactBoxSingleColorTaupeBrown a,
-.contactBoxSingleColorEmerald a,
-.contactBoxSingleColorForestGreen a,
-.contactBoxSingleColorSURed a {
+.contactBoxSingleColorSUBlack a:link,
+.contactBoxSingleColorSUBlack a:visited,
+.contactBoxSingleColorBlue a:link,
+.contactBoxSingleColorBlue a:visited,
+.contactBoxSingleColorNavyBlue a:link,
+.contactBoxSingleColorNavyBlue a:visited,
+.contactBoxSingleColorTaupeBrown a:link,
+.contactBoxSingleColorTaupeBrown a:visited,
+.contactBoxSingleColorEmerald a:link,
+.contactBoxSingleColorEmerald a:visited,
+.contactBoxSingleColorForestGreen a:link,
+.contactBoxSingleColorForestGreen a:visited,
+.contactBoxSingleColorSURed a:link,
+.contactBoxSingleColorSURed a:visited {
   color: #ffffff;
+}
+
+.contactBoxSingleColorSUBlack a:hover,
+.contactBoxSingleColorBlue a:hover,
+.contactBoxSingleColorNavyBlue a:hover,
+.contactBoxSingleColorTaupeBrown a:hover,
+.contactBoxSingleColorEmerald a:hover,
+.contactBoxSingleColorForestGreen a:hover,
+.contactBoxSingleColorSURed a:hover {
+  color: #ffffff;
+}
+
+.contactBoxSingleColorSUBlack a:active,
+.contactBoxSingleColorBlue a:active,
+.contactBoxSingleColorNavyBlue a:active,
+.contactBoxSingleColorTaupeBrown a:active,
+.contactBoxSingleColorEmerald a:active,
+.contactBoxSingleColorForestGreen a:active,
+.contactBoxSingleColorSURed a:active {
+  color: #f7f7f7;
 }
 
 .contactBoxSingleColorGold a,
@@ -4630,12 +4862,13 @@ h2.contactBoxSingleTitle {
 
 .dc-headline h2 {
   color: #aa0000; /* Red */
-  font-size: 2.65rem; /* fall back */
-  font-size: var(--h2);
+  xfont-size: 2.65rem; /* fall back */
+  xfont-size: var(--h2);
   margin-bottom: 2.5rem;
 }
 
 .dc-headline h3 {
+  color: #aa0000; /* Red */
   margin-bottom: 0.5rem;
 }
 
@@ -4644,7 +4877,18 @@ h2.contactBoxSingleTitle {
 .dualColumnWrapper h5,
 .dualColumnWrapper p {
   color: #333333;
+  
 }
+
+.dualColumn h3 {
+  margin-top: 3rem!important;
+  margin-bottom: 1rem!important;
+  text-transform: uppercase;
+  font-size: 1.65rem; /* fall back */
+  font-size: var(--h3);
+  font-weight: 500;
+}
+
 
 h3 .p-style-heading {
   font-size: 1.2rem;
@@ -4652,6 +4896,15 @@ h3 .p-style-heading {
   font-weight: 600 !important;
   margin-bottom: 1.5rem;
 }
+
+h3 .p-style-heading-white {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 600 !important;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
 
 article.dualColumn a:link {
   color: #088099; /* Light Blue */
@@ -5268,7 +5521,7 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
    ===== Law - Focus Box ===== Content Type #5178 ===========================================
    ==========================================================================================
    A rich text field with optional background colors
-   Last revised 4/12/2021 by Troy 
+   Last revised 10/29/2021 by Troy 
 */
 
 .focusBoxWrapper {
@@ -5329,13 +5582,13 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
   color: #f7f7f7;
 }
 .focusBoxWrapper .colorSUBlack .focusBoxContent a:hover {
-  color: #aa0000;
+  color: #ffffff;
 }
 .focusBoxWrapper .colorSUBlack .focusBoxContent a:active {
-  color: #088099 !important;
+  color: #f7f7f7 !important;
 }
 .focusBoxWrapper .colorSUBlack .focusBoxContent a:focus {
-  color: #aa0000;
+  color: #f7f7f7;
 }
 
 .focusBoxWrapper .colorBlue {
@@ -5359,18 +5612,21 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 }
 .focusBoxWrapper .colorBlue .focusBoxContent a:link {
   color: #ffffff;
+  text-decoration: none;
 }
 .focusBoxWrapper .colorBlue .focusBoxContent a:visited {
-  color: #f7f7f7;
+  color: #ffffff;
 }
 .focusBoxWrapper .colorBlue .focusBoxContent a:hover {
-  color: #aa0000;
+  color: #ffffff;
+  text-decoration: underline;
 }
 .focusBoxWrapper .colorBlue .focusBoxContent a:active {
-  color: #000000 !important;
+  color: #aa0000 !important;
 }
 .focusBoxWrapper .colorBlue .focusBoxContent a:focus {
-  color: #aa0000;
+  color: #f7f7f7;
+  text-decoration: underline;
 }
 
 .focusBoxWrapper .colorNavyBlue {
@@ -5429,16 +5685,17 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
   color: #ffffff;
 }
 .focusBoxWrapper .colorTaupeBrown .focusBoxContent a:visited {
-  color: #f7f7f7;
+  color: #ffffff;
 }
 .focusBoxWrapper .colorTaupeBrown .focusBoxContent a:hover {
-  color: #aa0000;
+  color: #ffffff;
 }
 .focusBoxWrapper .colorTaupeBrown .focusBoxContent a:active {
-  color: #088099 !important;
+  color: #f7f7f7; !important;
 }
 .focusBoxWrapper .colorTaupeBrown .focusBoxContent a:focus {
-  color: #aa0000;
+  color: #f7f7f7;
+  text-decoration: underline;
 }
 
 .focusBoxWrapper .colorEmerald {
@@ -5610,6 +5867,10 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 .focusBoxWrapper .colorSURed .focusBoxContent a:focus {
   color: #f7f7f7;
 }
+/* bullets */
+focusBox.colorSURed .focusBoxContent ul li:before {
+    color: #ffffff !important;
+}
 
 .focusBoxWrapper .colorRedOrange {
   /* Red Orange */
@@ -5704,11 +5965,7 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
   /* Yellow Tint */
   background-color: #f7f7f7;
 }
-.focusBoxWrapper .colorYellowTint .focusBoxContent h2,
 .focusBoxWrapper .colorYellowTint .focusBoxContent p,
-.focusBoxWrapper .colorYellowTint .focusBoxContent h3,
-.focusBoxWrapper .colorYellowTint .focusBoxContent h4,
-.focusBoxWrapper .colorYellowTint .focusBoxContent h5,
 .focusBoxWrapper .colorYellowTint .focusBoxContent ul,
 .focusBoxWrapper .colorYellowTint .focusBoxContent ul li:before,
 .focusBoxWrapper .colorYellowTint .focusBoxContent h1,
@@ -5717,6 +5974,13 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 .focusBoxWrapper .colorYellowTint .focusBoxContent cite,
 .focusBoxWrapper .colorYellowTint .focusBoxContent i.fa {
   color: #333333;
+}
+.focusBoxWrapper .colorYellowTint .focusBoxContent h2,
+.focusBoxWrapper .colorYellowTint .focusBoxContent h3,
+.focusBoxWrapper .colorYellowTint .focusBoxContent h4,
+.focusBoxWrapper .colorYellowTint .focusBoxContent h5 {
+  color: var(--su-red);
+  
 }
 .focusBoxWrapper .colorYellowTint .focusBoxContent a:link {
   color: var(--blue);
@@ -5736,7 +6000,7 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
   color: var(--su-red);
 }
 
-.focusBoxContent li::before {
+.focusBoxWrapper .colorYellowTint .focusBoxContent li::before {
     color: var(--blue) !important;
 }
 
@@ -5763,21 +6027,6 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 .focusBoxWrapper .focusBoxContent a.btn.btn-alpha:focus {
   color: #088099 !important;
   text-decoration-color: #088099 !important;
-}
-
-/* Standard white button */
-ul.arrowLinks a:link,
-ul.arrowLinks a:visited {
-  color: initial !important;
-  background-color: #ffffff;
-}
-
-ul.arrowLinks a:hover,
-ul.arrowLinks a:active,
-ul.arrowLinks a:focus {
-  color: initial !important;
-  text-decoration: underline;
-  background-color: #ffffff;
 }
 
 /* ==========================================================================================
@@ -5975,6 +6224,56 @@ input[type="file"]:focus {
 }
 
 @import url("https://us.formbank.us/client/public/css/bootstrap-datetimepicker.css"); /* added 10-11-18 by Jason */
+
+/* =============================================================================================
+   ===== Law - Horizontal Card ===== Content Type #5562 ========================================
+   =============================================================================================
+   Image on the left with headline, HTML editor, and button link.
+   Add Law - Code-Only content item to alter style with full bleed image. 
+   Suggested image aspect ratio: 7x5 (1000x563px)
+   Made by Troy and Pierce 10/29/2021
+*/
+
+@media screen and (max-width: 767px) {
+    .cardFooter {
+        margin: 0 auto;
+    }
+}
+
+/* Overriding standardContent styles for hCard */
+.horizontalCard h2 {
+    xfont-size: 1.8rem !important;
+    xmargin-top:0 !important;
+}
+
+.horizontalCard p {
+    font-size: 1.1rem!important;
+    overflow:hidden;
+}
+
+.horizontalCard .cardFooter a {
+    outline: 1px solid #088099;
+    color: #a90400;
+    text-decoration: none;
+    max-width: max-content;
+    transition: all 0.2s ease;
+}
+
+.horizontalCard .cardFooter a:hover {
+  background: #088099;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.horizontalCard .btn-sm, .horizontalCard .btn {
+    border-radius: 0;
+}
+
+.horizontalCard .cardFooter {
+    background-color:transparent;
+    border-top: 0px;
+    margin-bottom:5px;
+}
 
 /* ==========================================================================================
    ===== Law - Image Banner ===== Content Type #5196 ========================================
@@ -9577,7 +9876,3 @@ article.columns-4 a:active {
   display: block;
   height: 600px;
 }
-
-
-
-
