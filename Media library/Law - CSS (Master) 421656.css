@@ -1727,19 +1727,15 @@ ol.list-UpperRoman {
   white-space: normal; /* override default bootstrap behavior that caused buttons to extend beyond defined columns */
 }
 
-.callToActionButton a:hover:after {
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgODAgODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCI+CiAgICA8Y2lyY2xlIGN4PSI0MCIgY3k9IjQwIiByPSIzNSIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2U9IiMwNDg5OWQiIGZpbGw9IiMwNDg5OWQiIC8+CiAgICA8cGF0aCBkPSJNIDIwIDQwIEwgNjAgNDAiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlPSIjZmZmZmZmIiAvPgogICAgPHBhdGggZD0iTSA1MCAzMCBMIDYwIDQwIDUwIDUwIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZT0iI2ZmZmZmZiIgZmlsbD0ibm9uZSIgLz4KICAgIDxwYXRoIGQ9Ik0gNDAgMzAgTCA1MCA0MCA0MCA1MCIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2U9IiNmZmZmZmYiIGZpbGw9Im5vbmUiIC8+CiAgICA8cGF0aCBkPSJNIDMwIDMwIEwgNDAgNDAgMzAgNTAiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlPSIjZmZmZmZmIiBmaWxsPSJub25lIiAvPgogIDwvc3ZnPg==");
-}
-
-/* when it its own column, take whole width */
+/* when the button is in its own column, take the whole width */
 @media screen and (max-width: 767.999px) {
   #MainZone.col-xs-12 .standardContent .btn {
     display: block;
     margin: 7px 0;
   }
 }
-#SidebarZone .standardContent .btn,
-#zoneC .standardContent .btn {
+
+#SidebarZone .standardContent .btn {
   display: block;
   margin: 7px 0;
 }
@@ -1878,56 +1874,7 @@ ul.arrowLinks li::before {
   }
 }
 
-/*** Box Link style button (white with blue border) in Tiny MCE HTML editor - labeled as 'Arrow' ***/
-/* Altered for use in Focus Box (neutral button colors to work with varying Focus Box background colors)   */
-.focusBox ul.arrowLinks li {
-  flex: 1 1 100%;
-  margin-top: 0;
-}
-
-.focusBox ul.arrowLinks a:link,
-.focusBox ul.arrowLinks a:visited {
-  border: none;
-  background-color: #ffffff;
-  color: #333333 !important;
-}
-
-.focusBox ul.arrowLinks a:hover,
-.focusBox ul.arrowLinks a:active,
-.focusBox ul.arrowLinks a:focus {
-  text-decoration: underline;
-  xtransition: all 0.2s ease;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-}
-
-@media screen and (min-width: 768px) and (max-width: 991.999px) {
-  /* sm */
-  .focusBox ul.arrowLinks li {
-    flex: 1 1 calc(50% - 7px);
-  }
-}
-
-/* Allow the button to grow at small widths */
-@media (min-width: 768px) { 
-  .focusBox ul.arrowLinks li {
-    xflex: 0 1 100%;
-    xflex: 1 1 calc(33.33% - 7px);
-  }
-}
-
-@media (min-width: 992px) {
-  .focusBox ul.arrowLinks li { 
-    margin-top: 0;
-  }
-
-  .focusBox ul.arrowLinks li:not:first-child {
-    xflex: 1 1 calc(33.33% - 7px);  
-  }
-  
-  .focusBox ul.arrowLinks li {
-    flex: 1 1 calc(33.33% - 7px);
-  }
-}
+/*** See Law - Focus Box for 'Arrow' buttons altered for the Law - Focus Box content type ***/
 
 /*** Gray button - Add .btn and .btn-plain classes to the anchor tag. ***/
 .standardContent .btn-plain {
@@ -1945,8 +1892,14 @@ ul.arrowLinks li::before {
 }
 
 /* -------------------------- Custom Property Buttons -------------------------- */
-/* This technique utilizes undefined locally scoped properties and fall backs to reduce redundancy. */
-/* New 11/5/2021 - Troy */
+/* This technique utilizes undefined locally scoped properties and fall backs to reduce selector redundancy for each color.
+   On the anchor tag, add the btn class for the default button or add btn + one of the the following btn-color* classes.
+   New 11/5/2021 - Troy 
+*/
+
+.btn + .btn {
+  margin-left: 2rem;
+}
 
 .btn {
   color: var(--btn-clr, #aa0000) !important;
@@ -1961,15 +1914,13 @@ ul.arrowLinks li::before {
   text-transform: uppercase;
 }
 
+/* On the anchor tag, add the btn-dk-txt class for dark text. For example, White and Yellow Tint buttons need the contrast. */
 .btn.btn-dk-txt {
   color: var(--btn-clr, #333333) !important;
   border: 2px solid var(--btn-clr, #333333) !important;
 }
 
-.btn + .btn {
-  margin-left: 2rem;
-}
-
+/* Button Color (*btn-color) classes */
 .btn-65-gray {
   --btn-clr: var( --65-gray, #707070);
 }
@@ -3833,6 +3784,10 @@ a.colorButton:active {
   text-decoration: underline;
 }
 
+/* .callToActionButton a:hover:after {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgODAgODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCI+CiAgICA8Y2lyY2xlIGN4PSI0MCIgY3k9IjQwIiByPSIzNSIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2U9IiMwNDg5OWQiIGZpbGw9IiMwNDg5OWQiIC8+CiAgICA8cGF0aCBkPSJNIDIwIDQwIEwgNjAgNDAiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlPSIjZmZmZmZmIiAvPgogICAgPHBhdGggZD0iTSA1MCAzMCBMIDYwIDQwIDUwIDUwIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZT0iI2ZmZmZmZiIgZmlsbD0ibm9uZSIgLz4KICAgIDxwYXRoIGQ9Ik0gNDAgMzAgTCA1MCA0MCA0MCA1MCIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2U9IiNmZmZmZmYiIGZpbGw9Im5vbmUiIC8+CiAgICA8cGF0aCBkPSJNIDMwIDMwIEwgNDAgNDAgMzAgNTAiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlPSIjZmZmZmZmIiBmaWxsPSJub25lIiAvPgogIDwvc3ZnPg==");
+} */
+
 .callToActionButton a:hover:after {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgODAgODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCI+CiAgICA8Y2lyY2xlIGN4PSI0MCIgY3k9IjQwIiByPSIzNSIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2U9IiMwNDg5OWQiIGZpbGw9IiMwNDg5OWQiIC8+CiAgICA8cGF0aCBkPSJNIDIwIDQwIEwgNjAgNDAiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlPSIjZmZmZmZmIiAvPgogICAgPHBhdGggZD0iTSA1MCAzMCBMIDYwIDQwIDUwIDUwIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZT0iI2ZmZmZmZiIgZmlsbD0ibm9uZSIgLz4KICAgIDxwYXRoIGQ9Ik0gNDAgMzAgTCA1MCA0MCA0MCA1MCIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2U9IiNmZmZmZmYiIGZpbGw9Im5vbmUiIC8+CiAgICA8cGF0aCBkPSJNIDMwIDMwIEwgNDAgNDAgMzAgNTAiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlPSIjZmZmZmZmIiBmaWxsPSJub25lIiAvPgogIDwvc3ZnPg==");
 }
@@ -5691,7 +5646,7 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
   color: #ffffff;
 }
 .focusBoxWrapper .colorTaupeBrown .focusBoxContent a:active {
-  color: #f7f7f7; !important;
+  color: #f7f7f7 !important;
 }
 .focusBoxWrapper .colorTaupeBrown .focusBoxContent a:focus {
   color: #f7f7f7;
@@ -6027,6 +5982,56 @@ focusBox.colorSURed .focusBoxContent ul li:before {
 .focusBoxWrapper .focusBoxContent a.btn.btn-alpha:focus {
   color: #088099 !important;
   text-decoration-color: #088099 !important;
+}
+
+/*** Button in Tiny MCE HTML editor - labeled as 'Arrow' ***/
+/* Altered for use in Focus Box (neutral button colors to work with varying Focus Box background colors) */
+.focusBox ul.arrowLinks li {
+  flex: 1 1 100%;
+  margin-top: 0;
+}
+
+.focusBox ul.arrowLinks a:link,
+.focusBox ul.arrowLinks a:visited {
+  border: none;
+  background-color: #ffffff;
+  color: #333333 !important;
+}
+
+.focusBox ul.arrowLinks a:hover,
+.focusBox ul.arrowLinks a:active,
+.focusBox ul.arrowLinks a:focus {
+  text-decoration: underline;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.999px) {
+  /* sm */
+  .focusBox ul.arrowLinks li {
+    flex: 1 1 calc(50% - 7px);
+  }
+}
+
+/* Allow the button to grow at small widths */
+@media (min-width: 768px) { 
+  .focusBox ul.arrowLinks li {
+    xflex: 0 1 100%;
+    xflex: 1 1 calc(33.33% - 7px);
+  }
+}
+
+@media (min-width: 992px) {
+  .focusBox ul.arrowLinks li { 
+    margin-top: 0;
+  }
+
+  .focusBox ul.arrowLinks li:not:first-child {
+    xflex: 1 1 calc(33.33% - 7px);  
+  }
+  
+  .focusBox ul.arrowLinks li {
+    flex: 1 1 calc(33.33% - 7px);
+  }
 }
 
 /* ==========================================================================================
