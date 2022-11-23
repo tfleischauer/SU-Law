@@ -3,7 +3,7 @@
    Media Library ID 3261521
 ************************************************************ */
 
-@-webkit-viewport {
+/* @-webkit-viewport {
     width: device-width;
 }
 
@@ -21,51 +21,51 @@
 
 @viewport {
     width: device-width;
-}
+} */
 
 
 /* Font and icon declarations */
 
-@font-face {
+/* @font-face {
     font-family: "seattle-u";
     src: url("/media/fonts/seattle-u.eot") format("embedded-opentype");
     src: url("/media/fonts/seattle-u.eot") format("embedded-opentype"), url("/media/fonts/seattle-u.woff") format("woff"), url("/media/fonts/seattle-u.ttf") format("truetype"), url("/media/fonts/seattle-u.svg") format("svg");
     font-weight: normal;
     font-style: normal;
-}
+} */
 
-*,
+/* *,
 *::before,
 *::after {
     box-sizing: border-box;
-    xmargin-top: 0;
-    /* prevents collapsing margins */
-    margin: 0;
-    /* test */
-}
+    xmargin-top: 0; */
+/* prevents collapsing margins */
+/* margin: 0; */
+/* test */
+/* } */
 
 
 /* Remove default margin */
 
-body,
+/* body,
 h1,
 h2,
 h3,
 h4,
 p {
     margin: 0;
-}
+} */
 
 body {
-    background-color: #ffffff;
+    /* background-color: #ffffff;
     color: #333333;
     font-family: "Montserrat", sans-serif;
-    font-size: 62.5%;
+    font-size: 62.5%; */
     /* 10/16 =.625 To maximize accessibility, it is generally best to use values that are relative to the user's default font size.*/
-    xfont-size: 10px;
+    /* xfont-size: 10px;
     font-weight: 400;
     line-height: 1.45;
-    margin: 0;
+    margin: 0; */
     /* for the fixed header */
     padding-top: 152px;
     min-width: auto;
@@ -80,23 +80,22 @@ body {
     }
 }
 
-#pageContentWrapper {
+/* #pageContentWrapper {
     padding-bottom: 1px;
     padding-top: 1px;
-}
+} */
 
-@media screen and (min-width: 1200px) {
-
-    /* lg */
-    #pageContentWrapper[class=""] {
-        /* Default state if .container or .container-fluid are not set in the site configuration */
-        width: 1170px;
+/* @media screen and (min-width: 1200px) { */
+/* lg */
+/* #pageContentWrapper[class=""] { */
+/* Default state if .container or .container-fluid are not set in the site configuration */
+/* width: 1170px;
         padding-right: 15px;
         padding-left: 15px;
         margin-right: auto;
         margin-left: auto;
     }
-}
+} */
 
 
 /* Cookie Banner */
