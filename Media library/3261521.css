@@ -148,46 +148,7 @@ body {
 }
 
 
-/*****COVID19********/
 
-#COVIDbanner .infographicItem {
-    padding: 0 !important;
-    /* background-color: #003282; */
-    background-color: #088099;
-    /* background-color: #000000; */
-}
-
-@media screen and (min-width: 768px) {
-    #COVIDbanner .infographicItem {
-        padding: 0 !important;
-    }
-}
-
-#COVIDbanner .infographicItemHeader a {
-    color: #fff;
-    /* color: #FDB913; */
-    font-size: 1.5rem;
-    text-decoration: underline;
-}
-
-#COVIDbanner .infographicItemHeader a:focus,
-#COVIDbanner .infographicItemHeader a:hover {
-    /* color:#fff; */
-    color: #000000;
-    /* color: #FDB913; */
-}
-
-#COVIDbanner .infographicItemText.standardContent p a {
-    color: #fff;
-    /* color: #FDB913; */
-}
-
-#COVIDbanner .infographicItemText.standardContent p a:hover {
-    /* color:#fff; */
-    color: #000000;
-    /* color: #FDB913; */
-    /* text-decoration:underline; */
-}
 
 
 /* ==================================================================================================== */
@@ -228,65 +189,34 @@ body {
 
 /* Last edited by Vic Aug 21 - in development */
 
-#breadcrumbsWrapper {
+/* #breadcrumbsWrapper {
     clear: both;
     min-height: 60px;
     position: relative;
-}
+} */
 
-#breadcrumbsWrapper .triangle {
+/* #breadcrumbsWrapper .triangle {
     border-style: solid;
-    border-width: 100px 50px 0 0px;
+    border-width: 100px 50px 0 0px; */
     /* was 125 60 0 0*/
-    border-color: #fdb913 transparent transparent transparent;
+    /* border-color: #fdb913 transparent transparent transparent;
     height: 0;
     xposition: absolute;
     top: -20px;
     width: 0;
     z-index: 1;
-}
+} */
 
-@media screen and (min-width: 1200px) and (max-width: 1307px) {
-    #breadcrumbs {
-        xmargin-left: 60px;
-        /* keep to the right of the tiange as screen shrinks */
-        xwidth: calc(100% - 90px);
-        /* prevent nav#breadcrumbs from falling off right side, add 30px margin to right (90 -60) */
-    }
-}
 
-@media screen and (min-width: 820px) and (max-width: 1107px) {
-    #breadcrumbs {
-        xmargin-left: 60px;
-        /* keep to the right of the tiange as screen shrinks */
-        xwidth: calc(100% - 90px);
-        /* prevent nav#breadcrumbs from falling off right side, add 30px margin to right (90 -60) */
-    }
-}
 
-@media screen and (max-width: 820px) {
-    /* xs plus a bit when the trianlge overlaps*/
-    #breadcrumbs {
-        xmargin-left: 30px;
-        /* keep to the right of the tiange as screen shrinks */
-        width: calc(100% - 45px);
-        /* prevent nav#breadcrumbs from falling off right side, add 15px margin to right (45 - 30) */
-    }
-    #breadcrumbsWrapper .triangle {
-        xborder-width: 65px 30px 0 0px;
-        xtop: -15px;
-    }
-    #breadcrumbsWrapper .standardContent {
-        max-width: unset;
-    }
-}
 
-#breadcrumbs {
+
+/* #breadcrumbs {
     clear: both;
     padding: 0;
-}
+} */
 
-#breadcrumbs ol {
+/* #breadcrumbs ol {
     background-color: inherit;
     border-radius: 0;
     clear: both;
@@ -295,51 +225,51 @@ body {
     font-size: 1rem;
     line-height: 1.4;
     list-style: none;
-    margin-bottom: 0;
+    margin-bottom: 0; */
     /* overrides a bootstrap default 20px*/
-    padding: 15px 0 15px 0;
+   /* padding: 15px 0 15px 0;
     vertical-align: middle;
-}
+} */
 
-#breadcrumbs ol li {
+/* #breadcrumbs ol li {
     display: inline-block;
     color: #666666;
     margin-bottom: 0;
-}
+} */
 
-#breadcrumbs ol li a {
+/* #breadcrumbs ol li a {
     color: #666666;
     text-decoration: none;
-}
+} */
 
-#breadcrumbs ol li a:hover,
+/* #breadcrumbs ol li a:hover,
 #breadcrumbs ol li a:focus {
     color: #aa0000;
     text-decoration: none;
-}
+} */
 
-#breadcrumbs li:last-child a {
+/* #breadcrumbs li:last-child a {
     color: #333333;
     font-weight: 700;
-}
+} */
 
-#breadcrumbsWrapper .breadcrumb li+li:before,
+/* #breadcrumbsWrapper .breadcrumb li+li:before,
 #breadcrumbsWrapper .breadcrumb .active:before {
     color: #088099;
     content: " \003E\00a0";
     padding: 0 7px;
-}
+} */
 
-#breadcrumbsWrapper .breadcrumb>.active,
+/* #breadcrumbsWrapper .breadcrumb>.active, */
 
 /* overrides bootstrap default */
 
-#breadcrumbsWrapper .breadcrumb .active
+/* #breadcrumbsWrapper .breadcrumb .active
 /* affects only aspx pages connecting to legacy.master */
 
-{
+/* {
     color: #666666;
-}
+} */
 
 
 /* =============================================================================================================== */
@@ -10984,6 +10914,49 @@ div.row.Row1 {
     margin-bottom: 0px;
 }
 
+/*** GLOBAL BANNER ALERT ***/
+
+/*****COVID19********/
+
+#COVIDbanner .infographicItem {
+    padding: 0 !important;
+    /* background-color: #003282; */
+    background-color: #088099;
+    /* background-color: #000000; */
+}
+
+@media screen and (min-width: 768px) {
+    #COVIDbanner .infographicItem {
+        padding: 0 !important;
+    }
+}
+
+#COVIDbanner .infographicItemHeader a {
+    color: #fff;
+    /* color: #FDB913; */
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+#COVIDbanner .infographicItemHeader a:focus,
+#COVIDbanner .infographicItemHeader a:hover {
+    /* color:#fff; */
+    color: #000000;
+    /* color: #FDB913; */
+}
+
+#COVIDbanner .infographicItemText.standardContent p a {
+    color: #fff;
+    /* color: #FDB913; */
+}
+
+#COVIDbanner .infographicItemText.standardContent p a:hover {
+    /* color:#fff; */
+    color: #000000;
+    /* color: #FDB913; */
+    /* text-decoration:underline; */
+}
+
 
 /* Law Commencement Banner Styles */
 
@@ -11125,6 +11098,8 @@ div.row.Row1 {
    SU-Law.css
    Media Library ID 3261521
 ************************************************************ */
+
+
 
 
 
