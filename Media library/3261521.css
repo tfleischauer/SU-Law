@@ -378,7 +378,7 @@ _____________________  _____________________________  __________________________
     padding: 0;
 } */
 
-*/
+
 /* ========================================================================================== 
    ===== Global #SidebarZone styles ============================================================
    ========================================================================================== 
@@ -548,13 +548,13 @@ _____________________  _____________________________  __________________________
 
 /* ------------------- The arrow next to submenu items --------------------- */
 
-.blue-arrow {
+/* .blue-arrow {
     color: #1ab9d6;
     font-size: 1.2rem;
     font-weight: bold;
     position: relative;
     left: 6px;
-}
+} */
 
 
 /* ------------------- Navigation menu items --------------------- */
@@ -565,11 +565,11 @@ _____________________  _____________________________  __________________________
 
 /* affects all menu items in desktop */
 
-#siteNavigation #menu li {
+/* #siteNavigation #menu li {
     display: block;
-    position: relative;
-    /* border-bottom: 1px solid #B7B7B7; */
-}
+    position: relative; */
+/* border-bottom: 1px solid #B7B7B7; */
+/* } */
 
 
 /* focus affects on mobile sidebar menu items */
@@ -587,7 +587,7 @@ _____________________  _____________________________  __________________________
 
 /* padding: 10px 7px 10px 0; */
 
-#siteNavigation #menu li a {
+/* #siteNavigation #menu li a {
     color: #595959;
     display: inline-block;
     font-size: 1.6rem;
@@ -596,15 +596,15 @@ _____________________  _____________________________  __________________________
     position: relative;
     text-decoration: none;
     width: calc(100% - 30px);
-}
+} */
 
-#siteNavigation #menu li em {
+/* #siteNavigation #menu li em {
     transform: rotate(90deg);
-}
+} */
 
-#siteNavigation #menu li em.collapsed {
+/* #siteNavigation #menu li em.collapsed {
     transform: rotate(0deg);
-}
+} */
 
 
 /* All links in the sitenav menu */
@@ -616,12 +616,12 @@ _____________________  _____________________________  __________________________
   }
 } */
 
-#siteNavigation #menu li a:hover,
+/* #siteNavigation #menu li a:hover,
 #siteNavigation #menu li a:focus {
     color: #088099;
-}
+} */
 
-#siteNavigation #menu li a:active {
+/* #siteNavigation #menu li a:active {
     color: #aa0000;
 }
 
@@ -639,36 +639,36 @@ _____________________  _____________________________  __________________________
     font-weight: 500;
     line-height: 1.6em;
     padding: 10px 7px 10px 0
-}
+} */
 
-#siteNavigation #menu li span.currentsection a {
-    /* neccessary because on fulltext and form thank you pages currentsection has a link */
-    border-bottom: none;
+/* #siteNavigation #menu li span.currentsection a { */
+/* neccessary because on fulltext and form thank you pages currentsection has a link */
+/* border-bottom: none;
     color: #aa0000;
-    padding: 0;
-    /* inherited from parent element */
-}
+    padding: 0; */
+/* inherited from parent element */
+/* } */
 
-#siteNavigation #menu li span.currentsection a:focus,
+/* #siteNavigation #menu li span.currentsection a:focus,
 #siteNavigation #menu li span.currentsection a:hover {
     color: #333333;
-}
+} */
 
-#siteNavigation #menu .multilevel-linkul-0 {
+/* #siteNavigation #menu .multilevel-linkul-0 {
     padding-left: 20px;
 }
 
 #siteNavigation #menu .multilevel-linkul-0 li {
     border-bottom: none;
-}
+} */
 
-#siteNavigation #menu .multilevel-linkul-0 li a,
-#siteNavigation #menu .multilevel-linkul-0 span.currentsection {
-    /* first submenu*/
-    width: calc(100% - 50px);
-}
+/* #siteNavigation #menu .multilevel-linkul-0 li a,
+#siteNavigation #menu .multilevel-linkul-0 span.currentsection { */
+/* first submenu*/
+/* width: calc(100% - 50px);
+} */
 
-#siteNavigation #menu .multilevel-linkul-0 li .glyphicon {
+/* #siteNavigation #menu .multilevel-linkul-0 li .glyphicon {
     padding: 10px 10px;
 }
 
@@ -678,77 +678,75 @@ _____________________  _____________________________  __________________________
 
 #siteNavigation #menu .multilevel-linkul-1 li {
     border-bottom: none;
-}
+} */
 
-#siteNavigation #menu .multilevel-linkul-1 li a,
-#siteNavigation #menu .multilevel-linkul-1 span.currentsection {
-    /* second submenu*/
-    width: calc(100% - 70px);
-}
+/* #siteNavigation #menu .multilevel-linkul-1 li a,
+#siteNavigation #menu .multilevel-linkul-1 span.currentsection { */
+/* second submenu*/
+/* width: calc(100% - 70px);
+} */
 
-#siteNavigation #menu .multilevel-linkul-2 {
+/* #siteNavigation #menu .multilevel-linkul-2 {
     padding-left: 20px;
 }
 
 #siteNavigation #menu .multilevel-linkul-3 li {
     border-bottom: none;
-}
+} */
 
-#siteNavigation #menu .multilevel-linkul-2 li a,
-#siteNavigation #menu .multilevel-linkul-2 span.currentsection {
-    /* third submenu*/
-    width: calc(100% - 90px);
-}
+/* #siteNavigation #menu .multilevel-linkul-2 li a,
+#siteNavigation #menu .multilevel-linkul-2 span.currentsection { */
+/* third submenu*/
+/* width: calc(100% - 90px);
+} */
 
-#siteNavigation #menu .multilevel-linkul-3 {
+/* #siteNavigation #menu .multilevel-linkul-3 {
     padding-left: 20px;
-}
+} */
 
-#siteNavigation #menu .multilevel-linkul-3 li a,
-#siteNavigation #menu .multilevel-linkul-3 span.currentsection {
-    /* fourth submenu*/
-    width: calc(100% - 110px);
-}
+/* #siteNavigation #menu .multilevel-linkul-3 li a,
+#siteNavigation #menu .multilevel-linkul-3 span.currentsection { */
+/* fourth submenu*/
+/* width: calc(100% - 110px);
+} */
 
-#siteNavigation #menu .multilevel-linkul-4 {
+/* #siteNavigation #menu .multilevel-linkul-4 {
     padding-left: 20px;
-}
+} */
 
-#siteNavigation #menu .multilevel-linkul-4 li {
+/* #siteNavigation #menu .multilevel-linkul-4 li {
     border-bottom: none;
-}
+} */
 
-#siteNavigation #menu li a .siteNavigationArrow {
-    /*chevrons next to submenu triggers*/
-    font-size: 1.6rem;
+/* #siteNavigation #menu li a .siteNavigationArrow { */
+/*chevrons next to submenu triggers*/
+/* font-size: 1.6rem;
     float: right;
     transition: -webkit-transform .4s ease;
     transition: transform .4s ease;
-}
+} */
 
-#siteNavigation #menu li a.collapsed .siteNavigationArrow {
+/* #siteNavigation #menu li a.collapsed .siteNavigationArrow {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
     transition: transform .4s ease;
-}
+} */
 
-.fafa-chevron-down.visible-inline.blue-arrow {
+/* .fafa-chevron-down.visible-inline.blue-arrow {
     transform: rotate(180deg);
     transition: transform .4s ease;
     ;
-}
+} */
 
-@media screen and (max-width: 991.98px) {
-
-    /* #siteNavigation #menu li a {
+/* @media screen and (max-width: 991.98px) { */
+/* #siteNavigation #menu li a {
     padding:10px 35px 10px 15px;
   } */
-    #siteNavigation #menu li span.currentsection {
+/* #siteNavigation #menu li span.currentsection {
         padding: 10px 15px;
-    }
-
-    /* first submenu*/
-    /* #siteNavigation #menu .multilevel-linkul-0 li a,
+    } */
+/* first submenu*/
+/* #siteNavigation #menu .multilevel-linkul-0 li a,
   #siteNavigation #menu .multilevel-linkul-0 span.currentsection{
     padding: 10px 35px 10px 25px;
     color: #797979;
@@ -759,32 +757,28 @@ _____________________  _____________________________  __________________________
     position: relative;
     text-decoration: none;
   } */
-    /* second submenu*/
-    #siteNavigation #menu .multilevel-linkul-1 li a,
+/* second submenu*/
+/* #siteNavigation #menu .multilevel-linkul-1 li a,
     #siteNavigation #menu .multilevel-linkul-1 span.currentsection {
         padding: 10px 0 10px 35px;
-    }
-
-    /* third submenu*/
-    #siteNavigation #menu .multilevel-linkul-2 li a,
+    } */
+/* third submenu*/
+/*#siteNavigation #menu .multilevel-linkul-2 li a,
     #siteNavigation #menu .multilevel-linkul-2 span.currentsection {
         padding: 10px 0 10px 45px;
-    }
-
-    /* fourth submenu*/
-    #siteNavigation #menu .multilevel-linkul-3 li a {
+    } */
+/* fourth submenu*/
+/* #siteNavigation #menu .multilevel-linkul-3 li a {
         padding: 10px 0 10px 55px;
-    }
-
-    /* fifth submenu*/
-    #siteNavigation #menu .multilevel-linkul-4 li a {
+    } */
+/* fifth submenu*/
+/* #siteNavigation #menu .multilevel-linkul-4 li a {
         padding: 10px 0 10px 65px;
-    }
-
-    #siteNavigation #menu .glyphicon {
+    } */
+/* #siteNavigation #menu .glyphicon {
         padding: 10px;
-    }
-}
+    } */
+/* } */
 
 
 /* @media screen and (max-width: 767.999px){
@@ -800,11 +794,10 @@ _____________________  _____________________________  __________________________
 
 /*horizontal site nav */
 
-@media (min-width: 991.999px) {
+/* @media (min-width: 991.999px) {
     .horizontalSiteNav {
         background: #333;
     }
-
     .horizontalSiteNav #siteNavigation {
         float: none;
         margin: 0 auto 60px;
@@ -814,35 +807,28 @@ _____________________  _____________________________  __________________________
         max-width: 1170px;
         text-align: center;
     }
-
     .horizontalSiteNav #siteNavigation #menu li {
         float: left;
     }
-
     .horizontalSiteNav #siteNavigation #menu {
         float: left;
         margin: 0;
     }
-
     .horizontalSiteNav #siteNavigationTitleWrapper {
         float: left;
     }
-
     .horizontalSiteNav #siteNavigation #menu li a {
         border: none;
         color: #fff;
         padding: 15px 17px;
     }
-
     .horizontalSiteNav #siteNavigation #menu li a:hover {
         color: #aa0000;
     }
-
     .horizontalSiteNav #siteNavigation #menu li span.currentsection {
         border-bottom: none;
         padding: 15px 17px;
     }
-
     .horizontalSiteNav #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle a,
     .horizontalSiteNav #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle a:visited {
         border-bottom: none;
@@ -853,12 +839,11 @@ _____________________  _____________________________  __________________________
         line-height: 1.2em;
         position: relative;
     }
-
     .horizontalSiteNav #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle a:hover {
         color: #aa0000;
         text-decoration: none;
     }
-}
+} */
 
 
 /* ============================================== Page Title ==============================================*/
