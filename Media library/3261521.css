@@ -848,7 +848,7 @@ _____________________  _____________________________  __________________________
 
 /* ============================================== Page Title ==============================================*/
 
-#pageTitle {
+/* #pageTitle {
     clear: both;
     color: #aa0000;
     xfont-family: "Roboto Slab", serif;
@@ -860,115 +860,104 @@ _____________________  _____________________________  __________________________
     overflow-wrap: break-word;
     padding: 30px 15px 30px 0;
     word-wrap: break-word;
-}
+} */
 
-@media screen and (min-width: 992px) {
-    /* #pageContentWrapper {
+/* @media screen and (min-width: 992px) { */
+/* #pageContentWrapper {
     padding-top: 100px;
   } */
-}
+/* } */
 
-.container-fluid #pageTitle {
+/* .container-fluid #pageTitle {
     padding: 30px 15px 30px 30px;
-}
+} */
 
-@media screen and (max-width:767.999px) {
-
+/* @media screen and (max-width:767.999px) {
     #pageContentWrapper.container #pageTitle,
     #pageContentWrapper.container-fluid #pageTitle {
         font-size: 2.4rem;
         padding: 30px 0;
     }
-}
+} */
 
-@media screen and (min-width: 992px) {
-
-    /* md + lg*/
-    #pageTitle {
+/* @media screen and (min-width: 992px) { */
+/* md + lg*/
+/* #pageTitle {
         margin: 0;
     }
-}
+} */
 
-#pageTitle:empty {
+/* #pageTitle:empty {
     display: none;
-}
+} */
 
 
 /* ============================================== Content Items ==============================================*/
 
-.contentItem {
+/* .contentItem {
     clear: both;
-}
+} */
 
-@media screen and (max-width: 1199.999px) {
-
-    /* xs + sm + md */
-    #MainZone .contentItem:first-of-type,
+/* @media screen and (max-width: 1199.999px) { */
+/* xs + sm + md */
+/* #MainZone .contentItem:first-of-type,
     #SidebarZone .contentItem:first-of-type {
         margin: 0 0 15px 0;
     }
-}
+} */
 
-@media screen and (max-width: 1199.999px) {
-
-    /* xs + sm + md */
-    #MainZone .noGap+.noGap,
+/* @media screen and (max-width: 1199.999px) { */
+/* xs + sm + md */
+/* #MainZone .noGap+.noGap,
     #SidebarZone .noGap+.noGap,
     #zoneC .noGap+.noGap {
         margin: -15px 0 15px 0;
     }
-}
+} */
 
-@media screen and (max-width: 767.999px) {
-
-    /* xs */
-    #MainZone.col-xs-12 .hspace {
+/* @media screen and (max-width: 767.999px) { */
+/* xs */
+/* #MainZone.col-xs-12 .hspace {
         xpadding: 0 15px;
     }
-}
+} */
 
-@media screen and (max-width: 1199.999px) {
-
-    /* xs + sm + md */
-    #MainZone.col-md-12 .hspace,
+/* @media screen and (max-width: 1199.999px) { */
+/* xs + sm + md */
+/* #MainZone.col-md-12 .hspace,
     #MainZone.col-md-9 .hspace {
         xpadding: 0 15px;
     }
-
     #MainZone.col-sm-8 .hspace {
         xpadding: 0 0 0 15px;
     }
-
     #SidebarZone .hspace {
         padding: 0 15px 0 0;
     }
-
     #zoneC .hspace {
         xpadding: 0 0 0 15px;
     }
-}
+} */
 
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) { */
+/* lg */
+/* #SidebarZone .hspace {
+        padding: 0 0 0 0; */
+/* paddinf is already on #SidebarZone */
+/* }
+} */
 
-    /* lg */
-    #SidebarZone .hspace {
-        padding: 0 0 0 0;
-        /* paddinf is already on #SidebarZone */
-    }
-}
-
-@media screen and (min-width: 992px) {
-
-    /* md + lg*/
-    #pageContentWrapper.container-fluid #MainZone.col-md-12 .hspace,
+/* @media screen and (min-width: 992px) { */
+/* md + lg*/
+/* #pageContentWrapper.container-fluid #MainZone.col-md-12 .hspace,
     #pageContentWrapper.container-fluid #MainZone.col-md-9 .hspace {
         padding: 0 30px;
-    }
-}
+    } */
+/* } */
 
-#pageContentWrapper.container-fluid #zoneC .hspace {
+/* #pageContentWrapper.container-fluid #zoneC .hspace {
     padding: 0 0 0 30px;
-}
+} */
 
 
 /* ======================================= Standard Content Elements ==============================================*/
@@ -979,28 +968,27 @@ _____________________  _____________________________  __________________________
 
 /* primaryContent, Secondary Content, Supplemental Content, Jumbotron, knowledge base, dual column, feature content, news, form */
 
-.standardContent {
-    xmax-width: 1170px;
-    /* eliminates crazy-long text columns */
-    max-width: 1400px;
-    /* Largest breakpoint for Bootstrap 5 */
-    margin: 0 auto;
-    /* and centers them, if necessary */
-}
+/* .standardContent {
+    xmax-width: 1170px; */
+/* eliminates crazy-long text columns */
+/* max-width: 1400px; */
+/* Largest breakpoint for Bootstrap 5 */
+/* margin: 0 auto; */
+/* and centers them, if necessary */
+/* } */
 
-@media screen and (max-width:767.999px) {
+/* @media screen and (max-width:767.999px) {
     #MainZone.col-xs-12 .standardContent {
         xpadding: 0 15px;
     }
-}
+} */
 
-@media screen and (min-width: 768px) and (max-width: 991.98px) {
-
-    /* sm */
-    #MainZone.col-sm-12 .standardContent {
+/* @media screen and (min-width: 768px) and (max-width: 991.98px) { */
+/* sm */
+/* #MainZone.col-sm-12 .standardContent {
         xpadding: 0 15px;
     }
-}
+} */
 
 
 /* -------------------------- Headings -------------------------- */
