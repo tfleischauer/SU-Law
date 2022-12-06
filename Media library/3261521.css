@@ -11033,109 +11033,90 @@ div.row.Row1 {
     text-decoration: underline;
 }
 
-/* Law - Global Banner Alert - Subtle Styles */
 
-#law-gba-subtle .infographicItem {
-  background-color: #003282;
+/* Law - Global Banner Alert */
+
+#law-global-banner-alert .law-gba-subtle {
+  background-color: #088099;
 }
 
-#law-gba-subtle .infographicItemHeader.standardContent h2 {
-  color: #fff;
-  clear: both;
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.5rem;
-  font-weight: 400;
-  margin: 2rem 0 1rem 0;
+#law-global-banner-alert .law-gba-informational {
+  background-color: #124a12;
 }
 
-@media screen and (max-width: 991.98px) {
-  #law-gba-subtle .infographicItemHeader.standardContent h2 {
-    font-size: 2.25rem;
-  }
+#law-global-banner-alert .law-gba-advisory {
+  background-color: #cc9f26;
 }
 
-#law-gba-subtle .infographicItemText.standardContent p {
-  color: #fff;
-  text-decoration: none;
-}
-
-#law-gba-subtle .infographicItemText.standardContent a:link {
-  color: #fff;
-  font-size: 1.8rem;
-  font-weight: 500;
-  text-decoration: underline;
-}
-
-#law-gba-subtle .infographicItemText.standardContent a:visited {
-  color: #f7f7f7;
-  text-decoration: underline;
-}
-
-#law-gba-subtle .infographicItemText.standardContent a:hover {
-  color: #fdb913;
-  text-decoration: underline;
-}
-
-#law-gba-subtle .infographicItemText.standardContent a:focus {
-  color: #fdb913;
-  text-decoration: underline;
-}
-
-#law-gba-subtle .infographicItemText.standardContent a:active {
-  color: #f7f7f7;
-  text-decoration: underline;
-}
-
-/* Law - Global Banner Alert - Critical Styles */
-
-#law-gba-critical .infographicItem {
+#law-global-banner-alert .law-gba-critical {
   background-color: #aa0000;
 }
 
-#law-gba-critical .infographicItemHeader.standardContent h2 {
+#law-global-banner-alert .infographicItemHeader.standardContent h2 {
   color: #fff;
   clear: both;
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.5rem;
+  xfont-family: "Montserrat", sans-serif;
+  font-size: 2.25rem;
   font-weight: 400;
   margin: 2rem 0 1rem 0;
 }
 
-@media screen and (max-width: 991.98px) {
-  #law-gba-critical .infographicItemHeader.standardContent h2 {
-    font-size: 2.25rem;
+@media (min-width: 992px) {
+  #law-global-banner-alert .infographicItemHeader.standardContent h2 {
+    font-size: 2.5rem;
   }
 }
 
-#law-gba-critical .infographicItemText.standardContent p {
+#law-global-banner-alert .infographicItemText.standardContent p {
   color: #fff;
   text-decoration: none;
 }
 
-#law-gba-critical .infographicItemText.standardContent a:link {
+#law-global-banner-alert .infographicItemText.standardContent a:link {
   color: #fff;
   font-size: 1.8rem;
   font-weight: 500;
   text-decoration: underline;
 }
 
-#law-gba-critical .infographicItemText.standardContent a:visited {
+#law-global-banner-alert .infographicItemText.standardContent a:visited {
   color: #f7f7f7;
   text-decoration: underline;
 }
 
-#law-gba-critical .infographicItemText.standardContent a:hover {
+#law-global-banner-alert .infographicItemText.standardContent a:hover {
   color: #fdb913;
   text-decoration: underline;
 }
 
-#law-gba-critical .infographicItemText.standardContent a:focus {
+#law-global-banner-alert .infographicItemText.standardContent a:focus {
   color: #fdb913;
   text-decoration: underline;
 }
 
-#law-gba-critical .infographicItemText.standardContent a:active {
+#law-global-banner-alert .infographicItemText.standardContent a:active {
   color: #f7f7f7;
+  text-decoration: underline;
+}
+
+
+/* Advisory (gold) */
+#law-global-banner-alert .law-gba-dark-link.standardContent a:link {
+  color: #003282;
+}
+
+#law-global-banner-alert .law-gba-dark-link.standardContent a:visited {
+  color: #003282;
+  text-decoration: none;
+}
+
+#law-global-banner-alert .law-gba-dark-link.standardContent a:hover {
+  color: #003282;
+}
+
+#law-global-banner-alert .law-gba-dark-link.standardContent a:focus,
+#law-global-banner-alert .law-gba-dark-link.standardContent a:active {
+  color: #aa0000;
   text-decoration: underline;
 }
 
@@ -11144,6 +11125,16 @@ div.row.Row1 {
    SU-Law.css
    Media Library ID 3261521
 ************************************************************ */
+
+
+
+
+
+
+
+
+
+
 
 
 
