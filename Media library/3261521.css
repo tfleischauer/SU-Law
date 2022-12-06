@@ -350,35 +350,33 @@ _____________________  _____________________________  __________________________
    ========================================================================================== 
 */
 
-.maxWidth1170px {
+/* .maxWidth1170px {
     max-width: 1170px;
     margin: auto;
-}
+} */
 
-.maxWidth1400px {
+/* .maxWidth1400px {
     max-width: 1400px;
     margin: auto;
-}
+} */
 
-@media screen and (min-width: 768px) {
-
-    /* sm + md + lg*/
-    #pageContentWrapper.container #SidebarZone {
+/* @media screen and (min-width: 768px) { */
+/* sm + md + lg*/
+/* #pageContentWrapper.container #SidebarZone {
         padding-right: 45px;
-    }
-}
+    } */
+/* } */
 
-@media screen and (min-width: 768px) and (max-width: 1199.999px) {
-
-    /* sm + md */
-    #SidebarZone {
+/* @media screen and (min-width: 768px) and (max-width: 1199.999px) { */
+/* sm + md */
+/* #SidebarZone {
         padding-left: 15px;
-    }
-}
+    } */
+/* } */
 
-#TopZone {
+/* #TopZone {
     padding: 0;
-}
+} */
 
 */
 /* ========================================================================================== 
@@ -389,12 +387,12 @@ _____________________  _____________________________  __________________________
 
 /* Hides overflow and adds ellipsis (for long email addresses) */
 
-#SidebarZone .primaryContentWrapper a {
+/* #SidebarZone .primaryContentWrapper a {
     display: inline-block !important;
     text-overflow: ellipsis !important;
     width: -webkit-fill-available !important;
     overflow: hidden !important;
-}
+} */
 
 
 /* ========================================================================================== 
@@ -405,20 +403,20 @@ _____________________  _____________________________  __________________________
    In development by vic aug 2021
 */
 
-#siteNavigation {
+/* #siteNavigation {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     margin-bottom: 60px;
     position: relative;
-}
+} */
 
-@media screen and (max-width: 767.999px) {
-    #siteNavigation .navbar-collapse.in {
-        /* eliminates scrollbar on very small screens for minor overages */
-        overflow-x: hidden;
+/* @media screen and (max-width: 767.999px) {
+    #siteNavigation .navbar-collapse.in { */
+/* eliminates scrollbar on very small screens for minor overages */
+/* overflow-x: hidden;
         overflow-y: visible;
     }
-}
+} */
 
 #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle a,
 #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle a:visited {
