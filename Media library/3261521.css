@@ -993,7 +993,7 @@ _____________________  _____________________________  __________________________
 
 /* -------------------------- Headings -------------------------- */
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -1003,9 +1003,9 @@ h5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     line-height: 1.3;
-}
+} */
 
-.standardContent h1 {
+/* .standardContent h1 {
     color: #aa0000;
     xfont-family: "Roboto Slab", sans-serif;
     xfont-family: "Oswald", "Montserrat", sans-serif;
@@ -1015,45 +1015,45 @@ h5 {
     xmargin-bottom: 10px;
     padding: 0;
     text-decoration: none;
-    xfont-size: 4.209rem;
-    /* perfect fourth */
-    font-size: 3.052rem;
-    /* major third */
-    line-height: 1;
-}
+    xfont-size: 4.209rem;   */
+/* perfect fourth */
+/* font-size: 3.052rem; */
+/* major third */
+/* line-height: 1;
+} */
 
 .standardContent h2 {
     /* major headings */
-    color: #aa0000;
-    clear: both;
+    /* color: #aa0000; */
+    /* clear: both; */
     /* acts as a clearing element */
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif;
     xfont-family: "Oswald", "Montserrat", sans-serif;
     xfont-size: 2.8rem;
     font-weight: 495;
     xmargin: 30px 0 22px -0;
     xfont-size: 3.157rem;
-    xfont-size: 2.441rem;
+    xfont-size: 2.441rem; */
     /* Major scale */
     font-size: var(--h2);
-    margin-bottom: .5rem;
+    /* margin-bottom: .5rem; */
 }
 
-.standardContent h2 a {
-    /* links in major headings */
-    color: #aa0000;
-}
+/* .standardContent h2 a { */
+/* links in major headings */
+/* color: #aa0000;
+} */
 
-.standardContent h2 a:hover,
-.standardContent h2 a:focus {
-    /* links in major headings */
-    text-decoration: underline;
+/* .standardContent h2 a:hover,
+.standardContent h2 a:focus { */
+/* links in major headings */
+/* text-decoration: underline;
     color: #333333;
-}
+} */
 
 .standardContent h3 {
     /* minor headings */
-    color: #aa0000;
+    /* color: #aa0000;
     xfont-family: "Roboto Slab", sans-serif;
     xfont-family: "Oswald", "Montserrat", sans-serif;
     font-family: "Montserrat", sans-serif;
@@ -1062,24 +1062,24 @@ h5 {
     font-weight: 500;
     xmargin: 15px 0 3px 0;
     xfont-size: 2.369rem;
-    xfont-size: 1.953rem;
+    xfont-size: 1.953rem; */
     /* Major scale */
     font-size: 1.75rem;
-    margin-bottom: .3rem;
+    /* margin-bottom: .3rem; */
 }
 
-.standardContent h3 a {
-    /* links in minor headings */
-    color: #aa0000;
+/* .standardContent h3 a { */
+/* links in minor headings */
+/* color: #aa0000;
     text-decoration: none;
-}
+} */
 
-.standardContent h3 a:hover,
+/* .standardContent h3 a:hover,
 .standardContent h3 a:focus {
     text-decoration: underline;
-}
+} */
 
-.standardContent h4 {
+/* .standardContent h4 {
     color: #aa0000;
     xfont-family: "Roboto Slab", sans-serif;
     xfont-family: "Oswald", "Montserrat", sans-serif;
@@ -1089,19 +1089,19 @@ h5 {
     xfont-size: 1.777rem;
     font-size: 1.563rem;
     margin-bottom: .3rem;
-}
+} */
 
-.standardContent h4 a {
+/* .standardContent h4 a {
     color: #aa0000;
     text-decoration: none;
-}
+} */
 
-.standardContent h4 a:hover,
+/* .standardContent h4 a:hover,
 .standardContent h4 a:focus {
     text-decoration: underline;
-}
+} */
 
-.standardContent h5 {
+/* .standardContent h5 {
     color: #aa0000;
     xfont-family: "Roboto Slab", sans-serif;
     xfont-family: "Oswald", "Montserrat", sans-serif;
@@ -1111,57 +1111,54 @@ h5 {
     xfont-size: 1.333rem;
     font-size: 1.25rem;
     margin-bottom: .2rem;
-}
+} */
 
-.standardContent h5 a {
+/* .standardContent h5 a {
     color: #aa0000;
     text-decoration: none;
-}
+} */
 
-.standardContent h5 a:hover,
+/* .standardContent h5 a:hover,
 .standardContent h5 a:focus {
     text-decoration: underline;
-}
+} */
 
 .standardContent h6 {
     /* H6s should be disabled. But just in case... */
-    color: #333333;
+    /* color: #333333;
     xfont-family: "Roboto Slab", serif;
     xfont-family: "Oswald", "Montserrat", sans-serif;
     font-family: "Montserrat", sans-serif;
     xfont-size: 1.6rem;
-    xline-height: 2;
+    xline-height: 2; */
     text-decoration: none;
 }
 
-.standardContent h6 a:hover,
+/* .standardContent h6 a:hover,
 .standardContent h6 a:focus {
     color: #333333;
     text-decoration: underline;
-}
+} */
 
-@media (max-width:767.999px) {
+/* @media (max-width:767.999px) {
     .standardContent h1 {
         font-size: 2.4rem;
     }
-
     .standardContent h2 {
         font-size: 2.8rem;
     }
-
     .standardContent h3 {
         font-size: 1.8rem;
     }
-
     .standardContent h4 {
         font-size: 1.6rem;
     }
-}
+} */
 
 
 /* -------------------------- Paragraphs and inline text -------------------------- */
 
-.standardContent p {
+/* .standardContent p {
     color: #333333;
     xfont-size: 1.4rem;
     font-size: 1.2rem;
@@ -1174,12 +1171,12 @@ h5 {
 
 #SidebarZone .standardContent p {
     line-height: 1.5;
-}
+} */
 
 
 /* -------------------------- Links -------------------------- */
 
-.standardContent a {
+/* .standardContent a {
     color: #333333;
     text-decoration: underline;
 }
@@ -1187,28 +1184,28 @@ h5 {
 .standardContent a:hover,
 .standardContent a:focus {
     color: #aa0000;
-}
+} */
 
 
 /* -------------------------- Lists -------------------------- */
 
-.standardContent ul,
+/*.standardContent ul,
 .standardContent ol {
     xfont-size: 1.4rem;
     font-size: 1.2rem;
     line-height: 1.45;
-    list-style-type: none;
-    xmargin-bottom: 2.2rem;
-    margin-left: 0px;
-    /* indent, but not that much */
-    display: table;
-    /* align 2nd line text, pt 1  */
-    font-weight: 500;
-    padding-left: 3px;
-    /* indent, but not that much. Good for unordered lists. */
-    list-style-position: inside;
-    /* Good for ordered lists. */
-}
+    list-style-type: none; */
+/* xmargin-bottom: 2.2rem;
+    margin-left: 0px; */
+/* indent, but not that much */
+/* display: table; */
+/* align 2nd line text, pt 1  */
+/* font-weight: 500;
+    padding-left: 3px; */
+/* indent, but not that much. Good for unordered lists. */
+/* list-style-position: inside; */
+/* Good for ordered lists. */
+/* } */
 
 
 /* .standardContent ul li {
@@ -1222,49 +1219,49 @@ h5 {
     top: -1px;
 } */
 
-.standardContent ul li ul,
+/* .standardContent ul li ul,
 .standardContent ol li ol {
     margin-bottom: 0;
-}
+} */
 
-.standardContent ol {
-    list-style-type: decimal;
-    /* Numbers! */
-    padding-left: 16px;
-}
+/* .standardContent ol {
+    list-style-type: decimal; */
+/* Numbers! */
+/* padding-left: 16px;
+} */
 
-.standardContent ul li {
-    display: table-row;
-    /* align 2nd line text, pt 2  */
-}
+/* .standardContent ul li {
+    display: table-row; */
+/* align 2nd line text, pt 2  */
+/* } */
 
-.standardContent ul li:before {
+/* .standardContent ul li:before {
     font-family: 'seattle-u';
     font-size: 13px !important;
-    content: '\25FC';
-    /*  black medium square */
-    color: #01a3b0;
+    content: '\25FC'; */
+/*  black medium square */
+/* color: #01a3b0;
     padding-right: 15px;
-    display: table-cell;
-    /* align 2nd line text, pt 3  */
-    position: relative;
-    top: -1px;
-    /* moves the chevron 2px down to better align with text*/
-}
+    display: table-cell; */
+/* align 2nd line text, pt 3  */
+/* position: relative;
+    top: -1px; */
+/* moves the chevron 2px down to better align with text*/
+/* } */
 
 
 /* ie can't handle the font-family while getting a display property. Using no-flexboxlegacy as a proxy for IE */
 
-.no-flexboxlegacy #MainZone .standardContent ul li:before,
+/* .no-flexboxlegacy #MainZone .standardContent ul li:before,
 .no-flexboxlegacy #SidebarZone .standardContent ul li:before,
 .no-flexboxlegacy #zoneC .standardContent ul li:before {
     display: inline !important;
-}
+} */
 
 
 /* START list item spacing */
 
-.standardContent ul li,
+/* .standardContent ul li,
 .standardContent ol li {
     xline-height: 1.65;
     margin-bottom: .5em;
@@ -1293,44 +1290,44 @@ h5 {
     list-style-position: inside !important;
 }
 
-list-style-position: inside !important;
+list-style-position: inside !important; */
 
 /* END list item spacing */
 
 
 /* headlines in lists */
 
-.standardContent ul h3 {
+/* .standardContent ul h3 {
     margin-top: 0;
-}
+} */
 
 
 /* List style classes */
 
-ol.list-LowerAlpha {
-    list-style-type: lower-alpha;
-    /* a */
-}
+/* ol.list-LowerAlpha {
+    list-style-type: lower-alpha; */
+/* a */
+/* } */
 
-ol.list-UpperAlpha {
-    list-style-type: upper-alpha;
-    /* A */
-}
+/* ol.list-UpperAlpha {
+    list-style-type: upper-alpha; */
+/* A */
+/* } */
 
-ol.list-LowerRoman {
-    list-style-type: lower-roman;
-    /* iv */
-}
+/* ol.list-LowerRoman {
+    list-style-type: lower-roman; */
+/* iv */
+/* } */
 
-ol.list-UpperRoman {
-    list-style-type: upper-roman;
-    /* IV */
-}
+/* ol.list-UpperRoman {
+    list-style-type: upper-roman; */
+/* IV */
+/* } */
 
 
 /* -------------------------- Blockquote -------------------------- */
 
-.standardContent blockquote {
+/* .standardContent blockquote {
     border-left: 5px solid #fdb913;
     font-size: inherit;
     margin: 0 30px;
@@ -1340,7 +1337,7 @@ ol.list-UpperRoman {
     border: initial;
     font-size: initial;
     margin: initial;
-}
+} */
 
 
 /* -------------------------- Buttons -------------------------- */
