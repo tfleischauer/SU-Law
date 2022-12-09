@@ -3299,55 +3299,55 @@ svg.arrow.circle.navy {
 
 /* =============================== Alert page layout ================================ */
 
-#layout2836 #pageContentWrapper {
+/* #layout2836 #pageContentWrapper {
     margin-top: 10px
-}
+} */
 
-.campusAlertFulltextWrapper {
-    /* fulltext of articles */
-    padding: 0 10px 10px 10px;
-}
+/* .campusAlertFulltextWrapper { */
+/* fulltext of articles */
+/* padding: 0 10px 10px 10px;
+} */
 
-.campusAlertFulltext {
+/* .campusAlertFulltext {
     border-top: 0;
-}
+} */
 
 
 /* below is exactly the same as the Quicklinks. */
 
-#SidebarZone #topAlerts .topAlertsTitle {
-    /* h3 */
-    background-color: #aa0000;
+/* #SidebarZone #topAlerts .topAlertsTitle { */
+/* h3 */
+/* background-color: #aa0000;
     padding: 10px 0 10px 0;
     margin: 0px;
-}
+} */
 
 #SidebarZone #topAlerts .topAlertsTitle span {
-    color: #ffffff;
-    display: block;
+    /* color: #ffffff; */
+    /* display: block; */
     font-family: 'Roboto Slab', serif;
     font-size: 2rem;
-    padding: 10px;
-    text-align: center;
+    /* padding: 10px; */
+    /* text-align: center; */
 }
 
 #SidebarZone #topAlerts .topAlertsContent {
     background: #f7f7f7;
-    margin-bottom: 10px;
-    padding: 10px;
+    /* margin-bottom: 10px; */
+    /* padding: 10px; */
 }
 
-#SidebarZone #topAlerts ul {
+/* #SidebarZone #topAlerts ul {
     margin-bottom: 10px;
     padding: 10px;
-}
+} */
 
-#SidebarZone #topAlerts ul li {
+/* #SidebarZone #topAlerts ul li {
     display: table-row;
     line-height: 16px;
-}
+} */
 
-#SidebarZone #topAlerts ul li:before {
+/* #SidebarZone #topAlerts ul li:before {
     font-family: 'seattle-u';
     content: 'b';
     color: #aa0000;
@@ -3363,7 +3363,7 @@ svg.arrow.circle.navy {
 
 #SidebarZone #topAlerts ul li a:hover {
     color: #aa0000;
-}
+} */
 
 #SidebarZone #topAlerts ul li em {
     color: #333333;
