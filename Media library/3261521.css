@@ -2583,37 +2583,37 @@ svg.arrow.circle.navy {
 *
 **/
 
-.accordionWrapper {
+/* .accordionWrapper {
     margin: 0 auto;
     margin-left: 15px !important;
     max-width: 1170px;
     padding-right: 45px;
-}
+} */
 
 .accordionWrapper h2.accordionTitle {
-    color: #aa0000;
+    /* color: #aa0000; */
     font-family: 'Montserrat', sans-serif;
     font-size: var(--h2);
-    font-weight: 500;
+    /* font-weight: 500; */
     margin: 65px 0 22px 0;
     text-align: center;
-    clear: both;
+    /* clear: both; */
 }
 
-.accordionWrapper h2.accordionTitle:not(:first-of-type) {
+/* .accordionWrapper h2.accordionTitle:not(:first-of-type) {
     margin-top: 80px;
-}
+} */
 
 .accordionWrapper .accordionDescription p {
-    color: #333333;
+    /* color: #333333;
     font-size: 1.2rem;
-    line-height: 1.5;
+    line-height: 1.5; */
     margin-bottom: 1.6rem;
-    font-weight: 500;
-    text-align: left;
+    /* font-weight: 500;
+    text-align: left; */
 }
 
-.accordionTitle.standardContent {
+/* .accordionTitle.standardContent {
     padding-left: 0 !important;
 }
 
@@ -2631,38 +2631,38 @@ svg.arrow.circle.navy {
 
 .accordionItemHeader.accordion-header a:visited {
     outline: none;
-}
+} */
 
 .accordionItemHeader.accordion-header a:hover {
     outline: none;
 }
 
-.accordionItemHeader.accordion-header a:focus {
+/* .accordionItemHeader.accordion-header a:focus {
     outline: none;
 }
 
 .accordionItemHeader.accordion-header a:active {
     outline: none;
-}
+} */
 
 .accordionWrapper .accordionItemHeaderButton {
-    height: auto;
+    /* height: auto;
     display: flex;
     align-items: center;
-    text-decoration: none;
+    text-decoration: none; */
     padding: 30px 0;
 }
 
 .accordionWrapper h3.accordionItemHeaderButtonTitle {
-    color: #088099;
+    /* color: #088099; */
     font-family: "Montserrat", sans-serif;
     font-size: 2.0rem;
     font-weight: 500;
-    margin: 0;
-    width: 100%;
+    /* margin: 0;
+    width: 100%; */
 }
 
-.accordionWrapper h3.accordionItemHeaderButtonTitle i {
+/* .accordionWrapper h3.accordionItemHeaderButtonTitle i {
     float: right;
     transition-timing-function: ease;
     transition-duration: .3s;
@@ -2674,12 +2674,12 @@ svg.arrow.circle.navy {
 
 .accordionWrapper .accordionItemInfo {
     padding-bottom: 10px;
-}
+} */
 
 
 /* anchor styles inside the accordion item */
 
-.accordionItemInfo.standardContent a {
+/* .accordionItemInfo.standardContent a {
     color: #088099;
     text-decoration: none;
 }
@@ -2690,7 +2690,7 @@ svg.arrow.circle.navy {
 
 .accordionItemInfo.standardContent a:active {
     color: #003282;
-}
+} */
 
 
 /*********************
@@ -2703,29 +2703,27 @@ svg.arrow.circle.navy {
 
 /* ***** Desktop down ***** */
 
-@media screen and (max-width: 1199.99px) {
+/* @media screen and (max-width: 1199.99px) {
     .accordionWrapper h3.accordionItemHeaderButtonTitle {
         font-size: calc(1.3rem + .6vw);
     }
-}
+} */
 
 
 /* ***** xs screen and up ***** */
 
-@media only screen and (min-width: 576px) {
-
+/* @media only screen and (min-width: 576px) {
     /* Keeps accordion on the grid */
-    .accordionWrapper {
+/* .accordionWrapper {
         margin-left: 15px !important;
         padding-right: 45px;
-    }
-
-    /* Indents nested lists to the left */
-    .accordionWrapper ol,
+    } */
+/* Indents nested lists to the left */
+/* .accordionWrapper ol,
     .accordionWrapper ul {
         margin-left: .25em !important;
-    }
-}
+    } */
+/* } */
 
 
 /* ==========================================================================================
