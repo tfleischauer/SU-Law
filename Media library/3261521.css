@@ -1652,31 +1652,31 @@ table caption h2 {
 
 /* Boxlinks*/
 
-ul.boxlinks {
+/* ul.boxlinks {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     list-style-type: none;
     margin: auto auto;
     padding: 0;
-    width: 100%;
-    /* prevents ULs with less than three items from collapsing */
-}
+    width: 100%; */
+/* prevents ULs with less than three items from collapsing */
+/* } */
 
-ul.boxlinks li {
+/* ul.boxlinks li {
     justify-content: center;
     flex: 1 0 100%;
-}
+} */
 
-ul.boxlinks li:before {
+/* ul.boxlinks li:before {
     content: '';
     padding-right: 0px;
-}
+} */
 
-.boxlinks a,
-.boxlinkItem a {
-    /* a div with boxlinkItem is a standalone box in the same style as a boxlink li */
-    border: 2px solid #088099;
+/* .boxlinks a,
+.boxlinkItem a { */
+/* a div with boxlinkItem is a standalone box in the same style as a boxlink li */
+/* border: 2px solid #088099;
     color: #a90400;
     display: block;
     font-family: "Montserrat", sans-serif;
@@ -1689,9 +1689,9 @@ ul.boxlinks li:before {
     text-decoration: none;
     text-transform: uppercase;
     transition: all 0.2s ease;
-}
+} */
 
-#MainZone .boxlinks li {
+/* #MainZone .boxlinks li {
     margin: 7px 7px 15px 0;
 }
 
@@ -1719,7 +1719,7 @@ x.boxlinkItem:focus a,
     border: 2px solid #088099;
     color: #ffffff;
     text-decoration: underline;
-}
+} */
 
 
 /* -------------------------- readmore links -------------------------- */
@@ -1727,7 +1727,7 @@ x.boxlinkItem:focus a,
 
 /* on feature items, knowledge base, news */
 
-.standardContent .readmore {
+/* .standardContent .readmore {
     text-align: right;
     text-transform: uppercase;
 }
@@ -1739,17 +1739,17 @@ x.boxlinkItem:focus a,
     position: relative;
     text-transform: lowercase;
     top: 2px;
-}
+} */
 
 .standardContent .readmore a {
     color: #aa0000;
     text-decoration: none;
 }
 
-.standardContent .readmore a:hover,
+/* .standardContent .readmore a:hover,
 .standardContent .readmore a:focus {
     text-decoration: underline;
-}
+} */
 
 
 /* -------------------------- Images -------------------------- */
@@ -1757,30 +1757,30 @@ x.boxlinkItem:focus a,
 
 /*If not available in CMS, classes to be added manually. */
 
-img {
+/* img {
     display: inline-block;
     height: auto;
     max-width: 100%;
-}
+} */
 
-img[src=""] {
-    /* empty images don't get displayed */
-    display: none;
-}
+/* img[src=""] { */
+/* empty images don't get displayed */
+/* display: none;
+} */
 
-.standardContent img {
+/* .standardContent img {
     padding: 20px;
-}
+} */
 
 #SidebarZone .secondaryContent .standardContent img {
     padding: 0 20px;
 }
 
-img.img-responsive {
+/* img.img-responsive {
     margin: 0 auto;
-}
+} */
 
-#primaryContent .imageOnRight,
+/* #primaryContent .imageOnRight,
 #primaryContent .imageOnRightWithBorder {
     float: right;
     margin: 10px 0 10px 10px;
@@ -1831,31 +1831,30 @@ img.img-responsive {
 
 .primaryContentWrapper .standardContent p.no-img-padding img {
     padding: 0;
-}
+} */
 
 
 /* Sidebar: Remove padding from image */
 
-p.sidebar-image>img {
+/* p.sidebar-image>img {
     xpadding: 0;
 }
 
 p.sidebar-image>a {
     xpadding: 0;
-}
+} */
 
 
 /* Makes sidebar images full bleed */
 
-@media only screen and (min-width: 576px) {
+/* @media only screen and (min-width: 576px) {
     #SidebarZone img {
         padding: 0;
     }
-
     #SidebarZone figure.image-wrapper {
         padding: 0;
     }
-}
+} */
 
 
 /* ==========================================================================================================*/
