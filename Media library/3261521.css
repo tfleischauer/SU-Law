@@ -1542,30 +1542,30 @@ list-style-position: inside !important; */
 
 /* table default changed to with borders. New class of tableWithoutBorders available 3/21/15*/
 
-.standardContent table {
+/* .standardContent table {
     border-collapse: collapse;
     border-spacing: 2px;
     font-size: 1rem;
     font-weight: 400;
-    margin-bottom: 1.6rem;
-    /* same as paragraphs */
-    width: 100%;
-}
+    margin-bottom: 1.6rem; */
+/* same as paragraphs */
+/* width: 100%;
+} */
 
-.standardContent .tableWithoutBorders {
+/* .standardContent .tableWithoutBorders {
     border-collapse: separate;
     border-bottom: none;
     border-right: none;
-}
+} */
 
 
 /* table heading rows */
 
-.standardContent table thead {
+/* .standardContent table thead {
     border-right: 1px solid #881111;
-}
+} */
 
-.standardContent table thead th {
+/* .standardContent table thead th {
     background-color: #aa0000;
     color: #ffffff;
     font-weight: bold;
@@ -1592,20 +1592,20 @@ list-style-position: inside !important; */
     border-top: none;
     border-bottom: none;
     border-left: none;
-}
+} */
 
 
 /* table body cells and row headers */
 
-.standardContent table th {
-    /* thead styles will override this. THs only in tbody or other not indicated */
-    background-color: #f7f7f7;
+/* .standardContent table th { */
+/* thead styles will override this. THs only in tbody or other not indicated */
+/* background-color: #f7f7f7;
     color: #333333;
     font-weight: bold;
     padding: 10px;
-}
+} */
 
-.standardContent table td,
+/* .standardContent table td,
 .standardContent table th {
     padding: 10px;
     border-top: 1px solid #e0e0e0;
@@ -1624,7 +1624,7 @@ list-style-position: inside !important; */
 table caption {
     caption-side: top;
     color: #aa0000;
-}
+} */
 
 table caption h2 {
     font-size: var(--h2);
@@ -1633,21 +1633,21 @@ table caption h2 {
 
 /* affects curriculum tables only*/
 
-.standardContent .tableCurriculum,
+/* .standardContent .tableCurriculum,
 .standardContent .tableCurriculum th,
 .standardContent .tableCurriculum td {
     vertical-align: top;
-}
+} */
 
 
 /* make tables that are too wide to view on a mobile device add a horizontal scroll bar */
 
-@media screen and (max-width:767.999px) {
+/* @media screen and (max-width:767.999px) {
     table {
         overflow-x: auto;
         display: block;
     }
-}
+} */
 
 
 /* Boxlinks*/
