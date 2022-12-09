@@ -2378,7 +2378,7 @@ footer #footerSocialMediaLinks .social a:hover, footer #footerSocialMediaLinks .
 
 /* --------------------------------------- Critical Emergency Homepage --------------------------------------- */
 
-#layout3250 #pageContentWrapper {
+/* #layout3250 #pageContentWrapper {
     margin-top: 10px;
 }
 
@@ -2389,33 +2389,33 @@ footer #footerSocialMediaLinks .social a:hover, footer #footerSocialMediaLinks .
 
 .criticalUpdate {
     padding: 60px;
-}
+} */
 
 .criticalUpdate h1 {
-    font-family: Roboto Slab;
-    font-size: 3em;
-    margin-top: 0;
+    font-family: "Roboto Slab";
+    /* font-size: 3em;
+    margin-top: 0; */
 }
 
-.criticalUpdate p,
+/* .criticalUpdate p,
 .criticalUpdate ul {
     font-size: 14px;
 }
 
 .criticalUpdate .date {
     color: #aa0000;
-}
+} */
 
 
 /* ----- black ----- */
 
-.standardContentBlack {
-    /* tweaks on .standardContent*/
-    background: #333333;
+/* .standardContentBlack { */
+/* tweaks on .standardContent*/
+/* background: #333333;
     border: 0;
-}
+} */
 
-.standardContentBlack h1,
+/* .standardContentBlack h1,
 .standardContentBlack p,
 .standardContentBlack ul {
     color: #ffffff;
@@ -2433,25 +2433,25 @@ footer #footerSocialMediaLinks .social a:hover, footer #footerSocialMediaLinks .
 
 .standardContentBlack ul li:before {
     color: #fdb913;
-}
+} */
 
 
 /* ----- red ----- */
 
-.standardContentRed {
-    /* tweaks on .standardContent*/
-    background: #aa0000;
+/* .standardContentRed { */
+/* tweaks on .standardContent*/
+/* background: #aa0000;
     border: 0;
-}
+} */
 
-.standardContentRed h1,
+/* .standardContentRed h1,
 .standardContentRed p,
 .standardContentRed p a,
 .standardContentRed ul {
     color: #ffffff;
-}
+} */
 
-.standardContentBlack .date {
+/* .standardContentBlack .date {
     color: #ffffff;
 }
 
@@ -2463,7 +2463,7 @@ footer #footerSocialMediaLinks .social a:hover, footer #footerSocialMediaLinks .
 
 .standardContentRed ul li:before {
     color: #fdb913;
-}
+} */
 
 
 /* ================================================================================= */
@@ -2477,54 +2477,54 @@ footer #footerSocialMediaLinks .social a:hover, footer #footerSocialMediaLinks .
 
 /* Fix problems created by content editors. */
 
-font {
+/* font {
     color: #333333;
-}
+} */
 
 
 /* control for customized text colors */
 
-u {
+/* u {
     text-decoration: none;
-}
+} */
 
-u,
+/* u,
 span[style="text-decoration:underline"] {
     text-decoration: none !important;
-}
+} */
 
 
 /* control for underlined text that'll be confused with links */
 
-h2 strong,
+/* h2 strong,
 h3 strong {
     font-weight: normal;
-}
+} */
 
 
 /* control for extra bolded headers */
 
-body span.MsoHyperlink {
+/* body span.MsoHyperlink {
     text-decoration: none;
-}
+} */
 
 
 /* override MSWord copy-ins */
 
-.fancybox-inner {
-    /* Fancybox adds an inline "overflow: scroll;" to itself regardless of the content's size. This removes it. */
-    overflow: hidden;
-}
+/* .fancybox-inner { */
+/* Fancybox adds an inline "overflow: scroll;" to itself regardless of the content's size. This removes it. */
+/* overflow: hidden;
+} */
 
-body>img {
-    /* this protects against tracking pixel placements adding extra spaced outside the normal content wrappers */
-    display: none;
-}
+/* body>img { */
+/* this protects against tracking pixel placements adding extra spaced outside the normal content wrappers */
+/* display: none;
+} */
 
 
 /* ===========================  SVG  ================================= */
 
-svg.arrow.circle {
+/* svg.arrow.circle {
     width: 1.5em;
     position: relative;
     top: .45em;
@@ -2561,7 +2561,7 @@ svg.arrow.circle.blue {
 
 svg.arrow.circle.navy {
     stroke: #003282;
-}
+} */
 
 
 /* ==========================================================================================
