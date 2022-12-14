@@ -5304,7 +5304,7 @@ article.tripleColumn a:hover {
    Last revised 4/12/2021 by Troy 
 */
 
-.focusBoxWrapper {
+/* .focusBoxWrapper {
     margin-bottom: 2rem;
 }
 
@@ -5336,14 +5336,14 @@ article.tripleColumn a:hover {
 
 .focusBoxWrapper .color {
     background: #f7f7f7;
-}
+} */
 
-.focusBoxWrapper .colorSUBlack {
+/* .focusBoxWrapper .colorSUBlack {
     /* SU Black */
-    background-color: #333333;
-}
+/* background-color: #333333; */
+/* } */
 
-.focusBoxWrapper .colorSUBlack .focusBoxContent p,
+/* .focusBoxWrapper .colorSUBlack .focusBoxContent p,
 .focusBoxWrapper .colorSUBlack .focusBoxContent h1,
 .focusBoxWrapper .colorSUBlack .focusBoxContent h2,
 .focusBoxWrapper .colorSUBlack .focusBoxContent h3,
@@ -5364,7 +5364,7 @@ article.tripleColumn a:hover {
 
 .focusBoxWrapper .colorSUBlack .focusBoxContent a:visited {
     color: #f7f7f7;
-}
+} */
 
 .focusBoxWrapper .colorSUBlack .focusBoxContent a:hover {
     color: #aa0000;
@@ -5378,12 +5378,12 @@ article.tripleColumn a:hover {
     color: #aa0000;
 }
 
-.focusBoxWrapper .colorBlue {
-    /* Blue */
-    background-color: #088099;
-}
+/* .focusBoxWrapper .colorBlue { */
+/* Blue */
+/* background-color: #088099;
+} */
 
-.focusBoxWrapper .colorBlue .focusBoxContent p,
+/* .focusBoxWrapper .colorBlue .focusBoxContent p,
 .focusBoxWrapper .colorBlue .focusBoxContent h1,
 .focusBoxWrapper .colorBlue .focusBoxContent h2,
 .focusBoxWrapper .colorBlue .focusBoxContent h3,
@@ -5397,11 +5397,11 @@ article.tripleColumn a:hover {
 .focusBoxWrapper .colorBlue .focusBoxContent i.fa,
 #SidebarZone .focusBox.colorBlue hr {
     color: #ffffff;
-}
+} */
 
-.focusBoxWrapper .colorBlue .focusBoxContent a:link {
+/* .focusBoxWrapper .colorBlue .focusBoxContent a:link {
     color: #ffffff;
-}
+} */
 
 .focusBoxWrapper .colorBlue .focusBoxContent a:visited {
     color: #f7f7f7;
@@ -5419,12 +5419,12 @@ article.tripleColumn a:hover {
     color: #aa0000;
 }
 
-.focusBoxWrapper .colorNavyBlue {
-    /* Navy Blue */
-    background-color: #003282;
-}
+/* .focusBoxWrapper .colorNavyBlue { */
+/* Navy Blue */
+/* background-color: #003282;
+} */
 
-.focusBoxWrapper .colorNavyBlue .focusBoxContent p,
+/* .focusBoxWrapper .colorNavyBlue .focusBoxContent p,
 .focusBoxWrapper .colorNavyBlue .focusBoxContent h1,
 .focusBoxWrapper .colorNavyBlue .focusBoxContent h2,
 .focusBoxWrapper .colorNavyBlue .focusBoxContent h3,
@@ -5457,14 +5457,14 @@ article.tripleColumn a:hover {
 
 .focusBoxWrapper .colorNavyBlue .focusBoxContent a:focus {
     color: #aa0000;
-}
+} */
 
-.focusBoxWrapper .colorTaupeBrown {
-    /* Taupe Brown */
-    background-color: #807060;
-}
+/* .focusBoxWrapper .colorTaupeBrown { */
+/* Taupe Brown */
+/* background-color: #807060;
+} */
 
-.focusBoxWrapper .colorTaupeBrown .focusBoxContent p,
+/* .focusBoxWrapper .colorTaupeBrown .focusBoxContent p,
 .focusBoxWrapper .colorTaupeBrown .focusBoxContent h1,
 .focusBoxWrapper .colorTaupeBrown .focusBoxContent h2,
 .focusBoxWrapper .colorTaupeBrown .focusBoxContent h3,
@@ -5477,11 +5477,11 @@ article.tripleColumn a:hover {
 .focusBoxWrapper .colorTaupeBrown .focusBoxContent cite,
 .focusBoxWrapper .colorTaupeBrown .focusBoxContent i.fa {
     color: #ffffff;
-}
+} */
 
-.focusBoxWrapper .colorTaupeBrown .focusBoxContent a:link {
+/* .focusBoxWrapper .colorTaupeBrown .focusBoxContent a:link {
     color: #ffffff;
-}
+} */
 
 .focusBoxWrapper .colorTaupeBrown .focusBoxContent a:visited {
     color: #f7f7f7;
@@ -5499,12 +5499,12 @@ article.tripleColumn a:hover {
     color: #aa0000;
 }
 
-.focusBoxWrapper .colorEmerald {
-    /* Emerald */
-    background-color: #008765;
-}
+/* .focusBoxWrapper .colorEmerald { */
+/* Emerald */
+/* background-color: #008765;
+} */
 
-.focusBoxWrapper .colorEmerald .focusBoxContent p,
+/* .focusBoxWrapper .colorEmerald .focusBoxContent p,
 .focusBoxWrapper .colorEmerald .focusBoxContent h1,
 .focusBoxWrapper .colorEmerald .focusBoxContent h2,
 .focusBoxWrapper .colorEmerald .focusBoxContent h3,
@@ -5537,14 +5537,14 @@ article.tripleColumn a:hover {
 
 .focusBoxWrapper .colorEmerald .focusBoxContent a:focus {
     color: #aa0000;
-}
+} */
 
-.focusBoxWrapper .colorGold {
-    /* Gold */
-    background-color: #cc9f26;
-}
+/* .focusBoxWrapper .colorGold { */
+/* Gold */
+/* background-color: #cc9f26;
+} */
 
-.focusBoxWrapper .colorGold .focusBoxContent p,
+/* .focusBoxWrapper .colorGold .focusBoxContent p,
 .focusBoxWrapper .colorGold .focusBoxContent h1,
 .focusBoxWrapper .colorGold .focusBoxContent h2,
 .focusBoxWrapper .colorGold .focusBoxContent h3,
@@ -5577,14 +5577,14 @@ article.tripleColumn a:hover {
 
 .focusBoxWrapper .colorGold .focusBoxContent a:focus {
     color: #aa0000;
-}
+} */
 
-.focusBoxWrapper .colorGreen {
-    /* Green */
-    background-color: #55b31b;
-}
+/* .focusBoxWrapper .colorGreen { */
+/* Green */
+/* background-color: #55b31b;
+} */
 
-.focusBoxWrapper .colorGreen .focusBoxContent p,
+/* .focusBoxWrapper .colorGreen .focusBoxContent p,
 .focusBoxWrapper .colorGreen .focusBoxContent h1,
 .focusBoxWrapper .colorGreen .focusBoxContent h2,
 .focusBoxWrapper .colorGreen .focusBoxContent h3,
@@ -5617,14 +5617,14 @@ article.tripleColumn a:hover {
 
 .focusBoxWrapper .colorGreen .focusBoxContent a:focus {
     color: #ef4135;
-}
+} */
 
-.focusBoxWrapper .colorForestGreen {
-    /* Forest Green */
-    background-color: #124a12;
-}
+/* .focusBoxWrapper .colorForestGreen { */
+/* Forest Green */
+/* background-color: #124a12;
+} */
 
-.focusBoxWrapper .colorForestGreen .focusBoxContent p,
+/* .focusBoxWrapper .colorForestGreen .focusBoxContent p,
 .focusBoxWrapper .colorForestGreen .focusBoxContent h1,
 .focusBoxWrapper .colorForestGreen .focusBoxContent h2,
 .focusBoxWrapper .colorForestGreen .focusBoxContent h3,
@@ -5657,14 +5657,14 @@ article.tripleColumn a:hover {
 
 .focusBoxWrapper .colorForestGreen .focusBoxContent a:focus {
     color: #ef4135;
-}
+} */
 
-.focusBoxWrapper .colorSURed {
-    /* SU Red */
-    background-color: #aa0000;
-}
+/* .focusBoxWrapper .colorSURed { */
+/* SU Red */
+/* background-color: #aa0000;
+} */
 
-.focusBoxWrapper .colorSURed .focusBoxContent p,
+/* .focusBoxWrapper .colorSURed .focusBoxContent p,
 .focusBoxWrapper .colorSURed .focusBoxContent h1,
 .focusBoxWrapper .colorSURed .focusBoxContent h2,
 .focusBoxWrapper .colorSURed .focusBoxContent h3,
@@ -5681,7 +5681,7 @@ article.tripleColumn a:hover {
 
 .focusBoxWrapper .colorSURed .focusBoxContent a:link {
     color: #ffffff;
-}
+}  */
 
 .focusBoxWrapper .colorSURed .focusBoxContent a:visited {
     color: #f7f7f7;
@@ -5699,10 +5699,10 @@ article.tripleColumn a:hover {
     color: #cc9f26;
 }
 
-.focusBoxWrapper .colorRedOrange {
-    /* Red Orange */
-    background-color: #ef4135;
-}
+/* .focusBoxWrapper .colorRedOrange { */
+/* Red Orange */
+/* background-color: #ef4135;
+} */
 
 .focusBoxWrapper .colorRedOrange .focusBoxContent p,
 .focusBoxWrapper .colorRedOrange .focusBoxContent h1,
@@ -5740,12 +5740,12 @@ article.tripleColumn a:hover {
     color: #cc9f26;
 }
 
-.focusBoxWrapper .colorWhite {
-    /* White */
-    background-color: #ffffff;
-}
+/* .focusBoxWrapper .colorWhite { */
+/* White */
+/* background-color: #ffffff;
+} */
 
-.focusBoxWrapper .colorWhite .focusBoxContent p,
+/* .focusBoxWrapper .colorWhite .focusBoxContent p,
 .focusBoxWrapper .colorWhite .focusBoxContent h1,
 .focusBoxWrapper .colorWhite .focusBoxContent h2,
 .focusBoxWrapper .colorWhite .focusBoxContent h3,
@@ -5758,14 +5758,14 @@ article.tripleColumn a:hover {
 .focusBoxWrapper .colorWhite .focusBoxContent cite,
 .focusBoxWrapper .colorWhite .focusBoxContent i.fa {
     color: #333333;
-}
+} */
 
-.focusBoxWrapper .colorYellow {
-    /* Yellow */
-    background-color: #fdb913;
-}
+/* .focusBoxWrapper .colorYellow { */
+/* Yellow */
+/* background-color: #fdb913;
+} */
 
-.focusBoxWrapper .colorYellow .focusBoxContent p,
+/* .focusBoxWrapper .colorYellow .focusBoxContent p,
 .focusBoxWrapper .colorYellow .focusBoxContent h1,
 .focusBoxWrapper .colorYellow .focusBoxContent h2,
 .focusBoxWrapper .colorYellow .focusBoxContent h3,
@@ -5779,9 +5779,9 @@ article.tripleColumn a:hover {
 .focusBoxWrapper .colorYellow .focusBoxContent i.fa,
 .focusBoxWrapper .colorYellow .focusBoxContent a {
     color: #000000;
-}
+} */
 
-.focusBoxWrapper .colorYellow .focusBoxContent a:link {
+/* .focusBoxWrapper .colorYellow .focusBoxContent a:link {
     color: #000000;
 }
 
@@ -5799,14 +5799,14 @@ article.tripleColumn a:hover {
 
 .focusBoxWrapper .colorYellow .focusBoxContent a:focus {
     color: #aa0000;
-}
+} */
 
-.focusBoxWrapper .colorYellowTint {
-    /* Yellow Tint */
-    background-color: #f7f7f7;
-}
+/* .focusBoxWrapper .colorYellowTint { */
+/* Yellow Tint */
+/* background-color: #f7f7f7;
+} */
 
-.focusBoxWrapper .colorYellowTint .focusBoxContent h2,
+/* .focusBoxWrapper .colorYellowTint .focusBoxContent h2,
 .focusBoxWrapper .colorYellowTint .focusBoxContent p,
 .focusBoxWrapper .colorYellowTint .focusBoxContent h3,
 .focusBoxWrapper .colorYellowTint .focusBoxContent h4,
@@ -5819,7 +5819,7 @@ article.tripleColumn a:hover {
 .focusBoxWrapper .colorYellowTint .focusBoxContent cite,
 .focusBoxWrapper .colorYellowTint .focusBoxContent i.fa {
     color: #333333;
-}
+} */
 
 
 /* Buttons */
@@ -5827,7 +5827,7 @@ article.tripleColumn a:hover {
 
 /* Black button with triple arrow icon */
 
-.focusBoxWrapper .focusBoxContent a.btn.btn-alpha {
+/* .focusBoxWrapper .focusBoxContent a.btn.btn-alpha {
     color: #ffffff !important;
 }
 
@@ -5848,7 +5848,7 @@ article.tripleColumn a:hover {
 .focusBoxWrapper .focusBoxContent a.btn.btn-alpha:focus {
     color: #088099 !important;
     text-decoration-color: #088099 !important;
-}
+} */
 
 
 /* Standard white button */
