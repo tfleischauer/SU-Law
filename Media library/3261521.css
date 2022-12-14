@@ -4075,11 +4075,11 @@ svg.arrow.circle.navy {
  
 */
 
-.codeZoneAWrapper iframe,
+/* .codeZoneAWrapper iframe,
 .codeZoneBWrapper iframe,
 .codeZoneCWrapper iframe {
     max-width: 100%;
-}
+} */
 
 
 /* ==========================================================================================
@@ -4234,7 +4234,7 @@ svg.arrow.circle.navy {
 
 /* } END Commented out on 7/14/2022 */
 
-.colorButtonRed {
+/* .colorButtonRed {
     background-color: #aa0000;
     color: #ffffff;
 }
@@ -4253,12 +4253,12 @@ svg.arrow.circle.navy {
 .colorButtonGreen {
     background-color: #55b31b;
     color: #333333;
-}
+} */
 
 
 /*85,179,27*/
 
-.colorButtonDarkGreen {
+/* .colorButtonDarkGreen {
     background-color: #124a12;
     color: #ffffff;
 }
@@ -4295,12 +4295,12 @@ svg.arrow.circle.navy {
 
 .colorButton:hover {
     text-decoration: none;
-}
+} */
 
 
 /* these are all brand colors with a 30% drop in brightness */
 
-.colorButtonRed:hover,
+/* .colorButtonRed:hover,
 .colorButtonRed:focus,
 .colorButtonRed:active {
     background-color: #8e0000;
@@ -4326,12 +4326,12 @@ svg.arrow.circle.navy {
 .colorButtonGreen:active {
     background-color: #469616;
     color: #1D1D1D;
-}
+} */
 
 
 /* to keep enough contrast */
 
-.colorButtonDarkGreen:hover,
+/* .colorButtonDarkGreen:hover,
 .colorButtonDarkGreen:focus,
 .colorButtonDarkGreen:active {
     background-color: #0f3d0f;
@@ -4378,7 +4378,7 @@ svg.arrow.circle.navy {
 .colorButtonWhite:active {
     background-color: #cccccc;
     color: #333333;
-}
+} */
 
 
 /* START Commented out on 7/14/2022
@@ -4408,15 +4408,15 @@ END Commented out on 7/14/2022 */
 
 */
 
-.contactBoxWrapper {
-    background-color: #333333;
+/* .contactBoxWrapper { */
+/* background-color: #333333;
     color: #ffffff;
-    padding: 20px;
-    /*padding:30px by max, moved to each box*/
-    text-align: center;
-}
+    padding: 20px; */
+/*padding:30px by max, moved to each box*/
+/* text-align: center; */
+/* } */
 
-.contactBoxWrapper.contactBoxColorGold {
+/* .contactBoxWrapper.contactBoxColorGold {
     background-color: #fdb913;
     color: #000000;
 }
@@ -4470,18 +4470,18 @@ END Commented out on 7/14/2022 */
 .contactBoxWrapper.contactBoxColorBrown {
     background-color: #807060;
     color: #ffffff;
-}
+} */
 
 .contactBoxWrapper h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 3.2rem;
-    font-weight: 500;
+    /* font-weight: 500;
     margin: 0;
     padding: 15px 0 15px 0;
-    text-align: center;
+    text-align: center; */
 }
 
-.contactBoxColorGold h2,
+/* .contactBoxColorGold h2,
 .contactBoxColorGold h3,
 .contactBoxColorGold p,
 .contactBoxColorGold a,
@@ -4554,26 +4554,26 @@ END Commented out on 7/14/2022 */
 
 .contactBoxColorWhite a:hover {
     color: #aa0000;
-}
+} */
 
-.contactBoxes {
-    align-items: flex-end;
+/* .contactBoxes { */
+/* align-items: flex-end;
     display: block;
     flex-wrap: wrap;
     xmax-width: 1170px;
-    width: 100%;
-    /* prevents with less than three items from collapsing */
-}
+    width: 100%; */
+/* prevents with less than three items from collapsing */
+/* } */
 
-.contactBoxes .contactBox {
-    /*padding: 15px; 12/14/17 by max */
-    padding: 10px;
+/* .contactBoxes .contactBox { */
+/*padding: 15px; 12/14/17 by max */
+/* padding: 10px;
     padding-bottom: 4vh;
     align-self: flex-start;
-    margin: 0 auto;
-}
+    margin: 0 auto; */
+/* } */
 
-.contactBoxes .contactBox:last-child {
+/* .contactBoxes .contactBox:last-child {
     padding-bottom: 1vh;
 }
 
@@ -4588,12 +4588,12 @@ h2.contactBoxTitle {
 
 .contactBoxPhoto img {
     padding: 0;
-}
+} */
 
 
 /* Three below are not necessary if .contactBoxes remains display: block */
 
-#MainZone .contactBoxes[data-box-shown="show1-show2-show3"] .contactBox {
+/* #MainZone .contactBoxes[data-box-shown="show1-show2-show3"] .contactBox {
     flex-basis: 33%;
 }
 
@@ -4603,80 +4603,73 @@ h2.contactBoxTitle {
 
 #MainZone .contactBoxes[data-box-shown="show1"] .contactBox {
     flex-basis: 100%;
-}
+} */
 
 
 /* Large Displays*/
 
-@media (min-width: 1200px) {
-
-    /* Only Zone A */
-    #MainZone.col-md-12 .contactBoxWrapper .contactBoxes .contactBox {
+/* @media (min-width: 1200px) { */
+/* Only Zone A */
+/* #MainZone.col-md-12 .contactBoxWrapper .contactBoxes .contactBox {
         flex-basis: 33% !important;
         display: flex;
-    }
-
-    /* Zone A and Zone B*/
-    #MainZone.col-md-9 .contactBoxWrapper .contactBoxes .contactBox {
+    } */
+/* Zone A and Zone B*/
+/* #MainZone.col-md-9 .contactBoxWrapper .contactBoxes .contactBox {
         flex-basis: 33% !important;
-    }
-
-    /* Zone A, Zone B, and Zone C*/
-    #MainZone.col-md-6 .contactBoxWrapper .contactBoxes .contactBox {
+    } */
+/* Zone A, Zone B, and Zone C*/
+/* #MainZone.col-md-6 .contactBoxWrapper .contactBoxes .contactBox {
         flex-basis: 33% !important;
-    }
-}
+    } */
+/* } */
 
 
 /* Medium Displays*/
 
-@media (min-width: 991px) and (max-width: 1200px) {
-
-    /* Only Zone A */
-    #MainZone.col-md-12 .contactBoxWrapper .contactBoxes .contactBox {
+/* @media (min-width: 991px) and (max-width: 1200px) { */
+/* Only Zone A */
+/* #MainZone.col-md-12 .contactBoxWrapper .contactBoxes .contactBox {
         flex-basis: 33% !important;
-    }
-
-    /* Zone A and Zone B*/
-    #MainZone.col-md-9 .contactBoxWrapper .contactBoxes .contactBox {
+    } */
+/* Zone A and Zone B*/
+/* #MainZone.col-md-9 .contactBoxWrapper .contactBoxes .contactBox {
         flex-basis: 33% !important;
-    }
-
-    /* Zone A, Zone B, and Zone C*/
-    #MainZone.col-md-6 .contactBoxWrapper .contactBoxes .contactBox {
+    } */
+/* Zone A, Zone B, and Zone C*/
+/* #MainZone.col-md-6 .contactBoxWrapper .contactBoxes .contactBox {
         flex-basis: 50% !important;
         margin: 0 auto;
-    }
-}
+    } */
+/* } */
 
 
 /* Small Displays*/
 
-@media (min-width: 767px) and (max-width: 991px) {
+/* @media (min-width: 767px) and (max-width: 991px) {
     #MainZone.col-sm-12 .contactBoxWrapper .contactBoxes .contactBox {
         flex-basis: 33% !important;
     }
-
     #MainZone.col-sm-8 .contactBoxWrapper .contactBoxes .contactBox {
         flex-basis: 50% !important;
         margin: 0 auto;
     }
-}
+} */
 
 
 /* Extra Small Displays*/
 
-@media (min-width: 450px) and (max-width: 767px) {
+/* @media (min-width: 450px) and (max-width: 767px) {
     .contactBoxWrapper .contactBoxes .contactBox {
         flex-basis: 50% !important;
         margin: 0 auto;
     }
-}
+} */
 
 
 /* Extra Extra Small Displays*/
 
-@media (max-width: 450px) {
+/* @media (max-width: 450px) {
     .contactBoxWrapper .contactBoxes .contactBox {
         flex-basis: 100% !important;
     }
@@ -4702,22 +4695,22 @@ h2.contactBoxTitle {
 .contactBoxInfo {
     text-align: left;
     width: 100%;
-}
+} */
 
-.contactBoxInfo h3 {
-    margin: 0;
+/* .contactBoxInfo h3 { */
+/* margin: 0;
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
     font-size: 2.0rem;
-    color: #aa0000;
-    /* text-transform: uppercase;
+    color: #aa0000; */
+/* text-transform: uppercase;
   font-size:1.6rem;
   font-weight: 700;
   margin:0;
   color:inherit; */
-}
+/* } */
 
-.contactBoxInfo p {
+/* .contactBoxInfo p {
     margin: 0;
     padding-left: 0;
     xline-height: 3.2rem;
@@ -4732,21 +4725,21 @@ h2.contactBoxTitle {
 .contactBoxInfoEmail a {
     color: inherit;
     text-decoration: underline;
-}
+} */
 
-.contactBoxInfoEmail a:hover,
-.contactBoxInfoEmail a:focus {
-    /* filter: invert(100%); */
-}
+/* .contactBoxInfoEmail a:hover,
+.contactBoxInfoEmail a:focus { */
+/* filter: invert(100%); */
+/* } */
 
-.contactBoxInfoAdditional {
+/* .contactBoxInfoAdditional {
     padding: 15px 0 0 0;
 }
 
 .contactBoxSupportButton {
     width: 100%;
     max-width: 450px;
-}
+} */
 
 
 /* ==========================================================================================
