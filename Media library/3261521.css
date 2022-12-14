@@ -3125,10 +3125,11 @@ svg.arrow.circle.navy {
 
 
 /* ========================================================================================== 
-   ===== Campus Alert System ===== Content Type #4128 ======================================= 
+   ============================ Campus Alert System =========================================
    ==========================================================================================
-   Adds banner on top of page for use in a campus emergency or other time when notification is required. 
-   Last revised ? 11/27/17 by Jason
+   ===========Law - Campus Alert System Message===== Content Type #5632 ===================== 
+   ==========================================================================================
+        Adds banner on top of all pages for use in a campus emergency or snow message
 */
 
 
@@ -3137,14 +3138,25 @@ svg.arrow.circle.navy {
 
 /* appears on top of all pages in the  div.emergencynotice */
 
+
 .emergencynotice .notice {
     opacity: 1 !important;
     display: block !important;
 }
 
 .emergencynotice .container {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 4rem;
     position: relative;
     padding: 30px 15px;
+
+}
+
+.emergencynotice .notice p {
+    display: table;
+    margin: auto;
+    margin-top: 2rem;
 }
 
 @media screen and (max-width: 767.999px) {
@@ -3157,6 +3169,173 @@ svg.arrow.circle.navy {
 }
 
 .emergencynotice .alertCritical {
+    background-color: #aa0000;
+    background-image: repeating-linear-gradient(135deg, transparent, transparent 10px, rgba(0, 0, 0, .05) 10px, rgba(0, 0, 0, .05) 20px);
+    color: #ffffff;
+}
+
+.emergencynotice .alertAdvisory {
+    background: #fdb913;
+    background-image: repeating-linear-gradient(135deg, transparent, transparent 10px, rgba(170, 0, 0, .05) 10px, rgba(170, 0, 0, .05) 20px);
+    color: #ffffff;
+}
+
+.emergencynotice .alertInformational {
+    background: #55b31b;
+    background-image: repeating-linear-gradient(135deg, transparent, transparent 10px, rgba(0, 0, 0, .05) 10px, rgba(0, 0, 0, .05) 20px);
+    color: #ffffff;
+}
+
+.emergencynotice .alertSubtle {
+    background: #088099;
+    background-image: repeating-linear-gradient(135deg, transparent, transparent 10px, rgba(0, 0, 0, .05) 10px, rgba(0, 0, 0, .05) 20px);
+    color: #ffffff;
+}
+
+.emergencynotice h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 3.2rem;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+}
+
+.emergencynotice h2:before {
+    content: "b ";
+}
+
+.emergencynotice h2:after {
+    content: " a";
+}
+
+.emergencynotice h2:before,
+.emergencynotice h2:after {
+    font-family: "seattle-u" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    speak: none;
+    top: 3px;
+}
+
+.emergencynotice .alertCritical h2:before,
+.emergencynotice .alertCritical h2:after {
+    color: #fdb913;
+}
+
+.emergencynotice .alertAdvisory h2:before,
+.emergencynotice .alertAdvisory h2:after {
+    color: #aa0000;
+}
+
+.emergencynotice .alertInformational h2:before,
+.emergencynotice .alertInformational h2:after {
+    color: #fdb913;
+}
+
+.emergencynotice p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.emergencynotice .alertAdvisory p,
+.emergencynotice .alertAdvisory p {
+    color: #333333;
+}
+
+.emergencynotice .moreLink {
+    background-color: #ffffff;
+    color: #333333;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.emergencynotice .moreLink a {
+    border: 1px solid #333333;
+    color: #aa0000;
+    display: inline-block;
+    font-weight: 700;
+    padding: 5px 30px;
+    text-decoration: none;
+}
+
+.emergencynotice .moreLink a:hover {
+    background-color: #333333;
+    border: 1px solid #f7f7f7;
+    color: #fdb913;
+    text-decoration: none;
+}
+
+.emergencynotice .fa {
+    /* close button */
+    border: 2px solid #f7f7f7;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 2px;
+    position: absolute;
+    right: 0;
+    top: 35px;
+    /* to align with h2 */
+}
+
+@media screen and (max-width: 767.999px) {
+
+    /* xs */
+    .emergencynotice .fa {
+        right: 30px;
+        /* add space to click on mobile */
+    }
+}
+
+.notice.closed {
+    display: block !important;
+    transition: opacity 500ms ease-out, max-height 500ms ease-out !important;
+    max-height: 0 !important;
+    opacity: 0 !important;
+}
+
+.notice.closed .container .fa {
+    display: none !important;
+}
+
+.notice.closed .container a {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    transition: padding 500ms ease-out !important;
+    max-height: 0 !important;
+}
+
+
+
+/* Legacy styling of alert system */
+
+/* .emergencynotice .notice {
+    opacity: 1 !important;
+    display: block !important;
+}
+
+.emergencynotice .container {
+    position: relative;
+    padding: 30px 15px;
+}
+
+@media screen and (max-width: 767.999px) {
+    /* xs */
+/* .emergencynotice .container {
+        position: relative;
+        padding: 30px 60px 30px 30px;
+    }
+} */
+
+/* .emergencynotice .alertCritical {
     background-color: #aa0000;
     background-image: repeating-linear-gradient(135deg, transparent, transparent 10px, rgba(0, 0, 0, .05) 10px, rgba(0, 0, 0, .05) 20px);
     color: #ffffff;
@@ -3254,31 +3433,30 @@ svg.arrow.circle.navy {
     border: 1px solid #f7f7f7;
     color: #fdb913;
     text-decoration: none;
-}
+} */
 
-.emergencynotice .fa {
-    /* close button */
-    border: 2px solid #f7f7f7;
+/* .emergencynotice .fa { */
+/* close button */
+/* border: 2px solid #f7f7f7;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
     padding: 2px;
     position: absolute;
     right: 0;
-    top: 35px;
-    /* to align with h2 */
-}
+    top: 35px; */
+/* to align with h2 */
+/* } */
 
-@media screen and (max-width: 767.999px) {
-
+/* @media screen and (max-width: 767.999px) {
     /* xs */
-    .emergencynotice .fa {
-        right: 30px;
-        /* add space to click on mobile */
-    }
-}
+/* .emergencynotice .fa {
+        /* right: 30px; */
+/* add space to click on mobile */
+/* } 
+}  */
 
-.notice.closed {
+/* .notice.closed {
     display: block !important;
     transition: opacity 500ms ease-out, max-height 500ms ease-out !important;
     max-height: 0 !important;
@@ -3294,7 +3472,7 @@ svg.arrow.circle.navy {
     padding-bottom: 0 !important;
     transition: padding 500ms ease-out !important;
     max-height: 0 !important;
-}
+}  */
 
 
 /* =============================== Alert page layout ================================ */
