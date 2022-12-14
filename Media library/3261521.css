@@ -5875,33 +5875,33 @@ ul.arrowLinks a:focus {
    Last revised 2/3/16 by Jason   
 */
 
-.formPlaceholder {
+/* .formPlaceholder {
     /*padding: 60px 8.333333333333%;*/
-}
+/* } */
 
-.formPlaceholder .js-t4form-container .form-group {
+/* .formPlaceholder .js-t4form-container .form-group {
     margin-bottom: 30px;
-}
+} */
 
-.formPlaceholder .js-t4form-container .form-group.list-options {
-    margin-bottom: 0;
-    /* same class gets applied to form group wrapper and the list items. this eliminates the duplicative margin */
-}
+/* .formPlaceholder .js-t4form-container .form-group.list-options {
+    margin-bottom: 0; */
+/* same class gets applied to form group wrapper and the list items. this eliminates the duplicative margin */
+/* } */
 
-.formPlaceholder .js-t4form-container .form-group.list-options .fieldValue:last-of-type {
-    margin-bottom: 0;
-    /* same class gets applied to form group wrapper and the list items. this eliminates the duplicative margin */
-}
+/* .formPlaceholder .js-t4form-container .form-group.list-options .fieldValue:last-of-type {
+    margin-bottom: 0; */
+/* same class gets applied to form group wrapper and the list items. this eliminates the duplicative margin */
+/* } */
 
-.formPlaceholder .js-t4form-container .control-label {
-    /* labels on all elements*/
-    border: 0;
+/* .formPlaceholder .js-t4form-container .control-label { */
+/* labels on all elements*/
+/* border: 0;
     font-weight: 500;
     font-size: 1.6rem;
     margin-bottom: 0;
-}
+} */
 
-.formPlaceholder .js-t4form-container .js-choice-label {
+/* .formPlaceholder .js-t4form-container .js-choice-label {
     font-weight: 500;
 }
 
@@ -5925,49 +5925,49 @@ ul.arrowLinks a:focus {
 .formPlaceholder form {
     font-family: "Montserrat", sans-serif;
     font-size: 1.4rem;
-}
+}  */
 
-.formPlaceholder form h2 {
-    /* identical to standard content */
-    color: #aa0000;
+/* .formPlaceholder form h2 { */
+/* identical to standard content */
+/* color: #aa0000;
     clear: both;
     font-family: "Roboto Slab", serif;
     font-size: 3.2rem;
     font-weight: 400;
     margin: 30px 0 3px 0;
-}
+} */
 
-.formPlaceholder form h3 {
-    /* identical to standard content */
-    color: #aa0000;
+/* .formPlaceholder form h3 { */
+/* identical to standard content */
+/* color: #aa0000;
     font-size: 1.953rem;
     xfont-weight: 400;
     margin: 3rem 0 0 0;
-}
+} */
 
-.formPlaceholder form h4 {
-    /* identical to standard content */
-    color: #aa0000;
+/* .formPlaceholder form h4 { */
+/* identical to standard content */
+/* color: #aa0000;
     font-size: 1.8rem;
     margin: 8px 0 3px 0;
-}
+} */
 
-.formPlaceholder form h5 {
-    /* identical to standard content */
-    color: #aa0000;
+/* .formPlaceholder form h5 { */
+/* identical to standard content */
+/* color: #aa0000;
     font-size: 1.4rem;
     font-weight: 700;
     margin: 8px 0 3px 0;
-}
+} */
 
-.formPlaceholder .form-group input[type="text"],
+/* .formPlaceholder .form-group input[type="text"],
 .formPlaceholder .form-group input[type="email"],
 .formPlaceholder .form-group select,
-.formPlaceholder .form-group textarea {
-    /*-webkit-appearance: none;
+.formPlaceholder .form-group textarea { */
+/*-webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; Removed on 1/29/18 by Max, made dropdown labels go away*/
-    background-color: #f7f7f7 !important;
+/* background-color: #f7f7f7 !important;
     border-radius: 0px !important;
     box-shadow: none;
     color: #333333;
@@ -5976,19 +5976,18 @@ ul.arrowLinks a:focus {
     line-height: 2rem;
     height: inherit;
     padding: 10px;
-}
+} */
 
-.formPlaceholder form textarea {
+/* .formPlaceholder form textarea {
     max-width: 100%;
     max-height: 100%
-}
+} */
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
     .formPlaceholder form .field-row {
         margin-bottom: 30px;
         margin-top: 15px
     }
-
     .formPlaceholder form .field-row:last-child {
         margin-bottom: 0
     }
@@ -6041,12 +6040,12 @@ input[type="file"]:focus {
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(1, 169, 197, 0.6);
-}
+} */
 
 
 /* when an error is detected on the forms, e.g. when a required field is empty */
 
-.formPlaceholder .js-t4form-container .has-error .help-block,
+/* .formPlaceholder .js-t4form-container .has-error .help-block,
 .formPlaceholder .js-t4form-container .has-error .control-label,
 .formPlaceholder .js-t4form-container .has-error .radio,
 .formPlaceholder .js-t4form-container .has-error .checkbox,
@@ -6063,7 +6062,7 @@ input[type="file"]:focus {
     color: #aa0000;
 }
 
-@import url("https://us.formbank.us/client/public/css/bootstrap-datetimepicker.css");
+@import url("https://us.formbank.us/client/public/css/bootstrap-datetimepicker.css"); */
 
 /* added 10-11-18 by Jason */
 
@@ -6081,7 +6080,7 @@ input[type="file"]:focus {
 
 /* used for Google site search on Search page*/
 
-#MainZone .searchAreaWrapper .searchArea table td {
+/* #MainZone .searchAreaWrapper .searchArea table td {
     padding: 0;
     border: none;
 }
@@ -6096,22 +6095,22 @@ input[type="file"]:focus {
 
 #MainZone .searchAreaWrapper .gsc-input-box {
     height: 4rem;
-}
+} */
 
-#MainZone .searchAreaWrapper .gsc-above-wrapper-area {
-    /* wrapper for "About xxx results in xx seconds" */
-    border: 0;
+/* #MainZone .searchAreaWrapper .gsc-above-wrapper-area { */
+/* wrapper for "About xxx results in xx seconds" */
+/* border: 0;
     padding: 0;
-}
+} */
 
-#MainZone .searchAreaWrapper .gsc-result-info {
-    /* "About xxx results in xx seconds" text */
-    font-size: 1.4rem;
+/* #MainZone .searchAreaWrapper .gsc-result-info { */
+/* "About xxx results in xx seconds" text */
+/* font-size: 1.4rem;
     font-weight: 400;
     padding: 0;
-}
+} */
 
-#MainZone .searchAreaWrapper .gsc-control-cse {
+/* #MainZone .searchAreaWrapper .gsc-control-cse {
     font-family: "Montserrat", sans-serif;
     border: 0;
     background-color: inherit;
@@ -6134,9 +6133,9 @@ input[type="file"]:focus {
 
 #MainZone .searchAreaWrapper .gsc-table-result {
     font-family: "Montserrat", sans-serif;
-}
+} */
 
-#MainZone .searchAreaWrapper a.gs-title,
+/* #MainZone .searchAreaWrapper a.gs-title,
 #MainZone .searchAreaWrapper a.gs-title b {
     font-weight: 700;
     color: #aa0000;
@@ -6180,9 +6179,9 @@ input[type="file"]:focus {
     text-decoration: none;
     transition: all 0.2s ease;
     width: 3rem;
-}
+} */
 
-#MainZone .searchAreaWrapper .gsc-results .gsc-cursor-box .gsc-cursor-page:hover,
+/* #MainZone .searchAreaWrapper .gsc-results .gsc-cursor-box .gsc-cursor-page:hover,
 #MainZone .searchAreaWrapper .gsc-results .gsc-cursor-box .gsc-cursor-page:focus {
     background: #f7f7f7;
     border-radius: 50%;
@@ -6223,15 +6222,15 @@ input[type="file"]:focus {
     font-size: 2rem;
     line-height: calc(4rem - 2px);
     padding: 0 1rem !important;
-}
+} */
 
-.searchAreaWrapper .gsc-input input:active {
-    /*border: 1px solid #aa0000;*/
-    border: none;
+/* .searchAreaWrapper .gsc-input input:active { */
+/*border: 1px solid #aa0000;*/
+/* border: none;
     height: 24px;
-}
+} */
 
-.searchAreaWrapper .gsc-input input::placeholder {
+/* .searchAreaWrapper .gsc-input input::placeholder {
     padding: 10px;
     font-size: 1.6rem;
     color: #595959;
@@ -6258,7 +6257,7 @@ form.search-box {
     width: calc(100% - 40px);
     float: left;
     padding: 30px 0;
-}
+} */
 
 
 /* table.gsc-search-box td {
@@ -6266,7 +6265,7 @@ form.search-box {
     background: #aa0000!important;
 } */
 
-#googleSearchBox .gsc-input-box {
+/* #googleSearchBox .gsc-input-box {
     border: 0px solid #aa0000;
     background: transparent;
 }
@@ -6313,7 +6312,7 @@ form.search-box {
         width: 90%;
         margin: 20px auto;
     }
-}
+} */
 
 
 /* ==========================================================================================
