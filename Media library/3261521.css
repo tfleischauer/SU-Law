@@ -7683,7 +7683,7 @@ form.search-box {
    20220113 -vic
 */
 
-.jumbotron1 h2,
+/* .jumbotron1 h2,
 .jumbotron1 h2 a,
 .jumbotron1 h2 a:visited {
     text-decoration: none;
@@ -7713,7 +7713,7 @@ form.search-box {
 .jumbotron1Image img {
     width: 100%;
     margin-top: 8px;
-}
+} */
 
 .jumbotron1 ul.boxlinks {
     display: flex;
@@ -7735,18 +7735,18 @@ form.search-box {
     width: auto;
 }
 
-.jumbotron .boxlinks li:before {
+/* .jumbotron .boxlinks li:before {
     content: none;
 }
 
 .jumbotron1 .boxlinks p {
     clear: both;
-}
+} */
 
 .jumbotron1 .boxlinks li a {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     width: 225px;
 }
 
@@ -7766,24 +7766,24 @@ form.search-box {
 
 /* xs: full-width image on top, text below */
 
-.jumbotron3Wrapper {
+/* .jumbotron3Wrapper {
     padding: 0
-}
+} */
 
 
 /* container for .jumbotron3Image and .jumbotron3Text */
 
-.jumbotron3 {
+/* .jumbotron3 {
     display: flex;
     flex-direction: column;
     padding: 0 0 55px 0;
     background-color: #f7f7f7;
-}
+} */
 
 
 /* Jumbotron III text */
 
-.jumbotron3Wrapper .jumbotron3Text {
+/* .jumbotron3Wrapper .jumbotron3Text {
     top: 0;
     left: 0 !important;
     right: 0;
@@ -7803,12 +7803,12 @@ form.search-box {
 .jumbotron3Wrapper .jumbotron3Text h2 {
     margin: 15px 0 15px 0;
     text-align: left;
-}
+} */
 
 
 /* ? */
 
-.jumbotron3 h2 a:focus,
+/* .jumbotron3 h2 a:focus,
 .jumbotron3 h1 a:hover {
     text-decoration: underline;
 }
@@ -7818,12 +7818,12 @@ form.search-box {
     margin: 10px 0;
     padding: 0;
     text-transform: uppercase;
-}
+} */
 
 
 /* Boxlinks */
 
-#MainZone .jumbotron3Wrapper .boxlinks li {
+/* #MainZone .jumbotron3Wrapper .boxlinks li {
     margin: 15px 0 0 0;
 }
 
@@ -7833,16 +7833,16 @@ form.search-box {
 
 .jumbotron3Text.standardContent.no-line {
     border-top: none;
-}
+} */
 
 
 /* Image */
 
-.jumbotron3Wrapper .jumbotron3Image {
+/* .jumbotron3Wrapper .jumbotron3Image {
     background-position: center;
     background-size: cover;
     width: 100%;
-}
+} */
 
 
 /*** MEDIA QUERY ***/
@@ -7850,57 +7850,50 @@ form.search-box {
 
 /* Small devices (tablets, 768px and up) */
 
-@media screen and (min-width:768px) {
-
-    /* Jumbotron III picture on card effect */
-    /* default is image on left, and the text on the right */
-    /* alignmentleft means text is on the left, image is on the right */
-    .jumbotron3 {
+/* @media screen and (min-width:768px) { */
+/* Jumbotron III picture on card effect */
+/* default is image on left, and the text on the right */
+/* alignmentleft means text is on the left, image is on the right */
+/* .jumbotron3 {
         flex-direction: row-reverse;
         background-color: #ffffff;
-    }
-
-    /* alignmentright means text on right, image on left */
-    .jumbotron3.alignmentright {
+    } */
+/* alignmentright means text on right, image on left */
+/* .jumbotron3.alignmentright {
         flex-direction: row;
     }
-
     .jumbotron3Wrapper {
         margin-top: 55px;
-    }
-
-    .jumbotron3Wrapper .jumbotron3Text {
-        margin-top: 40px;
-        /* removes background from above text area */
-        padding: 60px;
-        /* places text in center of text area */
-    }
-
-    /* text is on left side of Jumbotron III */
-    .jumbotron3Wrapper .alignmentleft .jumbotron3Text h2,
+    } */
+/* .jumbotron3Wrapper .jumbotron3Text {
+        /* margin-top: 40px; */
+/* removes background from above text area */
+/* padding: 60px; */
+/* places text in center of text area */
+/* } */
+/* text is on left side of Jumbotron III */
+/* .jumbotron3Wrapper .alignmentleft .jumbotron3Text h2,
     .jumbotron3Wrapper .alignmentleft .jumbotron3Text p,
     .jumbotron3Wrapper .alignmentleft .jumbotron3Text ul {
         padding-left: 4%;
-    }
-
-    .jumbotron3Wrapper .alignmentleft .jumbotron3Image {
-        border: 0;
+    } */
+/* .jumbotron3Wrapper .alignmentleft .jumbotron3Image { */
+/* border: 0;
         border-bottom: 40px;
-        border-style: solid;
-        /* add a little gray box below that makes it look like the content is sitting under the image by 40px*/
-        border-image: linear-gradient(to right, rgba(247, 247, 247, 1) 0%, rgba(247, 247, 247, 1) 40px, #ffffff 40px, #ffffff 100%);
-        border-image-slice: 1;
-    }
-
-    .jumbotron3Wrapper .alignmentright .jumbotron3Image {
-        border: 0;
+        border-style: solid; */
+/* add a little gray box below that makes it look like the content is sitting under the image by 40px*/
+/* border-image: linear-gradient(to right, rgba(247, 247, 247, 1) 0%, rgba(247, 247, 247, 1) 40px, #ffffff 40px, #ffffff 100%);
+        border-image-slice: 1; */
+/* } */
+/* .jumbotron3Wrapper .alignmentright .jumbotron3Image { */
+/* border: 0;
         border-bottom: 40px;
-        border-style: solid;
-        /* add a little gray box below that makes it look like the content is sitting under the image by 40px*/
-        border-image: linear-gradient(to left, rgba(247, 247, 247, 1) 0%, rgba(247, 247, 247, 1) 40px, #ffffff 40px, #ffffff 100%);
-        border-image-slice: 1;
-    }
-}
+        border-style: solid; */
+/* add a little gray box below that makes it look like the content is sitting under the image by 40px*/
+/* border-image: linear-gradient(to left, rgba(247, 247, 247, 1) 0%, rgba(247, 247, 247, 1) 40px, #ffffff 40px, #ffffff 100%);
+        border-image-slice: 1; */
+/* } */
+/* } */
 
 
 /* ==========================================================================================
