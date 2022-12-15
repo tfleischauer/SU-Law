@@ -8244,7 +8244,7 @@ div#pageContent.row #Mainzone {
 
 /* News story fulltext layout. Added by Troy 5/1/2021 */
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -8275,17 +8275,17 @@ figure figcaption span.image-credit {
     display: block;
     font-size: .875rem;
     font-style: italic;
-}
+} */
 
 .newsroomArticleBody .articleText.standardContent p {
     font-size: 1.4rem;
     line-height: 1.428571429;
-    color: #333;
-    font-weight: 400;
-    max-width: 60ch;
+    /* color: #333; */
+    /* font-weight: 400;
+    max-width: 60ch; */
 }
 
-.icon-text {
+/* .icon-text {
     display: none;
 }
 
@@ -8307,12 +8307,12 @@ li.nav-item a.nav-link .icon {
 li.nav-item a.nav-link .icon:hover {
     padding-left: 0;
     transform: translateY(-5px);
-}
+} */
 
 
 /* Small devices (landscape phones, 576px and up) */
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
     .icon-text {
         display: unset;
         margin-left: .5em;
@@ -8321,12 +8321,10 @@ li.nav-item a.nav-link .icon:hover {
         text-decoration: none;
         position: relative;
     }
-
     .icon-text {
         text-decoration: none;
         position: relative;
     }
-
     .icon-text::after {
         content: "";
         position: absolute;
@@ -8339,48 +8337,45 @@ li.nav-item a.nav-link .icon:hover {
         transform-origin: right;
         transition: transform 300ms ease-in;
     }
-
     .icon-text:hover::after {
         transform: scaleX(1);
         transform-origin: left;
     }
-
     ul.list-inline.lower-social-icons li,
     ul.upper-social-icons li {
         margin-right: 6rem;
     }
-
     li.nav-item a.nav-link .icon:hover {
         transform: unset;
     }
-}
+} */
 
 
 /* Medium devices (tablets, 768px and up) */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     ul.upper-social-icons li {
         margin-right: 0;
     }
-}
+} */
 
 
 /* Large devices (desktops, 992px and up) */
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
     .icon-text {
         font-size: 1rem;
     }
-}
+} */
 
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 
-@media (min-width: 1400px) {
+/* @media (min-width: 1400px) {
     .social a.nav-link {
         padding-left: initial;
     }
-}
+} */
 
 
 /* ========================================================================================== 
