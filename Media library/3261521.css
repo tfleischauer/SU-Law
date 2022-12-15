@@ -8409,15 +8409,17 @@ li.nav-item a.nav-link .icon:hover {
 
 .primaryContent {}
 
-@media (min-width: 768px) .primaryContentWrapper {
-    padding: 0 !important;
-    /* Overwrite styles from ? */
+/* Overwrite styles from ? */
+@media (min-width: 768px) {
+    .primaryContentWrapper {
+        padding: 0 !important;
+    }
 }
 
 
 /* CSS for image captions (Used for floating images in news stories). Added by Troy 5/1/2021 */
 
-.standardContent figure.image-wrapper {
+/* .standardContent figure.image-wrapper {
     display: inline-block;
     padding: 15px 20px 5px 0;
 }
@@ -8431,27 +8433,25 @@ li.nav-item a.nav-link .icon:hover {
 
 .standardContent figure.image-wrapper img {
     padding: 0;
-}
+} */
 
 
 /* Large mobile devices (425px and up) */
 
-@media (min-width: 425px) {
+/* @media (min-width: 425px) {
     .standardContent figure.image-wrapper {
         display: inline-block;
         padding: 15px 25px 10px 25px;
     }
-
     .standardContent figure.image-wrapper.float-left {
         float: left;
         padding-left: 0;
     }
-
     .standardContent figure.image-wrapper.float-right {
         float: right;
         padding-right: 0;
     }
-}
+} */
 
 
 /* ==========================================================================================
@@ -8463,13 +8463,13 @@ li.nav-item a.nav-link .icon:hover {
 
 .quicklinksWrapper {}
 
-@media (max-width:1199.999px) {
+/* @media (max-width:1199.999px) {
     #zoneC .quicklinksWrapper {
         padding: 15px 0;
     }
-}
+} */
 
-.quicklinks h2.quicklinksTitle {
+/* .quicklinks h2.quicklinksTitle {
     clear: both;
     color: #aa0000;
     xfont-family: "Roboto Slab", serif;
@@ -8490,14 +8490,14 @@ li.nav-item a.nav-link .icon:hover {
 #zoneC .quicklinks ul {
     border-top: 1px solid #088099;
     padding: 5px 0 5px 20px;
-}
+} */
 
 
 /*#SidebarZone .quicklinks ul {
   border-left: 1px solid #088099;
 } */
 
-.quicklinks ul {
+/* .quicklinks ul {
     list-style-type: none;
     position: relative;
     padding: .5rem 0 .5rem 0;
@@ -8546,7 +8546,7 @@ li.nav-item a.nav-link .icon:hover {
     border: 2px solid #088099;
     color: #ffffff;
     text-decoration: underline;
-}
+} */
 
 .standardContent .quicklinks ul li::before {
     font-family: unset;
@@ -8570,7 +8570,7 @@ li.nav-item a.nav-link .icon:hover {
 
 .quoteBoxWrapper {}
 
-.quoteBox {
+/* .quoteBox {
     background-color: #088099;
     color: #ffffff;
     position: relative;
@@ -8650,21 +8650,21 @@ li.nav-item a.nav-link .icon:hover {
 .quoteBox .closing {
     bottom: 12px;
     right: 15px;
-}
+} */
 
-.quoteBox p {
-    /* ::REQUIRED:: actual quote, sans the source or other information */
-    color: #ffffff;
+/* .quoteBox p { */
+/* ::REQUIRED:: actual quote, sans the source or other information */
+/* color: #ffffff;
     font-size: 1.8em;
     line-height: 2;
     padding: 30px;
     margin: 0;
     min-height: 65px;
     position: relative;
-    z-index: 2;
-}
+    z-index: 2; */
+/* } */
 
-.quoteBoxGold p,
+/* .quoteBoxGold p,
 .quoteBoxGreen p,
 .quoteBoxWhite p {
     color: #333333;
@@ -8675,21 +8675,21 @@ li.nav-item a.nav-link .icon:hover {
     font-weight: 300;
     padding: 0 30px 30px 30px;
     display: block;
-}
+} */
 
-.quoteBox cite .quoteSource {
-    /* ::REQUIRED:: source of the quote, sans other information */
-    display: block;
+/* .quoteBox cite .quoteSource { */
+/* ::REQUIRED:: source of the quote, sans other information */
+/* display: block;
     font-size: 2.2rem;
-    line-height: 1.5;
-}
+    line-height: 1.5; */
+/* } */
 
-.quoteBox cite .quoteAffiliation {
+/* .quoteBox cite .quoteAffiliation {
     display: block;
     font-size: 1.8rem;
     line-height: 1.5;
     padding-top: 1rem;
-}
+} */
 
 
 /* ==========================================================================================
@@ -8701,7 +8701,7 @@ li.nav-item a.nav-link .icon:hover {
 
 .socialMediaIconsWrapper {}
 
-#MainZone .socialMediaIcons {
+/* #MainZone .socialMediaIcons {
     padding: 0 25px 25px;
 }
 
@@ -8724,27 +8724,27 @@ li.nav-item a.nav-link .icon:hover {
 
 #SidebarZone .socialMediaIconsText h2 {
     font-size: 1.8rem;
-}
+} */
 
-.socialMediaIconsWrapper ul.socialMediaIconsList {
-    display: -webkit-flex;
+/* .socialMediaIconsWrapper ul.socialMediaIconsList { */
+/* display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: row;
-    /* works with row or column */
-    flex-direction: row;
+    -webkit-flex-direction: row; */
+/* works with row or column */
+/* flex-direction: row;
     -webkit-align-items: center;
     align-items: center;
     -webkit-justify-content: center;
     flex-flow: row wrap;
     justify-content: center;
     list-style-type: none;
-    padding: 0;
-}
+    padding: 0; */
+/* } */
 
 
 /* colors below are unique to the branded of the respective social media channels */
 
-.socialMediaIconsWrapper .themeDefault li.iconFacebook a {
+/* .socialMediaIconsWrapper .themeDefault li.iconFacebook a {
     color: #3B5998;
 }
 
@@ -8839,7 +8839,7 @@ li.nav-item a.nav-link .icon:hover {
 
 .socialMediaIconsWrapper .fa-stack {
     transition: all .2s ease-in-out;
-}
+} */
 
 
 /* ============================================================================
