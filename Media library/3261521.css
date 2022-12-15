@@ -7903,7 +7903,7 @@ form.search-box {
    Last revised 9/30/19 by Jason   
 */
 
-.jumpLinksWrapper {
+/* .jumpLinksWrapper {
     xmargin-bottom: 60px;
     overflow: auto;
     padding: 30px;
@@ -7942,12 +7942,12 @@ form.search-box {
 .jumpLinksWrapper ol li a:hover {
     color: #088099;
     text-decoration: underline;
-}
+} */
 
 
 /* hack to fix jump link issue */
 
-a:not([href]) {
+/* a:not([href]) {
     display: block;
     position: relative;
     top: -167px;
@@ -7958,7 +7958,7 @@ a:not([href]) {
     a:not([href]) {
         top: 0px;
     }
-}
+} */
 
 
 /* ==========================================================================================
@@ -7967,49 +7967,49 @@ a:not([href]) {
    Banner with 2 layouts, one for the section on which it's hosted and a second that's inherited
 */
 
-.imageBanner {
-    background: #088099;
-    /* Old browsers */
-    background: radial-gradient(ellipse at center, #088099 20%, #065666 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    background-position: left center;
-    /* could be overriden by content item */
-    background-repeat: no-repeat;
+/* .imageBanner { */
+/* background: #088099; */
+/* Old browsers */
+/* background: radial-gradient(ellipse at center, #088099 20%, #065666 100%); */
+/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/* background-position: left center; */
+/* could be overriden by content item */
+/* background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
-    /* could be overriden by content item */
-    display: flex;
+    height: 300px; */
+/* could be overriden by content item */
+/* display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
-}
+    position: relative; */
+/* } */
 
-.imageBannerOverlay {
-    height: 300px;
-    /* could be overriden by content item */
-    left: 0;
+/* .imageBannerOverlay { */
+/* height: 300px; */
+/* could be overriden by content item */
+/* left: 0;
     width: 100%;
     position: absolute;
     top: 0;
-    z-index: 1;
-}
+    z-index: 1; */
+/* } */
 
-.imageBanner h1,
-.imageBannerWrapper+h1 {
-    width: 100%;
+/* .imageBanner h1,
+.imageBannerWrapper+h1 { */
+/* width: 100%;
     color: #ffffff;
     font-family: "Montserrat", sans-serif;
     font-size: 5rem;
     font-weight: 300;
     margin: 0;
-    text-align: center;
-    /* Ingeniux */
-    text-shadow: 2px 2px 1px #000, -1px -1px 1px #000;
-}
+    text-align: center; */
+/* Ingeniux */
+/* text-shadow: 2px 2px 1px #000, -1px -1px 1px #000; */
+/* } */
 
-.BannerZone {
+/* .BannerZone {
     position: relative;
-}
+} */
 
 div#BannerZone.row {
     margin-left: 0;
@@ -8036,7 +8036,7 @@ div#pageContent.row #Mainzone {
     margin-right: 0;
 }
 
-.imageBannerCenterIntroText {
+/* .imageBannerCenterIntroText {
     max-width: 1400px;
     margin: auto;
     padding: 2vw;
@@ -8051,32 +8051,30 @@ div#pageContent.row #Mainzone {
     color: #ffffff;
     width: 100%;
     text-align: center;
-}
+} */
 
-@media screen and (max-width: 767.999px) {
-
-    /* xs */
-    .imageBanner .copy .imageBannerText h1 {
+/* @media screen and (max-width: 767.999px) { */
+/* xs */
+/* .imageBanner .copy .imageBannerText h1 {
         font-size: 3.5rem;
-    }
-}
+    } */
+/* } */
 
-.imageBanner .copy .imageBannerText h1 .topLevelSection,
+/* .imageBanner .copy .imageBannerText h1 .topLevelSection,
 .imageBanner .copy .imageBannerText h1 span {
     color: #333333;
     display: block;
     font-size: 1.6rem;
-}
+} */
 
-@media (max-width: 767.999px) {
-
+/* @media (max-width: 767.999px) {
     .imageBanner .copy .imageBannerText h1 .topLevelSection,
     .imageBanner .copy .imageBannerText h1 span {
         font-size: 1.4rem;
     }
-}
+} */
 
-.imageBannerIntro {
+/* .imageBannerIntro {
     font-weight: 300;
     padding: 4.5em 0 3em 0;
     text-align: center;
@@ -8105,41 +8103,37 @@ div#pageContent.row #Mainzone {
 .imageBannerIntro a:hover,
 .imageBannerIntro a:focus {
     color: #aa0000;
-}
+} */
 
-@media (max-width: 767.999px) {
+/* @media (max-width: 767.999px) {
     .imageBanner {
         background-position: top center;
         height: 300px;
     }
-
     .imageBanner .imageBannerText {
         padding: 25px 15px;
     }
-
     .imageBanner .imageBannerText h2 {
         font-size: 2.3rem;
     }
-
     .imageBannerIntro h5 {
         font-size: 2.3em;
     }
-
     .imageBannerIntro p {
         font-size: 1.4rem;
     }
-}
+} */
 
-.imageBannerBreadcrumbs {
-    color: #ffffff;
+/* .imageBannerBreadcrumbs { */
+/* color: #ffffff;
     text-align: center;
     font-size: 2rem;
     line-height: 1;
-    text-shadow: 1px 1px 2px #000;
-    /* Ingeniux */
-}
+    text-shadow: 1px 1px 2px #000; */
+/* Ingeniux */
+/* } */
 
-.imageBannerBreadcrumbs a {
+/* .imageBannerBreadcrumbs a {
     color: #ffffff;
     text-decoration: none;
 }
@@ -8148,13 +8142,13 @@ div#pageContent.row #Mainzone {
 .imageBannerBreadcrumbs a:hover {
     color: #fdb913;
     text-decoration: underline;
-}
+} */
 
-@media(min-width:992px) {
+/* @media(min-width:992px) {
     .imageBannerCenterIntroText {
         padding: 0;
     }
-}
+} */
 
 
 /* ==========================================================================================
