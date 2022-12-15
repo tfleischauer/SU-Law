@@ -9196,7 +9196,7 @@ li.nav-item a.nav-link .icon:hover {
    Last revised 3/19/15 by Jason 
 */
 
-.testimonialBox {
+/* .testimonialBox {
     margin-bottom: 60px;
 }
 
@@ -9250,7 +9250,7 @@ li.nav-item a.nav-link .icon:hover {
     font-style: italic;
     line-height: 1.2;
     padding-top: 2px;
-}
+} */
 
 
 /* ========================================================================================== 
@@ -9260,7 +9260,7 @@ li.nav-item a.nav-link .icon:hover {
    Last revised 11/3/17 by Jason 
 */
 
-.twitterTitle {
+/* .twitterTitle {
     background: #ffffff;
 }
 
@@ -9286,7 +9286,7 @@ li.nav-item a.nav-link .icon:hover {
 .twitterTitle a:hover {
     color: #aa0000;
     text-decoration: none;
-}
+} */
 
 
 /* ========================================================================================== 
@@ -9637,7 +9637,7 @@ body.videopage {
    Last revised 9/9/19 by Jason
 */
 
-.videoWrapper {
+/* .videoWrapper {
     margin-bottom: 15px;
     position: relative;
 }
@@ -9706,7 +9706,7 @@ body.videopage {
 .video a .play-button:hover {
     color: #333333;
     text-shadow: 0 0 10px #ffffff;
-}
+} */
 
 
 /* ======== */
@@ -9717,7 +9717,7 @@ body.videopage {
 
 /*=====To Right of Image=====*/
 
-.carouselImageWrapper.rightImage .carouselFlexContainer {
+/* .carouselImageWrapper.rightImage .carouselFlexContainer {
     display: flex;
     height: 100%;
     align-items: stretch;
@@ -9743,12 +9743,12 @@ body.videopage {
 
 .carouselImageWrapper.rightImage .carouselImageCaption p {
     color: #333;
-}
+} */
 
 
 /*=====To Left of Image=====*/
 
-.carouselImageWrapper.leftImage .carouselFlexContainer {
+/* .carouselImageWrapper.leftImage .carouselFlexContainer {
     display: flex;
     height: 100%;
     align-items: stretch;
@@ -9773,12 +9773,12 @@ body.videopage {
 
 .carouselImageWrapper.leftImage .carouselImageCaption p {
     color: #333;
-}
+} */
 
 
 /*=====Above Image=====*/
 
-.carouselImageWrapper.aboveImage .carouselFlexContainer {
+/* .carouselImageWrapper.aboveImage .carouselFlexContainer {
     display: grid;
 }
 
@@ -9799,12 +9799,12 @@ body.videopage {
 
 .carouselImageWrapper.aboveImage .carouselImageCaption p {
     color: #333;
-}
+} */
 
 
 /*=====Below Image=====*/
 
-.carouselImageWrapper.belowImage .carouselFlexContainer {
+/* .carouselImageWrapper.belowImage .carouselFlexContainer {
     display: grid;
 }
 
@@ -9825,7 +9825,7 @@ body.videopage {
 
 .carouselImageWrapper.belowImage .carouselImageCaption p {
     color: #333;
-}
+} */
 
 
 /* what is all this -----------------------------------------------*/
