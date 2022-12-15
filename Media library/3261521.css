@@ -6321,38 +6321,38 @@ form.search-box {
    Last edited 10/24/19 by Steve   
 */
 
-.imageBoxWrapper {
+/* .imageBoxWrapper {
     background: #f7f7f7;
     padding: 30px;
-}
+} */
 
-.imageBoxWrapper .imageBoxes {
-    display: flex;
-    justify-content: space-between;
-    /* Tricia's styles */
-    /* align-items: stretch;
+/* .imageBoxWrapper .imageBoxes { */
+/* display: flex;
+    justify-content: space-between; */
+/* Tricia's styles */
+/* align-items: stretch;
    flex: 1 1 0;
    padding: 0;
    margin: 0 15px 0 15px;
    background-color: #f7f7f7;*/
-    flex-basis: 25%;
-}
+/* flex-basis: 25%; */
+/* } */
 
-.imageBoxWrapper .imageBox {
+/* .imageBoxWrapper .imageBox {
     align-items: stretch;
     background-color: #ffffff;
     flex: 1 1 0;
-    margin: 0 7px;
-    /* padding: 0 15px 0 15px; */
-}
+    margin: 0 7px; */
+/* padding: 0 15px 0 15px; */
+/* } */
 
-.imageBoxWrapper .imageBox a {
+/* .imageBoxWrapper .imageBox a {
     display: block;
     text-decoration: none;
     transition: all 0.2s ease;
-}
+} */
 
-.imageBoxWrapper .imageBox a:focus,
+/* .imageBoxWrapper .imageBox a:focus,
 .imageBoxWrapper .imageBox a:hover {
     box-shadow: 0 0 15px #333333;
 }
@@ -6370,9 +6370,9 @@ form.search-box {
     padding: 30px 15px;
     xfont-weight: 500;
     max-width: 70ch;
-}
+} */
 
-.imageBoxWrapper .imageBoxImage img {
+/* .imageBoxWrapper .imageBoxImage img {
     min-width: 100%;
     padding: 0;
     transition: all 0.2s ease;
@@ -6404,15 +6404,13 @@ form.search-box {
 
 .imageBoxLegend {
     padding-bottom: 20px;
-}
+} */
 
-@media screen and (min-width: 768px) and (max-width: 1199.999px) {
-
-    /* sm + md */
-    #MainZone .imageBoxWrapper .imageBox {
+/* @media screen and (min-width: 768px) and (max-width: 1199.999px) { */
+/* sm + md */
+/* #MainZone .imageBoxWrapper .imageBox {
         flex-wrap: wrap;
     }
-
     #MainZone.col-sm-12 .imageBoxWrapper .imageBoxLayout12 .imageBox,
     #MainZone.col-md-12 .imageBoxWrapper .imageBoxLayout12 .imageBox,
     #MainZone.col-sm-9 .imageBoxWrapper .imageBoxLayout12 .imageBox,
@@ -6421,7 +6419,6 @@ form.search-box {
     #MainZone.col-md-6 .imageBoxWrapper .imageBoxLayout12 .imageBox {
         flex-basis: calc(50% - 7px);
     }
-
     #MainZone.col-sm-12 .imageBoxWrapper .imageBoxLayout123 .imageBox,
     #MainZone.col-md-12 .imageBoxWrapper .imageBoxLayout123 .imageBox,
     #MainZone.col-sm-9 .imageBoxWrapper .imageBoxLayout123 .imageBox,
@@ -6430,35 +6427,30 @@ form.search-box {
     #MainZone.col-md-6 .imageBoxWrapper .imageBoxLayout123 .imageBox {
         flex-basis: calc(33% - 7px);
     }
-
     #MainZone.col-sm-12 .imageBoxWrapper .imageBoxLayout1234 .imageBox,
     #MainZone.col-md-12 .imageBoxWrapper .imageBoxLayout1234 .imageBox,
     #MainZone.col-md-9 .imageBoxWrapper .imageBoxLayout1234 .imageBox {
         flex-basis: calc(25% - 7px);
     }
-
     #MainZone.col-sm-9 .imageBoxWrapper .imageBoxLayout1234 .imageBox,
     #MainZone.col-sm-6 .imageBoxWrapper .imageBoxLayout1234 .imageBox,
     #MainZone.col-md-6 .imageBoxWrapper .imageBoxLayout1234 .imageBox {
         flex-basis: calc(50% - 7px);
-    }
-}
+    } */
+/* } */
 
-@media screen and (max-width: 767.999px) {
-
-    /* xs */
-    .imageBoxWrapper .imageBoxes {
+/* @media screen and (max-width: 767.999px) { */
+/* xs */
+/* .imageBoxWrapper .imageBoxes {
         display: block;
     }
-
     .imageBoxWrapper .imageBox {
         margin: 30px 0 0 0;
     }
-
     .imageBoxWrapper .imageBox .standardContent {
         padding: 0;
     }
-}
+} */
 
 
 /* ==========================================================================================
@@ -7012,7 +7004,7 @@ form.search-box {
 
 */
 
-.infographic {
+/* .infographic {
     background-color: #ffffff;
     border: none;
     display: -webkit-box;
@@ -7037,9 +7029,9 @@ form.search-box {
 #SidebarZone .infographic .infographicItem .infographicItemHeader,
 #zoneC .infographic .infographicItem .infographicItemHeader {
     padding: 0;
-}
+} */
 
-@media (max-width: 767.98px) {
+/* @media (max-width: 767.98px) {
     .infographic {
         display: block;
     }
@@ -7098,7 +7090,7 @@ form.search-box {
 .infographicItemButton {
     bottom: 15px;
     display: block;
-}
+} */
 
 
 /* Icon Infographic */
@@ -7218,13 +7210,13 @@ form.search-box {
 
 /* color options */
 
-.infographic .color {
-    /* base styles, also is "white" */
-    background-color: #f7f7f7;
+/* .infographic .color { */
+/* base styles, also is "white" */
+/* background-color: #f7f7f7;
     color: #333333;
-}
+} */
 
-.infographic .colorRed {
+/* .infographic .colorRed {
     background-color: #aa0000;
 }
 
@@ -7506,12 +7498,12 @@ form.search-box {
 
 .infographic .colorWhite .infographicItemText p {
     color: #333333;
-}
+} */
 
 
 /* icon options */
 
-.infographicItemIcon .fa {
+/* .infographicItemIcon .fa {
     line-height: 80px;
     position: relative;
 }
@@ -7539,7 +7531,7 @@ form.search-box {
 
 .infographicItemIcon .fa-trophy {
     font-size: 70px;
-}
+} */
 
 .iconInfographic .infographicItemIcon .fa-trophy {
     font-size: 50px;
@@ -7552,7 +7544,7 @@ form.search-box {
 
 /*Homepage Infographic custom CSS, potential for reuse */
 
-.infographicHomepageLarge,
+/* .infographicHomepageLarge,
 .infographicHomepageSmall {
     background-repeat: no-repeat;
     background-size: cover;
@@ -7610,7 +7602,7 @@ form.search-box {
 
 .infographicColorBlack {
     background-color: #333333;
-}
+} */
 
 @media screen and (min-width: 1400px) {
     #MainZone.col-lg-8 .imageInfographic .infographicItemHeader p {
