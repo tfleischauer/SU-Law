@@ -9848,26 +9848,25 @@ body.videopage {
     width: 100%;
 }
 
-.accordionWrapper dl {
-    /* accordion tweak */
-    margin-bottom: 0px;
-}
+/* .accordionWrapper dl { */
+/* accordion tweak */
+/* margin-bottom: 0px;
+} */
 
 .primaryContentWrapper .primaryContent> :first-child {
     margin-top: 30px;
 }
 
-@media screen and (max-width: 767.999px) {
-
+/* @media screen and (max-width: 767.999px) {
     /* xs */
-    .BannerZoneWrapper {
-        /*Margin???*/
-        /* Apply to zone and not content */
-        margin-bottom: 15px;
-    }
-}
+/* .BannerZoneWrapper { */
+/*Margin???*/
+/* Apply to zone and not content */
+/* margin-bottom: 15px; */
+/* } */
+/* } */
 
-.floating-sidebar {
+/* .floating-sidebar {
     position: fixed;
     margin-left: 95%;
     z-index: 200;
@@ -9876,9 +9875,9 @@ body.videopage {
     margin-top: 100px;
     transition: 0.4s;
     transition-timing-function: ease;
-}
+} */
 
-.floating-sidebar .sidebar-item li {
+/* .floating-sidebar .sidebar-item li {
     list-style-type: none;
     background: #333333;
     text-align: center;
@@ -9886,9 +9885,9 @@ body.videopage {
     height: 100px;
     padding-bottom: 10px;
     border-bottom: 1px solid #ffffff;
-}
+} */
 
-.floating-sidebar .sidebar-item:last-child li {
+/* .floating-sidebar .sidebar-item:last-child li {
     border-bottom: none;
 }
 
@@ -9963,7 +9962,7 @@ body.videopage {
 }
 
 .programWrapper .program-img-left {
-    background: linear-gradient(rgba(72, 195, 211, 0.7), rgba(72, 195, 211, 0.7)), url(../assets/cityinred19.jpg);
+    background: linear-gradient( rgba(72, 195, 211, 0.7), rgba(72, 195, 211, 0.7)), url(../assets/cityinred19.jpg);
 }
 
 .programWrapper .program-img-right {
@@ -9978,19 +9977,19 @@ body.videopage {
     margin-top: 5%;
     background-color: #ffffff;
     padding: 50px 100px 20px 100px;
-}
+} */
 
-.program-title {
-    color: #a80108;
-    clear: both;
-    /* acts as a clearing element */
-    font-family: "Montserrat", sans-serif;
+/* .program-title { */
+/* color: #a80108; */
+/* clear: both; */
+/* acts as a clearing element */
+/* font-family: "Montserrat", sans-serif;
     font-size: 3.7rem;
     font-weight: 520;
     margin: 30px 0 22px -3px;
-}
+} */
 
-.program-text {
+/* .program-text {
     font-size: 1.6rem;
     line-height: 3.2rem;
 }
@@ -10009,7 +10008,7 @@ body.videopage {
     font-size: .85rem;
     padding-right: 1.1225em;
     position: relative;
-}
+} */
 
 .spotlightCopyCitation.red-border-side {
     border-left: 4px solid #f03f35;
@@ -10022,7 +10021,7 @@ body.videopage {
     }
 }
 
-.red-border-top {
+/* .red-border-top {
     border-top: 4px solid #f03f35;
     height: 25px;
     position: relative;
@@ -10049,22 +10048,23 @@ body.videopage {
     position: relative;
     width: 100%;
     height: 400px;
-    background: linear-gradient(rgba(4, 174, 199, 0.8), rgba(4, 174, 199, 0.8)), url(../assets/cityinred19.jpg);
-}
+    background: linear-gradient( rgba(4, 174, 199, 0.8), rgba(4, 174, 199, 0.8)), url(../assets/cityinred19.jpg);
+} */
 
-.scolarship-title {
-    color: #ffffff;
-    clear: both;
-    /* acts as a clearing element */
-    font-family: "Montserrat", sans-serif;
+/* .scolarship-title {
+    /* color: #ffffff; */
+/* clear: both; */
+/* acts as a clearing element */
+/* font-family: "Montserrat", sans-serif;
     font-size: 3.7rem;
     font-weight: 500;
     text-align: center;
     padding-top: 10%;
-    padding-bottom: 50px;
+    padding-bottom: 50px; */
 }
 
-.boxlinkItem.alt-boxlink a {
+*/
+/* .boxlinkItem.alt-boxlink a {
     border: 2px solid #ffffff;
     color: #ffffff;
     padding: 22px 0;
@@ -10185,14 +10185,14 @@ body.videopage {
 .standardContent.publications .selector-bar {
     text-align: center;
     margin-bottom: 23px;
-}
+} */
 
-.standardContent.publications:hover {
-    /*border: none;*/
-    --box-shadow-color: #ff0000;
-}
+/* .standardContent.publications:hover { */
+/*border: none;*/
+/* --box-shadow-color: #ff0000; */
+/* } */
 
-.standardContent.publications .selector-bar a {
+/* .standardContent.publications .selector-bar a {
     font-variant: small-caps;
     text-decoration: none;
     font-weight: 550;
@@ -10209,25 +10209,25 @@ body.videopage {
 
 .standardContent.publications .selector-bar a:hover {
     color: #05a0be;
-}
+} */
 
-.standardContent.bio-card {
-    height: 600px;
-    padding-top: 150px;
-    /* Delete below this line depending on styles */
-    background-color: #ffff;
+/* .standardContent.bio-card { */
+/* height: 600px; */
+/* padding-top: 150px; */
+/* Delete below this line depending on styles */
+/* background-color: #ffff;
     background-position: center;
-    max-width: 1400px;
-}
+    max-width: 1400px; */
+/* } */
 
-@media screen and (max-width: 767.999px) {
+/* @media screen and (max-width: 767.999px) {
     .standardContent.bio-card {
         height: 600px;
         background-position-x: right;
         background-position-y: center;
         background-size: cover;
     }
-}
+} */
 
 
 /* ========================================================================================== 
@@ -10386,22 +10386,22 @@ body.facultyProfileFulltext #pageContentWrapper .row {
 
 /* START Faculty Profile Breadcrumbs */
 
-nav#breadcrumbs.facultyProfileBreadcrumbs {
+/* nav#breadcrumbs.facultyProfileBreadcrumbs {
     margin-top: 1.25em;
-}
+} */
 
-#breadcrumbs.facultyProfileBreadcrumbs ol li:last-child {
-    font-weight: 700;
-    /* darken the faculty member's name */
-    color: #000000;
-}
+/* #breadcrumbs.facultyProfileBreadcrumbs ol li:last-child { */
+/* font-weight: 700; */
+/* darken the faculty member's name */
+/* color: #000000; */
+/* } */
 
 
 /* Don't increase the font-weight of the last right angel (>) symbol. */
 
-#breadcrumbs.facultyProfileBreadcrumbs ol li:last-child::before {
+/* #breadcrumbs.facultyProfileBreadcrumbs ol li:last-child::before {
     font-weight: initial;
-}
+} */
 
 
 /* END Faculty Profile Breadcrumbs */
@@ -10409,7 +10409,7 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 
 /* START Image, Name, Title, Contact Info, CV, Twitter Handle section */
 
-.facultyProfileTop {
+/* .facultyProfileTop {
     background-color: #f7f7f7;
     padding: 50px 0 50px 0;
 }
@@ -10420,21 +10420,21 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
     width: 100%;
     height: auto;
     margin-bottom: 3em;
-}
+} */
 
 
 /* Centers photo, title, room, phone, and email at widths under 768px */
 
-.facultyProfileWrapper .facultyProfilePicture,
+/* .facultyProfileWrapper .facultyProfilePicture,
 .facultyProfileTitles,
 .facultyProfileInfo {
     text-align: center;
-}
+} */
 
 
 /* Faculty member name */
 
-.facultyProfileInfo h1 {
+/* .facultyProfileInfo h1 {
     text-align: center;
     font-size: 4em;
     margin-bottom: .5em;
@@ -10447,7 +10447,7 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 
 .facultyProfileTwitter {
     width: 100%;
-}
+} */
 
 .facultyProfileWrapper .facultyProfileEmail {
     color: #088099;
@@ -10472,7 +10472,7 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 
 /* START Faculty Profile Sidebar */
 
-.facultyProfileSidebar h3 {
+/* .facultyProfileSidebar h3 {
     font-weight: 600;
     font-family: "Montserrat", sans-serif;
 }
@@ -10487,14 +10487,14 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 .primary-profile-sidebar h3,
 .primary-profile-sidebar p {
     color: #ffffff;
-}
+} */
 
-.primary-profile-sidebar ul li:before {
-    color: #ffffff;
-    /* bullet color on blue background */
-}
+/* .primary-profile-sidebar ul li:before { */
+/* color: #ffffff; */
+/* bullet color on blue background */
+/* } */
 
-.secondary-profile-sidebar {
+/* .secondary-profile-sidebar {
     padding: 25px;
     border: solid 3px #088099;
     color: #333333;
@@ -10503,7 +10503,7 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 
 .secondary-profile-sidebar h3 {
     color: #333333;
-}
+} */
 
 
 /* END Faculty Profile Sidebar */
@@ -10511,68 +10511,59 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 
 /* Biography, Publications, and Activity headlines */
 
-.primaryProfileContent h2 {
+/* .primaryProfileContent h2 {
     font-size: 2.4rem;
-}
+} */
 
 
 /* Medium devices (tablets, 768px and up) */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .facultyProfileInfo h1 {
         font-size: 4.5rem;
     }
-
     .primaryProfileContent h2 {
         font-size: 2.75rem;
     }
-}
+} */
 
 
 /* Large devices (desktops, 992px and up) */
 
-@media (min-width: 992px) {
-
-    /* Left align name, title, room, phone, and email */
-    .facultyProfileInfo h1,
+/* @media (min-width: 992px) { */
+/* Left align name, title, room, phone, and email */
+/* .facultyProfileInfo h1,
     .facultyProfileTitles,
     .facultyProfileInfo {
         text-align: left;
-    }
-
-    .facultyProfileWrapper .facultyProfilePicture {
-        text-align: left;
-        max-width: fit-content;
-        /* Reduces unneeded column width from Bootstrap default */
-    }
-
-    .facultyProfileWrapper .facultyProfilePicture img {
+    } */
+/* .facultyProfileWrapper .facultyProfilePicture { */
+/* text-align: left;
+        max-width: fit-content; */
+/* Reduces unneeded column width from Bootstrap default */
+/* } */
+/* .facultyProfileWrapper .facultyProfilePicture img {
         max-width: 260px;
-    }
-
-    .facultyProfileCV {
+    } */
+/* .facultyProfileCV {
         width: 50%;
         margin-bottom: revert;
     }
-
     .facultyProfileTwitter {
         width: 50%;
-    }
-
-    /* Adds a gap between the CV and Twitter boxlinks 
+    } */
+/* Adds a gap between the CV and Twitter boxlinks 
   depending on if either or both are used. */
-    .cv-twitter:nth-child(1) {
+/* .cv-twitter:nth-child(1) {
         margin-right: .75rem;
     }
-
     .cv-twitter:nth-child(2) {
         margin-left: .75rem;
     }
-
     .facultyProfileBiography {
         max-width: 95%;
-    }
-}
+    } */
+/* } */
 
 
 /*** END Fulltext Layout ***/
