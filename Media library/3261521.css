@@ -10586,19 +10586,19 @@ body.facultyProfileFulltext #pageContentWrapper .row {
    Needs #MainZone to display:flex;
 */
 
-.flexContainer {
-    background: #ffffff;
+/* .flexContainer {
+    /* background: #ffffff;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: stretch;
-    /* makes all flex items equal to the longest item */
-}
+    align-items: stretch; */
+/* makes all flex items equal to the longest item */
+/* } */
 
 
 /* Flexbox item */
 
-.studentProfileWrapper {
+/* .studentProfileWrapper {
     background: #f7f7f7;
     width: 262px;
     margin: 15px;
@@ -10614,7 +10614,7 @@ body.facultyProfileFulltext #pageContentWrapper .row {
     margin-top: 0;
     margin-bottom: 20px;
     font-size: 2.3rem;
-}
+} */
 
 
 /* END Text-HTML layout styles */
@@ -10622,7 +10622,7 @@ body.facultyProfileFulltext #pageContentWrapper .row {
 
 /* START full-text layout styles */
 
-.profile-header {
+/* .profile-header {
     background-color: hsl(0, 0%, 98%);
 }
 
@@ -10646,7 +10646,7 @@ body.facultyProfileFulltext #pageContentWrapper .row {
 
 .studentProfileInfo p.studentProfileGraduatingClass {
     line-height: 1.25 !important;
-}
+} */
 
 
 /* END full-text layout styles */
@@ -10654,7 +10654,7 @@ body.facultyProfileFulltext #pageContentWrapper .row {
 
 /* ===== END Law - Student Profile  ===== Content Type #5192 ============================== */
 
-.standardContent.bio-card .bio-links i {
+/* .standardContent.bio-card .bio-links i {
     padding-right: 10px;
 }
 
@@ -10671,7 +10671,7 @@ body.facultyProfileFulltext #pageContentWrapper .row {
 .standardContent.news .news-post {
     padding: 50px 0 40px 15px;
     border-bottom: 1px solid #6f6f6f;
-}
+} */
 
 
 /* .standardContent.publications .data .entry,
@@ -10685,15 +10685,15 @@ body.facultyProfileFulltext #pageContentWrapper .row {
   color: #a70200;
 }*/
 
-.standardContent.publications .data .entry:hover {
-    border-bottom: none;
+/* .standardContent.publications .data .entry:hover { */
+/* border-bottom: none;
     background-color: #fff;
-    --box-shadow-color: #000;
-    /* Declaring the variable */
-    box-shadow: 1px 1px 7px var(--box-shadow-color);
-}
+    --box-shadow-color: #000; */
+/* Declaring the variable */
+/* box-shadow: 1px 1px 7px var(--box-shadow-color); */
+/* } */
 
-.standardContent.publications .data .entry-title h2,
+/* .standardContent.publications .data .entry-title h2,
 .standardContent.news .news-post .news-title h2 {
     color: #272727;
     font-weight: 500;
@@ -10851,12 +10851,12 @@ body.facultyProfileFulltext #pageContentWrapper .row {
     background-image: url(../assets/cityinred19.jpg);
     display: block;
     height: 600px;
-}
+} */
 
 
 /* Library Search Bar Styles */
 
-p.libForm {
+/* p.libForm {
     border-color: #333333;
     border-width: 0px;
     font-family: "Montserrat", sans-serif;
@@ -11119,7 +11119,7 @@ span.go {
     display: block;
     width: 95%;
     margin: 0 auto;
-}
+} */
 
 
 /* #primoQueryTemp {
@@ -11158,7 +11158,7 @@ span.go {
     }
 } */
 
-.search-icon {
+/* .search-icon {
     color: rgb(255, 255, 255);
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
@@ -11185,7 +11185,7 @@ span.go {
 
 div.row.Row1 {
     margin-bottom: 0px;
-}
+} */
 
 /*** GLOBAL BANNER ALERT ***/
 
