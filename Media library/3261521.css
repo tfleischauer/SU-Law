@@ -67,18 +67,17 @@ body {
     line-height: 1.45;
     margin: 0; */
     /* for the fixed header */
-    padding-top: 152px;
+    /* padding-top: 152px; */
     min-width: auto;
     /* prevents overflow of long strings in mobile views */
 }
 
-@media screen and (max-width: 991.98px) {
-
-    /* xs + sm */
-    body {
+/* @media screen and (max-width: 991.98px) { */
+/* xs + sm */
+/* body {
         padding-top: 0px;
-    }
-}
+    } */
+/* } */
 
 /* #pageContentWrapper {
     padding-bottom: 1px;
@@ -11365,7 +11364,6 @@ div.row.Row1 {
     color: #aa0000;
     text-decoration: underline;
 }
-
 
 
 /* *********************************************************
