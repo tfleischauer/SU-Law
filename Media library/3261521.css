@@ -5365,7 +5365,7 @@ article.tripleColumn a:hover {
     color: #f7f7f7;
 } */
 
-.focusBoxWrapper .colorSUBlack .focusBoxContent a:hover {
+/* .focusBoxWrapper .colorSUBlack .focusBoxContent a:hover {
     color: #aa0000;
 }
 
@@ -5375,7 +5375,7 @@ article.tripleColumn a:hover {
 
 .focusBoxWrapper .colorSUBlack .focusBoxContent a:focus {
     color: #aa0000;
-}
+} */
 
 /* .focusBoxWrapper .colorBlue { */
 /* Blue */
@@ -5402,7 +5402,7 @@ article.tripleColumn a:hover {
     color: #ffffff;
 } */
 
-.focusBoxWrapper .colorBlue .focusBoxContent a:visited {
+/* .focusBoxWrapper .colorBlue .focusBoxContent a:visited {
     color: #f7f7f7;
 }
 
@@ -5416,7 +5416,7 @@ article.tripleColumn a:hover {
 
 .focusBoxWrapper .colorBlue .focusBoxContent a:focus {
     color: #aa0000;
-}
+} */
 
 /* .focusBoxWrapper .colorNavyBlue { */
 /* Navy Blue */
@@ -5482,7 +5482,7 @@ article.tripleColumn a:hover {
     color: #ffffff;
 } */
 
-.focusBoxWrapper .colorTaupeBrown .focusBoxContent a:visited {
+/* .focusBoxWrapper .colorTaupeBrown .focusBoxContent a:visited {
     color: #f7f7f7;
 }
 
@@ -5496,7 +5496,7 @@ article.tripleColumn a:hover {
 
 .focusBoxWrapper .colorTaupeBrown .focusBoxContent a:focus {
     color: #aa0000;
-}
+} */
 
 /* .focusBoxWrapper .colorEmerald { */
 /* Emerald */
@@ -5682,7 +5682,7 @@ article.tripleColumn a:hover {
     color: #ffffff;
 }  */
 
-.focusBoxWrapper .colorSURed .focusBoxContent a:visited {
+/* .focusBoxWrapper .colorSURed .focusBoxContent a:visited {
     color: #f7f7f7;
 }
 
@@ -5696,14 +5696,14 @@ article.tripleColumn a:hover {
 
 .focusBoxWrapper .colorSURed .focusBoxContent a:focus {
     color: #cc9f26;
-}
+} */
 
 /* .focusBoxWrapper .colorRedOrange { */
 /* Red Orange */
 /* background-color: #ef4135;
 } */
 
-.focusBoxWrapper .colorRedOrange .focusBoxContent p,
+/* .focusBoxWrapper .colorRedOrange .focusBoxContent p,
 .focusBoxWrapper .colorRedOrange .focusBoxContent h1,
 .focusBoxWrapper .colorRedOrange .focusBoxContent h2,
 .focusBoxWrapper .colorRedOrange .focusBoxContent h3,
@@ -5737,7 +5737,7 @@ article.tripleColumn a:hover {
 
 .focusBoxWrapper .colorRedOrange .focusBoxContent a:focus {
     color: #cc9f26;
-}
+} */
 
 /* .focusBoxWrapper .colorWhite { */
 /* White */
