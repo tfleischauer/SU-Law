@@ -1021,22 +1021,22 @@ h5 {
 /* line-height: 1;
 } */
 
-.standardContent h2 {
-    /* major headings */
-    /* color: #aa0000; */
-    /* clear: both; */
-    /* acts as a clearing element */
-    /* font-family: "Montserrat", sans-serif;
+/* .standardContent h2 { */
+/* major headings */
+/* color: #aa0000; */
+/* clear: both; */
+/* acts as a clearing element */
+/* font-family: "Montserrat", sans-serif;
     xfont-family: "Oswald", "Montserrat", sans-serif;
     xfont-size: 2.8rem;
     font-weight: 495;
     xmargin: 30px 0 22px -0;
     xfont-size: 3.157rem;
     xfont-size: 2.441rem; */
-    /* Major scale */
-    font-size: var(--h2);
-    /* margin-bottom: .5rem; */
-}
+/* Major scale */
+/* font-size: var(--h2); */
+/* margin-bottom: .5rem; */
+/* } */
 
 /* .standardContent h2 a { */
 /* links in major headings */
@@ -1050,9 +1050,9 @@ h5 {
     color: #333333;
 } */
 
-.standardContent h3 {
-    /* minor headings */
-    /* color: #aa0000;
+/* .standardContent h3 { */
+/* minor headings */
+/* color: #aa0000;
     xfont-family: "Roboto Slab", sans-serif;
     xfont-family: "Oswald", "Montserrat", sans-serif;
     font-family: "Montserrat", sans-serif;
@@ -1062,10 +1062,10 @@ h5 {
     xmargin: 15px 0 3px 0;
     xfont-size: 2.369rem;
     xfont-size: 1.953rem; */
-    /* Major scale */
-    font-size: 1.75rem;
-    /* margin-bottom: .3rem; */
-}
+/* Major scale */
+/* font-size: 1.75rem; */
+/* margin-bottom: .3rem; */
+/* } */
 
 /* .standardContent h3 a { */
 /* links in minor headings */
@@ -1122,16 +1122,16 @@ h5 {
     text-decoration: underline;
 } */
 
-.standardContent h6 {
-    /* H6s should be disabled. But just in case... */
-    /* color: #333333;
+/* .standardContent h6 { */
+/* H6s should be disabled. But just in case... */
+/* color: #333333;
     xfont-family: "Roboto Slab", serif;
     xfont-family: "Oswald", "Montserrat", sans-serif;
     font-family: "Montserrat", sans-serif;
     xfont-size: 1.6rem;
     xline-height: 2; */
-    text-decoration: none;
-}
+/* text-decoration: none; */
+/* } */
 
 /* .standardContent h6 a:hover,
 .standardContent h6 a:focus {
