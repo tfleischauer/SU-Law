@@ -2589,28 +2589,28 @@ svg.arrow.circle.navy {
     padding-right: 45px;
 } */
 
-.accordionWrapper h2.accordionTitle {
-    /* color: #aa0000; */
-    font-family: 'Montserrat', sans-serif;
-    font-size: var(--h2);
-    /* font-weight: 500; */
-    margin: 65px 0 22px 0;
-    text-align: center;
-    /* clear: both; */
-}
+/* .accordionWrapper h2.accordionTitle { */
+/* color: #aa0000; */
+/* font-family: 'Montserrat', sans-serif; */
+/* font-size: var(--h2); */
+/* font-weight: 500; */
+/* margin: 65px 0 22px 0; */
+/* text-align: center; */
+/* clear: both; */
+/* } */
 
 /* .accordionWrapper h2.accordionTitle:not(:first-of-type) {
     margin-top: 80px;
 } */
 
-.accordionWrapper .accordionDescription p {
-    /* color: #333333;
+/* .accordionWrapper .accordionDescription p { */
+/* color: #333333;
     font-size: 1.2rem;
     line-height: 1.5; */
-    margin-bottom: 1.6rem;
-    /* font-weight: 500;
+/* margin-bottom: 1.6rem; */
+/* font-weight: 500;
     text-align: left; */
-}
+/* } */
 
 /* .accordionTitle.standardContent {
     padding-left: 0 !important;
@@ -2632,9 +2632,9 @@ svg.arrow.circle.navy {
     outline: none;
 } */
 
-.accordionItemHeader.accordion-header a:hover {
+/* .accordionItemHeader.accordion-header a:hover {
     outline: none;
-}
+} */
 
 /* .accordionItemHeader.accordion-header a:focus {
     outline: none;
@@ -2644,22 +2644,22 @@ svg.arrow.circle.navy {
     outline: none;
 } */
 
-.accordionWrapper .accordionItemHeaderButton {
-    /* height: auto;
+/* .accordionWrapper .accordionItemHeaderButton { */
+/* height: auto;
     display: flex;
     align-items: center;
     text-decoration: none; */
-    padding: 30px 0;
-}
+/* padding: 30px 0; */
+/* } */
 
-.accordionWrapper h3.accordionItemHeaderButtonTitle {
-    /* color: #088099; */
-    font-family: "Montserrat", sans-serif;
+/* .accordionWrapper h3.accordionItemHeaderButtonTitle { */
+/* color: #088099; */
+/* font-family: "Montserrat", sans-serif;
     font-size: 2.0rem;
-    font-weight: 500;
-    /* margin: 0;
+    font-weight: 500; */
+/* margin: 0;
     width: 100%; */
-}
+/* } */
 
 /* .accordionWrapper h3.accordionItemHeaderButtonTitle i {
     float: right;
