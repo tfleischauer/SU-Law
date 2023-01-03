@@ -8276,13 +8276,13 @@ figure figcaption span.image-credit {
     font-style: italic;
 } */
 
-.newsroomArticleBody .articleText.standardContent p {
-    font-size: 1.4rem;
-    line-height: 1.428571429;
-    /* color: #333; */
-    /* font-weight: 400;
+/* .newsroomArticleBody .articleText.standardContent p { */
+/* font-size: 1.4rem;
+    line-height: 1.428571429; */
+/* color: #333; */
+/* font-weight: 400;
     max-width: 60ch; */
-}
+/* } */
 
 /* .icon-text {
     display: none;
@@ -8404,16 +8404,16 @@ li.nav-item a.nav-link .icon:hover {
    Standard HTML block content in Main Zone
 */
 
-.primaryContentWrapper {}
+/* .primaryContentWrapper {}
 
-.primaryContent {}
+.primaryContent {} */
 
 /* Overwrite styles from ? */
-@media (min-width: 768px) {
-    .primaryContentWrapper {
-        padding: 0 !important;
-    }
-}
+/* @media (min-width: 768px) {
+  .primaryContentWrapper {
+    padding: 0 !important;
+  }
+} */
 
 
 /* CSS for image captions (Used for floating images in news stories). Added by Troy 5/1/2021 */
