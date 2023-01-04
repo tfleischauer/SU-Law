@@ -4443,6 +4443,62 @@ a.colorButton:active {
     }
 }
 
+/* ==========================================================================================
+   ===== Law - Card ===== Content Type #5224 ================================================
+   ==========================================================================================
+*/
+
+.cardGroupRowWrapper .card .card-body.standardContent a {
+    color: #088099;
+    text-decoration: none;
+}
+
+.cardGroupRowWrapper .card .card-body.standardContent a:hover {
+    color: #088099;
+    text-decoration: underline;
+}
+
+.cardGroupRowWrapper .card .card-body.standardContent a:focus {
+    color: #088099;
+    text-decoration: underline;
+}
+
+.cardGroupRowWrapper .card .card-body.standardContent a h3 {
+    color: #aa0000;
+    text-decoration: none;
+}
+
+.cardGroupRowWrapper .card .card-body.standardContent a:hover h3 {
+    color: #aa0000;
+    text-decoration: underline;
+}
+
+.cardGroupRowWrapper .card .card-body.standardContent a:focus h3 {
+    color: #aa0000;
+    text-decoration: underline;
+}
+
+.cardGroupRowWrapper .card .card-footer .standardContent a {
+    color: #088099;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.cardGroupRowWrapper .card .card-footer .standardContent a:hover {
+    color: #088099;
+    text-decoration: underline;
+}
+
+.cardGroupRowWrapper .card .card-footer .standardContent a:focus {
+    color: #088099;
+    text-decoration: underline;
+}
+
+.cardGroupRowWrapper .card-group>.card {
+    min-width: 250px;
+}
+
 
 /* ==========================================================================================
      ===== Law - Carousel ===== Content Type #5203 ============================================ 
@@ -4600,7 +4656,17 @@ a.colorButton:active {
 
 /* .carouselImageWrapper {
       display: none !important;
-  } */
+} */
+
+.carouselImageWrapper.carousel-item .card-body {
+    background-color: #f7f7f7;
+}
+
+.carouselImageWrapper.carousel-item .card-text {
+    color: #000000;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
 
 .carouselImageWrapper.slick-slide {
     display: block !important;
@@ -5147,13 +5213,29 @@ h2.contactBoxSingleTitle {
 }
 
 .contactBoxSingleInfo p {
-    margin: 0 0 1rem 0;
+    margin: 0 0 .25rem 0;
     padding-left: 0;
-    font-size: 1.2rem;
     /* fall back */
+    font-size: 1.2rem;
     font-size: var(--p);
     line-height: 1.5;
     color: unset !important;
+}
+
+.contactBoxSingleInfo a.contactPhone {
+    text-decoration: none;
+}
+
+.contactBoxSingleInfo a.contactPhone:hover {
+    text-decoration: underline;
+}
+
+.contactBoxSingleInfo a.contactPhone:active {
+    text-decoration: underline;
+}
+
+.contactBoxSingleInfo a.contactPhone:focus {
+    text-decoration: underline;
 }
 
 .contactBoxSingleInfoEmail a {
@@ -5164,6 +5246,22 @@ h2.contactBoxSingleTitle {
 .contactBoxSingleInfoEmail a:hover,
 .contactBoxSingleInfoEmail a:focus {
     color: #aa0000;
+    text-decoration: underline;
+}
+
+.contactBoxSingleInfoProfile a {
+    text-decoration: none;
+}
+
+.contactBoxSingleInfoProfile a:hover {
+    text-decoration: underline;
+}
+
+.contactBoxSingleInfoProfile a:active {
+    text-decoration: underline;
+}
+
+.contactBoxSingleInfoProfile a:focus {
     text-decoration: underline;
 }
 
@@ -9971,7 +10069,7 @@ article.columns-4 a:active {
     font-weight: 550;
 }
 
-*/ .learn-more-form {
+.learn-more-form {
     padding: 0 280px;
 }
 
