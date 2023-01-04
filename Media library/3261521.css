@@ -4985,9 +4985,9 @@ h2.contactBoxTitle {
 /* padding-bottom: 50px; */
 /* } */
 
-.dc-headline h2 {
+/* .dc-headline h2 {
     font-size: xxx-large;
-}
+} */
 
 
 /* END optional centered headline above dual columns */
@@ -5033,21 +5033,21 @@ h2.contactBoxTitle {
     text-decoration: none;
 } */
 
-article.tripleColumn a:hover {
-    color: #aa0000;
-    /* text-decoration: underline; */
-}
+/* article.tripleColumn a:hover { */
+/* color: #aa0000; */
+/* text-decoration: underline; */
+/* } */
 
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 
-@media (min-width: 1400px) {
-    .tc-headline h2 {
-        /* xfont-size: 4rem; */
-        font-size: xxx-large;
-        margin-bottom: .75em;
-    }
-}
+/* @media (min-width: 1400px) { */
+/* .tc-headline h2 { */
+/* xfont-size: 4rem; */
+/* font-size: xxx-large; */
+/* margin-bottom: .75em; */
+/* } */
+/* } */
 
 
 /* =========================================================================================
@@ -5055,7 +5055,7 @@ article.tripleColumn a:hover {
    =========================================================================================
 */
 
-.externshipWrapper {
+/* .externshipWrapper {
     background-color: #f7f7f7;
 }
 
@@ -5065,7 +5065,7 @@ article.tripleColumn a:hover {
 
 .externshipWrapper .card-body p {
     color: #000000;
-}
+} */
 
 
 /* =========================================================================================
@@ -5073,7 +5073,7 @@ article.tripleColumn a:hover {
    =========================================================================================
 */
 
-.externshipDescription {
+/* .externshipDescription {
     font-size: 1.2rem;
     font-weight: 500;
 }
@@ -5081,7 +5081,7 @@ article.tripleColumn a:hover {
 .externshipFulltext address span {
     font-size: 1rem;
     font-weight: 500;
-}
+} */
 
 
 /* ========================================================================================== 
@@ -5090,7 +5090,7 @@ article.tripleColumn a:hover {
    Feed from Facebook API
 */
 
-.facebookFeedWrapper {}
+/* .facebookFeedWrapper {} */
 
 
 /* ========================================================================================== 
@@ -5116,23 +5116,22 @@ article.tripleColumn a:hover {
    Last revised 08/20/18 by Aubrey   
 */
 
-.featuredCuratedEventsWrapper {
-    background: linear-gradient(rgba(8, 128, 153, 0.8), rgba(8, 128, 153, 0.8)), url(../assets/cityinred19.jpg);
+/* .featuredCuratedEventsWrapper {
+    background: linear-gradient( rgba(8, 128, 153, 0.8), rgba(8, 128, 153, 0.8)), url(../assets/cityinred19.jpg);
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
     padding: 60px;
-}
+} */
 
-@media screen and (max-width: 991.98px) {
-
-    /* xs + sm */
-    .featuredCuratedEventsWrapper {
+/* @media screen and (max-width: 991.98px) { */
+/* xs + sm */
+/* .featuredCuratedEventsWrapper {
         padding: 15px;
     }
-}
+} */
 
-.curatedEventsBoxRed {
+/* .curatedEventsBoxRed {
     background-color: #aa0000;
 }
 
@@ -5189,44 +5188,41 @@ article.tripleColumn a:hover {
     background: #ffffff;
     padding: 0;
     position: relative;
-}
+} */
 
-@media screen and (max-width: 991.98px) {
-
-    /* xs + sm */
-    .featuredCuratedEventsWrapper .curatedEventsList {
+/* @media screen and (max-width: 991.98px) { */
+/* xs + sm */
+/* .featuredCuratedEventsWrapper .curatedEventsList {
         display: inherit;
     }
-}
+} */
 
-.featuredCuratedEventsWrapper li.featuredCuratedEventItem {
+/* .featuredCuratedEventsWrapper li.featuredCuratedEventItem {
     background: #ffffff;
     display: flex;
     margin: 0 0 1px 0;
     padding: 1rem;
-    position: relative;
-    /* height: 200px; */
-}
+    position: relative; */
+/* height: 200px; */
+/* } */
 
-.featuredCuratedEventsWrapper li.featuredCuratedEventItem:before {
+/* .featuredCuratedEventsWrapper li.featuredCuratedEventItem:before {
     display: none;
-}
+} */
 
-@media screen and (max-width: 767.999px) {
-
-    /* xs */
-    .featuredCuratedEventsWrapper li.featuredCuratedEventItem {
+/* @media screen and (max-width: 767.999px) { */
+/* xs */
+/* .featuredCuratedEventsWrapper li.featuredCuratedEventItem {
         flex: 0 1 33%;
         flex-direction: column;
         padding: 30px 0;
     }
-
     .featuredCuratedEventsWrapper li.featuredCuratedEventItem .boxyDate {
         margin: 0 auto 15px;
     }
-}
+} */
 
-.featuredCuratedEventsWrapper li.featuredCuratedEventItem .boxyDate {
+/* .featuredCuratedEventsWrapper li.featuredCuratedEventItem .boxyDate {
     border: 3px solid #fdb913;
     min-width: 7rem;
     height: 7rem;
@@ -5234,16 +5230,16 @@ article.tripleColumn a:hover {
     text-align: center;
     color: #333333;
     padding: .75rem;
-}
+} */
 
-.featuredCuratedEventsWrapper li.featuredCuratedEventItem .boxyDate .bodyDateMonth {
+/* .featuredCuratedEventsWrapper li.featuredCuratedEventItem .boxyDate .bodyDateMonth {
     font-size: 2rem;
     font-family: Oswald, sans-serif;
     font-weight: 400;
     line-height: 2rem;
-}
+} */
 
-.featuredCuratedEventsWrapper li.featuredCuratedEventItem .boxyDate .bodyDateDay {
+/* .featuredCuratedEventsWrapper li.featuredCuratedEventItem .boxyDate .bodyDateDay {
     font-size: 3rem;
     font-weight: 400;
     line-height: 2rem;
@@ -5257,17 +5253,16 @@ article.tripleColumn a:hover {
     color: #333333;
     padding: 0 0.5rem;
     line-height: 2rem;
-}
+} */
 
-@media screen and (max-width: 767.999px) {
-
-    /* xs */
-    .featuredCuratedEventsWrapper li.featuredCuratedEventItem .eventInformation {
+/* @media screen and (max-width: 767.999px) { */
+/* xs */
+/* .featuredCuratedEventsWrapper li.featuredCuratedEventItem .eventInformation {
         text-align: center;
     }
-}
+} */
 
-.featuredCuratedEventsWrapper li.featuredCuratedEventItem .eventInformation .eventDateAndTime {
+/* .featuredCuratedEventsWrapper li.featuredCuratedEventItem .eventInformation .eventDateAndTime {
     font-size: 1.2rem;
     font-weight: 500;
 }
@@ -5275,9 +5270,9 @@ article.tripleColumn a:hover {
 .featuredCuratedEventsWrapper li.featuredCuratedEventItem .eventInformation .eventTitle {
     color: #aa0000;
     font-size: 1.2rem;
-}
+} */
 
-.featuredCuratedEventsWrapper li.featuredCuratedEventItem .eventInformation .eventTitle a {
+/* .featuredCuratedEventsWrapper li.featuredCuratedEventItem .eventInformation .eventTitle a {
     color: #aa0000;
     text-decoration: none;
 }
@@ -5293,7 +5288,7 @@ article.tripleColumn a:hover {
     line-height: 1.4em;
     text-align: center;
     font-weight: bold;
-}
+} */
 
 
 /* ==========================================================================================

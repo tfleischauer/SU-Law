@@ -5446,16 +5446,14 @@ h2.contactBoxSingleTitle {
 
 .dc-headline h2 {
     color: #aa0000;
-    /* Red */
-    xfont-size: 2.65rem;
     /* fall back */
-    xfont-size: var(--h2);
+    font-size: 2.65rem;
+    font-size: var(--h2);
     margin-bottom: 2.5rem;
 }
 
 .dc-headline h3 {
     color: #aa0000;
-    /* Red */
     margin-bottom: 0.5rem;
 }
 
@@ -5470,8 +5468,8 @@ h2.contactBoxSingleTitle {
     margin-top: 3rem !important;
     margin-bottom: 1rem !important;
     text-transform: uppercase;
-    font-size: 1.65rem;
     /* fall back */
+    font-size: 1.65rem;
     font-size: var(--h3);
     font-weight: 500;
 }
@@ -5493,7 +5491,6 @@ h3 .p-style-heading-white {
 
 article.dualColumn a:link {
     color: #088099;
-    /* Light Blue */
     text-decoration: none;
 }
 
@@ -5523,12 +5520,45 @@ article.dualColumn a:active {
     }
 }
 
+/* =========================================================================================
+   ===== Externships ===== Content Type #5304 ==========Organizer Layout==================== 
+   =========================================================================================
+*/
+
+.externshipWrapper {
+    background-color: #f7f7f7;
+}
+
+.externshipWrapper .card-title a {
+    color: #003282;
+}
+
+.externshipWrapper .card-body p {
+    color: #000000;
+}
+
+
+/* =========================================================================================
+   ===== Externships ===== Content Type #5304 ==========Fulltext Layout===================== 
+   =========================================================================================
+*/
+
+.externshipDescription {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.externshipFulltext address span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
 
 /* ========================================================================================== 
-     ===== Law - Facebook Feed ===== Content Type #5306 =======================================
-     ==========================================================================================
-     Feed from Facebook API
-  */
+   ===== Law - Facebook Feed ===== Content Type #5306 =======================================
+   ==========================================================================================
+   Feed from Facebook API
+*/
 
 
 /* ========================================================================================== 
@@ -5955,15 +5985,15 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 
 
 /* ==========================================================================================
-     ===== Featured Curated Events ===== Content Type #4911 =================================== 
-     ==========================================================================================
-     creates featured box for curated events in ZoneA, including options for an image 
-     background and color overlay
-     Last revised 20211129 vic 
-  */
+   ===== Featured Curated Events ===== Content Type #4911 =================================== 
+   ==========================================================================================
+   creates featured box for curated events in ZoneA, including options for an image 
+   background and color overlay
+   Last revised 20211129 vic 
+*/
 
 
-/* .featuredCuratedEventsWrapper {
+.featuredCuratedEventsWrapper {
     background: linear-gradient(rgba(8, 128, 153, 0.8), rgba(8, 128, 153, 0.8)), url(../assets/cityinred19.jpg);
     background-position: center;
     background-repeat: repeat;
@@ -6047,11 +6077,11 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
     margin: 0 0 1px 0;
     padding: 30px;
     position: relative;
-    height: 200px;
-} */
+    /* height: 200px; */
+}
 
 
-/* .featuredCuratedEventsWrapper li.featuredCuratedEventItem:before {
+.featuredCuratedEventsWrapper li.featuredCuratedEventItem:before {
     display: none;
 }
 
@@ -6061,6 +6091,7 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
         flex-direction: column;
         padding: 30px 0;
     }
+
     .featuredCuratedEventsWrapper li.featuredCuratedEventItem .boxyDate {
         margin: 0 auto 15px;
     }
@@ -6078,15 +6109,16 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 
 .featuredCuratedEventsWrapper li.featuredCuratedEventItem .boxyDate .bodyDateMonth {
     font-size: 2.2rem;
-    font-family: Oswald, sans-serif;
+    /* font-family: Oswald, sans-serif; */
     font-weight: 400;
-    line-height: 2rem;
+    line-height: 1;
 }
 
 .featuredCuratedEventsWrapper li.featuredCuratedEventItem .boxyDate .bodyDateDay {
-    font-size: 3.2rem;
+    /* font-size: 3rem; */
+    font-size: 2.2rem;
     font-weight: 400;
-    line-height: 2rem;
+    line-height: 1;
 }
 
 .featuredCuratedEventsWrapper li.featuredCuratedEventItem .eventInformation a:hover {
@@ -6095,8 +6127,9 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 
 .featuredCuratedEventsWrapper li.featuredCuratedEventItem .eventInformation {
     color: #333333;
-    padding: 0 30px;
-    line-height: 2rem;
+    /* padding: 0 30px; */
+    padding: 0 0.5rem;
+    line-height: 1.5;
 }
 
 @media screen and (max-width: 767.999px) {
@@ -6106,14 +6139,15 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 }
 
 .featuredCuratedEventsWrapper li.featuredCuratedEventItem .eventInformation .eventDateAndTime {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 500;
+    line-height: 1.5
 }
 
 .featuredCuratedEventsWrapper li.featuredCuratedEventItem .eventInformation .eventTitle {
     color: #aa0000;
-    xfont-size: 1.8rem;
     font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .featuredCuratedEventsWrapper li.featuredCuratedEventItem .eventInformation .eventTitle a {
@@ -6132,7 +6166,7 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
     line-height: 1.4em;
     text-align: center;
     font-weight: bold;
-} */
+}
 
 
 /* ==========================================================================================
@@ -9503,6 +9537,7 @@ article.tripleColumn a:active {
     }
 
     .tc-headline h2 {
+        font-size: xxx-large;
         margin-bottom: 2.5rem;
     }
 }
