@@ -9265,10 +9265,23 @@ li.nav-item a.nav-link .icon:hover {
 
 
 /* ========================================================================================== 
-     ===== Law - Organizer - Main Zone ===== Content Types: #5274 =============================
-     ==========================================================================================
-     Automatically sorts, paginates, and displays content of a given type from a given section 
-  */
+   ===== Law - Organizer - Main Zone ===== Content Types: #5274 =============================
+   ==========================================================================================
+   Automatically sorts, paginates, and displays content of a given type from a given section 
+*/
+
+/* .organizerWrapper {} */
+
+
+/* ========================================================================================== 
+   ===== Law - Masonry Organizer ===== Content Types: #5538 ================================= 
+   ==========================================================================================
+   Automatically sorts, paginates, and displays content in Mainzone with Masonry Grid
+*/
+
+.masonryOrganizerWrapper .organizerTitle h2 {
+    margin: 1.25rem 0;
+}
 
 
 /* ==========================================================================================
@@ -9342,11 +9355,13 @@ li.nav-item a.nav-link .icon:hover {
 
 
 /* ==========================================================================================
-     ===== Law - Quicklinks ===== Content Type #5185 ==========================================
-     ==========================================================================================
-     A list of up to nine links to a section, content, external source or media item with an optional header. Merged with #576.
+   ===== Law - Quicklinks ===== Content Type #5185 ==========================================
+   ==========================================================================================
+   A list of up to nine links to a section, content, external source or media item with an optional header. Merged with #576.
    
-  */
+*/
+
+/* .quicklinksWrapper {} */
 
 @media (max-width: 1199.999px) {
     #zoneC .quicklinksWrapper {
@@ -9427,6 +9442,17 @@ li.nav-item a.nav-link .icon:hover {
     text-decoration: underline;
 }
 
+.standardContent .quicklinks ul li::before {
+    font-family: unset;
+    font-size: unset;
+    content: "";
+    color: unset;
+    padding-right: unset;
+    display: none;
+    position: unset;
+    top: unset;
+}
+
 
 /* ========================================================================================== 
      ===== Law - Quote ===== Content Type #5199 =============================================== 
@@ -9435,6 +9461,8 @@ li.nav-item a.nav-link .icon:hover {
      Adapted from legacy Quotation Box in Ektron Feb 2016. Added color options and Zone A layout 2/8/17. Combined with #617
      Last revised 01/03/19 by Aubrey 
   */
+
+/* .quoteBoxWrapper {} */
 
 .quoteBox {
     background-color: #088099;
@@ -9564,6 +9592,8 @@ li.nav-item a.nav-link .icon:hover {
      Set of social media icons with links to user-specified account pages.
      Last revised 6/22/18 by Jason    
   */
+
+/* .socialMediaIconsWrapper {} */
 
 #MainZone .socialMediaIcons {
     padding: 0 25px 25px;
@@ -9706,12 +9736,350 @@ li.nav-item a.nav-link .icon:hover {
 }
 
 
-/* ==========================================================================================
-     ===== Law - Spotlight ===== Content Type #5201 ===========================================
-     ==========================================================================================
-     Migrated to base stylesheet
-     
-  */
+/* ============================================================================
+   ===== Law - Spotlight ===== Content Type #5201 =============================
+
+   ===== Law - Carousel Spotlight ===== Content Type #5607 ====================
+   ============================================================================
+   Photo with quote on color background. Carousel version requires
+   Law - Carousel while Base version is standalone Mainzone only
+   
+*/
+
+.spotlightWrapper h3 {
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.spotlightWrapper .spotlightCopy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.spotlightWrapper .spotlightCopyBody {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+}
+
+.spotlightWrapper .spotlightSource {
+    font-weight: bold;
+}
+
+.spotlightWrapper .spotlightCopyCitation {
+    font-size: 1rem;
+}
+
+.spotlightWrapper .spotlightImage {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.spotlightWrapper .spotlightImage img {
+    border: 10px solid transparent;
+    border-radius: 50%;
+    height: auto;
+    max-height: 300px;
+    max-width: 300px;
+    padding: 2rem;
+    position: relative;
+    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
+}
+
+@media screen and (max-width: 1199.999px) {
+
+    #MainZone .spotlightWrapper.contentItem:first-of-type,
+    #SidebarZone .spotlightWrapper.contentItem:first-of-type {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 991.99px) {
+    .spotlightWrapper .spotlight {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .spotlight {
+        display: flex;
+        min-height: 400px;
+    }
+}
+
+
+/*********************
+*
+*   Spotlight
+*   Palettes
+*
+**/
+
+.spotlightWrapper .spotlight {
+    background-color: #088099;
+}
+
+.spotlightWrapper .spotlightCopy h3 {
+    color: #ffffff;
+}
+
+.spotlightWrapper .spotlightCopyBody {
+    color: #ffffff;
+}
+
+.spotlightWrapper .spotlightBioLink {
+    color: #ffffff;
+}
+
+.spotlightWrapper .spotlightBioLink:hover {
+    color: #000000;
+}
+
+.spotlightWrapper .spotlightBioLink:active {
+    color: #000000;
+}
+
+
+/*********************
+*
+*   Spotlight
+*   color palettes
+*   light blue
+*
+**/
+
+.spotlightWrapper .spotlight.spotlightPaletteLightBlue {
+    background-color: #088099;
+}
+
+.spotlightWrapper .spotlightPaletteLightBlue .spotlightCopy h3 {
+    color: #ffffff;
+}
+
+.spotlightWrapper .spotlightPaletteLightBlue .spotlightCopyBody {
+    color: #ffffff;
+}
+
+.spotlightWrapper .spotlightPaletteLightBlue .spotlightBioLink {
+    color: #ffffff;
+}
+
+.spotlightWrapper .spotlightPaletteLightBlue .spotlightBioLink:hover {
+    color: #000000;
+}
+
+.spotlightWrapper .spotlightPaletteLightBlue .spotlightBioLink:active {
+    color: #000000;
+}
+
+
+/*********************
+*
+*   Spotlight
+*   color palettes
+*   red
+*
+**/
+
+.spotlightWrapper .spotlight.spotlightPaletteRedWhite {
+    background-color: #AA0000;
+}
+
+.spotlightWrapper .spotlightPaletteRedWhite .spotlightCopy h3 {
+    color: #ffffff;
+}
+
+.spotlightWrapper .spotlightPaletteRedWhite .spotlightCopyBody {
+    color: #ffffff;
+}
+
+.spotlightWrapper .spotlightPaletteRedWhite .spotlightBioLink {
+    color: #ffffff;
+}
+
+.spotlightWrapper .spotlightPaletteRedWhite .spotlightBioLink:hover {
+    color: #000000;
+}
+
+.spotlightWrapper .spotlightPaletteRedWhite .spotlightBioLink:active {
+    color: #000000;
+}
+
+
+/*********************
+*
+*   Spotlight
+*   color palettes
+*   navy
+*
+**/
+
+.spotlightWrapper .spotlight.spotlightPaletteNavyWhite {
+    background-color: #003282;
+}
+
+.spotlightWrapper .spotlightPaletteNavyWhite .spotlightCopy h3 {
+    color: #ffffff;
+}
+
+.spotlightWrapper .spotlightPaletteNavyWhite .spotlightCopyBody {
+    color: #ffffff;
+}
+
+.spotlightWrapper .spotlightPaletteNavyWhite .spotlightBioLink {
+    color: #ffffff;
+}
+
+.spotlightWrapper .spotlightPaletteNavyWhite .spotlightBioLink:hover {
+    color: #FDB913;
+}
+
+.spotlightWrapper .spotlightPaletteNavyWhite .spotlightBioLink:active {
+    color: #FDB913;
+}
+
+
+/*********************
+*
+*   Spotlight
+*   color palettes
+*   yellow tint
+*
+**/
+
+.spotlightWrapper .spotlight.spotlightPaletteYellowRedBlackNavy {
+    background-color: #f7f7f7;
+}
+
+.spotlightWrapper .spotlightPaletteYellowRedBlackNavy .spotlightCopy h3 {
+    color: #AA0000;
+}
+
+.spotlightWrapper .spotlightPaletteYellowRedBlackNavy .spotlightCopyBody {
+    color: #000000;
+}
+
+.spotlightWrapper .spotlightPaletteYellowRedBlackNavy .spotlightBioLink {
+    color: #003282;
+}
+
+.spotlightWrapper .spotlightPaletteYellowRedBlackNavy .spotlightBioLink:hover {
+    color: #000000;
+}
+
+.spotlightWrapper .spotlightPaletteYellowRedBlackNavy .spotlightBioLink:active {
+    color: #000000;
+}
+
+
+/*********************
+*
+*   Spotlight
+*   color palettes
+*   white
+*
+**/
+
+.spotlightWrapper .spotlight.spotlightPaletteWhiteRedBlackBlue {
+    background-color: #ffffff;
+}
+
+.spotlightWrapper .spotlightPaletteWhiteRedBlackBlue .spotlightCopy h3 {
+    color: #AA0000;
+}
+
+.spotlightWrapper .spotlightPaletteWhiteRedBlackBlue .spotlightCopyBody {
+    color: #000000;
+}
+
+.spotlightWrapper .spotlightPaletteWhiteRedBlackBlue .spotlightBioLink {
+    color: #088099;
+}
+
+.spotlightWrapper .spotlightPaletteWhiteRedBlackBlue .spotlightBioLink:hover {
+    color: #000000;
+}
+
+.spotlightWrapper .spotlightPaletteWhiteRedBlackBlue .spotlightBioLink:active {
+    color: #000000;
+}
+
+
+/*********************
+*
+*   Spotlight
+*   color palettes
+*   black yellow
+*
+**/
+
+.spotlightWrapper .spotlight.spotlightPaletteBlackWhiteYellow {
+    background-color: #000000;
+}
+
+.spotlightWrapper .spotlightPaletteBlackWhiteYellow .spotlightCopy h3 {
+    color: #ffffff;
+}
+
+.spotlightWrapper .spotlightPaletteBlackWhiteYellow .spotlightCopyBody {
+    color: #FDB913;
+}
+
+.spotlightWrapper .spotlightPaletteBlackWhiteYellow .spotlightBioLink {
+    color: #ffffff;
+}
+
+.spotlightWrapper .spotlightPaletteBlackWhiteYellow .spotlightBioLink:hover {
+    color: #FDB913;
+}
+
+.spotlightWrapper .spotlightPaletteBlackWhiteYellow .spotlightBioLink:active {
+    color: #FDB913;
+}
+
+
+/*********************
+*
+*   Spotlight
+*   color palettes
+*   black green
+*
+**/
+
+.spotlightWrapper .spotlight.spotlightPaletteBlackWhiteGreen {
+    background-color: #000000;
+}
+
+.spotlightWrapper .spotlightPaletteBlackWhiteGreen .spotlightCopy h3 {
+    color: #ffffff;
+}
+
+.spotlightWrapper .spotlightPaletteBlackWhiteGreen .spotlightCopyBody {
+    color: #55B31B;
+}
+
+.spotlightWrapper .spotlightPaletteBlackWhiteGreen .spotlightBioLink {
+    color: #ffffff;
+}
+
+.spotlightWrapper .spotlightPaletteBlackWhiteGreen .spotlightBioLink:hover {
+    color: #55B31B;
+}
+
+.spotlightWrapper .spotlightPaletteBlackWhiteGreen .spotlightBioLink:active {
+    color: #55B31B;
+}
 
 
 /* ========================================================================================== 

@@ -8321,9 +8321,9 @@ li.nav-item a.nav-link .icon:hover {
    Automatically sorts, paginates, and displays content in Mainzone with Masonry Grid
 */
 
-.masonryOrganizerWrapper .organizerTitle h2 {
+/* .masonryOrganizerWrapper .organizerTitle h2 {
     margin: 1.25rem 0;
-}
+} */
 
 
 /* ========================================================================================== 
@@ -8398,7 +8398,7 @@ li.nav-item a.nav-link .icon:hover {
  
 */
 
-.quicklinksWrapper {}
+/* .quicklinksWrapper {} */
 
 /* @media (max-width:1199.999px) {
     #zoneC .quicklinksWrapper {
@@ -8485,7 +8485,7 @@ li.nav-item a.nav-link .icon:hover {
     text-decoration: underline;
 } */
 
-.standardContent .quicklinks ul li::before {
+/* .standardContent .quicklinks ul li::before {
     font-family: unset;
     font-size: unset;
     content: "";
@@ -8494,7 +8494,7 @@ li.nav-item a.nav-link .icon:hover {
     display: none;
     position: unset;
     top: unset;
-}
+} */
 
 
 /* ========================================================================================== 
@@ -8505,7 +8505,7 @@ li.nav-item a.nav-link .icon:hover {
    Last revised 01/03/19 by Aubrey 
 */
 
-.quoteBoxWrapper {}
+/* .quoteBoxWrapper {} */
 
 /* .quoteBox {
     background-color: #088099;
@@ -8636,7 +8636,7 @@ li.nav-item a.nav-link .icon:hover {
    Last revised 6/22/18 by Jason    
 */
 
-.socialMediaIconsWrapper {}
+/* .socialMediaIconsWrapper {} */
 
 /* #MainZone .socialMediaIcons {
     padding: 0 25px 25px;
@@ -8789,7 +8789,7 @@ li.nav-item a.nav-link .icon:hover {
    
 */
 
-.spotlightWrapper h3 {
+/* .spotlightWrapper h3 {
     font-family: "Oswald", sans-serif;
     font-size: 2rem;
     margin-top: 0;
@@ -8841,7 +8841,6 @@ li.nav-item a.nav-link .icon:hover {
 }
 
 @media screen and (max-width: 1199.999px) {
-
     #MainZone .spotlightWrapper.contentItem:first-of-type,
     #SidebarZone .spotlightWrapper.contentItem:first-of-type {
         margin: 0;
@@ -8859,7 +8858,7 @@ li.nav-item a.nav-link .icon:hover {
         display: flex;
         min-height: 400px;
     }
-}
+} */
 
 
 /*********************
@@ -8869,7 +8868,7 @@ li.nav-item a.nav-link .icon:hover {
 *
 **/
 
-.spotlightWrapper .spotlight {
+/* .spotlightWrapper .spotlight {
     background-color: #088099;
 }
 
@@ -8891,7 +8890,7 @@ li.nav-item a.nav-link .icon:hover {
 
 .spotlightWrapper .spotlightBioLink:active {
     color: #000000;
-}
+} */
 
 
 /*********************
@@ -8902,7 +8901,7 @@ li.nav-item a.nav-link .icon:hover {
 *
 **/
 
-.spotlightWrapper .spotlight.spotlightPaletteLightBlue {
+/* .spotlightWrapper .spotlight.spotlightPaletteLightBlue {
     background-color: #088099;
 }
 
@@ -8924,7 +8923,7 @@ li.nav-item a.nav-link .icon:hover {
 
 .spotlightWrapper .spotlightPaletteLightBlue .spotlightBioLink:active {
     color: #000000;
-}
+} */
 
 
 /*********************
@@ -8935,7 +8934,7 @@ li.nav-item a.nav-link .icon:hover {
 *
 **/
 
-.spotlightWrapper .spotlight.spotlightPaletteRedWhite {
+/* .spotlightWrapper .spotlight.spotlightPaletteRedWhite {
     background-color: #AA0000;
 }
 
@@ -8957,7 +8956,7 @@ li.nav-item a.nav-link .icon:hover {
 
 .spotlightWrapper .spotlightPaletteRedWhite .spotlightBioLink:active {
     color: #000000;
-}
+} */
 
 
 /*********************
@@ -8968,7 +8967,7 @@ li.nav-item a.nav-link .icon:hover {
 *
 **/
 
-.spotlightWrapper .spotlight.spotlightPaletteNavyWhite {
+/* .spotlightWrapper .spotlight.spotlightPaletteNavyWhite {
     background-color: #003282;
 }
 
@@ -8990,7 +8989,7 @@ li.nav-item a.nav-link .icon:hover {
 
 .spotlightWrapper .spotlightPaletteNavyWhite .spotlightBioLink:active {
     color: #FDB913;
-}
+} */
 
 
 /*********************
@@ -9001,7 +9000,7 @@ li.nav-item a.nav-link .icon:hover {
 *
 **/
 
-.spotlightWrapper .spotlight.spotlightPaletteYellowRedBlackNavy {
+/* .spotlightWrapper .spotlight.spotlightPaletteYellowRedBlackNavy {
     background-color: #f7f7f7;
 }
 
@@ -9023,7 +9022,7 @@ li.nav-item a.nav-link .icon:hover {
 
 .spotlightWrapper .spotlightPaletteYellowRedBlackNavy .spotlightBioLink:active {
     color: #000000;
-}
+} */
 
 
 /*********************
@@ -9034,7 +9033,7 @@ li.nav-item a.nav-link .icon:hover {
 *
 **/
 
-.spotlightWrapper .spotlight.spotlightPaletteWhiteRedBlackBlue {
+/* .spotlightWrapper .spotlight.spotlightPaletteWhiteRedBlackBlue {
     background-color: #ffffff;
 }
 
@@ -9056,7 +9055,7 @@ li.nav-item a.nav-link .icon:hover {
 
 .spotlightWrapper .spotlightPaletteWhiteRedBlackBlue .spotlightBioLink:active {
     color: #000000;
-}
+} */
 
 
 /*********************
@@ -9067,7 +9066,7 @@ li.nav-item a.nav-link .icon:hover {
 *
 **/
 
-.spotlightWrapper .spotlight.spotlightPaletteBlackWhiteYellow {
+/* .spotlightWrapper .spotlight.spotlightPaletteBlackWhiteYellow {
     background-color: #000000;
 }
 
@@ -9089,7 +9088,7 @@ li.nav-item a.nav-link .icon:hover {
 
 .spotlightWrapper .spotlightPaletteBlackWhiteYellow .spotlightBioLink:active {
     color: #FDB913;
-}
+} */
 
 
 /*********************
@@ -9100,7 +9099,7 @@ li.nav-item a.nav-link .icon:hover {
 *
 **/
 
-.spotlightWrapper .spotlight.spotlightPaletteBlackWhiteGreen {
+/* .spotlightWrapper .spotlight.spotlightPaletteBlackWhiteGreen {
     background-color: #000000;
 }
 
@@ -9122,7 +9121,7 @@ li.nav-item a.nav-link .icon:hover {
 
 .spotlightWrapper .spotlightPaletteBlackWhiteGreen .spotlightBioLink:active {
     color: #55B31B;
-}
+} */
 
 
 /* ========================================================================================== 
@@ -9998,9 +9997,8 @@ body.videopage {
     text-align: center;
     padding-top: 10%;
     padding-bottom: 50px; */
-}
+/* } */
 
-*/
 /* .boxlinkItem.alt-boxlink a {
     border: 2px solid #ffffff;
     color: #ffffff;
