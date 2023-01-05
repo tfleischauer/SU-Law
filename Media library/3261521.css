@@ -7056,7 +7056,7 @@ form.search-box {
 
 /* Icon Infographic */
 
-.iconInfographic .infographicTitle {
+/* .iconInfographic .infographicTitle {
     background-color: #fff;
 }
 
@@ -7089,24 +7089,21 @@ form.search-box {
     .iconInfographic .infographicTitle h2 {
         font-size: 2rem;
     }
-
     .iconInfographic .cardinfographicItem p {
         font-size: 1rem;
     }
-
     .iconInfographic .cardinfographicItem span {
         font-size: 1rem;
     }
-
     .iconInfographic .cardinfographicItem .infographicItemNumber span {
         font-size: 4rem;
     }
-}
+} */
 
 
 /* Image Infographic */
 
-.imageInfographic h2.imageInfographicHeader {
+/* .imageInfographic h2.imageInfographicHeader {
     background-color: #fff;
     color: #aa0000;
     font-size: var(--h2);
@@ -7145,7 +7142,6 @@ form.search-box {
     .imageInfographic .infographicItemHeader p {
         font-size: 3rem;
     }
-
     .imageInfographic .infographicItemText p {
         font-size: 1.25rem;
     }
@@ -7161,12 +7157,11 @@ form.search-box {
     .imageInfographic .infographic {
         display: block;
     }
-
     .imageInfographic .card-group>.card {
         margin-bottom: 0.75rem;
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
     }
-}
+} */
 
 
 /* color options */
@@ -7494,13 +7489,13 @@ form.search-box {
     font-size: 70px;
 } */
 
-.iconInfographic .infographicItemIcon .fa-trophy {
+/* .iconInfographic .infographicItemIcon .fa-trophy {
     font-size: 50px;
 }
 
 .iconInfographic .infographicItemIcon .fa-user-lock {
     font-size: 40px;
-}
+} */
 
 
 /*Homepage Infographic custom CSS, potential for reuse */
@@ -7565,23 +7560,19 @@ form.search-box {
     background-color: #333333;
 } */
 
-@media screen and (min-width: 1400px) {
+/* @media screen and (min-width: 1400px) {
     #MainZone.col-lg-8 .imageInfographic .infographicItemHeader p {
         font-size: 2rem;
     }
-
     #MainZone.col-lg-8 .imageInfographic .infographicItemText p {
         font-size: 1rem;
     }
-
     #MainZone.col-lg-8 .iconInfographic .infographicItemNumber span {
         font-size: 4rem;
     }
-
     #MainZone.col-lg-8 .iconInfographic .infographicItemHeader p {
         font-size: 1.75rem;
     }
-
     #MainZone.col-lg-8 .iconInfographic .infographicItemText p {
         font-size: 1rem;
     }
@@ -7591,19 +7582,15 @@ form.search-box {
     #MainZone.col-lg-8 .imageInfographic .infographicItemHeader p {
         font-size: 1.5rem;
     }
-
     #MainZone.col-lg-8 .imageInfographic .infographicItemText p {
         font-size: 0.85rem;
     }
-
     #MainZone.col-lg-8 .iconInfographic .infographicItemNumber span {
         font-size: 3.5rem;
     }
-
     #MainZone.col-lg-8 .iconInfographic .infographicItemHeader p {
         font-size: 1.5rem;
     }
-
     #MainZone.col-lg-8 .iconInfographic .infographicItemText p {
         font-size: 0.85rem;
     }
@@ -7613,27 +7600,22 @@ form.search-box {
     #MainZone.col-lg-8 .imageInfographic .infographicItemHeader p {
         font-size: 1.25rem;
     }
-
     #MainZone.col-lg-8 .imageInfographic .infographicItemText p {
         font-size: 0.75rem;
     }
-
     #MainZone.col-lg-8 .iconInfographic .infographicItemNumber span {
         font-size: 3.5rem;
     }
-
     #MainZone.col-lg-8 .iconInfographic .infographicItemHeader p {
         font-size: 1.2rem;
     }
-
     #MainZone.col-lg-8 .iconInfographic .infographicItemText p {
         font-size: 0.85rem;
     }
-
     .iconInfographic .infographicItemIcon .fa {
         font-size: 40px;
     }
-}
+} */
 
 
 /* ==========================================================================================
@@ -7676,7 +7658,7 @@ form.search-box {
     margin-top: 8px;
 } */
 
-.jumbotron1 ul.boxlinks {
+/* .jumbotron1 ul.boxlinks {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -7694,7 +7676,7 @@ form.search-box {
     justify-content: unset;
     padding: 15px;
     width: auto;
-}
+} */
 
 /* .jumbotron .boxlinks li:before {
     content: none;
@@ -7704,12 +7686,12 @@ form.search-box {
     clear: both;
 } */
 
-.jumbotron1 .boxlinks li a {
-    /* display: flex;
+/* .jumbotron1 .boxlinks li a { */
+/* display: flex;
     align-items: center;
     justify-content: center; */
-    width: 225px;
-}
+/* width: 225px; */
+/* } */
 
 
 /* ==========================================================================================

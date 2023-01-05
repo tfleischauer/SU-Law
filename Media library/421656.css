@@ -7951,11 +7951,13 @@ input[type="file"]:focus {
 
 
 /* ==========================================================================================
-     ===== Law - Infographic ===== Content Type #5179 =========================================
-     ==========================================================================================
-     Set of up to three statistics using numbers or FontAwesome icons with a header and text for each.
-  
-  */
+   ===== Infographic ===== Content Type #5179 ===============================================
+   ===== Icon Infographic ===== Content Type #5608 ==========================================
+   ===== Image Infographic ===== Content Type #5615 =========================================  
+   ==========================================================================================
+   Set of up to five statistics using numbers or FontAwesome icons with a header and text.
+
+*/
 
 .infographic {
     background-color: #ffffff;
@@ -8048,6 +8050,121 @@ input[type="file"]:focus {
 
 .infographicSummary p {
     padding: 10px;
+}
+
+
+/* Icon Infographic */
+
+.iconInfographic .infographicTitle {
+    background-color: #fff;
+}
+
+.iconInfographic .infographicTitle h2 {
+    color: #aa0000;
+    font-size: var(--h2);
+    font-weight: 500;
+}
+
+.iconInfographic .infographicSummary {
+    background-color: #fff;
+}
+
+.iconInfographic .infographicSummary p {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.iconInfographic .cardinfographicItem p {
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+.iconInfographic .cardinfographicItem span {
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .iconInfographic .infographicTitle h2 {
+        font-size: 2rem;
+    }
+
+    .iconInfographic .cardinfographicItem p {
+        font-size: 1rem;
+    }
+
+    .iconInfographic .cardinfographicItem span {
+        font-size: 1rem;
+    }
+
+    .iconInfographic .cardinfographicItem .infographicItemNumber span {
+        font-size: 4rem;
+    }
+}
+
+
+/* Image Infographic */
+
+.imageInfographic h2.imageInfographicHeader {
+    background-color: #fff;
+    color: #aa0000;
+    font-size: var(--h2);
+    font-weight: 500;
+}
+
+.imageInfographic .infographicItemHeader {
+    padding-bottom: 8px;
+}
+
+.imageInfographic .infographicItemText {
+    padding-top: 15px;
+}
+
+.imageInfographic .infographicItemHeader p {
+    font-size: 5rem;
+}
+
+.imageInfographic .infographicItemText p {
+    color: #aa0000;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.imageInfographic .cardinfographicItem .infographicMedia img {
+    height: 124px;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1365.99px) {
+    .imageInfographic .infographicItemText p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .imageInfographic .infographicItemHeader p {
+        font-size: 3rem;
+    }
+
+    .imageInfographic .infographicItemText p {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .imageInfographic .cardinfographicItem .infographicMedia img {
+        height: 256px;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .imageInfographic .infographic {
+        display: block;
+    }
+
+    .imageInfographic .card-group>.card {
+        margin-bottom: 0.75rem;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    }
 }
 
 
@@ -8371,6 +8488,14 @@ input[type="file"]:focus {
     font-size: 70px;
 }
 
+.iconInfographic .infographicItemIcon .fa-trophy {
+    font-size: 50px;
+}
+
+.iconInfographic .infographicItemIcon .fa-user-lock {
+    font-size: 40px;
+}
+
 
 /*Homepage Infographic custom CSS, potential for reuse */
 
@@ -8434,6 +8559,76 @@ input[type="file"]:focus {
     background-color: #333333;
 }
 
+@media screen and (min-width: 1400px) {
+    #MainZone.col-lg-8 .imageInfographic .infographicItemHeader p {
+        font-size: 2rem;
+    }
+
+    #MainZone.col-lg-8 .imageInfographic .infographicItemText p {
+        font-size: 1rem;
+    }
+
+    #MainZone.col-lg-8 .iconInfographic .infographicItemNumber span {
+        font-size: 4rem;
+    }
+
+    #MainZone.col-lg-8 .iconInfographic .infographicItemHeader p {
+        font-size: 1.75rem;
+    }
+
+    #MainZone.col-lg-8 .iconInfographic .infographicItemText p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #MainZone.col-lg-8 .imageInfographic .infographicItemHeader p {
+        font-size: 1.5rem;
+    }
+
+    #MainZone.col-lg-8 .imageInfographic .infographicItemText p {
+        font-size: 0.85rem;
+    }
+
+    #MainZone.col-lg-8 .iconInfographic .infographicItemNumber span {
+        font-size: 3.5rem;
+    }
+
+    #MainZone.col-lg-8 .iconInfographic .infographicItemHeader p {
+        font-size: 1.5rem;
+    }
+
+    #MainZone.col-lg-8 .iconInfographic .infographicItemText p {
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+    #MainZone.col-lg-8 .imageInfographic .infographicItemHeader p {
+        font-size: 1.25rem;
+    }
+
+    #MainZone.col-lg-8 .imageInfographic .infographicItemText p {
+        font-size: 0.75rem;
+    }
+
+    #MainZone.col-lg-8 .iconInfographic .infographicItemNumber span {
+        font-size: 3.5rem;
+    }
+
+    #MainZone.col-lg-8 .iconInfographic .infographicItemHeader p {
+        font-size: 1.2rem;
+    }
+
+    #MainZone.col-lg-8 .iconInfographic .infographicItemText p {
+        font-size: 0.85rem;
+    }
+
+    .iconInfographic .infographicItemIcon .fa {
+        font-size: 40px;
+    }
+}
+
 
 /* ==========================================================================================
      ===== Law - Jumbotron I =====  Content Type #5091 ========================================
@@ -8477,17 +8672,37 @@ input[type="file"]:focus {
     margin-top: 8px;
 }
 
+.jumbotron1 ul.boxlinks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin: auto auto;
+    padding: 0;
+    width: 100%;
+}
+
 .jumbotron1 .boxlinks {
     margin-bottom: 0;
 }
 
-.jumbotron1 ul.boxlinks li {
+/* .jumbotron1 ul.boxlinks li {
     display: flex;
     flex: 0 1 100%;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     padding: 15px;
+} */
+
+.jumbotron1 ul.boxlinks li {
+    display: block;
+    flex: unset;
+    flex-direction: unset;
+    justify-content: unset;
+    padding: 15px;
+    width: auto;
 }
 
 @media (min-width: 992px) {
@@ -8569,6 +8784,7 @@ input[type="file"]:focus {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 225px;
 }
 
 
