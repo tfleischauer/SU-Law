@@ -5989,7 +5989,7 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
    ==========================================================================================
    creates featured box for curated events in ZoneA, including options for an image 
    background and color overlay
-   Last revised 20211129 vic 
+   Last revised 20211129 vic / 20230104 Troy
 */
 
 
@@ -7416,8 +7416,18 @@ input[type="file"]:focus {
   */
 
 
-/* .panelWrapper.contentItem.g-0:first-of-type {
-    margin: 0;
+/* updated to bootstrap 5 -  20210413 vic  */
+
+
+/*********************
+*
+*   Image Panel
+*   bs5 specific modifications
+*
+**/
+
+.panelWrapper.contentItem.g-0:first-of-type {
+    margin: 0 !important;
 }
 
 .panelWrapper .panelText.card-text {
@@ -7440,76 +7450,90 @@ input[type="file"]:focus {
 .panelText.card-text p {
     font-size: 1.4rem;
     line-height: 1.5;
-} */
+}
 
 
 /* ***  XX Large max Defaults   *** */
 
-
-/* @media screen and (max-width: 1399.99px) {
+@media screen and (max-width: 1399.98px) {
     .panelWrapper .panelText.card-text h2 {
         font-size: 2rem;
     }
+
     .panelText.card-text p {
         font-size: 1.2rem;
     }
+
     .panelInner .panelText.card-text .panelLinks a {
         font-size: 1.25rem;
         line-height: 1.25;
     }
-} */
+}
 
 
 /* ***  X Large max Defaults   *** */
 
-
-/* @media screen and (max-width: 1199.99px) {
+@media screen and (max-width: 1199.98px) {
     .panelWrapper .panelText.card-text h2 {
         font-size: 1.8rem;
     }
+
     .panelText.card-text p {
         font-size: 1rem;
     }
+
     .panelInner .panelText.card-text .panelLinks a {
         font-size: 1.3rem;
         line-height: 1;
         padding-top: 1rem;
     }
-    .panelWrapper.contentItem.g-0:first-of-type {
-        margin: 0;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+    .panelWrapper .panelText.card-text {
+        padding: 1.5rem;
     }
-} */
+}
 
 
 /* ***  Large max Defaults   *** */
 
-
-/* @media screen and (max-width: 991.99px) {
+@media screen and (max-width: 991.98px) {
     .panelWrapper .card-img-overlay {
+        padding: 0;
         position: unset;
     }
+
     .panelWrapper .panelText.card-text h2 {
         font-size: 2rem;
     }
+
     .card-img-overlay .standardContent {
         padding: 0;
     }
+
     .panelText.card-text p {
         font-size: 1rem;
     }
+
+    .panelWrapper .card-img-overlay .card-block .panelText.card-text {
+        padding: 0;
+    }
+
     .panelInner .panelText.card-text .panelLinks {
         display: flex;
     }
+
     .panelInner .panelText.card-text .panelLinks {
         padding: 1rem 0 1rem 0;
     }
-} */
+}
 
 
 /* ***  Small max Defaults   *** */
 
 
-/* @media screen and (max-width: 767.99px) {
+/* @media screen and (max-width: 767.98px) {
     .panelWrapper .panelText.card-text {
         padding: 1rem;
     }
@@ -7525,26 +7549,24 @@ input[type="file"]:focus {
 /* ***  X Small max Defaults   *** */
 
 
-/* 
-@media only screen and (max-width: 575.99px) {
+/* @media only screen and (max-width: 575.98px) {
     .panelWrapper .panelText.card-text {
         padding: 0;
     }
     .panelWrapper .card-block .panelText.card-text {
-        padding: 1rem;
+        padding: 0;
     }
 } */
 
 
 /***
-  *
-  *   legacy image panel
-  *   bootstrap 3 stylesheet defaults
-  *
-  */
+*
+*   legacy image panel
+*   bootstrap 3 stylesheet defaults
+*
+*/
 
-
-/* .panelWrapper {
+.panelWrapper {
     padding-top: inherit;
     position: relative;
 }
@@ -7558,17 +7580,17 @@ input[type="file"]:focus {
 
 .panelWrapper h2 {
     color: #aa0000;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 35px;
     font-weight: 500;
     margin: 0 0 30px 0;
-} */
+}
 
 
 /*1px gap fix*/
 
 
-/* @media (min-width: 766px) and (max-width: 768px) {
+/* @media (min-width:766px) and (max-width:768px) {
     .panelWrapper .clearfix {
         display: block !important;
     }
@@ -7577,8 +7599,7 @@ input[type="file"]:focus {
 
 /*only way to get mobile to not take up space set in html tag*/
 
-
-/* @media (max-width: 991.999px) {
+@media (max-width: 991.98px) {
     .panelWrapper .panelFlexContainer {
         height: auto !important;
     }
@@ -7590,7 +7611,7 @@ input[type="file"]:focus {
     width: 100%;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
     .panelWrapper .panelOverlay {
         height: 300px !important;
     }
@@ -7601,7 +7622,7 @@ input[type="file"]:focus {
     padding: 70px 60px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
     .panelWrapper .panelText {
         background: #ffffff;
         padding: 20px 0 20px 15px;
@@ -7680,145 +7701,163 @@ input[type="file"]:focus {
     border-right: 0;
     margin: 0;
     padding: 0;
-} */
+}
 
 
 /* hack to hide banner in IE/Edge */
 
-
-/* .flexboxtweener .panelWrapper .panelInner {
+.flexboxtweener .panelWrapper .panelInner {
     border: 0;
-} */
+}
 
+@media (min-width: 992px) {
 
-/* @media (min-width: 991px) {
     .panelWrapper .topRightPanel,
     .panelWrapper .centerRightPanel,
     .panelWrapper .bottomRightPanel {
         justify-content: flex-end;
     }
+
     .panelWrapper .topLeftPanel,
     .panelWrapper .centerLeftPanel,
     .panelWrapper .bottomLeftPanel {
         justify-content: flex-start;
     }
+
     .panelWrapper .topCenterPanel,
     .panelWrapper .centerCenterPanel,
     .panelWrapper .bottomCenterPanel {
         justify-content: center;
     }
+
     .panelFlexContainer .topRightPanel,
     .panelFlexContainer .centerRightPanel,
     .panelFlexContainer .bottomRightPanel {
         margin-right: 4.1666666%;
     }
-    .panelFlexContainer .topRightPanel,
+
+    /* .panelFlexContainer .topRightPanel,
     .panelFlexContainer .topLeftPanel,
     .panelFlexContainer .topCenterPanel {
         margin-top: 4.1666666%;
-    }
+    } */
     .panelFlexContainer .bottomRightPanel,
     .panelFlexContainer .bottomLeftPanel,
     .panelFlexContainer .bottomCenterPanel {
         align-self: flex-end;
     }
+
     .panelFlexContainer .centerRightPanel,
     .panelFlexContainer .centerLeftPanel,
     .panelFlexContainer .centerCenterPanel {
         align-self: center;
     }
+
     .panelFlexContainer .topRightPanel,
     .panelFlexContainer .topCenterPanel,
     .panelFlexContainer .topLeftPanel {
         margin-bottom: auto;
     }
+
     .panelFlexContainer .topLeftPanel,
     .panelFlexContainer .centerLeftPanel,
     .panelFlexContainer .bottomLeftPanel {
         margin-left: 4.1666666%;
     }
+
     .panelFlexContainer .bottomRightPanel,
     .panelFlexContainer .bottomCenterPanel,
     .panelFlexContainer .bottomLeftPanel {
         margin-bottom: 4.1666666%;
     }
+
     .panelWrapper .panelRedDiv {
         border: 10px solid #aa0000;
         border-bottom: 0;
-        border-image: linear-gradient( to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #aa0000 25.01%, #aa0000 100%);
+        border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #aa0000 25.01%, #aa0000 100%);
         border-image-slice: 1;
     }
+
     .panelWrapper .panelOrangeDiv {
         border: 10px solid #ef4135;
         border-bottom: 0;
-        border-image: linear-gradient( to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #ef4135 25.01%, #ef4135 100%);
+        border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #ef4135 25.01%, #ef4135 100%);
         border-image-slice: 1;
     }
+
     .panelWrapper .panelLightGreenDiv {
         border: 10px solid #55b31b;
         border-bottom: 0;
-        border-image: linear-gradient( to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #55b31b 25.01%, #55b31b 100%);
+        border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #55b31b 25.01%, #55b31b 100%);
         border-image-slice: 1;
     }
+
     .panelWrapper .panelDarkGreenDiv {
         border: 10px solid #124a12;
         border-bottom: 0;
-        border-image: linear-gradient( to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #124a12 25.01%, #124a12 100%);
+        border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #124a12 25.01%, #124a12 100%);
         border-image-slice: 1;
     }
+
     .panelWrapper .panelDarkBlueDiv {
         border: 10px solid #003282;
         border-bottom: 0;
-        border-image: linear-gradient( to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #003282 25.01%, #003282 100%);
+        border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #003282 25.01%, #003282 100%);
         border-image-slice: 1;
     }
+
     .panelWrapper .panelLightBlueDiv {
         border: 10px solid #04a9c5;
         border-bottom: 0;
-        border-image: linear-gradient( to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #04a9c5 25.01%, #04a9c5 100%);
+        border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #04a9c5 25.01%, #04a9c5 100%);
         border-image-slice: 1;
     }
+
     .panelWrapper .panelGreenDiv {
         border: 10px solid #008765;
-        border-image: linear-gradient( to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #008765 25.01%, #008765 100%);
+        border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #008765 25.01%, #008765 100%);
         border-image-slice: 1;
         border-bottom: 0;
     }
+
     .panelWrapper .panelBrownDiv {
         border: 10px solid #807060;
         border-bottom: 0;
-        border-image: linear-gradient( to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #807060 25.01%, #807060 100%);
+        border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #807060 25.01%, #807060 100%);
         border-image-slice: 1;
     }
+
     .panelWrapper .panelBlackDiv {
         border: 10px solid #333333;
         border-bottom: 0;
-        border-image: linear-gradient( to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #333333 25.01%, #333333 100%);
+        border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #333333 25.01%, #333333 100%);
         border-image-slice: 1;
     }
+
     .panelWrapper .panelWhiteDiv {
         border: 10px solid #f7f7f7;
         border-bottom: 0;
-        border-image: linear-gradient( to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #f7f7f7 25.01%, #f7f7f7 100%);
+        border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #f7f7f7 25.01%, #f7f7f7 100%);
         border-image-slice: 1;
     }
+
     .panelWrapper .topRightPanel,
     .panelWrapper .bottomRightPanel,
     .panelWrapper .topCenterPanel,
     .panelWrapper .bottomCenterPanel .panelWrapper .centerCenterPanel .panelWrapper .centerRightPanel {
         float: right;
     }
+
     .panelWrapper .topLeftPanel,
     .panelWrapper .bottomLeftPanel .panelWrapper .centerLeftPanel {
         float: left;
     }
-} */
+}
 
 
 /* xs */
 
-
-/* @media screen and (max-width: 767.999px) {
+@media screen and (max-width: 767.98px) {
     .panelText h2 {
         margin: 15px 0 15px 0;
     }
@@ -7860,16 +7899,16 @@ input[type="file"]:focus {
     flex: 0 1 calc(50% - 7px);
     flex-direction: column;
     justify-content: center;
-} */
+}
 
 
 /* xs */
 
-
-/* @media screen and (max-width: 767.999px) {
+@media screen and (max-width: 767.98px) {
     .panelInner .panelLinks {
         padding: 15px 20px 0px 10px;
     }
+
     .panelInner .panelLinks li {
         border: none;
         display: block;
@@ -7879,6 +7918,7 @@ input[type="file"]:focus {
         margin: 7px 0 0 0;
         width: 100%;
     }
+
     .panelInner .panelLinks li a {
         border: 1px solid #088099;
         color: #aa0000;
@@ -7905,9 +7945,9 @@ input[type="file"]:focus {
 }
 
 .panelInner .panelLinks li:before {
-    content: "";
+    content: '';
     padding-right: 0px;
-} */
+}
 
 
 /* ==========================================================================================
