@@ -10151,7 +10151,7 @@ li.nav-item a.nav-link .icon:hover {
    ==========================================================================================
 */
 
-.StaffListBox a {
+/* .StaffListBox a {
     color: #088099;
     font-family: 'Montserrat';
     font-size: 1.25rem;
@@ -10167,7 +10167,7 @@ li.nav-item a.nav-link .icon:hover {
 .StaffListBox a:focus {
     color: #088099;
     text-decoration: underline;
-}
+} */
 
 
 /* ========================================================================================== 
@@ -10184,7 +10184,7 @@ li.nav-item a.nav-link .icon:hover {
 
 /* expand small images to fill available space on all browsers */
 
-.lawFacultyWrapper img.card-img {
+/* .lawFacultyWrapper img.card-img {
     margin: 0;
     width: 100%;
     width: -moz-available;
@@ -10214,18 +10214,18 @@ li.nav-item a.nav-link .icon:hover {
 
 .lawFacultyWrapper.listwrapper .card {
     background-color: #f7f7f7;
-}
+} */
 
 
 /*** Detail Page customizations ***/
 
-.detailPage .lawFacultyWrapper h3.card-title {
+/* .detailPage .lawFacultyWrapper h3.card-title {
     font-size: 1.25rem;
 }
 
 .detailPage .lawFacultyWrapper p.card-text {
     font-size: 1rem;
-}
+} */
 
 
 /*** Media Queries Faculty Profile ***/
@@ -10233,52 +10233,45 @@ li.nav-item a.nav-link .icon:hover {
 
 /*** Desktop Down ***/
 
-@media screen and (max-width: 991.99px) {
+/* @media screen and (max-width: 991.99px) {
     .lawFacultyWrapper.w-50 {
-        width: 100% !important;
+        width: 100%!important;
         margin: 0 0 2rem 0;
     }
-
     .lawFacultyWrapper .card {
         background-color: #f7f7f7;
         border: 2px solid #f7f7f7;
         border-radius: 0;
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
     }
-
     .lawFacultyWrapper img.card-img {
         padding: 0;
     }
-
     .lawFacultyWrapper img.rounded-circle {
-        border-radius: 0 !important;
+        border-radius: 0!important;
     }
-
     .lawFacultyWrapper p.card-text {
         font-size: 1.25rem;
     }
-
     .detailPage .lawFacultyWrapper h3.card-title {
         font-size: 1.8rem;
     }
-
     .detailPage .lawFacultyWrapper p.card-text {
         font-size: 1.25rem;
     }
-}
+} */
 
 
 /*** Mobile Up ***/
 
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
     article.lawFacultyWrapper.col {
         flex: unset;
     }
-
     article.lawFacultyWrapper.flex-fill {
-        flex: unset !important;
+        flex: unset!important;
     }
-}
+} */
 
 
 /*** START Fulltext Layout ***/
@@ -10286,7 +10279,7 @@ li.nav-item a.nav-link .icon:hover {
 
 /* restore page level row overrider for faculty fulltext to bs5 row defaults */
 
-body.facultyProfileFulltext #pageContentWrapper.row {
+/* body.facultyProfileFulltext #pageContentWrapper.row {
     margin-right: calc(var(--bs-gutter-x) * -.5);
     margin-left: calc(var(--bs-gutter-x) * -.5);
 }
@@ -10294,7 +10287,7 @@ body.facultyProfileFulltext #pageContentWrapper.row {
 body.facultyProfileFulltext #pageContentWrapper .row {
     margin-right: auto;
     margin-left: auto;
-}
+} */
 
 
 /* Last update/edit: 5/10/2021 by Troy */
@@ -10365,7 +10358,7 @@ body.facultyProfileFulltext #pageContentWrapper .row {
     width: 100%;
 } */
 
-.facultyProfileWrapper .facultyProfileEmail {
+/* .facultyProfileWrapper .facultyProfileEmail {
     color: #088099;
 }
 
@@ -10380,7 +10373,7 @@ body.facultyProfileFulltext #pageContentWrapper .row {
 
 .facultyProfileWrapper .facultyProfileEmail a:active {
     text-decoration: underline;
-}
+} */
 
 
 /* END Image, Name, Title, Contact Info, CV, Twitter Handle section */

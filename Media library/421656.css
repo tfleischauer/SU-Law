@@ -5428,6 +5428,36 @@ h2.contactBoxSingleTitle {
 }
 
 
+/* ========================================================================================== 
+   ===== Law - Directory Profile for Faculty-Staff  ===== Content Type #5548 ========== START 
+   ==========================================================================================
+*/
+
+.StaffListBox a {
+    color: #088099;
+    font-family: 'Montserrat';
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.StaffListBox a:hover {
+    color: #088099;
+    text-decoration: underline;
+}
+
+.StaffListBox a:focus {
+    color: #088099;
+    text-decoration: underline;
+}
+
+
+/* ========================================================================================== 
+   ===== Law - Directory Profile for Faculty-Staff  ===== Content Type #5548 ========== END 
+   ==========================================================================================
+*/
+
+
 /* ==========================================================================================
      ===== Law - Dual Column Content ===== Content Type #5217 =================================
      ==========================================================================================
@@ -5778,7 +5808,127 @@ article.dualColumn a:active {
 }
 
 
+
 /* ****** End Bootstrap 5 Organizer layouts - vic 20210425 ****** */
+
+
+
+/* expand small images to fill available space on all browsers */
+
+.lawFacultyWrapper img.card-img {
+    margin: 0;
+    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
+}
+
+.lawFacultyWrapper figure {
+    display: contents;
+    margin: 0;
+}
+
+.lawFacultyWrapper a.emailAddress {
+    color: #088099;
+    text-decoration: none;
+}
+
+.lawFacultyWrapper a.emailAddress:hover {
+    color: #088099;
+    text-decoration: underline;
+}
+
+.lawFacultyWrapper a.emailAddress:focus {
+    color: #088099;
+    text-decoration: underline;
+}
+
+.lawFacultyWrapper.listwrapper .card {
+    background-color: #f7f7f7;
+}
+
+
+/*** Detail Page customizations ***/
+
+.detailPage .lawFacultyWrapper h3.card-title {
+    font-size: 1.25rem;
+}
+
+.detailPage .lawFacultyWrapper p.card-text {
+    font-size: 1rem;
+}
+
+
+/*** Media Queries Faculty Profile ***/
+
+
+/*** Desktop Down ***/
+
+@media screen and (max-width: 991.99px) {
+    .lawFacultyWrapper.w-50 {
+        width: 100% !important;
+        margin: 0 0 2rem 0;
+    }
+
+    .lawFacultyWrapper .card {
+        background-color: #f7f7f7;
+        border: 2px solid #f7f7f7;
+        border-radius: 0;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    }
+
+    .lawFacultyWrapper img.card-img {
+        padding: 0;
+    }
+
+    .lawFacultyWrapper img.rounded-circle {
+        border-radius: 0 !important;
+    }
+
+    .lawFacultyWrapper p.card-text {
+        font-size: 1.25rem;
+    }
+
+    .detailPage .lawFacultyWrapper h3.card-title {
+        font-size: 1.8rem;
+    }
+
+    .detailPage .lawFacultyWrapper p.card-text {
+        font-size: 1.25rem;
+    }
+}
+
+
+/*** Mobile Up ***/
+
+@media screen and (min-width: 992px) {
+    article.lawFacultyWrapper.col {
+        flex: unset;
+    }
+
+    article.lawFacultyWrapper.flex-fill {
+        flex: unset !important;
+    }
+}
+
+
+/*** START Fulltext Layout ***/
+
+
+/* restore page level row overrider for faculty fulltext to bs5 row defaults */
+
+body.facultyProfileFulltext #pageContentWrapper.row {
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+
+body.facultyProfileFulltext #pageContentWrapper .row {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
 
 
 /*** START Fulltext Layout ***/
@@ -5850,6 +6000,23 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 
 .facultyProfileTwitter {
     width: 100%;
+}
+
+.facultyProfileWrapper .facultyProfileEmail {
+    color: #088099;
+}
+
+.facultyProfileWrapper .facultyProfileEmail a {
+    color: #088099;
+    text-decoration: none;
+}
+
+.facultyProfileWrapper .facultyProfileEmail a:hover {
+    text-decoration: underline;
+}
+
+.facultyProfileWrapper .facultyProfileEmail a:active {
+    text-decoration: underline;
 }
 
 
