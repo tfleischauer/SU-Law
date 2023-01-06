@@ -9232,7 +9232,7 @@ li.nav-item a.nav-link .icon:hover {
     with control code
 */
 
-.videoBanner .vmbv {
+/* .videoBanner .vmbv {
     z-index: -1;
     margin-top: -0.25rem;
     margin-bottom: -0.6rem
@@ -9242,7 +9242,7 @@ li.nav-item a.nav-link .icon:hover {
     .videoBanner .vmbv {
         margin-top: -1.75rem;
     }
-}
+} */
 
 
 /* ========================================================================================== 
@@ -9252,7 +9252,7 @@ li.nav-item a.nav-link .icon:hover {
    Created by vic 20221026
 */
 
-.embeddedVideoWrapper.vmv {
+/* .embeddedVideoWrapper.vmv {
     border-color: #807060;
 }
 
@@ -9312,7 +9312,7 @@ li.nav-item a.nav-link .icon:hover {
 
 .embeddedVideoWrapper.vmv .card-footer {
     padding: 0.5rem 0;
-}
+} */
 
 
 /* ========================================================================================== 
@@ -9322,7 +9322,7 @@ li.nav-item a.nav-link .icon:hover {
    Created by vic 20211207
 */
 
-.embeddedVideoWrapper.ytv {
+/* .embeddedVideoWrapper.ytv {
     border-color: #807060;
 }
 
@@ -9382,7 +9382,7 @@ li.nav-item a.nav-link .icon:hover {
 
 .embeddedVideoWrapper.ytv .card-footer {
     padding: 0.5rem 0;
-}
+} */
 
 
 /* ========================================================================================== 
@@ -9392,7 +9392,7 @@ li.nav-item a.nav-link .icon:hover {
    Created by vic 20211204
 */
 
-body.videopage {
+/* body.videopage {
     min-width: auto;
 }
 
@@ -9441,22 +9441,19 @@ body.videopage {
         margin-bottom: 0 0 -8rem 0;
         top: -5.5%;
     }
-
     .autoplay.contentItem:first-of-type {
-        margin-bottom: 0 0 0 0 !important;
+        margin-bottom: 0 0 0 0!important;
     }
-
     .autoplay .card-img-overlay .card-header {
-        margin-top: 2rem !important;
-        padding: 0 !important;
+        margin-top: 2rem!important;
+        padding: 0!important;
     }
 }
 
 @media screen and (min-width: 992px) {
     .autoplay .card-img-overlay h2 {
-        font-size: 5rem !important;
+        font-size: 5rem!important;
     }
-
     .autoplay .card-img-overlay p {
         font-weight: 900;
     }
@@ -9464,92 +9461,76 @@ body.videopage {
 
 @media screen and (min-width: 992px) and (max-width: 1199.999px) {
     .bannerVideo.vbv.autoplay .mt-5 {
-        margin-top: 0rem !important;
+        margin-top: 0rem!important;
     }
-
     .bannerVideo.vbv.autoplay .card-img-overlay .card-header.m-3 {
-        margin-top: 0rem !important;
+        margin-top: 0rem!important;
     }
-
     .bannerVideo.ytv.autoplay .card-img-overlay .mt-5 {
-        margin-top: 1rem !important;
+        margin-top: 1rem!important;
     }
-
     .bannerVideo.ytv.autoplay .card-img-overlay .card-header .fs-1 {
-        font-size: 30px !important;
+        font-size: 30px!important;
     }
-
     .bannerVideo.ytv.autoplay .card-img-overlay .card-text.fs-3 {
-        font-size: 20px !important;
+        font-size: 20px!important;
     }
 }
 
 @media screen and (max-width: 991.99px) {
     .videopage #COVIDbanner .infographicItemText .mb-0 {
-        margin-bottom: 1rem !important;
+        margin-bottom: 1rem!important;
     }
-
     .bannerVideo.ytv.autoplay {
         margin-bottom: 0;
         top: 0;
         z-index: 0;
     }
-
     .bannerVideo.vbv.autoplay {
         margin-bottom: 0;
         margin-top: -1.5rem
-            /* z-index: 0; */
-    }
-
-    .bannerVideo.ytv.autoplay iframe {
+        /* z-index: 0; */
+/* } */
+/* .bannerVideo.ytv.autoplay iframe {
         width: inherit;
     }
-
     .autoplay.contentItem:first-of-type {
         margin-bottom: 0;
         top: 0;
         z-index: 0;
     }
-
     .autoplay .card-img-overlay {
         padding: 0;
         position: unset;
     }
-
     .bannerVideo.ytv.autoplay .card-img-overlay {
         margin-top: -2.85rem;
         z-index: 1;
         background-color: #fff;
         border-radius: initial;
     }
-
     .bannerVideo.vbv.autoplay .card-img-overlay {
         margin-top: -3.5rem;
         z-index: 1;
         background-color: #fff;
         border-radius: initial;
     }
-
     .bannerVideo.vbv.autoplay .card-img-overlay .textmat {
-        background-color: #fff !important;
+        background-color: #fff!important;
     }
-
     .bannerVideo.vbv .opacity-75 {
-        opacity: unset !important;
+        opacity: unset!important;
     }
-
     .autoplay .card-img-overlay .card-header {
-        margin: 0 !important;
-        padding: 0 !important;
+        margin: 0!important;
+        padding: 0!important;
     }
-
     .autoplay .card-img-overlay .container {
-        margin-top: 0 !important;
-        padding-top: 0 !important;
+        margin-top: 0!important;
+        padding-top: 0!important;
     }
-
     .autoplay .card-img-overlay .card-body .text-white {
-        color: #000000 !important;
+        color: #000000!important;
     }
 }
 
@@ -9563,7 +9544,7 @@ body.videopage {
     .bannerVideo.vbv.autoplay .card-img-overlay {
         margin-top: -4.5rem;
     }
-}
+} */
 
 
 /* ========================================================================================== 

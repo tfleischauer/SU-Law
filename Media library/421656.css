@@ -10566,6 +10566,352 @@ article.columns-4 a:active {
 }
 
 
+
+/* ========================================================================================== 
+   ===== Law - Law - Video Banner Vimeo Managed  ===== Content Type #5658 =================== 
+   ==========================================================================================
+    Looping banner autoplay video with reqauired paid managed vimeo Pro account
+    with control code
+*/
+
+.videoBanner .vmbv {
+    z-index: -1;
+    margin-top: -0.25rem;
+    margin-bottom: -0.6rem
+}
+
+@media screen and (max-width: 991.98px) {
+    .videoBanner .vmbv {
+        margin-top: -1.75rem;
+    }
+}
+
+
+/* ========================================================================================== 
+   ===== Law - Video Mainzone Vimeo  ===== Content Type #5614 ============================= 
+   ==========================================================================================
+   Vimeo Video with controls that loops without autoplay
+   Created by vic 20221026
+*/
+
+.embeddedVideoWrapper.vmv {
+    border-color: #807060;
+}
+
+.embeddedVideoWrapper.vmv .embeddedVideoInner {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.embeddedVideoWrapper.vmv iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.embeddedVideoWrapper.vmv h3.videoTitle {
+    color: #AA0000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.embeddedVideoWrapper.vmv .videoLink a {
+    color: #088099;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.embeddedVideoWrapper.vmv .videoLink a:hover {
+    text-decoration: underline;
+}
+
+.embeddedVideoWrapper.vmv .videoLink a:active {
+    text-decoration: underline;
+}
+
+.embeddedVideoWrapper.vmv .card-body {
+    padding: 0;
+}
+
+.embeddedVideoWrapper.vmv .card-body p {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.embeddedVideoWrapper.vmv .card-footer p {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.embeddedVideoWrapper.vmv .card-footer {
+    padding: 0.5rem 0;
+}
+
+
+/* ========================================================================================== 
+   ===== Law - Video Mainzone YouTube  ===== Content Type #5614 ============================= 
+   ==========================================================================================
+   YouTube Video that loops without controls and with minimal branding
+   Created by vic 20211207
+*/
+
+.embeddedVideoWrapper.ytv {
+    border-color: #807060;
+}
+
+.embeddedVideoWrapper.ytv .embeddedVideoInner {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.embeddedVideoWrapper.ytv iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.embeddedVideoWrapper.ytv h3.videoTitle {
+    color: #AA0000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.embeddedVideoWrapper.ytv .videoLink a {
+    color: #088099;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.embeddedVideoWrapper.ytv .videoLink a:hover {
+    text-decoration: underline;
+}
+
+.embeddedVideoWrapper.ytv .videoLink a:active {
+    text-decoration: underline;
+}
+
+.embeddedVideoWrapper.ytv .card-body {
+    padding: 0;
+}
+
+.embeddedVideoWrapper.ytv .card-body p {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.embeddedVideoWrapper.ytv .card-footer p {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.embeddedVideoWrapper.ytv .card-footer {
+    padding: 0.5rem 0;
+}
+
+
+/* ========================================================================================== 
+   ===== Law - Video Autoplay  ===== Content Type #5610 ===================================== 
+   ==========================================================================================
+   YouTube Video that loops without controls and with minimal branding
+   Created by vic 20211204
+*/
+
+body.videopage {
+    min-width: auto;
+}
+
+.videopage #BannerZone.row {
+    margin: 0;
+}
+
+.videopage #BannerZone.row .imageBannerWrapper {
+    padding: 0;
+}
+
+.bannerVideo.ytv.autoplay {
+    margin: -4rem 0 -8rem 0;
+    z-index: -1;
+}
+
+.bannerVideo.vbv.autoplay {
+    margin-top: -1rem;
+    margin-bottom: -5rem;
+    z-index: -1;
+}
+
+.autoplay iframe {
+    width: 100%;
+    height: calc(100vw/1.9);
+}
+
+.autoplay .card-img-overlay h2 {
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+}
+
+.autoplay .card-img-overlay p {
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1399.999px) {
+    .bannerVideo.ytv.autoplay {
+        top: -5.25%;
+    }
+}
+
+@media screen and (max-width: 1199.999px) {
+    .bannerVideo.ytv.autoplay {
+        margin-bottom: 0 0 -8rem 0;
+        top: -5.5%;
+    }
+
+    .autoplay.contentItem:first-of-type {
+        margin-bottom: 0 0 0 0 !important;
+    }
+
+    .autoplay .card-img-overlay .card-header {
+        margin-top: 2rem !important;
+        padding: 0 !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .autoplay .card-img-overlay h2 {
+        font-size: 5rem !important;
+    }
+
+    .autoplay .card-img-overlay p {
+        font-weight: 900;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.999px) {
+    .bannerVideo.vbv.autoplay .mt-5 {
+        margin-top: 0rem !important;
+    }
+
+    .bannerVideo.vbv.autoplay .card-img-overlay .card-header.m-3 {
+        margin-top: 0rem !important;
+    }
+
+    .bannerVideo.ytv.autoplay .card-img-overlay .mt-5 {
+        margin-top: 1rem !important;
+    }
+
+    .bannerVideo.ytv.autoplay .card-img-overlay .card-header .fs-1 {
+        font-size: 30px !important;
+    }
+
+    .bannerVideo.ytv.autoplay .card-img-overlay .card-text.fs-3 {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width: 991.99px) {
+    .videopage #COVIDbanner .infographicItemText .mb-0 {
+        margin-bottom: 1rem !important;
+    }
+
+    .bannerVideo.ytv.autoplay {
+        margin-bottom: 0;
+        top: 0;
+        z-index: 0;
+    }
+
+    .bannerVideo.vbv.autoplay {
+        margin-bottom: 0;
+        margin-top: -1.5rem
+            /* z-index: 0; */
+    }
+
+    .bannerVideo.ytv.autoplay iframe {
+        width: inherit;
+    }
+
+    .autoplay.contentItem:first-of-type {
+        margin-bottom: 0;
+        top: 0;
+        z-index: 0;
+    }
+
+    .autoplay .card-img-overlay {
+        padding: 0;
+        position: unset;
+    }
+
+    .bannerVideo.ytv.autoplay .card-img-overlay {
+        margin-top: -2.85rem;
+        z-index: 1;
+        background-color: #fff;
+        border-radius: initial;
+    }
+
+    .bannerVideo.vbv.autoplay .card-img-overlay {
+        margin-top: -3.5rem;
+        z-index: 1;
+        background-color: #fff;
+        border-radius: initial;
+    }
+
+    .bannerVideo.vbv.autoplay .card-img-overlay .textmat {
+        background-color: #fff !important;
+    }
+
+    .bannerVideo.vbv .opacity-75 {
+        opacity: unset !important;
+    }
+
+    .autoplay .card-img-overlay .card-header {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .autoplay .card-img-overlay .container {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    .autoplay .card-img-overlay .card-body .text-white {
+        color: #000000 !important;
+    }
+}
+
+@media screen and (min-width: 299.99px) and (max-width: 575.99px) {
+    .bannerVideo.vbv.autoplay .card-img-overlay {
+        margin-top: -4rem;
+    }
+}
+
+@media screen and (min-width: 399.99px) and (max-width: 492.99px) {
+    .bannerVideo.vbv.autoplay .card-img-overlay {
+        margin-top: -4.5rem;
+    }
+}
+
+
+
+
+
+
 /* =============================================================================================================== */
 
 
