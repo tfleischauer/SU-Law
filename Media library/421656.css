@@ -92,15 +92,16 @@ body {
     background-color: #ffffff;
     color: #333333;
     font-family: "Montserrat", sans-serif;
+    /* 10/16 =.625 Value is relative to the user's default font size. */
     font-size: 62.5%;
-    /* 10/16 =.625 Value is relative to the user's default font size.*/
     font-weight: 400;
     line-height: 1.45;
     margin: 0;
     /* for the fixed header */
     padding-top: 0;
-    min-width: fit-content;
     /* prevents overflow of long strings in mobile views */
+    /* min-width: fit-content; */
+    min-width: auto;
 }
 
 
@@ -128,6 +129,57 @@ body {
         margin-right: auto;
         margin-left: auto;
     }
+}
+
+
+/* Cookie Banner */
+
+.cookie-banner {
+    color: #fff;
+    position: fixed;
+    bottom: 10px;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    z-index: 1;
+}
+
+.cookie-banner p {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    padding: 0 1rem 0 0;
+}
+
+.cookie-banner p a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.cookie-banner button.close {
+    background: #088099;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1.6rem;
+    opacity: 1;
+    text-shadow: none;
+}
+
+.cookie-banner .close:focus,
+.cookie-banner .close:hover {
+    color: #088099;
+    text-decoration: underline;
+    cursor: pointer;
+    filter: alpha(opacity=50);
+    opacity: 1;
+    background: #fff;
 }
 
 
@@ -2109,6 +2161,22 @@ ul.arrowLinks li::before {
     }
 }
 
+/* Standard white button */
+
+/* ul.arrowLinks a:link,
+ul.arrowLinks a:visited {
+    color: initial !important;
+    background-color: #ffffff;
+}
+
+ul.arrowLinks a:hover,
+ul.arrowLinks a:active,
+ul.arrowLinks a:focus {
+    color: initial !important;
+    text-decoration: underline;
+    background-color: #ffffff;
+} */
+
 
 /*** See Law - Focus Box for 'Arrow' buttons altered for the Law - Focus Box content type ***/
 
@@ -2798,6 +2866,114 @@ figcaption {
 #campusAlertWrapper.alertAdvisory .moreLink a:hover:after,
 #campusAlertWrapper.alertInformational .moreLink a:after:hover,
 #campusAlertWrapper.alertSubtle .moreLink a:after:hover {
+    color: #ffffff;
+}
+
+/* =============================== Alert banner ================================ */
+
+.campusAlertWrapper h1 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 30px;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+}
+
+.campusAlertWrapper h1:before,
+.campusAlertWrapper h1:after,
+.campusAlertWrapper .moreLink:after {
+    color: #ffffff;
+    font-family: "seattle-u" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    speak: none;
+    top: 3px;
+}
+
+.campusAlertWrapper h1:before {
+    content: "b ";
+}
+
+.campusAlertWrapper h1:after {
+    content: " a";
+}
+
+.campusAlertWrapper h1 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.campusAlertWrapper h1 a:hover,
+.campusAlertWrapper h1 a:focus {
+    text-decoration: underline;
+}
+
+.campusAlertWrapper p a {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.campusAlertWrapper p {
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.campusAlertWrapper .moreLink {
+    display: inline-block;
+    background-color: #ffffff;
+    font-family: 'Roboto Slab';
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.campusAlertWrapper .moreLink a {
+    border: 1px solid #333333;
+    color: #333333;
+    display: inline-block;
+    padding: 5px 30px;
+    text-decoration: none;
+}
+
+.campusAlertWrapper .moreLink a:after {
+    color: #aa0000;
+    content: ' b';
+    font-family: 'seattle-u';
+    position: relative;
+    text-transform: lowercase;
+    top: 2px;
+}
+
+.campusAlertWrapper .moreLink a:hover {
+    background-color: #333333;
+    border: 1px solid #ffffff;
+    color: #fdb913;
+    text-decoration: none;
+}
+
+.campusAlertWrapper .moreLink a:hover:after {
+    color: #ffffff;
+}
+
+
+/* button style adjustments for advisory and informational buttons*/
+
+/* .campusAlertWrapper.alertAdvisory .moreLink a,
+.campusAlertWrapper.alertInformational .moreLink a {}
+
+.campusAlertWrapper.alertAdvisory .moreLink a:hover,
+.campusAlertWrapper.alertInformational .moreLink a:hover {}
+
+.campusAlertWrapper.alertAdvisory .moreLink a:after,
+.campusAlertWrapper.alertInformational .moreLink a:after {} */
+
+.campusAlertWrapper.alertAdvisory .moreLink a:hover:after,
+.campusAlertWrapper.alertInformational .moreLink a:after:hover,
+.campusAlertWrapper.alertSubtle .moreLink a:after:hover {
     color: #ffffff;
 }
 

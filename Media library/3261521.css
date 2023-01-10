@@ -56,21 +56,21 @@ p {
     margin: 0;
 } */
 
-body {
-    /* background-color: #ffffff;
+/* body { */
+/* background-color: #ffffff;
     color: #333333;
     font-family: "Montserrat", sans-serif;
     font-size: 62.5%; */
-    /* 10/16 =.625 To maximize accessibility, it is generally best to use values that are relative to the user's default font size.*/
-    /* xfont-size: 10px;
+/* 10/16 =.625 To maximize accessibility, it is generally best to use values that are relative to the user's default font size.*/
+/* xfont-size: 10px;
     font-weight: 400;
     line-height: 1.45;
     margin: 0; */
-    /* for the fixed header */
-    /* padding-top: 152px; */
-    min-width: auto;
-    /* prevents overflow of long strings in mobile views */
-}
+/* for the fixed header */
+/* padding-top: 152px; */
+/* min-width: auto; */
+/* prevents overflow of long strings in mobile views */
+/* } */
 
 /* @media screen and (max-width: 991.98px) { */
 /* xs + sm */
@@ -99,7 +99,7 @@ body {
 
 /* Cookie Banner */
 
-.cookie-banner {
+/* .cookie-banner {
     color: #fff;
     position: fixed;
     bottom: 10px;
@@ -145,7 +145,7 @@ body {
     filter: alpha(opacity=50);
     opacity: 1;
     background: #fff;
-}
+} */
 
 
 
@@ -2080,7 +2080,7 @@ p.sidebar-image>a {
 
 /* button style adjustments for advisory and informational buttons*/
 
-.campusAlertWrapper.alertAdvisory .moreLink a,
+/* .campusAlertWrapper.alertAdvisory .moreLink a,
 .campusAlertWrapper.alertInformational .moreLink a {}
 
 .campusAlertWrapper.alertAdvisory .moreLink a:hover,
@@ -2093,7 +2093,7 @@ p.sidebar-image>a {
 .campusAlertWrapper.alertInformational .moreLink a:after:hover,
 .campusAlertWrapper.alertSubtle .moreLink a:after:hover {
     color: #ffffff;
-}
+} */
 
 
 /* ====================================================================================================*/
@@ -5847,7 +5847,7 @@ h2.contactBoxTitle {
 
 /* Standard white button */
 
-ul.arrowLinks a:link,
+/* ul.arrowLinks a:link,
 ul.arrowLinks a:visited {
     color: initial !important;
     background-color: #ffffff;
@@ -5859,7 +5859,7 @@ ul.arrowLinks a:focus {
     color: initial !important;
     text-decoration: underline;
     background-color: #ffffff;
-}
+} */
 
 
 /* ==========================================================================================
