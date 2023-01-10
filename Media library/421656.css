@@ -2178,7 +2178,6 @@ ul.arrowLinks a:focus {
 } */
 
 
-
 /*** See Law - Focus Box for 'Arrow' buttons altered for the Law - Focus Box content type ***/
 
 
@@ -2693,9 +2692,11 @@ figcaption {
 #SidebarZone #topAlerts .topAlertsTitle span {
     color: #ffffff;
     display: block;
+    /* font-family: 'Roboto Slab', serif; */
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: 2rem;
     padding: 10px;
     text-align: center;
 }
@@ -2719,7 +2720,8 @@ figcaption {
 }
 
 #SidebarZone #topAlerts .topAlertsContent {
-    background: #ffffff;
+    /* background: #ffffff; */
+    background: #f7f7f7;
     margin-bottom: 10px;
     padding: 10px;
 }
@@ -2753,7 +2755,8 @@ figcaption {
 }
 
 #SidebarZone #topAlerts ul li em {
-    color: #666666;
+    /* color: #666666; */
+    color: #333333;
 }
 
 
@@ -9635,9 +9638,9 @@ li.nav-item a.nav-link .icon:hover {
   */
 
 
-/* .primaryContentWrapper .primaryContent > :first-child {
-    margin-top: 30px; Is this needed?
-  } */
+.primaryContentWrapper .primaryContent> :first-child {
+    margin-top: 30px;
+}
 
 
 /* CSS for image captions (Used for floating images in news stories). Added by Troy 5/1/2021 */

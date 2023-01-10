@@ -3499,20 +3499,20 @@ svg.arrow.circle.navy {
     margin: 0px;
 } */
 
-#SidebarZone #topAlerts .topAlertsTitle span {
-    /* color: #ffffff; */
-    /* display: block; */
-    font-family: 'Roboto Slab', serif;
-    font-size: 2rem;
-    /* padding: 10px; */
-    /* text-align: center; */
-}
+/* #SidebarZone #topAlerts .topAlertsTitle span { */
+/* color: #ffffff; */
+/* display: block; */
+/* font-family: 'Roboto Slab', serif;
+    font-size: 2rem; */
+/* padding: 10px; */
+/* text-align: center; */
+/* } */
 
-#SidebarZone #topAlerts .topAlertsContent {
-    background: #f7f7f7;
-    /* margin-bottom: 10px; */
-    /* padding: 10px; */
-}
+/* #SidebarZone #topAlerts .topAlertsContent { */
+/* background: #f7f7f7; */
+/* margin-bottom: 10px; */
+/* padding: 10px; */
+/* } */
 
 /* #SidebarZone #topAlerts ul {
     margin-bottom: 10px;
@@ -3542,9 +3542,9 @@ svg.arrow.circle.navy {
     color: #aa0000;
 } */
 
-#SidebarZone #topAlerts ul li em {
+/* #SidebarZone #topAlerts ul li em {
     color: #333333;
-}
+} */
 
 
 /* ==========================================================================================
@@ -5860,7 +5860,6 @@ ul.arrowLinks a:focus {
     text-decoration: underline;
     background-color: #ffffff;
 } */
-
 
 
 /* ==========================================================================================
@@ -9751,7 +9750,7 @@ li.nav-item a.nav-link .icon:hover {
 
 /* Content Item Tweaks To Implement */
 
-#carousel .slick-dots {
+/* #carousel .slick-dots {
     position: relative !important;
     bottom: 0px;
 }
@@ -9764,16 +9763,16 @@ li.nav-item a.nav-link .icon:hover {
     height: auto;
     max-height: 300px;
     width: 100%;
-}
+} */
 
 /* .accordionWrapper dl { */
 /* accordion tweak */
 /* margin-bottom: 0px;
 } */
 
-.primaryContentWrapper .primaryContent> :first-child {
+/* .primaryContentWrapper .primaryContent> :first-child {
     margin-top: 30px;
-}
+} */
 
 /* @media screen and (max-width: 767.999px) {
     /* xs */
@@ -9928,7 +9927,7 @@ li.nav-item a.nav-link .icon:hover {
     position: relative;
 } */
 
-.spotlightCopyCitation.red-border-side {
+/* .spotlightCopyCitation.red-border-side {
     border-left: 4px solid #f03f35;
     padding-left: 13px;
 }
@@ -9937,7 +9936,7 @@ li.nav-item a.nav-link .icon:hover {
     .spotlightCopyCitation.red-border-side {
         border-left: none;
     }
-}
+} */
 
 /* .red-border-top {
     border-top: 4px solid #f03f35;
@@ -11211,7 +11210,7 @@ div.row.Row1 {
 #law-global-banner-alert .infographicItemHeader.standardContent h2 {
     color: #fff;
     clear: both;
-    xfont-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
     font-size: 2.25rem;
     font-weight: 400;
     margin: 2rem 0 1rem 0;
