@@ -943,6 +943,25 @@ body {
     }
 }
 
+/* ------------------- Make space for variable number of drop-down menu items --------------------- */
+
+/* For 575px and smaller */
+#globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks ul {
+    max-height: 1500px;
+}
+
+@media screen and (min-width: 992px) {
+    #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks ul {
+        max-height: 500px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks ul {
+        max-height: 400px;
+    }
+}
+
 
 /* ============================================== Page Title ==============================================*/
 
@@ -7255,16 +7274,16 @@ focusBox.colorSURed .focusBoxContent ul li:before {
     /* identical to standard content */
     color: #aa0000;
     clear: both;
-    font-family: "Roboto Slab", serif;
-    font-size: 3.2rem;
-    font-weight: 400;
+    /* font-family: "Roboto Slab", serif; */
+    /* font-size: 3.2rem; */
+    /* font-weight: 400; */
     margin: 30px 0 3px 0;
 }
 
 .formPlaceholder form h3 {
     /* identical to standard content */
     color: #aa0000;
-    font-size: 1.953rem;
+    font-size: 1.96rem;
     margin: 3rem 0 0 0;
 }
 
@@ -9256,12 +9275,16 @@ div#pageContent.row #Mainzone {
 }
 
 
-/*** MEDIA QUERY ***/
-
-
-/* Small devices (tablets, 768px and up) */
+/*** MEDIA QUERIES ***/
 
 @media screen and (min-width: 768px) {
+    .jumbotron3Wrapper .jumbotron3Image {
+        padding: 250px;
+
+    }
+}
+
+@media screen and (min-width: 992px) {
 
     /* Jumbotron III picture on card effect */
     /* default is image on left, and the text on the right */
@@ -9292,6 +9315,10 @@ div#pageContent.row #Mainzone {
     .jumbotron3Wrapper .alignmentleft .jumbotron3Text p,
     .jumbotron3Wrapper .alignmentleft .jumbotron3Text ul {
         padding-left: 4%;
+    }
+
+    .jumbotron3Wrapper .jumbotron3Image {
+        padding: initial;
     }
 
     .jumbotron3Wrapper .alignmentleft .jumbotron3Image {
