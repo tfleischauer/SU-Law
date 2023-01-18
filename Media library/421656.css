@@ -61,7 +61,7 @@ p {
 
 /* Global Custom Properties: The HTML element but with higher specificity */
 
- :root {
+:root {
     /* Body Text */
     --p: 1.2rem;
     /* Captions */
@@ -119,6 +119,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+
     /* lg */
     #pageContentWrapper[class=""] {
         /* Default state if .container or .container-fluid are not set in the site configuration */
@@ -230,11 +231,13 @@ body {
 }
 
 @media screen and (max-width: 820px) {
+
     /* xs plus a bit when the trianlge overlaps*/
     #breadcrumbs {
-        width: calc( 100% - 45px);
+        width: calc(100% - 45px);
         /* prevent nav#breadcrumbs from falling off right side, add 15px margin to right (45 - 30) */
     }
+
     #breadcrumbsWrapper .standardContent {
         max-width: unset;
     }
@@ -296,7 +299,7 @@ body {
 #breadcrumbsWrapper .breadcrumb .active
 /* affects only aspx pages connecting to legacy.master */
 
-{
+    {
     color: #666666;
 }
 
@@ -359,6 +362,7 @@ body {
   */
 
 @media screen and (min-width: 768px) {
+
     /* sm + md + lg*/
     #pageContentWrapper.container #SidebarZone {
         padding-right: 45px;
@@ -366,6 +370,7 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.999px) {
+
     /* sm + md */
     #SidebarZone {
         padding-left: 15px;
@@ -485,6 +490,7 @@ body {
 }
 
 @media (max-width: 767.999px) {
+
     #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle a,
     #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle a:visited {
         padding: 15px;
@@ -514,9 +520,11 @@ body {
     #siteNavigation {
         margin-bottom: 0;
     }
+
     #siteNavigation .navbar-toggle {
         display: block;
     }
+
     #siteNavigation button {
         /* menu icon on mobile */
         display: block;
@@ -527,9 +535,11 @@ body {
         right: 0;
         padding: 15px 10px;
     }
+
     #siteNavigation button span.icon-bar {
         background: #aa0000;
     }
+
     #siteNavigation button.collapsed span.icon-bar {
         background: #aa0000;
         position: initial !important;
@@ -537,6 +547,7 @@ body {
         transform: none !important;
         visibility: visible !important;
     }
+
     #siteNavigation button span.icon-bar:nth-child(2) {
         position: relative;
         text-transform: uppercase;
@@ -548,9 +559,11 @@ body {
         transition: 0.25s;
         transform: rotate(45deg);
     }
+
     #siteNavigation button span.icon-bar:nth-child(3) {
         visibility: hidden;
     }
+
     #siteNavigation button span.icon-bar:nth-child(4) {
         text-transform: uppercase;
         -o-transition: 0.25s;
@@ -562,6 +575,7 @@ body {
         position: relative;
         top: -6px;
     }
+
     #siteNavigation button .glyphicon {
         /* dead 10/25/18 */
         color: #aa0000;
@@ -570,11 +584,13 @@ body {
         font-size: 18px;
         width: initial;
     }
+
     #siteNavigation button .glyphicon:before {
         /* dead 10/25/18 */
         content: "\f0c9";
         font-family: "fontawesome";
     }
+
     /* #siteNavigation .navbar-collapse.collapse {
         display: none!important;
     } */
@@ -582,12 +598,15 @@ body {
         padding-top: 15px;
         padding-bottom: 15px;
     }
+
     #siteNavigation .collapse.in {
         display: block !important;
     }
+
     #siteNavigation #siteNavigationTitleWrapper {
         border-bottom: 1px solid #b7b7b7;
     }
+
     #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle a,
     #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle a:visited {
         border-bottom: none;
@@ -803,12 +822,14 @@ body {
 }
 
 @media screen and (max-width: 991.999px) {
+
     /* #siteNavigation #menu li a {
       padding:10px 35px 10px 15px;
     } */
     #siteNavigation #menu li span.currentsection {
         padding: 10px 15px;
     }
+
     /* first submenu*/
     /* #siteNavigation #menu .multilevel-linkul-0 li a,
     #siteNavigation #menu .multilevel-linkul-0 span.currentsection{
@@ -826,19 +847,23 @@ body {
     #siteNavigation #menu .multilevel-linkul-1 span.currentsection {
         padding: 10px 0 10px 35px;
     }
+
     /* third submenu*/
     #siteNavigation #menu .multilevel-linkul-2 li a,
     #siteNavigation #menu .multilevel-linkul-2 span.currentsection {
         padding: 10px 0 10px 45px;
     }
+
     /* fourth submenu*/
     #siteNavigation #menu .multilevel-linkul-3 li a {
         padding: 10px 0 10px 55px;
     }
+
     /* fifth submenu*/
     #siteNavigation #menu .multilevel-linkul-4 li a {
         padding: 10px 0 10px 65px;
     }
+
     #siteNavigation #menu .glyphicon {
         padding: 10px;
     }
@@ -862,6 +887,7 @@ body {
     .horizontalSiteNav {
         background: #333;
     }
+
     .horizontalSiteNav #siteNavigation {
         float: none;
         margin: 0 auto 60px;
@@ -871,28 +897,35 @@ body {
         max-width: 1170px;
         text-align: center;
     }
+
     .horizontalSiteNav #siteNavigation #menu li {
         float: left;
     }
+
     .horizontalSiteNav #siteNavigation #menu {
         float: left;
         margin: 0;
     }
+
     .horizontalSiteNav #siteNavigationTitleWrapper {
         float: left;
     }
+
     .horizontalSiteNav #siteNavigation #menu li a {
         border: none;
         color: #fff;
         padding: 15px 17px;
     }
+
     .horizontalSiteNav #siteNavigation #menu li a:hover {
         color: #aa0000;
     }
+
     .horizontalSiteNav #siteNavigation #menu li span.currentsection {
         border-bottom: none;
         padding: 15px 17px;
     }
+
     .horizontalSiteNav #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle a,
     .horizontalSiteNav #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle a:visited {
         border-bottom: none;
@@ -903,6 +936,7 @@ body {
         line-height: 1.2em;
         position: relative;
     }
+
     .horizontalSiteNav #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle a:hover {
         color: #aa0000;
         text-decoration: none;
@@ -913,19 +947,23 @@ body {
 
 /* For 575px and smaller */
 #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks ul {
-    max-height: 1500px;
+    max-height: 1600px !important;
 }
 
+/* #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks ul.d-md-flex.flex-column.flex-wrap {
+    max-height: 1700px !important;
+} */
+
 @media screen and (min-width: 992px) {
-#globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks ul {
-    max-height: 500px;
-  }
+    #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks ul {
+        max-height: 500px;
+    }
 }
 
 @media screen and (min-width: 1400px) {
-#globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks ul {
-    max-height: 400px;
-  }
+    #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks ul {
+        max-height: 400px;
+    }
 }
 
 
@@ -955,6 +993,7 @@ body {
 }
 
 @media screen and (max-width: 767.999px) {
+
     #pageContentWrapper.container #pageTitle,
     #pageContentWrapper.container-fluid #pageTitle {
         font-size: 2.4rem;
@@ -963,6 +1002,7 @@ body {
 }
 
 @media screen and (min-width: 992px) {
+
     /* md + lg*/
     #pageTitle {
         margin: 0;
@@ -1609,6 +1649,7 @@ button.btn-su-blue {
 }
 
 @media screen and (max-width: 1199.999px) {
+
     /* xs + sm + md */
     #MainZone .contentItem:first-of-type,
     #SidebarZone .contentItem:first-of-type {
@@ -1617,6 +1658,7 @@ button.btn-su-blue {
 }
 
 @media screen and (max-width: 1199.999px) {
+
     /* xs + sm + md */
     #MainZone .noGap+.noGap,
     #SidebarZone .noGap+.noGap,
@@ -1626,6 +1668,7 @@ button.btn-su-blue {
 }
 
 @media screen and (max-width: 1199.999px) {
+
     /* xs + sm + md */
     #SidebarZone .hspace {
         padding: 0 15px 0 0;
@@ -1633,6 +1676,7 @@ button.btn-su-blue {
 }
 
 @media screen and (min-width: 1200px) {
+
     /* lg */
     #SidebarZone .hspace {
         padding: 0 0 0 0;
@@ -1641,6 +1685,7 @@ button.btn-su-blue {
 }
 
 @media screen and (min-width: 992px) {
+
     /* md + lg*/
     #pageContentWrapper.container-fluid #MainZone.col-md-12 .hspace,
     #pageContentWrapper.container-fluid #MainZone.col-md-9 .hspace {
@@ -1794,12 +1839,14 @@ h5 {
     .standardContent h1 {
         font-size: 2.4rem;
     }
-    .standardContent h2 {
+
+    /* .standardContent h2 {
         font-size: 2.8rem;
-    }
+    } */
     .standardContent h3 {
         font-size: 1.8rem;
     }
+
     .standardContent h4 {
         font-size: 1.6rem;
     }
@@ -2053,7 +2100,7 @@ ol.list-UpperRoman {
     height: 25px;
     position: absolute;
     right: 15px;
-    top: calc( 50% - 12px);
+    top: calc(50% - 12px);
     /* 12px is ~50% of its height) to vertically center it */
     width: 25px;
 }
@@ -2120,6 +2167,7 @@ ul.arrowLinks li::before {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991.999px) {
+
     /* sm */
     ul.arrowLinks li {
         flex: 1 1 calc(50% - 7px);
@@ -2127,6 +2175,7 @@ ul.arrowLinks li::before {
 }
 
 @media (min-width: 992px) {
+
     /* md and lg */
     ul.arrowLinks li {
         flex: 1 1 calc(33.33% - 7px);
@@ -2595,6 +2644,7 @@ figcaption {
     #SidebarZone img {
         padding: 0;
     }
+
     #SidebarZone figure.image-wrapper {
         padding: 0;
     }
@@ -2844,7 +2894,7 @@ figcaption {
 #campusAlertWrapper.alertSubtle .moreLink a:after:hover {
     color: #ffffff;
 }
-  
+
 /* =============================== Alert banner ================================ */
 
 .campusAlertWrapper h1 {
@@ -3073,6 +3123,7 @@ footer h4 {
     footer #footerInner {
         padding: 30px 0;
     }
+
     footer h4 {
         font-size: 1.5rem;
         margin: 0 0 3rem 0;
@@ -3099,6 +3150,7 @@ footer p.h4 {
     footer #footerInner {
         padding: 30px 0;
     }
+
     footer p.h4 {
         font-size: 1.5rem;
         margin: 0 0 3rem 0;
@@ -3156,24 +3208,29 @@ footer #organization .phone a:link {
     .org-inner-wrapper {
         width: 180px;
     }
+
     footer #organization img {
         /* su logo */
         max-width: 100%;
         margin: 0;
     }
+
     footer #organization .name {
         font-size: 1.25rem;
         line-height: 1.5;
     }
+
     footer #organization address,
     footer #organization .phone {
         font-size: 0.9rem;
     }
+
     footer #organization .phone a:link,
     footer #organization .phone a:visited {
         cursor: text;
         text-decoration: none;
     }
+
     footer #organization .phone a:hover,
     footer #organization .phone a:active {
         color: #ffffff;
@@ -3182,6 +3239,7 @@ footer #organization .phone a:link {
 }
 
 @media (min-width: 1200px) {
+
     footer #organization address,
     footer #organization .phone {
         font-size: 1.25rem;
@@ -3232,6 +3290,7 @@ footer .footerLinks a:focus {
 }
 
 @media (min-width: 992px) {
+
     #footerLinksPeople,
     #footerLinksEssentials,
     #footerLinksEssentials,
@@ -3239,10 +3298,12 @@ footer .footerLinks a:focus {
         text-align: left;
         margin-top: unset;
     }
+
     footer .footerLinks ul {
         margin: 0;
         display: block;
     }
+
     footer .footerLinks a {
         font-size: 0.9rem;
     }
@@ -3288,6 +3349,7 @@ footer #footerSocialMediaLinks .social a:focus {
     footer #footerSocialMediaLinks .social li {
         margin-right: 1.1rem;
     }
+
     footer #footerSocialMediaLinks .social.row2 li:last-child {
         margin-right: 0;
     }
@@ -3298,6 +3360,7 @@ footer #footerSocialMediaLinks .social a:focus {
         text-align: left;
         margin-top: unset;
     }
+
     footer #footerSocialMediaLinks .social li {
         margin-right: unset;
     }
@@ -3343,6 +3406,7 @@ footer #footerSocialMediaLinks .social a:focus {
     #footerCallToActionLinks li {
         margin-bottom: 0;
     }
+
     #footerCallToActionLinks a {
         font-size: 1.25rem;
     }
@@ -3396,15 +3460,19 @@ footer #footerSocialMediaLinks .social a:focus {
     #subfooterWrapper {
         margin-top: 0;
     }
+
     #subfooterLinks a {
         display: inline;
     }
+
     #subfooterLinks a:nth-of-type(1) {
         margin: 0 2rem 0 0;
     }
+
     #subfooterLinks a:nth-of-type(2) {
         margin: 0 2rem 0 0;
     }
+
     #subfooter #subfooterLinks {
         text-align: right;
         font-size: .9rem;
@@ -3678,11 +3746,13 @@ svg.arrow.circle.navy {
 /* ***** xs screen and up ***** */
 
 @media only screen and (min-width: 576px) {
+
     /* Keeps accordion on the grid */
     .accordionWrapper {
         margin-left: 15px !important;
         padding-right: 45px;
     }
+
     /* Indents nested lists to the left */
     .accordionWrapper ol,
     .accordionWrapper ul {
@@ -3768,26 +3838,31 @@ svg.arrow.circle.navy {
 }
 
 @media only screen and (min-width: 768px) {
+
     /* Small Devices, Tablets */
     .BoxLinksWrapper {
         padding: 0 10px;
     }
+
     /* .container */
     #pageContentWrapper.container #MainZone.col-sm-8 .BoxLinksMainZone ul.boxlinks li,
     #pageContentWrapper[class=""] #MainZone.col-sm-8 .BoxLinksMainZone ul.boxlinks li {
         flex: 0 1 calc(50% - 7px);
         width: 50%;
     }
+
     #pageContentWrapper.container #MainZone.col-sm-12 .BoxLinksMainZone ul.boxlinks li,
     #pageContentWrapper[class=""] #MainZone.col-sm-12 .BoxLinksMainZone ul.boxlinks li {
         flex: 0 1 calc(33.33% - 7px);
         width: 33.33%;
     }
+
     /* .container-fluid */
     #pageContentWrapper.container-fluid #MainZone.col-sm-8 .BoxLinksMainZone ul.boxlinks li {
         flex: 0 1 calc(50% - 7px);
         width: 50%;
     }
+
     #pageContentWrapper.container-fluid #MainZone.col-sm-12 .BoxLinksMainZone ul.boxlinks li {
         flex: 0 1 calc(33.33% - 7px);
         width: 33.33%;
@@ -3795,6 +3870,7 @@ svg.arrow.circle.navy {
 }
 
 @media (min-width: 992px) {
+
     /* Medium Devices, Desktops */
     /* .container */
     #pageContentWrapper.container #MainZone.col-md-6 .BoxLinksMainZone ul.boxlinks li,
@@ -3802,25 +3878,30 @@ svg.arrow.circle.navy {
         flex: 0 1 calc(50% - 7px);
         width: 50%;
     }
+
     #pageContentWrapper.container #MainZone.col-md-9 .BoxLinksMainZone ul.boxlinks li,
     #pageContentWrapper[class=""] #MainZone.col-md-9 .BoxLinksMainZone ul.boxlinks li {
         flex: 0 1 calc(33.33% - 7px);
         width: 33.33%;
     }
+
     #pageContentWrapper.container #MainZone.col-md-12 .BoxLinksMainZone ul.boxlinks li,
     #pageContentWrapper[class=""] #MainZone.col-md-12 .BoxLinksMainZone ul.boxlinks li {
         flex: 0 1 calc(25% - 7px);
         width: 25%;
     }
+
     /* .container-fluid */
     #pageContentWrapper.container-fluid #MainZone.col-md-6 .BoxLinksMainZone ul.boxlinks li {
         flex: 0 1 calc(50% - 7px);
         width: 50%;
     }
+
     #pageContentWrapper.container-fluid #MainZone.col-md-9 .BoxLinksMainZone ul.boxlinks li {
         flex: 0 1 calc(33.33% - 7px);
         width: 33.33%;
     }
+
     #pageContentWrapper.container-fluid #MainZone.col-md-12 .BoxLinksMainZone ul.boxlinks li {
         flex: 0 1 calc(25% - 7px);
         width: 25%;
@@ -3838,77 +3919,77 @@ svg.arrow.circle.navy {
 */
 
 .colorButtonWrapper {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 
-  /* If we want to change flex direction to column for mobile and row for desktop. 
+    /* If we want to change flex direction to column for mobile and row for desktop. 
     However, colorButtons aren't setup to work with flex: column; */
-  /* flex-wrap: nowrap; */
+    /* flex-wrap: nowrap; */
 
-  /* Adds spacing beween topzone and content */
-  /* This being overwritten by SU-Law-modified.css Media Library ID 421656 Modified post 20210817 */
-  margin: 0 0 15px 0;
+    /* Adds spacing beween topzone and content */
+    /* This being overwritten by SU-Law-modified.css Media Library ID 421656 Modified post 20210817 */
+    margin: 0 0 15px 0;
 }
 
 .colorButton {
-  /* changes stacking context - places flex items above the static positioned content */
-  position: relative;
+    /* changes stacking context - places flex items above the static positioned content */
+    position: relative;
 
-  /* For the content inside the colorButton content item, colorButton is a flex item and a flex container */
-  display: flex;
+    /* For the content inside the colorButton content item, colorButton is a flex item and a flex container */
+    display: flex;
 
-  /* Equivalent to flex-grow: 1; meaning 'flex grow enabled.' Allows flex item to take up available space. */
-  flex: 1;
+    /* Equivalent to flex-grow: 1; meaning 'flex grow enabled.' Allows flex item to take up available space. */
+    flex: 1;
 
-  /* the contents inside each colorButton are lined up top to bottom in a column */
-  flex-direction: column;
+    /* the contents inside each colorButton are lined up top to bottom in a column */
+    flex-direction: column;
 
-  /* Don't need to re-declare the font family */
-  /* font-family: "montserrat", sans-serif; */
+    /* Don't need to re-declare the font family */
+    /* font-family: "montserrat", sans-serif; */
 
-  justify-content: center;
-  text-align: center;
+    justify-content: center;
+    text-align: center;
 
-  /* sets the width, and then overwrites the width with flex-basis */
-  width: 0;
+    /* sets the width, and then overwrites the width with flex-basis */
+    width: 0;
 
-  border-right: 2px solid #fff;
+    border-right: 2px solid #fff;
 
-  /* margin: 20px 0; */
-  margin: 0 0 20px 0;
+    /* margin: 20px 0; */
+    margin: 0 0 20px 0;
 
-  /* padding: 30px 15px; */
-  padding: 10px 15px;
+    /* padding: 30px 15px; */
+    padding: 10px 15px;
 
-  flex-basis: 100%;
+    flex-basis: 100%;
 }
 
 .colorButton:last-child {
-  border-right: none;
+    border-right: none;
 }
 
 /* START moved from bottom */
 
 .colorButton h4 {
-  font-family: 'Oswald', sans-serif;
-  /* font-size: 2.2rem; */
-  font-size: 1.5rem;
-  /* line-height: 2.2rem; */
-  line-height: 1.5;
-  font-weight: 300;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 0;
+    font-family: 'Oswald', sans-serif;
+    /* font-size: 2.2rem; */
+    font-size: 1.5rem;
+    /* line-height: 2.2rem; */
+    line-height: 1.5;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
 }
 
 .colorButton p {
-  /* font-size: 1.4rem; */
-  font-size: 1.15rem;
-  /* line-height: 1.7rem; */
-  line-height: 1.5;
-  margin: 0;
-  /* padding-top: 10px; */
-  padding-top: .5rem;
+    /* font-size: 1.4rem; */
+    font-size: 1.15rem;
+    /* line-height: 1.7rem; */
+    line-height: 1.5;
+    margin: 0;
+    /* padding-top: 10px; */
+    padding-top: .5rem;
 }
 
 /* END moved from bottom */
@@ -3916,11 +3997,11 @@ svg.arrow.circle.navy {
 a.colorButton:link,
 a.colorButton:visited,
 a.colorButton:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 a.colorButton:active {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* @media (max-width: 767px) {
@@ -3932,39 +4013,39 @@ a.colorButton:active {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .colorButton {
-    xflex-basis: 33%;
-    flex-basis: 50%;
-  }
+    .colorButton {
+        xflex-basis: 33%;
+        flex-basis: 50%;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
 
-  /* tilde is a general sibling combiner that, in this case, means any anchor tag after nth-last-child(n+6)~a */
-  /* (n+6) styles all of the elements n a set starting from the sixth. In this case counting from the 6th from last child 
+    /* tilde is a general sibling combiner that, in this case, means any anchor tag after nth-last-child(n+6)~a */
+    /* (n+6) styles all of the elements n a set starting from the sixth. In this case counting from the 6th from last child 
   to the first child or all children in the set if there are 6 */
-  /* .colorButton:nth-last-child(n + 6),
+    /* .colorButton:nth-last-child(n + 6),
   .colorButton:nth-last-child(n + 6)~a {
     flex-basis: 12%;
   } */
 
-  /*if 6 (or more) items, the flexbasis changes to 33%   doc: https://alistapart.com/article/quantity-queries-for-css*/
+    /*if 6 (or more) items, the flexbasis changes to 33%   doc: https://alistapart.com/article/quantity-queries-for-css*/
 }
-  
+
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .colorButtonWrapper {
-    flex-wrap: nowrap;
-  }
-}  
+    .colorButtonWrapper {
+        flex-wrap: nowrap;
+    }
+}
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
 
-  .colorButton:nth-last-child(n + 6),
-  .colorButton:nth-last-child(n + 6)~a {
-    flex-basis: 12%;
-  }
+    .colorButton:nth-last-child(n + 6),
+    .colorButton:nth-last-child(n + 6)~a {
+        flex-basis: 12%;
+    }
 }
 
 
@@ -4204,6 +4285,7 @@ a.colorButton:active {
 }
 
 @media screen and (max-width: 992px) and (min-width: 767px) {
+
     /*Small Displays*/
     .callToActionWrapper h2 {
         margin-bottom: 35px;
@@ -4272,6 +4354,7 @@ a.colorButton:active {
     .callToActionButton {
         margin-bottom: 25px;
     }
+
     .callToAction {
         padding-bottom: 20px;
     }
@@ -4296,14 +4379,17 @@ a.colorButton:active {
 /* Flex Grid Queries [FOR ZONE A]*/
 
 @media screen and (min-width: 1200px) {
+
     /*Large Displays*/
     #MainZone .callToActionWrapper .callToActionButton {
         /* No Side Bars */
         flex-basis: calc(25% - 7px);
     }
+
     #pageContentWrapper.container-fluid #MainZone.col-md-12 .callToAction {
         padding: 60px 0;
     }
+
     #MainZone.col-md-9 .callToActionWrapper .callToActionButton {
         /* 1 Side Bar */
         flex-basis: calc(25% - 7px);
@@ -4311,11 +4397,13 @@ a.colorButton:active {
 }
 
 @media screen and (max-width: 1200px) and (min-width: 992px) {
+
     /*Medium Displays*/
     #MainZone .callToActionWrapper .callToActionButton {
         /* No Side Bars */
         flex-basis: calc(25% - 7px);
     }
+
     #pageContentWrapper #MainZone.col-md-9 .callToActionWrapper .callToActionButton {
         /* 1 Side Bar */
         flex-basis: calc(50% - 7px);
@@ -4333,6 +4421,7 @@ a.colorButton:active {
 } */
 
 @media screen and (max-width: 767px) {
+
     /*Extra Small Displays*/
     .callToActionButton {
         /* Side Bars Irrelevant*/
@@ -4373,7 +4462,7 @@ a.colorButton:active {
 .callToAction ul.callToActionButtonWrapper li.callToActionButton {
     margin-bottom: 30px;
 }
-  
+
 /* ========================================================================================== 
    ============================ Campus Alert System =========================================
    ==========================================================================================
@@ -4381,7 +4470,7 @@ a.colorButton:active {
    ==========================================================================================
         Adds banner on top of all pages for use in a campus emergency or snow message
 */
-  
+
 /* See posssible legacy content: Alert page layout, Alert banner (multiple), Critical Emergency Homepage */
 
 
@@ -4412,6 +4501,7 @@ a.colorButton:active {
 }
 
 @media screen and (max-width: 767.999px) {
+
     /* xs */
     .emergencynotice .container {
         position: relative;
@@ -4538,6 +4628,7 @@ a.colorButton:active {
 }
 
 @media screen and (max-width: 767.999px) {
+
     /* xs */
     .emergencynotice .fa {
         right: 30px;
@@ -4579,7 +4670,7 @@ a.colorButton:active {
 
 @media screen and (max-width: 767.999px) {
     /* xs */
-    /* .emergencynotice .container {
+/* .emergencynotice .container {
         position: relative;
         padding: 30px 60px 30px 30px;
     }
@@ -4686,8 +4777,8 @@ a.colorButton:active {
 } */
 
 /* .emergencynotice .fa { */
-    /* close button */
-    /* border: 2px solid #f7f7f7;
+/* close button */
+/* border: 2px solid #f7f7f7;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
@@ -4695,15 +4786,15 @@ a.colorButton:active {
     position: absolute;
     right: 0;
     top: 35px; */
-    /* to align with h2 */
+/* to align with h2 */
 /* } */
 
 /* @media screen and (max-width: 767.999px) {
     /* xs */
-    /* .emergencynotice .fa {
+/* .emergencynotice .fa {
         /* right: 30px; */
-        /* add space to click on mobile */
-    /* } 
+/* add space to click on mobile */
+/* } 
 }  */
 
 /* .notice.closed {
@@ -4732,8 +4823,8 @@ a.colorButton:active {
 } */
 
 /* .campusAlertFulltextWrapper { */
-    /* fulltext of articles */
-    /* padding: 0 10px 10px 10px;
+/* fulltext of articles */
+/* padding: 0 10px 10px 10px;
 } */
 
 /* .campusAlertFulltext {
@@ -4744,25 +4835,25 @@ a.colorButton:active {
 /* below is exactly the same as the Quicklinks. */
 
 /* #SidebarZone #topAlerts .topAlertsTitle { */
-    /* h3 */
-    /* background-color: #aa0000;
+/* h3 */
+/* background-color: #aa0000;
     padding: 10px 0 10px 0;
     margin: 0px;
 } */
 
 /* #SidebarZone #topAlerts .topAlertsTitle span { */
-    /* color: #ffffff; */
-    /* display: block; */
-    /* font-family: 'Roboto Slab', serif;
+/* color: #ffffff; */
+/* display: block; */
+/* font-family: 'Roboto Slab', serif;
     font-size: 2rem; */
-    /* padding: 10px; */
-    /* text-align: center; */
+/* padding: 10px; */
+/* text-align: center; */
 /* } */
 
 /* #SidebarZone #topAlerts .topAlertsContent { */
-    /* background: #f7f7f7; */
-    /* margin-bottom: 10px; */
-    /* padding: 10px; */
+/* background: #f7f7f7; */
+/* margin-bottom: 10px; */
+/* padding: 10px; */
 /* } */
 
 /* #SidebarZone #topAlerts ul {
@@ -4797,7 +4888,7 @@ a.colorButton:active {
     color: #333333;
 } */
 
-  
+
 /*** GLOBAL BANNER ALERT ***/
 /* The following are for a content type. For use in a Code-Only
 content item located in the Law - Global Navigation folder. */
@@ -4897,87 +4988,87 @@ Instead, change classes in content item as shown in Law - Global Banner Alert (s
 /* Law - Global Banner Alert */
 
 #law-global-banner-alert .law-gba-subtle {
-  background-color: #088099;
+    background-color: #088099;
 }
 
 #law-global-banner-alert .law-gba-informational {
-  background-color: #124a12;
+    background-color: #124a12;
 }
 
 #law-global-banner-alert .law-gba-advisory {
-  background-color: #cc9f26;
+    background-color: #cc9f26;
 }
 
 #law-global-banner-alert .law-gba-critical {
-  background-color: #aa0000;
+    background-color: #aa0000;
 }
 
 #law-global-banner-alert .infographicItemHeader.standardContent h2 {
-  color: #fff;
-  clear: both;
-  /* font-family: "Montserrat", sans-serif; */
-  font-size: 2.25rem;
-  font-weight: 400;
-  margin: 2rem 0 1rem 0;
+    color: #fff;
+    clear: both;
+    /* font-family: "Montserrat", sans-serif; */
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin: 2rem 0 1rem 0;
 }
 
 @media (min-width: 992px) {
-  #law-global-banner-alert .infographicItemHeader.standardContent h2 {
-    font-size: 2.5rem;
-  }
+    #law-global-banner-alert .infographicItemHeader.standardContent h2 {
+        font-size: 2.5rem;
+    }
 }
 
 #law-global-banner-alert .infographicItemText.standardContent p {
-  color: #fff;
-  text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
 
 #law-global-banner-alert .infographicItemText.standardContent a:link {
-  color: #fff;
-  font-size: 1.8rem;
-  font-weight: 500;
-  text-decoration: underline;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-decoration: underline;
 }
 
 #law-global-banner-alert .infographicItemText.standardContent a:visited {
-  color: #f7f7f7;
-  text-decoration: underline;
+    color: #f7f7f7;
+    text-decoration: underline;
 }
 
 #law-global-banner-alert .infographicItemText.standardContent a:hover {
-  color: #fdb913;
-  text-decoration: underline;
+    color: #fdb913;
+    text-decoration: underline;
 }
 
 #law-global-banner-alert .infographicItemText.standardContent a:focus {
-  color: #fdb913;
-  text-decoration: underline;
+    color: #fdb913;
+    text-decoration: underline;
 }
 
 #law-global-banner-alert .infographicItemText.standardContent a:active {
-  color: #f7f7f7;
-  text-decoration: underline;
+    color: #f7f7f7;
+    text-decoration: underline;
 }
 
 
 /* Advisory (gold) */
 #law-global-banner-alert .law-gba-dark-link.standardContent a:link {
-  color: #003282;
+    color: #003282;
 }
 
 #law-global-banner-alert .law-gba-dark-link.standardContent a:visited {
-  color: #003282;
-  text-decoration: none;
+    color: #003282;
+    text-decoration: none;
 }
 
 #law-global-banner-alert .law-gba-dark-link.standardContent a:hover {
-  color: #003282;
+    color: #003282;
 }
 
 #law-global-banner-alert .law-gba-dark-link.standardContent a:focus,
 #law-global-banner-alert .law-gba-dark-link.standardContent a:active {
-  color: #aa0000;
-  text-decoration: underline;
+    color: #aa0000;
+    text-decoration: underline;
 }
 
 
@@ -5135,6 +5226,7 @@ Instead, change classes in content item as shown in Law - Global Banner Alert (s
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.999px) {
+
     /* sm + md */
     .cardsWrapper .cardButton .btn-boxlink {
         padding: 0;
@@ -5142,21 +5234,25 @@ Instead, change classes in content item as shown in Law - Global Banner Alert (s
 }
 
 @media screen and (max-width: 991.999px) {
+
     /* xs */
     .cardsWrapper .cards {
         display: block;
     }
+
     .cardsWrapper .card {
         margin: 30px 0 0 0;
     }
+
     .cardsWrapper .card .standardContent {
         padding: 0;
     }
+
     .cardsWrapper .cardButton .btn-boxlink {
         padding: 0;
     }
 }
-  
+
 /* ==========================================================================================
    ===== Law - Card ===== Content Type #5224 ================================================
    ==========================================================================================
@@ -5371,7 +5467,7 @@ Instead, change classes in content item as shown in Law - Global Banner Alert (s
 /* .carouselImageWrapper {
       display: none !important;
 } */
-  
+
 .carouselImageWrapper.carousel-item .card-body {
     background-color: #f7f7f7;
 }
@@ -5751,15 +5847,18 @@ h2.contactBoxTitle {
 /* Large Displays*/
 
 @media (min-width: 1200px) {
+
     /* Only Zone A */
     #MainZone.col-md-12 .contactBoxWrapper .contactBoxes .contactBox {
         flex-basis: 33% !important;
         display: flex;
     }
+
     /* Zone A and Zone B*/
     #MainZone.col-md-9 .contactBoxWrapper .contactBoxes .contactBox {
         flex-basis: 33% !important;
     }
+
     /* Zone A, Zone B, and Zone C*/
     #MainZone.col-md-6 .contactBoxWrapper .contactBoxes .contactBox {
         flex-basis: 33% !important;
@@ -5770,14 +5869,17 @@ h2.contactBoxTitle {
 /* Medium Displays*/
 
 @media (min-width: 991px) and (max-width: 1200px) {
+
     /* Only Zone A */
     #MainZone.col-md-12 .contactBoxWrapper .contactBoxes .contactBox {
         flex-basis: 33% !important;
     }
+
     /* Zone A and Zone B*/
     #MainZone.col-md-9 .contactBoxWrapper .contactBoxes .contactBox {
         flex-basis: 33% !important;
     }
+
     /* Zone A, Zone B, and Zone C*/
     #MainZone.col-md-6 .contactBoxWrapper .contactBoxes .contactBox {
         flex-basis: 50% !important;
@@ -5792,6 +5894,7 @@ h2.contactBoxTitle {
     #MainZone.col-sm-12 .contactBoxWrapper .contactBoxes .contactBox {
         flex-basis: 33% !important;
     }
+
     #MainZone.col-sm-8 .contactBoxWrapper .contactBoxes .contactBox {
         flex-basis: 50% !important;
         margin: 0 auto;
@@ -5928,7 +6031,7 @@ h2.contactBoxSingleTitle {
     line-height: 1.5;
     color: unset !important;
 }
-  
+
 .contactBoxSingleInfo a.contactPhone {
     text-decoration: none;
 }
@@ -5955,7 +6058,7 @@ h2.contactBoxSingleTitle {
     color: #aa0000;
     text-decoration: underline;
 }
-  
+
 .contactBoxSingleInfoProfile a {
     text-decoration: none;
 }
@@ -6133,7 +6236,7 @@ h2.contactBoxSingleTitle {
 .contactBoxSingleColorForestGreen a:hover {
     color: #088099;
 }
-  
+
 
 /* ========================================================================================== 
    ===== Law - Directory Profile for Faculty-Staff  ===== Content Type #5548 ========== START 
@@ -6202,8 +6305,8 @@ h2.contactBoxSingleTitle {
 }
 
 .dualColumn h3 {
-    margin-top: 3rem!important;
-    margin-bottom: 1rem!important;
+    margin-top: 3rem !important;
+    margin-bottom: 1rem !important;
     text-transform: uppercase;
     /* fall back */
     font-size: 1.65rem;
@@ -6250,12 +6353,13 @@ article.dualColumn a:active {
 /* Creates more space on landing and sorting pages */
 
 @media (min-width: 1200px) {
+
     .law-sortingPage-775361 article.dualColumn,
     .law-landingPageLayout-2130318 article.dualColumn {
         padding: 4rem 0 6rem;
     }
 }
-  
+
 /* =========================================================================================
    ===== Externships ===== Content Type #5304 ==========Organizer Layout==================== 
    =========================================================================================
@@ -6514,11 +6618,11 @@ article.dualColumn a:active {
 }
 
 
-  
+
 /* ****** End Bootstrap 5 Organizer layouts - vic 20210425 ****** */
-  
-  
-  
+
+
+
 /* expand small images to fill available space on all browsers */
 
 .lawFacultyWrapper img.card-img {
@@ -6572,27 +6676,33 @@ article.dualColumn a:active {
 
 @media screen and (max-width: 991.99px) {
     .lawFacultyWrapper.w-50 {
-        width: 100%!important;
+        width: 100% !important;
         margin: 0 0 2rem 0;
     }
+
     .lawFacultyWrapper .card {
         background-color: #f7f7f7;
         border: 2px solid #f7f7f7;
         border-radius: 0;
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
     }
+
     .lawFacultyWrapper img.card-img {
         padding: 0;
     }
+
     .lawFacultyWrapper img.rounded-circle {
-        border-radius: 0!important;
+        border-radius: 0 !important;
     }
+
     .lawFacultyWrapper p.card-text {
         font-size: 1.25rem;
     }
+
     .detailPage .lawFacultyWrapper h3.card-title {
         font-size: 1.8rem;
     }
+
     .detailPage .lawFacultyWrapper p.card-text {
         font-size: 1.25rem;
     }
@@ -6605,8 +6715,9 @@ article.dualColumn a:active {
     article.lawFacultyWrapper.col {
         flex: unset;
     }
+
     article.lawFacultyWrapper.flex-fill {
-        flex: unset!important;
+        flex: unset !important;
     }
 }
 
@@ -6624,10 +6735,10 @@ body.facultyProfileFulltext #pageContentWrapper.row {
 body.facultyProfileFulltext #pageContentWrapper .row {
     margin-right: auto;
     margin-left: auto;
-}  
-  
-  
-  
+}
+
+
+
 
 
 /*** START Fulltext Layout ***/
@@ -6700,7 +6811,7 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 .facultyProfileTwitter {
     width: 100%;
 }
-  
+
 .facultyProfileWrapper .facultyProfileEmail {
     color: #088099;
 }
@@ -6774,6 +6885,7 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
     .facultyProfileInfo h1 {
         font-size: 4.5rem;
     }
+
     .primaryProfileContent h2 {
         font-size: 2.75rem;
     }
@@ -6783,35 +6895,43 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
+
     /* Left align name, title, room, phone, and email */
     .facultyProfileInfo h1,
     .facultyProfileTitles,
     .facultyProfileInfo {
         text-align: left;
     }
+
     .facultyProfileWrapper .facultyProfilePicture {
         text-align: left;
         max-width: fit-content;
         /* Reduces unneeded column width from Bootstrap default */
     }
+
     .facultyProfileWrapper .facultyProfilePicture img {
         max-width: 260px;
     }
+
     .facultyProfileCV {
         width: 50%;
         margin-bottom: revert;
     }
+
     .facultyProfileTwitter {
         width: 50%;
     }
+
     /* Adds a gap between the CV and Twitter boxlinks 
     depending on if either or both are used. */
     .cv-twitter:nth-child(1) {
         margin-right: 0.75rem;
     }
+
     .cv-twitter:nth-child(2) {
         margin-left: 0.75rem;
     }
+
     .facultyProfileBiography {
         max-width: 95%;
     }
@@ -6948,6 +7068,7 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
         flex-direction: column;
         padding: 30px 0;
     }
+
     .featuredCuratedEventsWrapper li.featuredCuratedEventItem .boxyDate {
         margin: 0 auto 15px;
     }
@@ -7131,7 +7252,6 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 }
 
 .focusBoxWrapper .colorBlue {
-    /* Blue */
     background-color: #088099;
 }
 
@@ -7153,15 +7273,15 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 
 .focusBoxWrapper .colorBlue .focusBoxContent a:link {
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .focusBoxWrapper .colorBlue .focusBoxContent a:visited {
-    color: #ffffff;
+    color: #f7f7f7;
 }
 
 .focusBoxWrapper .colorBlue .focusBoxContent a:hover {
-    color: #ffffff;
+    color: #cc9f26;
     text-decoration: underline;
 }
 
@@ -7170,7 +7290,7 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 }
 
 .focusBoxWrapper .colorBlue .focusBoxContent a:focus {
-    color: #f7f7f7;
+    color: #cc9f26;
     text-decoration: underline;
 }
 
@@ -7668,6 +7788,7 @@ focusBox.colorSURed .focusBoxContent ul li:before {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991.999px) {
+
     /* sm */
     .focusBox ul.arrowLinks li {
         flex: 1 1 calc(50% - 7px);
@@ -7688,9 +7809,11 @@ focusBox.colorSURed .focusBoxContent ul li:before {
     .focusBox ul.arrowLinks li {
         margin-top: 0;
     }
+
     .focusBox ul.arrowLinks li:not:first-child {
         xflex: 1 1 calc(33.33% - 7px);
     }
+
     .focusBox ul.arrowLinks li {
         flex: 1 1 calc(33.33% - 7px);
     }
@@ -7817,6 +7940,7 @@ focusBox.colorSURed .focusBoxContent ul li:before {
         margin-bottom: 30px;
         margin-top: 15px;
     }
+
     .formPlaceholder form .field-row:last-child {
         margin-bottom: 0;
     }
@@ -7920,7 +8044,7 @@ input[type="file"]:focus {
 }
 
 .horizontalCard p {
-    font-size: 1.1rem!important;
+    font-size: 1.1rem !important;
     overflow: hidden;
 }
 
@@ -7959,7 +8083,7 @@ input[type="file"]:focus {
 .imageBanner {
     background: #088099;
     /* Old browsers */
-    background: radial-gradient( ellipse at center, #088099 20%, #065666 100%);
+    background: radial-gradient(ellipse at center, #088099 20%, #065666 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     background-position: left center;
     /* could be overriden by content item */
@@ -8000,8 +8124,8 @@ input[type="file"]:focus {
 .BannerZone {
     position: relative;
 }
-  
-  
+
+
 div#BannerZone.row {
     margin-left: 0;
     margin-right: 0;
@@ -8025,8 +8149,8 @@ div#pageContent.row #Mainzone {
 .row {
     margin-left: 0;
     margin-right: 0;
-} 
-  
+}
+
 
 .imageBannerCenterIntroText {
     max-width: 1400px;
@@ -8046,6 +8170,7 @@ div#pageContent.row #Mainzone {
 }
 
 @media screen and (max-width: 767.999px) {
+
     /* xs */
     .imageBanner .copy .imageBannerText h1 {
         font-size: 3.5rem;
@@ -8060,6 +8185,7 @@ div#pageContent.row #Mainzone {
 }
 
 @media (max-width: 767.999px) {
+
     .imageBanner .copy .imageBannerText h1 .topLevelSection,
     .imageBanner .copy .imageBannerText h1 span {
         font-size: 1.4rem;
@@ -8101,15 +8227,19 @@ div#pageContent.row #Mainzone {
         background-position: top center;
         height: 300px;
     }
+
     .imageBanner .imageBannerText {
         padding: 25px 15px;
     }
+
     .imageBanner .imageBannerText h2 {
         font-size: 2.3rem;
     }
+
     .imageBannerIntro h5 {
         font-size: 2.3em;
     }
+
     .imageBannerIntro p {
         font-size: 1.4rem;
     }
@@ -8226,10 +8356,12 @@ div#pageContent.row #Mainzone {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.999px) {
+
     /* sm + md */
     #MainZone .imageBoxWrapper .imageBox {
         flex-wrap: wrap;
     }
+
     #MainZone.col-sm-12 .imageBoxWrapper .imageBoxLayout12 .imageBox,
     #MainZone.col-md-12 .imageBoxWrapper .imageBoxLayout12 .imageBox,
     #MainZone.col-sm-9 .imageBoxWrapper .imageBoxLayout12 .imageBox,
@@ -8238,6 +8370,7 @@ div#pageContent.row #Mainzone {
     #MainZone.col-md-6 .imageBoxWrapper .imageBoxLayout12 .imageBox {
         flex-basis: calc(50% - 7px);
     }
+
     #MainZone.col-sm-12 .imageBoxWrapper .imageBoxLayout123 .imageBox,
     #MainZone.col-md-12 .imageBoxWrapper .imageBoxLayout123 .imageBox,
     #MainZone.col-sm-9 .imageBoxWrapper .imageBoxLayout123 .imageBox,
@@ -8246,11 +8379,13 @@ div#pageContent.row #Mainzone {
     #MainZone.col-md-6 .imageBoxWrapper .imageBoxLayout123 .imageBox {
         flex-basis: calc(33% - 7px);
     }
+
     #MainZone.col-sm-12 .imageBoxWrapper .imageBoxLayout1234 .imageBox,
     #MainZone.col-md-12 .imageBoxWrapper .imageBoxLayout1234 .imageBox,
     #MainZone.col-md-9 .imageBoxWrapper .imageBoxLayout1234 .imageBox {
         flex-basis: calc(25% - 7px);
     }
+
     #MainZone.col-sm-9 .imageBoxWrapper .imageBoxLayout1234 .imageBox,
     #MainZone.col-sm-6 .imageBoxWrapper .imageBoxLayout1234 .imageBox,
     #MainZone.col-md-6 .imageBoxWrapper .imageBoxLayout1234 .imageBox {
@@ -8259,13 +8394,16 @@ div#pageContent.row #Mainzone {
 }
 
 @media screen and (max-width: 767.999px) {
+
     /* xs */
     .imageBoxWrapper .imageBoxes {
         display: block;
     }
+
     .imageBoxWrapper .imageBox {
         margin: 30px 0 0 0;
     }
+
     .imageBoxWrapper .imageBox .standardContent {
         padding: 0;
     }
@@ -8292,7 +8430,7 @@ div#pageContent.row #Mainzone {
 **/
 
 .panelWrapper.contentItem.g-0:first-of-type {
-    margin: 0!important;
+    margin: 0 !important;
 }
 
 .panelWrapper .panelText.card-text {
@@ -8324,9 +8462,11 @@ div#pageContent.row #Mainzone {
     .panelWrapper .panelText.card-text h2 {
         font-size: 2rem;
     }
+
     .panelText.card-text p {
         font-size: 1.2rem;
     }
+
     .panelInner .panelText.card-text .panelLinks a {
         font-size: 1.25rem;
         line-height: 1.25;
@@ -8340,9 +8480,11 @@ div#pageContent.row #Mainzone {
     .panelWrapper .panelText.card-text h2 {
         font-size: 1.8rem;
     }
+
     .panelText.card-text p {
         font-size: 1rem;
     }
+
     .panelInner .panelText.card-text .panelLinks a {
         font-size: 1.3rem;
         line-height: 1;
@@ -8364,21 +8506,27 @@ div#pageContent.row #Mainzone {
         padding: 0;
         position: unset;
     }
+
     .panelWrapper .panelText.card-text h2 {
         font-size: 2rem;
     }
+
     .card-img-overlay .standardContent {
         padding: 0;
     }
+
     .panelText.card-text p {
         font-size: 1rem;
     }
+
     .panelWrapper .card-img-overlay .card-block .panelText.card-text {
         padding: 0;
     }
+
     .panelInner .panelText.card-text .panelLinks {
         display: flex;
     }
+
     .panelInner .panelText.card-text .panelLinks {
         padding: 1rem 0 1rem 0;
     }
@@ -8566,26 +8714,31 @@ div#pageContent.row #Mainzone {
 }
 
 @media (min-width: 992px) {
+
     .panelWrapper .topRightPanel,
     .panelWrapper .centerRightPanel,
     .panelWrapper .bottomRightPanel {
         justify-content: flex-end;
     }
+
     .panelWrapper .topLeftPanel,
     .panelWrapper .centerLeftPanel,
     .panelWrapper .bottomLeftPanel {
         justify-content: flex-start;
     }
+
     .panelWrapper .topCenterPanel,
     .panelWrapper .centerCenterPanel,
     .panelWrapper .bottomCenterPanel {
         justify-content: center;
     }
+
     .panelFlexContainer .topRightPanel,
     .panelFlexContainer .centerRightPanel,
     .panelFlexContainer .bottomRightPanel {
         margin-right: 4.1666666%;
     }
+
     /* .panelFlexContainer .topRightPanel,
     .panelFlexContainer .topLeftPanel,
     .panelFlexContainer .topCenterPanel {
@@ -8596,92 +8749,108 @@ div#pageContent.row #Mainzone {
     .panelFlexContainer .bottomCenterPanel {
         align-self: flex-end;
     }
+
     .panelFlexContainer .centerRightPanel,
     .panelFlexContainer .centerLeftPanel,
     .panelFlexContainer .centerCenterPanel {
         align-self: center;
     }
+
     .panelFlexContainer .topRightPanel,
     .panelFlexContainer .topCenterPanel,
     .panelFlexContainer .topLeftPanel {
         margin-bottom: auto;
     }
+
     .panelFlexContainer .topLeftPanel,
     .panelFlexContainer .centerLeftPanel,
     .panelFlexContainer .bottomLeftPanel {
         margin-left: 4.1666666%;
     }
+
     .panelFlexContainer .bottomRightPanel,
     .panelFlexContainer .bottomCenterPanel,
     .panelFlexContainer .bottomLeftPanel {
         margin-bottom: 4.1666666%;
     }
+
     .panelWrapper .panelRedDiv {
         border: 10px solid #aa0000;
         border-bottom: 0;
         border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #aa0000 25.01%, #aa0000 100%);
         border-image-slice: 1;
     }
+
     .panelWrapper .panelOrangeDiv {
         border: 10px solid #ef4135;
         border-bottom: 0;
         border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #ef4135 25.01%, #ef4135 100%);
         border-image-slice: 1;
     }
+
     .panelWrapper .panelLightGreenDiv {
         border: 10px solid #55b31b;
         border-bottom: 0;
         border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #55b31b 25.01%, #55b31b 100%);
         border-image-slice: 1;
     }
+
     .panelWrapper .panelDarkGreenDiv {
         border: 10px solid #124a12;
         border-bottom: 0;
         border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #124a12 25.01%, #124a12 100%);
         border-image-slice: 1;
     }
+
     .panelWrapper .panelDarkBlueDiv {
         border: 10px solid #003282;
         border-bottom: 0;
         border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #003282 25.01%, #003282 100%);
         border-image-slice: 1;
     }
+
     .panelWrapper .panelLightBlueDiv {
         border: 10px solid #04a9c5;
         border-bottom: 0;
         border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #04a9c5 25.01%, #04a9c5 100%);
         border-image-slice: 1;
     }
+
     .panelWrapper .panelGreenDiv {
         border: 10px solid #008765;
         border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #008765 25.01%, #008765 100%);
         border-image-slice: 1;
         border-bottom: 0;
     }
+
     .panelWrapper .panelBrownDiv {
         border: 10px solid #807060;
         border-bottom: 0;
         border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #807060 25.01%, #807060 100%);
         border-image-slice: 1;
     }
+
     .panelWrapper .panelBlackDiv {
         border: 10px solid #333333;
         border-bottom: 0;
         border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #333333 25.01%, #333333 100%);
         border-image-slice: 1;
     }
+
     .panelWrapper .panelWhiteDiv {
         border: 10px solid #f7f7f7;
         border-bottom: 0;
         border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #f7f7f7 25.01%, #f7f7f7 100%);
         border-image-slice: 1;
     }
+
     .panelWrapper .topRightPanel,
     .panelWrapper .bottomRightPanel,
     .panelWrapper .topCenterPanel,
     .panelWrapper .bottomCenterPanel .panelWrapper .centerCenterPanel .panelWrapper .centerRightPanel {
         float: right;
     }
+
     .panelWrapper .topLeftPanel,
     .panelWrapper .bottomLeftPanel .panelWrapper .centerLeftPanel {
         float: left;
@@ -8742,6 +8911,7 @@ div#pageContent.row #Mainzone {
     .panelInner .panelLinks {
         padding: 15px 20px 0px 10px;
     }
+
     .panelInner .panelLinks li {
         border: none;
         display: block;
@@ -8751,6 +8921,7 @@ div#pageContent.row #Mainzone {
         margin: 7px 0 0 0;
         width: 100%;
     }
+
     .panelInner .panelLinks li a {
         border: 1px solid #088099;
         color: #aa0000;
@@ -8843,8 +9014,8 @@ div#pageContent.row #Mainzone {
 .infographicItemHeader {
     color: #aa0000;
     display: block;
-    font-size: 1.8rem;
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: 600;
     padding: 15px 0 0 0;
     text-transform: uppercase;
 }
@@ -8853,9 +9024,9 @@ div#pageContent.row #Mainzone {
     color: #aa0000;
     display: block;
     font-family: "Montserrat", serif;
-    font-size: 5.2rem;
-    font-weight: bold;
-    line-height: 8rem;
+    font-size: 4rem;
+    font-weight: 600;
+    /* line-height: 8rem; */
     text-align: center;
 }
 
@@ -8884,7 +9055,7 @@ div#pageContent.row #Mainzone {
     padding: 10px;
 }
 
-  
+
 /* Icon Infographic */
 
 .iconInfographic .infographicTitle {
@@ -8920,12 +9091,15 @@ div#pageContent.row #Mainzone {
     .iconInfographic .infographicTitle h2 {
         font-size: 2rem;
     }
+
     .iconInfographic .cardinfographicItem p {
         font-size: 1rem;
     }
+
     .iconInfographic .cardinfographicItem span {
         font-size: 1rem;
     }
+
     .iconInfographic .cardinfographicItem .infographicItemNumber span {
         font-size: 4rem;
     }
@@ -8950,13 +9124,14 @@ div#pageContent.row #Mainzone {
 }
 
 .imageInfographic .infographicItemHeader p {
-    font-size: 5rem;
+    /* font-size: 5rem; */
+    font-size: 1.6rem;
 }
 
 .imageInfographic .infographicItemText p {
     color: #aa0000;
-    font-size: 2rem;
-    font-weight: bold;
+    /* font-size: 2rem; */
+    font-weight: 600;
 }
 
 .imageInfographic .cardinfographicItem .infographicMedia img {
@@ -8973,6 +9148,7 @@ div#pageContent.row #Mainzone {
     .imageInfographic .infographicItemHeader p {
         font-size: 3rem;
     }
+
     .imageInfographic .infographicItemText p {
         font-size: 1.25rem;
     }
@@ -8988,9 +9164,10 @@ div#pageContent.row #Mainzone {
     .imageInfographic .infographic {
         display: block;
     }
+
     .imageInfographic .card-group>.card {
         margin-bottom: 0.75rem;
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
     }
 }
 
@@ -9314,7 +9491,7 @@ div#pageContent.row #Mainzone {
 .infographicItemIcon .fa-trophy {
     font-size: 70px;
 }
-  
+
 .iconInfographic .infographicItemIcon .fa-trophy {
     font-size: 50px;
 }
@@ -9385,20 +9562,30 @@ div#pageContent.row #Mainzone {
 .infographicColorBlack {
     background-color: #333333;
 }
-  
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .imageInfographic .infographicItemHeader p {
+        font-size: 2.25rem;
+    }
+}
+
 @media screen and (min-width: 1400px) {
     #MainZone.col-lg-8 .imageInfographic .infographicItemHeader p {
         font-size: 2rem;
     }
+
     #MainZone.col-lg-8 .imageInfographic .infographicItemText p {
         font-size: 1rem;
     }
+
     #MainZone.col-lg-8 .iconInfographic .infographicItemNumber span {
         font-size: 4rem;
     }
+
     #MainZone.col-lg-8 .iconInfographic .infographicItemHeader p {
         font-size: 1.75rem;
     }
+
     #MainZone.col-lg-8 .iconInfographic .infographicItemText p {
         font-size: 1rem;
     }
@@ -9408,15 +9595,19 @@ div#pageContent.row #Mainzone {
     #MainZone.col-lg-8 .imageInfographic .infographicItemHeader p {
         font-size: 1.5rem;
     }
+
     #MainZone.col-lg-8 .imageInfographic .infographicItemText p {
         font-size: 0.85rem;
     }
+
     #MainZone.col-lg-8 .iconInfographic .infographicItemNumber span {
         font-size: 3.5rem;
     }
+
     #MainZone.col-lg-8 .iconInfographic .infographicItemHeader p {
         font-size: 1.5rem;
     }
+
     #MainZone.col-lg-8 .iconInfographic .infographicItemText p {
         font-size: 0.85rem;
     }
@@ -9426,18 +9617,23 @@ div#pageContent.row #Mainzone {
     #MainZone.col-lg-8 .imageInfographic .infographicItemHeader p {
         font-size: 1.25rem;
     }
+
     #MainZone.col-lg-8 .imageInfographic .infographicItemText p {
         font-size: 0.75rem;
     }
+
     #MainZone.col-lg-8 .iconInfographic .infographicItemNumber span {
         font-size: 3.5rem;
     }
+
     #MainZone.col-lg-8 .iconInfographic .infographicItemHeader p {
         font-size: 1.2rem;
     }
+
     #MainZone.col-lg-8 .iconInfographic .infographicItemText p {
         font-size: 0.85rem;
     }
+
     .iconInfographic .infographicItemIcon .fa {
         font-size: 40px;
     }
@@ -9485,7 +9681,7 @@ div#pageContent.row #Mainzone {
     /*original image size pre-T4 was 870px; new width is 877px, so this stretches it on large screens */
     margin-top: 8px;
 }
-  
+
 .jumbotron1 ul.boxlinks {
     display: flex;
     flex-direction: row;
@@ -9509,7 +9705,7 @@ div#pageContent.row #Mainzone {
     width: 100%;
     padding: 15px;
 } */
-  
+
 .jumbotron1 ul.boxlinks li {
     display: block;
     flex: unset;
@@ -9520,6 +9716,7 @@ div#pageContent.row #Mainzone {
 }
 
 @media (min-width: 992px) {
+
     /* md and lg */
     /* .container */
     #pageContentWrapper.container #MainZone.col-md-6 .jumbotron1 ul.boxlinks li,
@@ -9527,25 +9724,30 @@ div#pageContent.row #Mainzone {
         flex: 0 1 calc(50% - 7px);
         width: 50%;
     }
+
     #pageContentWrapper.container #MainZone.col-md-9 .jumbotron1 ul.boxlinks li,
     #pageContentWrapper[class=""] #MainZone.col-md-9 .jumbotron1 ul.boxlinks li {
         flex: 0 1 calc(33.33% - 7px);
         width: 33.33%;
     }
+
     #pageContentWrapper.container #MainZone.col-md-12 .jumbotron1 ul.boxlinks li,
     #pageContentWrapper[class=""] #MainZone.col-md-12 .jumbotron1 ul.boxlinks li {
         flex: 0 1 calc(25% - 7px);
         width: 25%;
     }
+
     /* .container-fluid */
     #pageContentWrapper.container-fluid #MainZone.col-md-6 .jumbotron1 ul.boxlinks li {
         flex: 0 1 calc(50% - 7px);
         width: 50%;
     }
+
     #pageContentWrapper.container-fluid #MainZone.col-md-9 .jumbotron1 ul.boxlinks li {
         flex: 0 1 calc(33.33% - 7px);
         width: 33.33%;
     }
+
     #pageContentWrapper.container-fluid #MainZone.col-md-12 .jumbotron1 ul.boxlinks li {
         flex: 0 1 calc(25% - 7px);
         width: 25%;
@@ -9553,6 +9755,7 @@ div#pageContent.row #Mainzone {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991.999px) {
+
     /* sm */
     /* .container */
     #pageContentWrapper.container #MainZone.col-sm-8 .jumbotron1 ul.boxlinks li,
@@ -9560,16 +9763,19 @@ div#pageContent.row #Mainzone {
         flex: 0 1 calc(50% - 7px);
         width: 50%;
     }
+
     #pageContentWrapper.container #MainZone.col-sm-12 .jumbotron1 ul.boxlinks li,
     #pageContentWrapper[class=""] #MainZone.col-sm-12 .jumbotron1 ul.boxlinks li {
         flex: 0 1 calc(33.33% - 7px);
         width: 33.33%;
     }
+
     /* .container-fluid */
     #pageContentWrapper.container-fluid #MainZone.col-sm-8 .jumbotron1 ul.boxlinks li {
         flex: 0 1 calc(50% - 7px);
         width: 50%;
     }
+
     #pageContentWrapper.container-fluid #MainZone.col-sm-12 .jumbotron1 ul.boxlinks li {
         flex: 0 1 calc(33.33% - 7px);
         width: 33.33%;
@@ -9687,15 +9893,16 @@ div#pageContent.row #Mainzone {
 
 
 /*** MEDIA QUERIES ***/
-  
+
 @media screen and (min-width: 768px) {
-.jumbotron3Wrapper .jumbotron3Image {
-    padding: 250px;
-    
-  }
+    .jumbotron3Wrapper .jumbotron3Image {
+        padding: 250px;
+
+    }
 }
 
 @media screen and (min-width: 992px) {
+
     /* Jumbotron III picture on card effect */
     /* default is image on left, and the text on the right */
     /* alignmentleft means text is on the left, image is on the right */
@@ -9703,44 +9910,49 @@ div#pageContent.row #Mainzone {
         flex-direction: row-reverse;
         background-color: #ffffff;
     }
+
     /* alignmentright means text on right, image on left */
     .jumbotron3.alignmentright {
         flex-direction: row;
     }
+
     .jumbotron3Wrapper {
         margin-top: 55px;
     }
+
     .jumbotron3Wrapper .jumbotron3Text {
         margin-top: 40px;
         /* removes background from above text area */
         padding: 60px;
         /* places text in center of text area */
     }
+
     /* text is on left side of Jumbotron III */
     .jumbotron3Wrapper .alignmentleft .jumbotron3Text h2,
     .jumbotron3Wrapper .alignmentleft .jumbotron3Text p,
     .jumbotron3Wrapper .alignmentleft .jumbotron3Text ul {
         padding-left: 4%;
     }
-  
+
     .jumbotron3Wrapper .jumbotron3Image {
         padding: initial;
     }
-  
+
     .jumbotron3Wrapper .alignmentleft .jumbotron3Image {
         border: 0;
         border-bottom: 40px;
         border-style: solid;
         /* add a little gray box below that makes it look like the content is sitting under the image by 40px*/
-        border-image: linear-gradient( to right, rgba(247, 247, 247, 1) 0%, rgba(247, 247, 247, 1) 40px, #ffffff 40px, #ffffff 100%);
+        border-image: linear-gradient(to right, rgba(247, 247, 247, 1) 0%, rgba(247, 247, 247, 1) 40px, #ffffff 40px, #ffffff 100%);
         border-image-slice: 1;
     }
+
     .jumbotron3Wrapper .alignmentright .jumbotron3Image {
         border: 0;
         border-bottom: 40px;
         border-style: solid;
         /* add a little gray box below that makes it look like the content is sitting under the image by 40px*/
-        border-image: linear-gradient( to left, rgba(247, 247, 247, 1) 0%, rgba(247, 247, 247, 1) 40px, #ffffff 40px, #ffffff 100%);
+        border-image: linear-gradient(to left, rgba(247, 247, 247, 1) 0%, rgba(247, 247, 247, 1) 40px, #ffffff 40px, #ffffff 100%);
         border-image-slice: 1;
     }
 }
@@ -9863,9 +10075,11 @@ a:not([href]) {
         margin-bottom: 1rem;
         flex: auto;
     }
+
     .masonryOrganizer .mainHeroItem {
         padding: 0.5rem;
     }
+
     .masonryOrganizer .mainHeroItem .card-body h3 {
         font-size: 1.25rem;
         margin: 1rem 0 0.5rem 0;
@@ -9876,24 +10090,28 @@ a:not([href]) {
     .masonryOrganizerWrapper {
         padding-bottom: 1rem;
     }
+
     .masonryOrganizer.card-group {
         flex-direction: column;
         flex: auto;
         padding: 0;
     }
+
     .masonryOrganizer .mainHeroItem {
         margin: auto;
         width: -webkit-fill-available;
     }
+
     .masonryOrganizer .mainHeroItem {
         margin-bottom: 1rem;
         padding: 0;
     }
+
     .masonryOrganizer .mainHeroItem .card-body h3 {
         font-size: 1.25rem;
     }
 }
-  
+
 /* News story fulltext layout. Added by Troy 9/8/2021 */
 
 h1,
@@ -9975,10 +10193,12 @@ li.nav-item a.nav-link .icon:hover {
         text-decoration: none;
         position: relative;
     }
+
     .icon-text {
         text-decoration: none;
         position: relative;
     }
+
     .icon-text::after {
         content: "";
         position: absolute;
@@ -9991,14 +10211,17 @@ li.nav-item a.nav-link .icon:hover {
         transform-origin: right;
         transition: transform 300ms ease-in;
     }
+
     .icon-text:hover::after {
         transform: scaleX(1);
         transform-origin: left;
     }
+
     ul.list-inline.lower-social-icons li,
     ul.upper-social-icons li {
         margin-right: 6rem;
     }
+
     li.nav-item a.nav-link .icon:hover {
         transform: unset;
     }
@@ -10037,10 +10260,10 @@ li.nav-item a.nav-link .icon:hover {
    ==========================================================================================
    Automatically sorts, paginates, and displays content of a given type from a given section 
 */
-  
+
 /* .organizerWrapper {} */
 
-  
+
 /* ========================================================================================== 
    ===== Law - Masonry Organizer ===== Content Types: #5538 ================================= 
    ==========================================================================================
@@ -10059,7 +10282,7 @@ li.nav-item a.nav-link .icon:hover {
   */
 
 
-.primaryContentWrapper .primaryContent > :first-child {
+.primaryContentWrapper .primaryContent> :first-child {
     margin-top: 30px;
 }
 
@@ -10090,10 +10313,12 @@ li.nav-item a.nav-link .icon:hover {
         display: inline-block;
         padding: 15px 25px 10px 25px;
     }
+
     .standardContent figure.image-wrapper.float-left {
         float: left;
         padding-left: 0;
     }
+
     .standardContent figure.image-wrapper.float-right {
         float: right;
         padding-right: 0;
@@ -10126,7 +10351,7 @@ li.nav-item a.nav-link .icon:hover {
    A list of up to nine links to a section, content, external source or media item with an optional header. Merged with #576.
    
 */
-  
+
 /* .quicklinksWrapper {} */
 
 @media (max-width: 1199.999px) {
@@ -10147,14 +10372,15 @@ li.nav-item a.nav-link .icon:hover {
     font-size: 1.8rem;
 }
 
-#MainZone .quicklinks {
+/* #MainZone .quicklinks {
     padding: 0 25px 25px;
-}
+} */
 
 #MainZone .quicklinks ul,
 #zoneC .quicklinks ul {
     border-top: 1px solid #088099;
-    padding: 5px 0 5px 20px;
+    /* padding: 5px 0 5px 20px; */
+    padding-top: 2.5rem;
 }
 
 .quicklinks ul {
@@ -10207,7 +10433,7 @@ li.nav-item a.nav-link .icon:hover {
     color: #ffffff;
     text-decoration: underline;
 }
-  
+
 .standardContent .quicklinks ul li::before {
     font-family: unset;
     font-size: unset;
@@ -10227,7 +10453,7 @@ li.nav-item a.nav-link .icon:hover {
      Adapted from legacy Quotation Box in Ektron Feb 2016. Added color options and Zone A layout 2/8/17. Combined with #617
      Last revised 01/03/19 by Aubrey 
   */
-  
+
 /* .quoteBoxWrapper {} */
 
 .quoteBox {
@@ -10358,7 +10584,7 @@ li.nav-item a.nav-link .icon:hover {
      Set of social media icons with links to user-specified account pages.
      Last revised 6/22/18 by Jason    
   */
-  
+
 /* .socialMediaIconsWrapper {} */
 
 #MainZone .socialMediaIcons {
@@ -10376,14 +10602,16 @@ li.nav-item a.nav-link .icon:hover {
 .socialMediaIconsText h2 {
     clear: both;
     color: #aa0000;
-    font-family: "Roboto Slab", serif;
+    /* font-family: "Roboto Slab", serif;
     font-size: 3.2rem;
-    font-weight: 400;
+    font-weight: 400; */
+    font-size: var(--h2);
     text-transform: none;
 }
 
 #SidebarZone .socialMediaIconsText h2 {
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
+    font-size: var(--h2);
 }
 
 .socialMediaIconsWrapper ul.socialMediaIconsList {
@@ -10564,6 +10792,7 @@ li.nav-item a.nav-link .icon:hover {
 }
 
 @media screen and (max-width: 1199.999px) {
+
     #MainZone .spotlightWrapper.contentItem:first-of-type,
     #SidebarZone .spotlightWrapper.contentItem:first-of-type {
         margin: 0;
@@ -11036,6 +11265,7 @@ article.tripleColumn a:active {
     .tc-headline {
         text-align: center;
     }
+
     .tc-headline h2 {
         font-size: xxx-large;
         margin-bottom: 2.5rem;
@@ -11092,6 +11322,7 @@ article.columns-4 a:active {
     .c4-headline {
         text-align: center;
     }
+
     .c4-headline h2 {
         margin-bottom: 2.5rem;
     }
@@ -11327,9 +11558,9 @@ article.columns-4 a:active {
 .carouselImageWrapper.belowImage .carouselImageCaption p {
     color: #333;
 }
-  
-  
-  
+
+
+
 /* ========================================================================================== 
    ===== Law - Law - Video Banner Vimeo Managed  ===== Content Type #5658 =================== 
    ==========================================================================================
@@ -11546,19 +11777,22 @@ body.videopage {
         margin-bottom: 0 0 -8rem 0;
         top: -5.5%;
     }
+
     .autoplay.contentItem:first-of-type {
-        margin-bottom: 0 0 0 0!important;
+        margin-bottom: 0 0 0 0 !important;
     }
+
     .autoplay .card-img-overlay .card-header {
-        margin-top: 2rem!important;
-        padding: 0!important;
+        margin-top: 2rem !important;
+        padding: 0 !important;
     }
 }
 
 @media screen and (min-width: 992px) {
     .autoplay .card-img-overlay h2 {
-        font-size: 5rem!important;
+        font-size: 5rem !important;
     }
+
     .autoplay .card-img-overlay p {
         font-weight: 900;
     }
@@ -11566,76 +11800,92 @@ body.videopage {
 
 @media screen and (min-width: 992px) and (max-width: 1199.999px) {
     .bannerVideo.vbv.autoplay .mt-5 {
-        margin-top: 0rem!important;
+        margin-top: 0rem !important;
     }
+
     .bannerVideo.vbv.autoplay .card-img-overlay .card-header.m-3 {
-        margin-top: 0rem!important;
+        margin-top: 0rem !important;
     }
+
     .bannerVideo.ytv.autoplay .card-img-overlay .mt-5 {
-        margin-top: 1rem!important;
+        margin-top: 1rem !important;
     }
+
     .bannerVideo.ytv.autoplay .card-img-overlay .card-header .fs-1 {
-        font-size: 30px!important;
+        font-size: 30px !important;
     }
+
     .bannerVideo.ytv.autoplay .card-img-overlay .card-text.fs-3 {
-        font-size: 20px!important;
+        font-size: 20px !important;
     }
 }
 
 @media screen and (max-width: 991.99px) {
     .videopage #COVIDbanner .infographicItemText .mb-0 {
-        margin-bottom: 1rem!important;
+        margin-bottom: 1rem !important;
     }
+
     .bannerVideo.ytv.autoplay {
         margin-bottom: 0;
         top: 0;
         z-index: 0;
     }
+
     .bannerVideo.vbv.autoplay {
         margin-bottom: 0;
         margin-top: -1.5rem
-        /* z-index: 0; */
+            /* z-index: 0; */
     }
+
     .bannerVideo.ytv.autoplay iframe {
         width: inherit;
     }
+
     .autoplay.contentItem:first-of-type {
         margin-bottom: 0;
         top: 0;
         z-index: 0;
     }
+
     .autoplay .card-img-overlay {
         padding: 0;
         position: unset;
     }
+
     .bannerVideo.ytv.autoplay .card-img-overlay {
         margin-top: -2.85rem;
         z-index: 1;
         background-color: #fff;
         border-radius: initial;
     }
+
     .bannerVideo.vbv.autoplay .card-img-overlay {
         margin-top: -3.5rem;
         z-index: 1;
         background-color: #fff;
         border-radius: initial;
     }
+
     .bannerVideo.vbv.autoplay .card-img-overlay .textmat {
-        background-color: #fff!important;
+        background-color: #fff !important;
     }
+
     .bannerVideo.vbv .opacity-75 {
-        opacity: unset!important;
+        opacity: unset !important;
     }
+
     .autoplay .card-img-overlay .card-header {
-        margin: 0!important;
-        padding: 0!important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
+
     .autoplay .card-img-overlay .container {
-        margin-top: 0!important;
-        padding-top: 0!important;
+        margin-top: 0 !important;
+        padding-top: 0 !important;
     }
+
     .autoplay .card-img-overlay .card-body .text-white {
-        color: #000000!important;
+        color: #000000 !important;
     }
 }
 
@@ -11650,10 +11900,10 @@ body.videopage {
         margin-top: -4.5rem;
     }
 }
-  
-  
-  
-  
+
+
+
+
 
 
 /* =============================================================================================================== */
@@ -11716,6 +11966,7 @@ body.videopage {
 } */
 
 @media screen and (max-width: 767.999px) {
+
     /* xs */
     .BannerZoneWrapper {
         /* Apply to zone and not content */
@@ -12294,38 +12545,3 @@ body.videopage {
 
    Modified post 20210817
 ************************************************************ */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
