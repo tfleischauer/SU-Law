@@ -952,23 +952,32 @@ body {
 /* ------------------- Make space for variable number of drop-down menu items --------------------- */
 
 /* For 575px and smaller */
-#globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks ul {
+/* #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks ul {
     max-height: 1600px !important;
-}
-
-/* #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks ul.d-md-flex.flex-column.flex-wrap {
-    max-height: 1700px !important;
 } */
 
+/* Higher Specificity */
+#globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks ul.d-md-flex.flex-column.flex-wrap {
+    max-height: 1700px !important;
+}
+
 @media screen and (min-width: 992px) {
-    #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks ul {
-        max-height: 500px;
+    /* #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks ul {
+    max-height: 500px;
+  } */
+
+    #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks ul.d-md-flex.flex-column.flex-wrap {
+        max-height: 500px !important;
     }
 }
 
 @media screen and (min-width: 1400px) {
-    #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks ul {
-        max-height: 400px;
+    /* #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks ul {
+    max-height: 400px;
+  } */
+
+    #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks ul.d-md-flex.flex-column.flex-wrap {
+        max-height: 400px !important;
     }
 }
 
