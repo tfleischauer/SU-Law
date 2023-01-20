@@ -981,6 +981,19 @@ body {
     }
 }
 
+/* Academics modal */
+@media screen and (min-width: 992px) {
+    #globalHeaderNavigation .academicsModal .globalHeaderNavigationMainLinks ul {
+        max-height: 500px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #globalHeaderNavigation .academicsModal .globalHeaderNavigationMainLinks ul {
+        max-height: 425px;
+    }
+}
+
 
 /* ============================================== Page Title ==============================================*/
 
