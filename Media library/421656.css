@@ -412,16 +412,22 @@ body {
      ========================================================================================== 
   */
 
-#MainZone {
-    padding: 0 1.5rem;
-    /* creates side space on mobile views. */
-}
+/* #MainZone { */
+/* creates side space on mobile views. */
+/* padding: 0 1.5rem; */
+/* } */
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
     #MainZone {
         padding: 0;
     }
-}
+} */
+
+/* @media (min-width: 992px) and (max-width: 1399.98px) {
+      #MainZone {
+        padding: 0 1rem;
+    }
+} */
 
 #MainZone .primaryContent.standardContent a:link {
     color: #088099;
@@ -1859,7 +1865,7 @@ h5 {
     color: #333333;
     font-size: 1.2rem;
     line-height: 1.5;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 1rem;
     /* max-width: 75ch; */
 }
@@ -1893,7 +1899,7 @@ h5 {
     /* indent, but not that much */
     display: table;
     /* align 2nd line text, pt 1  */
-    font-weight: 500;
+    font-weight: 400;
     padding-left: 3px;
     /* indent, but not that much. Good for unordered lists. */
     list-style-position: inside;
@@ -6237,6 +6243,11 @@ h2.contactBoxSingleTitle {
     color: #088099;
 }
 
+/* Bullets in additional text */
+.contactBoxSingleColorTaupeBrown .standardContent ul li:before {
+    color: #fff;
+}
+
 
 /* ========================================================================================== 
    ===== Law - Directory Profile for Faculty-Staff  ===== Content Type #5548 ========== START 
@@ -8453,6 +8464,7 @@ div#pageContent.row #Mainzone {
 .panelText.card-text p {
     font-size: 1.4rem;
     line-height: 1.5;
+    font-weight: 500;
 }
 
 
@@ -9799,17 +9811,10 @@ div#pageContent.row #Mainzone {
 
 
 /* ==========================================================================================
-     ===== Law - Jumbotron III =====  Content Type #5180 ======================================
-     ==========================================================================================
+   ===== Law - Jumbotron III =====  Content Type #5180 ======================================
+   ==========================================================================================
      Heading, paragraph and up to three links.
-  */
-
-
-/* Extra small devices (phones, less than 768px) */
-
-
-/* No media query since this is the default in Bootstrap */
-
+*/
 
 /* xs: full-width image on top, text below */
 
@@ -9855,16 +9860,20 @@ div#pageContent.row #Mainzone {
 
 /* ? */
 
-.jumbotron3 h2 a:focus,
+/* .jumbotron3 h2 a:focus,
 .jumbotron3 h1 a:hover {
     text-decoration: underline;
-}
+} */
 
 .jumbotron3 h3 {
     color: #333333;
     margin: 10px 0;
     padding: 0;
     text-transform: uppercase;
+}
+
+.jumbotron3 .standardContent p {
+    font-weight: 500;
 }
 
 
@@ -10112,7 +10121,7 @@ a:not([href]) {
     }
 }
 
-/* News story fulltext layout. Added by Troy 9/8/2021 */
+/* News story fulltext layout. Updated by Troy 1/18/2023 */
 
 h1,
 h2,
@@ -10157,6 +10166,12 @@ figure figcaption span.image-credit {
     max-width: 60ch;
 }
 
+.newsroomArticleWrapper .newsroomArticleBody .articleText.standardContent ul li {
+    font-size: 1.2rem !important;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
 .icon-text {
     display: none;
 }
@@ -10181,8 +10196,6 @@ li.nav-item a.nav-link .icon:hover {
     transform: translateY(-5px);
 }
 
-
-/* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) {
     .icon-text {
@@ -10227,26 +10240,17 @@ li.nav-item a.nav-link .icon:hover {
     }
 }
 
-
-/* Medium devices (tablets, 768px and up) */
-
 @media (min-width: 768px) {
     ul.upper-social-icons li {
         margin-right: 0;
     }
 }
 
-
-/* Large devices (desktops, 992px and up) */
-
 @media (min-width: 992px) {
     .icon-text {
         font-size: 1rem;
     }
 }
-
-
-/* XX-Large devices (larger desktops, 1400px and up) */
 
 @media (min-width: 1400px) {
     .social a.nav-link {
