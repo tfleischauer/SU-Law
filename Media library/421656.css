@@ -7854,16 +7854,18 @@ focusBox.colorSURed .focusBoxContent ul li:before {
 
 
 /* ==========================================================================================
-     ===== Law - Form ===== Content Type: #5157 =============================================== 
-     ==========================================================================================
-     Holds T4 form code.
-     Last revised 2/3/16 by Jason   
-  */
-
+   ===== Law - Form ===== Content Type: #5157 =============================================== 
+   ==========================================================================================
+     Holds T4 form code. 
+*/
 
 /* .formPlaceholder{
     padding: 60px 8.333333333333%;
   } */
+
+p.form-group.js-paragraph-preview {
+    font-weight: 500;
+}
 
 .formPlaceholder .js-t4form-container .form-group {
     margin-bottom: 30px;
@@ -7879,16 +7881,27 @@ focusBox.colorSURed .focusBoxContent ul li:before {
     /* same class gets applied to form group wrapper and the list items. this eliminates the duplicative margin */
 }
 
+label {
+    font-size: 1.2rem;
+}
+
+.js-t4form-container label {
+    font-weight: 500;
+    font-size: 1.2rem
+}
+
 .formPlaceholder .js-t4form-container .control-label {
     /* labels on all elements*/
     border: 0;
     font-weight: 500;
-    font-size: 1.6rem;
+    /* font-size: 1.6rem; */
+    font-size: 1.2rem;
     margin-bottom: 0;
 }
 
 .formPlaceholder .js-t4form-container .js-choice-label {
     font-weight: 500;
+    font-size: 1.2rem;
 }
 
 .formPlaceholder .js-t4form-container textarea.form-control {
@@ -7957,10 +7970,19 @@ focusBox.colorSURed .focusBoxContent ul li:before {
     box-shadow: none;
     color: #333333;
     font-family: "Montserrat", sans-serif;
-    font-size: 1.4rem;
-    line-height: 2rem;
+    /* font-size: 1.4rem; */
+    font-size: 1.2rem;
+    /* line-height: 2rem; */
+    line-height: 1;
     height: inherit;
-    padding: 10px;
+    /* padding: 10px; */
+}
+
+.js-t4form-container .radio input[type="radio"],
+.js-t4form-container .radio-inline input[type="radio"],
+.js-t4form-container .checkbox input[type="checkbox"],
+.js-t4form-container .checkbox-inline input[type="checkbox"] {
+    margin-top: 10px;
 }
 
 .formPlaceholder form textarea {
