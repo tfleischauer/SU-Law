@@ -430,23 +430,23 @@ body {
 } */
 
 #MainZone .primaryContent.standardContent a:link {
-    color: #088099;
-    /* Light Blue */
-    text-decoration: none;
+    color: #003282;
+    text-decoration: underline #088099;
 }
 
 #MainZone .primaryContent.standardContent a:visited {
-    color: #088099;
-    /* Light Blue */
+    color: #003282;
+    text-decoration: underline #088099;
 }
 
 #MainZone .primaryContent.standardContent a:hover {
-    text-decoration: underline;
+    color: #003282;
+    text-decoration: underline #003282;
 }
 
 #MainZone .primaryContent.standardContent a:active {
     color: #aa0000;
-    /* SU Red */
+    text-decoration: underline #aa0000;
 }
 
 
@@ -3736,16 +3736,18 @@ svg.arrow.circle.navy {
 /* anchor styles inside the accordion item */
 
 .accordionItemInfo.standardContent a {
-    color: #088099;
-    text-decoration: none;
+    color: #003282;
+    text-decoration: underline #088099;
 }
 
 .accordionItemInfo.standardContent a:hover {
-    text-decoration: underline;
+    color: #003282;
+    text-decoration: underline #003282;
 }
 
 .accordionItemInfo.standardContent a:active {
-    color: #003282;
+    color: #aa0000;
+    text-decoration: underline #aa0000;
 }
 
 .accordionWrapper dl {
@@ -7741,21 +7743,23 @@ focusBox.colorSURed .focusBoxContent ul li:before {
 }
 
 .focusBoxWrapper .colorYellowTint .focusBoxContent a:link {
-    color: var(--su-blue);
-    text-decoration: none;
+    color: var(--navy-blue);
+    text-decoration: underline;
 }
 
 .focusBoxWrapper .colorYellowTint .focusBoxContent a:visited {
-    color: var(--su-blue);
+    color: var(--navy-blue);
+    text-decoration: underline;
 }
 
 .focusBoxWrapper .colorYellowTint .focusBoxContent a:hover {
+    color: var(--su-blue);
     text-decoration: underline;
 }
 
 .focusBoxWrapper .colorYellowTint .focusBoxContent a:active {
-    text-decoration: underline;
     color: var(--su-red) !important;
+    text-decoration: underline;
 }
 
 .focusBoxWrapper .colorYellow .focusBoxContent a:focus {
@@ -7763,7 +7767,7 @@ focusBox.colorSURed .focusBoxContent ul li:before {
 }
 
 .focusBoxWrapper .colorYellowTint .focusBoxContent li::before {
-    color: var(--su-blue) !important;
+    color: var(--navy-blue) !important;
 }
 
 
@@ -7868,7 +7872,7 @@ p.form-group.js-paragraph-preview {
 }
 
 .formPlaceholder .js-t4form-container .form-group {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .formPlaceholder .js-t4form-container .form-group.list-options {
