@@ -429,7 +429,7 @@ body {
     }
 } */
 
-#MainZone .primaryContent.standardContent a:link {
+/* #MainZone .primaryContent.standardContent a:link {
     color: #003282;
     text-decoration: underline #088099;
 }
@@ -447,6 +447,37 @@ body {
 #MainZone .primaryContent.standardContent a:active {
     color: #aa0000;
     text-decoration: underline #aa0000;
+} */
+
+
+#MainZone .primaryContent.standardContent a:link,
+#MainZone .primaryContent.standardContent a:visited {
+    color: #003282;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 0.1em solid #008899;
+}
+
+#MainZone .primaryContent.standardContent a:hover {
+    color: #003282;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 0.1em solid #003282;
+}
+
+#MainZone .primaryContent.standardContent a:focus {
+    color: #003282;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 0.1em solid #003282;
+    /* outline: 1px dotted #333333; */
+}
+
+#MainZone .primaryContent.standardContent a:active {
+    color: #aa0000;
+    text-decoration: none;
+    border-bottom: 0.1em solid #aa0000;
+    /* outline: none; */
 }
 
 
@@ -3765,10 +3796,14 @@ svg.arrow.circle.navy {
     padding-bottom: 10px;
 }
 
+.accordionWrapper dl {
+    /* accordion tweak */
+    margin-bottom: 0px;
+}
 
 /* anchor styles inside the accordion item */
 
-.accordionItemInfo.standardContent a {
+/* .accordionItemInfo.standardContent a {
     color: #003282;
     text-decoration: underline #088099;
 }
@@ -3781,11 +3816,37 @@ svg.arrow.circle.navy {
 .accordionItemInfo.standardContent a:active {
     color: #aa0000;
     text-decoration: underline #aa0000;
+} */
+
+
+.accordionItemInfo.standardContent a:link,
+.accordionItemInfo.standardContent a:visited {
+    color: #003282;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 0.1em solid #008899;
 }
 
-.accordionWrapper dl {
-    /* accordion tweak */
-    margin-bottom: 0px;
+.accordionItemInfo.standardContent a:hover {
+    color: #003282;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 0.1em solid #003282;
+}
+
+.accordionItemInfo.standardContent a:focus {
+    color: #003282;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 0.1em solid #003282;
+    /* outline: 1px dotted #333333; */
+}
+
+.accordionItemInfo.standardContent a:active {
+    color: #aa0000;
+    text-decoration: none;
+    border-bottom: 0.1em solid #aa0000;
+    /* outline: none; */
 }
 
 
