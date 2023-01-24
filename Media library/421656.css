@@ -4137,7 +4137,7 @@ a.colorButton:active {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .colorButton {
-        xflex-basis: 33%;
+        /* flex-basis: 33%; */
         flex-basis: 50%;
     }
 }
@@ -7928,21 +7928,21 @@ focusBox.colorSURed .focusBoxContent ul li:before {
 
 /* Allow the button to grow at small widths */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .focusBox ul.arrowLinks li {
         xflex: 0 1 100%;
         xflex: 1 1 calc(33.33% - 7px);
     }
-}
+} */
 
 @media (min-width: 992px) {
     .focusBox ul.arrowLinks li {
         margin-top: 0;
     }
 
-    .focusBox ul.arrowLinks li:not:first-child {
+    /* .focusBox ul.arrowLinks li:not:first-child {
         xflex: 1 1 calc(33.33% - 7px);
-    }
+    } */
 
     .focusBox ul.arrowLinks li {
         flex: 1 1 calc(33.33% - 7px);
@@ -8190,10 +8190,10 @@ input[type="file"]:focus {
 
 /* Overriding standardContent styles for hCard */
 
-.horizontalCard h2 {
-    xfont-size: 1.8rem !important;
-    xmargin-top: 0 !important;
-}
+/* .horizontalCard h2 {
+    font-size: 1.8rem !important;
+    margin-top: 0 !important;
+} */
 
 .horizontalCard p {
     font-size: 1.1rem !important;
