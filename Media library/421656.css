@@ -951,6 +951,8 @@ body {
 
 /* ------------------- Make space for variable number of drop-down menu items --------------------- */
 
+/* START TEST MODAL - Student Life */
+
 /* For 575px and smaller */
 /* #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks ul {
     max-height: 1600px !important;
@@ -981,17 +983,48 @@ body {
     }
 }
 
-/* Academics modal */
+/* END TEST MODAL - Student Life */
+
+/* Evens out the column heights of dropdown navigation items */
 @media screen and (min-width: 992px) {
+
     #globalHeaderNavigation .academicsModal .globalHeaderNavigationMainLinks ul {
         max-height: 500px;
     }
+
+    #globalHeaderNavigation .facultyModal .globalHeaderNavigationMainLinks ul {
+        max-height: 300px;
+    }
+
+    #globalHeaderNavigation .centersModal .globalHeaderNavigationMainLinks ul {
+        max-height: 325px;
+    }
+
+    #globalHeaderNavigation .aboutModal .globalHeaderNavigationMainLinks ul {
+        max-height: 375px;
+    }
+
 }
 
+
 @media screen and (min-width: 1400px) {
+
     #globalHeaderNavigation .academicsModal .globalHeaderNavigationMainLinks ul {
         max-height: 425px;
     }
+
+    #globalHeaderNavigation .facultyModal .globalHeaderNavigationMainLinks ul {
+        max-height: 275px;
+    }
+
+    #globalHeaderNavigation .centersModal .globalHeaderNavigationMainLinks ul {
+        max-height: 240px;
+    }
+
+    #globalHeaderNavigation .aboutModal .globalHeaderNavigationMainLinks ul {
+        max-height: 325px;
+    }
+
 }
 
 
