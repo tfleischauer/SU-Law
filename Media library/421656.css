@@ -60,6 +60,8 @@ p {
 
 
 /* Global Custom Properties: The HTML element but with higher specificity */
+/* Note: Bootstrap 5.2 custom properties are prefixed with bs-
+   See https://getbootstrap.com/docs/5.2/customize/css-variables/ */
 
 :root {
     /* Body Text */
@@ -71,8 +73,8 @@ p {
     --h3: 1.65rem;
     --h4: 1.563rem;
     --h5: 1.25rem;
-    /* Color Palette */
-    --su-black: #000000;
+    /* SU Color Palette */
+    --su-black: #333333;
     --su-blue: #088099;
     --emerald: #008765;
     --forest-green: #124a12;
@@ -80,10 +82,8 @@ p {
     --su-green: #55b31b;
     --navy-blue: #003282;
     --red-orange: #ef4135;
-    --su-black: #333333;
     --su-red: #aa0000;
     --taupe-brown: #807060;
-    --su-white: #fff;
     --su-yellow: #fdb913;
     --su-yellow-tint: #f7f7f7;
 }
@@ -1864,7 +1864,6 @@ h5 {
     color: #aa0000;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    xfont-size: 1.75rem;
     /* 1.953rem; Major scale */
     font-size: 1.65rem;
     margin-bottom: 0.3rem;
@@ -2349,12 +2348,12 @@ ul.arrowLinks a:focus {
 
 /* Button Color (*btn-color) classes */
 
-.btn-65-gray {
-    --btn-clr: var(--65-gray, #707070);
+.btn-bs-gray-600 {
+    --btn-clr: var(--bs-gray-600, #6c757d);
 }
 
 .btn-black {
-    --btn-clr: var(--su-black, #000000);
+    --btn-clr: var(--bs-black, #000000);
 }
 
 .btn-blue {
@@ -2398,7 +2397,7 @@ ul.arrowLinks a:focus {
 }
 
 .btn-white {
-    --btn-clr: var(--su-white, #ffffff);
+    --btn-clr: var(--bs-white, #ffffff);
 }
 
 .btn-yellow {
