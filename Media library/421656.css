@@ -8247,6 +8247,7 @@ input[type="file"]:focus {
     flex-direction: column;
     justify-content: center;
     position: relative;
+    overflow-y: hidden;
 }
 
 .imageBannerOverlay {
@@ -8271,6 +8272,11 @@ input[type="file"]:focus {
     /* text-shadow: #000000 0 0 8px; */
     /* text-shadow: 1px 1px 2px #000; Ingeniux */
     text-shadow: 2px 2px 1px #000, -1px -1px 1px #000;
+}
+
+.imageBanner h1.pageTitle {
+    font-weight: 500;
+    font-size: 4rem;
 }
 
 .BannerZone {
@@ -8320,6 +8326,15 @@ div#pageContent.row #Mainzone {
     width: 100%;
     text-align: center;
 }
+
+.law-landingPage-notitle-2416209 .imageBannerIntro {
+    padding: 0;
+}
+
+.law-detailPage-notitle-2416212 .imageBannerIntro {
+    padding: 0;
+}
+
 
 @media screen and (max-width: 767.999px) {
 
@@ -8422,6 +8437,13 @@ div#pageContent.row #Mainzone {
         padding: 0;
     }
 }
+
+@media screen and (max-width: 1199.99px) {
+    .imageBanner h1.pageTitle {
+        font-size: calc(1.375rem + 1.5vw);
+    }
+}
+
 
 
 /* ==========================================================================================
