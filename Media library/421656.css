@@ -73,6 +73,10 @@ p {
     --h3: 1.65rem;
     --h4: 1.563rem;
     --h5: 1.25rem;
+    /* minimum, ideal size/growth rate, maximum */
+    --fs-xl: clamp(2.2rem, 2vw + 1rem, 4rem);
+    --fs-600: 1.5rem;
+    --fs-400: 1.125rem;
     /* SU Color Palette */
     --su-black: #333333;
     --su-blue: #088099;
@@ -86,6 +90,14 @@ p {
     --taupe-brown: #807060;
     --su-yellow: #fdb913;
     --su-yellow-tint: #f7f7f7;
+}
+
+/* Responsive Typography Test */
+@media (min-width: 576px) {
+    :root {
+        --fs-600: 2rem;
+        --fs-400: 1.2rem;
+    }
 }
 
 body {
@@ -8265,18 +8277,19 @@ input[type="file"]:focus {
     width: 100%;
     color: #ffffff;
     font-family: "Montserrat", sans-serif;
-    font-size: 5rem;
-    font-weight: 300;
+    /* font-size: 5rem; */
+    /* font-weight: 300; */
     margin: 0;
     text-align: center;
-    /* text-shadow: #000000 0 0 8px; */
-    /* text-shadow: 1px 1px 2px #000; Ingeniux */
-    text-shadow: 2px 2px 1px #000, -1px -1px 1px #000;
 }
 
 .imageBanner h1.pageTitle {
+    /* font-size: 4rem; */
+    font-size: var(--fs-xl);
     font-weight: 500;
-    font-size: 4rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 0.35em rgb(30 18 52 / 75%),
+        0.035em 0.035em 0 rgb(30 18 52 / 75%);
 }
 
 .BannerZone {
@@ -8373,7 +8386,8 @@ div#pageContent.row #Mainzone {
 
 .imageBannerIntro p {
     color: #333333;
-    font-size: 2.2rem;
+    /* font-size: 2.2rem; */
+    font-size: 2rem;
     line-height: 1.45;
     font-weight: 300;
     text-align: center;
@@ -8432,17 +8446,23 @@ div#pageContent.row #Mainzone {
     text-decoration: underline;
 }
 
+@media (min-width: 576px) {
+    imageBanner h1.pageTitle {
+        text-shadow: 2px 2px 1px #000, -1px -1px 1px #000;
+    }
+}
+
 @media (min-width: 992px) {
     .imageBannerCenterIntroText {
         padding: 0;
     }
 }
 
-@media screen and (max-width: 1199.99px) {
+/* @media screen and (max-width: 1199.99px) {
     .imageBanner h1.pageTitle {
         font-size: calc(1.375rem + 1.5vw);
     }
-}
+} */
 
 
 
