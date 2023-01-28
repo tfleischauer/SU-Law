@@ -8272,6 +8272,7 @@ input[type="file"]:focus {
     z-index: 1;
 }
 
+/* imageBannerWrapper+h1 is used for the Law - Image Banner Treatments CT */
 .imageBanner h1,
 .imageBannerWrapper+h1 {
     width: 100%;
@@ -8281,6 +8282,9 @@ input[type="file"]:focus {
     /* font-weight: 300; */
     margin: 0;
     text-align: center;
+    /* text-shadow: 2px 2px 1px #000, -1px -1px 1px #000; */
+    text-shadow: 0 0 0.35em rgb(30 18 52 / 75%),
+        0.035em 0.035em 0 rgb(30 18 52 / 75%);
 }
 
 .imageBanner h1.pageTitle {
@@ -8288,14 +8292,11 @@ input[type="file"]:focus {
     font-size: var(--fs-xl);
     font-weight: 500;
     text-transform: uppercase;
-    text-shadow: 0 0 0.35em rgb(30 18 52 / 75%),
-        0.035em 0.035em 0 rgb(30 18 52 / 75%);
 }
 
 .BannerZone {
     position: relative;
 }
-
 
 div#BannerZone.row {
     margin-left: 0;
