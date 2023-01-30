@@ -11962,12 +11962,14 @@ body.videopage {
 
 @media screen and (max-width: 1199.999px) {
     .bannerVideo.ytv.autoplay {
-        margin-bottom: 0 0 -8rem 0;
+        /* margin-bottom: 0 0 -8rem 0; */
+        margin-bottom: -8rem;
         top: -5.5%;
     }
 
     .autoplay.contentItem:first-of-type {
-        margin-bottom: 0 0 0 0 !important;
+        /* margin-bottom: 0 0 0 0 !important; */
+        margin-bottom: 0 !important;
     }
 
     .autoplay .card-img-overlay .card-header {
