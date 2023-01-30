@@ -6770,7 +6770,7 @@ article.dualColumn a:active {
     width: 100%;
     width: -moz-available;
     width: -webkit-fill-available;
-    width: fill-available;
+    /* width: fill-available; */
 }
 
 .lawFacultyWrapper figure {
@@ -8143,7 +8143,8 @@ label {
     -moz-appearance: none;
     appearance: none;
     text-indent: 0.01px;
-    text-overflow: "";
+    /* text-overflow: ""; */
+    text-overflow: ellipsis;
 }
 
 .formPlaceholder form .select-style select:focus {
@@ -8447,15 +8448,15 @@ div#pageContent.row #Mainzone {
     text-decoration: underline;
 }
 
-@media (min-width: 576px) {
-    imageBanner h1.pageTitle {
-        text-shadow: 2px 2px 1px #000, -1px -1px 1px #000;
-    }
-}
 
 @media (min-width: 992px) {
     .imageBannerCenterIntroText {
         padding: 0;
+    }
+
+    .imageBanner h1,
+    .imageBannerWrapper+h1 {
+        text-shadow: 2px 2px 1px #000, -1px -1px 1px #000;
     }
 }
 
@@ -10239,7 +10240,7 @@ a:not([href]) {
     width: 100%;
     width: -moz-available;
     width: -webkit-fill-available;
-    width: fill-available;
+    /* width: fill-available; */
 }
 
 .masonryOrganizer .mainHeroItem .card-body {
@@ -10976,7 +10977,7 @@ li.nav-item a.nav-link .icon:hover {
     width: 100%;
     width: -moz-available;
     width: -webkit-fill-available;
-    width: fill-available;
+    /* width: fill-available; */
 }
 
 @media screen and (max-width: 1199.999px) {
