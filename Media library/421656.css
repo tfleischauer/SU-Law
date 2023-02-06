@@ -96,7 +96,7 @@ p {
 /* Responsive Typography */
 @media (min-width: 576px) {
     :root {
-        --h2: 2.5rem;
+        --h2: 2.4rem;
         --fs-600: 2rem;
         --fs-400: 1.2rem;
     }
@@ -1865,8 +1865,9 @@ h6 {
     color: #aa0000;
     clear: both;
     /* font-family: "Montserrat", sans-serif; */
-    font-size: 2rem;
     /* 2.441rem; Major scale */
+    /* font-size: 2rem; */
+    font-size: var(--h2, 2.2rem);
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
@@ -3803,7 +3804,8 @@ svg.arrow.circle.navy {
 .accordionWrapper h3.accordionItemHeaderButtonTitle {
     color: #088099;
     /* font-family: "Montserrat", sans-serif; */
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: var(--h3);
     font-weight: 500;
     margin: 0;
     width: 100%;
@@ -9309,9 +9311,9 @@ div#pageContent.row #Mainzone {
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .iconInfographic .infographicTitle h2 {
+    /* .iconInfographic .infographicTitle h2 {
         font-size: 2rem;
-    }
+    } */
 
     .iconInfographic .cardinfographicItem p {
         font-size: 1rem;
