@@ -96,7 +96,7 @@ p {
 /* Responsive Typography */
 @media (min-width: 576px) {
     :root {
-        --h2: 2.4rem;
+        --h2: 2.3rem;
         --fs-600: 2rem;
         --fs-400: 1.2rem;
     }
@@ -1002,23 +1002,23 @@ body {
 
 /* Target .studentLifeModal .globalHeaderNavigationMainLinks div */
 #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks {
-    max-height: 2500px !important;
+    margin-bottom: 1000px !important;
 }
 
-#globalHeaderNavigation .studentLifeModal .globalHeaderNavigationQuickLinks {
+/* #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationQuickLinks {
     clear: both;
-}
+} */
 
 
 @media screen and (min-width: 992px) {
 
     #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks {
-        max-height: 500px !important;
+        margin-bottom: unset !important;
     }
 
-    #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationQuickLinks {
+    /* #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationQuickLinks {
         clear: none;
-    }
+    } */
 
 }
 
@@ -1867,7 +1867,8 @@ h6 {
     /* font-family: "Montserrat", sans-serif; */
     /* 2.441rem; Major scale */
     /* font-size: 2rem; */
-    font-size: var(--h2, 2.2rem);
+    font-size: var(--h2);
+    line-height: 1.2;
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
