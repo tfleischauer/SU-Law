@@ -96,7 +96,7 @@ p {
 /* Responsive Typography */
 @media (min-width: 576px) {
     :root {
-        --h2: 2.3rem;
+        --h2: 2.25rem;
         --fs-600: 2rem;
         --fs-400: 1.2rem;
     }
@@ -996,43 +996,49 @@ body {
 
 /* ------------------- Make space for variable number of drop-down menu items --------------------- */
 
-/* START TEST MODAL - Student Life */
+/* START TEST MODALS */
 
 /* For 575px and smaller */
-
-/* Target .studentLifeModal .globalHeaderNavigationMainLinks div */
-#globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks {
-    margin-bottom: 1000px !important;
+#globalHeaderNavigation .admissionModal .globalHeaderNavigationMainLinks {
+    margin-bottom: 600px !important;
 }
 
-/* #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationQuickLinks {
-    clear: both;
-} */
+#globalHeaderNavigation .academicsModal .globalHeaderNavigationMainLinks {
+    margin-bottom: 1100px !important;
+}
 
+#globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks {
+    margin-bottom: 1100px !important;
+}
+
+@media screen and (min-width: 576px) {
+
+    #globalHeaderNavigation .admissionModal .globalHeaderNavigationMainLinks {
+        margin-bottom: 900px !important;
+    }
+
+    #globalHeaderNavigation .academicsModal .globalHeaderNavigationMainLinks {
+        margin-bottom: 1600px !important;
+    }
+
+    #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks {
+        margin-bottom: 1600px !important;
+    }
+
+}
 
 @media screen and (min-width: 992px) {
 
+    #globalHeaderNavigation .academicsModal .globalHeaderNavigationMainLinks,
     #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks {
         margin-bottom: unset !important;
     }
 
-    /* #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationQuickLinks {
-        clear: none;
-    } */
-
 }
 
-/* @media screen and (min-width: 1400px) {
+/* END TEST MODALS */
 
-    /* #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks {
-        max-height: 400px !important;
-    } */
-
-/* } */
-
-/* END TEST MODAL - Student Life */
-
-/* Evens out the column heights of dropdown navigation items */
+/* Evens out the column heights of dropdown navigation items at widths of 992px and up */
 @media screen and (min-width: 992px) {
 
     #globalHeaderNavigation .academicsModal .globalHeaderNavigationMainLinks ul {
@@ -8319,7 +8325,7 @@ input[type="file"]:focus {
     /* font-size: 4rem; */
     font-size: var(--fs-xl);
     font-weight: 500;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .BannerZone {
@@ -8409,14 +8415,14 @@ div#pageContent.row #Mainzone {
 
 .imageBannerIntro h5 {
     color: #aa0000;
-    font-size: 3rem;
+    /* font-size: 3rem; */
+    font-size: 2.3em;
     font-weight: 300;
 }
 
 .imageBannerIntro p {
     color: #333333;
-    /* font-size: 2.2rem; */
-    font-size: 2rem;
+    font-size: 1.4rem;
     line-height: 1.45;
     font-weight: 300;
     text-align: center;
@@ -8435,7 +8441,7 @@ div#pageContent.row #Mainzone {
 @media (max-width: 767.999px) {
     .imageBanner {
         background-position: top center;
-        height: 300px;
+        /* height: 300px; */
     }
 
     .imageBanner .imageBannerText {
@@ -8446,13 +8452,13 @@ div#pageContent.row #Mainzone {
         font-size: 2.3rem;
     }
 
-    .imageBannerIntro h5 {
+    /* .imageBannerIntro h5 {
         font-size: 2.3em;
-    }
+    } */
 
-    .imageBannerIntro p {
+    /* .imageBannerIntro p {
         font-size: 1.4rem;
-    }
+    } */
 }
 
 .imageBannerBreadcrumbs {
@@ -8484,6 +8490,14 @@ div#pageContent.row #Mainzone {
     .imageBanner h1,
     .imageBannerWrapper+h1 {
         text-shadow: 2px 2px 1px #000, -1px -1px 1px #000;
+    }
+
+    .imageBannerIntro h5 {
+        font-size: 3rem;
+    }
+
+    .imageBannerIntro p {
+        font-size: 1.9rem;
     }
 }
 
