@@ -96,7 +96,7 @@ p {
 /* Responsive Typography */
 @media (min-width: 576px) {
     :root {
-        --h2: 2.25rem;
+        --h2: 2.2rem;
         --fs-600: 2rem;
         --fs-400: 1.2rem;
     }
@@ -1011,26 +1011,36 @@ body {
     margin-bottom: 1100px !important;
 }
 
+#globalHeaderNavigation .facultyModal .globalHeaderNavigationMainLinks {
+    margin-bottom: 200px !important;
+}
+
 @media screen and (min-width: 576px) {
 
     #globalHeaderNavigation .admissionModal .globalHeaderNavigationMainLinks {
-        margin-bottom: 900px !important;
+        margin-bottom: 1000px !important;
     }
 
     #globalHeaderNavigation .academicsModal .globalHeaderNavigationMainLinks {
-        margin-bottom: 1600px !important;
+        margin-bottom: 1800px !important;
     }
 
     #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks {
-        margin-bottom: 1600px !important;
+        margin-bottom: 1800px !important;
+    }
+
+    #globalHeaderNavigation .facultyModal .globalHeaderNavigationMainLinks {
+        margin-bottom: 700px !important;
     }
 
 }
 
 @media screen and (min-width: 992px) {
 
+    #globalHeaderNavigation .admissionModal .globalHeaderNavigationMainLinks,
     #globalHeaderNavigation .academicsModal .globalHeaderNavigationMainLinks,
-    #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks {
+    #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks,
+    #globalHeaderNavigation .facultyModal .globalHeaderNavigationMainLinks {
         margin-bottom: unset !important;
     }
 
@@ -1876,7 +1886,8 @@ h6 {
     font-size: var(--h2);
     line-height: 1.2;
     font-weight: 500;
-    margin-bottom: 0.5rem;
+    /* margin-bottom: 0.5rem; */
+    margin-bottom: 0.75rem;
 }
 
 .standardContent h2 a {
@@ -2467,7 +2478,8 @@ ul.arrowLinks a:focus {
 .standardContent table {
     border-collapse: collapse;
     border-spacing: 2px;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
+    font-size: 1rem;
     font-weight: 400;
     margin-bottom: 1.6rem;
     /* same as paragraphs */
@@ -2490,7 +2502,7 @@ ul.arrowLinks a:focus {
 .standardContent table thead th {
     background-color: #aa0000;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: 500;
     padding: 10px;
     border-top: 1px solid #881111;
     border-bottom: 1px solid #881111;
@@ -2501,13 +2513,20 @@ ul.arrowLinks a:focus {
     color: #ffffff;
 }
 
-.standardContent table thead th a {
+.standardContent table thead th a:link,
+.standardContent table thead th a:visited {
     color: #ffffff;
+    border-bottom: none;
+    /* text-decoration: underline; */
 }
 
 .standardContent table thead th a:hover,
 .standardContent table thead th a:focus {
-    color: #ffffff;
+    color: #f7f7f7;
+}
+
+.standardContent table thead th a:active {
+    color: #fdb913;
 }
 
 .standardContent .tableWithoutBorders thead th {
@@ -2523,7 +2542,7 @@ ul.arrowLinks a:focus {
     /* thead styles will override this. THs only in tbody or other not indicated */
     background-color: #f7f7f7;
     color: #333333;
-    font-weight: bold;
+    font-weight: 500;
     padding: 10px;
 }
 
@@ -2567,6 +2586,24 @@ table caption h2 {
         overflow-x: auto;
         display: block;
     }
+}
+
+#MainZone .primaryContent.standardContent table thead th a:link,
+#MainZone .primaryContent.standardContent table thead th a:visited {
+    color: #ffffff;
+    text-decoration: underline;
+    border-bottom: none;
+}
+
+#MainZone .primaryContent.standardContent table thead th a:hover {
+    color: #f7f7f7;
+    text-decoration: underline;
+}
+
+#MainZone .primaryContent.standardContent table thead th a:active,
+#MainZone .primaryContent.standardContent table thead th a:focus {
+    color: #fdb913;
+    text-decoration: underline;
 }
 
 
@@ -8324,8 +8361,10 @@ input[type="file"]:focus {
 .imageBanner h1.pageTitle {
     /* font-size: 4rem; */
     font-size: var(--fs-xl);
-    font-weight: 500;
+    font-weight: 600;
     /* text-transform: uppercase; */
+    line-height: 1.2;
+    margin-bottom: 0.9rem;
 }
 
 .BannerZone {
@@ -8464,10 +8503,14 @@ div#pageContent.row #Mainzone {
 .imageBannerBreadcrumbs {
     color: #ffffff;
     text-align: center;
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: var(--h3);
     line-height: 1;
-    text-shadow: 1px 1px 2px #000;
+    font-weight: 600;
     /* Ingeniux */
+    /* text-shadow: 1px 1px 2px #000; */
+    text-shadow: 0 0 0.35em rgb(30 18 52 / 75%),
+        0.035em 0.035em 0 rgb(30 18 52 / 75%);
 }
 
 .imageBannerBreadcrumbs a {
@@ -8487,10 +8530,10 @@ div#pageContent.row #Mainzone {
         padding: 0;
     }
 
-    .imageBanner h1,
+    /* .imageBanner h1,
     .imageBannerWrapper+h1 {
         text-shadow: 2px 2px 1px #000, -1px -1px 1px #000;
-    }
+    } */
 
     .imageBannerIntro h5 {
         font-size: 3rem;
