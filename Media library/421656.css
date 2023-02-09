@@ -69,15 +69,13 @@ p {
     /* Captions */
     --cap: 1.1rem;
     /* Headlines */
-    --h2: 2rem;
-    --h3: 1.65rem;
-    --h4: 1.4rem;
-    --h5: 1.25rem;
-    --h6: 1.25rem;
     /* minimum, ideal size/growth rate, maximum */
     --fs-xl: clamp(2.2rem, 2vw + 1rem, 4rem);
-    --fs-600: 1.5rem;
-    --fs-400: 1.125rem;
+    --h2: 1.65rem;
+    --h3: 1.4rem;
+    --h4: 1.3rem;
+    --h5: 1.25rem;
+    --h6: 1.25rem;
     /* SU Color Palette */
     --su-black: #333333;
     --su-blue: #088099;
@@ -96,9 +94,10 @@ p {
 /* Responsive Typography */
 @media (min-width: 576px) {
     :root {
-        --h2: 2.2rem;
-        --fs-600: 2rem;
-        --fs-400: 1.2rem;
+        --h2: 2.1rem;
+        --h3: 1.65rem;
+        --h4: 1.4rem;
+        --h5: 1.3rem;
     }
 }
 
@@ -422,46 +421,9 @@ body {
 
 
 /* ========================================================================================== 
-     ===== Global #MainZone styles ============================================================
-     ========================================================================================== 
-  */
-
-/* #MainZone { */
-/* creates side space on mobile views. */
-/* padding: 0 1.5rem; */
-/* } */
-
-/* @media (min-width: 992px) {
-    #MainZone {
-        padding: 0;
-    }
-} */
-
-/* @media (min-width: 992px) and (max-width: 1399.98px) {
-      #MainZone {
-        padding: 0 1rem;
-    }
-} */
-
-/* #MainZone .primaryContent.standardContent a:link {
-    color: #003282;
-    text-decoration: underline #088099;
-}
-
-#MainZone .primaryContent.standardContent a:visited {
-    color: #003282;
-    text-decoration: underline #088099;
-}
-
-#MainZone .primaryContent.standardContent a:hover {
-    color: #003282;
-    text-decoration: underline #003282;
-}
-
-#MainZone .primaryContent.standardContent a:active {
-    color: #aa0000;
-    text-decoration: underline #aa0000;
-} */
+   ===== Global #MainZone styles ============================================================
+   ========================================================================================== 
+*/
 
 
 #MainZone .primaryContent.standardContent a:link,
@@ -492,6 +454,28 @@ body {
     text-decoration: none;
     border-bottom: 0.1em solid #aa0000;
     /* outline: none; */
+}
+
+/* creates side space on mobile views. */
+/* #MainZone { */
+/* padding: 0 1.5rem; */
+/* } */
+
+@media (min-width: 992px) {
+
+    div#MainZone {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1399.98px) {
+
+    div#MainZone {
+        /* padding: 0 1rem !important; */
+    }
+
 }
 
 
@@ -1015,22 +999,39 @@ body {
     margin-bottom: 200px !important;
 }
 
+#globalHeaderNavigation .centersModal .globalHeaderNavigationMainLinks {
+    margin-bottom: 400px !important;
+}
+
+#globalHeaderNavigation .careersModal .globalHeaderNavigationMainLinks {
+    margin-bottom: 600px !important;
+}
+
+
 @media screen and (min-width: 576px) {
 
     #globalHeaderNavigation .admissionModal .globalHeaderNavigationMainLinks {
-        margin-bottom: 1000px !important;
+        margin-bottom: 1100px !important;
     }
 
     #globalHeaderNavigation .academicsModal .globalHeaderNavigationMainLinks {
-        margin-bottom: 1800px !important;
+        margin-bottom: 1900px !important;
     }
 
     #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks {
-        margin-bottom: 1800px !important;
+        margin-bottom: 1900px !important;
     }
 
     #globalHeaderNavigation .facultyModal .globalHeaderNavigationMainLinks {
-        margin-bottom: 700px !important;
+        margin-bottom: 1000px !important;
+    }
+
+    #globalHeaderNavigation .centersModal .globalHeaderNavigationMainLinks {
+        margin-bottom: 1100px !important;
+    }
+
+    #globalHeaderNavigation .careersModal .globalHeaderNavigationMainLinks {
+        margin-bottom: 1300px !important;
     }
 
 }
@@ -1040,7 +1041,9 @@ body {
     #globalHeaderNavigation .admissionModal .globalHeaderNavigationMainLinks,
     #globalHeaderNavigation .academicsModal .globalHeaderNavigationMainLinks,
     #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks,
-    #globalHeaderNavigation .facultyModal .globalHeaderNavigationMainLinks {
+    #globalHeaderNavigation .facultyModal .globalHeaderNavigationMainLinks,
+    #globalHeaderNavigation .centersModal .globalHeaderNavigationMainLinks,
+    #globalHeaderNavigation .careersModal .globalHeaderNavigationMainLinks {
         margin-bottom: unset !important;
     }
 
@@ -1871,8 +1874,8 @@ h6 {
     /* font-family: "Montserrat", sans-serif; */
     padding: 0;
     text-decoration: none;
-    font-size: 3.052rem;
     /* major third */
+    font-size: 3.052rem;
     line-height: 1;
 }
 
@@ -1891,29 +1894,26 @@ h6 {
 }
 
 .standardContent h2 a {
-    /* links in major headings */
     color: #aa0000;
 }
 
 .standardContent h2 a:hover,
 .standardContent h2 a:focus {
-    /* links in major headings */
     text-decoration: underline;
     color: #333333;
 }
 
 .standardContent h3 {
-    /* minor headings */
     color: #aa0000;
     /* font-family: "Montserrat", sans-serif; */
     /* 1.953rem; Major scale */
-    font-size: 1.65rem;
+    /* font-size: 1.65rem; */
+    font-size: var(--h3);
     font-weight: 500;
     margin-bottom: 0.3rem;
 }
 
 .standardContent h3 a {
-    /* links in minor headings */
     color: #aa0000;
     text-decoration: none;
 }
@@ -1927,7 +1927,7 @@ h6 {
     color: #aa0000;
     /* font-family: "Montserrat", sans-serif; */
     /* font-size: 1.563rem; */
-    font-size: var(--h4, 1.4rem);
+    font-size: var(--h4);
     font-weight: 500;
     margin-bottom: 0.3rem;
 }
@@ -1945,7 +1945,7 @@ h6 {
 .standardContent h5 {
     color: #aa0000;
     /* font-family: "Montserrat", sans-serif; */
-    font-size: var(--h5, 1.25rem);
+    font-size: var(--h5);
     font-weight: 500;
     margin-bottom: 0.2rem;
 }
@@ -1962,7 +1962,7 @@ h6 {
 
 .standardContent h6 {
     color: #aa0000;
-    font-size: var(--h6, 1.25rem);
+    font-size: var(--h6);
     font-weight: 400;
     margin-bottom: 0.2rem;
 }
@@ -1981,13 +1981,13 @@ h6 {
         font-size: 2.8rem;
     } */
 
-    .standardContent h3 {
+    /* .standardContent h3 {
         font-size: 1.8rem;
-    }
+    } */
 
-    .standardContent h4 {
+    /* .standardContent h4 {
         font-size: 1.6rem;
-    }
+    } */
 }
 
 
@@ -8540,7 +8540,7 @@ div#pageContent.row #Mainzone {
     }
 
     .imageBannerIntro p {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
     }
 }
 
