@@ -1876,15 +1876,15 @@ h3,
 h4,
 h5,
 h6 {
-    color: #aa0000;
-    font-family: "Montserrat", sans-serif;
+    /* color: #aa0000; */
+    /* font-family: "Montserrat", sans-serif; */
     line-height: 1.3;
-    font-weight: 500;
+    /* font-weight: 500; */
     margin: 1.25rem 0 1.38rem;
 }
 
 .standardContent h1 {
-    /* color: #aa0000; */
+    color: #aa0000;
     padding: 0;
     text-decoration: none;
     /* major third */
@@ -1893,7 +1893,7 @@ h6 {
 }
 
 .standardContent h2 {
-    /* color: #aa0000; */
+    color: #aa0000;
     clear: both;
     font-size: var(--h2);
     line-height: 1.2;
@@ -1914,7 +1914,7 @@ h6 {
 }
 
 .standardContent h3 {
-    /* color: #aa0000; */
+    color: #aa0000;
     font-size: var(--h3);
     /* font-weight: 500; */
     margin-bottom: 0.3rem;
@@ -1934,7 +1934,7 @@ h6 {
 }
 
 .standardContent h4 {
-    /* color: #aa0000; */
+    color: #aa0000;
     font-size: var(--h4);
     /* font-weight: 500; */
     margin-bottom: 0.3rem;
@@ -1954,7 +1954,7 @@ h6 {
 }
 
 .standardContent h5 {
-    /* color: #aa0000; */
+    color: #aa0000;
     font-size: var(--h5);
     /* font-weight: 500; */
     margin-bottom: 0.2rem;
@@ -1974,7 +1974,7 @@ h6 {
 }
 
 .standardContent h6 {
-    /* color: #aa0000; */
+    color: #aa0000;
     font-size: var(--h6);
     font-weight: 400;
     margin-bottom: 0.2rem;
@@ -6151,9 +6151,9 @@ h2.contactBoxTitle {
 
 .contactBoxInfo h3 {
     margin: 0;
-    font-weight: 500;
-    font-family: "Montserrat", sans-serif;
-    font-size: 2rem;
+    /* font-weight: 500; */
+    /* font-family: "Montserrat", sans-serif; */
+    font-size: var(--h3);
     color: #aa0000;
 }
 
@@ -8098,16 +8098,22 @@ label {
 }
 
 .formPlaceholder .form-group .btn-primary {
-    color: #ffffff;
-    background-color: #aa0000;
-    border-color: #ffffff;
+    /* color: #ffffff; */
+    color: #aa0000;
+    font-weight: 600;
+    /* background-color: #aa0000; */
+    background-color: #fff;
+    border-color: var(--su-blue);
 }
 
 .formPlaceholder .form-group .btn-primary:hover,
 .formPlaceholder .form-group .btn-primary:focus {
-    color: #333333;
-    background-color: #fdb913;
-    border-color: #333333;
+    /* color: #333333; */
+    color: #fff;
+    /* background-color: #fdb913; */
+    background-color: var(--su-blue);
+    /* border-color: #333333; */
+    border-color: #aa0000;
 }
 
 .formPlaceholder form {
@@ -8294,7 +8300,7 @@ input[type="file"]:focus {
 }
 
 .horizontalCard .cardFooter a {
-    outline: 1px solid #088099;
+    /* outline: 1px solid #088099; */
     color: #a90400;
     text-decoration: none;
     max-width: max-content;
