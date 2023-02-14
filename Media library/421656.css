@@ -434,26 +434,18 @@ body {
     border-bottom: 0.1em solid #008899;
 }
 
-#MainZone .primaryContent.standardContent a:hover {
-    color: #003282;
-    font-weight: 500;
-    text-decoration: none;
-    border-bottom: 0.1em solid #003282;
-}
-
+#MainZone .primaryContent.standardContent a:hover,
 #MainZone .primaryContent.standardContent a:focus {
     color: #003282;
-    font-weight: 500;
-    text-decoration: none;
+    /* font-weight: 500; */
+    /* text-decoration: none; */
     border-bottom: 0.1em solid #003282;
-    /* outline: 1px dotted #333333; */
 }
 
 #MainZone .primaryContent.standardContent a:active {
     color: #aa0000;
-    text-decoration: none;
+    /* text-decoration: none; */
     border-bottom: 0.1em solid #aa0000;
-    /* outline: none; */
 }
 
 /* creates side space on mobile views. */
@@ -1857,13 +1849,24 @@ button.btn-su-blue {
 
 /* -------------------------- Links -------------------------- */
 
-.standardContent a {
+/* .standardContent a {
     color: #333333;
+    text-decoration: underline;
+} */
+
+.standardContent a:link,
+.standardContent a:visited {
+    color: #003282;
+    font-weight: 500;
     text-decoration: underline;
 }
 
 .standardContent a:hover,
 .standardContent a:focus {
+    color: #088099;
+}
+
+.standardContent a:active {
     color: #aa0000;
 }
 
@@ -2644,7 +2647,7 @@ ul.boxlinks li:before {
 .boxlinkItem a {
     /* a div with boxlinkItem is a standalone box in the same style as a boxlink li */
     border: 2px solid #088099;
-    color: #a90400;
+    color: #a90400 !important;
     display: block;
     font-family: "Montserrat", sans-serif;
     font-size: 1.4rem;
@@ -2653,7 +2656,7 @@ ul.boxlinks li:before {
     line-height: 1.25;
     padding: 15px;
     text-align: center;
-    text-decoration: none;
+    text-decoration: none !important;
     text-transform: uppercase;
     transition: all 0.2s ease;
 }
@@ -2685,8 +2688,8 @@ x.boxlinkItem:focus a,
 .boxlinkItem a:focus {
     background: #088099;
     border: 2px solid #088099;
-    color: #ffffff;
-    text-decoration: underline;
+    color: #ffffff !important;
+    text-decoration: underline !important;
 }
 
 
@@ -2978,7 +2981,7 @@ figcaption {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
-    speak: none;
+    /* speak: none; */
     top: 3px;
 }
 
@@ -3091,7 +3094,7 @@ figcaption {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
-    speak: none;
+    /* speak: none; */
     top: 3px;
 }
 
@@ -4766,7 +4769,9 @@ a.colorButton:active {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
-    speak: none;
+    /* speak: none; */
+    /* speak: never; */
+    /* speak-as: normal; */
     top: 3px;
 }
 
@@ -9375,12 +9380,14 @@ div#pageContent.row #Mainzone {
 }
 
 .iconInfographic .cardinfographicItem p {
-    word-break: break-word;
+    /* word-break: break-word; */
+    overflow-wrap: break-word;
     word-wrap: break-word;
 }
 
 .iconInfographic .cardinfographicItem span {
-    word-break: break-word;
+    /* word-break: break-word; */
+    overflow-wrap: break-word;
     word-wrap: break-word;
 }
 
