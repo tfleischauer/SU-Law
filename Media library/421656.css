@@ -1094,15 +1094,15 @@ body {
 
 /* For 575px and smaller */
 #globalHeaderNavigation .admissionModal .globalHeaderNavigationMainLinks {
-    margin-bottom: 600px !important;
+    margin-bottom: 500px !important;
 }
 
 #globalHeaderNavigation .academicsModal .globalHeaderNavigationMainLinks {
-    margin-bottom: 1100px !important;
+    margin-bottom: 900px !important;
 }
 
 #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks {
-    margin-bottom: 1100px !important;
+    margin-bottom: 900px !important;
 }
 
 #globalHeaderNavigation .facultyModal .globalHeaderNavigationMainLinks {
@@ -1121,19 +1121,19 @@ body {
 @media screen and (min-width: 576px) {
 
     #globalHeaderNavigation .admissionModal .globalHeaderNavigationMainLinks {
-        margin-bottom: 1100px !important;
+        margin-bottom: 700px !important;
     }
 
     #globalHeaderNavigation .academicsModal .globalHeaderNavigationMainLinks {
-        margin-bottom: 1900px !important;
+        margin-bottom: 1400px !important;
     }
 
     #globalHeaderNavigation .studentLifeModal .globalHeaderNavigationMainLinks {
-        margin-bottom: 1900px !important;
+        margin-bottom: 1400px !important;
     }
 
     #globalHeaderNavigation .facultyModal .globalHeaderNavigationMainLinks {
-        margin-bottom: 1000px !important;
+        margin-bottom: 400px !important;
     }
 
     #globalHeaderNavigation .centersModal .globalHeaderNavigationMainLinks {
