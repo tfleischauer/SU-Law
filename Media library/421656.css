@@ -7667,17 +7667,17 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
     text-decoration: underline;
 }
 
-.focusBoxWrapper .colorBlue .focusBoxContent a:active {
-    color: #aa0000 !important;
-}
-
 .focusBoxWrapper .colorBlue .focusBoxContent a:focus {
     color: #cc9f26;
     text-decoration: underline;
 }
 
+.focusBoxWrapper .colorBlue .focusBoxContent a:active {
+    color: #fdb913 !important;
+}
+
+
 .focusBoxWrapper .colorNavyBlue {
-    /* Navy Blue */
     background-color: #003282;
 }
 
@@ -7705,15 +7705,15 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 }
 
 .focusBoxWrapper .colorNavyBlue .focusBoxContent a:hover {
-    color: #aa0000;
-}
-
-.focusBoxWrapper .colorNavyBlue .focusBoxContent a:active {
-    color: #ef4135 !important;
+    color: #fdb913;
 }
 
 .focusBoxWrapper .colorNavyBlue .focusBoxContent a:focus {
-    color: #aa0000;
+    color: #fdb913;
+}
+
+.focusBoxWrapper .colorNavyBlue .focusBoxContent a:active {
+    color: #cc9f26 !important;
 }
 
 .focusBoxWrapper .colorTaupeBrown {
