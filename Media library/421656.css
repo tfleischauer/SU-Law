@@ -1120,7 +1120,7 @@ body {
 }
 
 #globalHeaderNavigation .aboutModal .globalHeaderNavigationMainLinks {
-    margin-bottom: 300px !important;
+    margin-bottom: 550px !important;
 }
 
 
@@ -1153,7 +1153,7 @@ body {
     }
 
     #globalHeaderNavigation .aboutModal .globalHeaderNavigationMainLinks {
-        margin-bottom: 700px !important;
+        margin-bottom: 1000px !important;
     }
 
 }
@@ -2750,6 +2750,7 @@ table caption {
     color: #aa0000;
     font-size: 1.65rem;
     line-height: 1.5;
+    font-weight: 500;
 }
 
 table caption h2 {
@@ -12941,7 +12942,7 @@ body.videopage {
     color: #05a0be;
 }
 
-.titleBanner2BackgroundImage.homepageImage {
+/* .titleBanner2BackgroundImage.homepageImage {
     height: 700px !important;
 }
 
@@ -12981,7 +12982,7 @@ body.videopage {
     padding: 5px 0;
     margin: 0 auto 61px;
     font-size: 45px;
-}
+} */
 
 /* .paragraph-text-title {
     font-family: "Montserrat", sans-serif;
