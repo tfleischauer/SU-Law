@@ -2860,7 +2860,7 @@ x.boxlinkItem:focus a,
     background: #088099;
     border: 2px solid #088099;
     color: #ffffff !important;
-    text-decoration: underline !important;
+    /* text-decoration: underline !important; */
 }
 
 
@@ -4723,11 +4723,22 @@ a.colorButton:active {
     padding-left: 0px;
 }
 
-.callToActionButtonWrapper li.callToActionButton a {
+.callToActionButtonWrapper li.callToActionButton a:link,
+.callToActionButtonWrapper li.callToActionButton a:visited {
+    color: #333;
     text-decoration: none;
 }
 
 .callToActionButtonWrapper li.callToActionButton a:hover {
+    text-decoration: underline;
+}
+
+.callToActionButtonWrapper li.callToActionButton a:focus {
+    text-decoration: none;
+}
+
+.callToActionButtonWrapper li.callToActionButton a:active {
+    color: var(--su-blue);
     text-decoration: underline;
 }
 
