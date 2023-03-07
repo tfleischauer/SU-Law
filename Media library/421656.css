@@ -11565,6 +11565,22 @@ li.nav-item a.nav-link .icon:hover {
      Needs #MainZone to display:flex;
   */
 
+.studentProfileMasonry .card-body a:link,
+.studentProfileMasonry .card-body a:visited {
+    text-decoration: underline #fff;
+}
+
+.studentProfileMasonry .card-body a:hover {
+    text-decoration: underline #aa0000;
+}
+
+/* .studentProfileMasonry .card-body a:focus {} */
+
+/* .studentProfileMasonry .card-body a:active {
+    color: #088099 !important;
+    text-decoration: underline #088099;
+} */
+
 .flexContainer {
     background: #ffffff;
     display: flex;
@@ -11573,7 +11589,6 @@ li.nav-item a.nav-link .icon:hover {
     align-items: stretch;
     /* makes all flex items equal to the longest item */
 }
-
 
 /* Flexbox item */
 
