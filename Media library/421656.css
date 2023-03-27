@@ -485,6 +485,10 @@ body {
    ========================================================================================== 
 */
 
+/* #MainZone .primaryContent.standardContent {
+    scroll-margin-top: 3rem;
+} */
+
 /* Default */
 #MainZone .primaryContent.standardContent a:link,
 #MainZone .primaryContent.standardContent a:visited {
@@ -12428,6 +12432,10 @@ body.videopage {
     margin-bottom: 5em;
 }
 
+.small-caps {
+    font-variant-caps: small-caps;
+}
+
 
 /* =============================================================================================================== */
 
@@ -13025,9 +13033,9 @@ body.videopage {
     .paragraph-text {
         font-size: 16px !important;
     }
-} */
+}
 
-/* .map-image {
+.map-image {
     background-image: url(../assets/cityinred19.jpg);
     display: block;
     height: 600px;
