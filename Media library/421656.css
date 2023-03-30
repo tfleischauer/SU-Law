@@ -10612,6 +10612,7 @@ h6 {
 
 .newsroomArticleWrapper h1#pageTitle {
     font-size: 4rem;
+    font-weight: 400;
 }
 
 .newsroomArticleByline {
