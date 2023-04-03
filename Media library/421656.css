@@ -46,6 +46,12 @@
     margin: 0;
 }
 
+@media (min-width: 992px) {
+    html {
+        scroll-padding-top: 150px;
+        /* scroll-padding-top: var(--scroll-padding, 150px); */
+    }
+}
 
 /* Remove default margin */
 
