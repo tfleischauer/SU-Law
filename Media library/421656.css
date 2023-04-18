@@ -1,8 +1,6 @@
 /* *********************************************************
    SU-Law-modified.css
    Media Library ID 421656
-
-   Modified post 20210817
 ************************************************************ */
 
 /* @-webkit-viewport {
@@ -49,12 +47,10 @@
 @media (min-width: 992px) {
     html {
         scroll-padding-top: 150px;
-        /* scroll-padding-top: var(--scroll-padding, 150px); */
     }
 }
 
 /* Remove default margin */
-
 body,
 h1,
 h2,
@@ -204,9 +200,7 @@ body {
 
 /* ==================================================================================================== */
 
-
 /* =========================================== Page Sections ========================================== */
-
 
 /* ==================================================================================================== */
 
@@ -218,10 +212,6 @@ body {
 
 
 /* Logo, Red and white bars on top */
-
-
-/* Last edited 6/18/19 by Steve */
-
 
 /* Migrated all nav css to working file 20210326 - Vic media library file number 2268710 */
 
@@ -325,9 +315,7 @@ body {
 
 /* =============================================================================================================== */
 
-
 /* ==================================================== Page ===================================================== */
-
 
 /* =============================================================================================================== */
 
@@ -352,12 +340,6 @@ body {
      ===== Global Detail Page styles ==========================================================
      ========================================================================================== 
   */
-
-
-/* .maxWidth1170px {
-    max-width: 1170px;
-    margin: auto;
-  } */
 
 .maxWidth1400px {
     max-width: 1400px;
@@ -396,25 +378,6 @@ body {
     }
 }
 
-
-/* @media (min-width: 992px) {
-  
-    #pageContentWrapper.container #SidebarZone{
-      padding-right: 4.5rem;
-    }
-  
-    #SidebarZone {
-      padding-left:1.5rem;
-    }
-  
-  }
-  
-  @media (min-width: 1200px) {
-    #SidebarZone {
-      padding-left: 0;
-    }
-  } */
-
 /* Default */
 #SidebarZone .primaryContent.standardContent a:link,
 #SidebarZone .primaryContent.standardContent a:visited {
@@ -449,7 +412,6 @@ body {
     color: #aa0000;
     border-bottom: none;
     text-decoration: underline #f7f7f7;
-    /* border-bottom: 0.1em solid #f7f7f7; */
 }
 
 #SidebarZone .primaryContent.standardContent h2 a:hover,
@@ -491,10 +453,6 @@ body {
    ========================================================================================== 
 */
 
-/* #MainZone .primaryContent.standardContent {
-    scroll-margin-top: 3rem;
-} */
-
 /* Default */
 #MainZone .primaryContent.standardContent a:link,
 #MainZone .primaryContent.standardContent a:visited {
@@ -514,25 +472,6 @@ body {
     color: #aa0000;
     border-bottom: 0.1em solid #aa0000;
 }
-
-/* .primaryContent.standardContent a:link,
-.primaryContent.standardContent a:visited {
-    color: #003282;
-    font-weight: 500;
-    text-decoration: none;
-    border-bottom: 0.1em solid #008899;
-}
-
-.primaryContent.standardContent a:hover,
-.primaryContent.standardContent a:focus {
-    color: #003282;
-    border-bottom: 0.1em solid #003282;
-}
-
-.primaryContent.standardContent a:active {
-    color: #aa0000;
-    border-bottom: 0.1em solid #aa0000;
-} */
 
 /* Headlines */
 #MainZone .primaryContent.standardContent h2 a:link,
@@ -575,12 +514,6 @@ body {
     text-decoration: underline #008899;
 }
 
-
-/* creates side space on mobile views. */
-/* #MainZone { */
-/* padding: 0 1.5rem; */
-/* } */
-
 @media (min-width: 992px) {
 
     div#MainZone {
@@ -590,20 +523,10 @@ body {
 
 }
 
-@media (min-width: 992px) and (max-width: 1399.98px) {
-
-    div#MainZone {
-        /* padding: 0 1rem !important; */
-    }
-
-}
-
 
 /* =============================================================================================================== */
 
-
 /* ==================================================== Site Navigation ========================================== */
-
 
 /* =============================================================================================================== */
 
@@ -631,7 +554,6 @@ body {
 
 #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle a,
 #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle a:visited {
-    /* border-bottom: 1px solid #B7B7B7; */
     color: #333333;
     display: block;
     font-weight: bold;
@@ -641,7 +563,6 @@ body {
     padding: 15px 0px 13px 0;
     text-decoration: none;
     text-transform: uppercase;
-    /* margin-bottom: 15px; */
 }
 
 @media (max-width: 767.999px) {
@@ -746,9 +667,6 @@ body {
         font-family: "fontawesome";
     }
 
-    /* #siteNavigation .navbar-collapse.collapse {
-        display: none!important;
-    } */
     #siteNavigation .navbar-nav>li>a {
         padding-top: 15px;
         padding-bottom: 15px;
@@ -793,24 +711,10 @@ body {
 #siteNavigation #menu li {
     display: block;
     position: relative;
-    /* border-bottom: 1px solid #B7B7B7; */
 }
 
 
-/* focus affects on mobile sidebar menu items */
-
-
-/* #TopZone #siteNavigation #menu li { 
-    display: flex;
-    flex-direction: row;
-    border-bottom: 1px solid #B7B7B7;
-  } */
-
-
 /* all links in all menu items */
-
-
-/* padding: 10px 7px 10px 0; */
 
 #siteNavigation #menu li a {
     color: #595959;
@@ -833,13 +737,6 @@ body {
 
 
 /* All links in the sitenav menu */
-
-
-/* @media screen and (max-width: 767.999px){
-    body #siteNavigation #menu li a { 
-      padding:10px 35px 10px 25px;
-    }
-  } */
 
 #siteNavigation #menu li a:hover,
 #siteNavigation #menu li a:focus {
@@ -888,12 +785,6 @@ body {
 }
 
 #siteNavigation .list-group-item {
-    /* position: relative; */
-    /* display: block; */
-    /* padding: 0.5rem 1rem; */
-    /* color: #212529; */
-    /* text-decoration: none; */
-    /* background-color: #fff; */
     border: none;
 }
 
@@ -1250,12 +1141,6 @@ body {
     word-wrap: break-word;
 }
 
-@media screen and (min-width: 992px) {
-    /* #pageContentWrapper {
-      padding-top: 100px;
-    } */
-}
-
 .container-fluid #pageTitle {
     padding: 30px 15px 30px 30px;
 }
@@ -1425,11 +1310,6 @@ body {
     border: none !important;
 }
 
-
-/* .searchArea .gsc-search-box {
-      display:none;
-  } */
-
 .searchAreaWrapper .gsc-input input {
     background: #ffffff !important;
     border: 1px solid #cccccc;
@@ -1441,7 +1321,6 @@ body {
 }
 
 .searchAreaWrapper .gsc-input input:active {
-    /*border: 1px solid #aa0000;*/
     border: none;
     height: 24px;
 }
@@ -1804,44 +1683,6 @@ span.go {
     margin: 0 auto;
 }
 
-
-/* #primoQueryTemp {
-    background-color: rgb(255, 255, 255);
-    background-image: none;
-    border-color: #333333;
-    border-radius: 0px;
-    border-style: solid;
-    border-width: 1px;
-    border-collapse: separate;
-    box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px 0px inset;
-    box-sizing: border-box;
-    color: #333333;
-    display: block;
-    float: left;
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    font-stretch: 100%;
-    font-weight: 500;
-    height: 47px;
-    line-height: 22.85px;
-    margin: 0px;
-    padding-bottom: 6px;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 6px;
-    position: relative;
-    text-align: start;
-    vertical-align: middle;
-    width: 75%;
-} */
-
-
-/* @media screen and (max-width: 500px) {
-    #primoQueryTemp {
-        width: 70%;
-    }
-} */
-
 .search-icon {
     color: rgb(255, 255, 255);
     font-family: "Montserrat", sans-serif;
@@ -1906,9 +1747,7 @@ button.btn-su-blue {
 
 /* =============================================================================================================== */
 
-
 /* ==================================================== Content Items ============================================ */
-
 
 /* =============================================================================================================== */
 
@@ -1968,9 +1807,7 @@ button.btn-su-blue {
 
 /* =============================================================================================================== */
 
-
 /* ========================================= Standard Content Elements =========================================== */
-
 
 /* =============================================================================================================== */
 
@@ -2011,27 +1848,6 @@ button.btn-su-blue {
     color: #aa0000;
 }
 
-/* .standardContent a:link,
-.standardContent a:visited {
-    color: #003282;
-    font-weight: 500;
-    text-decoration: none;
-    border-bottom: 0.1em solid #008899;
-}
-
-.standardContent a:hover,
-.standardContent a:focus {
-    color: #003282;
-    border-bottom: 0.1em solid #003282;
-}
-
-.standardContent a:active {
-    color: #aa0000;
-    border-bottom: 0.1em solid #aa0000;
-} */
-
-
-
 /* -------------------------- Headings -------------------------- */
 
 h1,
@@ -2040,10 +1856,7 @@ h3,
 h4,
 h5,
 h6 {
-    /* color: #aa0000; */
-    /* font-family: "Montserrat", sans-serif; */
     line-height: 1.3;
-    /* font-weight: 500; */
     margin: 1.25rem 0 1.38rem;
 }
 
@@ -2061,7 +1874,6 @@ h6 {
     clear: both;
     font-size: var(--h2);
     line-height: 1.2;
-    /* font-weight: 500; */
     margin-bottom: 0.75rem;
 }
 
@@ -2097,7 +1909,6 @@ h6 {
 
 .standardContent h3 a:hover,
 .standardContent h3 a:focus {
-    /* color: #aa0000; */
     text-decoration: underline #aa0000;
 }
 
@@ -2120,7 +1931,6 @@ h6 {
 
 .standardContent h4 a:hover,
 .standardContent h4 a:focus {
-    /* color: #aa0000; */
     text-decoration: underline #aa0000;
 }
 
@@ -2143,7 +1953,6 @@ h6 {
 
 .standardContent h5 a:hover,
 .standardContent h5 a:focus {
-    /* color: #aa0000; */
     text-decoration: underline #aa0000;
 }
 
@@ -2180,18 +1989,6 @@ h6 {
     .standardContent h1 {
         font-size: 2.4rem;
     }
-
-    /* .standardContent h2 {
-        font-size: 2.8rem;
-    } */
-
-    /* .standardContent h3 {
-        font-size: 1.8rem;
-    } */
-
-    /* .standardContent h4 {
-        font-size: 1.6rem;
-    } */
 }
 
 
@@ -2203,7 +2000,6 @@ h6 {
     line-height: 1.5;
     font-weight: 400;
     margin-bottom: 1rem;
-    /* max-width: 75ch; */
 }
 
 #SidebarZone .standardContent p {
@@ -2671,7 +2467,6 @@ ul.arrowLinks a:focus {
 .standardContent table {
     border-collapse: collapse;
     border-spacing: 2px;
-    /* font-size: 1.2rem; */
     font-size: 1rem;
     font-weight: 400;
     margin-bottom: 1.6rem;
@@ -2710,7 +2505,6 @@ ul.arrowLinks a:focus {
 .standardContent table thead th a:visited {
     color: #ffffff;
     border-bottom: none;
-    /* text-decoration: underline; */
 }
 
 .standardContent table thead th a:hover,
@@ -2859,7 +2653,7 @@ ul.boxlinks li:before {
     margin: 0;
 }
 
-.boxlinks li a:hover,
+/* .boxlinks li a:hover,
 .boxlinks li a:focus,
 x.boxlinks li:hover a,
 x.boxlinks li:focus a,
@@ -2870,7 +2664,15 @@ x.boxlinkItem:focus a,
     background: #088099;
     border: 2px solid #088099;
     color: #ffffff !important;
-    /* text-decoration: underline !important; */
+} */
+
+.boxlinks li a:hover,
+.boxlinks li a:focus,
+.boxlinkItem a:hover,
+.boxlinkItem a:focus {
+    background: #088099;
+    border: 2px solid #088099;
+    color: #ffffff !important;
 }
 
 
@@ -2922,11 +2724,6 @@ img[src=""] {
 .standardContent img {
     padding: 20px;
 }
-
-
-/* #SidebarZone .secondaryContent .standardContent img{
-    padding:0 20px;  
-  } */
 
 img.img-responsive {
     margin: 0 auto;
@@ -2990,8 +2787,6 @@ img.img-responsive {
 }
 
 figcaption {
-    font-size: 1.1rem;
-    /* fall back */
     font-size: var(--cap);
 }
 
@@ -3011,9 +2806,7 @@ figcaption {
 
 /* =================================================================================  */
 
-
 /* ===================================  Error Pages ================================  */
-
 
 /* ================================================================================== */
 
@@ -3031,9 +2824,7 @@ figcaption {
 
 /* ================================================================================= */
 
-
 /* ================================== Campus Alert ================================= */
-
 
 /* ================================================================================= */
 
@@ -3072,10 +2863,8 @@ figcaption {
 #SidebarZone #topAlerts .topAlertsTitle span {
     color: #ffffff;
     display: block;
-    /* font-family: 'Roboto Slab', serif; */
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    /* font-size: 18px; */
     font-size: 2rem;
     padding: 10px;
     text-align: center;
@@ -3100,7 +2889,6 @@ figcaption {
 }
 
 #SidebarZone #topAlerts .topAlertsContent {
-    /* background: #ffffff; */
     background: #f7f7f7;
     margin-bottom: 10px;
     padding: 10px;
@@ -3455,11 +3243,6 @@ figcaption {
      ===== Global Footer styles ===============================================================
      ========================================================================================== 
   */
-
-
-/* div#footerInner .container > * {
-    outline: 2px solid red;
-  } */
 
 footer {
     position: relative;
@@ -3846,9 +3629,7 @@ footer #footerSocialMediaLinks .social a:focus {
 
 /* ================================================================================= */
 
-
 /* ================================== Overrides ==================================== */
-
 
 /* ================================================================================= */
 
@@ -3956,9 +3737,7 @@ svg.arrow.circle.navy {
 
 /* =============================================================================================================== */
 
-
 /* ========================================= Content Types ======================================================= */
-
 
 /* =============================================================================================================== */
 
@@ -3981,7 +3760,6 @@ svg.arrow.circle.navy {
     font-size: var(--h2);
     font-weight: 500;
     margin: 3rem 0 2rem 0;
-    /* text-align: center; */
     clear: both;
 }
 
@@ -4018,10 +3796,6 @@ svg.arrow.circle.navy {
     outline: none;
 }
 
-/* .accordionItemHeader.accordion-header a:hover {
-    outline: none;
-} */
-
 .accordionItemHeader.accordion-header a:focus {
     outline: none;
 }
@@ -4041,8 +3815,6 @@ svg.arrow.circle.navy {
 
 .accordionWrapper h3.accordionItemHeaderButtonTitle {
     color: #088099;
-    /* font-family: "Montserrat", sans-serif; */
-    /* font-size: 2rem; */
     font-size: var(--h3);
     font-weight: 500;
     margin: 0;
@@ -4070,22 +3842,6 @@ svg.arrow.circle.navy {
 
 /* anchor styles inside the accordion item */
 
-/* .accordionItemInfo.standardContent a {
-    color: #003282;
-    text-decoration: underline #088099;
-}
-
-.accordionItemInfo.standardContent a:hover {
-    color: #003282;
-    text-decoration: underline #003282;
-}
-
-.accordionItemInfo.standardContent a:active {
-    color: #aa0000;
-    text-decoration: underline #aa0000;
-} */
-
-
 .accordionItemInfo.standardContent a:link,
 .accordionItemInfo.standardContent a:visited {
     color: #003282;
@@ -4106,14 +3862,12 @@ svg.arrow.circle.navy {
     font-weight: 500;
     text-decoration: none;
     border-bottom: 0.1em solid #003282;
-    /* outline: 1px dotted #333333; */
 }
 
 .accordionItemInfo.standardContent a:active {
     color: #aa0000;
     text-decoration: none;
     border-bottom: 0.1em solid #aa0000;
-    /* outline: none; */
 }
 
 
@@ -4812,16 +4566,6 @@ a.colorButton:active {
     }
 }
 
-
-/* @media screen and (max-width: 992px) and (min-width: 767px) {
-    #pageContentWrapper #MainZone .callToActionWrapper .callToActionButton {
-        flex-basis: calc(50% - 7px);
-    }
-    x#pageContentWrapper #MainZone.col-sm-8 .callToActionWrapper .callToActionButton {
-        flex-basis: 100%;
-    }
-} */
-
 @media screen and (max-width: 767px) {
 
     /*Extra Small Displays*/
@@ -4851,11 +4595,6 @@ a.colorButton:active {
     color: #088099;
     text-decoration: underline;
 }
-
-
-/* .callToActionButton a:hover:after {
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgODAgODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCI+CiAgICA8Y2lyY2xlIGN4PSI0MCIgY3k9IjQwIiByPSIzNSIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2U9IiMwNDg5OWQiIGZpbGw9IiMwNDg5OWQiIC8+CiAgICA8cGF0aCBkPSJNIDIwIDQwIEwgNjAgNDAiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlPSIjZmZmZmZmIiAvPgogICAgPHBhdGggZD0iTSA1MCAzMCBMIDYwIDQwIDUwIDUwIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZT0iI2ZmZmZmZiIgZmlsbD0ibm9uZSIgLz4KICAgIDxwYXRoIGQ9Ik0gNDAgMzAgTCA1MCA0MCA0MCA1MCIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2U9IiNmZmZmZmYiIGZpbGw9Im5vbmUiIC8+CiAgICA8cGF0aCBkPSJNIDMwIDMwIEwgNDAgNDAgMzAgNTAiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlPSIjZmZmZmZmIiBmaWxsPSJub25lIiAvPgogIDwvc3ZnPg==");
-  } */
 
 .callToActionButton a:hover:after {
     background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgODAgODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCI+CiAgICA8Y2lyY2xlIGN4PSI0MCIgY3k9IjQwIiByPSIzNSIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2U9IiMwNDg5OWQiIGZpbGw9IiMwNDg5OWQiIC8+CiAgICA8cGF0aCBkPSJNIDIwIDQwIEwgNjAgNDAiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlPSIjZmZmZmZmIiAvPgogICAgPHBhdGggZD0iTSA1MCAzMCBMIDYwIDQwIDUwIDUwIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZT0iI2ZmZmZmZiIgZmlsbD0ibm9uZSIgLz4KICAgIDxwYXRoIGQ9Ik0gNDAgMzAgTCA1MCA0MCA0MCA1MCIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2U9IiNmZmZmZmYiIGZpbGw9Im5vbmUiIC8+CiAgICA8cGF0aCBkPSJNIDMwIDMwIEwgNDAgNDAgMzAgNTAiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlPSIjZmZmZmZmIiBmaWxsPSJub25lIiAvPgogIDwvc3ZnPg==");
@@ -5302,9 +5041,7 @@ content item located in the Law - Global Navigation folder. */
 Instead, change classes in content item as shown in Law - Global Banner Alert (subtle). */
 #COVIDbanner .infographicItem {
     padding: 0 !important;
-    /* background-color: #003282; */
     background-color: #088099;
-    /* background-color: #000000; */
 }
 
 @media screen and (min-width: 768px) {
@@ -5315,28 +5052,21 @@ Instead, change classes in content item as shown in Law - Global Banner Alert (s
 
 #COVIDbanner .infographicItemHeader a {
     color: #fff;
-    /* color: #FDB913; */
     font-size: 1.5rem;
     text-decoration: underline;
 }
 
 #COVIDbanner .infographicItemHeader a:focus,
 #COVIDbanner .infographicItemHeader a:hover {
-    /* color:#fff; */
     color: #000000;
-    /* color: #FDB913; */
 }
 
 #COVIDbanner .infographicItemText.standardContent p a {
     color: #fff;
-    /* color: #FDB913; */
 }
 
 #COVIDbanner .infographicItemText.standardContent p a:hover {
-    /* color:#fff; */
     color: #000000;
-    /* color: #FDB913; */
-    /* text-decoration:underline; */
 }
 
 
@@ -5410,7 +5140,6 @@ Instead, change classes in content item as shown in Law - Global Banner Alert (s
 #law-global-banner-alert .infographicItemHeader.standardContent h2 {
     color: #fff;
     clear: both;
-    /* font-family: "Montserrat", sans-serif; */
     font-size: 2.25rem;
     font-weight: 400;
     margin: 2rem 0 1rem 0;
@@ -5495,7 +5224,6 @@ Instead, change classes in content item as shown in Law - Global Banner Alert (s
 .cardsWrapper .card {
     align-items: stretch;
     flex: 1 1 0;
-    /* padding: 0 15px 0 15px; */
 }
 
 .cardsWrapper .card a.cardLink {
@@ -5556,7 +5284,6 @@ Instead, change classes in content item as shown in Law - Global Banner Alert (s
 }
 
 .cardsWrapper .cardButton a:after {
-    /* content: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgOTEuNDQgMzMuMTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDkxLjQ0IDMzLjEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I0VGNDEzNTt9Cjwvc3R5bGU+CjxnPgoJPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSI1Mi44NCwyOS45MyA1NS41NywzMi43NCA3MC45OSwxOC4yOCA4My4xNSwxOC4yOCA3MC44OSwyOS45MyA3My42MywzMyA5MS4yNywxNi42NSA3My42MywwLjI4IAoJCTcwLjg5LDMuMDUgODMuMTYsMTQuMjggNzEsMTQuMjggNTUuNTcsMC4xMiA1Mi44NCwyLjk3IDY1LjExLDE0LjI4IDUyLjk1LDE0LjI4IDM3LjUyLDAuMTIgMzQuNzgsMi45NyA0Ny4wNSwxNC4yOCAwLjE3LDE0LjI4IAoJCTAuMTcsMTguMjggNDcuMDUsMTguMjggMzQuNzgsMjkuOTMgMzcuNTIsMzIuNzQgNTIuOTQsMTguMjggNjUuMSwxOC4yOCAJIi8+CjwvZz4KPC9zdmc+"); */
     font-weight: 400;
     width: 2.4rem;
     position: absolute;
@@ -5867,11 +5594,6 @@ Instead, change classes in content item as shown in Law - Global Banner Alert (s
       Image slide intended to be only used as a carousel slide.  
   */
 
-
-/* .carouselImageWrapper {
-      display: none !important;
-} */
-
 .carouselImageWrapper.carousel-item .card-body {
     background-color: #f7f7f7;
 }
@@ -5919,11 +5641,6 @@ Instead, change classes in content item as shown in Law - Global Banner Alert (s
     line-height: 1.5;
     margin: 0;
 }
-
-
-/* .carouselImageCaption a {
-  } */
-
 
 /*========= Positioning Styles =========*/
 
@@ -5986,8 +5703,6 @@ Instead, change classes in content item as shown in Law - Global Banner Alert (s
 /*** Law - Code - Main Zone id: 5253 ***/
 
 .codeMainZoneWrapper {
-    font-size: 1.2rem;
-    /* fall back */
     font-size: var(--p);
     /* Default so the text is not tiny */
 }
@@ -6007,8 +5722,6 @@ Instead, change classes in content item as shown in Law - Global Banner Alert (s
 }
 
 .codeMainZone p {
-    font-size: 1.2rem;
-    /* fall back */
     font-size: var(--p);
 }
 
@@ -6016,15 +5729,11 @@ Instead, change classes in content item as shown in Law - Global Banner Alert (s
 /*** Law - Code - Sidebar Zone id: 5254 ***/
 
 codeSidebarZoneWrapper {
-    font-size: 1.2rem;
-    /* fall back */
     font-size: var(--p);
     /* Default so the text is not tiny */
 }
 
 .codeSidebarZone p {
-    font-size: 1.2rem;
-    /* fall back */
     font-size: var(--p);
 }
 
@@ -6054,7 +5763,6 @@ codeSidebarZoneWrapper {
     background-color: #333333;
     color: #ffffff;
     padding: 20px;
-    /*padding:30px by max, moved to each box*/
     text-align: center;
 }
 
@@ -6115,9 +5823,6 @@ codeSidebarZoneWrapper {
 }
 
 .contactBoxWrapper h2 {
-    /* font-family: "Montserrat", sans-serif; */
-    font-size: 2.65rem;
-    /* fall back */
     font-size: var(--h2);
     font-weight: 500;
     margin: 0;
@@ -6348,8 +6053,6 @@ h2.contactBoxTitle {
 
 .contactBoxInfo h3 {
     margin: 0;
-    /* font-weight: 500; */
-    /* font-family: "Montserrat", sans-serif; */
     font-size: var(--h3);
     color: #aa0000;
 }
@@ -6368,11 +6071,6 @@ h2.contactBoxTitle {
     color: inherit;
     text-decoration: underline;
 }
-
-
-/* .contactBoxInfoEmail a:hover, .contactBoxInfoEmail a:focus{
-    filter: invert(100%);
-  } */
 
 .contactBoxInfoAdditional {
     padding: 15px 0 0 0;
@@ -6403,8 +6101,6 @@ h2.contactBoxTitle {
 }
 
 .contactBoxSingleWrapper h2 {
-    font-size: 2.65rem;
-    /* fall back */
     font-size: var(--h2);
     font-weight: 500;
     margin: 0;
@@ -6420,62 +6116,14 @@ h2.contactBoxSingleTitle {
 .contactBoxSingleInfo h3 {
     margin: 0;
     font-weight: 500;
-    font-size: 1.65rem;
-    /* fall back */
     font-size: var(--h3);
     color: unset !important;
 }
 
 .contactBoxSingleInfo p {
     margin: 0 0 .25rem 0;
-    /* padding-left: 0;
-    font-size: var(--p, 1.2rem);
-    line-height: 1.5; */
     color: unset !important;
 }
-
-/* .contactBoxSingleInfo a.contactPhone {
-    text-decoration: none;
-}
-
-.contactBoxSingleInfo a.contactPhone:hover {
-    text-decoration: underline;
-}
-
-.contactBoxSingleInfo a.contactPhone:active {
-    text-decoration: underline;
-}
-
-.contactBoxSingleInfo a.contactPhone:focus {
-    text-decoration: underline;
-}
-
-.contactBoxSingleInfoEmail a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.contactBoxSingleInfoEmail a:hover,
-.contactBoxSingleInfoEmail a:focus {
-    color: #aa0000;
-    text-decoration: underline;
-}
-
-.contactBoxSingleInfoProfile a {
-    text-decoration: none;
-}
-
-.contactBoxSingleInfoProfile a:hover {
-    text-decoration: underline;
-}
-
-.contactBoxSingleInfoProfile a:active {
-    text-decoration: underline;
-}
-
-.contactBoxSingleInfoProfile a:focus {
-    text-decoration: underline;
-} */
 
 .contactBoxSingleInfo {
     text-align: left;
@@ -6703,8 +6351,6 @@ p.contactBoxSingleInfoPosition {
 
 .dc-headline h2 {
     color: #aa0000;
-    /* fall back */
-    font-size: 2.65rem;
     font-size: var(--h2);
     margin-bottom: 2.5rem;
 }
@@ -6725,8 +6371,6 @@ p.contactBoxSingleInfoPosition {
     margin-top: 3rem !important;
     margin-bottom: 1rem !important;
     text-transform: uppercase;
-    /* fall back */
-    font-size: 1.65rem;
     font-size: var(--h3);
     font-weight: 500;
 }
@@ -6825,195 +6469,6 @@ article.dualColumn a:active {
   */
 
 
-/* commented out by vic 20210425 */
-
-
-/* .facultyProfileWrapper {
-  
-  
-  }
-  
-  .facultyProfileWrapper h1 {
-    font-family: "Montserrat", sans-serif;
-  }
-  
-  .facultyProfileWrapper .facultyProfilePicture {
-    
-  }
-  
-  .facultyProfileWrapper .facultyProfilePicture img {
-    xmax-width: 100%;
-    xpadding: 0;
-  }
-  
-  .facultyProfileBiography h2 {
-     margin: 30px 0 10px 0;
-  }
-  
-  .facultyProfileWrapper .facultyProfileRoom,
-  .facultyProfileWrapper .facultyProfilePhone,
-  .facultyProfileWrapper .facultyProfileEmail {
-    xtext-align: right;
-    padding-left: 0;
-  }
-  
-  .facultyProfileWrapper .facultyProfileBiography {
-    
-  }
-  
-  .facultyProfileWrapper .facultyProfileMiddle {
-    xbackground-color: #f7f7f7;
-    margin-top: 30pxl
-  } */
-
-
-/* .facultyListItemWrapper {
-     flex: 1 1 calc(100% - 30px);
-     align-self: flex-start;
-     margin: 15px;
-     max-width: 233.5px;
-  } */
-
-
-/* 
-  div#id977819 .organizer  {
-     display: flex;
-     flex-wrap: wrap;
-     xjustify-content: center;
-  } */
-
-
-/* .facultyListItemWrapper a {
-     display: block;
-     text-decoration: none;
-  }
-  
-  .facultyListItemWrapper a:hover {
-     box-shadow: 0px 0px 15px #888;
-     text-decoration: underline;
-     color: #333333;
-  } */
-
-
-/* .facultyListItem {
-     text-align: center;
-     display: flex;
-     flex-wrap: wrap;
-     align-items: flex-end;
-  }
-  
-  .facultyListItemPhoto {
-     background-position: center;
-     background-size: cover;
-     align-self: flex-end;
-     min-height: 277px;
-     flex: 1 1 100%;
-  }
-  
-  .facultyListItemText {
-     align-self: flex-start;
-     width: 100%;
-  } */
-
-
-/* .facultyListItemPhoto img {
-     padding: 0;
-     min-height: 150px;
-     object-fit: cover;
-  } */
-
-
-/* .facultyListItem h3  {
-     color: #333333;
-     font-family: Montserrat;
-     font-size: 2rem;
-     margin: 10px 0 0 0; 
-  } */
-
-
-/* .facultyListItemText p {
-     font-size: 1.4rem;
-     text-align: center;
-     line-height: 1.8rem;
-  } */
-
-
-/* START New CSS 11/5/2020 */
-
-
-/* .facultyPhoto img {
-      border-radius: 50%;
-  } */
-
-
-/* #facultyFilter .form-check-label {
-      font-size: 2rem;
-      color: #333333;
-      text-transform: uppercase;
-  } */
-
-
-/* form#facultyFilter {
-      padding-top: 5vh;
-  } */
-
-
-/* END New CSS 11/5/2020 */
-
-
-/* Faculty profile - Landing page layout */
-
-
-/* Small devices (tablets, 768px and up) */
-
-
-/* @media (min-width: 768px) { */
-
-
-/* START - Faculty landing radio labels */
-
-
-/* #facultyFilter .form-check-inline {
-           justify-content: center;
-      } */
-
-
-/* #facultyFilter label::after {
-           content: "|";
-           padding-left: 20px;
-           padding-right: 20px;
-      } */
-
-
-/* #facultyFilter label:last-child::after {
-          content: "";
-      } */
-
-
-/* .facultyListItemWrapper {
-             xflex: 1 1 calc(50% - 30px);
-      } */
-
-
-/* END - Faculty landing radio labels */
-
-
-/* } */
-
-
-/* Medium devices (desktops, 992px and up) */
-
-
-/* @media (min-width: 992px) {
-      .facultyListItemWrapper {
-           xflex: 1 1 calc(100% - 30px);
-      }
-  } */
-
-
-/* end commented out by vic 20210425 */
-
-
 /* ****** Bootstrap 5 Organizer layouts - vic 20210425 ****** */
 
 
@@ -7047,7 +6502,6 @@ article.dualColumn a:active {
     width: 100%;
     width: -moz-available;
     width: -webkit-fill-available;
-    /* width: fill-available; */
 }
 
 .lawFacultyWrapper figure {
@@ -7153,12 +6607,6 @@ body.facultyProfileFulltext #pageContentWrapper .row {
     margin-right: auto;
     margin-left: auto;
 }
-
-
-
-
-
-/*** START Fulltext Layout ***/
 
 
 /* Last update/edit: 5/10/2021 by Troy */
@@ -7471,7 +6919,6 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
     margin: 0 0 1px 0;
     padding: 30px;
     position: relative;
-    /* height: 200px; */
 }
 
 
@@ -7503,13 +6950,11 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 
 .featuredCuratedEventsWrapper li.featuredCuratedEventItem .boxyDate .bodyDateMonth {
     font-size: 2.2rem;
-    /* font-family: Oswald, sans-serif; */
     font-weight: 400;
     line-height: 1;
 }
 
 .featuredCuratedEventsWrapper li.featuredCuratedEventItem .boxyDate .bodyDateDay {
-    /* font-size: 3rem; */
     font-size: 2.2rem;
     font-weight: 400;
     line-height: 1;
@@ -7521,7 +6966,6 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 
 .featuredCuratedEventsWrapper li.featuredCuratedEventItem .eventInformation {
     color: #333333;
-    /* padding: 0 30px; */
     padding: 0 0.5rem;
     line-height: 1.5;
 }
@@ -7570,24 +7014,6 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
   */
 
 
-/* .featuredCuratedEventsWrapper .curatedEventsList {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-  } */
-
-
-/* ***  Large min Defaults   *** */
-
-
-/* @media screen and (min-width: 992px) {
-      .featuredCuratedEventsWrapper .curatedEventsList {
-          flex-direction: row;
-          flex-wrap: wrap;
-      }
-  } */
-
-
 /* ==========================================================================================
      ===== Law - Focus Box ===== Content Type #5178 ===========================================
      ==========================================================================================
@@ -7629,7 +7055,6 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 }
 
 .focusBoxWrapper .colorSUBlack {
-    /* SU Black */
     background-color: #333333;
 }
 
@@ -7752,7 +7177,6 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 }
 
 .focusBoxWrapper .colorTaupeBrown {
-    /* Taupe Brown */
     background-color: #807060;
 }
 
@@ -7793,7 +7217,6 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 }
 
 .focusBoxWrapper .colorEmerald {
-    /* Emerald */
     background-color: #008765;
 }
 
@@ -7833,7 +7256,6 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 }
 
 .focusBoxWrapper .colorGold {
-    /* Gold */
     background-color: #cc9f26;
 }
 
@@ -7873,7 +7295,6 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 }
 
 .focusBoxWrapper .colorGreen {
-    /* Green */
     background-color: #55b31b;
 }
 
@@ -7913,7 +7334,6 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 }
 
 .focusBoxWrapper .colorForestGreen {
-    /* Forest Green */
     background-color: #124a12;
 }
 
@@ -7953,7 +7373,6 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 }
 
 .focusBoxWrapper .colorSURed {
-    /* SU Red */
     background-color: #aa0000;
 }
 
@@ -8000,7 +7419,6 @@ focusBox.colorSURed .focusBoxContent ul li:before {
 }
 
 .focusBoxWrapper .colorRedOrange {
-    /* Red Orange */
     background-color: #ef4135;
 }
 
@@ -8041,7 +7459,6 @@ focusBox.colorSURed .focusBoxContent ul li:before {
 }
 
 .focusBoxWrapper .colorWhite {
-    /* White */
     background-color: #ffffff;
 }
 
@@ -8061,7 +7478,6 @@ focusBox.colorSURed .focusBoxContent ul li:before {
 }
 
 .focusBoxWrapper .colorYellow {
-    /* Yellow */
     background-color: #fdb913;
 }
 
@@ -8216,22 +7632,10 @@ focusBox.colorSURed .focusBoxContent ul li:before {
 
 
 /* Allow the button to grow at small widths */
-
-/* @media (min-width: 768px) {
-    .focusBox ul.arrowLinks li {
-        xflex: 0 1 100%;
-        xflex: 1 1 calc(33.33% - 7px);
-    }
-} */
-
 @media (min-width: 992px) {
     .focusBox ul.arrowLinks li {
         margin-top: 0;
     }
-
-    /* .focusBox ul.arrowLinks li:not:first-child {
-        xflex: 1 1 calc(33.33% - 7px);
-    } */
 
     .focusBox ul.arrowLinks li {
         flex: 1 1 calc(33.33% - 7px);
@@ -8244,10 +7648,6 @@ focusBox.colorSURed .focusBoxContent ul li:before {
    ==========================================================================================
      Holds T4 form code. 
 */
-
-/* .formPlaceholder{
-    padding: 60px 8.333333333333%;
-  } */
 
 p.form-group.js-paragraph-preview {
     font-weight: 500;
@@ -8280,7 +7680,6 @@ label {
     /* labels on all elements*/
     border: 0;
     font-weight: 500;
-    /* font-size: 1.6rem; */
     font-size: 1.2rem;
     margin-bottom: 0;
 }
@@ -8295,21 +7694,16 @@ label {
 }
 
 .formPlaceholder .form-group .btn-primary {
-    /* color: #ffffff; */
     color: #aa0000;
     font-weight: 600;
-    /* background-color: #aa0000; */
     background-color: #fff;
     border-color: var(--su-blue);
 }
 
 .formPlaceholder .form-group .btn-primary:hover,
 .formPlaceholder .form-group .btn-primary:focus {
-    /* color: #333333; */
     color: #fff;
-    /* background-color: #fdb913; */
     background-color: var(--su-blue);
-    /* border-color: #333333; */
     border-color: #aa0000;
 }
 
@@ -8322,9 +7716,6 @@ label {
     /* identical to standard content */
     color: #aa0000;
     clear: both;
-    /* font-family: "Roboto Slab", serif; */
-    /* font-size: 3.2rem; */
-    /* font-weight: 400; */
     margin: 30px 0 3px 0;
 }
 
@@ -8354,20 +7745,14 @@ label {
 .formPlaceholder .form-group input[type="email"],
 .formPlaceholder .form-group select,
 .formPlaceholder .form-group textarea {
-    /*-webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none; Removed on 1/29/18 by Max, made dropdown labels go away*/
     background-color: #f7f7f7 !important;
     border-radius: 0px !important;
     box-shadow: none;
     color: #333333;
     font-family: "Montserrat", sans-serif;
-    /* font-size: 1.4rem; */
     font-size: 1.2rem;
-    /* line-height: 2rem; */
     line-height: 1;
     height: inherit;
-    /* padding: 10px; */
 }
 
 .js-t4form-container .radio input[type="radio"],
@@ -8426,7 +7811,6 @@ label {
     -moz-appearance: none;
     appearance: none;
     text-indent: 0.01px;
-    /* text-overflow: ""; */
     text-overflow: ellipsis;
 }
 
@@ -8486,18 +7870,12 @@ input[type="file"]:focus {
 
 /* Overriding standardContent styles for hCard */
 
-/* .horizontalCard h2 {
-    font-size: 1.8rem !important;
-    margin-top: 0 !important;
-} */
-
 .horizontalCard p {
     font-size: 1.1rem !important;
     overflow: hidden;
 }
 
 .horizontalCard .cardFooter a {
-    /* outline: 1px solid #088099; */
     color: #a90400;
     text-decoration: none;
     max-width: max-content;
@@ -8562,20 +7940,15 @@ input[type="file"]:focus {
     width: 100%;
     color: #ffffff;
     font-family: "Montserrat", sans-serif;
-    /* font-size: 5rem; */
-    /* font-weight: 300; */
     margin: 0;
     text-align: center;
-    /* text-shadow: 2px 2px 1px #000, -1px -1px 1px #000; */
     text-shadow: 0 0 0.35em rgb(30 18 52 / 75%),
         0.035em 0.035em 0 rgb(30 18 52 / 75%);
 }
 
 .imageBanner h1.pageTitle {
-    /* font-size: 4rem; */
     font-size: var(--fs-xl);
     font-weight: 600;
-    /* text-transform: uppercase; */
     line-height: 1.2;
     margin-bottom: 0.8rem;
 }
@@ -8667,7 +8040,6 @@ div#pageContent.row #Mainzone {
 
 .imageBannerIntro h5 {
     color: #aa0000;
-    /* font-size: 3rem; */
     font-size: 2.3em;
     font-weight: 300;
 }
@@ -8693,7 +8065,6 @@ div#pageContent.row #Mainzone {
 @media (max-width: 767.999px) {
     .imageBanner {
         background-position: top center;
-        /* height: 300px; */
     }
 
     .imageBanner .imageBannerText {
@@ -8704,24 +8075,14 @@ div#pageContent.row #Mainzone {
         font-size: 2.3rem;
     }
 
-    /* .imageBannerIntro h5 {
-        font-size: 2.3em;
-    } */
-
-    /* .imageBannerIntro p {
-        font-size: 1.4rem;
-    } */
 }
 
 .imageBannerBreadcrumbs {
     color: #ffffff;
     text-align: center;
-    /* font-size: 2rem; */
     font-size: var(--h3);
     line-height: 1;
     font-weight: 600;
-    /* Ingeniux */
-    /* text-shadow: 1px 1px 2px #000; */
     text-shadow: 0 0 0.35em rgb(30 18 52 / 75%),
         0.035em 0.035em 0 rgb(30 18 52 / 75%);
 }
@@ -8743,11 +8104,6 @@ div#pageContent.row #Mainzone {
         padding: 0;
     }
 
-    /* .imageBanner h1,
-    .imageBannerWrapper+h1 {
-        text-shadow: 2px 2px 1px #000, -1px -1px 1px #000;
-    } */
-
     .imageBannerIntro h5 {
         font-size: 3rem;
     }
@@ -8756,13 +8112,6 @@ div#pageContent.row #Mainzone {
         font-size: 1.8rem;
     }
 }
-
-/* @media screen and (max-width: 1199.99px) {
-    .imageBanner h1.pageTitle {
-        font-size: calc(1.375rem + 1.5vw);
-    }
-} */
-
 
 
 /* ==========================================================================================
@@ -9027,35 +8376,6 @@ div#pageContent.row #Mainzone {
 }
 
 
-/* ***  Small max Defaults   *** */
-
-
-/* @media screen and (max-width: 767.98px) {
-    .panelWrapper .panelText.card-text {
-        padding: 1rem;
-    }
-    .panelInner .panelText.card-text .panelLinks {
-        display: block;
-    }
-    .panelInner .panelText.card-text .panelLinks li {
-        border: 1px solid #088099;
-    }
-} */
-
-
-/* ***  X Small max Defaults   *** */
-
-
-/* @media only screen and (max-width: 575.98px) {
-    .panelWrapper .panelText.card-text {
-        padding: 0;
-    }
-    .panelWrapper .card-block .panelText.card-text {
-        padding: 0;
-    }
-} */
-
-
 /***
 *
 *   legacy image panel
@@ -9082,16 +8402,6 @@ div#pageContent.row #Mainzone {
     font-weight: 500;
     margin: 0 0 30px 0;
 }
-
-
-/*1px gap fix*/
-
-
-/* @media (min-width:766px) and (max-width:768px) {
-    .panelWrapper .clearfix {
-        display: block !important;
-    }
-} */
 
 
 /*only way to get mobile to not take up space set in html tag*/
@@ -9520,7 +8830,6 @@ div#pageContent.row #Mainzone {
     font-family: "Montserrat", serif;
     font-size: 4rem;
     font-weight: 600;
-    /* line-height: 8rem; */
     text-align: center;
 }
 
@@ -9572,21 +8881,16 @@ div#pageContent.row #Mainzone {
 }
 
 .iconInfographic .cardinfographicItem p {
-    /* word-break: break-word; */
     overflow-wrap: break-word;
     word-wrap: break-word;
 }
 
 .iconInfographic .cardinfographicItem span {
-    /* word-break: break-word; */
     overflow-wrap: break-word;
     word-wrap: break-word;
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    /* .iconInfographic .infographicTitle h2 {
-        font-size: 2rem;
-    } */
 
     .iconInfographic .cardinfographicItem p {
         font-size: 1rem;
@@ -9620,13 +8924,11 @@ div#pageContent.row #Mainzone {
 }
 
 .imageInfographic .infographicItemHeader p {
-    /* font-size: 5rem; */
     font-size: 1.6rem;
 }
 
 .imageInfographic .infographicItemText p {
     color: #aa0000;
-    /* font-size: 2rem; */
     font-weight: 600;
 }
 
@@ -10147,7 +9449,6 @@ div#pageContent.row #Mainzone {
 .jumbotron1 h2 a,
 .jumbotron1 h2 a:visited {
     text-decoration: none;
-    /* text-transform: uppercase; */
 }
 
 .jumbotron1 h2 a:focus,
@@ -10159,7 +9460,6 @@ div#pageContent.row #Mainzone {
     color: #333333;
     margin: 10px 0;
     padding: 0;
-    /* text-transform: uppercase; */
 }
 
 .jumbotron1 h3.white,
@@ -10343,11 +9643,6 @@ div#pageContent.row #Mainzone {
 
 
 /* ? */
-
-/* .jumbotron3 h2 a:focus,
-.jumbotron3 h1 a:hover {
-    text-decoration: underline;
-} */
 
 .jumbotron3 h3 {
     color: #333333;
@@ -10539,7 +9834,6 @@ a:not([href]) {
     width: 100%;
     width: -moz-available;
     width: -webkit-fill-available;
-    /* width: fill-available; */
 }
 
 .masonryOrganizer .mainHeroItem .card-body {
@@ -10775,7 +10069,6 @@ li.nav-item a.nav-link .icon:hover {
     margin-top: 30px;
 }
 
-
 /* CSS for image captions (Used for floating images in news stories). Added by Troy 5/1/2021 */
 
 .standardContent figure.image-wrapper {
@@ -10793,9 +10086,6 @@ li.nav-item a.nav-link .icon:hover {
 .standardContent figure.image-wrapper img {
     padding: 0;
 }
-
-
-/* Large mobile devices (425px and up) */
 
 @media (min-width: 425px) {
     .standardContent figure.image-wrapper {
@@ -10861,14 +10151,9 @@ li.nav-item a.nav-link .icon:hover {
     font-size: 1.8rem;
 }
 
-/* #MainZone .quicklinks {
-    padding: 0 25px 25px;
-} */
-
 #MainZone .quicklinks ul,
 #zoneC .quicklinks ul {
     border-top: 1px solid #088099;
-    /* padding: 5px 0 5px 20px; */
     padding-top: 2.5rem;
 }
 
@@ -11091,15 +10376,11 @@ li.nav-item a.nav-link .icon:hover {
 .socialMediaIconsText h2 {
     clear: both;
     color: #aa0000;
-    /* font-family: "Roboto Slab", serif;
-    font-size: 3.2rem;
-    font-weight: 400; */
     font-size: var(--h2);
     text-transform: none;
 }
 
 #SidebarZone .socialMediaIconsText h2 {
-    /* font-size: 1.8rem; */
     font-size: var(--h2);
 }
 
@@ -11277,7 +10558,6 @@ li.nav-item a.nav-link .icon:hover {
     width: 100%;
     width: -moz-available;
     width: -webkit-fill-available;
-    /* width: fill-available; */
 }
 
 @media screen and (max-width: 1199.999px) {
@@ -12278,13 +11558,11 @@ body.videopage {
 
 @media screen and (max-width: 1199.999px) {
     .bannerVideo.ytv.autoplay {
-        /* margin-bottom: 0 0 -8rem 0; */
         margin-bottom: -8rem;
         top: -5.5%;
     }
 
     .autoplay.contentItem:first-of-type {
-        /* margin-bottom: 0 0 0 0 !important; */
         margin-bottom: 0 !important;
     }
 
@@ -12340,7 +11618,6 @@ body.videopage {
     .bannerVideo.vbv.autoplay {
         margin-bottom: 0;
         margin-top: -1.5rem
-            /* z-index: 0; */
     }
 
     .bannerVideo.ytv.autoplay iframe {
@@ -12414,9 +11691,7 @@ body.videopage {
 
 /* =============================================================================================================== */
 
-
 /* ========================================= Global Utility Classes ============================================== */
-
 
 /* =============================================================================================================== */
 
@@ -12446,9 +11721,7 @@ body.videopage {
 
 /* =============================================================================================================== */
 
-
 /* ========================================= What is all this? =================================================== */
-
 
 /* =============================================================================================================== */
 
@@ -12458,22 +11731,6 @@ body.videopage {
 
 /* Content Item Tweaks To Implement */
 
-
-/* #carousel .slick-dots {
-    position: relative !important;
-    bottom: 0px;
-}
-
-#carousel.slick-dotted {
-    margin-bottom: 0px !important;
-} */
-
-
-/* .spotlightImage img {
-    height: auto;
-    max-height: 300px;
-    width: 100%;
-} */
 
 @media screen and (max-width: 767.999px) {
 
@@ -12627,19 +11884,6 @@ body.videopage {
     padding-right: 1.1225em;
     position: relative;
 }
-
-
-/* .spotlightCopyCitation.red-border-side {
-    border-left: 4px solid #f03f35;
-    padding-left: 13px;
-} */
-
-
-/* @media (max-width: 767px) {
-    .spotlightCopyCitation.red-border-side {
-        border-left: none;
-    }
-} */
 
 .red-border-top {
     border-top: 4px solid #f03f35;
@@ -12807,7 +12051,6 @@ body.videopage {
 }
 
 .standardContent.publications:hover {
-    /*border: none;*/
     --box-shadow-color: #ff0000;
 }
 
@@ -12983,75 +12226,7 @@ body.videopage {
     color: #05a0be;
 }
 
-/* .titleBanner2BackgroundImage.homepageImage {
-    height: 700px !important;
-}
-
-.homepageTitleBanner {
-    text-align: center;
-    width: 78%;
-}
-
-.homepageSubtitle,
-.homepageTitle,
-.homepageArrow {
-    text-transform: uppercase;
-    display: block;
-}
-
-.homepageSubtitle {
-    padding-top: 85px;
-    padding-bottom: 25px;
-}
-
-.homepageTitle {
-    font-weight: 700 !important;
-    font-size: 140px;
-    padding-bottom: 150px;
-}
-
-@media screen and (max-width: 991.999px) {
-    .homepageTitle {
-        font-size: 70px;
-    }
-}
-
-.homepageArrow {
-    border: 2px solid #ffffff;
-    border-radius: 50px;
-    width: 65px;
-    padding: 5px 0;
-    margin: 0 auto 61px;
-    font-size: 45px;
-} */
-
-/* .paragraph-text-title {
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
-    font-size: 50px !important;
-    padding-bottom: 25px;
-}
-
-.paragraph-text {
-    font-size: 20px !important;
-}
-
-@media screen and (max-width: 991.999px) {
-    .paragraph-text {
-        font-size: 16px !important;
-    }
-}
-
-.map-image {
-    background-image: url(../assets/cityinred19.jpg);
-    display: block;
-    height: 600px;
-} */
-
-
 /* *********************************************************
    SU-Law-modified.css
    Media Library ID 421656
-
-   Modified post 20210817
 ************************************************************ */
