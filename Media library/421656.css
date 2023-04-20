@@ -8117,10 +8117,10 @@ div#pageContent.row #Mainzone {
 
 
 /* ==========================================================================================
-     ===== Law - Image Box Navigation ===== Content Type #5299 ================================
-     ==========================================================================================
-     Last edited 10/24/19 by Steve   
-  */
+   ===== Law - Image Box Navigation ===== Content Type #5299 ================================
+   ==========================================================================================
+   By Steve 10/24/19. Last edited by Troy 4/21/2023.    
+*/
 
 .imageBoxWrapper {
     background: #f7f7f7;
@@ -8199,7 +8199,7 @@ div#pageContent.row #Mainzone {
     padding-bottom: 20px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199.999px) {
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
 
     /* sm + md */
     #MainZone .imageBoxWrapper .imageBox {
@@ -8237,7 +8237,7 @@ div#pageContent.row #Mainzone {
     }
 }
 
-@media screen and (max-width: 767.999px) {
+@media screen and (max-width: 991.98px) {
 
     /* xs */
     .imageBoxWrapper .imageBoxes {
@@ -9749,58 +9749,27 @@ div#pageContent.row #Mainzone {
 
 
 /* ==========================================================================================
-     ===== Law - Jump Links ===== Content Type #5273 ==========================================
-     ==========================================================================================
-     Links to other content in the section
-     Last revised 9/30/19 by Jason   
-  */
+   ===== Law - Jump Links ===== Content Type #5273 ==========================================
+   ==========================================================================================
+    Links to other content in the section
+    By Jason 9/30/19. Last revised by Troy 4/21/2023.
+*/
 
 .jumpLinksWrapper {
     overflow: auto;
-    /* padding: 30px; */
 }
-
-/* .jumpLinksWrapper .jumpLinksTitle {
-    margin-top: 0;
-} */
-
-/* .jumpLinksWrapper ol { */
-/* border: 1px solid #ccc; */
-/* border-left: 0; */
-/* border-right: 0; */
-/* padding: 15px 0;
-    list-style-type: none;
-    margin: auto;
-    padding: 15px 0;
-    text-align: center; */
-/* background: #f7f7f7; */
-/* padding-top: 10px; */
-/* } */
 
 .jumpLinksWrapper ol li {
     display: inline-block;
-    /* padding: 0px 30px; */
-    /* margin-bottom: 0; */
 }
 
 .jumpLinksWrapper ol li:before {
     display: inline;
 }
 
-/* .jumpLinksWrapper ol li a {
-    text-decoration: none;
-    text-transform: uppercase;
-} */
-
-/* .jumpLinksWrapper ol li a:hover {
-    color: #088099;
-    text-decoration: underline;
-} */
-
-
 /* hack to fix jump link issue */
 
-a:not([href]) {
+/* a:not([href]) {
     display: block;
     position: relative;
     top: -167px;
@@ -9811,7 +9780,7 @@ a:not([href]) {
     a:not([href]) {
         top: 0px;
     }
-}
+} */
 
 /* New 4/2023 */
 
@@ -9822,9 +9791,7 @@ a:not([href]) {
 }
 
 .jumpLinksWrapper ol {
-    /* border: none; */
     text-align: center;
-    /* padding: 0; */
 }
 
 .jumpLinksWrapper ol li {
@@ -9842,16 +9809,12 @@ a:not([href]) {
     .jumpLinksWrapper ol {
         margin: auto;
         max-width: 1400px !important;
-        /* text-align: center; */
         padding: 25px 0;
         line-height: 2.5;
-        /* border: none; */
-        /* background-color: unset; */
     }
 
     .jumpLinksWrapper ol li {
         width: unset;
-        /* padding: 0; */
         margin-bottom: unset;
     }
 
@@ -10602,7 +10565,7 @@ li.nav-item a.nav-link .icon:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 3rem;
+    padding: 1rem;
 }
 
 .spotlightWrapper .spotlightCopyBody {
@@ -10638,6 +10601,12 @@ li.nav-item a.nav-link .icon:hover {
     width: 100%;
     width: -moz-available;
     width: -webkit-fill-available;
+}
+
+@media (min-width: 576px) {
+    .spotlightWrapper .spotlightCopy {
+        padding: 3rem;
+    }
 }
 
 @media screen and (max-width: 1199.999px) {
@@ -12282,7 +12251,7 @@ body.videopage {
     font-size: 20px;
 }
 
-.standardContent.directory .selector-bar {
+/* .standardContent.directory .selector-bar {
     padding: 100px 0 20px 0;
     text-align: center;
 }
@@ -12304,7 +12273,7 @@ body.videopage {
 
 .standardContent.directory .selector-bar a:hover {
     color: #05a0be;
-}
+} */
 
 /* *********************************************************
    SU-Law-modified.css
