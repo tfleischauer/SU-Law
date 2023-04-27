@@ -12042,7 +12042,7 @@ body.videopage {
     border-radius: 50%;
 }
 
-.biography {
+/* .biography {
     padding: 50px 0;
 }
 
@@ -12126,9 +12126,9 @@ body.videopage {
     height: 600px;
     padding-top: 150px;
     /* Delete below this line depending on styles */
-    background-color: #ffff;
-    background-position: center;
-    max-width: 1400px;
+/* background-color: #ffff;
+background-position: center;
+max-width: 1400px;
 }
 
 @media screen and (max-width: 767.999px) {
@@ -12140,10 +12140,10 @@ body.videopage {
     }
 }
 
-
+*/
 /* ????? */
 
-.standardContent.bio-card .bio-links i {
+/* .standardContent.bio-card .bio-links i {
     padding-right: 10px;
 }
 
@@ -12176,7 +12176,6 @@ body.videopage {
     border-bottom: none;
     background-color: #fff;
     --box-shadow-color: #000;
-    /* Declaring the variable */
     box-shadow: 1px 1px 7px var(--box-shadow-color);
 }
 
@@ -12238,9 +12237,9 @@ body.videopage {
     font-weight: bold;
     font-size: 15px;
     color: #ee3f3a;
-}
+} */
 
-.standardContent.news .news-heading {
+/* .standardContent.news .news-heading {
     text-align: center;
     padding-top: 11px;
 }
@@ -12249,7 +12248,7 @@ body.videopage {
     color: #01a4b3;
     font-weight: 550;
     font-size: 20px;
-}
+} */
 
 /* .standardContent.directory .selector-bar {
     padding: 100px 0 20px 0;
