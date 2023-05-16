@@ -11734,10 +11734,6 @@ body.videopage {
 }
 
 
-
-
-
-
 /* =============================================================================================================== */
 
 /* ========================================= Global Utility Classes ============================================== */
@@ -11768,6 +11764,7 @@ body.videopage {
 }
 
 
+
 /* =============================================================================================================== */
 
 /* ========================================= What is all this? =================================================== */
@@ -11780,12 +11777,10 @@ body.videopage {
 
 /* Content Item Tweaks To Implement */
 
-
+/*
 @media screen and (max-width: 767.999px) {
 
-    /* xs */
     .BannerZoneWrapper {
-        /* Apply to zone and not content */
         margin-bottom: 15px;
     }
 }
@@ -11830,9 +11825,9 @@ body.videopage {
 .floating-sidebar .sidebar-item li:active {
     background-color: #a00;
     border-bottom: 1px solid #a00;
-}
+} */
 
-#jump-to {
+/* #jump-to {
     position: fixed;
     margin-left: 76.5%;
     z-index: 200;
@@ -11871,9 +11866,9 @@ body.videopage {
 #jump-to .jump-list .jump-item:hover {
     background-color: #05a1ba;
     font-weight: bolder;
-}
+} */
 
-.programWrapper {
+/* .programWrapper {
     height: 600px;
 }
 
@@ -11906,7 +11901,6 @@ body.videopage {
 .program-title {
     color: #a80108;
     clear: both;
-    /* acts as a clearing element */
     font-family: "Montserrat", sans-serif;
     font-size: 3.7rem;
     font-weight: 520;
@@ -11967,23 +11961,22 @@ body.videopage {
 .scolarship-title {
     color: #ffffff;
     clear: both;
-    /* acts as a clearing element */
     font-family: "Montserrat", sans-serif;
     font-size: 3.7rem;
     font-weight: 500;
     text-align: center;
     padding-top: 10%;
     padding-bottom: 50px;
-}
+} */
 
-.boxlinkItem.alt-boxlink a {
+/* .boxlinkItem.alt-boxlink a {
     border: 2px solid #ffffff;
     color: #ffffff;
     padding: 22px 0;
     font-weight: 550;
-}
+} */
 
-.learn-more-form {
+/* .learn-more-form {
     padding: 0 280px;
 }
 
@@ -12025,9 +12018,9 @@ body.videopage {
     background-color: #b10a38;
     color: #ffffff;
     border: none;
-}
+} */
 
-.arrow-wrapper {
+/* .arrow-wrapper {
     padding: 100px;
 }
 
@@ -12040,7 +12033,7 @@ body.videopage {
     background-color: #eaeaea;
     padding: 20px 30px;
     border-radius: 50%;
-}
+} */
 
 /* .biography {
     padding: 50px 0;
