@@ -4732,6 +4732,44 @@ a.colorButton:active {
     color: #333333;
 }
 
+/* Blue, green, and red */
+.emergencynotice .notice.alertInformational a:link,
+.emergencynotice .notice.alertInformational a:visited,
+.emergencynotice .notice.alertSubtle a:link,
+.emergencynotice .notice.alertSubtle a:visited,
+.emergencynotice .notice.alertCritical a:link,
+.emergencynotice .notice.alertCritical a:visited {
+    color: #ffffff;
+}
+
+.emergencynotice .notice.alertInformational a:hover,
+.emergencynotice .notice.alertInformational a:focus,
+.emergencynotice .notice.alertInformational a:active,
+.emergencynotice .notice.alertSubtle a:hover,
+.emergencynotice .notice.alertSubtle a:focus,
+.emergencynotice .notice.alertSubtle a:active,
+.emergencynotice .notice.alertCritical a:hover,
+.emergencynotice .notice.alertCritical a:focus,
+.emergencynotice .notice.alertCritical a:active {
+    color: #f7f7f7;
+}
+
+/* Yellow */
+.notice.alertAdvisory {
+    color: #333333;
+}
+
+.emergencynotice .notice.alertAdvisory a:link,
+.emergencynotice .notice.alertAdvisory a:visited {
+    color: #003282;
+}
+
+.emergencynotice .notice.alertAdvisory a:hover,
+.emergencynotice .notice.alertAdvisory a:focus,
+.emergencynotice .notice.alertAdvisory a:active {
+    color: #124a12;
+}
+
 .emergencynotice .moreLink {
     background-color: #ffffff;
     color: #333333;
@@ -4743,7 +4781,7 @@ a.colorButton:active {
 
 .emergencynotice .moreLink a {
     border: 1px solid #333333;
-    color: #aa0000;
+    color: #aa0000 !important;
     display: inline-block;
     font-weight: 700;
     padding: 5px 30px;
@@ -4753,7 +4791,7 @@ a.colorButton:active {
 .emergencynotice .moreLink a:hover {
     background-color: #333333;
     border: 1px solid #f7f7f7;
-    color: #fdb913;
+    color: #fdb913 !important;
     text-decoration: none;
 }
 
@@ -4797,6 +4835,13 @@ a.colorButton:active {
     max-height: 0 !important;
 }
 
+/* p.moreLink a:link,
+p.moreLink a:visited,
+p.moreLink a:hover,
+p.moreLink a:focus,
+p.moreLink a:active {
+    color: unset !important;
+} */
 
 
 /* Legacy styling of alert system */
