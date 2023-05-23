@@ -2467,10 +2467,10 @@ ul.arrowLinks a:focus {
 .standardContent table {
     border-collapse: collapse;
     border-spacing: 2px;
-    font-size: 1rem;
+    font-size: 1rem !important;
     font-weight: 400;
-    margin-bottom: 1.6rem;
     /* same as paragraphs */
+    margin-bottom: 1.6rem;
     width: 100%;
 }
 
@@ -2592,6 +2592,11 @@ table caption h2 {
 #MainZone .primaryContent.standardContent table thead th a:focus {
     color: #fdb913;
     text-decoration: underline;
+}
+
+table p,
+table li {
+    font-size: 1rem !important;
 }
 
 
