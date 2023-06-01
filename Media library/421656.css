@@ -441,7 +441,8 @@ body {
 
 /* Hides overflow and adds ellipsis (for long email addresses) */
 #SidebarZone .primaryContentWrapper a {
-    display: inline-block !important;
+    /* display: inline-block !important; */
+    display: inline !important;
     text-overflow: ellipsis !important;
     /* width: -webkit-fill-available !important; */
     overflow: hidden !important;
@@ -4637,7 +4638,6 @@ a.colorButton:active {
     line-height: 4rem;
     position: relative;
     padding: 30px 15px;
-
 }
 
 .emergencynotice .notice p {
@@ -4651,7 +4651,8 @@ a.colorButton:active {
     /* xs */
     .emergencynotice .container {
         position: relative;
-        padding: 30px 60px 30px 30px;
+        /* padding: 30px 60px 30px 30px; */
+        padding: 10rem 1rem 3rem
     }
 }
 
@@ -4682,6 +4683,7 @@ a.colorButton:active {
 .emergencynotice h2 {
     font-family: 'Roboto Slab', serif;
     font-size: 3.2rem;
+    font-size: var(--fs-xl);
     margin: 0 0 15px 0;
     text-transform: uppercase;
 }
