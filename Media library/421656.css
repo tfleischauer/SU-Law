@@ -7443,9 +7443,9 @@ p.form-group.js-paragraph-preview {
     font-weight: 500;
 }
 
-.formPlaceholder .js-t4form-container .form-group {
+/* .formPlaceholder .js-t4form-container .form-group {
     margin-bottom: 20px;
-}
+} */
 
 .formPlaceholder .js-t4form-container .form-group.list-options {
     margin-bottom: 0;
@@ -7536,13 +7536,13 @@ label {
 .formPlaceholder .form-group select,
 .formPlaceholder .form-group textarea {
     background-color: #f7f7f7 !important;
-    border-radius: 0px !important;
+    /* border-radius: 0px !important; */
     box-shadow: none;
     color: #333333;
     font-family: "Montserrat", sans-serif;
-    font-size: 1.2rem;
-    line-height: 1;
-    height: inherit;
+    /* font-size: 1.2rem; */
+    /* line-height: 1; */
+    /* height: inherit; */
 }
 
 .js-t4form-container .radio input[type="radio"],
