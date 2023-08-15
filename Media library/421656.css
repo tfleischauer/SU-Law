@@ -90,7 +90,7 @@ body {
     /* 10/16 = .625 Value is relative to the user's default font size. */
     font-size: 62.5%;
     font-weight: 400;
-    line-height: 1.45;
+    line-height: 1.5;
     margin: 0;
     /* for the fixed header */
     padding-top: 0;
