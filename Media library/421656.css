@@ -10761,16 +10761,16 @@ li.nav-item a.nav-link .icon:hover {
 .studentProfileInfo h2 {
     padding: 0;
     margin: 0 0 0 0;
-    line-height: 1.25;
+    /* line-height: 1.25; */
 }
 
 .studentProfileInfo p {
     color: #333333;
 }
 
-.studentProfileInfo p.studentProfileGraduatingClass {
+/* .studentProfileInfo p.studentProfileGraduatingClass {
     line-height: 1.25 !important;
-}
+} */
 
 
 /* END full-text layout styles */
