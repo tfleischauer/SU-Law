@@ -30,7 +30,8 @@ div.newsroomOrganizerWrapper h3.newsroomArticleTitle {
 
 div.newsroomOrganizerWrapper p {
   font-size: 1.5rem;
-  line-height: 1.35;
+  /* line-height: 1.35; */
+  line-height: 1.5;
 }
 
 div.newsroomOrganizerWrapper p.newsroomArticlePublishedDate {
