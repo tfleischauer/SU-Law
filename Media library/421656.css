@@ -7846,7 +7846,7 @@ div#pageContent.row #Mainzone {
 .imageBannerIntro p {
     color: #333333;
     font-size: 1.4rem;
-    line-height: 1.45;
+    /* line-height: 1.45; */
     font-weight: 300;
     text-align: center;
 }
