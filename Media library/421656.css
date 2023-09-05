@@ -6815,7 +6815,7 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
      ===== Law - Focus Box ===== Content Type #5178 ===========================================
      ==========================================================================================
      A rich text field with optional background colors
-     Last revised 10/29/2021 by Troy 
+     Last revised 9/5/2023 by Troy
   */
 
 .focusBoxWrapper {
@@ -6872,14 +6872,17 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 
 .focusBoxWrapper .colorSUBlack .focusBoxContent a:link {
     color: #ffffff;
+    text-decoration: underline hsla(0, 0%, 100%, .7);
 }
 
 .focusBoxWrapper .colorSUBlack .focusBoxContent a:visited {
     color: #f7f7f7;
+    text-decoration: underline hsla(0, 0%, 97%, .7);
 }
 
 .focusBoxWrapper .colorSUBlack .focusBoxContent a:hover {
     color: #ffffff;
+    text-decoration: underline;
 }
 
 .focusBoxWrapper .colorSUBlack .focusBoxContent a:active {
@@ -6912,25 +6915,30 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 
 .focusBoxWrapper .colorBlue .focusBoxContent a:link {
     color: #ffffff;
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    text-decoration: underline hsla(0, 0%, 100%, .7);
 }
 
 .focusBoxWrapper .colorBlue .focusBoxContent a:visited {
     color: #f7f7f7;
+    text-decoration: underline hsla(0, 0%, 97%, .7);
 }
 
 .focusBoxWrapper .colorBlue .focusBoxContent a:hover {
-    color: #cc9f26;
+    /* color: #cc9f26; */
+    color: #fdb913;
     text-decoration: underline;
 }
 
 .focusBoxWrapper .colorBlue .focusBoxContent a:focus {
-    color: #cc9f26;
+    /* color: #cc9f26; */
+    color: #fdb913;
     text-decoration: underline;
 }
 
 .focusBoxWrapper .colorBlue .focusBoxContent a:active {
-    color: #fdb913 !important;
+    /* color: #fdb913 !important; */
+    color: #cc9f26;
 }
 
 
@@ -6955,22 +6963,27 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 
 .focusBoxWrapper .colorNavyBlue .focusBoxContent a:link {
     color: #ffffff;
+    text-decoration: underline hsla(0, 0%, 100%, .7);
 }
 
 .focusBoxWrapper .colorNavyBlue .focusBoxContent a:visited {
     color: #f7f7f7;
+    text-decoration: underline hsla(0, 0%, 97%, .7);
 }
 
 .focusBoxWrapper .colorNavyBlue .focusBoxContent a:hover {
     color: #fdb913;
+    text-decoration: underline #fdb913;
 }
 
 .focusBoxWrapper .colorNavyBlue .focusBoxContent a:focus {
     color: #fdb913;
+    text-decoration: underline #fdb913;
 }
 
 .focusBoxWrapper .colorNavyBlue .focusBoxContent a:active {
     color: #cc9f26 !important;
+    text-decoration: underline #cc9f26;
 }
 
 .focusBoxWrapper .colorTaupeBrown {
@@ -7190,22 +7203,27 @@ nav#breadcrumbs.facultyProfileBreadcrumbs {
 
 .focusBoxWrapper .colorSURed .focusBoxContent a:link {
     color: #ffffff;
+    text-decoration: underline hsla(0, 0%, 100%, .7);
 }
 
 .focusBoxWrapper .colorSURed .focusBoxContent a:visited {
-    color: #ffffff;
+    color: #f7f7f7;
+    text-decoration: underline hsla(0, 0%, 97%, .7);
 }
 
 .focusBoxWrapper .colorSURed .focusBoxContent a:hover {
     color: #ffffff;
+    text-decoration: underline #ffffff;
 }
 
 .focusBoxWrapper .colorSURed .focusBoxContent a:active {
     color: #f7f7f7 !important;
+    text-decoration: underline #f7f7f7;
 }
 
 .focusBoxWrapper .colorSURed .focusBoxContent a:focus {
     color: #f7f7f7;
+    text-decoration: underline #f7f7f7;
 }
 
 
