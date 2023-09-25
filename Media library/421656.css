@@ -7560,6 +7560,7 @@ label {
 .formPlaceholder .form-group input[type="email"],
 .formPlaceholder .form-group select,
 .formPlaceholder .form-group textarea {
+    position: relative;
     background-color: #f7f7f7 !important;
     /* border-radius: 0px !important; */
     box-shadow: none;
@@ -11563,13 +11564,12 @@ body.videopage {
 
 
 /* Add this class to a parent div containing paragraphs to make two columns */
-
 .two-columns {
-    columns: 75ch 2;
     /* Sets minimum column width (for both columns), and amount of columns */
+    columns: 75ch 2;
     column-gap: 5%;
-    max-width: 100%;
     /*  overwrites characters limit for .standardContent paragraphs */
+    max-width: 100%;
     margin-top: 0;
     margin-bottom: 5em;
 }
