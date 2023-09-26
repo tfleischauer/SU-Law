@@ -7560,7 +7560,7 @@ label {
 .formPlaceholder .form-group input[type="email"],
 .formPlaceholder .form-group select,
 .formPlaceholder .form-group textarea {
-    position: relative;
+    /* position: relative; */
     background-color: #f7f7f7 !important;
     /* border-radius: 0px !important; */
     box-shadow: none;
@@ -11561,7 +11561,6 @@ body.videopage {
 
 
 /* -------------------------- Columns -------------------------- */
-
 
 /* Add this class to a parent div containing paragraphs to make two columns */
 .two-columns {
