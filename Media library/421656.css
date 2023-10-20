@@ -2439,7 +2439,6 @@ ul.arrowLinks a:focus {
     background: var(--btn-clr, #f7f7f7);
 }
 
-
 /* -------------------------- Tables -------------------------- */
 
 
@@ -6095,8 +6094,32 @@ p.contactBoxSingleInfoPosition {
 }
 
 /* Bullets in additional text */
+.contactBoxSingleColorBlue .contactBoxSingleInfo ul li:before,
 .contactBoxSingleColorTaupeBrown .standardContent ul li:before {
     color: #fff;
+}
+
+/* Lighten underline links */
+.contactBoxSingleWrapper.contactBoxSingleColorBlue .standardContent a:link,
+.contactBoxSingleWrapper.contactBoxSingleColorBlue .standardContent a:visited {
+    text-decoration: rgba(255, 255, 255, 0.6) underline;
+}
+
+/* Buttons - For more, see Custom Property Buttons */
+.contactBoxSingleColorBlue .btn.btn-dk-txt {
+    color: var(--btn-clr, #333333) !important;
+    border: 2px solid #fff !important;
+}
+
+.contactBoxSingleColorBlue a.btn.btn-dk-txt {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.contactBoxSingleColorBlue .btn.btn-dk-txt:hover,
+.contactBoxSingleColorBlue .btn.btn-dk-txt:focus {
+    color: var(--su-black, #333333) !important;
+    background: var(--btn-clr, #f7f7f7);
 }
 
 
