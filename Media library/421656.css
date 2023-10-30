@@ -6100,9 +6100,27 @@ p.contactBoxSingleInfoPosition {
 }
 
 /* Lighten underline links */
-.contactBoxSingleWrapper.contactBoxSingleColorBlue .standardContent a:link,
-.contactBoxSingleWrapper.contactBoxSingleColorBlue .standardContent a:visited {
+.contactBoxSingleWrapper.contactBoxSingleColorBlue .standardContent a:link {
     text-decoration: rgba(255, 255, 255, 0.6) underline;
+}
+
+.contactBoxSingleWrapper.contactBoxSingleColorBlue .standardContent a:visited {
+    color: #f7f7f7;
+    text-decoration: underline hsla(0, 0%, 97%, .7);
+}
+
+.contactBoxSingleWrapper.contactBoxSingleColorBlue .standardContent a:hover {
+    color: #ffffff;
+    text-decoration: underline #ffffff;
+}
+
+.contactBoxSingleWrapper.contactBoxSingleColorBlue .standardContent a:focus {
+    color: #fdb913;
+    text-decoration: underline;
+}
+
+.contactBoxSingleWrapper.contactBoxSingleColorBlue .standardContent a:active {
+    color: #cc9f26;
 }
 
 /* Buttons - For more, see Custom Property Buttons */
@@ -7686,7 +7704,7 @@ input[type="file"]:focus {
     color: #aa0000;
 }
 
-@import url("https://us.formbank.us/client/public/css/bootstrap-datetimepicker.css");
+/* @import url("https://us.formbank.us/client/public/css/bootstrap-datetimepicker.css"); */
 
 /* added 10-11-18 by Jason */
 
