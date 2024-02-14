@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="id" content="<t4 type='navigation' name ='Law - Section ID' id='615' />" />
+    <meta name="author" content="Seattle University School of Law News Center" />
+    <link rel="canonical" href="https://law.seattleu.edu<t4 type='navigation' name='Canonical Path' id='889' />">
+    <title>
+        <t4 type="title" /> | Seattle University School of Law
+    </title>
+    <t4 type="meta" name="description" id="18" />
+    <t4 type="meta" name="keywords" id="19" />
+    <meta property="og:url" content="https://law.seattleu.edu<t4 type='navigation' name='Canonical Path' id='889' />" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Seattle University School of Law News Center">
+    <t4 type="meta" property="og:image" id="27" />
+    <t4 type="meta" property="og:title" id="48" />
+    <t4 type="meta" property="og:description" id="47" />
+    <meta name="twitter:url" content="https://law.seattleu.edu<t4 type='navigation' name='Canonical Path' id='889' />" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@seattleulaw" />
+    <meta name="twitter:creator" content="@seattleulaw" />
+    <t4 type="meta" name="twitter:image" id="50" />
+    <t4 type="meta" name="twitter:title" id="45" />
+    <t4 type="meta" name="twitter:description" id="49" />
+    <t4 type="meta" name="publish-date" id="54" />
+    <t4 type="meta" name="revised" id="22" />
+    <meta name="generator" content="Terminalfour" />
+    <meta name="theme-color" content="white">
+    <meta name="siteid" content="us" />
+    <meta name="countryid" content="US" />
+    <meta name="country" content="United States" />
+    <meta name="Language" content="en" />
+    <meta name="robots" content="all">
+    <meta name="googlebot" content="all">
+    <meta name="google-site-verification" content="o83XCFGi3JoG96Y8LNuhGn0-O7qALrXiVkT7JIxJFW4" />
+    <link rel="apple-touch-icon" href="https://www.seattleu.edu/media/school-of-law/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="https://www.seattleu.edu/media/school-of-law/logo/law-logo.png" />
+
+
+    <!-- nav objects -->
+    <t4 type="navigation" name="Law - Bootstrap 5 References" id="768" />
+    <t4 type="navigation" name="Law - News Center Global Styles" id="843" />
+    <t4 type="navigation" name="Law - Custom CSS Zone" id="582" />
+    <t4 type="navigation" name="Law - Analytics" id="929" />
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TBN2Q5M');
+    </script>
+    <!-- End Google Tag Manager -->
+
+</head>
+
+
+<body class="law-newscenter-2268929">
+
+    <nav aria-label="Skip to important sections">
+        <a class="sr-only sr-only-focusable" href="#MainZone">Skip to main content</a>
+        <a class="sr-only sr-only-focusable" href="#siteNavigation">Skip to site navigation</a>
+        <a class="sr-only sr-only-focusable" href="#contactInformationAnchor">Skip to contact information</a>
+        <!-- <a class="sr-only sr-only-focusable" href="#ctaLinksAnchor">Skip to Apply, Request Info, Jobs, Contact links</a> -->
+    </nav>
+    <div class="emergencynotice" role="alert" aria-atomic="true" style="display:block"></div>
+    <div class="clearfix"></div>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBN2Q5M" height="0" width="0" title="times" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Law - Nav Bars -->
+    <t4 type="navigation" name="Law - Global Navigation Bars" id="648" />
+    <div class="clearfix"></div>
+
+    <header id="newscenterHeader" class="header container">
+        <nav id="newscenterNav" class="navbar navbar-expand-lg header-nav border-0" role="navigation" aria-label="Site Menu">
+            <div class="container px-0">
+                <div class="row align-items-center m-lg-0">
+
+
+                    <div class="col-12 col-lg-4 d-flex align-items-center justify-content-between p-lg-0">
+                        <a class="navbar-brand" href="#" aria-label="<t4 type='navigation' name='Law - Current Section Name' id='777' />">
+                            <h1 class="currentSection">
+                                <t4 type='navigation' name='Law - Current Section Name' id='777' />
+                            </h1>
+                        </a>
+                        <button class="navbar-toggler collapsed py-2 px-0 flex-shrink-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+                    </div>
+
+
+                    <div class="col-12 col-lg-8 d-flex align-items-center p-lg-0">
+                        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto menu">
+
+
+                                <!-- Quikbits Top 9 Categories Dropdown Desktop -->
+                                <li class="nav-item dropdown desktop-categories">
+                                    <h2 class="nav-link dropdown-toggle" href="#" id="desktop-navbarDropdownQuikbits" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">News Briefs</h2>
+                                    <div class="dropdown-menu" aria-labelledby="desktop-navbarDropdownQuikbits">
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Academic News Section' id='778' />" title="<t4 type='navigation' name='Law - Academic News Section Name' id='779' />">Academic</a>
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Admission News Section' id='784' />" title="<t4 type='navigation' name='Law - Admission News Section Name' id='785' />">Admission</a>
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Career News Section' id='814' />" title="<t4 type='navigation' name='Law - Career News Section Name' id='815' />">Careers</a>
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Centers and Institutes News' id='840' />" title="<t4 type='navigation' name='Law - Centers and Institutes News Name' id='841' />">Centers and Institutes</a>
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Korematsu Center News Section' id='802' />" title="<t4 type='navigation' name='Law - Korematsu Center News Section Name' id='803' />">Korematsu Center</a>
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Access to Justice News Section' id='788' />" title="<t4 type='navigation' name='Law - Access to Justice News Section Name' id='789' />">Access to Justice</a>
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Faculty News Section' id='818' />" title="<t4 type='navigation' name='Law - Faculty News Section Name' id='819' />">Faculty</a>
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Alumni News Section' id='810' />" title="<t4 type='navigation' name='Law - Alumni News Section Name' id='811' />">Alumni</a>
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Student News Section' id='820' />" title="<t4 type='navigation' name='Law - Student News Section Name' id='821' />">Student</a>
+                                    </div>
+                                </li>
+
+
+                                <!-- Lawyer Magazine Dropdown Desktop -->
+                                <li class="nav-item dropdown desktop-categories">
+                                    <h2 class="nav-link dropdown-toggle" href="#" id="desktop-navbarDropdownMagazine" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lawyer Magazine</h2>
+                                    <div class="dropdown-menu" aria-labelledby="desktop-navbarDropdownMagazine">
+                                        <a class="dropdown-item" href="https://digitalcommons.law.seattleu.edu/thelawyer/" title="Read Lawyer Magazine" target="_blank">Current Issue</a>
+                                    </div>
+                                </li>
+
+
+                                <!-- Begin News Categories Modal -->
+                                <li class="nav-item desktop-categories">
+                                    <h2 class="nav-link dropdown-toggle" href="#" id="desktop-navbarDropdownTopics" role="button" data-bs-toggle="modal" data-bs-target="#navbarModalTopics" aria-haspopup="true" aria-expanded="false">Categories</h2>
+                                    <div class="modal fade" id="navbarModalTopics" tabindex="-1" role="dialog" aria-labelledby="navbarModalTopicsTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h3 class="modal-title" id="navbarModalTopicsTitle">News Categories</h3>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+
+
+                                                <!-- 3 Column Modal Body Layout for Desktop and Mobile -->
+                                                <div class="modal-body">
+                                                    <div class="container-fluid level1" id="navbarModalTopicsMenu" aria-labelledby="desktop-navbarDropdownTopics">
+                                                        <div class="d-flex flex-wrap justify-content-md-around">
+
+
+                                                            <!-- Column 1 of 4 -->
+                                                            <div class="p-1 level2">
+                                                                <ul class="list-group">
+                                                                    <li class="list-group-item border-0">
+                                                                        <div class="w-100">
+                                                                            <h4 class="mb-1">Sections</h4>
+                                                                        </div>
+                                                                    </li>
+                                                                    <hr class="dropdown-divider">
+
+                                                                    <ul class="list-group">
+                                                                        <li class="list-group-item border-0">
+                                                                            <a href="<t4 type='navigation' name='Law - Academic News Section' id='778' />" title="<t4 type='navigation' name='Law - Academic News Section Name' id='779' />"><strong>Academic</strong></a>
+                                                                        </li>
+                                                                        <li class="list-group-item border-0">
+                                                                            <a href="<t4 type='navigation' name='Law - Law Clinic News Section' id='780' />" title="<t4 type='navigation' name='Law - Law Clinic News Section Name' id='781' />"><small>Law Clinic</small></a>
+                                                                        </li>
+                                                                        <li class="list-group-item border-0">
+                                                                            <a href="<t4 type='navigation' name='Law - Legal Writing News Section' id='782' />" title="<t4 type='navigation' name='Law - Legal Writing News Section Name' id='783' />"><small>Legal Writing</small></a>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                    <ul class="list-group">
+                                                                        <li class="list-group-item border-0">
+                                                                            <a href="<t4 type='navigation' name='Law - Admission News Section' id='784' />" title="<t4 type='navigation' name='Law - Admission News Section Name' id='785' />"><strong>Admission</strong></a>
+                                                                        </li>
+                                                                        <li class="list-group-item border-0">
+                                                                            <a href="<t4 type='navigation' name='Law - Diversity News Section' id='786' />" title="<t4 type='navigation' name='Law - Diversity News Section Name' id='787' />"><small>Diversity</small></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </ul>
+                                                            </div>
+
+
+                                                            <!-- Column 2 of 4 -->
+                                                            <div class="p-1 level2">
+                                                                <ul class="list-group">
+                                                                    <li class="list-group-item border-0">
+                                                                        <div class="w-100">
+                                                                            <h4 class="mb-1">Centers</h4>
+                                                                        </div>
+                                                                    </li>
+                                                                    <hr class="dropdown-divider">
+
+                                                                    <ul class="list-group">
+                                                                        <li class="list-group-item border-0">
+                                                                            <a href="<t4 type='navigation' name='Law - Access to Justice News Section' id='788' />" title="<t4 type='navigation' name='Law - Access to Justice News Section Name' id='789' />"><strong>Access to Justice</strong></a>
+                                                                        </li>
+                                                                        <li class="list-group-item border-0">
+                                                                            <a href="<t4 type='navigation' name='Law - Pro Bono News Section' id='790' />" title="<t4 type='navigation' name='Law - Pro Bono News Section Name' id='791' />"><small>Pro Bono</small></a>
+                                                                        </li>
+                                                                        <li class="list-group-item border-0">
+                                                                            <a href="<t4 type='navigation' name='Law - Public Interest News Section' id='792' />" title="<t4 type='navigation' name='Law - Public Interest News Section Name' id='793' />"><small>Public Interest</small></a>
+                                                                        </li>
+                                                                        <li class="list-group-item border-0">
+                                                                            <a href="<t4 type='navigation' name='Law - Social Justice News Section' id='794' />" title="<t4 type='navigation' name='Law - Social Justice News Section Name' id='795' />"><small>Social Justice</small></a>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                    <ul class="list-group">
+                                                                        <li class="list-group-item border-0">
+                                                                            <a href="<t4 type='navigation' name='Law - Center for Indian Law News Section' id='808' />" title="<t4 type='navigation' name='Law - Center for Indian Law News Section Name' id='809' />"><strong>Center for Indian Policy</strong></a>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                    <ul class="list-group">
+                                                                        <li class="list-group-item border-0">
+                                                                            <a href="<t4 type='navigation' name='Law - India Center for Law and Justice' id='865' />" title="<t4 type='navigation' name='Law - India Center for Law and Justice Name' id='866' />"><strong>India Center for Justice</strong></a>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                    <ul class="list-group">
+                                                                        <li class="list-group-item academicGroup border-0">
+                                                                            <a href="<t4 type='navigation' name='Law - Korematsu Center News Section' id='802' />" title="<t4 type='navigation' name='Law - Korematsu Center News Section Name' id='803' />"><strong>Korematsu Center</strong></a>
+                                                                        </li>
+                                                                        <li class="list-group-item border-0">
+                                                                            <a href="<t4 type='navigation' name='Law - Defender Initiative News Section' id='804' />" title="<t4 type='navigation' name='Law - Defender Initiative News Section Name' id='805' />"><small>Defender Initiative</small></a>
+                                                                        </li>
+                                                                        <li class="list-group-item border-0">
+                                                                            <a href="<t4 type='navigation' name='Law - Homeless Rights News Section' id='806' />" title="<t4 type='navigation' name='Law - Homeless Rights News Section Name' id='807' />"><small>Homeless Rights</small></a>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </ul>
+                                                            </div>
+
+
+                                                            <!-- Column 3 of 4 -->
+                                                            <div class="p-1 level2">
+                                                                <ul class="list-group">
+                                                                    <li class="list-group-item border-0">
+                                                                        <div class="w-100">
+                                                                            <h4 class="mb-1">Campus</h4>
+                                                                        </div>
+                                                                    </li>
+                                                                    <hr class="dropdown-divider">
+                                                                </ul>
+
+                                                                <ul class="list-group">
+                                                                    <li class="list-group-item border-0">
+                                                                        <a href="<t4 type='navigation' name='Law - Alumni News Section' id='810' />" title="<t4 type='navigation' name='Law - Alumni News Section Name' id='811' />"><small>Alumni</small></a>
+                                                                    </li>
+                                                                    <li class="list-group-item border-0">
+                                                                        <a href="<t4 type='navigation' name='Law - Announcements News Section' id='812' />" title="<t4 type='navigation' name='Law - Announcements News Section Name' id='813' />"><small>Announcements</small></a>
+                                                                    </li>
+                                                                    <li class="list-group-item border-0">
+                                                                        <a href="<t4 type='navigation' name='Law - Career News Section' id='814' />" title="<t4 type='navigation' name='Law - Career News Section Name' id='815' />"><small>Careers</small></a>
+                                                                    </li>
+                                                                    <li class="list-group-item border-0">
+                                                                        <a href="<t4 type='navigation' name='Law - Event News Section' id='816' />" title="<t4 type='navigation' name='Law - Event News Section Name' id='817' />"><small>Events</small></a>
+                                                                    </li>
+                                                                    <li class="list-group-item border-0">
+                                                                        <a href="<t4 type='navigation' name='Law - Faculty News Section' id='818' />" title="<t4 type='navigation' name='Law - Faculty News Section Name' id='819' />"><small>Faculty</small></a>
+                                                                    </li>
+                                                                    <li class="list-group-item border-0">
+                                                                        <a href="<t4 type='navigation' name='Law - Student News Section' id='820' />" title="<t4 type='navigation' name='Law - Student News Section Name' id='821' />"><small>Student</small></a>
+                                                                    </li>
+                                                                    <li class="list-group-item border-0">
+                                                                        <a href="<t4 type='navigation' name='Law - SU Law in the News Section' id='822' />" title="<t4 type='navigation' name='Law - SU Law in the News Section Name' id='823' />"><small>In the News</small></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+
+
+                                                            <!-- Column 4 of 4 -->
+                                                            <div class="p-1 level2">
+                                                                <ul class="list-group">
+                                                                    <li class="list-group-item border-0">
+                                                                        <div class="w-100">
+                                                                            <h4 class="mb-1">News Archives</h4>
+                                                                        </div>
+                                                                    </li>
+                                                                    <hr class="dropdown-divider">
+                                                                </ul>
+
+                                                                <ul class="list-group">
+                                                                    <li class="list-group-item border-0">
+                                                                        <a href="<t4 type='navigation' name='Law - News Archives Section' id='828' />" title="<t4 type='navigation' name='Law - News Archives Section Name' id='829' />"><small>Archives</small></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end of modal body -->
+
+
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- End News Categories Modal -->
+                                <!-- End desktop only dropdown fields -->
+
+
+
+                                <!-- Begin Mobile only dropdown fields -->
+                                <hr class="mobile-categories" />
+
+                                <li class="nav-item dropdown mobile-categories">
+                                    <h2 class="nav-link dropdown-toggle" href="#" id="mobile-navbarDropdownSections" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sections</h2>
+                                    <div class="dropdown-menu border-0" aria-labelledby="mobile-navbarDropdownSections">
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Academic News Section' id='778' />" title="<t4 type='navigation' name='Law - Academic News Section Name' id='779' />"><strong>Academic</strong></a>
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Law Clinic News Section' id='780' />" title="<t4 type='navigation' name='Law - Law Clinic News Section Name' id='781' />"><small>Law Clinic</small></a>
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Legal Writing News Section' id='782' />" title="<t4 type='navigation' name='Law - Legal Writing News Section Name' id='783' />"><small>Legal Writing</small></a>
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Admission News Section' id='784' />" title="<t4 type='navigation' name='Law - Admission News Section Name' id='785' />"><strong>Admission</strong></a>
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Diversity News Section' id='786' />" title="<t4 type='navigation' name='Law - Diversity News Section Name' id='787' />"><small>Diversity</small></a>
+                                    </div>
+                                </li>
+
+
+                                <li class="nav-item dropdown mobile-categories">
+                                    <h2 class="nav-link dropdown-toggle" href="#" id="mobile-navbarDropdownCenters" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Centers</h2>
+                                    <div class="dropdown-menu border-0" aria-labelledby="mobile-navbarDropdownCenters">
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Access to Justice News Section' id='788' />" title="<t4 type='navigation' name='Law - Access to Justice News Section Name' id='789' />"><strong>Access to Justice</strong></a>
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Pro Bono News Section' id='790' />" title="<t4 type='navigation' name='Law - Pro Bono News Section Name' id='791' />"><small>Pro Bono</small></a>
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Public Interest News Section' id='792' />" title="<t4 type='navigation' name='Law - Public Interest News Section Name' id='793' />"><small>Public Interest</small></a>
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Social Justice News Section' id='794' />" title="<t4 type='navigation' name='Law - Social Justice News Section Name' id='795' />"><small>Social Justice</small></a>
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Korematsu Center News Section' id='802' />" title="<t4 type='navigation' name='Law - Korematsu Center News Section Name' id='803' />"><strong>Korematsu Center</strong></a>
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Defender Initiative News Section' id='804' />" title="<t4 type='navigation' name='Law - Defender Initiative News Section Name' id='805' />"><small>Defender Initiative</small></a>
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Homeless Rights News Section' id='806' />" title="<t4 type='navigation' name='Law - Homeless Rights News Section Name' id='807' />"><small>Homeless Rights</small></a>
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Center for Indian Law News Section' id='808' />" title="<t4 type='navigation' name='Law - Center for Indian Law News Section Name' id='809' />"><strong>Center for Indian Law</strong></a>
+                                    </div>
+                                </li>
+
+
+                                <li class="nav-item dropdown mobile-categories">
+                                    <h2 class="nav-link dropdown-toggle" href="#" id="mobile-navbarDropdownCampus" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Campus</h2>
+                                    <div class="dropdown-menu border-0" aria-labelledby="mobile-navbarDropdownCampus">
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Alumni News Section' id='810' />" title="<t4 type='navigation' name='Law - Alumni News Section Name' id='811' />"><small>Alumni</small></a>
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Announcements News Section' id='812' />" title="<t4 type='navigation' name='Law - Announcements News Section Name' id='813' />"><small>Announcements</small></a>
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Career News Section' id='814' />" title="<t4 type='navigation' name='Law - Career News Section Name' id='815' />"><small>Careers</small></a>
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Event News Section' id='816' />" title="<t4 type='navigation' name='Law - Event News Section Name' id='817' />"><small>Events</small></a>
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Faculty News Section' id='818' />" title="<t4 type='navigation' name='Law - Faculty News Section Name' id='819' />"><small>Faculty</small></a>
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Student News Section' id='820' />" title="<t4 type='navigation' name='Law - Student News Section Name' id='821' />"><small>Student</small></a>
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - SU Law in the News Section' id='822' />" title="<t4 type='navigation' name='Law - SU Law in the News Section Name' id='823' />"><small>In the News</small></a>
+                                    </div>
+                                </li>
+
+
+                                <li class="nav-item dropdown mobile-categories">
+                                    <h2 class="nav-link dropdown-toggle" href="#" id="mobile-navbarDropdownMagazine" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lawyer Magazine</h2>
+                                    <div class="dropdown-menu border-0" aria-labelledby="mobile-navbarDropdownMagazine">
+                                        <a class="dropdown-item" href="https://digitalcommons.law.seattleu.edu/thelawyer/" title="Read Lawyer Magazine" target="_blank">Current Issue</a>
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Lawyer Magazine Subscribe' id='826' />" title="<t4 type='navigation' name='Law - Lawyer Magazine Subscribe Name' id='827' />">Subscribe</a>
+                                    </div>
+                                </li>
+                                <!-- End Mobile only dropdown fields -->
+
+
+                                <!-- single column modal item appears in both desktop and mobile fields -->
+                                <li class="nav-item">
+                                    <h2 class="nav-link dropdown-toggle" href="#" id="navbarDropdownSubscribe" role="button" data-bs-toggle="modal" data-bs-target="#navbarModalSubscribe" aria-haspopup="true" aria-expanded="false">Subscribe</h2>
+                                    <div class="modal fade" id="navbarModalSubscribe" tabindex="-1" role="dialog" aria-labelledby="navbarModalSubscribeTitle" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h3 class="modal-title" id="navbarModalSubscribeTitle">Get the SU Law Newsletter</h3>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <t4 type="form" name="Subscribe Now" id="2981" />
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                                <!-- media contacts -->
+                                <li class="nav-item dropdown mobile-categories">
+                                    <h2 class="nav-link dropdown-toggle" href="#" id="mobile-navbarDropdownContacts" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Media Contacts</h2>
+                                    <div class="dropdown-menu border-0" aria-labelledby="mobile-navbarDropdownContacts">
+                                        <div class="mobile-categories">
+                                            <address>
+                                                <strong>David Sandler</strong><br>
+                                                Director,<br>
+                                                Marketing & Communications<br>
+                                                <a href="mailto:sandlerdavid@seattleu.edu" title="Email David">sandlerdavid@seattleu.edu</a><br>
+                                                <a href="tel:206-398-4108" title="Call David">206-398-4108</a><br>
+                                            </address>
+                                            <address>
+                                                <strong>Claudine Benmar</strong><br>
+                                                Assistant Director,<br>
+                                                Communications & Public Relations<br>
+                                                <a href="mailto:benmarc@seattleu.edu" title="Email Claudine">benmarc@seattleu.edu</a><br>
+                                                <a href="tel:206-398-4175" title="Call Claudine">206-398-4175</a>
+                                            </address>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end #navbarSupportedContent -->
+                    </div>
+                    <!-- end .col-md-8 -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </nav>
+        <!-- end #newsroomNav -->
+    </header>
+    <div class="clearfix"></div>
+
+
+    <div id="pageContentWrapper" role="main" class="container px-lg-0">
+        <div id="pageContent" class="row g-lg-0">
+
+            <div id="TopZone"></div>
+
+            <div id="MainZone">
+                <div class="container">
+                    <div class="row g-0">
