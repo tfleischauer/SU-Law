@@ -189,6 +189,12 @@
                                                                             <a href="<t4 type='navigation' name='Law - Diversity News Section' id='786' />" title="<t4 type='navigation' name='Law - Diversity News Section Name' id='787' />"><small>Diversity</small></a>
                                                                         </li>
                                                                     </ul>
+
+                                                                    <ul class="list-group">
+                                                                        <li class="list-group-item border-0">
+                                                                            <a href="<t4 type='navigation' name='Law - Office of the Dean News Section' id='1035' />" title="<t4 type='navigation' name='Law - Office of the Dean News Section' id='1035' />"><strong>Office of the Dean</strong></a>
+                                                                        </li>
+                                                                    </ul>
                                                                 </ul>
                                                             </div>
 
@@ -330,6 +336,7 @@
                                         <a class="dropdown-item" href="<t4 type='navigation' name='Law - Legal Writing News Section' id='782' />" title="<t4 type='navigation' name='Law - Legal Writing News Section Name' id='783' />"><small>Legal Writing</small></a>
                                         <a class="dropdown-item" href="<t4 type='navigation' name='Law - Admission News Section' id='784' />" title="<t4 type='navigation' name='Law - Admission News Section Name' id='785' />"><strong>Admission</strong></a>
                                         <a class="dropdown-item" href="<t4 type='navigation' name='Law - Diversity News Section' id='786' />" title="<t4 type='navigation' name='Law - Diversity News Section Name' id='787' />"><small>Diversity</small></a>
+                                        <a class="dropdown-item" href="<t4 type='navigation' name='Law - Office of the Dean News Section' id='1035' />" title="<t4 type='navigation' name='Law - Office of the Dean News Section' id='1035' />"><strong>Office of the Dean</strong></a>
                                     </div>
                                 </li>
 
@@ -407,11 +414,11 @@
                                                 <a href="tel:206-398-4108" title="Call David">206-398-4108</a><br>
                                             </address>
                                             <address>
-                                                <strong>Claudine Benmar</strong><br>
+                                                <strong>Nicole Jennings</strong><br>
                                                 Assistant Director,<br>
                                                 Communications & Public Relations<br>
-                                                <a href="mailto:benmarc@seattleu.edu" title="Email Claudine">benmarc@seattleu.edu</a><br>
-                                                <a href="tel:206-398-4175" title="Call Claudine">206-398-4175</a>
+                                                <a href="mailto:njennings@seattleu.edu" title="Email Nicole">njennings@seattleu.edu</a><br>
+                                                <a href="tel:206-398-4175" title="Call Nicole">206-398-4175</a>
                                             </address>
                                         </div>
                                     </div>
