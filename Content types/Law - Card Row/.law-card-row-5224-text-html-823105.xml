@@ -35,7 +35,7 @@
         <t4 type="content" name="Heading 2" output="selective-output" modifiers="" process-format="true" format="<div class='card border shadow-sm mb-lg-2 mx-1'>
 			
 			<a href=&quot;<t4 type='content' name='Link 2' output='linkurl' modifiers='nav_sections' />&quot; class='card-link'>
-				<img src='<t4 type='content' name='Image 2' output='imageurl' />' class='card-img-top p-0 m-0' alt&quot;Image for <t4 type='content' name='Heading 2' output='normal' modifiers='striptags,htmlentities' />&quot;>
+				<img src='<t4 type='content' name='Image 2' output='imageurl' />' class='card-img-top p-0 m-0' alt=&quot;Image for <t4 type='content' name='Heading 2' output='normal' modifiers='striptags,htmlentities' />&quot;>
 			</a>
 
 			<div class='card-body standardContent mx-0'>
@@ -56,7 +56,7 @@
         <t4 type="content" name="Heading 3" output="selective-output" modifiers="" process-format="true" format="<div class='card border shadow-sm mb-lg-2 mx-1'>
 			
 			<a href=&quot;<t4 type='content' name='Link 3' output='linkurl' modifiers='nav_sections' />&quot; class='card-link'>
-				<img src='<t4 type='content' name='Image 3' output='imageurl' />' class='card-img-top p-0 m-0' alt&quot;Image for <t4 type='content' name='Heading 3' output='normal' modifiers='striptags,htmlentities' />&quot;>
+				<img src='<t4 type='content' name='Image 3' output='imageurl' />' class='card-img-top p-0 m-0' alt=&quot;Image for <t4 type='content' name='Heading 3' output='normal' modifiers='striptags,htmlentities' />&quot;>
 			</a>
 
 			<div class='card-body standardContent mx-0'>
@@ -77,7 +77,7 @@
         <t4 type="content" name="Heading 4" output="selective-output" modifiers="" process-format="true" format="<div class='card border shadow-sm mb-lg-2 mx-1'>
 			
 			<a href=&quot;<t4 type='content' name='Link 4' output='linkurl' modifiers='nav_sections' />&quot; class='card-link'>
-				<img src='<t4 type='content' name='Image 4' output='imageurl' />' class='card-img-top p-0 m-0' alt&quot;Image for <t4 type='content' name='Heading 4' output='normal' modifiers='striptags,htmlentities' />&quot;>
+				<img src='<t4 type='content' name='Image 4' output='imageurl' />' class='card-img-top p-0 m-0' alt=&quot;Image for <t4 type='content' name='Heading 4' output='normal' modifiers='striptags,htmlentities' />&quot;>
 			</a>
 
 			<div class='card-body standardContent mx-0'>
