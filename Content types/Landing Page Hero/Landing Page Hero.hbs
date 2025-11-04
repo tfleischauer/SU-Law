@@ -1,0 +1,70 @@
+<section class="hero hero--landing text-margin-reset hero--img{{#ifSet element="BG Video URL"}} hero--video{{/ifSet}}">
+  <div class="hero__media">
+    {{#ifSet element="BG Video URL"}}
+      <div class="autoplay-video-container">
+        <video class="video" aria-labelledby="hero-video--button-toggle" id="hero" loop muted playsinline>
+          <source src="{{publish element="BG Video URL"}}" type="video/mp4" />
+        </video>
+        <button
+          type="button"
+          class="video-play-button"
+          data-button-open-text=""
+          data-button-close-text=""
+          data-button-enable-at="0"
+          data-button-disable-at="-1"
+          data-button-open-class="video-playing"
+          data-button-open-class-element=".autoplay-video-container"
+          aria-live="polite"
+          aria-label="Pause"
+          id="hero-video--button-toggle"
+          aria-controls="hero"
+          data-toggle-type="toggle"
+          aria-pressed="false">
+        </button>
+      </div>
+    {{/ifSet}}
+
+    {{!-- Background image (simple URL/alt approach using publish) --}}
+    <img
+      loading="eager"
+      sizes="100vw"
+      src="{{publish element="BG Image"}}"
+      alt="{{publish element="Title"}}">
+  </div>
+
+  <div class="hero__overlay" aria-hidden="true"></div>
+
+  <div class="hero__content">
+    <h1>{{publish element="Title"}}</h1>
+
+    {{#ifSet element="Description"}}
+      <div class="global-spacing--3x">
+        <p>{{publish element="Description"}}</p>
+      </div>
+    {{/ifSet}}
+
+    <div class="global-spacing--3x">
+      {{!-- If your project uses nav() for breadcrumbs, mirror faculty profile --}}
+      {{nav id="955" name="Breadcrumbs"}}
+      {{!-- Or, if you truly embed a breadcrumbs layout, use:
+      {{#ifSet element="Show Breadcrumbs"}}
+        {{embed layout="Breadcrumbs" id=955}}
+      {{/ifSet}}
+      --}}
+    </div>
+
+    {{!-- CTA: show only if title + at least one link --}}
+    {{#ifSet element="CTA - Title"}}
+      {{#or (ifSet element="CTA - Internal Link") (ifSet element="CTA - External Link")}}
+        <div class="global-spacing--3x">
+          {{#ifSet element="CTA - Internal Link"}}
+            <a class="btn" href="{{publish element="CTA - Internal Link"}}">{{publish element="CTA - Title"}}</a>
+          {{else}}
+            <a class="btn" href="{{publish element="CTA - External Link"}}">{{publish element="CTA - Title"}}</a>
+          {{/ifSet}}
+        </div>
+      {{/or}}
+    {{/ifSet}}
+  </div>
+</section>
+
