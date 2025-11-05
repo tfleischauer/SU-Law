@@ -49,18 +49,21 @@
 
     {{#ifSet element="CTA - Title"}}
       {{#or (ifSet element="CTA - Internal Link") (ifSet element="CTA - External Link")}}
-        <div class="global-spacing--3x hero__cta">
-          {{#ifSet element="CTA - Internal Link"}}
-            {{{publish
-                element='CTA - Internal Link'
-                modifiers='nav_sections'
-                format='<a class="btn" href="%linkurl%">%linktext%</a>'}}}
-          {{else}}
-            <a class="btn" href="{{publish element='CTA - External Link'}}">
-              {{publish element='CTA - Title'}}
-            </a>
-          {{/ifSet}}
-        </div>
+<div class="global-spacing--3x hero__cta">
+  {{#ifSet element="CTA - Internal Link"}}
+      <div class="hero__cta--internal">
+        {{{publish element='CTA - Internal Link' modifiers='nav_sections'}}}
+      </div>
+      <script>(function(){
+        var a=document.querySelector('.hero__cta--internal a');
+        if(a) a.classList.add('btn');
+      })();</script>
+    {{else}}
+      <a class="btn" href="{{publish element='CTA - External Link'}}">
+        {{publish element='CTA - Title'}}
+      </a>
+    {{/ifSet}}
+  	</div>
       {{/or}}
     {{/ifSet}}
 
