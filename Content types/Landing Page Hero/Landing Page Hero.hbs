@@ -24,18 +24,14 @@
       </div>
     {{/ifSet}}
 
-    {{!-- Background image (simple URL/alt approach using publish) --}}
-    <img
-      loading="eager"
-      sizes="100vw"
-      src="{{publish element="BG Image"}}"
-      alt="{{publish element="Title"}}">
+    {{!-- Background image: publish returns a full <img>, so render unescaped --}}
+        {{{publish element='BG Image'}}}
   </div>
 
   <div class="hero__overlay" aria-hidden="true"></div>
 
   <div class="hero__content">
-    <h1>{{publish element="Title"}}</h1>
+    <h1>{{{publish element='Heading'}}}</h1>
 
     {{#ifSet element="Description"}}
       <div class="global-spacing--3x">
@@ -43,28 +39,30 @@
       </div>
     {{/ifSet}}
 
-    <div class="global-spacing--3x">
-      {{!-- If your project uses nav() for breadcrumbs, mirror faculty profile --}}
-      {{nav id="955" name="Breadcrumbs"}}
-      {{!-- Or, if you truly embed a breadcrumbs layout, use:
-      {{#ifSet element="Show Breadcrumbs"}}
-        {{embed layout="Breadcrumbs" id=955}}
-      {{/ifSet}}
-      --}}
-    </div>
+    {{#ifSet element="Show Breadcrumbs"}}
+        <div class="global-spacing--3x"> 
+          <nav aria-label="Breadcrumbs">
+          	{{nav id="955" name="Breadcrumbs"}} 
+          </nav>
+        </div> 
+    {{/ifSet}}
 
-    {{!-- CTA: show only if title + at least one link --}}
     {{#ifSet element="CTA - Title"}}
       {{#or (ifSet element="CTA - Internal Link") (ifSet element="CTA - External Link")}}
-        <div class="global-spacing--3x">
+        <div class="global-spacing--3x hero__cta">
           {{#ifSet element="CTA - Internal Link"}}
-            <a class="btn" href="{{publish element="CTA - Internal Link"}}">{{publish element="CTA - Title"}}</a>
+            {{{publish
+                element='CTA - Internal Link'
+                modifiers='nav_sections'
+                format='<a class="btn" href="%linkurl%">%linktext%</a>'}}}
           {{else}}
-            <a class="btn" href="{{publish element="CTA - External Link"}}">{{publish element="CTA - Title"}}</a>
+            <a class="btn" href="{{publish element='CTA - External Link'}}">
+              {{publish element='CTA - Title'}}
+            </a>
           {{/ifSet}}
         </div>
       {{/or}}
     {{/ifSet}}
+
   </div>
 </section>
-
