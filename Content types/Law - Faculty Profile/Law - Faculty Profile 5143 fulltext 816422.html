@@ -89,7 +89,7 @@
     <div class="facultyProfileSidebar col-lg-4 order-1 order-lg-2">
       {{#ifSet element="Areas of Expertise"}}
       <div class="primary-profile-sidebar">
-        <h3>Areas of Expertise</h3>
+        <h2 class="m-2"><span class="h3 color-white">Areas of Expertise</span></h2>
         {{{publish element="Areas of Expertise"}}}
       </div>
       {{/ifSet}}
@@ -97,17 +97,17 @@
       {{#or (ifSet element="Education") (ifSet element="Affiliations") (ifSet element="Courses")}}
       <div class="secondary-profile-sidebar">
         {{#ifSet element="Education"}}
-        <h3>Education</h3>
+        <h2 class="m-2"><span class="h3">Education</span></h2>
         {{{publish element="Education"}}}
         {{/ifSet}}
 
         {{#ifSet element="Affiliations"}}
-        <h3>Affiliations</h3>
+        <h2 class="m-2"><span class="h3">Affiliations</span></h2>
         {{{publish element="Affiliations"}}}
         {{/ifSet}}
 
         {{#ifSet element="Courses"}}
-        <h3>Courses</h3>
+        <h2 class="m-2"><span class="h3">Courses</span></h2>
         {{{publish element="Courses"}}}
         {{/ifSet}}
       </div>
