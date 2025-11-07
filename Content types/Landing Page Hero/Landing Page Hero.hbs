@@ -24,14 +24,30 @@
       </div>
     {{/ifSet}}
 
+     {{!-- PXL conflict with meta images --}}
+     {{!-- <img
+        class="hero__img"
+        loading="eager"
+        decoding="async"
+        fetchpriority="high"
+        sizes="100vw"
+        src="{{publish element='BG Image' output='normal' formatter='V10/image/pxl-crop' cdn='true' pxl-filter-id='4'}}"
+        srcset="
+          {{publish element='BG Image' output='normal' formatter='V10/image/pxl-crop' cdn='true' pxl-filter-id='4'}} 500w,
+          {{publish element='BG Image' output='normal' formatter='V10/image/pxl-crop' cdn='true' pxl-filter-id='3'}} 768w,
+          {{publish element='BG Image' output='normal' formatter='V10/image/pxl-crop' cdn='true' pxl-filter-id='2'}} 1600w,
+          {{publish element='BG Image' output='normal' formatter='V10/image/pxl-crop' cdn='true' pxl-filter-id='1'}} 1900w"
+        alt="{{publish element='BG Image' formatter='text/alt'}}">  --}}
+    
     {{!-- Background image: publish returns a full <img>, so render unescaped --}}
-        {{{publish element='BG Image'}}}
+    {{{publish element='BG Image'}}}
+
   </div>
 
   <div class="hero__overlay" aria-hidden="true"></div>
 
   <div class="hero__content">
-    <h1>{{{publish element='Heading'}}}</h1>
+    <h1>{{publish element='Heading' modifiers='striptags,htmlentities'}}</h1>
 
     {{#ifSet element="Description"}}
       <div class="global-spacing--3x">
