@@ -1,0 +1,138 @@
+<div class="facultyProfileWrapper contentItem" id="{{contentId}}-fulltext" data-position-default="Main" data-position-selected="Main">  
+    <div class="facultyProfileTop">
+        <div class="standardContent row">
+
+            <div class="facultyProfilePicture col-lg-4">
+                <div class="facultyPhoto">
+                    {{#ifSet element="Profile Pic"}}
+                        {{embed layout="v9/media/faculty-profile-image"}}
+                    {{/ifSet}}
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="facultyProfileInfo col-lg-8 flex-grow-1">
+                <h1>{{publish element="Full Name"}}</h1>
+
+                <div class="facultyProfileTitles">
+                    <p>
+                        {{#ifSet element="Primary Title" ~}}
+                            {{publish element="Primary Title" ~}}<br>
+                        {{/ifSet}}
+                        {{#ifSet element="Secondary Title" ~}}
+                            {{publish element="Secondary Title" ~}}<br>
+                        {{/ifSet}}
+                    </p>
+                </div>
+
+                <div class="facultyProfileContactInfo">
+                    <div class="d-flex flex-column flex-xxl-row">
+                        {{#ifSet element="Room" ~}}
+                            <p class="facultyProfileRoom me-xxl-5">
+                                <span class="fas fa-map-marker"></span>&nbsp;{{publish element="Room" ~}}
+                            </p>
+                        {{/ifSet}}
+                        {{#ifSet element="Contact Phone" ~}}
+                            <p class="facultyProfilePhone me-xxl-5">
+                                <span class="fas fa-phone-alt"></span>&nbsp;{{publish element="Contact Phone" ~}}
+                            </p>
+                        {{/ifSet}}
+                        {{#ifSet element="Email" ~}}
+                            <p class="facultyProfileEmail flex-grow-1">
+                                <span class="fas fa-envelope"></span>
+                                <a class="emailAddress card-link"
+                                    href="mailto:{{publish element="Email" ~}}?subject=From your Faculty Profile"
+                                    title="Contact {{publish element="Full Name" ~}}">
+                                    Email {{publish element="First Name" ~}}
+                                </a>
+                            </p>
+                        {{/ifSet}}
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+                <div class="d-flex flex-column flex-lg-row">
+                    {{#ifSet element="CV"}}
+                        <div class="facultyProfileCV flex-grow-1 flex-lg-grow-0 cv-twitter">
+                            <span class="boxlinkItem">
+                                <a href="{{file element="CV"}}" 
+                                title="Download {{publish element="First Name"}} {{publish element="Last Name"}} Curriculum Vitae">
+                                <span class="fas fa-download"></span> Curriculum Vitae
+                                </a>
+                            </span>
+                        </div>
+                    {{/ifSet}}
+                    {{#ifSet element="Twitter Handle" ~}}
+                        <div class="facultyProfileTwitter flex-grow-1 flex-lg-grow-0 cv-twitter">
+                            <span class="boxlinkItem">
+                                <a href="https://twitter.com/{{publish element="Twitter Handle" ~}}">
+                                    <span class="fab fa-twitter"></span> {{publish element="Twitter Handle" ~}}
+                                </a>
+                            </span>
+                        </div>
+                    {{/ifSet}}
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <div class="standardContent row"> 
+        <div id="breadcrumbsWrapper" class="container">
+            <nav id="breadcrumbs" class="facultyProfileBreadcrumbs" aria-label="Breadcrumbs">
+                {{nav id="739" name="Law - Breadcrumbs on Faculty Profile page"}}
+            </nav>
+        </div>
+    </div> 
+
+    <div class="facultyProfileMiddle standardContent row">
+        <div class="facultyProfileSidebar col-lg-4 order-1 order-lg-2">
+            {{#ifSet element="Areas of Expertise"}}
+                <div class="primary-profile-sidebar">
+                    <h3>Areas of Expertise</h3>
+                    {{{publish element="Areas of Expertise"}}} 
+                </div>
+            {{/ifSet}}
+
+            {{#or (ifSet element="Education") (ifSet element="Affiliations") (ifSet element="Courses")}}
+                <div class="secondary-profile-sidebar">
+                    {{#ifSet element="Education"}}
+                        <h3>Education</h3>
+                        {{{publish element="Education"}}}
+                    {{/ifSet}}
+
+                    {{#ifSet element="Affiliations"}}
+                        <h3>Affiliations</h3>
+                        {{{publish element="Affiliations"}}}
+                    {{/ifSet}}
+
+                    {{#ifSet element="Courses"}}
+                        <h3>Courses</h3>
+                        {{{publish element="Courses"}}}
+                    {{/ifSet}}
+                </div>
+            {{/or}}
+        </div>
+
+        <div class="primaryProfileContent col-lg-8 order-2 order-lg-1 pe-lg-5">
+            <div class="facultyProfileBiography">
+                {{#ifSet element="Biography"}}
+                    <h2>Biography</h2>
+                    {{{publish element="Biography"}}}
+                {{/ifSet}}
+            </div>
+            <div class="facultyProfilePublications">
+                {{#ifSet element="Publications"}}
+                    <h2>Publications</h2>
+                    {{{publish element="Publications"}}}
+                {{/ifSet}}
+            </div>
+            <div class="facultyProfileActivity">
+                {{#ifSet element="Activity"}}
+                    <h2>Activity</h2>
+                    {{{publish element="Activity"}}}
+                {{/ifSet}}
+            </div>
+        </div>
+    </div>
+</div>
